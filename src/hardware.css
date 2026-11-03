@@ -1,0 +1,41 @@
+/* Shared physical finishes; parameter elements, sizes and bindings stay authoritative. */
+html.fit-screen body{background:radial-gradient(ellipse at 50% 15%,#202724,#030605 85%)}
+html.fit-screen main{isolation:isolate;background:linear-gradient(90deg,#121615,#202724 1%,#0a100e 2%,#101917 50%,#0a100e 98%,#252d29 99%,#080c0a);border-radius:15px;box-shadow:inset 0 2px 0 #64746d,inset 0 -6px 0 #020403,inset 5px 0 0 #303934,inset -5px 0 0 #303934,0 16px 35px #000;outline:1px solid #080c0a}
+html.fit-screen main::before,html.fit-screen main::after{content:"";position:absolute;top:8px;bottom:8px;width:5px;pointer-events:none;z-index:5;border-radius:5px;background:linear-gradient(90deg,#070a08,#57605b 40%,#1b211e 80%,#060907);box-shadow:1px 0 3px #000}
+html.fit-screen main::before{left:1px}html.fit-screen main::after{right:1px;transform:scaleX(-1)}
+html.fit-screen main .header{background:linear-gradient(#232d29 0,#111b17 12%,#09100d 90%,#34453d 96%,#050806);box-shadow:0 3px 5px #000b,inset 0 1px 0 #53635a;border-radius:10px 10px 0 0}
+html.fit-screen main .brand{padding-left:5px;text-shadow:0 2px 1px #000,0 -1px 0 #ffffff18;color:#d4dad6}
+html.fit-screen main .brand span{text-shadow:0 0 7px #50efd535,0 2px 1px #000}
+html.fit-screen main .patch-readout{background:linear-gradient(#010604,#061b13 50%,#020b07);border-color:#345f50;border-radius:3px;box-shadow:inset 0 3px 6px #000,0 1px 0 #85958c42,0 0 3px #50efd51c;text-shadow:0 0 4px #50efd544}
+html.fit-screen main .editor>.panel,html.fit-screen main>.performance-panel{border-color:#44675b #23382f #13241d;border-radius:6px;background:linear-gradient(115deg,#18241e,#0a140f 35%,#111b16 85%);box-shadow:inset 0 1px 0 #88a89a44,inset 1px 0 0 #58726533,inset 0 -2px 2px #000,0 2px 4px #000c}
+html.fit-screen main .editor>.panel h2{color:#d8e3dc;background:linear-gradient(#26362e,#12221a 45%,#0b1711 90%);border-bottom:1px solid #30705c;box-shadow:inset 0 1px 0 #92b9a22a,0 1px 4px #50efd511;text-shadow:0 1px 2px #000;font-weight:600;letter-spacing:.65px}
+html.fit-screen main .editor>.panel>.inner{background:linear-gradient(110deg,#0e1913,#09110d 75%);border-color:#10261b;box-shadow:inset 0 2px 4px #0009,inset 1px 0 2px #0006;border-radius:2px}
+html.fit-screen main .scope,html.fit-screen main .xy-pad{background:linear-gradient(125deg,#00100b,#031a11 46%,#021009);border-color:#284b3b #0c2116 #31503e #0a1c13;border-width:2px;border-radius:2px;box-shadow:inset 0 3px 7px #000,inset 2px 0 5px #0009,0 1px 0 #758d7d35}
+html.fit-screen main .trace{filter:drop-shadow(0 0 1.2px var(--trace,var(--teal)))}
+html.fit-screen main .grid-line{stroke:#164432;opacity:.8}
+html.fit-screen main .knob .dial{filter:drop-shadow(1px 3px 2px #000);border-radius:50%;background:radial-gradient(ellipse at 38% 26%,#80958a66,#07110a 67%,#000 72%,transparent 74%)}
+html.fit-screen main .knob svg circle:nth-of-type(1){fill:url(#mambKnobRing);stroke:#092017;stroke-width:3}
+html.fit-screen main .knob svg circle:nth-of-type(2){stroke:#13261d;stroke-width:2.3}
+html.fit-screen main .knob svg circle.arc{stroke-width:2.7;filter:drop-shadow(0 0 1px var(--accent))}
+html.fit-screen main .knob svg circle:nth-of-type(4){fill:url(#mambKnobFace);stroke:#75968a;stroke-width:.8}
+html.fit-screen main .knob .needle{stroke:#e5f0e9;stroke-width:2;filter:drop-shadow(0 1px 1px #000)}
+html.fit-screen main .knob .val{text-shadow:0 1px 2px #000;color:#deeee5}
+html.fit-screen main button,html.fit-screen main .download-build{background:linear-gradient(#344139,#17241d 45%,#0b140e);border-color:#607869 #182c20 #030a05 #3c5144;border-radius:3px;color:#d4e2d8;text-shadow:0 1px 2px #000;box-shadow:inset 0 1px 0 #b1c7ba2b,inset 0 -2px 1px #000b,0 2px 3px #000b}
+html.fit-screen main button:hover,html.fit-screen main .download-build:hover{border-color:#6aab91;background:linear-gradient(#3a5043,#1b3425 50%,#0d2015)}
+html.fit-screen main button:active{box-shadow:inset 0 2px 4px #000;background:#10241a}
+html.fit-screen main button.active,html.fit-screen main button[aria-pressed=true]{border-color:var(--accent,var(--teal));background:linear-gradient(#247762,#104d3d 45%,#103429);color:#e9fff7;box-shadow:inset 0 1px 1px #baffdf88,inset 0 0 8px #50efd542,0 0 5px #50efd53b,0 2px 2px #000;text-shadow:0 0 4px #50efd588}
+html.fit-screen main .wave-buttons button.active{background:linear-gradient(#35473e,#0d2c20);box-shadow:inset 0 0 5px #50efd52b,0 0 4px #50efd52b}
+html.fit-screen main .wave-buttons button.active svg path{filter:drop-shadow(0 0 1.3px var(--accent,var(--teal)))}
+html.fit-screen main .panic{background:linear-gradient(#5a303e,#32151f);border-color:#85516a #3e202d #1c0b12}
+html.fit-screen main select{background:linear-gradient(#18271f,#08160e);border-color:#476453 #0b1d12 #4c6253 #09190f;box-shadow:inset 0 2px 3px #0009;color:#d3e3d7;text-shadow:0 1px 1px #000}
+html.fit-screen main input[type=checkbox]{appearance:none;width:12px;height:12px;margin:3px;border:1px solid #54705e;border-radius:2px;background:linear-gradient(#27382c,#0b180f);box-shadow:inset 0 2px 2px #000,0 1px 0 #88a99533;vertical-align:middle;cursor:pointer}
+html.fit-screen main input[type=checkbox]:checked{background:radial-gradient(#d7fff0,#50efd5 35%,#188f73);border-color:#62ebc7;box-shadow:0 0 5px #50efd577,inset 0 1px 2px #e8fff4}
+html.fit-screen main .fader input{width:9px;background:linear-gradient(to top,var(--accent) 0%,var(--accent) var(--fill),#020704 var(--fill),#020704 100%);border-color:#020704;box-shadow:inset 2px 0 3px #000,1px 0 0 #6c88704d}
+html.fit-screen main .fader input::-webkit-slider-thumb{height:20px;background:linear-gradient(#77847b,#36473c 12%,#27372d 48%,#8aa193 50%,#1a2b20 58%,#0c170f);border-color:#6c8172 #243c2c #040b06;box-shadow:0 4px 4px #000c,inset 0 1px 0 #c2d0c533;border-radius:2px}
+html.fit-screen main>.performance-panel{background:linear-gradient(#26382e,#07100a 12%,#0e1d13 85%,#020704);border-top:3px solid #637e6c;box-shadow:inset 0 3px 3px #000,0 -3px 0 #050a06,0 -4px 0 #405b4b}
+html.fit-screen main>.performance-panel h2{background:linear-gradient(#192b20,#0b1a11);color:#d7e7da;border-bottom-color:#142a1a}
+html.fit-screen main>.performance-panel>.inner{background:#030805;border:2px solid #172e1d;border-bottom-color:#526b56;box-shadow:inset 0 4px 8px #000,0 1px 0 #000}
+html.fit-screen main>.performance-panel .white{background:linear-gradient(90deg,#9da99c 0,#d6ddcf 3%,#f0f1e7 9%,#eef0e5 85%,#c4cdbf 96%,#82927f 100%);border:1px solid #465343;border-bottom:5px solid #9da891;border-radius:1px 1px 4px 4px;box-shadow:inset 0 6px 6px #0005,inset 0 -2px 1px #eef6e3,1px 1px 2px #000;position:relative;color:#5a6757}
+html.fit-screen main>.performance-panel .black{background:linear-gradient(90deg,#030704,#1e2922 12%,#0d1710 24%,#101c13 74%,#38463a 87%,#020603);border:1px solid #030704;border-top:2px solid #5c685d;border-bottom:5px solid #020503;border-radius:0 0 3px 3px;box-shadow:2px 5px 3px #000c,inset 0 -3px 0 #39463b;color:#8ea092}
+html.fit-screen main>.performance-panel .white.on{background:linear-gradient(90deg,#1b7964,#8bffe2 12%,#50efd5 85%,#258b70);border-bottom-color:#1d775b;box-shadow:inset 0 4px 7px #03201499,0 0 7px #50efd533}
+html.fit-screen main>.performance-panel .black.on{background:linear-gradient(90deg,#104a36,#2c9b72,#0c3d2b);border-bottom-color:#092818;box-shadow:0 2px 3px #000,0 0 5px #50efd566}
