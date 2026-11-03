@@ -1,8 +1,8 @@
 {
   "name": "grimiss-mamb-synth",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "private": true,
-  "description": "GRIMISS mAMB stereo effects and CONNECT-style standalone instrument",
+  "description": "GRIMISS mAMB standalone hardware-style synthesizer and KeyLab25 workflow",
   "scripts": {
     "test": "node tests/audio.cjs && node tests/ownership-modulation.cjs && node tests/measurements.cjs",
     "test:baseline": "node tests/baseline.cjs",
@@ -11,10 +11,11 @@
     "test:ownership": "node tests/ownership-modulation.cjs",
     "test:measurements": "node tests/measurements.cjs",
     "test:performance": "node tests/performance.cjs",
-    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs",
+    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs && node tests/midi-registry.cjs && node tests/workflow.cjs && node tests/factory.cjs && node tests/devices.cjs",
     "build": "node tools/build.cjs",
     "test:effects": "node tests/effects.cjs",
-    "test:instrument": "node tests/instrument.cjs"
+    "test:instrument": "node tests/instrument.cjs",
+    "test:workflow": "node tests/workflow.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

@@ -65,3 +65,15 @@ Pushed v0.6 development branch, then reused the existing owner-private Site with
 Actual live browser QA was attempted through the configured HTTPS proxy using authorised Site service access. It failed before reaching the application with ERR_TUNNEL_CONNECTION_FAILED; curl confirmed CONNECT403. A sandbox network grant was requested and granted, but did not change the independent Cloud Environment HTTP host allow-list. No bypass attempted. Live audio/interface/keyboard/effects/preset checks therefore remain unverified, rather than being inferred from publication success. Exact remaining domain allow-list action is documented in HOSTING.md; reports/live-verification.json records the blocked test without credentials. Localhost tests of those functions pass on both backends.
 
 GitHub main and v0.5 remain untouched; no Sound Factory edits, paid services, proprietary DSP/audio data, or public-source exposure. Next task begins with authorised live QA once the domain is allowed, then physical-device/longer real-time validation and listening-led effects refinement.
+
+## 2026-11-03 — v0.7 controller workflow and final hardware panel
+
+Continued from pushed v0.6 checkpoint46d8bdd on codex/controller-workflow-v0.7, preserving the existing engine/effects and prior baseline evidence. Revalidated baseline before integration (work/v07/v06-*). Confirmed the user's controller is the original Arturia KeyLab25 without pads; official manual inventory and truthful unknown assignments replace provisional hardware assumptions.
+
+Added an authoritative parameter target list, versioned source/channel-scoped Learn registry, explicit relative encoder modes, interactive map and generated Markdown/SVG/standalone HTML. Synthetic activity is labelled as such. Native note/velocity/bend/wheel/sustain paths stay active; MIDI profiles survive patch changes. Added input/output/channel settings and opt-in real-message thru. Audio output is capability detected; optional explicit audio input starts at gain zero, smooths gain and stops on PANIC or cancelled permission flow.
+
+Removed Start Audio: a trusted key/pointer gesture resumes AudioContext before awaiting Worklet loading, preserving queued first-note ownership. MIDI-only autoplay remains subject to browser policy. No audio backend or algorithm was replaced.
+
+Integrated the final single-screen1920×1080 logical layout, exact existing palette, subtle physical controls, full-width realistic keyboard, persisted visibility and actual expansion of controls/graphs when hidden. OSC1 seven choices occupy4+3 rows with separate dropdown/preview. Added SELECT PATCH modal with90 original factory entries/9banks and USER operations, independent mutually exclusive X/Y editors saved in v3patches, wheel/Shift fine adjustment and real ADSR-point editing. Legacy patch formats remain supported; no permanent visible category/import/export controls.
+
+Validation and publication evidence follow in TEST_RESULTS.md and HOSTING.md. Physical hardware/Windows/tablet performance and actual live-domain browser access are reported separately from software and native deployment checks.

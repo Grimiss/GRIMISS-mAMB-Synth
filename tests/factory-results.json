@@ -1,0 +1,548 @@
+{
+  "status": "PASS",
+  "patches": 90,
+  "secondsPerPatch": 1.5013,
+  "physicalListeningTest": false,
+  "results": [
+    {
+      "name": "Warm Ambient",
+      "number": 1,
+      "peak": 0.06659896671772003,
+      "energy": 240.97923775022102
+    },
+    {
+      "name": "Chorus Warmth",
+      "number": 2,
+      "peak": 0.0694819837808609,
+      "energy": 176.92344762282258
+    },
+    {
+      "name": "Velvet Dawn",
+      "number": 3,
+      "peak": 0.06636859476566315,
+      "energy": 164.12293753710532
+    },
+    {
+      "name": "Amber Clouds",
+      "number": 4,
+      "peak": 0.06833577156066895,
+      "energy": 191.68209972538676
+    },
+    {
+      "name": "Teal Horizon",
+      "number": 5,
+      "peak": 0.056183021515607834,
+      "energy": 106.73265160539023
+    },
+    {
+      "name": "Soft Current",
+      "number": 6,
+      "peak": 0.05099010467529297,
+      "energy": 96.39624041771756
+    },
+    {
+      "name": "Hushed Air",
+      "number": 7,
+      "peak": 0.04879182204604149,
+      "energy": 50.74621548113047
+    },
+    {
+      "name": "Afterlight",
+      "number": 8,
+      "peak": 0.0628712847828865,
+      "energy": 98.76565426625476
+    },
+    {
+      "name": "Cedar Bloom",
+      "number": 9,
+      "peak": 0.038043104112148285,
+      "energy": 34.5103026922783
+    },
+    {
+      "name": "Distant Ember",
+      "number": 10,
+      "peak": 0.05504176393151283,
+      "energy": 52.08922133172541
+    },
+    {
+      "name": "Slow Drift",
+      "number": 11,
+      "peak": 0.045562271028757095,
+      "energy": 51.29633421379029
+    },
+    {
+      "name": "Modulated Atmosphere",
+      "number": 12,
+      "peak": 0.02568776346743107,
+      "energy": 10.424826397488387
+    },
+    {
+      "name": "Moss Circuit",
+      "number": 13,
+      "peak": 0.05440065637230873,
+      "energy": 48.09874154687076
+    },
+    {
+      "name": "Northern Mist",
+      "number": 14,
+      "peak": 0.04955197870731354,
+      "energy": 38.845472565660394
+    },
+    {
+      "name": "Tidal Memory",
+      "number": 15,
+      "peak": 0.0463913194835186,
+      "energy": 40.33855091103229
+    },
+    {
+      "name": "Glassweather",
+      "number": 16,
+      "peak": 0.0414636991918087,
+      "energy": 45.14493595225223
+    },
+    {
+      "name": "Chromatic Fog",
+      "number": 17,
+      "peak": 0.042202427983284,
+      "energy": 29.6107724039488
+    },
+    {
+      "name": "Sleeping Satellites",
+      "number": 18,
+      "peak": 0.04025870934128761,
+      "energy": 40.54451009871048
+    },
+    {
+      "name": "Liminal Bloom",
+      "number": 19,
+      "peak": 0.04578216373920441,
+      "energy": 29.0822831603362
+    },
+    {
+      "name": "Silver Current",
+      "number": 20,
+      "peak": 0.04365498945116997,
+      "energy": 25.102934077740393
+    },
+    {
+      "name": "Ensemble Strings",
+      "number": 21,
+      "peak": 0.06789601594209671,
+      "energy": 116.04902984737281
+    },
+    {
+      "name": "Tape Strings",
+      "number": 22,
+      "peak": 0.05790683627128601,
+      "energy": 133.33452253881393
+    },
+    {
+      "name": "Soft Ensemble",
+      "number": 23,
+      "peak": 0.06066891923546791,
+      "energy": 131.8511789749226
+    },
+    {
+      "name": "Amber Orchestra",
+      "number": 24,
+      "peak": 0.05113450437784195,
+      "energy": 101.36781038260261
+    },
+    {
+      "name": "Chamber Halo",
+      "number": 25,
+      "peak": 0.06612282991409302,
+      "energy": 131.1043146450622
+    },
+    {
+      "name": "Faded Silk",
+      "number": 26,
+      "peak": 0.06469432264566422,
+      "energy": 142.54704921264806
+    },
+    {
+      "name": "Violet Cellos",
+      "number": 27,
+      "peak": 0.05874805524945259,
+      "energy": 81.94744025844773
+    },
+    {
+      "name": "Airborne Strings",
+      "number": 28,
+      "peak": 0.06709003448486328,
+      "energy": 152.7341062435958
+    },
+    {
+      "name": "Analog Choir",
+      "number": 29,
+      "peak": 0.06820264458656311,
+      "energy": 120.06909444781616
+    },
+    {
+      "name": "Quiet Solstice",
+      "number": 30,
+      "peak": 0.06762285530567169,
+      "energy": 84.5392471158365
+    },
+    {
+      "name": "Deep Drone",
+      "number": 31,
+      "peak": 0.040953628718853,
+      "energy": 47.8098192694435
+    },
+    {
+      "name": "Basalt",
+      "number": 32,
+      "peak": 0.04773327708244324,
+      "energy": 48.43254730937902
+    },
+    {
+      "name": "Low Orbit",
+      "number": 33,
+      "peak": 0.036352064460515976,
+      "energy": 29.703448053176132
+    },
+    {
+      "name": "Iron Tide",
+      "number": 34,
+      "peak": 0.037930525839328766,
+      "energy": 26.03965241199683
+    },
+    {
+      "name": "Understory",
+      "number": 35,
+      "peak": 0.03144943714141846,
+      "energy": 23.8910597960297
+    },
+    {
+      "name": "Night Engine",
+      "number": 36,
+      "peak": 0.03762078285217285,
+      "energy": 39.04796053527301
+    },
+    {
+      "name": "Murmur Field",
+      "number": 37,
+      "peak": 0.03372499719262123,
+      "energy": 15.149726599847078
+    },
+    {
+      "name": "Gravitation",
+      "number": 38,
+      "peak": 0.03316708281636238,
+      "energy": 33.52175571670788
+    },
+    {
+      "name": "Cavern Wire",
+      "number": 39,
+      "peak": 0.02956322766840458,
+      "energy": 18.423262446528206
+    },
+    {
+      "name": "Subterrane",
+      "number": 40,
+      "peak": 0.029110480099916458,
+      "energy": 22.924729077104704
+    },
+    {
+      "name": "Soft Beacon",
+      "number": 41,
+      "peak": 0.05187242478132248,
+      "energy": 102.213057335715
+    },
+    {
+      "name": "Thin Air",
+      "number": 42,
+      "peak": 0.06568676978349686,
+      "energy": 349.32825983571223
+    },
+    {
+      "name": "Rounded Signal",
+      "number": 43,
+      "peak": 0.05466606467962265,
+      "energy": 119.22677189061535
+    },
+    {
+      "name": "Vintage Port",
+      "number": 44,
+      "peak": 0.06748069822788239,
+      "energy": 375.0886125859627
+    },
+    {
+      "name": "Evening Reed",
+      "number": 45,
+      "peak": 0.055274490267038345,
+      "energy": 138.66966685191085
+    },
+    {
+      "name": "Liquid Lead",
+      "number": 46,
+      "peak": 0.06786862760782242,
+      "energy": 377.9294602442046
+    },
+    {
+      "name": "Resonant Thread",
+      "number": 47,
+      "peak": 0.05568576976656914,
+      "energy": 156.7423194235932
+    },
+    {
+      "name": "Mono Lantern",
+      "number": 48,
+      "peak": 0.07033190876245499,
+      "energy": 387.42420495604176
+    },
+    {
+      "name": "Blue Spark",
+      "number": 49,
+      "peak": 0.05624070763587952,
+      "energy": 176.23853362912033
+    },
+    {
+      "name": "Silk Pulse",
+      "number": 50,
+      "peak": 0.07136661559343338,
+      "energy": 385.8280705603247
+    },
+    {
+      "name": "Round Foundation",
+      "number": 51,
+      "peak": 0.0563882477581501,
+      "energy": 83.95966922760526
+    },
+    {
+      "name": "Pulse Anchor",
+      "number": 52,
+      "peak": 0.06229173764586449,
+      "energy": 100.55021985472644
+    },
+    {
+      "name": "Deep Rubber",
+      "number": 53,
+      "peak": 0.06447143852710724,
+      "energy": 159.1740657245823
+    },
+    {
+      "name": "Soft Acid",
+      "number": 54,
+      "peak": 0.08015227317810059,
+      "energy": 274.81599386116545
+    },
+    {
+      "name": "Octave Weight",
+      "number": 55,
+      "peak": 0.06702490895986557,
+      "energy": 234.4751285052805
+    },
+    {
+      "name": "Dark Step",
+      "number": 56,
+      "peak": 0.0679195374250412,
+      "energy": 304.6844555120342
+    },
+    {
+      "name": "Triangle Root",
+      "number": 57,
+      "peak": 0.06834524869918823,
+      "energy": 337.09300174045956
+    },
+    {
+      "name": "Warm Sub",
+      "number": 58,
+      "peak": 0.06891156733036041,
+      "energy": 399.2428366995598
+    },
+    {
+      "name": "Midnight Pluck",
+      "number": 59,
+      "peak": 0.06840191036462784,
+      "energy": 378.6748253787004
+    },
+    {
+      "name": "Sine Floor",
+      "number": 60,
+      "peak": 0.06914128363132477,
+      "energy": 437.69575700057635
+    },
+    {
+      "name": "Glass Droplet",
+      "number": 61,
+      "peak": 0.04115588217973709,
+      "energy": 2.7978582197488073
+    },
+    {
+      "name": "Copper Pin",
+      "number": 62,
+      "peak": 0.06549026817083359,
+      "energy": 13.793721942512791
+    },
+    {
+      "name": "Mallet Arc",
+      "number": 63,
+      "peak": 0.054523300379514694,
+      "energy": 7.580430720043188
+    },
+    {
+      "name": "Dust Bell",
+      "number": 64,
+      "peak": 0.057442519813776016,
+      "energy": 26.523891997519588
+    },
+    {
+      "name": "Spring Pizz",
+      "number": 65,
+      "peak": 0.055290475487709045,
+      "energy": 22.445792265170226
+    },
+    {
+      "name": "Short Circuit",
+      "number": 66,
+      "peak": 0.06630624830722809,
+      "energy": 42.50220023550051
+    },
+    {
+      "name": "Muted Tine",
+      "number": 67,
+      "peak": 0.046964891254901886,
+      "energy": 28.472744728333176
+    },
+    {
+      "name": "Amber Kalimba",
+      "number": 68,
+      "peak": 0.06754231452941895,
+      "energy": 53.639515757348896
+    },
+    {
+      "name": "Plucked Wire",
+      "number": 69,
+      "peak": 0.05721099674701691,
+      "energy": 64.48670709680876
+    },
+    {
+      "name": "Pixel Harp",
+      "number": 70,
+      "peak": 0.05758795514702797,
+      "energy": 68.82370652381994
+    },
+    {
+      "name": "63 Spring Glass",
+      "number": 71,
+      "peak": 0.04409591853618622,
+      "energy": 26.103595809918932
+    },
+    {
+      "name": "Vector Snow",
+      "number": 72,
+      "peak": 0.05122525990009308,
+      "energy": 73.10165168663389
+    },
+    {
+      "name": "Vocal Prism",
+      "number": 73,
+      "peak": 0.0518178716301918,
+      "energy": 88.40309022686758
+    },
+    {
+      "name": "Bell Archive",
+      "number": 74,
+      "peak": 0.05636913701891899,
+      "energy": 100.13730473432624
+    },
+    {
+      "name": "Crystalline Loop",
+      "number": 75,
+      "peak": 0.06693996489048004,
+      "energy": 132.05947653932026
+    },
+    {
+      "name": "Digital Dusk",
+      "number": 76,
+      "peak": 0.058347832411527634,
+      "energy": 119.92900696629664
+    },
+    {
+      "name": "Chime Engine",
+      "number": 77,
+      "peak": 0.06273406744003296,
+      "energy": 102.90493412931143
+    },
+    {
+      "name": "Spectrum Veil",
+      "number": 78,
+      "peak": 0.06050320714712143,
+      "energy": 130.04592060355924
+    },
+    {
+      "name": "Hollow Glass",
+      "number": 79,
+      "peak": 0.07146582007408142,
+      "energy": 143.34468841696707
+    },
+    {
+      "name": "Binary Tide",
+      "number": 80,
+      "peak": 0.06775370240211487,
+      "energy": 119.90598117721764
+    },
+    {
+      "name": "Init VA",
+      "number": 81,
+      "peak": 0.06412535160779953,
+      "energy": 279.8459041157863
+    },
+    {
+      "name": "Vintage Pulse",
+      "number": 82,
+      "peak": 0.06925468891859055,
+      "energy": 376.0973211735459
+    },
+    {
+      "name": "Stereo Horizons",
+      "number": 83,
+      "peak": 0.06257341057062149,
+      "energy": 204.85973121738547
+    },
+    {
+      "name": "Classic Saw",
+      "number": 84,
+      "peak": 0.06840075552463531,
+      "energy": 275.009648063896
+    },
+    {
+      "name": "PWM Memory",
+      "number": 85,
+      "peak": 0.06793113797903061,
+      "energy": 379.5791074576314
+    },
+    {
+      "name": "Ring Garden",
+      "number": 86,
+      "peak": 0.06766664981842041,
+      "energy": 183.51677253137282
+    },
+    {
+      "name": "Cross Current",
+      "number": 87,
+      "peak": 0.06931154429912567,
+      "energy": 402.194528193551
+    },
+    {
+      "name": "Synced Brass",
+      "number": 88,
+      "peak": 0.07144367694854736,
+      "energy": 307.31106960034776
+    },
+    {
+      "name": "Phaser Loom",
+      "number": 89,
+      "peak": 0.10090160369873047,
+      "energy": 156.84370271732573
+    },
+    {
+      "name": "Delay Apparition",
+      "number": 90,
+      "peak": 0.057669345289468765,
+      "energy": 128.15614834243854
+    }
+  ]
+}

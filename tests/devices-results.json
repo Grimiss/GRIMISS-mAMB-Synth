@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "mocked": true,
+  "physicalHardwareTested": false,
+  "checks": [
+    "mock port enumeration",
+    "device/channel filtering",
+    "ownership release on selection change",
+    "synthetic events never sent to output",
+    "no unsolicited capture",
+    "late permission stream stopped after cancellation"
+  ],
+  "consoleErrors": []
+}

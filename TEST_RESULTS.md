@@ -1,3 +1,25 @@
+# v0.7 validation — 2026-11-03
+
+Build: `npm run build`; canonical historical HTML is byte-identical to `dist/GRIMISS_mAMB_v0_7.html`. Manifest records the SHA256. Baseline v0.6 was revalidated before changes; retained reports are in work/v07 when workspace retained. src/synth.js and src/effects.js are unchanged from v0.6.
+
+Regression commands are consolidated in `npm run test:all`: baseline, diagnostics, audio, ownership/modulation, measurements, effects, combined instrument, performance, browser, UI, MIDI registry, workflow, all factory patches and mocked devices. Machine-readable results live in tests/*-results.json. Node/Chromium run on Linux; timings are offline measurements, not physical Windows/tablet verification.
+
+- Existing DSP:10 audio,16 ownership/modulation, measurements (tuning, filter slopes, harmonic/aliasing, envelope timing, switching,120-second polyphony),16 effects and combined engine checks. Dry compatibility is retained; optional stereo input is silent by default, ramps gain and stops on PANIC.
+- MIDI registry:25groups, scoped Learn/replacement, explicit relative modes, native paths, versioned storage/import validation, reset/defaults and truthful synthetic activity. Unknown KeyLab factory encoders remain unassigned.
+- Browser ownership/audio: Worklet and ScriptProcessor fallback, startup race, note ownership/sustain/disconnect/multitouch simulation, HOLD/priority/highlights, LFO/routes, audible output and PANIC silence. Managed Chromium blocks file:// navigation; standalone bundle has no external runtime dependencies but actual file-origin playback remains unverified here.
+- Interface: keyboard visible/hidden at1920×1080,1600×900,1280×800; page/panel containment, all seven oscillator button centers and nonoverlap, dropdown/preview synchronization, real graph/control changes, retained context/processor/patch/HOLD/notes and audio, persisted visibility and exact HTML download. Emulated1280touch waveform/key/XY/toggle passes. Screenshots: reports/mamb-v07-*.png.
+- Workflow:11groups using default Chromium autoplay policy (no permissive autoplay flag): first real typing key starts audible audio;90 factory patches/9×10/continuous numbering; XY exclusion and actual parameters; USER save/reload/rename/delete; separate MIDI profile and map/header Learn; normal/fine wheel/faders; real ADSR attack/sustain/release edits; settings/reset confirmation. No JavaScript console errors.
+- Factory DSP: all90 browser-resolved patches render1.5013seconds each with finite, bounded, nonzero stereo output. This is a numerical smoke test, not a listening-quality endorsement.
+- Mocked devices: input/channel selection, ownership release when changing selection, synthetic events never sent to hardware output, no unsolicited capture, late permission stream stopped after cancellation. No real hardware I/O claim.
+
+A touch test caught a legacy tablet min-height220px rule clipping the keyboard panel; explicitly resetting its minimum height fixed the cause. Added panel-to-main containment checks so it cannot silently recur. The corrected layout and touch checks pass.
+
+Current paired offline benchmark:2seconds/48kHz/eight voices/128-frame blocks: v0.5 dry262.66ms, current bypass262.59ms, current all effects597.68ms median. Historical scenario names in the report sayv0.6 because the shared DSP is retained. These measurements do not establish real-device callback deadlines.
+
+Known limits: original KeyLab25 physical message inventory/relative configuration and Windows/tablet audio deadlines need hardware tests. MIDI-only events cannot bypass browser autoplay rules. Per-app output selection and Web MIDI depend on browser support/permissions; system output remains the truthful fallback. Smaller portrait screens are scaled and may need future readability/accessibility work. ARP/automation remain unimplemented. Actual hosted-domain browser QA is separately recorded in HOSTING.md/reports/live-verification.json; native deployment success is not a live-audio pass.
+
+## Earlier checkpoint evidence
+
 # Test results — v0.6 — 2026-11-03
 
 ## Complete suite

@@ -22,13 +22,13 @@
       "panic audio silence"
     ],
     "audio": {
-      "rms": 0.07079974309999501,
+      "rms": 0.06923390465338215,
       "finite": true
     },
     "routeAudio": {
-      "before": 0.05525375417073241,
+      "before": 0.055414697190211235,
       "muted": 0,
-      "restored": 0.05523979478472217
+      "restored": 0.05525782582803955
     },
     "panicAudio": {
       "rms": 0,
@@ -63,13 +63,13 @@
       "panic audio silence"
     ],
     "audio": {
-      "rms": 0.07194601365248576,
+      "rms": 0.06296104607619586,
       "finite": true
     },
     "routeAudio": {
-      "before": 0.05489187232474458,
+      "before": 0.05551166400995499,
       "muted": 0,
-      "restored": 0.055256145237749424
+      "restored": 0.05522274928761518
     },
     "panicAudio": {
       "rms": 0,

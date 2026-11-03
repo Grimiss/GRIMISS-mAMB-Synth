@@ -1,6 +1,10 @@
-# GRIMISS mAMB Synth — v0.6
+# GRIMISS mAMB Synth — v0.7
 
-[Open the playable instrument](https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site), sign in if prompted and press **START AUDIO**. The existing owner-private Site is reused; repository visibility and Site audience are unchanged. No Python, local server or installation is needed for online playing. **HTML BUILD** downloads the standalone source; **SAVE TO PC** exports the current patch.
+[Open the playable instrument](https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site), sign in if prompted and play a key. Audio activates on the first real key, touch or click; there is no Start Audio button. Browser autoplay policy can still require a gesture before MIDI-only performance. The owner-private Site and repository visibility are preserved. **HTML BUILD** downloads the standalone instrument.
+
+**SELECT PATCH** opens 90 original factory patches in nine banks plus the USER save/select/rename/delete section. MIDI SETTINGS contains input/output/channel selection and the interactive original KeyLab25 map; Learn profiles persist independently of patches. AUDIO SETTINGS exposes supported output selection and explicitly enabled input monitoring (initial gain zero). Each XY pad has an independent assignment editor; assignments save with USER patches. HIDE KEYBOARD expands the instrument controls and graphs while retaining audio and active notes.
+
+Both keyboard modes fit 1920×1080 and1600×900; scaled tablet browser layouts are tested separately from physical hardware. Factory and user patch serialization remains internal; permanent category/import/export controls were removed from the main surface. KeyLab25 physical CC verification remains pending; unknown controllers are deliberately unassigned. See [controller documentation](KEYLAB25_MIDI_MAP.md) and [standalone map](KEYLAB25_CONTROL_MAP.html).
 
 ## Instrument
 
@@ -31,7 +35,7 @@ At full source/intensity, virtual patch depths remain +12 semitones pitch/OSC2, 
 
 ## Source, build and tests
 
-`src/synth.js` retains the v0.5 voice rendering algorithm. `src/effects.js` and `src/instrument.js` form the stereo chain. `src/adapter.js` handles browser/MIDI input, `src/patches.js` handles persistence, and `src/interface.html/js` contain the interface. `node tools/build.cjs` assembles one self-contained HTML, keeps the canonical historical filename and writes `dist/GRIMISS_mAMB_v0_6.html` plus SHA-256 manifest. Fonts are embedded with complete Orbitron OFL and Open Sans Apache-2.0 notices.
+`src/synth.js` retains the v0.5 voice rendering algorithm. `src/effects.js` and `src/instrument.js` form the stereo chain. `src/adapter.js` handles browser/MIDI input, `src/patches.js` handles persistence, and `src/interface.html/js` contain the interface. `node tools/build.cjs` assembles one self-contained HTML, keeps the canonical historical filename and writes `dist/GRIMISS_mAMB_v0_7.html` plus SHA-256 manifest. Fonts are embedded with complete Orbitron OFL and Open Sans Apache-2.0 notices.
 
 Node18+ runs `npm run test:all`: original baseline, diagnostics, legacy DSP/ownership/modulation, effects measurements, combined eight-voice stress/performance, preserved browser regressions and new UI/persistence/stereo/geometry checks. Browser tests need Playwright and Chromium (`CHROMIUM_PATH` may select it); the managed environment uses its preinstalled tools. Servers are loopback-only and stopped after each test. `node tools/effects-plots.cjs` regenerates measured decay graphics. Test JSON, figures and screenshots are committed; see TEST_RESULTS.md.
 

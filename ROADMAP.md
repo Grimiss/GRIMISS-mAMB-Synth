@@ -1,3 +1,28 @@
+# Roadmap — v0.7
+
+## Completed v0.7
+
+- [x] Retained v0.6 synth/effects, eight-voice architecture and dry compatibility.
+- [x] Hardware-style cabinet/controls/keyboard with the existing GRIMISS palette and functional graphs.
+- [x] Single-screen fit with keyboard visible or hidden; expanded controls when hidden; OSC1 4+3 waveform buttons.
+- [x] SELECT PATCH:90 original factory patches,9 banks, continuously numbered; USER save/select/rename/delete.
+- [x] Independent XY assignment menus with opposite-axis exclusion and patch persistence.
+- [x] Automatic trusted-gesture audio activation; no mandatory Start Audio button.
+- [x] Original KeyLab25 model, shared MIDI registry/map/export artifacts, explicit relative Learn modes and persistent profiles.
+- [x] MIDI input/output/channel settings, controller ownership and opt-in real MIDI thru.
+- [x] Capability-aware audio output selection; explicit optional audio input with zero initial gain and PANIC recovery.
+- [x] Mouse wheel/Shift fine changes and draggable ADSR points backed by actual parameters.
+
+## Next priorities
+
+1. Complete actual authorised live-domain browser QA when the execution environment permits the Site hostname.
+2. Physical KeyLab25 factory-message verification and Windows/tablet real-time audio/touch soak tests; current tests are software only.
+3. Listening-led factory/effects refinement, smaller/portrait device readability and accessibility.
+4. Real-time callback deadline/dropout telemetry; additional spectral and switching measurements.
+5. Implement arpeggiator/sequencer and automation only with working DSP paths and regression evidence; both remain honestly marked unimplemented.
+
+## Previous checkpoint record
+
 # Roadmap — v0.6
 
 ## Completed this run
