@@ -172,3 +172,59 @@ html.fit-screen main .editor .voice .voice-badge{padding:2px;margin-bottom:3px}
 html.fit-screen main .editor .voice .select-control{margin-bottom:2px}
 html.fit-screen main .editor .voice .mode-pills{margin-bottom:1px}
 html.fit-screen main .editor .voice .voice-note{font-size:8px;line-height:1.2;margin-top:1px}
+/* Approved Prototype B rollout, plus approved brighter screens, distinct bezels and heavier labels. */
+html.fit-screen body{background:#080a09}
+html.fit-screen main{padding:0 28px 14px;background:#101413;border-radius:9px 9px 7px 7px;box-shadow:inset 0 2px 0 #505653,inset 0 -9px 0 #030504,0 14px 18px #0009;outline:1px solid #020504}
+html.fit-screen main::before,html.fit-screen main::after{width:24px;top:2px;bottom:0;border-radius:7px 1px 1px 4px;background:linear-gradient(90deg,#0c0e0d 0 3px,#393c3a 3px 4px,#252525 5px 20px,#121513 22px);box-shadow:inset 0 1px 0 #535753}
+html.fit-screen main::before{left:0}html.fit-screen main::after{right:0}
+html.fit-screen main .editor>.panel,html.fit-screen main>.performance-panel{background:#07120e;border-radius:2px;border-color:#55776d #29463c #192e26 #44645b;box-shadow:inset 0 1px 0 #0f2b22,inset 0 -2px 2px #010503}
+html.fit-screen main .editor>.panel h2{font-weight:700;color:#d4e4db;letter-spacing:.4px;background:linear-gradient(#12201b 0,#0b1511 35%,#07120e);border-bottom:1px solid #28574b;text-shadow:0 1px 1px #000}
+html.fit-screen main .editor>.panel>.inner{background:transparent;border-color:transparent;box-shadow:none}
+html.fit-screen main .knob .dial,html.fit-screen main .editor .panel .knob .dial{background:none;filter:none}
+html.fit-screen main .knob .physical-knob .needle{stroke:#e0eae4;stroke-width:1.5;filter:none}
+html.fit-screen main .knob .physical-knob .arc{filter:drop-shadow(0 0 .6px var(--accent));stroke-linecap:round}
+html.fit-screen main .fader-well{width:6px;left:27px;height:132px;border:1px solid #000;border-right-color:#10271b;border-radius:1px;background:#010403;box-shadow:inset 1px 0 2px #000}
+html.fit-screen main .fader-illumination{position:absolute;left:1px;bottom:0;width:2px;height:var(--fill);background:#3fe3c7;box-shadow:0 0 2px #2ae0bc55}
+html.fit-screen main .physical-slider{left:-12px;width:28px;height:14px;border:1px solid #46524b;border-top-color:#76837a;border-bottom:3px solid #0b110d;border-radius:1px;background:linear-gradient(#49564e 0 1px,#303e35 2px 9px,#222d26 10px);box-shadow:0 2px 1px #000a}
+html.fit-screen main button,html.fit-screen main .download-build{border:1px solid #49544e;border-right-color:#16211a;border-bottom:3px solid #020604;border-radius:1px;background:linear-gradient(#454e49 0 1px,#323635 2px,#242b27 80%);box-shadow:0 1px 1px #000b,inset 0 1px 0 #5b685d66;color:#c9d8ce;text-shadow:0 1px 1px #000}
+html.fit-screen main button:hover{border-top-color:#789a88;background:linear-gradient(#4b5e52 0 1px,#343f38 2px,#242d27 80%)}
+html.fit-screen main button.active,html.fit-screen main button[aria-pressed=true]{background:linear-gradient(#3a5146 0 1px,#293a32 2px,#1b2a22 80%);border-color:var(--accent,#54c4ad);border-bottom-color:#0a2418;box-shadow:0 1px 1px #000b,inset 0 0 3px #50efd533;color:#dcfff0}
+html.fit-screen main .wave-buttons button.active{background:#18332b;box-shadow:inset 0 0 4px #50efd530,0 0 2px #50efd533}
+html.fit-screen main select{background:linear-gradient(#252d28,#101713);border-color:#3d4d43 #0b130e #34453a;box-shadow:inset 0 1px 2px #0009}
+html.fit-screen main .scope,html.fit-screen main .xy-pad{background:#041d11;border:4px solid #17201b;border-top-color:#38443d;border-right-color:#222e26;border-bottom-color:#050a06;border-radius:1px;outline:1px solid #48524d;box-shadow:0 2px 1px #000b,inset 0 3px 6px #0009,inset 0 0 16px #1eb47825}
+html.fit-screen main .grid-line{stroke:#163b29;opacity:.85}
+html.fit-screen main .trace{filter:drop-shadow(0 0 2px var(--trace,var(--teal)));stroke-width:2.3}
+html.fit-screen main .scopepoint{filter:drop-shadow(0 0 1px var(--trace,var(--teal)))}
+html.fit-screen main .header{position:relative;height:70px;grid-template-columns:700px 480px minmax(0,1fr);grid-template-rows:40px 24px;gap:3px 8px;padding:0 6px;background:#101513;box-shadow:0 1px 0 #233a32;border-radius:0}
+html.fit-screen main .brand{position:relative;grid-column:1;grid-row:1;font-size:25px;font-weight:700;align-self:center;padding:0;letter-spacing:.15px;text-shadow:0 1px 2px #000;display:flex;align-items:center;gap:0}
+html.fit-screen main .brand span:not(.cabinet-vents){font-size:20px;font-weight:700;margin-left:12px}
+html.fit-screen main .brand small{font-size:9px;margin-left:8px}
+html.fit-screen main .cabinet-vents{display:block!important;position:absolute;right:8px;top:0;width:95px;height:30px;margin:0!important;background:repeating-linear-gradient(to bottom,#010503 0 3px,#38423c 3px 4px,#111914 4px 6px);border:1px solid #111a14;box-shadow:inset 0 1px 2px #000;border-radius:2px}
+html.fit-screen main .header-meta{grid-column:2;grid-row:1;display:block;align-self:center;margin:0}
+html.fit-screen main .patch-lcd-housing{display:grid;grid-template-columns:30px minmax(0,1fr) 30px;gap:8px;align-items:center;width:100%;height:36px}
+html.fit-screen main .patch-arrow{height:32px;min-height:32px;padding:0;font-size:11px;color:#50efd5}
+html.fit-screen main .patch-readout{height:34px;min-height:34px;padding:4px 9px;gap:9px;border:2px solid #1c2e23;border-top-color:#010604;border-right-color:#526557;background:#03130b;box-shadow:inset 0 3px 6px #0009,inset 0 0 9px #1eb47822,0 1px 0 #3b494055;border-radius:1px;overflow:hidden}
+html.fit-screen main .patch-readout>span{font-size:9px;white-space:nowrap}
+html.fit-screen main #hardwarePatchNumber{color:#50efd5;font:11px Orbitron,monospace;font-weight:600}
+html.fit-screen main #currentPatchName{font:11px Orbitron,monospace;font-weight:600;color:#73e9d0;max-width:210px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+html.fit-screen main #currentPatchCategory{font-size:7px;max-width:80px;overflow:hidden;white-space:nowrap;color:#90b39f}
+html.fit-screen main .header-meta .status{position:absolute;left:6px;bottom:3px;font-size:9px;max-width:680px}
+html.fit-screen main .toolbar{grid-column:3;grid-row:1;gap:5px;justify-content:flex-end;align-items:center;flex-wrap:nowrap}
+html.fit-screen main .toolbar button,html.fit-screen main .toolbar .download-build{height:34px;min-height:34px;max-width:105px;font-size:9px;font-weight:600;padding:3px 6px;text-align:center;white-space:normal;display:flex;align-items:center;justify-content:center}
+html.fit-screen main .subcontrols{grid-column:2/4;grid-row:2;gap:5px;justify-content:flex-end}
+html.fit-screen main .audio-pilot{width:8px;height:8px;min-width:8px;background:#183027;border:1px solid #3b5145;border-radius:50%;margin-left:5px}
+html.fit-screen main .audio-pilot.running{background:#a9fff0;border-color:#4ff1d4;box-shadow:0 0 5px #50efd5,0 0 7px #50efd577}
+html.fit-screen main>.performance-panel{background:#0c1410;border-top-color:#53675b;border-radius:2px 2px 5px 5px;box-shadow:0 -3px 0 #020604,0 -4px 0 #384b3f,inset 0 -7px 0 #010402}
+html.fit-screen main>.performance-panel h2{font-weight:700;color:#d4e4db;background:#101a14}
+html.fit-screen main>.performance-panel>.inner{background:linear-gradient(90deg,#101713,#060c08 185px,#101613 190px)}
+
+html.fit-screen main .trace{filter:drop-shadow(0 0 1.5px var(--trace,var(--teal))) drop-shadow(0 0 4px var(--trace,var(--teal)))}
+html.fit-screen main .patch-arrow svg{display:block;margin:auto}
+/* Screen-printed legends: consistent heavy weight throughout panels, controls and editors. */
+html.fit-screen body,html.fit-screen body :where(button,select,input,label,output,span,p,strong,em,a,h1,h2,h3,h4,th,td,small,div,text,tspan){font-weight:700!important}
+html.fit-screen main :is(label,button,.val,h1,h2,.voice-note,.routing-note){text-shadow:none}
+/* Reference-proportioned header: larger printed brand, grille, central LCD, then switches. */
+html.fit-screen main .header{grid-template-columns:850px 480px minmax(0,1fr)}
+html.fit-screen main .brand{font-size:31px}
+html.fit-screen main .brand span:not(.cabinet-vents){font-size:25px}
+html.fit-screen main .cabinet-vents{right:16px;width:125px}

@@ -1,4 +1,4 @@
-# Prototype B — awaiting visual approval
+# Prototype B — approved, with screen/type refinements
 
 Prototype A is rejected. This isolated study samples the newly supplied original JPEG directly and corrects the cabinet, flat cheek geometry, knob bodies/value arcs, dark switches, compact caps and recessed glass.
 
@@ -13,4 +13,4 @@ Prototype A is rejected. This isolated study samples the newly supplied original
 
 Reproduce from the repository root: `python prototypes/low-profile-b/sample-reference.py`, `node prototypes/low-profile-b/build.cjs`, `node prototypes/low-profile-b/verify.cjs`, `python prototypes/low-profile-b/compare.py`, `python prototypes/low-profile-b/review.py`.
 
-**STOP: no full instrument rollout until the user approves Prototype B.** Existing synthesizer files and bindings remain untouched. The interactive controls demonstrate visual value response only.
+**APPROVED by the user, with brighter screen glow, visible bezels and heavier lettering throughout.** Those refinements are applied in this prototype and the full rollout. This folder stays isolated; the approved full rollout retains the existing DSP and parameter bindings. The interactive controls demonstrate visual value response only.
