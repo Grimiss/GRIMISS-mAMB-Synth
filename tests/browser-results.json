@@ -1,0 +1,25 @@
+[
+  {
+    "route": "http",
+    "backend": "Audio running • AudioWorklet",
+    "audio": {
+      "rms": 0.06534347522924819,
+      "finite": true
+    },
+    "status": "PASS"
+  },
+  {
+    "route": "file",
+    "status": "BLOCKED",
+    "reason": "Managed Chromium policy blocks file URLs"
+  },
+  {
+    "route": "fallback",
+    "backend": "Audio running • ScriptProcessor fallback",
+    "audio": {
+      "rms": 0.06664737300819676,
+      "finite": true
+    },
+    "status": "PASS"
+  }
+]

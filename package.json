@@ -1,0 +1,13 @@
+{
+  "name": "grimiss-mamb-synth",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Standalone GRIMISS mAMB synthesizer stability checkpoint",
+  "scripts": {
+    "test": "node tests/audio.cjs",
+    "test:baseline": "node tests/baseline.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "diagnostics": "node tests/diagnostics.cjs"
+  },
+  "devDependencies": {"playwright": "^1.56.0"}
+}

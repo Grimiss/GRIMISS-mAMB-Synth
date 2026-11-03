@@ -1,0 +1,10 @@
+{
+  "sampleRate": 48000,
+  "durationSeconds": 1,
+  "note": 69,
+  "expectedHz": 440,
+  "positiveCrossingHz": 440,
+  "rms": 0.06387005100082065,
+  "peak": 0.08061345666646957,
+  "hardwareComparison": "Not performed; no reference audio acquired."
+}
