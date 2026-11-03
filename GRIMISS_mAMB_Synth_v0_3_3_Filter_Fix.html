@@ -34,16 +34,19 @@ function lfoValue(state,wave,rate){const t=state.phase;let value;
 for(const state of lfoStates){state.random=(Math.imul(state.random,1664525)+1013904223)>>>0;state.held=state.random/2147483648-1}
 const sources=['filterEnv','ampEnv','lfo1','lfo2','velocity','keyTrack','bend','wheel'];
 const destinations=['pitch','osc2','pw','cutoff','amp','noise'];
-const routes=Array.from({length:4},()=>({source:'lfo2',destination:'cutoff',amount:0,target:0,enabled:false}));
-let activeRoutes=[];
+const routes=Array.from({length:4},()=>({source:'lfo2',destination:'cutoff',target:0,enabled:false,taps:Array.from({length:sources.length*destinations.length},(_,index)=>({source:Math.floor(index/destinations.length),dest:index%destinations.length,amount:0,target:0,active:false}))}));
+const activeTaps=[];
 function controller(source){let c=controllers.get(source);if(!c){c={sustain:false,bend:0,wheel:0};controllers.set(source,c)}return c}
-function routed(v,fe,ae){const values=v.mods;values.fill(0);for(let i=0;i<activeRoutes.length;i++){const r=activeRoutes[i];let value=0;switch(r.source){case 'filterEnv':value=fe;break;case 'ampEnv':value=ae;break;case 'lfo1':value=mod.lfo;break;case 'lfo2':value=mod.lfo2;break;case 'velocity':value=v.velocity;break;case 'keyTrack':value=(v.note-60)/60;break;case 'bend':value=v.bend;break;case 'wheel':value=v.wheel;break}values[r.dest]+=value*r.amount}}
+function routed(v,fe,ae){const values=v.mods;values.fill(0);for(let i=0;i<activeTaps.length;i++){const tap=activeTaps[i];let value=0;switch(tap.source){case 0:value=fe;break;case 1:value=ae;break;case 2:value=mod.lfo;break;case 3:value=mod.lfo2;break;case 4:value=v.velocity;break;case 5:value=(v.note-60)/60;break;case 6:value=v.bend;break;case 7:value=v.wheel;break}values[tap.dest]+=value*tap.amount}}
+
 function control(){
  if(moving.length)cacheDirty=true;for(let i=moving.length-1;i>=0;i--){const key=moving[i];params[key]+=(target[key]-params[key])*controlAlpha;if(Math.abs(target[key]-params[key])<1e-7){params[key]=target[key];moving[i]=moving[moving.length-1];moving.pop()}}
  if(cacheDirty){const p=params;mod.aa=.005+(p.aa/100)**2*5;mod.ad=.005+(p.ad/100)**2*5;mod.ar=.005+(p.ar/100)**2*5;mod.fa=.005+(p.fa/100)**2*5;mod.fd=.005+(p.fd/100)**2*5;mod.fr=.005+(p.fr/100)**2*5;
  mod.rate1=.025+(p.lfo/100)**2*8;mod.rate2=.005+(p.lfo2Rate/100)**2*8;mod.ratio2=2**(p.oct2+p.semi2/12+p.detune/1200);mod.baseCut=50*320**(p.cutoff/100);mod.drive=1+p.drive/10;mod.driveNorm=1/Math.tanh(mod.drive);mod.k=Math.max(.35,2-.018*p.res);cacheDirty=false;}
- for(let i=0;i<routes.length;i++){const r=routes[i];r.amount+=(r.target-r.amount)*controlAlpha;if(Math.abs(r.target-r.amount)<1e-8)r.amount=r.target}
- const hadRoutes=activeRoutes.length;for(let i=activeRoutes.length-1;i>=0;i--)if(!activeRoutes[i].enabled&&activeRoutes[i].amount===0){activeRoutes[i]=activeRoutes[activeRoutes.length-1];activeRoutes.pop()}if(hadRoutes&&!activeRoutes.length)for(const v of voices)v.mods.fill(0);
+ // Sparse preallocated taps preserve old paths while rewiring, including rapid edits.
+ const hadTaps=activeTaps.length;for(let i=activeTaps.length-1;i>=0;i--){const tap=activeTaps[i];tap.amount+=(tap.target-tap.amount)*controlAlpha;if(Math.abs(tap.target-tap.amount)<1e-8)tap.amount=tap.target;if(tap.target===0&&tap.amount===0){tap.active=false;activeTaps[i]=activeTaps[activeTaps.length-1];activeTaps.pop()}}
+ if(hadTaps&&!activeTaps.length)for(const v of voices)v.mods.fill(0);
+
 }
 function random(){seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296}
 function polyblep(t,dt){if(t<dt){t/=dt;return t+t-t*t-1}if(t>1-dt){t=(t-1)/dt;return t*t+t+t+1}return 0}
@@ -60,7 +63,7 @@ function mixedOsc(m,phase,inc,width,hz){if(!m.left){const w=waveNames[m.index];r
 function sample(v,sr,p,mod){
 const fe=updateEnv(v.fil,dt,mod.fa,mod.fd,p.fs/100,mod.fr),ae=updateEnv(v.amp,dt,mod.aa,mod.ad,p.as/100,mod.ar);
 v.bend+=(v.owner.controller.bend-v.bend)*alpha;v.wheel+=(v.owner.controller.wheel-v.wheel)*alpha;
-if(activeRoutes.length)routed(v,fe,ae);const rm=v.mods;
+if(activeTaps.length)routed(v,fe,ae);const rm=v.mods;
 const lfo=mod.lfo,vib=p.vib*.00015*lfo,drift=p.drift*.00006*Math.sin(TWO*(clock*v.driftRate+v.seed)),pitch=2**((vib+drift+p.bend*2+v.bend*2+v.stackDetune/100+rm[0]*12)/12),f1=v.hz*pitch,f2=f1*mod.ratio2*2**rm[1],inc1=Math.min(.49,f1/sr),inc2=Math.min(.49,f2/sr);
 const wrapped=v.p1+inc1>=1;v.p1=(v.p1+inc1)%1;if(p.sync&&wrapped)v.p2=0;v.p2=(v.p2+inc2)%1;const width=Math.max(.08,Math.min(.92,p.pw/100+p.pwm/100*lfo+rm[2]*.4));let x1=mixedOsc(mix1,v.p1,inc1,width,f1);
 const modPhase=(v.p2+(p.cross/100)*.24*x1+1)%1;
@@ -123,10 +126,11 @@ function sourceOff(source,disconnect=false,hard=false){
 }
 function panic(){for(const v of voices)v.stealFade=1;owners.clear();controllers.clear();group=-1}
 function setRoute(index,value){if(!Number.isInteger(index)||index<0||index>=4)return;const r=routes[index];if(!value||!sources.includes(value.source)||!destinations.includes(value.destination)||!Number.isFinite(value.amount))return;
- r.source=value.source;r.destination=value.destination;r.dest=destinations.indexOf(value.destination);r.enabled=!!value.enabled;r.target=r.enabled?Math.max(-1,Math.min(1,value.amount)):0;
- // Disabled routes fade their intensity to zero instead of dropping it in one sample.
- activeRoutes=routes.filter(x=>x.enabled||Math.abs(x.amount)>1e-8);
+ r.source=value.source;r.destination=value.destination;r.enabled=!!value.enabled;r.target=r.enabled?Math.max(-1,Math.min(1,value.amount)):0;
+ for(let i=0;i<r.taps.length;i++)r.taps[i].target=0;
+ const tap=r.taps[sources.indexOf(value.source)*destinations.length+destinations.indexOf(value.destination)];tap.target=r.target;if(tap.target!==0&&!tap.active){tap.active=true;activeTaps.push(tap)}
 }
+
 function message(m){switch(m.type){
  case 'params':{const previousMode=target.voiceMode;for(const [k,value] of Object.entries(m.value||{})){if(!(k in target))continue;if(typeof target[k]==='number'){if(typeof value==='number'&&Number.isFinite(value)){target[k]=Math.max(-1000,Math.min(1000,value));if(!moving.includes(k))moving.push(k)}}else if(typeof value===typeof target[k]){target[k]=value;params[k]=value;if(k==='wave1')changeMix(mix1,value);if(k==='wave2')changeMix(mix2,value);if(k==='filter')changeMix(filterMix,value)}}if(previousMode!==target.voiceMode){for(const v of voices)v.stealFade=1;if(target.voiceMode==='poly'){rebuilding=true;for(const o of owners.values())if(o.down||o.latched||o.sustained)newVoices(o);rebuilding=false;cleanup()}else restorePriority()}break;}
  case 'on':noteOn(m.note,m.velocity,m.source);break;case 'off':noteOff(m.note,m.source);break;
@@ -152,7 +156,7 @@ function render(out){
  // Remove completed owners outside the sample loop; retains last-note priority keys.
  owners.forEach(pruneOwner);
 }
-function snapshot(){const activeNotes=new Set(),held=new Set(),pressed=new Set();for(const v of voices)if(v.stealFade===undefined&&v.amp.stage!=='release'&&v.amp.stage!=='off')activeNotes.add(v.note);for(const o of owners.values()){if(o.latched&&ownerHasVoices(o))held.add(o.note);if(o.down)pressed.add(o.note)}return {voices:voices.map(v=>({note:v.note,source:v.owner.source,stage:v.amp.stage,value:v.amp.value,filterEnvelope:v.fil.value,bend:v.bend,wheel:v.wheel,stealing:v.stealFade!==undefined})),activeNotes:[...activeNotes],held:[...held],pressed:[...pressed],owners:owners.size,clock,lfo1:lfoStates[0].value,lfo2:lfoStates[1].value,lfoPhases:lfoStates.map(s=>s.phase),routes:routes.map(r=>({...r}))}}
+function snapshot(){const activeNotes=new Set(),held=new Set(),pressed=new Set();for(const v of voices)if(v.stealFade===undefined&&v.amp.stage!=='release'&&v.amp.stage!=='off')activeNotes.add(v.note);for(const o of owners.values()){if(o.latched&&ownerHasVoices(o))held.add(o.note);if(o.down)pressed.add(o.note)}return {voices:voices.map(v=>({note:v.note,source:v.owner.source,stage:v.amp.stage,value:v.amp.value,filterEnvelope:v.fil.value,bend:v.bend,wheel:v.wheel,stealing:v.stealFade!==undefined})),activeNotes:[...activeNotes],held:[...held],pressed:[...pressed],owners:owners.size,clock,lfo1:lfoStates[0].value,lfo2:lfoStates[1].value,lfoPhases:lfoStates.map(s=>s.phase),routes:routes.map(r=>({source:r.source,destination:r.destination,enabled:r.enabled,target:r.target,amount:r.taps[sources.indexOf(r.source)*destinations.length+destinations.indexOf(r.destination)].amount}))}}
 return {render,message,snapshot};
 }
 </script><script>

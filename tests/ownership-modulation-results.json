@@ -56,6 +56,10 @@
     "status": "PASS"
   },
   {
+    "name": "rewiring a live route fades its old path and remains stable under rapid edits",
+    "status": "PASS"
+  },
+  {
     "name": "controller pitch bend is per owner and panic clears sustain/controller state",
     "status": "PASS"
   }

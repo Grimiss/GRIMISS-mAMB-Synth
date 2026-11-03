@@ -9,13 +9,13 @@
 - [x] Last-note priority including pedal-up/disconnect, and live POLY/MONO/UNISON changes.
 - [x] Eight-millisecond oscillator/filter switching crossfades; both filter stages kept warm.
 - [x] Independent LFO2 and selectable sine/triangle/saw/square/sample-and-hold on both LFOs; very slow free-running rates.
-- [x] Four signed/enableable virtual patch routes, eight sources and six DSP destinations, plus audible browser tests.
+- [x] Four signed/enableable virtual patch routes, eight sources and six DSP destinations, audible browser tests and smooth source/destination reassignment.
 - [x] Tuning, envelope timing, filter slopes, harmonic spectra, primitive aliasing, switching-discontinuity and 120-second modulated stress measurements.
 - [x] Byte-identical standalone distribution and build manifest; all five original presets preserved with deterministic reset.
 
 ## Next priorities
 
-1. Crossfade route source/destination reassignment; expand click tests across notes/phases, master/drive/PWM changes and rapid preset changes. Retain tested control smoothing and audio quality.
+1. Expand click tests across notes/phases, master/drive/PWM edits, rapid preset changes and combined route rewiring. Retain tested control smoothing, sparse path crossfades and audio quality.
 2. Benchmark real AudioWorklet deadlines/CPU on Windows and supported physical tablets; run longer real-time soak, real MIDI hot-plug and physical multi-touch tests. Validate local-file support separately.
 3. Improve alias suppression for triangle, hard sync and cross modulation; measure whole-chain aliasing, waveform loudness and high-note behaviour before claiming broad anti-alias quality.
 4. Implement stereo effects in stages: chorus/ensemble, delay, phaser and two-band EQ; preserve tails and add bypass/parameter regression measurements.

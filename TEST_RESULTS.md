@@ -2,7 +2,7 @@
 
 ## Complete regression run
 
-`npm run test:all`: PASS. Original baseline and A4 diagnostics pass; **10/10 legacy DSP groups**, **15/15 ownership/modulation groups**, all measurement assertions, paired performance/sound checks and both available browser backends pass. `git diff --check` passes. Tests read the exact inline DSP used by AudioWorklet and fallback.
+`npm run test:all`: PASS. Original baseline and A4 diagnostics pass; **10/10 legacy DSP groups**, **16/16 ownership/modulation groups**, all measurement assertions, paired performance/sound checks and both available browser backends pass. `git diff --check` passes. Tests read the exact inline DSP used by AudioWorklet and fallback.
 
 Before edits, all four requested v0.4 commands passed against exact commit `a0131ea527fada670ad9bfc13b2aa5336e9480d3`. Results are preserved in tests/v04-revalidation.json. Original v0.3.3 baseline now uses seeded randomness and finite/nonzero/bounded assertions so its measurements are reproducible.
 
@@ -12,10 +12,10 @@ Linux Node v24.19.0, eight voices, 48 kHz, 128-frame blocks, two rendered second
 
 | Version | Median render time | Render time / audio duration |
 | --- | ---: | ---: |
-| v0.4 fixture | 534.3 ms | 0.267 |
-| v0.5 | 290.6 ms | 0.145 |
+| v0.4 fixture | 531.8 ms | 0.266 |
+| v0.5 | 295.9 ms | 0.148 |
 
-**45.6% less render time** in this paired desktop benchmark. The unmodulated eight-note comparison's maximum sample difference was **0** across 24,000 frames. This verifies that controlled patch only, not every preset or modulation setting. It does not establish physical tablet performance or browser deadline safety. Raw trials: tests/performance-results.json. Initial v0.4 CPU sampling shows sample/render and GC; summary: tests/profile-summary.json.
+**44.4% less render time** in this paired desktop benchmark. The unmodulated eight-note comparison's maximum sample difference was **0** across 24,000 frames. This verifies that controlled patch only, not every preset or modulation setting. It does not establish physical tablet performance or browser deadline safety. Raw trials: tests/performance-results.json. Initial v0.4 CPU sampling shows sample/render and GC; summary: tests/profile-summary.json.
 
 ## Audio measurements
 
@@ -34,6 +34,8 @@ Linux Chromium localhost AudioWorklet and forced ScriptProcessor fallback pass 1
 
 The UI amp route reduced measured RMS to zero on both backends, and disabling it restored nonzero audio. Panic RMS is zero. No page JavaScript errors. File URLs remain BLOCKED by managed Chromium administrator policy. Raw results: tests/browser-results.json. MIDI and pointer tests inject events into actual handlers; no physical device was used.
 
+Additional route regression: live source/destination changes retain the old path while fading in the new path; rapid edits stay finite/bounded and return to the expected gain. All connection storage is preallocated, with sparse active-path processing.
+
 ## Remaining limits
 
-Windows, physical tablets, hardware MIDI/touch, long real-time soak and file-URL compatibility remain unverified. Route source/destination reassignment at nonzero depth is not crossfaded; disable or lower intensity before rewiring. Extreme event bursts may truncate older steal tails at the 32-voice total bound. No tempo sync, stereo effects, arpeggiator, 64-wave digital bank or patch save/import/export yet. No reference recordings obtained or analysed; all hardware-emulation claims remain unverified. The original three digital spectra remain original approximations. No Sound Factory changes.
+Windows, physical tablets, hardware MIDI/touch, long real-time soak and file-URL compatibility remain unverified. Extreme event bursts may truncate older steal tails at the 32-voice total bound. No tempo sync, stereo effects, arpeggiator, 64-wave digital bank or patch save/import/export yet. No reference recordings obtained or analysed; all hardware-emulation claims remain unverified. The original three digital spectra remain original approximations. No Sound Factory changes.

@@ -27,13 +27,13 @@ At 100% intensity and a source value of 1:
 | Amp level | +1 times base gain; combined gain clamped to 0–2 |
 | Noise level | +50 control units, combined level clamped to 0–100 |
 
-Four routes add at each destination. Intensities and enable/bypass changes slew over approximately 15 ms. Existing five presets reset new controls to defaults and disable routes, preserving their original parameter overrides. Source/destination reassignment at nonzero depth is not yet crossfaded: lower intensity or disable before rewiring if avoiding a transient is critical.
+Four routes add at each destination. Intensities, enable/bypass and source/destination changes slew over approximately 15 ms. Preallocated sparse connections retain and fade old paths during rapid rewiring. Existing five presets reset new controls to defaults and disable routes, preserving their original parameter overrides.
 
 ## Build and test
 
 Node 18+. `npm run build` copies the canonical HTML into `dist/` byte-for-byte and writes its SHA-256 manifest. The original filename remains canonical to preserve repository continuity.
 
-`npm run test:all` runs the original baseline, diagnostics, 10 legacy audio groups, 15 ownership/modulation groups, tuning/filter/spectrum/click/envelope/stress measurements, paired performance benchmark and browser tests. Audio tests have no third-party dependencies. Browser tests use Playwright (`npm install`) and Chromium (`CHROMIUM_PATH` may select it); the managed environment can use its preinstalled Playwright. Browser tests create a temporary loopback server and exit afterward. `tests/fixtures/v0.4.html` preserves the exact starting implementation. See TEST_RESULTS.md for evidence and limitations.
+`npm run test:all` runs the original baseline, diagnostics, 10 legacy audio groups, 16 ownership/modulation groups, tuning/filter/spectrum/click/envelope/stress measurements, paired performance benchmark and browser tests. Audio tests have no third-party dependencies. Browser tests use Playwright (`npm install`) and Chromium (`CHROMIUM_PATH` may select it); the managed environment can use its preinstalled Playwright. Browser tests create a temporary loopback server and exit afterward. `tests/fixtures/v0.4.html` preserves the exact starting implementation. See TEST_RESULTS.md for evidence and limitations.
 
 For CPU profiling: `mkdir -p work`, then `node --cpu-prof --cpu-prof-dir=work tests/performance.cjs tests/fixtures/v0.4.html`. Performance timings are desktop Node measurements, not guarantees for real-time browser deadlines or physical tablets.
 
