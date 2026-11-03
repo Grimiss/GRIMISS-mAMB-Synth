@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "tests": [
+    "new physical knob SVG bodies and old parameter contracts",
+    "pitch controller reaches voice and spring returns",
+    "mod wheel reaches voice",
+    "octave change releases owned notes",
+    "transposed typing note and highlight match",
+    "note-off releases transposed gate",
+    "MIDI pitch unaffected by local octave",
+    "hidden keyboard preserves MIDI",
+    "PANIC resets wheel state"
+  ],
+  "physicalMidiHardwareTested": false,
+  "consoleErrors": []
+}

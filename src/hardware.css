@@ -39,3 +39,132 @@ html.fit-screen main>.performance-panel .white{background:linear-gradient(90deg,
 html.fit-screen main>.performance-panel .black{background:linear-gradient(90deg,#030704,#1e2922 12%,#0d1710 24%,#101c13 74%,#38463a 87%,#020603);border:1px solid #030704;border-top:2px solid #5c685d;border-bottom:5px solid #020503;border-radius:0 0 3px 3px;box-shadow:2px 5px 3px #000c,inset 0 -3px 0 #39463b;color:#8ea092}
 html.fit-screen main>.performance-panel .white.on{background:linear-gradient(90deg,#1b7964,#8bffe2 12%,#50efd5 85%,#258b70);border-bottom-color:#1d775b;box-shadow:inset 0 4px 7px #03201499,0 0 7px #50efd533}
 html.fit-screen main>.performance-panel .black.on{background:linear-gradient(90deg,#104a36,#2c9b72,#0c3d2b);border-bottom-color:#092818;box-shadow:0 2px 3px #000,0 0 5px #50efd566}
+/* Corrective reconstruction: actual machined control geometry and integrated keybed. */
+html.fit-screen main{padding:0 18px 14px;border-radius:20px;background:linear-gradient(90deg,#4f5854,#161e1b 12px,#101714 24px,#151f1b 97%,#5b625d);box-shadow:inset 0 3px 0 #a8b1a9,inset 0 -12px 0 #020504,inset 10px 0 0 #252e29,inset -10px 0 0 #252e29,0 15px 35px #000}
+html.fit-screen main::before,html.fit-screen main::after{width:13px;top:5px;bottom:10px;border-radius:12px;background:linear-gradient(90deg,#080c0a,#58625c 35%,#222e27 70%,#030705)}
+html.fit-screen main .header{height:70px;padding:3px 6px;grid-template-rows:31px 27px;background:linear-gradient(#28322d,#0b1410 20%,#0e1913 85%,#5c7263 95%,#020604);margin-bottom:0}
+html.fit-screen main .instrument,html.fit-screen main .editor{height:780px}
+html.fit-screen main .editor{grid-template-rows:218px 188px 168px 188px;gap:6px}
+html.fit-screen main .editor>.panel{border-radius:3px;border-color:#5c8772 #233c2d #0a1810;background:linear-gradient(115deg,#202d25,#0b160f);box-shadow:inset 0 2px 1px #9bb9a333,inset 0 -4px 6px #0008,0 3px 4px #0009}
+html.fit-screen main .editor>.panel h2{height:26px;font-size:12px;padding:0 12px;background:transparent;border-bottom:1px solid #426e57;box-shadow:none;letter-spacing:.7px}
+html.fit-screen main .editor>.panel>.inner{margin:4px;border:0;background:transparent;box-shadow:none;padding:6px;height:calc(100% - 36px)}
+html.fit-screen main .knob .dial,html.fit-screen main .editor .panel .knob .dial{width:48px;height:58px;background:none;filter:drop-shadow(1px 3px 2px #0008);overflow:visible}
+html.fit-screen main .knob .physical-knob circle{stroke-width:revert}
+html.fit-screen main .knob .physical-knob circle:nth-of-type(1){fill:none;stroke:#05120b}
+html.fit-screen main .knob .physical-knob .arc{stroke:var(--accent);fill:none;stroke-width:2;filter:drop-shadow(0 0 1px var(--accent))}
+html.fit-screen main .knob .physical-knob .needle{stroke:#ecfff2;stroke-width:2.4}
+html.fit-screen main .knob .val,html.fit-screen main .editor .panel .knob .val{top:59px;font-size:11px}
+html.fit-screen main .knob>label,html.fit-screen main .editor .panel .knob>label{margin-top:17px;font-size:9px;line-height:1.1}
+html.fit-screen main .editor .voice-badge{padding:4px;margin-bottom:4px;font-size:9px}
+html.fit-screen main .editor .voice .select-control{margin-bottom:4px}
+html.fit-screen main .editor .voice .mode-pills{margin-bottom:3px}
+html.fit-screen main .editor .voice .knob-row{margin-top:2px}
+html.fit-screen main .editor .voice-note{margin-top:4px;font-size:7px}
+html.fit-screen main .editor .osc-row .knob .dial{width:38px;height:46px}
+html.fit-screen main .editor .osc-row .knob .val{top:47px;font-size:10px}
+html.fit-screen main .editor .osc-row .knob>label{margin-top:15px;font-size:8px}
+html.fit-screen main .editor .osc-row .scope{height:48px}
+html.fit-screen main .editor .osc-row{min-height:0;height:81px}
+html.fit-screen main .editor .osc-row .osc-knob-cell{padding-top:2px}
+html.fit-screen main .editor .osc-row .wave-buttons{grid-auto-rows:24px}
+html.fit-screen main .editor .osc-row .wave-buttons button{height:24px;min-height:24px}
+html.fit-screen main .editor .lfo-main{margin-bottom:0;grid-template-columns:32px 1fr;gap:5px}
+html.fit-screen main .editor .lfo-main .scope{height:72px}
+html.fit-screen main .editor .lfo-main .wave-buttons button{height:18px;min-height:18px}
+html.fit-screen main .editor .lfo-one .knob .dial,html.fit-screen main .editor .lfo-two .knob .dial{width:41px;height:50px}
+html.fit-screen main .editor .lfo-one .knob .val,html.fit-screen main .editor .lfo-two .knob .val{top:50px}
+html.fit-screen main .editor .lfo-one .knob>label,html.fit-screen main .editor .lfo-two .knob>label{margin-top:16px;font-size:8px}
+html.fit-screen main .editor .filter-envelope>.inner,html.fit-screen main .editor .amp-envelope>.inner{display:grid;grid-template-columns:58% 42%;align-items:center;gap:0}
+html.fit-screen main .editor .filter-envelope .envelope-scope,html.fit-screen main .editor .amp-envelope .envelope-scope{grid-column:2;grid-row:1;height:105px;margin:0;width:100%}
+html.fit-screen main .editor .env-knobs{grid-column:1;grid-row:1;padding:0 4px;gap:1px}
+html.fit-screen main .editor .env-knobs .knob .dial{width:53px;height:64px}
+html.fit-screen main .editor .env-knobs .knob .val{top:65px}
+html.fit-screen main .editor .filter-scope{height:138px}
+html.fit-screen main .editor .filter-layout{grid-template-columns:65px minmax(100px,.85fr) minmax(180px,1.4fr);gap:6px}
+html.fit-screen main .editor .filter-knobs{gap:6px 3px;padding-top:0}
+html.fit-screen main .editor .filter-knobs .knob .dial{width:39px;height:47px}
+html.fit-screen main .editor .filter-knobs .knob .val{top:47px;font-size:10px}
+html.fit-screen main .editor .filter-knobs .knob>label{margin-top:14px;font-size:8px}
+html.fit-screen main .editor .filter-types{gap:4px}
+html.fit-screen main .editor .filter-types button{min-height:20px;height:20px}
+html.fit-screen main .editor .eq-panel .scope{height:48px;margin-bottom:6px}
+html.fit-screen main .editor .eq-panel .knob-row{margin-top:0}
+html.fit-screen main .editor .amp-panel .knob-row{margin-top:10px}
+html.fit-screen main .editor .mod-panel .knob-row{margin-top:4px}
+html.fit-screen main .editor .mod-panel .knob .dial{width:37px;height:45px}
+html.fit-screen main .editor .mod-panel .knob .val{top:45px;font-size:10px}
+html.fit-screen main .editor .mod-panel .knob>label{margin-top:14px;font-size:8px}
+html.fit-screen main .editor .routing .scope{height:42px;margin-bottom:3px}
+html.fit-screen main .editor .route{min-height:49px;padding:2px}
+html.fit-screen main .editor .route .knob .dial{width:30px;height:36px}
+html.fit-screen main .editor .route .knob .val{top:35px;font-size:8px}
+html.fit-screen main .editor .route .knob>label{margin-top:9px;font-size:6px}
+html.fit-screen main .editor .routing .routing-note{font-size:6px;margin-top:1px}
+html.fit-screen main .editor .delay-panel .knob-row{margin:0}
+html.fit-screen main .editor .delay-panel .knob .dial{width:31px;height:38px}
+html.fit-screen main .editor .delay-panel .knob .val{top:38px;font-size:9px}
+html.fit-screen main .editor .delay-panel .knob>label{margin-top:12px;font-size:7px}
+html.fit-screen main .editor .reverb-panel>.inner{grid-template-columns:130px minmax(0,1fr);padding:5px}
+html.fit-screen main .editor .reverb-knobs{grid-auto-rows:68px;gap:0 4px}
+html.fit-screen main .editor .reverb-knobs .knob .dial{width:38px;height:46px}
+html.fit-screen main .editor .reverb-knobs .knob .val{top:46px;font-size:10px}
+html.fit-screen main .editor .reverb-knobs .knob>label{margin-top:14px;font-size:8px}
+html.fit-screen main .editor .xy-one .xy-pad{height:138px;max-height:138px}
+html.fit-screen main .editor .xy-two .xy-pad{height:113px;max-height:113px}
+html.fit-screen main .scope,html.fit-screen main .xy-pad{border:4px solid #111d15;outline:1px solid #3f5b48;box-shadow:inset 0 5px 9px #000b,0 2px 1px #000;filter:none}
+html.fit-screen main .faders{height:100%;padding-bottom:0;align-items:flex-start}
+html.fit-screen main .fader{height:166px;width:60px;padding-top:0}
+html.fit-screen main .fader-well{position:absolute;top:4px;height:132px;left:25px;width:10px;pointer-events:none;background:#010503;border:2px solid #1f3426;border-right-color:#637a68;border-radius:5px;box-shadow:inset 2px 0 4px #000,1px 1px 0 #8a9b8533}
+html.fit-screen main .fader-ruler{position:absolute;left:-11px;top:0;bottom:0;width:5px;background:repeating-linear-gradient(to bottom,#759480 0 1px,transparent 1px 10px)}
+html.fit-screen main .physical-slider{position:absolute;left:-17px;width:40px;height:22px;top:calc(100% - var(--fill));transform:translateY(-50%);border:1px solid #80968a;border-bottom:5px solid #132019;border-radius:2px;background:linear-gradient(#919e94,#455b4c 15%,#253c2d 43%,#102219 50%,#8aab97 55%,#2b4634 80%,#0b150e);box-shadow:0 5px 4px #000c,inset 0 1px 0 #c3d0bf55}
+html.fit-screen main .physical-slider i{display:block;border-top:1px solid #d3eee1;margin-top:8px}
+html.fit-screen main .fader input{position:absolute;top:0;left:0;width:60px;height:139px;opacity:0;margin:0;z-index:2}
+html.fit-screen main .fader .val{margin-top:143px;font-size:11px}
+html.fit-screen main .fader label{font-size:9px;margin-top:-7px}
+html.fit-screen main button{background:linear-gradient(#637367 0,#344c3c 9%,#1b3023 55%,#112017 85%,#030806 86%);border:1px solid #7b9180;border-right-color:#172c1f;border-bottom:3px solid #030905;box-shadow:0 3px 3px #000b,inset 0 1px 0 #a2b7a733}
+html.fit-screen main button.active,html.fit-screen main button[aria-pressed=true]{background:linear-gradient(#68e3c2,#167d63 13%,#0c4a3b 80%,#062519);box-shadow:0 2px 3px #000,0 0 6px #50efd54a,inset 0 1px 1px #c6fff0;border-color:var(--accent,var(--teal));border-bottom-color:#082b20}
+html.fit-screen main>.performance-panel{height:210px;margin-top:7px;background:linear-gradient(#5a7262,#111f17 5%,#08140c 85%,#030705);border-top:3px solid #849b85;border-radius:3px 3px 12px 12px;box-shadow:0 -5px 0 #030806,0 -6px 0 #4f6757,inset 0 -8px 0 #010402}
+html.fit-screen main>.performance-panel h2{height:23px}
+html.fit-screen main>.performance-panel>.inner{position:relative;display:grid;grid-template-columns:190px minmax(0,1fr);grid-template-rows:1fr 9px;gap:2px 15px;height:171px;padding:7px 8px;margin:4px 8px;border:0;background:linear-gradient(90deg,#101f16,#020805 185px,#101b13 190px);box-shadow:inset 0 3px 6px #000}
+html.fit-screen main>.performance-panel .keyboard{grid-column:2;grid-row:1;height:143px;min-height:143px;max-height:143px;width:100%;margin:0;align-self:start;border-top:5px solid #020704}
+html.fit-screen main>.performance-panel .keyboard-note{grid-column:2;grid-row:2;margin:0;font-size:7px;line-height:1}
+html.fit-screen main>.performance-panel .white{background:linear-gradient(90deg,#9ca795,#e1e2d4 5%,#f4f1e4 18%,#e8e8d9 90%,#a6af9c);border-bottom:9px solid #b1b49e;border-radius:1px 1px 5px 5px;box-shadow:inset 0 8px 8px #0006,inset 0 -2px 0 #fff9dd,2px 3px 2px #000b;color:#606c5b}
+html.fit-screen main>.performance-panel .black{height:66%;background:linear-gradient(90deg,#020503,#3c453d 13%,#0d140f 20%,#101a12 80%,#5e695c 89%,#020502);border-bottom:9px solid #030603;box-shadow:3px 8px 3px #000b,inset 0 -3px 0 #45503f;border-radius:0 0 4px 4px}
+.performance-wheels{grid-column:1;grid-row:1/3;display:grid;grid-template-columns:50px 50px 70px;gap:6px;align-items:center;color:#c1d3c4}.wheel-unit{height:149px;text-align:center}.wheel-unit label,.octave-unit>span{font-size:10px;letter-spacing:1px}.wheel-slot{position:relative;height:126px;width:37px;margin:6px auto;background:#010503;border:3px solid #25392a;border-right-color:#5c6f5b;border-radius:6px;box-shadow:inset 3px 0 6px #000}.wheel-drum{position:absolute;inset:4px 3px;pointer-events:none;border-radius:8px;background:repeating-linear-gradient(to bottom,transparent 0 2px,#90a58c 2px 3px,#182c1d 3px 4px),linear-gradient(#030704,#263d2b 20%,#698362 48%,#1e3622 75%,#020503);box-shadow:inset 2px 0 3px #000,inset -2px 0 3px #000;transform:translateY(calc(var(--wheel,0)*-3px))}.wheel-slot input{position:absolute;inset:0;width:100%;height:100%;opacity:0;writing-mode:vertical-lr;direction:rtl;cursor:ns-resize;z-index:2;touch-action:none}.octave-unit{text-align:center}.octave-unit output{display:block;color:#50efd5;text-shadow:0 0 4px #50efd5;margin:12px 0}.octave-unit>div{display:flex;gap:4px}.octave-unit button{width:30px;min-width:0;font-size:17px!important;padding:0!important}
+html.fit-screen.keyboard-hidden main .instrument,html.fit-screen.keyboard-hidden main .editor{height:986px}
+html.fit-screen.keyboard-hidden main .editor{grid-template-rows:260px 244px 212px 252px}
+html.fit-screen.keyboard-hidden main>.performance-panel{height:0;margin:0;border-width:0}
+html.fit-screen.keyboard-hidden main .editor .filter-envelope .envelope-scope,html.fit-screen.keyboard-hidden main .editor .amp-envelope .envelope-scope{height:145px}
+html.fit-screen.keyboard-hidden main .editor .panel .knob .dial{width:55px;height:67px}
+html.fit-screen.keyboard-hidden main .editor .panel .knob .val{top:68px}
+html.fit-screen.keyboard-hidden main .editor .osc-row .knob .dial{width:43px;height:52px}
+html.fit-screen.keyboard-hidden main .editor .osc-row .knob .val{top:53px}
+html.fit-screen.keyboard-hidden main .editor .route .knob .dial{width:33px;height:40px}
+html.fit-screen.keyboard-hidden main .editor .route .knob .val{top:40px}
+html.fit-screen.keyboard-hidden main .editor .reverb-knobs{grid-auto-rows:90px}
+.wheel-drum{background:linear-gradient(to bottom,#020502,transparent 25%,#9eac8b55 48%,transparent 75%,#010401),repeating-linear-gradient(to bottom,#0c190e 0 2px,#6b7e60 2px 3px,#142b18 3px 5px);box-shadow:inset 4px 0 4px #000,inset -4px 0 4px #000;border-left:1px solid #84917c;border-right:1px solid #283d29}.wheel-drum::after{content:"";position:absolute;left:3px;right:3px;top:50%;border-top:2px solid #a3b29b;box-shadow:0 1px 1px #000}
+html.fit-screen main .editor .delay-panel>.inner{position:relative;padding-top:3px}
+html.fit-screen main .editor .delay-panel .on-switch{position:absolute;right:5px;top:4px}
+html.fit-screen main .editor .delay-panel>.inner>.select-control{width:calc(100% - 70px);margin-bottom:1px}
+html.fit-screen.keyboard-hidden main .editor .lfo-main .scope{height:90px}
+html.fit-screen.keyboard-hidden main .editor .lfo-one .knob .dial,html.fit-screen.keyboard-hidden main .editor .lfo-two .knob .dial{width:48px;height:58px}
+html.fit-screen.keyboard-hidden main .editor .lfo-one .knob .val,html.fit-screen.keyboard-hidden main .editor .lfo-two .knob .val{top:59px}
+html.fit-screen.keyboard-hidden main .editor .eq-panel .scope{height:80px;margin-bottom:10px}
+html.fit-screen.keyboard-hidden main .editor .delay-panel .knob .dial{width:38px;height:46px}
+html.fit-screen.keyboard-hidden main .editor .delay-panel .knob .val{top:47px}
+html.fit-screen.keyboard-hidden main .editor .delay-panel .knob>label{margin-top:14px;font-size:8px}
+html.fit-screen.keyboard-hidden main .editor .delay-panel .knob-row{margin:3px 0}
+html.fit-screen main .editor .delay-panel>.inner{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:25px 76px 25px;align-content:center;gap:3px}
+html.fit-screen main .editor .delay-panel .on-switch{position:static;float:none}
+html.fit-screen main .editor .delay-panel>.inner>.on-switch{position:absolute;top:4px;right:4px}
+html.fit-screen main .editor .delay-panel>.inner>.select-control{grid-column:1/7;grid-row:1;margin:0;width:calc(100% - 72px)}
+html.fit-screen main .editor .delay-panel .knob-row{grid-column:1/5;grid-row:2;margin:2px 0;gap:1px;align-self:center}
+html.fit-screen main .editor .delay-panel .knob-row:last-child{grid-column:5/7}
+html.fit-screen main .editor .delay-sync{grid-column:1/7;grid-row:3;justify-content:center}
+html.fit-screen main .editor .delay-panel .knob .dial{width:38px;height:46px}
+html.fit-screen main .editor .delay-panel .knob .val{top:47px;font-size:9px}
+html.fit-screen main .editor .delay-panel .knob>label{margin-top:13px;font-size:7px}
+html.fit-screen.keyboard-hidden main .editor .lfo-one .knob>label,html.fit-screen.keyboard-hidden main .editor .lfo-two .knob>label{margin-top:13px}
+html.fit-screen.keyboard-hidden main .editor .delay-panel .knob .dial{width:40px;height:48px}
+html.fit-screen.keyboard-hidden main .editor .delay-panel .knob .val{top:49px}
+html.fit-screen.keyboard-hidden main .editor .delay-panel .knob>label{margin-top:14px;font-size:7px}
