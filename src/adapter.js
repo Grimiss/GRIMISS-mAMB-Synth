@@ -10,24 +10,31 @@ function syncParameters(){const value=parameters(),serialized=JSON.stringify(val
 function syncRoute(index){send({type:'route',index,value:{source:$('route'+index+'Source').value,destination:$('route'+index+'Destination').value,amount:n('route'+index+'Amount')/100,enabled:$('route'+index+'Enabled').checked}})}
 function resetRoutes(){for(let i=0;i<4;i++){$('route'+i+'Enabled').checked=false;syncRoute(i)}}
 function refreshState(){if(workletNode)workletNode.port.postMessage({type:'snapshot'});else if(engine)updateKeyboard(engine.snapshot())}
-async function start(){if(starting)return starting;starting=(async()=>{try{
- if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();
- const initial=parameters();let backend='ScriptProcessor fallback';
+function audioState(){if(!ac){$('status').textContent='READY · play a key or touch the instrument';return}const state=ac.state;$('status').textContent=state==='running'?'Audio running • '+(ac.mambBackend||'preparing engine'):state==='suspended'?'READY · tap or play a key to enable sound (browser permission)':'Audio '+state;window.dispatchEvent(new Event('mamb-audio-state'))}
+function start(){
+ try{
+ if(!ac||ac.state==='closed'){ac=new (window.AudioContext||window.webkitAudioContext)({latencyHint:'interactive'});processor=undefined;engine=undefined;workletNode=undefined;ac.onstatechange=audioState}
+ // Resume synchronously in the originating gesture, before awaiting Worklet loading.
+ if(ac.state!=='running')ac.resume().then(audioState).catch(error=>{$('status').textContent='Audio permission: '+error.message});
+ if(processor){audioState();return Promise.resolve()}
+ if(starting)return starting;
+ starting=(async()=>{try{const initial=parameters();let backend='ScriptProcessor fallback';
  if(ac.audioWorklet&&window.isSecureContext){try{
- const source=['mamb-engine','mamb-effects','mamb-instrument'].map(id=>document.getElementById(id).textContent).join('\n')+`\nclass MambProcessor extends AudioWorkletProcessor{constructor(o){super();this.engine=createMambInstrument(o.processorOptions,sampleRate);this.port.onmessage=e=>{if(e.data.type==='snapshot')this.port.postMessage(this.engine.snapshot());else this.engine.message(e.data)}}process(i,o){this.engine.render(o[0][0],o[0][1]);return true}}registerProcessor('mamb',MambProcessor);`;
+ const source=['mamb-engine','mamb-effects','mamb-instrument'].map(id=>document.getElementById(id).textContent).join('\n')+`\nclass MambProcessor extends AudioWorkletProcessor{constructor(o){super();this.engine=createMambInstrument(o.processorOptions,sampleRate);this.port.onmessage=e=>{if(e.data.type==='snapshot')this.port.postMessage(this.engine.snapshot());else this.engine.message(e.data)}}process(i,o){this.engine.render(o[0][0],o[0][1],i[0]?.[0],i[0]?.[1]);return true}}registerProcessor('mamb',MambProcessor);`;
  const url=URL.createObjectURL(new Blob([source],{type:'text/javascript'}));try{await ac.audioWorklet.addModule(url)}finally{URL.revokeObjectURL(url)}
- workletNode=new AudioWorkletNode(ac,'mamb',{numberOfInputs:0,numberOfOutputs:1,outputChannelCount:[2],processorOptions:initial});processor=workletNode;backend='AudioWorklet';workletNode.port.onmessage=e=>updateKeyboard(e.data);
- workletNode.onprocessorerror=()=>{$('status').textContent='Audio engine error — reload to restart'};
+ workletNode=new AudioWorkletNode(ac,'mamb',{numberOfInputs:1,numberOfOutputs:1,outputChannelCount:[2],processorOptions:initial});processor=workletNode;backend='AudioWorklet';workletNode.port.onmessage=e=>updateKeyboard(e.data);workletNode.onprocessorerror=()=>{$('status').textContent='Audio engine error — reload to restart'};
  }catch(error){console.warn('AudioWorklet unavailable, using fallback',error)}}
- if(!processor){engine=createMambInstrument(initial,ac.sampleRate);processor=ac.createScriptProcessor(1024,0,2);processor.onaudioprocess=e=>engine.render(e.outputBuffer.getChannelData(0),e.outputBuffer.getChannelData(1))}
- processor.connect(ac.destination);const pending=pendingEngineMessages;pendingEngineMessages=[];for(const message of pending)send(message);ac.mambBackend=backend;lastParams=JSON.stringify(initial);for(let i=0;i<4;i++)syncRoute(i);send({type:'hold',value:holdEnabled,mode:$('holdMode').value});engineTimer=setInterval(()=>{syncParameters();refreshState()},50);
- }
- await ac.resume();$('status').textContent='Audio '+ac.state+' • '+ac.mambBackend;$('start').textContent='AUDIO RUNNING';
- }catch(e){pendingEngineMessages=[];$('status').textContent='Audio error: '+e.message;throw e}finally{starting=null}})();return starting}
-function noteOn(m,velocity=1,source='default'){if(!ac)return;syncParameters();localNotes.set(source+'|'+m,{note:m,source});send({type:'on',note:m,velocity,source});refreshState()}
+ if(!processor){engine=createMambInstrument(initial,ac.sampleRate);processor=ac.createScriptProcessor(1024,2,2);processor.onaudioprocess=e=>engine.render(e.outputBuffer.getChannelData(0),e.outputBuffer.getChannelData(1),window.mambAudioInputActive?e.inputBuffer.getChannelData(0):undefined,window.mambAudioInputActive?e.inputBuffer.getChannelData(1):undefined)}
+ processor.connect(ac.destination);const pending=pendingEngineMessages;pendingEngineMessages=[];for(const message of pending)send(message);ac.mambBackend=backend;lastParams=JSON.stringify(initial);for(let i=0;i<4;i++)syncRoute(i);send({type:'hold',value:holdEnabled,mode:$('holdMode').value});clearInterval(engineTimer);engineTimer=setInterval(()=>{syncParameters();refreshState()},50);audioState();window.dispatchEvent(new Event('mamb-audio-ready'));
+ }catch(error){pendingEngineMessages=[];$('status').textContent='Audio error: '+error.message;throw error}finally{starting=null}})();return starting;
+ }catch(error){$('status').textContent='Audio error: '+error.message;return Promise.reject(error)}
+}
+// Standard browser activation; no hidden autoplay workarounds or mandatory start button.
+for(const type of ['pointerdown','keydown'])window.addEventListener(type,event=>{if(!event.isTrusted||event.type==='keydown'&&(event.repeat||event.metaKey||event.ctrlKey||event.altKey))return;if(!ac||ac.state!=='running')start().catch(()=>{})},{capture:true});
+function noteOn(m,velocity=1,source='default'){if(!ac)start().catch(()=>{});syncParameters();localNotes.set(source+'|'+m,{note:m,source});send({type:'on',note:m,velocity,source});refreshState()}
 function noteOff(m,source='default'){localNotes.delete(source+'|'+m);send({type:'off',note:m,source});refreshState()}
-function panic(){send({type:'panic'});localNotes.clear();pointerNotes.clear();updateKeyboard({activeNotes:[]})}
-$('start').onclick=start;$('panic').onclick=panic;
+function panic(){send({type:'panic'});localNotes.clear();pointerNotes.clear();updateKeyboard({activeNotes:[]});window.dispatchEvent(new Event('mamb-panic'))}
+$('panic').onclick=panic;audioState();
 $('hold').onclick=()=>{holdEnabled=!holdEnabled;send({type:'hold',value:holdEnabled,mode:$('holdMode').value});$('hold').textContent=holdEnabled?'HOLD ON':'HOLD OFF';$('hold').setAttribute('aria-pressed',String(holdEnabled));$('hold').style.background=holdEnabled?'#377a62':'';refreshState()};
 $('holdMode').onchange=()=>{send({type:'hold',value:holdEnabled,mode:$('holdMode').value});refreshState()};
 const presets={
@@ -54,6 +61,7 @@ window.addEventListener('blur',releaseLocal);document.addEventListener('visibili
 let midiAccess;
 function midiMessage(e,device='injected'){
  const [status,note,value=0]=e.data;if(status<128||status>=240)return;const command=status&240,source='midi:'+device+':'+(status&15);
+ const trusted=typeof MIDIMessageEvent!=='undefined'&&e instanceof MIDIMessageEvent&&e.isTrusted;const packet={deviceId:device,channel:status&15,type:command===176?'cc':command===224?'pitchbend':command===192?'program':'note',number:command===224?null:note,value:command===224?((value<<7|note)-8192)/8192:command===192?note:command===128?0:value,origin:trusted?'hardware':'synthetic'};if(typeof window.mambMidiAccept==='function'&&!window.mambMidiAccept(device,status&15)){window.dispatchEvent(new CustomEvent('mamb-midi-filtered',{detail:packet}));return}if(window.mambMidiRegistry&&[128,144,176,192,224].includes(command)){const result=window.mambMidiRegistry.receive(packet);if(typeof window.applyMambMidiActions==='function')window.applyMambMidiActions(result.actions||[])}if(trusted&&window.mambMidiThru)window.mambMidiThru(e.data,device);
  if(command===144&&value)noteOn(note,value/127,source);
  else if(command===128||command===144)noteOff(note,source);
  else if(command===224)send({type:'controller',source,bend:((value<<7|note)-8192)/8192});
@@ -61,5 +69,7 @@ function midiMessage(e,device='injected'){
  refreshState();
 }
 function connectMidi(){for(const input of midiAccess.inputs.values())input.onmidimessage=e=>midiMessage(e,input.id)}
-function disconnectMidi(device){for(let channel=0;channel<16;channel++){const source='midi:'+device+':'+channel;send({type:'sourceOff',source,disconnect:true});for(const [key,event] of localNotes)if(event.source===source)localNotes.delete(key)}refreshState()}
-if(navigator.requestMIDIAccess)navigator.requestMIDIAccess().then(access=>{midiAccess=access;connectMidi();access.onstatechange=e=>{if(e.port.type==='input'&&e.port.state==='disconnected')disconnectMidi(e.port.id);connectMidi()}}).catch(()=>{});
+function disconnectMidi(device){for(let channel=0;channel<16;channel++){const source='midi:'+device+':'+channel;send({type:'sourceOff',source,disconnect:true});for(const [key,event] of localNotes)if(event.source===source)localNotes.delete(key)}refreshState();window.dispatchEvent(new CustomEvent('mamb-midi-ports'))}
+window.requestMambMidiAccess=async function(){if(!navigator.requestMIDIAccess)throw Error('Web MIDI is not supported by this browser');midiAccess=await navigator.requestMIDIAccess();connectMidi();midiAccess.onstatechange=e=>{if(e.port.type==='input'&&e.port.state==='disconnected')disconnectMidi(e.port.id);connectMidi();window.dispatchEvent(new Event('mamb-midi-ports'))};window.dispatchEvent(new Event('mamb-midi-ports'));return midiAccess};
+
+if(navigator.requestMIDIAccess)window.requestMambMidiAccess().catch(()=>{});

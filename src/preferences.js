@@ -1,0 +1,5 @@
+// UI/XY preferences are separate from MIDI profiles. Patches explicitly capture XY assignments.
+const MAMB_XY_DEFAULTS={xy1:{x:'cutoff',y:'res'},xy2:{x:'fxReverbMix',y:'fxDelayMix'}};
+window.mambXYAssignments=JSON.parse(JSON.stringify(MAMB_XY_DEFAULTS));
+window.setMambXYAssignments=function(value,{persist=true}={}){const next={};for(const id of ['xy1','xy2']){const source=value?.[id]||MAMB_XY_DEFAULTS[id];const valid=key=>MAMB_MIDI_TARGETS.some(t=>t.id===key&&t.type==='range');next[id]={x:valid(source.x)?source.x:MAMB_XY_DEFAULTS[id].x,y:valid(source.y)&&source.y!==source.x?source.y:MAMB_XY_DEFAULTS[id].y};if(next[id].x===next[id].y)next[id]={...MAMB_XY_DEFAULTS[id]}}window.mambXYAssignments=next;if(persist)try{localStorage.setItem('grimiss.mamb.xy.v1',JSON.stringify({version:1,assignments:next}))}catch{}window.dispatchEvent(new CustomEvent('mamb-xy-change'));if(typeof refreshInstrumentUI==='function')refreshInstrumentUI();return next};
+try{const saved=JSON.parse(localStorage.getItem('grimiss.mamb.xy.v1')||'null');if(saved?.version===1)window.setMambXYAssignments(saved.assignments,{persist:false})}catch{}
