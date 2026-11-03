@@ -1,0 +1,10 @@
+{
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "status": "BLOCKED",
+  "sandboxNetworkPermissionGranted": true,
+  "checks": {},
+  "consoleErrors": [],
+  "credentialStored": false,
+  "reason": "Execution environment cannot reach the authorised Site through its configured HTTPS proxy",
+  "error": "page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/\nCall log:\n\u001b[2m  - navigating to \"https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+}
