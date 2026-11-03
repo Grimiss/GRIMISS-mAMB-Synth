@@ -294,7 +294,7 @@
         {
           "title": "PATCH BROWSER /",
           "x": 8,
-          "y": 159.09375,
+          "y": 164.09375,
           "width": 170,
           "height": 2992.359375,
           "scrollHeight": 2990,
@@ -303,7 +303,7 @@
         {
           "title": "VOICE",
           "x": 186,
-          "y": 159.09375,
+          "y": 164.09375,
           "width": 272,
           "height": 328,
           "scrollHeight": 326,
@@ -312,7 +312,7 @@
         {
           "title": "OSCILLATORS",
           "x": 465,
-          "y": 159.09375,
+          "y": 164.09375,
           "width": 551,
           "height": 328,
           "scrollHeight": 326,
@@ -321,7 +321,7 @@
         {
           "title": "MIXER",
           "x": 186,
-          "y": 494.09375,
+          "y": 499.09375,
           "width": 272,
           "height": 305,
           "scrollHeight": 303,
@@ -330,7 +330,7 @@
         {
           "title": "LFO 1",
           "x": 465,
-          "y": 494.09375,
+          "y": 499.09375,
           "width": 272,
           "height": 305,
           "scrollHeight": 303,
@@ -339,7 +339,7 @@
         {
           "title": "LFO 2",
           "x": 744,
-          "y": 494.09375,
+          "y": 499.09375,
           "width": 272,
           "height": 305,
           "scrollHeight": 303,
@@ -348,7 +348,7 @@
         {
           "title": "XY PAD 1",
           "x": 186,
-          "y": 806.09375,
+          "y": 811.09375,
           "width": 272,
           "height": 324,
           "scrollHeight": 322,
@@ -357,7 +357,7 @@
         {
           "title": "FILTER ENVELOPE",
           "x": 465,
-          "y": 806.09375,
+          "y": 811.09375,
           "width": 551,
           "height": 324,
           "scrollHeight": 322,
@@ -366,7 +366,7 @@
         {
           "title": "AMP ENVELOPE",
           "x": 186,
-          "y": 1484.28125,
+          "y": 1489.28125,
           "width": 551,
           "height": 251.59375,
           "scrollHeight": 250,
@@ -375,7 +375,7 @@
         {
           "title": "FILTER",
           "x": 186,
-          "y": 1137.09375,
+          "y": 1142.09375,
           "width": 411.5,
           "height": 340.1875,
           "scrollHeight": 338,
@@ -384,7 +384,7 @@
         {
           "title": "EQ",
           "x": 604.5,
-          "y": 1137.09375,
+          "y": 1142.09375,
           "width": 411.5,
           "height": 340.1875,
           "scrollHeight": 338,
@@ -393,7 +393,7 @@
         {
           "title": "AUTOMATION",
           "x": 744,
-          "y": 1742.875,
+          "y": 1747.875,
           "width": 272,
           "height": 324,
           "scrollHeight": 322,
@@ -402,7 +402,7 @@
         {
           "title": "AMP",
           "x": 744,
-          "y": 1484.28125,
+          "y": 1489.28125,
           "width": 272,
           "height": 251.59375,
           "scrollHeight": 250,
@@ -411,7 +411,7 @@
         {
           "title": "MOD FX",
           "x": 186,
-          "y": 1742.875,
+          "y": 1747.875,
           "width": 272,
           "height": 324,
           "scrollHeight": 322,
@@ -420,7 +420,7 @@
         {
           "title": "MODULATION VISUALISER / VIRTUAL PATCH",
           "x": 465,
-          "y": 2073.875,
+          "y": 2078.875,
           "width": 551,
           "height": 620.1875,
           "scrollHeight": 618,
@@ -429,7 +429,7 @@
         {
           "title": "DELAY",
           "x": 186,
-          "y": 2073.875,
+          "y": 2078.875,
           "width": 272,
           "height": 360.1875,
           "scrollHeight": 358,
@@ -438,7 +438,7 @@
         {
           "title": "ARPEGGIATOR / STEP SEQUENCER",
           "x": 186,
-          "y": 2441.0625,
+          "y": 2446.0625,
           "width": 272,
           "height": 253,
           "scrollHeight": 251,
@@ -447,7 +447,7 @@
         {
           "title": "XY PAD 2",
           "x": 465,
-          "y": 1742.875,
+          "y": 1747.875,
           "width": 272,
           "height": 324,
           "scrollHeight": 322,
@@ -456,7 +456,7 @@
         {
           "title": "REVERB — 63_SPRING / MOD_HALL",
           "x": 186,
-          "y": 2701.0625,
+          "y": 2706.0625,
           "width": 830,
           "height": 220,
           "scrollHeight": 218,
@@ -465,7 +465,7 @@
         {
           "title": "PLAY — C3 TO C5",
           "x": 186,
-          "y": 2928.0625,
+          "y": 2933.0625,
           "width": 830,
           "height": 223.390625,
           "scrollHeight": 221,
@@ -481,8 +481,8 @@
       "backend": "AudioWorklet",
       "status": "PASS",
       "stereo": {
-        "energy": 1.0131233576903504,
-        "difference": 0.9009348618183959,
+        "energy": 0.9686274756704106,
+        "difference": 0.8986761422265124,
         "finite": true
       },
       "patchPersistence": "PASS",
@@ -495,8 +495,8 @@
       "backend": "fallback",
       "status": "PASS",
       "stereo": {
-        "energy": 1.0212998329018157,
-        "difference": 0.917974778121105,
+        "energy": 0.859824469088243,
+        "difference": 0.7807234083723428,
         "finite": true
       },
       "patchPersistence": "PASS",

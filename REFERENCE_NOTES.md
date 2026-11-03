@@ -1,0 +1,9 @@
+# Reference and approximation status — v0.6
+
+The official [microKORG Owner's Manual](https://cdn.korg.com/us/support/download/files/8f226053113b3be59753dcce14e74cca.pdf), sections16–18 (printed pages40–42), was inspected through public document search during this run. It confirms the modulation-effect families and stereo/cross/LR delay names. It describes cross-feedback between channels and alternating wet output for L/R; tempo sync follows tempo/note division, with external MIDI clock supported by the hardware.
+
+mAMB deliberately separates feedback and mix, implements its own stereo routing and uses an unequal L/R timing relation rather than claiming a measured copy of the hardware's L/R mode. Delay sync currently uses the instrument's internal BPM, not external MIDI clock. The two-band EQ is independently implemented; ranges and curves are not asserted hardware-identical. No manufacturer DSP, ROM, impulse responses or reference audio recordings were obtained or analysed.
+
+63_SPRING and MOD_HALL follow the sonic/design goals in the user's brief using original dispersion/resonator and modulated FDN architectures. Their names do not establish equivalence to Boss FRV-1/RV-5 or Fender6G15. Impulse, damping, decay and stereo measurements in the repository concern our DSP only; subjective hardware listening validation remains open.
+
+The supplied CONNECT screenshot was directly inspected and used to measure panel origins/proportions, styling, fonts, grids and control geometry. Single-timbre operation, real patch management, a lower reverb/keyboard row and truthful unsupported panels are intentional differences. Licensed fonts were obtained from the official Google Fonts Orbitron repository and the environment's Open Sans installation; complete licenses are embedded in the HTML and retained under src/font/.

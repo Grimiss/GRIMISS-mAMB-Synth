@@ -1,0 +1,125 @@
+{
+  "commit": "4972cf3612cbab5451caed2f3cd1f425ae3287cd",
+  "commands": "npm run test:all before source changes",
+  "audioGroups": 10,
+  "ownershipModulationGroups": 16,
+  "status": "PASS",
+  "performance": {
+    "runtime": "v24.19.0",
+    "platform": "linux",
+    "neutralPatchMaximumSampleDifference": 0,
+    "results": [
+      {
+        "file": "tests/fixtures/v0.4.html",
+        "renderedSeconds": 2,
+        "voices": 8,
+        "blockFrames": 128,
+        "sampleRate": 48000,
+        "warmupRuns": 1,
+        "measuredRuns": 3,
+        "milliseconds": [
+          528.632447,
+          495.84062399999993,
+          527.1205329999998
+        ],
+        "medianMilliseconds": 527.1205329999998,
+        "renderToRealtimeRatio": 0.2635602664999999
+      },
+      {
+        "file": "GRIMISS_mAMB_Synth_v0_3_3_Filter_Fix.html",
+        "renderedSeconds": 2,
+        "voices": 8,
+        "blockFrames": 128,
+        "sampleRate": 48000,
+        "warmupRuns": 1,
+        "measuredRuns": 3,
+        "milliseconds": [
+          278.964751,
+          276.55788600000005,
+          270.04353100000026
+        ],
+        "medianMilliseconds": 276.55788600000005,
+        "renderToRealtimeRatio": 0.13827894300000002
+      }
+    ]
+  },
+  "browser": [
+    {
+      "route": "http",
+      "backend": "Audio running \u2022 AudioWorklet",
+      "status": "PASS",
+      "checks": [
+        "startup race",
+        "audio output",
+        "five presets and reset",
+        "device/channel ownership",
+        "sustain",
+        "disconnect",
+        "two pointers",
+        "typing keyboard",
+        "voice stealing highlights",
+        "HOLD REPLACE",
+        "unison",
+        "LFO2 UI",
+        "four route controls",
+        "audible route enable/disable",
+        "preset clears routes",
+        "panic audio silence"
+      ],
+      "audio": {
+        "rms": 0.06490090751950041,
+        "finite": true
+      },
+      "routeAudio": {
+        "before": 0.05491683004001806,
+        "muted": 0,
+        "restored": 0.05499705790319908
+      },
+      "panicAudio": {
+        "rms": 0,
+        "finite": true
+      }
+    },
+    {
+      "route": "file",
+      "status": "BLOCKED",
+      "reason": "Managed Chromium policy blocks file URLs"
+    },
+    {
+      "route": "fallback",
+      "backend": "Audio running \u2022 ScriptProcessor fallback",
+      "status": "PASS",
+      "checks": [
+        "startup race",
+        "audio output",
+        "five presets and reset",
+        "device/channel ownership",
+        "sustain",
+        "disconnect",
+        "two pointers",
+        "typing keyboard",
+        "voice stealing highlights",
+        "HOLD REPLACE",
+        "unison",
+        "LFO2 UI",
+        "four route controls",
+        "audible route enable/disable",
+        "preset clears routes",
+        "panic audio silence"
+      ],
+      "audio": {
+        "rms": 0.06389442932978884,
+        "finite": true
+      },
+      "routeAudio": {
+        "before": 0.054993856043722866,
+        "muted": 0,
+        "restored": 0.05526509387277355
+      },
+      "panicAudio": {
+        "rms": 0,
+        "finite": true
+      }
+    }
+  ]
+}

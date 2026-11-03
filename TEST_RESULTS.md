@@ -1,41 +1,49 @@
-# Test results — v0.5 — 2026-11-03
+# Test results — v0.6 — 2026-11-03
 
-## Complete regression run
+## Complete suite
 
-`npm run test:all`: PASS. Original baseline and A4 diagnostics pass; **10/10 legacy DSP groups**, **16/16 ownership/modulation groups**, all measurement assertions, paired performance/sound checks and both available browser backends pass. `git diff --check` passes. Tests read the exact inline DSP used by AudioWorklet and fallback.
+Final `npm run test:all`: **PASS** on the assembled v0.6 HTML. Counts: **10 legacy audio +16 ownership/modulation +16 effects +4 integrated-instrument groups =46 DSP groups**, plus tuning/filter/spectrum/envelope/discontinuity measurements, paired CPU checks, preserved browser regressions and new stereo/patch/interaction/layout checks. Both AudioWorklet and ScriptProcessor fallback pass without page JavaScript errors. Byte-identical standalone download is tested.
 
-Before edits, all four requested v0.4 commands passed against exact commit `a0131ea527fada670ad9bfc13b2aa5336e9480d3`. Results are preserved in tests/v04-revalidation.json. Original v0.3.3 baseline now uses seeded randomness and finite/nonzero/bounded assertions so its measurements are reproducible.
+Before edits, the exact v0.5 `4972cf3` baseline passed the same26 pre-effects DSP groups, measurements and both available browser backends. Fresh old-fixture comparison was 47.5% less render time than v0.4, versus44.4% reported previously; timing varies with runtime/load. Controlled neutral output remained sample-identical. See tests/v05-revalidation.json and archived v0.5 source.
 
-## Performance and sound preservation
+## Effects evidence
 
-Linux Node v24.19.0, eight voices, 48 kHz, 128-frame blocks, two rendered seconds per trial, one warm-up and three measured runs:
+- Exact dry stereo bypass and zero-mix passthrough at44.1/48/96kHz; actual post-effect master, pan and EQ changes.
+- All three modulation algorithms produce stereo movement. Rate/depth/feedback change output. Six-stage phaser measurement produces genuine cancellations (minimum magnitude 0.000507, maximum 0.997144 in the tested response).
+- Delay impulse timing asserts100ms stereo,150ms right L/R and250ms tempo-synchronised eighth-note at120BPM across three sample rates. Cross-feedback alternates echoes; width narrows stereo. Fractional read changes and bypass tails pass.
+- Spring: first wet response 29.0ms, 13007 nonzero samples in the initial300ms test, correlation 0.840, mono/left RMS ratio 0.974. Dwell changes normalized shape, and feedback Tone changes high-frequency decay.
+- Hall: first wet response 31.1ms, correlation -0.007, mono/left ratio 0.700. Modulation and longer requested Decay measurably change output/decay. A truncated Schroeder estimate is diagnostic only, not an exact RT60 or hardware match.
+- Reverb switching retires the old network; bypass keeps tails. Panic fades then resets ages and recovers. High-feedback stress passes finite/bounded assertions at44.1/48/96kHz.
+- Measured preallocated effects buffers: approximately1.79MB@48kHz and3.58MB@96kHz, once per instrument rather than per voice.
 
-| Version | Median render time | Render time / audio duration |
+Raw effects data: tests/effects-results.json. Original design: src/effects-notes.md. Measured stereo decay figure: reports/effects-decay.svg. No reference hardware audio obtained or compared.
+
+## Combined synth and performance
+
+v0.5 dry-patch compatibility through the stereo wrapper is within1e-6 at44.1/48/96kHz. Eight voices with effects retain stereo tails after every synth voice has released; panic subsequently gives numerical silence and recovery. A30-second eight-voice all-effects stress render changes algorithms/feedback-related settings while remaining finite, bounded and non-silent. Legacy60-second chord and120-second modulated synth tests also pass.
+
+Linux Node,48kHz,128-frame callbacks, eight voices,2s per trial, warm-up plus three measured runs:
+
+| Scenario | Median ms | Render time / audio duration |
 | --- | ---: | ---: |
-| v0.4 fixture | 531.8 ms | 0.266 |
-| v0.5 | 295.9 ms | 0.148 |
+| v0.5 dry | 237.4 | 0.119 |
+| v0.6 bypass | 254.4 | 0.127 |
+| v0.6 all effects | 511.5 | 0.256 |
 
-**44.4% less render time** in this paired desktop benchmark. The unmodulated eight-note comparison's maximum sample difference was **0** across 24,000 frames. This verifies that controlled patch only, not every preset or modulation setting. It does not establish physical tablet performance or browser deadline safety. Raw trials: tests/performance-results.json. Initial v0.4 CPU sampling shows sample/render and GC; summary: tests/profile-summary.json.
+Bypassed stereo wrapper overhead: 7.1% in this run. All-effects cost includes ensemble, stereo delay and eight-line hall, giving a clear sonic reason for the extra work. No claim of physical tablet CPU, browser deadline safety or zero dropouts follows from an offline benchmark. Full trials: tests/instrument-results.json. The unchanged voice-rendering core retains its earlier paired comparison/null checks.
 
-## Audio measurements
+## Browser, persistence and visuals
 
-- Tuning: five notes (MIDI 36, 48, 69, 84, 96), all within the 0.2-cent assertion. A4 diagnostic remains 440 positive crossings/sec, RMS 0.063870, peak 0.080613.
-- Routed pitch: velocity +12 semitones, wheel +6 and negative key tracking −1.8 all match within 0.3 cents after settling.
-- Independent amp/filter envelopes: attack 205 ms and release 455 ms match within 2 ms; filter-release measurements keep amp release longer so the voice remains observable.
-- Approximate slopes: LPF12 -11.73, LPF24 -23.46, HPF low side +10.59, BPF high side -5.67 dB/octave. Measured from low-level sine fundamentals near a 261.63 Hz cutoff; not a fitted Korg response. Plot: tests/filter-response.svg.
-- Harmonics/centroids: seven oscillator families measured through the actual low-level voice signal path; values in tests/measurement-results.json.
-- Aliasing: coherent 8,192-point FFT of the exact oscillator primitive at 5,865.23 Hz. PolyBLEP saw's out-of-legal-harmonic energy is -26.26 dB relative to legal harmonics, 18.18 dB below naive saw. This excludes the nonlinear mixer, sync and cross modulation and is not proof of negligible aliasing across the keyboard. Triangle residual aliasing remains measured, not fixed.
-- Switching: the tested 8 ms waveform/filter blends reduce excess adjacent-sample steps versus v0.4 over the first 16 frames. This narrow onset test is not a general listening/click-free certification. Raw before/after values are in tests/measurement-results.json.
-- Extended stability: legacy 60-second chord and new **120-second**, eight-note, four-route stress render pass finite/bounded/nonzero assertions while changing cutoff, resonance modes and waveforms. Peak 0.388641; minimum one-second RMS 0.00355707. Panic produces exact numerical silence after its fade.
+Both backends pass preserved note ownership, sustain, MIDI disconnect injection, two pointers, HOLD, priority, routes, stealing highlights, startup/lift race and panic checks. Added regression queues note/controller messages arriving during asynchronous Worklet startup so they are not lost.
 
-## Browser and input
+New UI checks measure actual stereo audio with effects, exercise every algorithm, internal tempo sync, rotary drag and XY mappings; save/reload/export retains physical-unit effect settings. Legacy import resets missing effects to dry; future patch versions are rejected. HTML BUILD download bytes equal the tested canonical build. Tests inject MIDI/pointers and are not physical-device validation.
 
-Linux Chromium localhost AudioWorklet and forced ScriptProcessor fallback pass 16 checks each: startup/release race, measured audio, five preset controls/reset, device/channel note ownership, scoped sustain, disconnect, two pointers on one key, typing keyboard, steal highlights, HOLD REPLACE, unison, LFO2 controls, four route controls, actual route enable/disable audio, preset route reset and panic silence.
+Screenshot comparison was iterated: initial clipping and missing control diagnosed, compact geometry corrected, row origins aligned, then real connection curves layered visibly above backgrounds. At2560×1344, compared reference row origins90/418/747/1013px match; maximum named-panel x-origin delta 10.25px and width delta 17.91px. This is measured panel similarity, not a pixel-perfect or perceptual fidelity score. Full screenshot: reports/mamb-v06-desktop.png; tablet: reports/mamb-v06-tablet.png. At1024×768 there is no horizontal overflow; all panels remain reachable by vertical scrolling. Added reverb/keyboard row intentionally increases full-page height. Detailed data: tests/ui-results.json and reports/visual-comparison.json.
 
-The UI amp route reduced measured RMS to zero on both backends, and disabling it restored nonzero audio. Panic RMS is zero. No page JavaScript errors. File URLs remain BLOCKED by managed Chromium administrator policy. Raw results: tests/browser-results.json. MIDI and pointer tests inject events into actual handlers; no physical device was used.
+## Delivery and remaining limits
 
-Additional route regression: live source/destination changes retain the old path while fading in the new path; rapid edits stay finite/bounded and return to the expected gain. All connection storage is preallocated, with sparse active-path processing.
+Build: dist/GRIMISS_mAMB_v0_6.html, 505,800 bytes. SHA-256 `a3df24a3de262ac774a2a60aee8a62b5de808b2d66bbed35a28d3341eb64c517`. Embedded source modules/fonts/licenses; no runtime external asset dependency. Canonical HTML matches distribution exactly.
 
-## Remaining limits
+Existing owner-private Site is the delivery target; no repository visibility or audience change. Native publication and actual live-domain browser verification are tracked separately. At documentation time, this execution environment rejects CONNECT to the Site's domain with403; live checks require that network allowance. Localhost Chromium checks are complete. Do not reinterpret deployment status alone as successful live audio testing.
 
-Windows, physical tablets, hardware MIDI/touch, long real-time soak and file-URL compatibility remain unverified. Extreme event bursts may truncate older steal tails at the 32-voice total bound. No tempo sync, stereo effects, arpeggiator, 64-wave digital bank or patch save/import/export yet. No reference recordings obtained or analysed; all hardware-emulation claims remain unverified. The original three digital spectra remain original approximations. No Sound Factory changes.
+Physical Windows/tablet/MIDI/touch tests, long real-time soak and controlled hardware listening comparisons remain unverified. `file://` is blocked by managed browser policy. L/R timing is an independent approximation; external MIDI clock delay sync is not implemented. Automation recording and arpeggiator are explicitly unavailable;64-wave bank/Vox and improved triangle/sync/cross-mod alias suppression remain future work. No main merge or Sound Factory changes.

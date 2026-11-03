@@ -1,27 +1,29 @@
-# Roadmap — v0.5 checkpoint
+# Roadmap — v0.6
 
-## Verified this run
+## Completed this run
 
-- [x] Started from exact v0.4 commit `a0131ea527fada670ad9bfc13b2aa5336e9480d3`; ran all four baseline commands before code changes.
-- [x] Profiled and optimised shared DSP; reused spectra/settings/modulation buffers, cached derived constants and smoothed only moving numeric controls.
-- [x] Source-scoped MIDI device/channel, pointer and typing-key ownership; repeated-note policy, independent sustain/bend/wheel, disconnect recovery and panic.
-- [x] Engine-derived highlights for gates, HOLD and voice stealing; asynchronous startup/lift race fixed.
-- [x] Last-note priority including pedal-up/disconnect, and live POLY/MONO/UNISON changes.
-- [x] Eight-millisecond oscillator/filter switching crossfades; both filter stages kept warm.
-- [x] Independent LFO2 and selectable sine/triangle/saw/square/sample-and-hold on both LFOs; very slow free-running rates.
-- [x] Four signed/enableable virtual patch routes, eight sources and six DSP destinations, audible browser tests and smooth source/destination reassignment.
-- [x] Tuning, envelope timing, filter slopes, harmonic spectra, primitive aliasing, switching-discontinuity and 120-second modulated stress measurements.
-- [x] Byte-identical standalone distribution and build manifest; all five original presets preserved with deterministic reset.
+- [x] Exact v0.5 branch/commit baseline revalidated before edits; new v0.6 development branch.
+- [x] One shared stereo effects chain, common to Worklet/fallback/offline rendering; master after effects.
+- [x] Chorus/flanger, ensemble, genuine multistage phaser; independent type/rate/depth/feedback/mix/bypass.
+- [x] Stereo/cross/LR delay, fractional timing edits, long memory, tempo divisions, feedback and width.
+- [x] Original dispersive/saturating spring and independently modulated eight-line hall; distinct architectures.
+- [x] Preallocated buffers, bounded feedback, smoothed settings, tail-preserving bypass, reverb switching and allocation-safe panic.
+- [x] Real two-band EQ and pan; compatible dry defaults and original factory presets.
+- [x] Named/categorised local patches, save/load/import/export and five effects demonstrations.
+- [x] Reference-aligned industrial panel layout, embedded licensed typography, rotary/fader styling and actual parameter graphs.
+- [x] Actual XY mappings, four-colour route curves/live trace, truthful unsupported ARP/automation panels.
+- [x] Repeated2560×1344 and1024×768 screenshot/measure/correct passes, full-resolution deliverables.
+- [x] New effects and combined-engine measurements, stereo/persistence/interaction tests and paired CPU timings.
 
 ## Next priorities
 
-1. Expand click tests across notes/phases, master/drive/PWM edits, rapid preset changes and combined route rewiring. Retain tested control smoothing, sparse path crossfades and audio quality.
-2. Benchmark real AudioWorklet deadlines/CPU on Windows and supported physical tablets; run longer real-time soak, real MIDI hot-plug and physical multi-touch tests. Validate local-file support separately.
-3. Improve alias suppression for triangle, hard sync and cross modulation; measure whole-chain aliasing, waveform loudness and high-note behaviour before claiming broad anti-alias quality.
-4. Implement stereo effects in stages: chorus/ensemble, delay, phaser and two-band EQ; preserve tails and add bypass/parameter regression measurements.
-5. Implement patch save/load/naming/categories/import/export and more factory sounds; preserve the five original presets.
-6. Research official 2002 microKORG documentation and acquire permitted controlled reference recordings; measure actual envelopes/filter/oscillators. Original digital spectra remain approximations.
-7. Expand original digital bank to 64 waves and add Vox/noise oscillator families; no proprietary ROM extraction.
-8. Add tempo sync and arpeggiator, then accurate waveform/envelope/filter displays and XY controls following the supplied screenshot. Keep a single timbre; no vocoder or layering.
+1. Complete authenticated live-domain browser QA if the execution environment's allow-list blocks the private Site; preserve audience and never bypass access controls. Verify the actual live URL independently from native deployment success.
+2. Validate on physical Windows/tablet/MIDI/touch devices, with a longer real-time soak and AudioWorklet deadline/dropout telemetry. Current CPU figures are desktop Node timings.
+3. Listening-led refinement and permitted controlled reference recordings for spring drip, hall diffusion/decay and stereo mono compatibility. Do not claim exact manufacturer emulation.
+4. Expand transient/aliasing tests across notes, presets, nonlinear drive, sync and cross-modulation. Include more phase/rate combinations and extreme control movements.
+5. Improve high-note triangle/sync/cross-mod alias suppression without sacrificing the v0.5 dry sound or performance.
+6. Implement the arpeggiator and LFO tempo sync; keep automation recording clearly unavailable until it actually exists.
+7. Expand independently generated digital waves to64 plus Vox/noise families and better hardware parameter mapping.
+8. Consider scalable preset organisation and optional integration adapter only after further standalone validation. Do not modify Sound Factory yet.
 
-Sound Factory remains untouched. Do not merge main without explicit approval.
+Keep one timbre, eight active voices, source-scoped ownership, HOLD, four real routes, stable transitions and recoverable commits. Never merge main without explicit approval.

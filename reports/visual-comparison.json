@@ -1,0 +1,117 @@
+{
+  "reference": "Screenshot 2026-11-03 081243.png",
+  "referenceViewport": [
+    2560,
+    1344
+  ],
+  "comparisons": [
+    {
+      "panel": "VOICE",
+      "xDelta": -0.75,
+      "yDelta": 0,
+      "widthDelta": -4.46875,
+      "heightDelta": 0
+    },
+    {
+      "panel": "OSCILLATORS",
+      "xDelta": -5.21875,
+      "yDelta": 0,
+      "widthDelta": -3.4375,
+      "heightDelta": 0
+    },
+    {
+      "panel": "MIXER",
+      "xDelta": -7.65625,
+      "yDelta": 0,
+      "widthDelta": -1.5,
+      "heightDelta": 0
+    },
+    {
+      "panel": "LFO 1",
+      "xDelta": -9.15625,
+      "yDelta": 0,
+      "widthDelta": 1.53125,
+      "heightDelta": 0
+    },
+    {
+      "panel": "LFO 2",
+      "xDelta": -7.625,
+      "yDelta": 0,
+      "widthDelta": 1.53125,
+      "heightDelta": 0
+    },
+    {
+      "panel": "XY PAD 1",
+      "xDelta": -6.09375,
+      "yDelta": 0,
+      "widthDelta": 7.09375,
+      "heightDelta": 0
+    },
+    {
+      "panel": "FILTER ENVELOPE",
+      "xDelta": -0.75,
+      "yDelta": 0,
+      "widthDelta": 1,
+      "heightDelta": -1
+    },
+    {
+      "panel": "AMP ENVELOPE",
+      "xDelta": -0.75,
+      "yDelta": 0,
+      "widthDelta": 1,
+      "heightDelta": -1
+    },
+    {
+      "panel": "FILTER",
+      "xDelta": 1.25,
+      "yDelta": 0,
+      "widthDelta": 9,
+      "heightDelta": -1
+    },
+    {
+      "panel": "EQ",
+      "xDelta": 10.25,
+      "yDelta": 0,
+      "widthDelta": 2.0625,
+      "heightDelta": -1
+    },
+    {
+      "panel": "AMP",
+      "xDelta": 1.25,
+      "yDelta": 0,
+      "widthDelta": -8.90625,
+      "heightDelta": -1
+    },
+    {
+      "panel": "MOD FX",
+      "xDelta": -7.65625,
+      "yDelta": 0,
+      "widthDelta": 17.90625,
+      "heightDelta": -1
+    },
+    {
+      "panel": "DELAY",
+      "xDelta": -0.75,
+      "yDelta": 0,
+      "widthDelta": -4.46875,
+      "heightDelta": 0
+    }
+  ],
+  "maxXOriginDifferencePixels": 10.25,
+  "maxWidthDifferencePixels": 17.90625,
+  "intentionalDifferences": [
+    "Single timbre; no hardware read/write or vocoder",
+    "Actual patch management and effects controls",
+    "Extra reverb/keyboard row below reference rows",
+    "Current patch values determine traces and knob positions",
+    "Unimplemented automation/arpeggiator explicitly labelled"
+  ],
+  "tablet": {
+    "viewport": [
+      1024,
+      768
+    ],
+    "horizontalOverflow": 0
+  },
+  "method": "Named panel bounding rectangles measured in Chromium against reference image coordinates; not a pixel-perfect image similarity score"
+}

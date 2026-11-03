@@ -1,11 +1,11 @@
 'use strict';
 const $=id=>document.getElementById(id), n=id=>Number($(id).value);
 let ac,processor,pointerNotes=new Map(),holdEnabled=false;
-const localNotes=new Map();let engine,workletNode,starting,engineTimer,lastParams='',latestEngineState={activeNotes:[]};
+const localNotes=new Map();let engine,workletNode,starting,engineTimer,lastParams='',latestEngineState={activeNotes:[]},pendingEngineMessages=[];
 function parameters(){const ids=['cross','lfo','vib','drift','pw','pwm','level1','level2','ring','noise','drive','cutoff','res','envAmt','motion','master','aa','ad','as','ar','fa','fd','fs','fr','detune','semi2','keyTrack','lfo1Depth','lfo2Rate','lfo2Depth'];const p={};for(const id of ids)p[id]=n(id);p.sync=$('sync').value==='on';p.wave1=$('wave1').value;p.wave2=$('wave2').value;p.oct2=Number($('oct2').value);p.filter=$('filter').value;p.bend=0;p.lfo1Wave=$('lfo1Wave').value;p.lfo2Wave=$('lfo2Wave').value;p.voiceMode=$('voiceMode').value;for(const [key,value]of Object.entries(MAMB_EFFECT_DEFAULTS)){const element=$(key);if(element)p[key]=element.type==='checkbox'?element.checked:typeof value==='number'?Number(element.value):element.value}return p}
 
 function updateKeyboard(state){latestEngineState=state;const active=new Set(state.activeNotes);document.querySelectorAll('[data-midi]').forEach(key=>key.classList.toggle('on',active.has(+key.dataset.midi)))}
-function send(m){if(workletNode)workletNode.port.postMessage(m);else if(engine){engine.message(m);if(m.type!=='params')updateKeyboard(engine.snapshot())}}
+function send(m){if(workletNode)workletNode.port.postMessage(m);else if(engine){engine.message(m);if(m.type!=='params')updateKeyboard(engine.snapshot())}else if(starting){if(pendingEngineMessages.length<1024)pendingEngineMessages.push(m);else pendingEngineMessages=[{type:'panic'}]}}
 function syncParameters(){const value=parameters(),serialized=JSON.stringify(value);if(serialized!==lastParams){lastParams=serialized;send({type:'params',value})}}
 function syncRoute(index){send({type:'route',index,value:{source:$('route'+index+'Source').value,destination:$('route'+index+'Destination').value,amount:n('route'+index+'Amount')/100,enabled:$('route'+index+'Enabled').checked}})}
 function resetRoutes(){for(let i=0;i<4;i++){$('route'+i+'Enabled').checked=false;syncRoute(i)}}
@@ -20,10 +20,10 @@ async function start(){if(starting)return starting;starting=(async()=>{try{
  workletNode.onprocessorerror=()=>{$('status').textContent='Audio engine error — reload to restart'};
  }catch(error){console.warn('AudioWorklet unavailable, using fallback',error)}}
  if(!processor){engine=createMambInstrument(initial,ac.sampleRate);processor=ac.createScriptProcessor(1024,0,2);processor.onaudioprocess=e=>engine.render(e.outputBuffer.getChannelData(0),e.outputBuffer.getChannelData(1))}
- processor.connect(ac.destination);ac.mambBackend=backend;lastParams=JSON.stringify(initial);for(let i=0;i<4;i++)syncRoute(i);send({type:'hold',value:holdEnabled,mode:$('holdMode').value});engineTimer=setInterval(()=>{syncParameters();refreshState()},50);
+ processor.connect(ac.destination);const pending=pendingEngineMessages;pendingEngineMessages=[];for(const message of pending)send(message);ac.mambBackend=backend;lastParams=JSON.stringify(initial);for(let i=0;i<4;i++)syncRoute(i);send({type:'hold',value:holdEnabled,mode:$('holdMode').value});engineTimer=setInterval(()=>{syncParameters();refreshState()},50);
  }
  await ac.resume();$('status').textContent='Audio '+ac.state+' • '+ac.mambBackend;$('start').textContent='AUDIO RUNNING';
- }catch(e){$('status').textContent='Audio error: '+e.message;throw e}finally{starting=null}})();return starting}
+ }catch(e){pendingEngineMessages=[];$('status').textContent='Audio error: '+e.message;throw e}finally{starting=null}})();return starting}
 function noteOn(m,velocity=1,source='default'){if(!ac)return;syncParameters();localNotes.set(source+'|'+m,{note:m,source});send({type:'on',note:m,velocity,source});refreshState()}
 function noteOff(m,source='default'){localNotes.delete(source+'|'+m);send({type:'off',note:m,source});refreshState()}
 function panic(){send({type:'panic'});localNotes.clear();pointerNotes.clear();updateKeyboard({activeNotes:[]})}
