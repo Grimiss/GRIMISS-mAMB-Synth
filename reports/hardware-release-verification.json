@@ -1,0 +1,12 @@
+{
+  "fullRegressionCommand": "npm run test:all",
+  "exitCode": 0,
+  "functionalScriptsUnchanged": 14,
+  "controlTagsUnchanged": 156,
+  "htmlSha256": "a6ae1741e7ea650269b0cbfda42cafbf680b37f9dfb1b2eb5cab5f4cca80c84d",
+  "siteSourceCommit": "76882c14f967ce62d7141145797322b645a7e8c3",
+  "deploymentId": "appgdep_6aea3cc38a8081919e0376a0a5d54540",
+  "deploymentStatus": "succeeded",
+  "liveBrowserStatus": "BLOCKED_BY_PROXY",
+  "physicalHardwareTested": false
+}

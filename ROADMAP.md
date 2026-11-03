@@ -1,5 +1,12 @@
 # Roadmap — v0.7
 
+## Completed hardware-realism pass
+
+- [x] Reusable physical cabinet/panel/control/screen/keyboard finish layer.
+- [x] Exact14-script/156-control parity with the verified v0.7 baseline.
+- [x] Matched before/after and keyboard-hidden comparison screenshots; retained original accents and all controls.
+- [x] Observed keyboard-border overflow fixed without shrinking controls.
+
 ## Completed v0.7
 
 - [x] Retained v0.6 synth/effects, eight-voice architecture and dry compatibility.

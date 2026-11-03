@@ -1,3 +1,20 @@
+# Current hardware-realism publication
+
+Playable URL: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site
+
+Existing owner-private audience retained. Publication terminal status: **succeeded**.
+
+- Site-source commit:76882c14f967ce62d7141145797322b645a7e8c3.
+- Deployment:appgdep_6aea3cc38a8081919e0376a0a5d54540.
+- Saved version:appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_e270f6fe66e881919ae8acc77b5d7d2d.
+- Exact tested HTML SHA256:a6ae1741e7ea650269b0cbfda42cafbf680b37f9dfb1b2eb5cab5f4cca80c84d.
+- `/reports/hardware-comparison.html` shows matched before/after and keyboard-hidden screenshots.
+- `/GRIMISS_mAMB_v0_7.html` remains the standalone build; HTML BUILD downloads it.
+
+The complete software suite passed on this exact application HTML before native private publication. The live browser check was repeated afterwards using the existing authorised credential only for this Site and failed at proxy connection (`ERR_TUNNEL_CONNECTION_FAILED`). No page was reached; live audio/UI verification is therefore still blocked, not passed. See reports/live-verification.json. No token was persisted or printed. The environment still needs the exact Site hostname allowed in its HTTP destination configuration; do not bypass the proxy or change audience to diagnose it.
+
+## Previous publication records
+
 # mAMB v0.7 private online delivery
 
 Playable address: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site

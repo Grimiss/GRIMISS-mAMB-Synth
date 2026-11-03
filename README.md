@@ -6,6 +6,8 @@
 
 Both keyboard modes fit 1920×1080 and1600×900; scaled tablet browser layouts are tested separately from physical hardware. Factory and user patch serialization remains internal; permanent category/import/export controls were removed from the main surface. KeyLab25 physical CC verification remains pending; unknown controllers are deliberately unassigned. See [controller documentation](KEYLAB25_MIDI_MAP.md) and [standalone map](KEYLAB25_CONTROL_MAP.html).
 
+The hardware-realism pass adds a shared dark-metal cabinet, recessed screens and panels, shaded knobs/faders, illuminated switches and physical piano-key finishes. Existing functionality and parameter ranges are preserved exactly. [Visual comparison](reports/hardware-comparison.html) · [Implementation notes](HARDWARE_VISUAL_PASS.md).
+
 ## Instrument
 
 Single timbre, eight active voices, original PolyBLEP-style oscillators, four TPT filter modes, envelopes, two independent LFOs and four audible virtual-patch routes. MIDI devices/channels, pointers and typing keys own independent gates and controllers. HOLD ADD/REPLACE, last-note MONO/UNISON priority and PANIC retain the v0.5 behaviour. The same DSP factories run in AudioWorklet, ScriptProcessor fallback and offline tests.

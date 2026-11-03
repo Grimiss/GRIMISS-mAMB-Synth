@@ -1,3 +1,17 @@
+# Hardware-realism pass validation — 2026-11-03
+
+**Complete `npm run test:all`: PASS, exit0**, after correcting decorative keyboard-border overflow. All14 functional scripts and156 control tags are identical to the verified2531bed baseline; DSP/MIDI/patch/layout/ownership logic is unchanged. tests/hardware-results.json records this guard.
+
+Both audio backends pass; keyboard visible/hidden layouts fit1920×1080,1600×900 and1280×800 without main-page scrolling. All seven OSC1 choices, displays, graph enlargement, retained context/notes/HOLD and emulated touch pass. Eleven workflow groups cover actual envelopes, wheel/fine adjustment, patch/XY persistence and MIDI Learn. All25registry groups,90factory numerical renders, mocked device/capture cancellation checks and all prior DSP/effects/measurement/stability tests pass. Console errors: none.
+
+The first visual run caught an overflow from thicker decorative keyboard borders; original dimensions were restored, retaining depth through shadows. A pre-existing fixed35ms waveform redraw assertion was replaced by waiting for rendered selected state. No functional script was edited to resolve either issue.
+
+Matched baseline/current screenshots and comparison: reports/hardware-{before,visible,hidden}.png and reports/hardware-comparison.html. Detailed mockup comparison: HARDWARE_VISUAL_PASS.md. Current HTML SHA256: a6ae1741e7ea650269b0cbfda42cafbf680b37f9dfb1b2eb5cab5f4cca80c84d.
+
+Private publication succeeded. Actual live-domain browser navigation was retried after publication and remains proxy-blocked before reaching the page. Physical KeyLab25/Windows/tablet operation is unverified; ARP/automation remain unimplemented. These limits are separate from the passing local software checks.
+
+## Previous v0.7 checkpoint results
+
 # v0.7 validation — 2026-11-03
 
 Build: `npm run build`; canonical historical HTML is byte-identical to `dist/GRIMISS_mAMB_v0_7.html`. Manifest records the SHA256. Baseline v0.6 was revalidated before changes; retained reports are in work/v07 when workspace retained. src/synth.js and src/effects.js are unchanged from v0.6.
