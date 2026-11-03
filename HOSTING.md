@@ -1,3 +1,20 @@
+# Current corrective reconstruction deployment
+
+Playable URL: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site
+
+Existing owner-private audience retained. Native deployment status: **succeeded**.
+
+- Site-source commit:aa7c6cb5dd07056dd109f9c765c5b4be257ce1a6.
+- Deployment:appgdep_6aea50634f648191908c9e302ea495bd.
+- Saved version:appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_0c3a1a30108c81919a243c76c0d46dd3.
+- Tested HTML SHA256:8b59890bc4384f0535bf7cddc670907bca28c645b3838c92a1749e25a853896a.
+- Review package:/reports/rebuild-comparison.html, component study and rebuild-*.png close-ups/full layouts.
+- Standalone:/GRIMISS_mAMB_v0_7.html; HTML BUILD downloads the exact application.
+
+Full regression suite passed before publication. A fresh authorised real-domain browser check after publication failed at the configured proxy with ERR_TUNNEL_CONNECTION_FAILED; no application page was reached. Native deployment success is therefore reported separately from blocked live-browser/audio QA. No token was persisted or printed, and Site audience/GitHub visibility were not changed. See reports/live-verification.json and earlier network-policy instructions below.
+
+## Superseded publication history
+
 # Current hardware-realism publication
 
 Playable URL: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site

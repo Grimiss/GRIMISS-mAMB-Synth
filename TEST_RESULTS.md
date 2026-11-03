@@ -1,3 +1,17 @@
+# Corrective physical reconstruction validation — 2026-11-03
+
+The previous finish-only design was not accepted. This rebuild was validated in stages: browser-rendered component study first, then new components throughout, then cabinet/keybed/layout and interaction regressions.
+
+**Complete npm run test:all: PASS, exit0.** Added physical controls tests also pass with real mouse spring-return operation. Every rotary uses the new physical component and all three mixer faders use separate physical caps. Four required1920×1080/1600×900 visible/hidden layouts have no out-of-panel controls or clipped panel content; six layout modes and emulated touch pass in the full UI suite. Real component close-ups and the stage prototype are in reports/rebuild-comparison.html.
+
+All14original functional scripts and156original control attributes retain exact parity with the verified v0.7 baseline. One new UI module/four new performance widgets reuse existing APIs. The engine/effects DSP remains unchanged. Pitch/mod values reach actual voices, pitch returns on mouse release, octave changes release local owners, note-off/highlights follow transpose, MIDI notes retain their own pitch, hidden keybed preserves MIDI, and PANIC resets wheels. Tests/physical-controls-results.json records coverage.
+
+Existing oscillator/filter/envelope/effects/routes/patch/XY/MIDI/HOLD tests pass, including11workflow groups,25registry groups,90factory numerical renders, extended polyphony, Worklet/fallback and mocked device/capture handling. Iterations corrected actual label/note clipping and delay switch accessibility; no test geometry checks were weakened.
+
+Published HTML SHA256:8b59890bc4384f0535bf7cddc670907bca28c645b3838c92a1749e25a853896a. Native private deployment succeeded. Fresh actual live-domain browser verification remains proxy-blocked before the page loads. Physical MIDI/Windows/tablet tests remain unverified; ARP/automation stay visibly unimplemented. Visual acceptance is left to the user, with full screenshots and close-ups supplied.
+
+## Superseded finish-only checkpoint results
+
 # Hardware-realism pass validation — 2026-11-03
 
 **Complete `npm run test:all`: PASS, exit0**, after correcting decorative keyboard-border overflow. All14 functional scripts and156 control tags are identical to the verified2531bed baseline; DSP/MIDI/patch/layout/ownership logic is unchanged. tests/hardware-results.json records this guard.

@@ -1,0 +1,16 @@
+{
+  "fullRegressionCommand": "npm run test:all",
+  "exitCode": 0,
+  "originalFunctionalScriptsPreserved": 14,
+  "originalControlTagsPreserved": 156,
+  "newPerformanceWidgets": 4,
+  "prototypeInspectedBeforeRollout": true,
+  "requiredViewportLayoutsWithoutOverflow": 4,
+  "htmlSha256": "8b59890bc4384f0535bf7cddc670907bca28c645b3838c92a1749e25a853896a",
+  "siteSourceCommit": "aa7c6cb5dd07056dd109f9c765c5b4be257ce1a6",
+  "deploymentId": "appgdep_6aea50634f648191908c9e302ea495bd",
+  "deploymentStatus": "succeeded",
+  "liveBrowserStatus": "BLOCKED_BY_PROXY",
+  "physicalHardwareTested": false,
+  "userVisualAcceptance": "PENDING_USER_REVIEW"
+}

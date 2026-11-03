@@ -17,12 +17,12 @@
     {
       "name": "same input replacement is predictable and old target stops changing",
       "status": "PASS",
-      "milliseconds": 5
+      "milliseconds": 2
     },
     {
       "name": "header Learn preserves a previously known exact source physical association",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 2
     },
     {
       "name": "relearning a physical control removes its obsolete MIDI message",
@@ -42,12 +42,12 @@
     {
       "name": "fixed native performance entries cannot be removed by clear or reset",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 3
     },
     {
       "name": "numeric, signed, enum and boolean parameter values use actual target domains",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 3
     },
     {
       "name": "three relative encoder encodings use current UI values and clamp at target bounds",
@@ -62,12 +62,12 @@
     {
       "name": "note, pitchbend and program Learn extras do not suppress native performance paths",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 2
     },
     {
       "name": "cancelled Learn leaves assignments intact and invalid target cannot arm",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "versioned MIDI configuration persists independently of patch data",
@@ -77,22 +77,22 @@
     {
       "name": "export/import round-trip preserves mapping scope and clear-default configuration",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 2
     },
     {
       "name": "reset-all clears learned controls persistently while restore-default remains available",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "unsupported import version is rejected without losing current assignments",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "invalid physical controls, duplicate imports and fabricated hardware status are rejected or normalised",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "malformed MIDI packets cannot change a mapping or create false activity",
@@ -122,7 +122,7 @@
     {
       "name": "listener receives activity changes and unsubscribe stops notifications",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "device reconnection uses stable MIDI identity while a different device cannot claim it",

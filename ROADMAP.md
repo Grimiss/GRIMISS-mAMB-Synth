@@ -1,6 +1,15 @@
 # Roadmap — v0.7
 
-## Completed hardware-realism pass
+## Corrective reconstruction
+
+- [x] Browser-rendered representative component study before full rollout.
+- [x] New shared cylindrical knob geometry and physical fader assemblies throughout.
+- [x] Reconstructed cabinet/panel geometry and deeper integrated keyboard housing.
+- [x] Real pitch/modulation wheels, spring return, octave controls and ownership tests.
+- [x] Mandatory four target layouts, component close-ups and full regression suite.
+- [ ] User visual acceptance of the reconstructed design.
+
+## Superseded finish-only pass — not accepted
 
 - [x] Reusable physical cabinet/panel/control/screen/keyboard finish layer.
 - [x] Exact14-script/156-control parity with the verified v0.7 baseline.
