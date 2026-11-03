@@ -1,0 +1,12 @@
+{
+  "version": "0.7.0",
+  "fullRegressionCommand": "npm run test:all",
+  "fullRegressionExitCode": 0,
+  "htmlSha256": "d7e29493c3c912fda052fa39e57d3e68a29e75829061118e96b6ce5ee023fb25",
+  "siteSourceCommit": "c40913bc0366fba6a1765f636e5672377f3830c5",
+  "deployment": "appgdep_6ae9e2860bdc8191b93fcc81256bd3aa",
+  "deploymentStatus": "succeeded",
+  "liveBrowserStatus": "BLOCKED_BY_PROXY",
+  "hardwareTested": false,
+  "githubMainUnchanged": "433c2ab1ab0eb7e26c59bfd431ec4dc1a80b3b1f"
+}

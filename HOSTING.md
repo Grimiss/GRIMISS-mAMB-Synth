@@ -1,3 +1,25 @@
+# mAMB v0.7 private online delivery
+
+Playable address: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site
+
+The existing URL and owner-only audience are preserved. Sign in with the owning ChatGPT account if prompted, then play a key or touch/click the instrument. There is no Start Audio button. MIDI-only performance may require one real gesture under browser autoplay policy. HTML BUILD downloads the standalone instrument. SELECT PATCH contains factory and USER operations; MIDI SETTINGS opens the KeyLab25 map.
+
+## v0.7 publication evidence
+
+- Project: `appgprj_6ae9ad1b7aa08191846efb701d49414c`.
+- Deployment: `appgdep_6ae9e2860bdc8191b93fcc81256bd3aa`, terminal status **succeeded**.
+- Saved version: `appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_c3be5f34a468819196f019c92a53bba4`.
+- Verified pushed Site-source commit: `c40913bc0366fba6a1765f636e5672377f3830c5`.
+- Tested index/download SHA256: `d7e29493c3c912fda052fa39e57d3e68a29e75829061118e96b6ce5ee023fb25`.
+- Assets include `/GRIMISS_mAMB_v0_7.html`, `/KEYLAB25_CONTROL_MAP.html`, `/KEYLAB25_CONTROL_MAP.svg`, `/KEYLAB25_MIDI_MAP.md` and `/reports/mamb-v07-*.png`.
+- Native get_site confirmed one allowed owner, no groups/editors/external visitors. Repository visibility and Site access were not changed. No GitHub main merge.
+
+Complete local regression suite passed on the exact published application HTML. Actual live-domain browser QA was attempted after publication with the existing authorised Site credential, scoped only to that host. It remains **BLOCKED** by the configured proxy: `net::ERR_TUNNEL_CONNECTION_FAILED`. No application page was reached. This is recorded in reports/live-verification.json; deployment success is not claimed as a live browser/audio pass.
+
+To complete live QA, allow the exact hostname in the Cloud Environment HTTP/HTTPS destination configuration, then rerun tools/verify-live.cjs with authorised hidden-stdin input. Do not bypass the proxy, relax TLS, expose credentials, change audience or repository visibility. All credentials stayed in memory/hidden stdin and were not persisted. Physical KeyLab25, Windows and tablet validation is also still pending.
+
+## Historical v0.6 publication record
+
 # mAMB v0.6 authorised online delivery
 
 Playable address: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site

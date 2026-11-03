@@ -2,6 +2,8 @@
 
 Build: `npm run build`; canonical historical HTML is byte-identical to `dist/GRIMISS_mAMB_v0_7.html`. Manifest records the SHA256. Baseline v0.6 was revalidated before changes; retained reports are in work/v07 when workspace retained. src/synth.js and src/effects.js are unchanged from v0.6.
 
+**Final complete run: PASS (exit0).** The ADSR browser test now samples a visible point atomically across SVG redraws rather than racing a detached locator.
+
 Regression commands are consolidated in `npm run test:all`: baseline, diagnostics, audio, ownership/modulation, measurements, effects, combined instrument, performance, browser, UI, MIDI registry, workflow, all factory patches and mocked devices. Machine-readable results live in tests/*-results.json. Node/Chromium run on Linux; timings are offline measurements, not physical Windows/tablet verification.
 
 - Existing DSP:10 audio,16 ownership/modulation, measurements (tuning, filter slopes, harmonic/aliasing, envelope timing, switching,120-second polyphony),16 effects and combined engine checks. Dry compatibility is retained; optional stereo input is silent by default, ramps gain and stops on PANIC.
@@ -14,7 +16,7 @@ Regression commands are consolidated in `npm run test:all`: baseline, diagnostic
 
 A touch test caught a legacy tablet min-height220px rule clipping the keyboard panel; explicitly resetting its minimum height fixed the cause. Added panel-to-main containment checks so it cannot silently recur. The corrected layout and touch checks pass.
 
-Current paired offline benchmark:2seconds/48kHz/eight voices/128-frame blocks: v0.5 dry262.66ms, current bypass262.59ms, current all effects597.68ms median. Historical scenario names in the report sayv0.6 because the shared DSP is retained. These measurements do not establish real-device callback deadlines.
+Current paired offline benchmark:2seconds/48kHz/eight voices/128-frame blocks: v0.5 dry231.83ms, current bypass269.98ms, current all effects604.47ms median. Historical scenario names in the report sayv0.6 because the shared DSP is retained. These measurements do not establish real-device callback deadlines.
 
 Known limits: original KeyLab25 physical message inventory/relative configuration and Windows/tablet audio deadlines need hardware tests. MIDI-only events cannot bypass browser autoplay rules. Per-app output selection and Web MIDI depend on browser support/permissions; system output remains the truthful fallback. Smaller portrait screens are scaled and may need future readability/accessibility work. ARP/automation remain unimplemented. Actual hosted-domain browser QA is separately recorded in HOSTING.md/reports/live-verification.json; native deployment success is not a live-audio pass.
 

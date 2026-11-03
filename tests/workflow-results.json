@@ -1,0 +1,103 @@
+{
+  "version": "0.7",
+  "autoplayOverride": false,
+  "physicalHardwareTested": false,
+  "tests": [
+    {
+      "name": "no start button; the first real typing key activates audio under normal autoplay policy",
+      "status": "PASS",
+      "milliseconds": 1204,
+      "measurements": {
+        "finite": true,
+        "rms": 0.04893343682737699,
+        "backend": "AudioWorklet"
+      }
+    },
+    {
+      "name": "SELECT PATCH has 90 uniquely numbered factory patches in nine banks of ten",
+      "status": "PASS",
+      "milliseconds": 1473,
+      "measurements": {
+        "factoryCount": 90,
+        "bankCount": 9,
+        "numberRange": [
+          1,
+          90
+        ]
+      }
+    },
+    {
+      "name": "export all browser-resolved factory parameter/routes snapshots for offline DSP verification",
+      "status": "PASS",
+      "milliseconds": 1911,
+      "measurements": {
+        "snapshots": 90,
+        "file": "work/v07-factory-patches.json"
+      }
+    },
+    {
+      "name": "XY assignment modal enforces X/Y mutual exclusion and drives actual parameters",
+      "status": "PASS",
+      "milliseconds": 472,
+      "measurements": {
+        "master": 75,
+        "detune": 15
+      }
+    },
+    {
+      "name": "USER save, selected-patch reload and XY assignments persist together",
+      "status": "PASS",
+      "milliseconds": 636
+    },
+    {
+      "name": "MIDI MAP Learn updates controls and shows only synthetic activity",
+      "status": "PASS",
+      "milliseconds": 1385
+    },
+    {
+      "name": "header MIDI Learn preserves known physical identity and separate profile survives patch changes",
+      "status": "PASS",
+      "milliseconds": 687
+    },
+    {
+      "name": "normal wheel, Shift fine wheel and fader adjustment update true range values",
+      "status": "PASS",
+      "milliseconds": 717,
+      "measurements": {
+        "coarseSeconds": 0.040000000000000036,
+        "fineSeconds": 0.004999999999999893
+      }
+    },
+    {
+      "name": "ADSR points drag real attack, sustain and release in both envelopes",
+      "status": "PASS",
+      "milliseconds": 2202,
+      "measurements": {
+        "before": {
+          "aa": 20,
+          "as": 50,
+          "ar": 50,
+          "fs": 50
+        },
+        "after": {
+          "aa": 27,
+          "as": 79,
+          "ar": 47,
+          "fs": 67
+        }
+      }
+    },
+    {
+      "name": "USER rename and delete operate in the modal and persist without changing factory patches",
+      "status": "PASS",
+      "milliseconds": 998
+    },
+    {
+      "name": "device settings and mapping reset expose real state without granting microphone access",
+      "status": "PASS",
+      "milliseconds": 1647
+    }
+  ],
+  "consoleErrors": [],
+  "status": "PASS"
+}
