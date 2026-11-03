@@ -2,11 +2,38 @@
   {
     "route": "http",
     "backend": "Audio running • AudioWorklet",
+    "status": "PASS",
+    "checks": [
+      "startup race",
+      "audio output",
+      "five presets and reset",
+      "device/channel ownership",
+      "sustain",
+      "disconnect",
+      "two pointers",
+      "typing keyboard",
+      "voice stealing highlights",
+      "HOLD REPLACE",
+      "unison",
+      "LFO2 UI",
+      "four route controls",
+      "audible route enable/disable",
+      "preset clears routes",
+      "panic audio silence"
+    ],
     "audio": {
-      "rms": 0.06534347522924819,
+      "rms": 0.06488284313936937,
       "finite": true
     },
-    "status": "PASS"
+    "routeAudio": {
+      "before": 0.055500177865963805,
+      "muted": 0,
+      "restored": 0.05527122704071204
+    },
+    "panicAudio": {
+      "rms": 0,
+      "finite": true
+    }
   },
   {
     "route": "file",
@@ -16,10 +43,37 @@
   {
     "route": "fallback",
     "backend": "Audio running • ScriptProcessor fallback",
+    "status": "PASS",
+    "checks": [
+      "startup race",
+      "audio output",
+      "five presets and reset",
+      "device/channel ownership",
+      "sustain",
+      "disconnect",
+      "two pointers",
+      "typing keyboard",
+      "voice stealing highlights",
+      "HOLD REPLACE",
+      "unison",
+      "LFO2 UI",
+      "four route controls",
+      "audible route enable/disable",
+      "preset clears routes",
+      "panic audio silence"
+    ],
     "audio": {
-      "rms": 0.06664737300819676,
+      "rms": 0.06347543760611105,
       "finite": true
     },
-    "status": "PASS"
+    "routeAudio": {
+      "before": 0.05550866965014744,
+      "muted": 0,
+      "restored": 0.05480357046128039
+    },
+    "panicAudio": {
+      "rms": 0,
+      "finite": true
+    }
   }
 ]

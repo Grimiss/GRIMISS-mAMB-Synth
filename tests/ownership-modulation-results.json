@@ -1,0 +1,62 @@
+[
+  {
+    "name": "same note across two devices/channels and two touch sources releases independently",
+    "status": "PASS"
+  },
+  {
+    "name": "duplicate note-ons retrigger latest owner; unmatched note-offs do nothing",
+    "status": "PASS"
+  },
+  {
+    "name": "sustain is scoped to source; disconnect preserves other notes",
+    "status": "PASS"
+  },
+  {
+    "name": "HOLD ADD/REPLACE, sustain interaction, release and panic",
+    "status": "PASS"
+  },
+  {
+    "name": "voice stealing removes highlights for retired held notes",
+    "status": "PASS"
+  },
+  {
+    "name": "MONO and UNISON last-key priority restores earlier held key",
+    "status": "PASS"
+  },
+  {
+    "name": "LFO phases are independent, simultaneous and support five shapes",
+    "status": "PASS"
+  },
+  {
+    "name": "each of four routes changes actual rendered audio and disabled routes are neutral",
+    "status": "PASS"
+  },
+  {
+    "name": "all eight sources and six destinations have audible DSP paths",
+    "status": "PASS"
+  },
+  {
+    "name": "four parallel amp routes add; intensity sign and enable control work",
+    "status": "PASS"
+  },
+  {
+    "name": "MONO/UNISON restore last pressed key after pedal-up or device disconnect",
+    "status": "PASS"
+  },
+  {
+    "name": "bend and wheel values are isolated by source and CC120 fades only its owner",
+    "status": "PASS"
+  },
+  {
+    "name": "sample-and-hold starts with a value and updates on its own cycle",
+    "status": "PASS"
+  },
+  {
+    "name": "live POLY/MONO/UNISON changes rebuild gated notes without orphan owners",
+    "status": "PASS"
+  },
+  {
+    "name": "controller pitch bend is per owner and panic clears sustain/controller state",
+    "status": "PASS"
+  }
+]

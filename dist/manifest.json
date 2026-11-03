@@ -1,0 +1,7 @@
+{
+  "version": "0.5.0",
+  "source": "GRIMISS_mAMB_Synth_v0_3_3_Filter_Fix.html",
+  "build": "dist/GRIMISS_mAMB_v0_5.html",
+  "sha256": "94bc758819eeb530e490d3b1f20c9d0f8940c3d0b007cbc18aa06c2ca90aca6a",
+  "standalone": true
+}

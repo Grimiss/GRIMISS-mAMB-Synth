@@ -1,13 +1,20 @@
 {
   "name": "grimiss-mamb-synth",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
-  "description": "Standalone GRIMISS mAMB synthesizer stability checkpoint",
+  "description": "Standalone GRIMISS mAMB performance, ownership and modulation checkpoint",
   "scripts": {
-    "test": "node tests/audio.cjs",
+    "test": "node tests/audio.cjs && node tests/ownership-modulation.cjs && node tests/measurements.cjs",
     "test:baseline": "node tests/baseline.cjs",
     "test:browser": "node tests/browser.cjs",
-    "diagnostics": "node tests/diagnostics.cjs"
+    "diagnostics": "node tests/diagnostics.cjs",
+    "test:ownership": "node tests/ownership-modulation.cjs",
+    "test:measurements": "node tests/measurements.cjs",
+    "test:performance": "node tests/performance.cjs",
+    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/performance.cjs && node tests/browser.cjs",
+    "build": "node tools/build.cjs"
   },
-  "devDependencies": {"playwright": "^1.56.0"}
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  }
 }

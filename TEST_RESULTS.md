@@ -1,26 +1,39 @@
-# Test results — 2026-11-03
+# Test results — v0.5 — 2026-11-03
 
-## Automated DSP
+## Complete regression run
 
-`node tests/audio.cjs`: **10/10 groups pass** on the exact embedded DSP used by both audio backends. Covers startup silence and nonzero note output, complete release, eight active voices and bounded stealing, long overlapping release, HOLD ADD beyond six seconds, HOLD REPLACE chord grouping, panic, four filters with rapid cutoff changes/high resonance at 44.1/48/96 kHz, rapid retriggers at maximum oscillator/drive settings, actual sync/ring/cross audio differences, velocity/sustain/unison, and a 60-second sustained eight-note numerical stress render. All checked samples finite and within ±1. These are numerical regressions, not listening certification or CPU deadline guarantees. Machine-readable results: tests/audio-results.json.
+`npm run test:all`: PASS. Original baseline and A4 diagnostics pass; **10/10 legacy DSP groups**, **15/15 ownership/modulation groups**, all measurement assertions, paired performance/sound checks and both available browser backends pass. `git diff --check` passes. Tests read the exact inline DSP used by AudioWorklet and fallback.
 
-`node tests/baseline.cjs`: original commit fixture renders finite, nonzero audio, peak 0.12033, RMS 0.08050. These are baseline-only values and are not a level-matched quality comparison. Audit records original filter double damping, state-dependent preset overrides and missing MIDI behaviour.
+Before edits, all four requested v0.4 commands passed against exact commit `a0131ea527fada670ad9bfc13b2aa5336e9480d3`. Results are preserved in tests/v04-revalidation.json. Original v0.3.3 baseline now uses seeded randomness and finite/nonzero/bounded assertions so its measurements are reproducible.
 
-`node tests/diagnostics.cjs`: A4 sine render at 48 kHz measures 440 positive zero crossings in one second, RMS 0.063870, peak 0.080613. Generates WAV and SVG diagnostics in work/. Numerical output is in tests/diagnostic-metrics.json. No reference-audio comparison.
+## Performance and sound preservation
 
-## Browser
+Linux Node v24.19.0, eight voices, 48 kHz, 128-frame blocks, two rendered seconds per trial, one warm-up and three measured runs:
 
-`node tests/browser.cjs`, installed Chromium on Linux:
+| Version | Median render time | Render time / audio duration |
+| --- | ---: | ---: |
+| v0.4 fixture | 534.3 ms | 0.267 |
+| v0.5 | 290.6 ms | 0.145 |
 
-- Localhost AudioWorklet: PASS; measured real browser audio RMS 0.06534, finite samples.
-- Forced ScriptProcessor fallback: PASS; measured real browser audio RMS 0.06665, finite samples.
-- Both routes: startup, all five preset selectors, preset reset, LPF24/cutoff/UNISON/HOLD controls, MIDI handler injection and panic keyboard clearing; no page JavaScript errors.
-- `file://`: BLOCKED by managed Chromium administrator policy; no local-file compatibility claim.
+**45.6% less render time** in this paired desktop benchmark. The unmodulated eight-note comparison's maximum sample difference was **0** across 24,000 frames. This verifies that controlled patch only, not every preset or modulation setting. It does not establish physical tablet performance or browser deadline safety. Raw trials: tests/performance-results.json. Initial v0.4 CPU sampling shows sample/render and GC; summary: tests/profile-summary.json.
 
-Values differ slightly per run due to wall-clock audio sampling. JSON: tests/browser-results.json. Browser screenshots generated in work/.
+## Audio measurements
 
-## Limits and remaining regressions
+- Tuning: five notes (MIDI 36, 48, 69, 84, 96), all within the 0.2-cent assertion. A4 diagnostic remains 440 positive crossings/sec, RMS 0.063870, peak 0.080613.
+- Routed pitch: velocity +12 semitones, wheel +6 and negative key tracking −1.8 all match within 0.3 cents after settling.
+- Independent amp/filter envelopes: attack 205 ms and release 455 ms match within 2 ms; filter-release measurements keep amp release longer so the voice remains observable.
+- Approximate slopes: LPF12 -11.73, LPF24 -23.46, HPF low side +10.59, BPF high side -5.67 dB/octave. Measured from low-level sine fundamentals near a 261.63 Hz cutoff; not a fitted Korg response. Plot: tests/filter-response.svg.
+- Harmonics/centroids: seven oscillator families measured through the actual low-level voice signal path; values in tests/measurement-results.json.
+- Aliasing: coherent 8,192-point FFT of the exact oscillator primitive at 5,865.23 Hz. PolyBLEP saw's out-of-legal-harmonic energy is -26.26 dB relative to legal harmonics, 18.18 dB below naive saw. This excludes the nonlinear mixer, sync and cross modulation and is not proof of negligible aliasing across the keyboard. Triangle residual aliasing remains measured, not fixed.
+- Switching: the tested 8 ms waveform/filter blends reduce excess adjacent-sample steps versus v0.4 over the first 16 frames. This narrow onset test is not a general listening/click-free certification. Raw before/after values are in tests/measurement-results.json.
+- Extended stability: legacy 60-second chord and new **120-second**, eight-note, four-route stress render pass finite/bounded/nonzero assertions while changing cutoff, resonance modes and waveforms. Peak 0.388641; minimum one-second RMS 0.00355707. Panic produces exact numerical silence after its fade.
 
-No physical MIDI device, actual Windows/tablet validation, long real-time soak, rigorous click/discontinuity limits, spectrum/aliasing measurements, measured filter slopes or hardware recording comparisons. Tests do not establish that every reported crackle has been eliminated. Waveform/filter mode switching is not crossfaded. Keyboard highlights can lag engine voice stealing or HOLD REPLACE. Multiple MIDI channels/devices and pointers do not yet maintain independent same-note ownership. Per-sample DSP allocations need profiling before claiming tablet efficiency. Original three digital waves remain unverified approximations; LFO2, routing, effects, arpeggiator and patch import/export are pending.
+## Browser and input
 
-Reference research blocked: request to the supplied Korg documentation URL failed at the configured proxy connection. No reference audio downloaded, measured or auditioned. No exact microKORG emulation claim.
+Linux Chromium localhost AudioWorklet and forced ScriptProcessor fallback pass 16 checks each: startup/release race, measured audio, five preset controls/reset, device/channel note ownership, scoped sustain, disconnect, two pointers on one key, typing keyboard, steal highlights, HOLD REPLACE, unison, LFO2 controls, four route controls, actual route enable/disable audio, preset route reset and panic silence.
+
+The UI amp route reduced measured RMS to zero on both backends, and disabling it restored nonzero audio. Panic RMS is zero. No page JavaScript errors. File URLs remain BLOCKED by managed Chromium administrator policy. Raw results: tests/browser-results.json. MIDI and pointer tests inject events into actual handlers; no physical device was used.
+
+## Remaining limits
+
+Windows, physical tablets, hardware MIDI/touch, long real-time soak and file-URL compatibility remain unverified. Route source/destination reassignment at nonzero depth is not crossfaded; disable or lower intensity before rewiring. Extreme event bursts may truncate older steal tails at the 32-voice total bound. No tempo sync, stereo effects, arpeggiator, 64-wave digital bank or patch save/import/export yet. No reference recordings obtained or analysed; all hardware-emulation claims remain unverified. The original three digital spectra remain original approximations. No Sound Factory changes.

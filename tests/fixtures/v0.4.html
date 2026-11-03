@@ -1,0 +1,152 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GRIMISS mAMB — VA v0.4</title><style>
+*{box-sizing:border-box}body{margin:0;background:#0c1513;color:#d7e8dd;font:14px system-ui,sans-serif}main{max-width:1250px;margin:auto;padding:20px}h1{font-size:25px;letter-spacing:1px}h2{font-size:14px;color:#91cdbd;letter-spacing:2px;margin:0 0 14px}.bar,.panel{background:#14221e;border:1px solid #315247;border-radius:9px;padding:15px;margin-bottom:12px}.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}button,select{background:#24493d;color:#e9f7ee;border:1px solid #558c76;border-radius:5px;padding:9px;cursor:pointer}button:active{background:#4b846b}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:12px}.control{display:grid;grid-template-columns:106px 1fr 35px;align-items:center;gap:7px;margin:9px 0}.control label{font-size:12px}input[type=range]{width:100%;accent-color:#5bc2a3}.val{color:#8cb7a7;text-align:right;font-size:11px}.keyboard{height:172px;display:flex;position:relative;max-width:1040px;touch-action:none;user-select:none;-webkit-user-select:none}.white{flex:1;background:#e9eee8;color:#3d4b43;border:1px solid #677a6e;border-radius:0 0 4px 4px;display:flex;align-items:end;justify-content:center;padding-bottom:10px;font-size:11px;touch-action:none}.black{position:absolute;top:0;height:60%;width:4%;background:#162522;color:#cfe3d8;border:1px solid #4c6358;border-radius:0 0 4px 4px;display:flex;justify-content:center;align-items:end;padding-bottom:8px;font-size:10px;touch-action:none}.white.on{background:#79c7ab}.black.on{background:#3c8e78}.note{color:#a8b9b0;font-size:12px}.status{color:#94d6be}.warn{color:#e9bd8d}</style></head><body><main>
+<h1>GRIMISS <span style="color:#7bc9ad">mAMB</span> — Virtual Analogue v0.4 — Stability checkpoint</h1>
+<div class="bar"><button id="start">START AUDIO</button><button id="panic">ALL NOTES OFF</button><button id="hold" aria-pressed="false">HOLD OFF</button><label>HOLD MODE <select id="holdMode"><option value="add" selected>ADD</option><option value="replace">REPLACE</option></select></label><label>VOICE <select id="voiceMode"><option value="poly">POLY</option><option value="mono">MONO</option><option value="unison">UNISON</option></select></label><label>PRESET <select id="preset"><option>Warm Ambient</option><option>Vintage Pulse</option><option>Slow Drift</option><option>Deep Drone</option><option>Init VA</option></select></label><span class="status" id="status">Audio not started</span></div>
+<div class="grid">
+<section class="panel"><h2>OSCILLATOR 1 — VA</h2><div class="control"><label>Waveform</label><select id="wave1"><option value="saw">SAW</option><option value="pulse">PULSE</option><option value="triangle">TRIANGLE</option><option value="sine">SINE</option><option value="dwgs1">DIGITAL 1 (GLASS)</option><option value="dwgs2">DIGITAL 2 (VOCAL)</option><option value="dwgs3">DIGITAL 3 (BELL)</option></select><span></span></div>
+<div class="control"><label>Pulse width</label><input id="pw" type="range" min="10" max="90" value="50"><span class="val"></span></div><div class="control"><label>PWM depth</label><input id="pwm" type="range" min="0" max="45" value="0"><span class="val"></span></div><div class="control"><label>OSC 1 level</label><input id="level1" type="range" min="0" max="100" value="85"><span class="val"></span></div><div class="control"><label>Noise</label><input id="noise" type="range" min="0" max="50" value="0"><span class="val"></span></div></section>
+<section class="panel"><h2>OSCILLATOR 2 — VA</h2><div class="control"><label>Waveform</label><select id="wave2"><option value="saw">SAW</option><option value="pulse">SQUARE</option><option value="triangle">TRIANGLE</option></select><span></span></div><div class="control"><label>Octave</label><select id="oct2"><option value="-1">-1</option><option value="0" selected>0</option><option value="1">+1</option></select><span></span></div><div class="control"><label>Semitones</label><input id="semi2" type="range" min="-24" max="24" value="0"><span class="val"></span></div><div class="control"><label>Detune (cents)</label><input id="detune" type="range" min="-30" max="30" value="7"><span class="val"></span></div><div class="control"><label>OSC 2 level</label><input id="level2" type="range" min="0" max="100" value="65"><span class="val"></span></div><div class="control"><label>Ring mix</label><input id="ring" type="range" min="0" max="100" value="0"><span class="val"></span></div><div class="control"><label>OSC sync</label><select id="sync"><option value="off">OFF</option><option value="on">ON</option></select><span></span></div><div class="control"><label>Cross mod</label><input id="cross" type="range" min="0" max="100" value="0"><span class="val"></span></div></section>
+<section class="panel"><h2>FILTER / DRIVE</h2><div class="control"><label>Mode</label><select id="filter"><option value="lp">LPF 12</option><option value="lp24">LPF 24</option><option value="hp">HIGH PASS</option><option value="bp">BAND PASS</option></select><span></span></div><div class="control"><label>Cutoff</label><input id="cutoff" type="range" min="0" max="100" value="65"><span class="val"></span></div><div class="control"><label>Resonance</label><input id="res" type="range" min="0" max="90" value="18"><span class="val"></span></div><div class="control"><label>Drive</label><input id="drive" type="range" min="0" max="100" value="15"><span class="val"></span></div><div class="control"><label>Key tracking</label><input id="keyTrack" type="range" min="-100" max="100" value="0"><span class="val"></span></div><div class="control"><label>Env amount</label><input id="envAmt" type="range" min="-100" max="100" value="35"><span class="val"></span></div></section>
+<section class="panel"><h2>AMP ENVELOPE</h2><div class="control"><label>Attack</label><input id="aa" type="range" min="0" max="100" value="28"><span class="val"></span></div><div class="control"><label>Decay</label><input id="ad" type="range" min="0" max="100" value="40"><span class="val"></span></div><div class="control"><label>Sustain</label><input id="as" type="range" min="0" max="100" value="80"><span class="val"></span></div><div class="control"><label>Release</label><input id="ar" type="range" min="0" max="100" value="50"><span class="val"></span></div></section>
+<section class="panel"><h2>FILTER ENVELOPE</h2><div class="control"><label>Attack</label><input id="fa" type="range" min="0" max="100" value="8"><span class="val"></span></div><div class="control"><label>Decay</label><input id="fd" type="range" min="0" max="100" value="40"><span class="val"></span></div><div class="control"><label>Sustain</label><input id="fs" type="range" min="0" max="100" value="45"><span class="val"></span></div><div class="control"><label>Release</label><input id="fr" type="range" min="0" max="100" value="50"><span class="val"></span></div></section>
+<section class="panel"><h2>ANALOGUE MOTION</h2><div class="control"><label>Slow LFO rate</label><input id="lfo" type="range" min="0" max="100" value="25"><span class="val"></span></div><div class="control"><label>Vibrato</label><input id="vib" type="range" min="0" max="100" value="7"><span class="val"></span></div><div class="control"><label>PITCH drift</label><input id="drift" type="range" min="0" max="100" value="18"><span class="val"></span></div><div class="control"><label>Filter motion</label><input id="motion" type="range" min="0" max="100" value="15"><span class="val"></span></div><div class="control"><label>Master</label><input id="master" type="range" min="0" max="100" value="65"><span class="val"></span></div></section></div>
+<section class="panel"><h2>PLAY — C3 TO C5</h2><div id="keyboard" class="keyboard"></div><p class="note">PolyBLEP saw/pulse, original harmonic digital waves, oscillator sync and phase cross-modulation • eight active voices • click-reduced voice stealing • MIDI input where supported • touch multi-play. HOLD ADD layers notes indefinitely (up to 8 voices). HOLD REPLACE groups presses within 650ms, then replaces the previous group on the next gesture. ALL NOTES OFF clears held notes. This version deliberately prioritises reliable sound over a finished skin.</p></section>
+</main><script id="mamb-engine">
+// Shared independently implemented DSP, used by Worklet, fallback and offline tests.
+function createMambEngine(initial, sr=48000, seed=12345){
+let voices=[],clock=0,smoothMix=1,params={...initial},target={...initial},serial=0,hold=false,mode='add',group=-1;
+const pressed=new Set(),latched=new Set(), TWO=2*Math.PI;
+const numericKeys=Object.keys(target).filter(k=>typeof target[k]==='number'),otherKeys=Object.keys(target).filter(k=>typeof target[k]!=='number');
+function random(){seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296}
+function polyblep(t,dt){if(t<dt){t/=dt;return t+t-t*t-1}if(t>1-dt){t=(t-1)/dt;return t*t+t+t+1}return 0}
+function osc(w,p,inc,pw){if(w==='sine')return Math.sin(TWO*p);if(w==='triangle')return 1-4*Math.abs(p-.5);if(w==='pulse'){let x=(p<pw?1:-1);x+=polyblep(p,inc);x-=polyblep((p-pw+1)%1,inc);return x}return 2*p-1-polyblep(p,inc)}
+// Capture UI parameters once per audio block, never query the DOM per sample.
+// Original digital harmonic spectra, deliberately not Korg ROM/DWGS samples.
+function digitalWave(type,phase,hz,sr){
+ const coeff=type==='dwgs1'?[1,.12,.48,.08,.25,.04,.13]:type==='dwgs2'?[.55,.14,.75,.09,.52,.07,.28]:[.32,.85,.14,.61,.07,.39,.18];
+ let sum=0;for(let k=0;k<coeff.length;k++){const harmonic=k+1;if(hz*harmonic>=sr*.45)break;sum+=coeff[k]*Math.sin(TWO*phase*harmonic)}
+ return sum*.52
+}
+function updateEnv(e,dt,a,d,s,r){if(e.stage==='attack'){e.value=Math.min(1,e.value+dt/a);if(e.value>=1)e.stage='decay'}else if(e.stage==='decay'){e.value=Math.max(s,e.value-(1-s)*dt/d);if(e.value<=s)e.stage='sustain'}else if(e.stage==='sustain')e.value=s;else if(e.stage==='release'){e.value=Math.max(0,e.value-e.releaseLevel*dt/r);if(e.value<=0)e.stage='off'}return e.value}
+function sample(v,sr,p,mod){const dt=1/sr,lfo=mod.lfo,vib=p.vib*.00015*lfo,drift=p.drift*.00006*Math.sin(TWO*(clock*v.driftRate+v.seed)),pitch=Math.pow(2,(vib+drift)/12),f1=v.hz*pitch*Math.pow(2,(p.bend*2+v.stackDetune/100)/12),f2=f1*Math.pow(2,p.oct2+p.semi2/12+p.detune/1200),inc1=Math.min(.49,f1/sr),inc2=Math.min(.49,f2/sr);const wrapped=v.p1+inc1>=1;v.p1=(v.p1+inc1)%1;if(p.sync&&wrapped)v.p2=0;v.p2=(v.p2+inc2)%1;const width=Math.max(.08,Math.min(.92,p.pw/100+p.pwm/100*lfo));let x1=p.wave1.startsWith('dwgs')?digitalWave(p.wave1,v.p1,f1,sr):osc(p.wave1,v.p1,inc1,width);
+const modPhase=(v.p2+(p.cross/100)*.24*x1+1)%1;
+let x2=osc(p.wave2,modPhase,Math.min(.49,inc2*(1+p.cross/100)),.5),ring=p.ring/100;let x=(x1*p.level1/100+x2*p.level2/100)*(1-ring)+x1*x2*ring*.9+(random()*2-1)*p.noise/250;
+const drive=1+p.drive/10;x=Math.tanh(x*drive)/Math.tanh(drive);
+const fe=updateEnv(v.fil,dt,mod.fa,mod.fd,p.fs/100,mod.fr),ae=updateEnv(v.amp,dt,mod.aa,mod.ad,p.as/100,mod.ar);
+let cut=50*Math.pow(320,p.cutoff/100)*Math.pow(2,p.envAmt/100*fe*4+p.motion/100*lfo*2+p.keyTrack/100*(v.note-60)/12);
+// Clamp cutoff well below Nyquist and slew the filter coefficient per voice.
+// This avoids sudden coefficient jumps on touchscreen sweeps with held notes.
+cut=Math.max(30,Math.min(sr*.22,cut));
+if(!Number.isFinite(v.smoothCut))v.smoothCut=cut;
+v.smoothCut+=Math.min(1,dt*110)*(cut-v.smoothCut);
+cut=v.smoothCut;
+// Canonical TPT SVF: damping is already included in a1, not subtracted again from v3.
+const g=Math.tan(Math.PI*cut/sr),k=Math.max(.35,2-.018*p.res),a1=1/(1+g*(g+k)),a2=g*a1,a3=g*a2;
+const v3=x-v.ic2,v1=a1*v.ic1+a2*v3,v2=v.ic2+a2*v.ic1+a3*v3;
+v.ic1=2*v1-v.ic1;v.ic2=2*v2-v.ic2;
+// Never allow a non-finite filter state to poison the audio stream.
+if(!Number.isFinite(v.ic1)||!Number.isFinite(v.ic2)) {v.ic1=0;v.ic2=0;}
+let y=p.filter==='hp'?x-k*v1-v2:p.filter==='bp'?v1:v2;
+if(p.filter==='lp24'){const z=y-v.ic4, b1=a1*v.ic3+a2*z,b2=v.ic4+a2*v.ic3+a3*z;v.ic3=2*b1-v.ic3;v.ic4=2*b2-v.ic4;y=b2;}if(!Number.isFinite(y))y=0;
+let fade=v.stealFade===undefined?1:Math.max(0,v.stealFade);if(v.stealFade!==undefined)v.stealFade-=dt/.018;
+// Preserve dynamics of a single voice; summing is managed at the master.
+return Math.tanh(y*1.15)*ae*.20*fade*v.velocity}
+
+function release(note){for(const v of voices)if(v.note===note&&v.amp.stage!=='release'){for(const k of ['amp','fil']){v[k].releaseLevel=v[k].value;v[k].stage='release'}}}
+function panic(){pressed.clear();latched.clear();group=-1;for(const v of voices)v.stealFade=1}
+function noteOn(note,velocity=1){
+ if(!Number.isInteger(note)||note<0||note>127)return;
+ if(hold&&mode==='replace'&&!pressed.size&&(group<0||clock-group>.65)){for(const n of latched)release(n);latched.clear();group=clock}
+ deferred.delete(note);pressed.add(note);if(hold)latched.add(note);
+ // Repeated note retriggers with a short crossfade, including held notes.
+ for(const v of voices)if(v.note===note&&v.stealFade===undefined)v.stealFade=1;
+ const count=target.voiceMode==='unison'?4:1;
+ if(target.voiceMode==='mono'||target.voiceMode==='unison')for(const v of voices)v.stealFade=1;
+ for(let i=0;i<count;i++){
+ const active=voices.filter(v=>v.stealFade===undefined);
+ if(active.length>=8){const victim=active.find(v=>v.amp.stage==='release')||active[0];victim.stealFade=1;latched.delete(victim.note)}
+ voices.push({id:serial++,note,hz:440*2**((note-69)/12),velocity:Math.max(0,Math.min(1,velocity)),stackDetune:count===1?0:(i-1.5)*7,p1:random(),p2:random(),seed:random(),driftRate:.07+random()*.15,ic1:0,ic2:0,ic3:0,ic4:0,smoothCut:NaN,amp:{stage:'attack',value:0},fil:{stage:'attack',value:0}});
+ }
+ // Bound steal tails even for a burst of thousands of events before rendering.
+ if(voices.length>32)voices.splice(0,voices.length-32);
+}
+let sustain=false;const deferred=new Set();
+function noteOff(note){pressed.delete(note);if(hold&&latched.has(note))return;if(sustain){deferred.add(note);return}release(note);
+ if(target.voiceMode==='mono'&&pressed.size)noteOn([...pressed].at(-1));}
+function message(m){switch(m.type){
+ case 'params':for(const [k,v] of Object.entries(m.value))if(k in target&&(typeof v!=='number'||Number.isFinite(v)))target[k]=v;break;
+ case 'on':noteOn(m.note,m.velocity);break;case 'off':noteOff(m.note);break;
+ case 'panic':panic();sustain=false;deferred.clear();break;
+ case 'sustain':sustain=m.value;if(!sustain){for(const n of deferred)if(!pressed.has(n)&&!latched.has(n))release(n);deferred.clear()}break;
+ case 'hold':hold=m.value;mode=m.mode||mode;group=-1;if(!hold){for(const n of latched)if(!pressed.has(n))release(n);latched.clear()}break;
+}}
+function render(out){const dt=1/sr,alpha=1-Math.exp(-dt/.015);for(const k of otherKeys)params[k]=target[k];
+ for(let i=0;i<out.length;i++){
+ for(const k of numericKeys)params[k]+=(target[k]-params[k])*alpha;
+ const p=params,mod={aa:.005+(p.aa/100)**2*5,ad:.005+(p.ad/100)**2*5,ar:.005+(p.ar/100)**2*5,fa:.005+(p.fa/100)**2*5,fd:.005+(p.fd/100)**2*5,fr:.005+(p.fr/100)**2*5,lfo:Math.sin(TWO*clock*(.025+(p.lfo/100)**2*8))};
+ let sum=0,energy=0;
+ for(let j=voices.length-1;j>=0;j--){const v=voices[j];sum+=sample(v,sr,p,mod);energy+=v.amp.value*v.amp.value;if(v.amp.stage==='off'||v.stealFade<=0)voices.splice(j,1)}
+ const gain=1/Math.sqrt(Math.max(1,energy));smoothMix+=(gain-smoothMix)*Math.min(1,dt*35);
+ out[i]=Number.isFinite(sum)?Math.tanh(sum*smoothMix*.8)*p.master/100:0;clock+=dt;
+ }
+}
+return {render,message,snapshot:()=>({voices:voices.map(v=>({note:v.note,stage:v.amp.stage,value:v.amp.value,stealing:v.stealFade!==undefined})),held:[...latched],pressed:[...pressed],clock})};
+}
+</script><script>
+
+'use strict';
+const $=id=>document.getElementById(id), n=id=>Number($(id).value);
+let ac,processor,masterNode,voices=[],pointerNotes=new Map(),heldNotes=new Map(),clock=0;let holdEnabled=false;const latched=new Set(),pressed=new Set();let replaceGroupTime=-1;const TWO=2*Math.PI;
+let engine,workletNode,starting,midiBend=0,engineTimer;
+function parameters(){const ids=['cross','lfo','vib','drift','pw','pwm','level1','level2','ring','noise','drive','cutoff','res','envAmt','motion','master','aa','ad','as','ar','fa','fd','fs','fr','detune','semi2','keyTrack'];const p={};for(const id of ids)p[id]=n(id);p.sync=$('sync').value==='on';p.wave1=$('wave1').value;p.wave2=$('wave2').value;p.oct2=Number($('oct2').value);p.filter=$('filter').value;p.bend=midiBend;p.voiceMode=$('voiceMode').value;return p}
+
+function send(m){if(workletNode)workletNode.port.postMessage(m);else if(engine)engine.message(m)}
+function syncParameters(){send({type:'params',value:parameters()})}
+async function start(){if(starting)return starting;starting=(async()=>{try{
+ if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();
+ const initial=parameters();let backend='ScriptProcessor fallback';
+ if(ac.audioWorklet&&window.isSecureContext){try{
+ const source=document.getElementById('mamb-engine').textContent+`\nclass MambProcessor extends AudioWorkletProcessor{constructor(o){super();this.engine=createMambEngine(o.processorOptions,sampleRate);this.port.onmessage=e=>this.engine.message(e.data)}process(i,o){this.engine.render(o[0][0]);return true}}registerProcessor('mamb',MambProcessor);`;
+ const url=URL.createObjectURL(new Blob([source],{type:'text/javascript'}));try{await ac.audioWorklet.addModule(url)}finally{URL.revokeObjectURL(url)}
+ workletNode=new AudioWorkletNode(ac,'mamb',{numberOfInputs:0,numberOfOutputs:1,outputChannelCount:[1],processorOptions:initial});processor=workletNode;backend='AudioWorklet';
+ workletNode.onprocessorerror=()=>{$('status').textContent='Audio engine error — reload to restart'};
+ }catch(error){console.warn('AudioWorklet unavailable, using fallback',error)}}
+ if(!processor){engine=createMambEngine(initial,ac.sampleRate);processor=ac.createScriptProcessor(1024,0,1);processor.onaudioprocess=e=>engine.render(e.outputBuffer.getChannelData(0))}
+ processor.connect(ac.destination);ac.mambBackend=backend;engineTimer=setInterval(syncParameters,30);
+ }
+ await ac.resume();$('status').textContent='Audio '+ac.state+' • '+ac.mambBackend;$('start').textContent='AUDIO RUNNING';
+ }catch(e){$('status').textContent='Audio error: '+e.message;throw e}finally{starting=null}})();return starting}
+function noteOn(m,velocity=1){if(!ac)return;pressed.add(m);if(holdEnabled)latched.add(m);send({type:'on',note:m,velocity});document.querySelectorAll('[data-midi="'+m+'"]').forEach(k=>k.classList.add('on'))}
+function noteOff(m){pressed.delete(m);send({type:'off',note:m});if(!holdEnabled)document.querySelectorAll('[data-midi="'+m+'"]').forEach(k=>k.classList.remove('on'))}
+function releaseVoice(m){send({type:'off',note:m});document.querySelectorAll('[data-midi="'+m+'"]').forEach(k=>k.classList.remove('on'))}
+function panic(){send({type:'panic'});latched.clear();pressed.clear();heldNotes.clear();pointerNotes.clear();document.querySelectorAll('.on').forEach(k=>k.classList.remove('on'))}
+$('start').onclick=start;$('panic').onclick=panic;
+$('hold').onclick=()=>{holdEnabled=!holdEnabled;replaceGroupTime=-1;send({type:'hold',value:holdEnabled,mode:$('holdMode').value});$('hold').textContent=holdEnabled?'HOLD ON':'HOLD OFF';$('hold').setAttribute('aria-pressed',String(holdEnabled));$('hold').style.background=holdEnabled?'#377a62':'';if(!holdEnabled){for(const m of latched)if(!pressed.has(m))releaseVoice(m);latched.clear()}};
+$('holdMode').onchange=()=>{send({type:'hold',value:holdEnabled,mode:$('holdMode').value});replaceGroupTime=-1;if(holdEnabled&&$('holdMode').value==='replace')$('status').textContent='HOLD REPLACE: keys played within 650ms form one group'};
+const presets={
+'Warm Ambient':{wave1:'saw',wave2:'pulse',level1:75,level2:48,cutoff:58,res:14,drive:18,aa:42,ar:65,as:90,detune:7,vib:6,drift:15,pwm:9},
+'Vintage Pulse':{wave1:'pulse',wave2:'pulse',pw:38,pwm:18,level1:80,level2:45,cutoff:62,res:26,drive:27,aa:2,ar:27,as:72,detune:4},
+'Slow Drift':{wave1:'saw',wave2:'triangle',level1:67,level2:70,cutoff:50,res:20,drive:12,aa:67,ar:85,as:95,drift:45,lfo:6,motion:45},
+'Deep Drone':{wave1:'triangle',wave2:'saw',oct2:'-1',level1:80,level2:55,cutoff:35,res:8,drive:32,aa:70,ar:85,as:100,detune:3},
+'Init VA':{wave1:'saw',wave2:'saw',oct2:'0',level1:85,level2:0,cutoff:78,res:5,drive:0,aa:0,ad:20,as:100,ar:20,detune:0,vib:0,drift:0,motion:0,ring:0,pwm:0,cross:0,sync:'off'}};
+const defaults=Object.fromEntries([...document.querySelectorAll('.control input,.control select')].map(x=>[x.id,x.value]));
+function show(){document.querySelectorAll('input[type=range]').forEach(x=>{let s=x.nextElementSibling;if(s?.classList.contains('val'))s.textContent=x.value})}
+$('preset').onchange=()=>{$('cross').value=0;$('sync').value='off';for(const [id,value] of Object.entries({...defaults,...presets[$('preset').value]}))$(id).value=value;show();syncParameters()};document.querySelectorAll('input[type=range]').forEach(x=>x.addEventListener('input',show));$('preset').onchange();
+const key=$('keyboard'),whiteNotes=[48,50,52,53,55,57,59,60,62,64,65,67,69,71,72],names=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];function name(m){return names[m%12]+(Math.floor(m/12)-1)}
+for(let i=0;i<whiteNotes.length;i++){const m=whiteNotes[i],w=document.createElement('div');w.className='white';w.dataset.midi=m;w.textContent=name(m);key.append(w)}
+for(let i=0;i<whiteNotes.length-1;i++){const m=whiteNotes[i];if([0,2,5,7,9].includes(m%12)){const b=document.createElement('div');b.className='black';b.dataset.midi=m+1;b.style.left=((i+1)/whiteNotes.length*100-2)+'%';b.textContent=name(m+1);key.append(b)}}
+key.addEventListener('contextmenu',e=>e.preventDefault());key.addEventListener('pointerdown',async e=>{const k=e.target.closest('[data-midi]');if(!k)return;e.preventDefault();if(!ac)await start();const m=+k.dataset.midi;pointerNotes.set(e.pointerId,m);try{k.setPointerCapture(e.pointerId)}catch{}noteOn(m)});function pointerUp(e){const m=pointerNotes.get(e.pointerId);if(m!==undefined){pointerNotes.delete(e.pointerId);noteOff(m)}}key.addEventListener('pointerup',pointerUp);key.addEventListener('pointercancel',pointerUp);key.addEventListener('lostpointercapture',pointerUp);
+const keyboardMap={'a':48,'w':49,'s':50,'e':51,'d':52,'f':53,'t':54,'g':55,'y':56,'h':57,'u':58,'j':59,'k':60};window.addEventListener('keydown',e=>{if(e.repeat||e.target.matches('input,select'))return;const m=keyboardMap[e.key.toLowerCase()];if(m!==undefined){e.preventDefault();noteOn(m)}});window.addEventListener('keyup',e=>{const m=keyboardMap[e.key.toLowerCase()];if(m!==undefined)noteOff(m)});window.addEventListener('blur',()=>{for(const m of [...pressed])noteOff(m)});
+/* MIDI replaced below */
+if(false&&navigator.requestMIDIAccess)navigator.requestMIDIAccess().then(access=>{for(const input of access.inputs.values())input.onmidimessage=e=>{const [st,m,v]=e.data;if((st&240)===144&&v)noteOn(m);else if((st&240)===128||((st&240)===144&&!v))noteOff(m)}}).catch(()=>{});
+
+let midiAccess;const midiSustain=new Set();
+function midiMessage(e){const [status,note,value=0]=e.data,command=status&240;
+ if(command===144&&value)noteOn(note,value/127);
+ else if(command===128||command===144)noteOff(note);
+ else if(command===224){midiBend=((value<<7|note)-8192)/8192;syncParameters()}
+ else if(command===176){if(note===64){send({type:'sustain',value:value>=64})}else if(note===120||note===123)panic()}
+}
+function connectMidi(){for(const input of midiAccess.inputs.values())input.onmidimessage=midiMessage}
+if(navigator.requestMIDIAccess)navigator.requestMIDIAccess().then(access=>{midiAccess=access;connectMidi();access.onstatechange=e=>{if(e.port.type==='input'&&e.port.state==='disconnected')panic();connectMidi()}}).catch(()=>{});
+</script></body></html>

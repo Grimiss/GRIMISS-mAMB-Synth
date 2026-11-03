@@ -1,0 +1,40 @@
+{
+  "version": "v0.4",
+  "command": "node --cpu-prof --cpu-prof-dir=work tests/performance.cjs tests/fixtures/v0.4.html",
+  "sampleCount": 2889,
+  "topFrames": [
+    {
+      "function": "sample",
+      "samples": 1334
+    },
+    {
+      "function": "render",
+      "samples": 1141
+    },
+    {
+      "function": "",
+      "samples": 178
+    },
+    {
+      "function": "(garbage collector)",
+      "samples": 161
+    },
+    {
+      "function": "updateEnv",
+      "samples": 26
+    },
+    {
+      "function": "osc",
+      "samples": 26
+    },
+    {
+      "function": "(program)",
+      "samples": 2
+    },
+    {
+      "function": "sample",
+      "samples": 2
+    }
+  ],
+  "interpretation": "sample/render dominate; GC appears in profile. v0.5 removes per-sample envelope objects and digital-spectrum array construction, caches derived constants, and smooths only moving numeric parameters. Benchmark results are separate from this instrumented run."
+}

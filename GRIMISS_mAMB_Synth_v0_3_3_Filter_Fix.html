@@ -1,6 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GRIMISS mAMB — VA v0.4</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GRIMISS mAMB — VA v0.5</title><style>
 *{box-sizing:border-box}body{margin:0;background:#0c1513;color:#d7e8dd;font:14px system-ui,sans-serif}main{max-width:1250px;margin:auto;padding:20px}h1{font-size:25px;letter-spacing:1px}h2{font-size:14px;color:#91cdbd;letter-spacing:2px;margin:0 0 14px}.bar,.panel{background:#14221e;border:1px solid #315247;border-radius:9px;padding:15px;margin-bottom:12px}.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}button,select{background:#24493d;color:#e9f7ee;border:1px solid #558c76;border-radius:5px;padding:9px;cursor:pointer}button:active{background:#4b846b}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:12px}.control{display:grid;grid-template-columns:106px 1fr 35px;align-items:center;gap:7px;margin:9px 0}.control label{font-size:12px}input[type=range]{width:100%;accent-color:#5bc2a3}.val{color:#8cb7a7;text-align:right;font-size:11px}.keyboard{height:172px;display:flex;position:relative;max-width:1040px;touch-action:none;user-select:none;-webkit-user-select:none}.white{flex:1;background:#e9eee8;color:#3d4b43;border:1px solid #677a6e;border-radius:0 0 4px 4px;display:flex;align-items:end;justify-content:center;padding-bottom:10px;font-size:11px;touch-action:none}.black{position:absolute;top:0;height:60%;width:4%;background:#162522;color:#cfe3d8;border:1px solid #4c6358;border-radius:0 0 4px 4px;display:flex;justify-content:center;align-items:end;padding-bottom:8px;font-size:10px;touch-action:none}.white.on{background:#79c7ab}.black.on{background:#3c8e78}.note{color:#a8b9b0;font-size:12px}.status{color:#94d6be}.warn{color:#e9bd8d}</style></head><body><main>
-<h1>GRIMISS <span style="color:#7bc9ad">mAMB</span> — Virtual Analogue v0.4 — Stability checkpoint</h1>
+<h1>GRIMISS <span style="color:#7bc9ad">mAMB</span> — Virtual Analogue v0.5 — Performance & Modulation</h1>
 <div class="bar"><button id="start">START AUDIO</button><button id="panic">ALL NOTES OFF</button><button id="hold" aria-pressed="false">HOLD OFF</button><label>HOLD MODE <select id="holdMode"><option value="add" selected>ADD</option><option value="replace">REPLACE</option></select></label><label>VOICE <select id="voiceMode"><option value="poly">POLY</option><option value="mono">MONO</option><option value="unison">UNISON</option></select></label><label>PRESET <select id="preset"><option>Warm Ambient</option><option>Vintage Pulse</option><option>Slow Drift</option><option>Deep Drone</option><option>Init VA</option></select></label><span class="status" id="status">Audio not started</span></div>
 <div class="grid">
 <section class="panel"><h2>OSCILLATOR 1 — VA</h2><div class="control"><label>Waveform</label><select id="wave1"><option value="saw">SAW</option><option value="pulse">PULSE</option><option value="triangle">TRIANGLE</option><option value="sine">SINE</option><option value="dwgs1">DIGITAL 1 (GLASS)</option><option value="dwgs2">DIGITAL 2 (VOCAL)</option><option value="dwgs3">DIGITAL 3 (BELL)</option></select><span></span></div>
@@ -9,31 +9,64 @@
 <section class="panel"><h2>FILTER / DRIVE</h2><div class="control"><label>Mode</label><select id="filter"><option value="lp">LPF 12</option><option value="lp24">LPF 24</option><option value="hp">HIGH PASS</option><option value="bp">BAND PASS</option></select><span></span></div><div class="control"><label>Cutoff</label><input id="cutoff" type="range" min="0" max="100" value="65"><span class="val"></span></div><div class="control"><label>Resonance</label><input id="res" type="range" min="0" max="90" value="18"><span class="val"></span></div><div class="control"><label>Drive</label><input id="drive" type="range" min="0" max="100" value="15"><span class="val"></span></div><div class="control"><label>Key tracking</label><input id="keyTrack" type="range" min="-100" max="100" value="0"><span class="val"></span></div><div class="control"><label>Env amount</label><input id="envAmt" type="range" min="-100" max="100" value="35"><span class="val"></span></div></section>
 <section class="panel"><h2>AMP ENVELOPE</h2><div class="control"><label>Attack</label><input id="aa" type="range" min="0" max="100" value="28"><span class="val"></span></div><div class="control"><label>Decay</label><input id="ad" type="range" min="0" max="100" value="40"><span class="val"></span></div><div class="control"><label>Sustain</label><input id="as" type="range" min="0" max="100" value="80"><span class="val"></span></div><div class="control"><label>Release</label><input id="ar" type="range" min="0" max="100" value="50"><span class="val"></span></div></section>
 <section class="panel"><h2>FILTER ENVELOPE</h2><div class="control"><label>Attack</label><input id="fa" type="range" min="0" max="100" value="8"><span class="val"></span></div><div class="control"><label>Decay</label><input id="fd" type="range" min="0" max="100" value="40"><span class="val"></span></div><div class="control"><label>Sustain</label><input id="fs" type="range" min="0" max="100" value="45"><span class="val"></span></div><div class="control"><label>Release</label><input id="fr" type="range" min="0" max="100" value="50"><span class="val"></span></div></section>
-<section class="panel"><h2>ANALOGUE MOTION</h2><div class="control"><label>Slow LFO rate</label><input id="lfo" type="range" min="0" max="100" value="25"><span class="val"></span></div><div class="control"><label>Vibrato</label><input id="vib" type="range" min="0" max="100" value="7"><span class="val"></span></div><div class="control"><label>PITCH drift</label><input id="drift" type="range" min="0" max="100" value="18"><span class="val"></span></div><div class="control"><label>Filter motion</label><input id="motion" type="range" min="0" max="100" value="15"><span class="val"></span></div><div class="control"><label>Master</label><input id="master" type="range" min="0" max="100" value="65"><span class="val"></span></div></section></div>
-<section class="panel"><h2>PLAY — C3 TO C5</h2><div id="keyboard" class="keyboard"></div><p class="note">PolyBLEP saw/pulse, original harmonic digital waves, oscillator sync and phase cross-modulation • eight active voices • click-reduced voice stealing • MIDI input where supported • touch multi-play. HOLD ADD layers notes indefinitely (up to 8 voices). HOLD REPLACE groups presses within 650ms, then replaces the previous group on the next gesture. ALL NOTES OFF clears held notes. This version deliberately prioritises reliable sound over a finished skin.</p></section>
+<section class="panel"><h2>LFO 1 / ANALOGUE MOTION</h2><div class="control"><label for="lfo1Wave">LFO1 wave</label><select id="lfo1Wave"><option value="sine">SINE</option><option value="triangle">TRIANGLE</option><option value="saw">SAW</option><option value="square">SQUARE</option><option value="sh">SAMPLE & HOLD</option></select><span></span></div><div class="control"><label for="lfo1Depth">LFO1 depth</label><input id="lfo1Depth" type="range" min="0" max="100" value="100"><span class="val"></span></div><div class="control"><label>Slow LFO rate</label><input id="lfo" type="range" min="0" max="100" value="25"><span class="val"></span></div><div class="control"><label>Vibrato</label><input id="vib" type="range" min="0" max="100" value="7"><span class="val"></span></div><div class="control"><label>PITCH drift</label><input id="drift" type="range" min="0" max="100" value="18"><span class="val"></span></div><div class="control"><label>Filter motion</label><input id="motion" type="range" min="0" max="100" value="15"><span class="val"></span></div><div class="control"><label>Master</label><input id="master" type="range" min="0" max="100" value="65"><span class="val"></span></div></section><section class="panel"><h2>LFO 2 — INDEPENDENT</h2><div class="control"><label for="lfo2Wave">LFO2 wave</label><select id="lfo2Wave"><option value="triangle">TRIANGLE</option><option value="sine">SINE</option><option value="saw">SAW</option><option value="square">SQUARE</option><option value="sh">SAMPLE & HOLD</option></select><span></span></div><div class="control"><label for="lfo2Rate">LFO2 rate</label><input id="lfo2Rate" type="range" min="0" max="100" value="20"><span class="val"></span></div><div class="control"><label for="lfo2Depth">LFO2 depth</label><input id="lfo2Depth" type="range" min="0" max="100" value="100"><span class="val"></span></div><p class="note">0.005–8.005 Hz. Assign LFO2 in VIRTUAL PATCH. LFO1 retains the original vibrato, PWM and filter-motion connections.</p></section><section class="panel"><h2>VIRTUAL PATCH 1</h2><label><input id="route0Enabled" type="checkbox"> ENABLE ROUTE 1</label><div class="control"><label for="route0Source">Source</label><select id="route0Source"><option value="lfo2">LFO 2</option><option value="lfo1">LFO 1</option><option value="filterEnv">FILTER EG</option><option value="ampEnv">AMP EG</option><option value="velocity">VELOCITY</option><option value="keyTrack">KEY TRACK</option><option value="bend">PITCH BEND</option><option value="wheel">MOD WHEEL</option></select><span></span></div><div class="control"><label for="route0Destination">Destination</label><select id="route0Destination"><option value="cutoff">CUTOFF</option><option value="pitch">PITCH</option><option value="osc2">OSC2 TUNE</option><option value="pw">PULSE WIDTH</option><option value="amp">AMP LEVEL</option><option value="noise">NOISE LEVEL</option></select><span></span></div><div class="control"><label for="route0Amount">Intensity</label><input id="route0Amount" type="range" min="-100" max="100" value="0"><span class="val"></span></div></section><section class="panel"><h2>VIRTUAL PATCH 2</h2><label><input id="route1Enabled" type="checkbox"> ENABLE ROUTE 2</label><div class="control"><label for="route1Source">Source</label><select id="route1Source"><option value="lfo2">LFO 2</option><option value="lfo1">LFO 1</option><option value="filterEnv">FILTER EG</option><option value="ampEnv">AMP EG</option><option value="velocity">VELOCITY</option><option value="keyTrack">KEY TRACK</option><option value="bend">PITCH BEND</option><option value="wheel">MOD WHEEL</option></select><span></span></div><div class="control"><label for="route1Destination">Destination</label><select id="route1Destination"><option value="cutoff">CUTOFF</option><option value="pitch">PITCH</option><option value="osc2">OSC2 TUNE</option><option value="pw">PULSE WIDTH</option><option value="amp">AMP LEVEL</option><option value="noise">NOISE LEVEL</option></select><span></span></div><div class="control"><label for="route1Amount">Intensity</label><input id="route1Amount" type="range" min="-100" max="100" value="0"><span class="val"></span></div></section><section class="panel"><h2>VIRTUAL PATCH 3</h2><label><input id="route2Enabled" type="checkbox"> ENABLE ROUTE 3</label><div class="control"><label for="route2Source">Source</label><select id="route2Source"><option value="lfo2">LFO 2</option><option value="lfo1">LFO 1</option><option value="filterEnv">FILTER EG</option><option value="ampEnv">AMP EG</option><option value="velocity">VELOCITY</option><option value="keyTrack">KEY TRACK</option><option value="bend">PITCH BEND</option><option value="wheel">MOD WHEEL</option></select><span></span></div><div class="control"><label for="route2Destination">Destination</label><select id="route2Destination"><option value="cutoff">CUTOFF</option><option value="pitch">PITCH</option><option value="osc2">OSC2 TUNE</option><option value="pw">PULSE WIDTH</option><option value="amp">AMP LEVEL</option><option value="noise">NOISE LEVEL</option></select><span></span></div><div class="control"><label for="route2Amount">Intensity</label><input id="route2Amount" type="range" min="-100" max="100" value="0"><span class="val"></span></div></section><section class="panel"><h2>VIRTUAL PATCH 4</h2><label><input id="route3Enabled" type="checkbox"> ENABLE ROUTE 4</label><div class="control"><label for="route3Source">Source</label><select id="route3Source"><option value="lfo2">LFO 2</option><option value="lfo1">LFO 1</option><option value="filterEnv">FILTER EG</option><option value="ampEnv">AMP EG</option><option value="velocity">VELOCITY</option><option value="keyTrack">KEY TRACK</option><option value="bend">PITCH BEND</option><option value="wheel">MOD WHEEL</option></select><span></span></div><div class="control"><label for="route3Destination">Destination</label><select id="route3Destination"><option value="cutoff">CUTOFF</option><option value="pitch">PITCH</option><option value="osc2">OSC2 TUNE</option><option value="pw">PULSE WIDTH</option><option value="amp">AMP LEVEL</option><option value="noise">NOISE LEVEL</option></select><span></span></div><div class="control"><label for="route3Amount">Intensity</label><input id="route3Amount" type="range" min="-100" max="100" value="0"><span class="val"></span></div></section></div>
+<section class="panel"><h2>PLAY — C3 TO C5</h2><div id="keyboard" class="keyboard"></div><p class="note">PolyBLEP saw/pulse, original harmonic digital waves, oscillator sync and phase cross-modulation • eight active voices • click-reduced voice stealing • MIDI input where supported • touch multi-play. HOLD ADD layers notes indefinitely (up to 8 voices). HOLD REPLACE groups presses within 650ms, then replaces the previous group on the next gesture. ALL NOTES OFF clears held notes. LFO2 and four virtual patch routes run inside the shared audio engine.</p></section>
 </main><script id="mamb-engine">
 // Shared independently implemented DSP, used by Worklet, fallback and offline tests.
 function createMambEngine(initial, sr=48000, seed=12345){
-let voices=[],clock=0,smoothMix=1,params={...initial},target={...initial},serial=0,hold=false,mode='add',group=-1;
-const pressed=new Set(),latched=new Set(), TWO=2*Math.PI;
-const numericKeys=Object.keys(target).filter(k=>typeof target[k]==='number'),otherKeys=Object.keys(target).filter(k=>typeof target[k]!=='number');
+// New controls default to neutral values for v0.4 patch compatibility.
+initial={lfo1Wave:'sine',lfo1Depth:100,lfo2Wave:'triangle',lfo2Rate:20,lfo2Depth:100,...initial};
+let voices=[],clock=0,smoothMix=1,params={...initial},target={...initial},serial=0,hold=false,mode='add',group=-1,tick=0,rebuilding=false;
+const TWO=2*Math.PI,dt=1/sr,alpha=1-Math.exp(-dt/.015),controlAlpha=1-Math.exp(-16*dt/.015);
+const owners=new Map(),controllers=new Map(),moving=[];let cacheDirty=true;
+const mod={aa:0,ad:0,ar:0,fa:0,fd:0,fr:0,lfo:0,lfo2:0,ratio2:1,baseCut:1000,drive:1,driveNorm:1,k:2};
+const spectra=[[1,.12,.48,.08,.25,.04,.13],[.55,.14,.75,.09,.52,.07,.28],[.32,.85,.14,.61,.07,.39,.18]];
+const waveNames=['saw','pulse','triangle','sine','dwgs1','dwgs2','dwgs3'],filterNames=['lp','lp24','hp','bp'];
+function mixState(names,value){const weights=new Float64Array(names.length);const index=Math.max(0,names.indexOf(value));weights[index]=1;return {names,weights,steps:new Float64Array(names.length),index,left:0}}
+const mix1=mixState(waveNames,params.wave1),mix2=mixState(waveNames,params.wave2),filterMix=mixState(filterNames,params.filter);
+function changeMix(m,value){const index=m.names.indexOf(value);if(index<0||index===m.index)return;m.index=index;m.left=Math.max(1,Math.round(sr*.008));for(let i=0;i<m.weights.length;i++)m.steps[i]=((i===index?1:0)-m.weights[i])/m.left}
+function advanceMix(m){if(!m.left)return;for(let i=0;i<m.weights.length;i++)m.weights[i]+=m.steps[i];if(!--m.left)for(let i=0;i<m.weights.length;i++)m.weights[i]=i===m.index?1:0}
+const lfoStates=[{phase:0,value:0,random:12345,held:0},{phase:0,value:0,random:98765,held:0}];
+function lfoValue(state,wave,rate){const t=state.phase;let value;
+ switch(wave){case 'triangle':value=1-4*Math.abs(t-.5);break;case 'saw':value=2*t-1;break;case 'square':value=t<.5?1:-1;break;case 'sh':value=state.held;break;default:value=Math.sin(TWO*t)}
+ state.value=value;state.phase+=rate*dt;if(state.phase>=1){state.phase-=Math.floor(state.phase);state.random=(Math.imul(state.random,1664525)+1013904223)>>>0;state.held=state.random/2147483648-1}return value;
+}
+for(const state of lfoStates){state.random=(Math.imul(state.random,1664525)+1013904223)>>>0;state.held=state.random/2147483648-1}
+const sources=['filterEnv','ampEnv','lfo1','lfo2','velocity','keyTrack','bend','wheel'];
+const destinations=['pitch','osc2','pw','cutoff','amp','noise'];
+const routes=Array.from({length:4},()=>({source:'lfo2',destination:'cutoff',amount:0,target:0,enabled:false}));
+let activeRoutes=[];
+function controller(source){let c=controllers.get(source);if(!c){c={sustain:false,bend:0,wheel:0};controllers.set(source,c)}return c}
+function routed(v,fe,ae){const values=v.mods;values.fill(0);for(let i=0;i<activeRoutes.length;i++){const r=activeRoutes[i];let value=0;switch(r.source){case 'filterEnv':value=fe;break;case 'ampEnv':value=ae;break;case 'lfo1':value=mod.lfo;break;case 'lfo2':value=mod.lfo2;break;case 'velocity':value=v.velocity;break;case 'keyTrack':value=(v.note-60)/60;break;case 'bend':value=v.bend;break;case 'wheel':value=v.wheel;break}values[r.dest]+=value*r.amount}}
+function control(){
+ if(moving.length)cacheDirty=true;for(let i=moving.length-1;i>=0;i--){const key=moving[i];params[key]+=(target[key]-params[key])*controlAlpha;if(Math.abs(target[key]-params[key])<1e-7){params[key]=target[key];moving[i]=moving[moving.length-1];moving.pop()}}
+ if(cacheDirty){const p=params;mod.aa=.005+(p.aa/100)**2*5;mod.ad=.005+(p.ad/100)**2*5;mod.ar=.005+(p.ar/100)**2*5;mod.fa=.005+(p.fa/100)**2*5;mod.fd=.005+(p.fd/100)**2*5;mod.fr=.005+(p.fr/100)**2*5;
+ mod.rate1=.025+(p.lfo/100)**2*8;mod.rate2=.005+(p.lfo2Rate/100)**2*8;mod.ratio2=2**(p.oct2+p.semi2/12+p.detune/1200);mod.baseCut=50*320**(p.cutoff/100);mod.drive=1+p.drive/10;mod.driveNorm=1/Math.tanh(mod.drive);mod.k=Math.max(.35,2-.018*p.res);cacheDirty=false;}
+ for(let i=0;i<routes.length;i++){const r=routes[i];r.amount+=(r.target-r.amount)*controlAlpha;if(Math.abs(r.target-r.amount)<1e-8)r.amount=r.target}
+ const hadRoutes=activeRoutes.length;for(let i=activeRoutes.length-1;i>=0;i--)if(!activeRoutes[i].enabled&&activeRoutes[i].amount===0){activeRoutes[i]=activeRoutes[activeRoutes.length-1];activeRoutes.pop()}if(hadRoutes&&!activeRoutes.length)for(const v of voices)v.mods.fill(0);
+}
 function random(){seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296}
 function polyblep(t,dt){if(t<dt){t/=dt;return t+t-t*t-1}if(t>1-dt){t=(t-1)/dt;return t*t+t+t+1}return 0}
 function osc(w,p,inc,pw){if(w==='sine')return Math.sin(TWO*p);if(w==='triangle')return 1-4*Math.abs(p-.5);if(w==='pulse'){let x=(p<pw?1:-1);x+=polyblep(p,inc);x-=polyblep((p-pw+1)%1,inc);return x}return 2*p-1-polyblep(p,inc)}
 // Capture UI parameters once per audio block, never query the DOM per sample.
 // Original digital harmonic spectra, deliberately not Korg ROM/DWGS samples.
 function digitalWave(type,phase,hz,sr){
- const coeff=type==='dwgs1'?[1,.12,.48,.08,.25,.04,.13]:type==='dwgs2'?[.55,.14,.75,.09,.52,.07,.28]:[.32,.85,.14,.61,.07,.39,.18];
+ const coeff=spectra[type==='dwgs1'?0:type==='dwgs2'?1:2];
  let sum=0;for(let k=0;k<coeff.length;k++){const harmonic=k+1;if(hz*harmonic>=sr*.45)break;sum+=coeff[k]*Math.sin(TWO*phase*harmonic)}
  return sum*.52
 }
 function updateEnv(e,dt,a,d,s,r){if(e.stage==='attack'){e.value=Math.min(1,e.value+dt/a);if(e.value>=1)e.stage='decay'}else if(e.stage==='decay'){e.value=Math.max(s,e.value-(1-s)*dt/d);if(e.value<=s)e.stage='sustain'}else if(e.stage==='sustain')e.value=s;else if(e.stage==='release'){e.value=Math.max(0,e.value-e.releaseLevel*dt/r);if(e.value<=0)e.stage='off'}return e.value}
-function sample(v,sr,p,mod){const dt=1/sr,lfo=mod.lfo,vib=p.vib*.00015*lfo,drift=p.drift*.00006*Math.sin(TWO*(clock*v.driftRate+v.seed)),pitch=Math.pow(2,(vib+drift)/12),f1=v.hz*pitch*Math.pow(2,(p.bend*2+v.stackDetune/100)/12),f2=f1*Math.pow(2,p.oct2+p.semi2/12+p.detune/1200),inc1=Math.min(.49,f1/sr),inc2=Math.min(.49,f2/sr);const wrapped=v.p1+inc1>=1;v.p1=(v.p1+inc1)%1;if(p.sync&&wrapped)v.p2=0;v.p2=(v.p2+inc2)%1;const width=Math.max(.08,Math.min(.92,p.pw/100+p.pwm/100*lfo));let x1=p.wave1.startsWith('dwgs')?digitalWave(p.wave1,v.p1,f1,sr):osc(p.wave1,v.p1,inc1,width);
-const modPhase=(v.p2+(p.cross/100)*.24*x1+1)%1;
-let x2=osc(p.wave2,modPhase,Math.min(.49,inc2*(1+p.cross/100)),.5),ring=p.ring/100;let x=(x1*p.level1/100+x2*p.level2/100)*(1-ring)+x1*x2*ring*.9+(random()*2-1)*p.noise/250;
-const drive=1+p.drive/10;x=Math.tanh(x*drive)/Math.tanh(drive);
+function mixedOsc(m,phase,inc,width,hz){if(!m.left){const w=waveNames[m.index];return m.index>=4?digitalWave(w,phase,hz,sr):osc(w,phase,inc,width)}let out=0;for(let i=0;i<m.weights.length;i++)if(Math.abs(m.weights[i])>1e-10)out+=m.weights[i]*(i>=4?digitalWave(waveNames[i],phase,hz,sr):osc(waveNames[i],phase,inc,width));return out}
+function sample(v,sr,p,mod){
 const fe=updateEnv(v.fil,dt,mod.fa,mod.fd,p.fs/100,mod.fr),ae=updateEnv(v.amp,dt,mod.aa,mod.ad,p.as/100,mod.ar);
-let cut=50*Math.pow(320,p.cutoff/100)*Math.pow(2,p.envAmt/100*fe*4+p.motion/100*lfo*2+p.keyTrack/100*(v.note-60)/12);
+v.bend+=(v.owner.controller.bend-v.bend)*alpha;v.wheel+=(v.owner.controller.wheel-v.wheel)*alpha;
+if(activeRoutes.length)routed(v,fe,ae);const rm=v.mods;
+const lfo=mod.lfo,vib=p.vib*.00015*lfo,drift=p.drift*.00006*Math.sin(TWO*(clock*v.driftRate+v.seed)),pitch=2**((vib+drift+p.bend*2+v.bend*2+v.stackDetune/100+rm[0]*12)/12),f1=v.hz*pitch,f2=f1*mod.ratio2*2**rm[1],inc1=Math.min(.49,f1/sr),inc2=Math.min(.49,f2/sr);
+const wrapped=v.p1+inc1>=1;v.p1=(v.p1+inc1)%1;if(p.sync&&wrapped)v.p2=0;v.p2=(v.p2+inc2)%1;const width=Math.max(.08,Math.min(.92,p.pw/100+p.pwm/100*lfo+rm[2]*.4));let x1=mixedOsc(mix1,v.p1,inc1,width,f1);
+const modPhase=(v.p2+(p.cross/100)*.24*x1+1)%1;
+let x2=mixedOsc(mix2,modPhase,Math.min(.49,inc2*(1+p.cross/100)),.5,f2),ring=p.ring/100;let x=(x1*p.level1/100+x2*p.level2/100)*(1-ring)+x1*x2*ring*.9+(random()*2-1)*Math.max(0,Math.min(100,p.noise+rm[5]*50))/250;
+x=Math.tanh(x*mod.drive)*mod.driveNorm;
+let cut=mod.baseCut*Math.pow(2,p.envAmt/100*fe*4+p.motion/100*lfo*2+p.keyTrack/100*(v.note-60)/12+rm[3]*4);
 // Clamp cutoff well below Nyquist and slew the filter coefficient per voice.
 // This avoids sudden coefficient jumps on touchscreen sweeps with held notes.
 cut=Math.max(30,Math.min(sr*.22,cut));
@@ -41,88 +74,121 @@ if(!Number.isFinite(v.smoothCut))v.smoothCut=cut;
 v.smoothCut+=Math.min(1,dt*110)*(cut-v.smoothCut);
 cut=v.smoothCut;
 // Canonical TPT SVF: damping is already included in a1, not subtracted again from v3.
-const g=Math.tan(Math.PI*cut/sr),k=Math.max(.35,2-.018*p.res),a1=1/(1+g*(g+k)),a2=g*a1,a3=g*a2;
+const g=Math.tan(Math.PI*cut/sr),k=mod.k,a1=1/(1+g*(g+k)),a2=g*a1,a3=g*a2;
 const v3=x-v.ic2,v1=a1*v.ic1+a2*v3,v2=v.ic2+a2*v.ic1+a3*v3;
 v.ic1=2*v1-v.ic1;v.ic2=2*v2-v.ic2;
 // Never allow a non-finite filter state to poison the audio stream.
 if(!Number.isFinite(v.ic1)||!Number.isFinite(v.ic2)) {v.ic1=0;v.ic2=0;}
-let y=p.filter==='hp'?x-k*v1-v2:p.filter==='bp'?v1:v2;
-if(p.filter==='lp24'){const z=y-v.ic4, b1=a1*v.ic3+a2*z,b2=v.ic4+a2*v.ic3+a3*z;v.ic3=2*b1-v.ic3;v.ic4=2*b2-v.ic4;y=b2;}if(!Number.isFinite(y))y=0;
+// Keep both stages warm so filter-mode changes can blend existing states.
+const z=v2-v.ic4,b1=a1*v.ic3+a2*z,b2=v.ic4+a2*v.ic3+a3*z;v.ic3=2*b1-v.ic3;v.ic4=2*b2-v.ic4;
+const weights=filterMix.weights;let y=weights[0]*v2+weights[1]*b2+weights[2]*(x-k*v1-v2)+weights[3]*v1;
+if(!Number.isFinite(y)||!Number.isFinite(v.ic3)||!Number.isFinite(v.ic4)){v.ic1=v.ic2=v.ic3=v.ic4=0;y=0}
 let fade=v.stealFade===undefined?1:Math.max(0,v.stealFade);if(v.stealFade!==undefined)v.stealFade-=dt/.018;
 // Preserve dynamics of a single voice; summing is managed at the master.
-return Math.tanh(y*1.15)*ae*.20*fade*v.velocity}
+return Math.tanh(y*1.15)*ae*.20*fade*v.velocity*Math.max(0,Math.min(2,1+rm[4]))}
 
-function release(note){for(const v of voices)if(v.note===note&&v.amp.stage!=='release'){for(const k of ['amp','fil']){v[k].releaseLevel=v[k].value;v[k].stage='release'}}}
-function panic(){pressed.clear();latched.clear();group=-1;for(const v of voices)v.stealFade=1}
-function noteOn(note,velocity=1){
- if(!Number.isInteger(note)||note<0||note>127)return;
- if(hold&&mode==='replace'&&!pressed.size&&(group<0||clock-group>.65)){for(const n of latched)release(n);latched.clear();group=clock}
- deferred.delete(note);pressed.add(note);if(hold)latched.add(note);
- // Repeated note retriggers with a short crossfade, including held notes.
- for(const v of voices)if(v.note===note&&v.stealFade===undefined)v.stealFade=1;
+function releaseOwner(owner){if(owner.down||owner.latched||owner.sustained)return;for(const v of voices)if(v.owner===owner&&v.amp.stage!=='release')for(const key of ['amp','fil']){v[key].releaseLevel=v[key].value;v[key].stage='release'}}
+function ownerHasVoices(owner){for(let i=0;i<voices.length;i++){const v=voices[i];if(v.owner===owner&&v.stealFade===undefined&&v.amp.stage!=='off')return true}return false}
+function retire(owner){for(const v of voices)if(v.owner===owner)v.stealFade=1;owners.delete(owner.key)}
+function cleanup(){for(const [key,o] of owners)if(!ownerHasVoices(o))owners.delete(key)}
+function newVoices(owner){
  const count=target.voiceMode==='unison'?4:1;
  if(target.voiceMode==='mono'||target.voiceMode==='unison')for(const v of voices)v.stealFade=1;
  for(let i=0;i<count;i++){
- const active=voices.filter(v=>v.stealFade===undefined);
- if(active.length>=8){const victim=active.find(v=>v.amp.stage==='release')||active[0];victim.stealFade=1;latched.delete(victim.note)}
- voices.push({id:serial++,note,hz:440*2**((note-69)/12),velocity:Math.max(0,Math.min(1,velocity)),stackDetune:count===1?0:(i-1.5)*7,p1:random(),p2:random(),seed:random(),driftRate:.07+random()*.15,ic1:0,ic2:0,ic3:0,ic4:0,smoothCut:NaN,amp:{stage:'attack',value:0},fil:{stage:'attack',value:0}});
+ let active=0,victim;for(const v of voices)if(v.stealFade===undefined){active++;if(!victim||v.amp.stage==='release'&&victim.amp.stage!=='release')victim=v}
+ if(active>=8)victim.stealFade=1;
+ voices.push({id:serial++,owner,note:owner.note,hz:440*2**((owner.note-69)/12),velocity:owner.velocity,stackDetune:count===1?0:(i-1.5)*7,p1:random(),p2:random(),seed:random(),driftRate:.07+random()*.15,ic1:0,ic2:0,ic3:0,ic4:0,bend:owner.controller.bend,wheel:owner.controller.wheel,mods:new Float64Array(6),smoothCut:NaN,amp:{stage:'attack',value:0},fil:{stage:'attack',value:0}});
  }
- // Bound steal tails even for a burst of thousands of events before rendering.
  if(voices.length>32)voices.splice(0,voices.length-32);
+ // Preserve physically pressed MONO/UNISON keys for last-note priority.
+ if(target.voiceMode==='poly'&&!rebuilding)cleanup();
 }
-let sustain=false;const deferred=new Set();
-function noteOff(note){pressed.delete(note);if(hold&&latched.has(note))return;if(sustain){deferred.add(note);return}release(note);
- if(target.voiceMode==='mono'&&pressed.size)noteOn([...pressed].at(-1));}
+function noteOn(note,velocity=1,source='default'){
+ if(!Number.isInteger(note)||note<0||note>127||!Number.isFinite(velocity))return;
+ if(velocity<=0){noteOff(note,source);return}
+ let anyDown=false;for(const o of owners.values())if(o.down)anyDown=true;
+ if(hold&&mode==='replace'&&!anyDown&&(group<0||clock-group>.65)){for(const o of owners.values()){o.latched=false;o.sustained=false;releaseOwner(o)}group=clock}
+ const key=source+'|'+note,old=owners.get(key);if(old)retire(old);
+ const owner={key,source,note,velocity:Math.max(0,Math.min(1,velocity)),controller:controller(source),down:true,latched:hold,sustained:false,order:serial};owners.set(key,owner);newVoices(owner);
+}
+function noteOff(note,source='default'){
+ const o=owners.get(source+'|'+note);if(!o||!o.down)return;
+ o.down=false;o.sustained=o.controller.sustain;releaseOwner(o);
+ restorePriority();
+}
+function restorePriority(){if(target.voiceMode==='poly')return;let latest;for(const o of owners.values())if((o.down||o.latched||o.sustained)&&(!latest||o.order>latest.order))latest=o;if(latest&&!ownerHasVoices(latest))newVoices(latest)}
+function sourceOff(source,disconnect=false,hard=false){
+ for(const o of owners.values())if(o.source===source){o.down=o.latched=o.sustained=false;if(hard){for(const v of voices)if(v.owner===o)v.stealFade=1}else releaseOwner(o)}
+ const c=controllers.get(source);if(c){c.sustain=false;c.bend=0;c.wheel=0}if(disconnect)controllers.delete(source);restorePriority();
+}
+function panic(){for(const v of voices)v.stealFade=1;owners.clear();controllers.clear();group=-1}
+function setRoute(index,value){if(!Number.isInteger(index)||index<0||index>=4)return;const r=routes[index];if(!value||!sources.includes(value.source)||!destinations.includes(value.destination)||!Number.isFinite(value.amount))return;
+ r.source=value.source;r.destination=value.destination;r.dest=destinations.indexOf(value.destination);r.enabled=!!value.enabled;r.target=r.enabled?Math.max(-1,Math.min(1,value.amount)):0;
+ // Disabled routes fade their intensity to zero instead of dropping it in one sample.
+ activeRoutes=routes.filter(x=>x.enabled||Math.abs(x.amount)>1e-8);
+}
 function message(m){switch(m.type){
- case 'params':for(const [k,v] of Object.entries(m.value))if(k in target&&(typeof v!=='number'||Number.isFinite(v)))target[k]=v;break;
- case 'on':noteOn(m.note,m.velocity);break;case 'off':noteOff(m.note);break;
- case 'panic':panic();sustain=false;deferred.clear();break;
- case 'sustain':sustain=m.value;if(!sustain){for(const n of deferred)if(!pressed.has(n)&&!latched.has(n))release(n);deferred.clear()}break;
- case 'hold':hold=m.value;mode=m.mode||mode;group=-1;if(!hold){for(const n of latched)if(!pressed.has(n))release(n);latched.clear()}break;
+ case 'params':{const previousMode=target.voiceMode;for(const [k,value] of Object.entries(m.value||{})){if(!(k in target))continue;if(typeof target[k]==='number'){if(typeof value==='number'&&Number.isFinite(value)){target[k]=Math.max(-1000,Math.min(1000,value));if(!moving.includes(k))moving.push(k)}}else if(typeof value===typeof target[k]){target[k]=value;params[k]=value;if(k==='wave1')changeMix(mix1,value);if(k==='wave2')changeMix(mix2,value);if(k==='filter')changeMix(filterMix,value)}}if(previousMode!==target.voiceMode){for(const v of voices)v.stealFade=1;if(target.voiceMode==='poly'){rebuilding=true;for(const o of owners.values())if(o.down||o.latched||o.sustained)newVoices(o);rebuilding=false;cleanup()}else restorePriority()}break;}
+ case 'on':noteOn(m.note,m.velocity,m.source);break;case 'off':noteOff(m.note,m.source);break;
+ case 'panic':panic();break;
+ case 'sourceOff':sourceOff(m.source||'default',!!m.disconnect,!!m.hard);break;
+ case 'controller':{const c=controller(m.source||'default');if(Number.isFinite(m.bend))c.bend=Math.max(-1,Math.min(1,m.bend));if(Number.isFinite(m.wheel))c.wheel=Math.max(0,Math.min(1,m.wheel));break}
+ case 'sustain':{const source=m.source||'default',c=controller(source);c.sustain=!!m.value;if(!c.sustain)for(const o of owners.values())if(o.source===source){o.sustained=false;releaseOwner(o)}restorePriority();break}
+ case 'hold':hold=!!m.value;mode=m.mode==='replace'?'replace':'add';group=-1;if(!hold)for(const o of owners.values()){o.latched=false;releaseOwner(o)}restorePriority();break;
+ case 'route':setRoute(m.index,m.value);break;
 }}
-function render(out){const dt=1/sr,alpha=1-Math.exp(-dt/.015);for(const k of otherKeys)params[k]=target[k];
+control();
+function pruneOwner(o,key){if(!o.down&&!o.latched&&!o.sustained&&!ownerHasVoices(o))owners.delete(key)}
+function render(out){
  for(let i=0;i<out.length;i++){
- for(const k of numericKeys)params[k]+=(target[k]-params[k])*alpha;
- const p=params,mod={aa:.005+(p.aa/100)**2*5,ad:.005+(p.ad/100)**2*5,ar:.005+(p.ar/100)**2*5,fa:.005+(p.fa/100)**2*5,fd:.005+(p.fd/100)**2*5,fr:.005+(p.fr/100)**2*5,lfo:Math.sin(TWO*clock*(.025+(p.lfo/100)**2*8))};
+ if(!(tick++&15))control();
+ advanceMix(mix1);advanceMix(mix2);advanceMix(filterMix);
+ mod.lfo=lfoValue(lfoStates[0],params.lfo1Wave,mod.rate1)*params.lfo1Depth/100;mod.lfo2=lfoValue(lfoStates[1],params.lfo2Wave,mod.rate2)*params.lfo2Depth/100;
  let sum=0,energy=0;
- for(let j=voices.length-1;j>=0;j--){const v=voices[j];sum+=sample(v,sr,p,mod);energy+=v.amp.value*v.amp.value;if(v.amp.stage==='off'||v.stealFade<=0)voices.splice(j,1)}
+ for(let j=voices.length-1;j>=0;j--){const v=voices[j];sum+=sample(v,sr,params,mod);energy+=v.amp.value*v.amp.value;if(v.amp.stage==='off'||v.stealFade<=0){for(let k=j;k<voices.length-1;k++)voices[k]=voices[k+1];voices.length--}}
  const gain=1/Math.sqrt(Math.max(1,energy));smoothMix+=(gain-smoothMix)*Math.min(1,dt*35);
- out[i]=Number.isFinite(sum)?Math.tanh(sum*smoothMix*.8)*p.master/100:0;clock+=dt;
+ out[i]=Number.isFinite(sum)?Math.tanh(sum*smoothMix*.8)*params.master/100:0;clock+=dt;
  }
+ // Remove completed owners outside the sample loop; retains last-note priority keys.
+ owners.forEach(pruneOwner);
 }
-return {render,message,snapshot:()=>({voices:voices.map(v=>({note:v.note,stage:v.amp.stage,value:v.amp.value,stealing:v.stealFade!==undefined})),held:[...latched],pressed:[...pressed],clock})};
+function snapshot(){const activeNotes=new Set(),held=new Set(),pressed=new Set();for(const v of voices)if(v.stealFade===undefined&&v.amp.stage!=='release'&&v.amp.stage!=='off')activeNotes.add(v.note);for(const o of owners.values()){if(o.latched&&ownerHasVoices(o))held.add(o.note);if(o.down)pressed.add(o.note)}return {voices:voices.map(v=>({note:v.note,source:v.owner.source,stage:v.amp.stage,value:v.amp.value,filterEnvelope:v.fil.value,bend:v.bend,wheel:v.wheel,stealing:v.stealFade!==undefined})),activeNotes:[...activeNotes],held:[...held],pressed:[...pressed],owners:owners.size,clock,lfo1:lfoStates[0].value,lfo2:lfoStates[1].value,lfoPhases:lfoStates.map(s=>s.phase),routes:routes.map(r=>({...r}))}}
+return {render,message,snapshot};
 }
 </script><script>
 
 'use strict';
 const $=id=>document.getElementById(id), n=id=>Number($(id).value);
-let ac,processor,masterNode,voices=[],pointerNotes=new Map(),heldNotes=new Map(),clock=0;let holdEnabled=false;const latched=new Set(),pressed=new Set();let replaceGroupTime=-1;const TWO=2*Math.PI;
-let engine,workletNode,starting,midiBend=0,engineTimer;
-function parameters(){const ids=['cross','lfo','vib','drift','pw','pwm','level1','level2','ring','noise','drive','cutoff','res','envAmt','motion','master','aa','ad','as','ar','fa','fd','fs','fr','detune','semi2','keyTrack'];const p={};for(const id of ids)p[id]=n(id);p.sync=$('sync').value==='on';p.wave1=$('wave1').value;p.wave2=$('wave2').value;p.oct2=Number($('oct2').value);p.filter=$('filter').value;p.bend=midiBend;p.voiceMode=$('voiceMode').value;return p}
+let ac,processor,pointerNotes=new Map(),holdEnabled=false;
+const localNotes=new Map();let engine,workletNode,starting,engineTimer,lastParams='',latestEngineState={activeNotes:[]};
+function parameters(){const ids=['cross','lfo','vib','drift','pw','pwm','level1','level2','ring','noise','drive','cutoff','res','envAmt','motion','master','aa','ad','as','ar','fa','fd','fs','fr','detune','semi2','keyTrack','lfo1Depth','lfo2Rate','lfo2Depth'];const p={};for(const id of ids)p[id]=n(id);p.sync=$('sync').value==='on';p.wave1=$('wave1').value;p.wave2=$('wave2').value;p.oct2=Number($('oct2').value);p.filter=$('filter').value;p.bend=0;p.lfo1Wave=$('lfo1Wave').value;p.lfo2Wave=$('lfo2Wave').value;p.voiceMode=$('voiceMode').value;return p}
 
-function send(m){if(workletNode)workletNode.port.postMessage(m);else if(engine)engine.message(m)}
-function syncParameters(){send({type:'params',value:parameters()})}
+function updateKeyboard(state){latestEngineState=state;const active=new Set(state.activeNotes);document.querySelectorAll('[data-midi]').forEach(key=>key.classList.toggle('on',active.has(+key.dataset.midi)))}
+function send(m){if(workletNode)workletNode.port.postMessage(m);else if(engine){engine.message(m);if(m.type!=='params')updateKeyboard(engine.snapshot())}}
+function syncParameters(){const value=parameters(),serialized=JSON.stringify(value);if(serialized!==lastParams){lastParams=serialized;send({type:'params',value})}}
+function syncRoute(index){send({type:'route',index,value:{source:$('route'+index+'Source').value,destination:$('route'+index+'Destination').value,amount:n('route'+index+'Amount')/100,enabled:$('route'+index+'Enabled').checked}})}
+function resetRoutes(){for(let i=0;i<4;i++){$('route'+i+'Enabled').checked=false;syncRoute(i)}}
+function refreshState(){if(workletNode)workletNode.port.postMessage({type:'snapshot'});else if(engine)updateKeyboard(engine.snapshot())}
 async function start(){if(starting)return starting;starting=(async()=>{try{
  if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();
  const initial=parameters();let backend='ScriptProcessor fallback';
  if(ac.audioWorklet&&window.isSecureContext){try{
- const source=document.getElementById('mamb-engine').textContent+`\nclass MambProcessor extends AudioWorkletProcessor{constructor(o){super();this.engine=createMambEngine(o.processorOptions,sampleRate);this.port.onmessage=e=>this.engine.message(e.data)}process(i,o){this.engine.render(o[0][0]);return true}}registerProcessor('mamb',MambProcessor);`;
+ const source=document.getElementById('mamb-engine').textContent+`\nclass MambProcessor extends AudioWorkletProcessor{constructor(o){super();this.engine=createMambEngine(o.processorOptions,sampleRate);this.port.onmessage=e=>{if(e.data.type==='snapshot')this.port.postMessage(this.engine.snapshot());else this.engine.message(e.data)}}process(i,o){this.engine.render(o[0][0]);return true}}registerProcessor('mamb',MambProcessor);`;
  const url=URL.createObjectURL(new Blob([source],{type:'text/javascript'}));try{await ac.audioWorklet.addModule(url)}finally{URL.revokeObjectURL(url)}
- workletNode=new AudioWorkletNode(ac,'mamb',{numberOfInputs:0,numberOfOutputs:1,outputChannelCount:[1],processorOptions:initial});processor=workletNode;backend='AudioWorklet';
+ workletNode=new AudioWorkletNode(ac,'mamb',{numberOfInputs:0,numberOfOutputs:1,outputChannelCount:[1],processorOptions:initial});processor=workletNode;backend='AudioWorklet';workletNode.port.onmessage=e=>updateKeyboard(e.data);
  workletNode.onprocessorerror=()=>{$('status').textContent='Audio engine error — reload to restart'};
  }catch(error){console.warn('AudioWorklet unavailable, using fallback',error)}}
  if(!processor){engine=createMambEngine(initial,ac.sampleRate);processor=ac.createScriptProcessor(1024,0,1);processor.onaudioprocess=e=>engine.render(e.outputBuffer.getChannelData(0))}
- processor.connect(ac.destination);ac.mambBackend=backend;engineTimer=setInterval(syncParameters,30);
+ processor.connect(ac.destination);ac.mambBackend=backend;lastParams=JSON.stringify(initial);for(let i=0;i<4;i++)syncRoute(i);send({type:'hold',value:holdEnabled,mode:$('holdMode').value});engineTimer=setInterval(()=>{syncParameters();refreshState()},50);
  }
  await ac.resume();$('status').textContent='Audio '+ac.state+' • '+ac.mambBackend;$('start').textContent='AUDIO RUNNING';
  }catch(e){$('status').textContent='Audio error: '+e.message;throw e}finally{starting=null}})();return starting}
-function noteOn(m,velocity=1){if(!ac)return;pressed.add(m);if(holdEnabled)latched.add(m);send({type:'on',note:m,velocity});document.querySelectorAll('[data-midi="'+m+'"]').forEach(k=>k.classList.add('on'))}
-function noteOff(m){pressed.delete(m);send({type:'off',note:m});if(!holdEnabled)document.querySelectorAll('[data-midi="'+m+'"]').forEach(k=>k.classList.remove('on'))}
-function releaseVoice(m){send({type:'off',note:m});document.querySelectorAll('[data-midi="'+m+'"]').forEach(k=>k.classList.remove('on'))}
-function panic(){send({type:'panic'});latched.clear();pressed.clear();heldNotes.clear();pointerNotes.clear();document.querySelectorAll('.on').forEach(k=>k.classList.remove('on'))}
+function noteOn(m,velocity=1,source='default'){if(!ac)return;syncParameters();localNotes.set(source+'|'+m,{note:m,source});send({type:'on',note:m,velocity,source});refreshState()}
+function noteOff(m,source='default'){localNotes.delete(source+'|'+m);send({type:'off',note:m,source});refreshState()}
+function panic(){send({type:'panic'});localNotes.clear();pointerNotes.clear();updateKeyboard({activeNotes:[]})}
 $('start').onclick=start;$('panic').onclick=panic;
-$('hold').onclick=()=>{holdEnabled=!holdEnabled;replaceGroupTime=-1;send({type:'hold',value:holdEnabled,mode:$('holdMode').value});$('hold').textContent=holdEnabled?'HOLD ON':'HOLD OFF';$('hold').setAttribute('aria-pressed',String(holdEnabled));$('hold').style.background=holdEnabled?'#377a62':'';if(!holdEnabled){for(const m of latched)if(!pressed.has(m))releaseVoice(m);latched.clear()}};
-$('holdMode').onchange=()=>{send({type:'hold',value:holdEnabled,mode:$('holdMode').value});replaceGroupTime=-1;if(holdEnabled&&$('holdMode').value==='replace')$('status').textContent='HOLD REPLACE: keys played within 650ms form one group'};
+$('hold').onclick=()=>{holdEnabled=!holdEnabled;send({type:'hold',value:holdEnabled,mode:$('holdMode').value});$('hold').textContent=holdEnabled?'HOLD ON':'HOLD OFF';$('hold').setAttribute('aria-pressed',String(holdEnabled));$('hold').style.background=holdEnabled?'#377a62':'';refreshState()};
+$('holdMode').onchange=()=>{send({type:'hold',value:holdEnabled,mode:$('holdMode').value});refreshState()};
 const presets={
 'Warm Ambient':{wave1:'saw',wave2:'pulse',level1:75,level2:48,cutoff:58,res:14,drive:18,aa:42,ar:65,as:90,detune:7,vib:6,drift:15,pwm:9},
 'Vintage Pulse':{wave1:'pulse',wave2:'pulse',pw:38,pwm:18,level1:80,level2:45,cutoff:62,res:26,drive:27,aa:2,ar:27,as:72,detune:4},
@@ -130,23 +196,32 @@ const presets={
 'Deep Drone':{wave1:'triangle',wave2:'saw',oct2:'-1',level1:80,level2:55,cutoff:35,res:8,drive:32,aa:70,ar:85,as:100,detune:3},
 'Init VA':{wave1:'saw',wave2:'saw',oct2:'0',level1:85,level2:0,cutoff:78,res:5,drive:0,aa:0,ad:20,as:100,ar:20,detune:0,vib:0,drift:0,motion:0,ring:0,pwm:0,cross:0,sync:'off'}};
 const defaults=Object.fromEntries([...document.querySelectorAll('.control input,.control select')].map(x=>[x.id,x.value]));
-function show(){document.querySelectorAll('input[type=range]').forEach(x=>{let s=x.nextElementSibling;if(s?.classList.contains('val'))s.textContent=x.value})}
-$('preset').onchange=()=>{$('cross').value=0;$('sync').value='off';for(const [id,value] of Object.entries({...defaults,...presets[$('preset').value]}))$(id).value=value;show();syncParameters()};document.querySelectorAll('input[type=range]').forEach(x=>x.addEventListener('input',show));$('preset').onchange();
+function show(){document.querySelectorAll('input[type=range]').forEach(x=>{let s=x.nextElementSibling;if(s?.classList.contains('val'))s.textContent=x.id==='lfo'||x.id==='lfo2Rate'?((x.id==='lfo'?.025:.005)+(Number(x.value)/100)**2*8).toFixed(3)+' Hz':x.value})}
+$('preset').onchange=()=>{$('cross').value=0;$('sync').value='off';for(const [id,value] of Object.entries({...defaults,...presets[$('preset').value]}))$(id).value=value;resetRoutes();show();syncParameters()};document.querySelectorAll('input[type=range]').forEach(x=>x.addEventListener('input',show));$('preset').onchange();
+document.addEventListener('input',e=>{if(e.target.id.startsWith('route')){const index=Number(e.target.id.charAt(5));syncRoute(index)}else syncParameters()});document.addEventListener('change',e=>{if(e.target.id==='voiceMode')syncParameters()});
 const key=$('keyboard'),whiteNotes=[48,50,52,53,55,57,59,60,62,64,65,67,69,71,72],names=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];function name(m){return names[m%12]+(Math.floor(m/12)-1)}
 for(let i=0;i<whiteNotes.length;i++){const m=whiteNotes[i],w=document.createElement('div');w.className='white';w.dataset.midi=m;w.textContent=name(m);key.append(w)}
 for(let i=0;i<whiteNotes.length-1;i++){const m=whiteNotes[i];if([0,2,5,7,9].includes(m%12)){const b=document.createElement('div');b.className='black';b.dataset.midi=m+1;b.style.left=((i+1)/whiteNotes.length*100-2)+'%';b.textContent=name(m+1);key.append(b)}}
-key.addEventListener('contextmenu',e=>e.preventDefault());key.addEventListener('pointerdown',async e=>{const k=e.target.closest('[data-midi]');if(!k)return;e.preventDefault();if(!ac)await start();const m=+k.dataset.midi;pointerNotes.set(e.pointerId,m);try{k.setPointerCapture(e.pointerId)}catch{}noteOn(m)});function pointerUp(e){const m=pointerNotes.get(e.pointerId);if(m!==undefined){pointerNotes.delete(e.pointerId);noteOff(m)}}key.addEventListener('pointerup',pointerUp);key.addEventListener('pointercancel',pointerUp);key.addEventListener('lostpointercapture',pointerUp);
-const keyboardMap={'a':48,'w':49,'s':50,'e':51,'d':52,'f':53,'t':54,'g':55,'y':56,'h':57,'u':58,'j':59,'k':60};window.addEventListener('keydown',e=>{if(e.repeat||e.target.matches('input,select'))return;const m=keyboardMap[e.key.toLowerCase()];if(m!==undefined){e.preventDefault();noteOn(m)}});window.addEventListener('keyup',e=>{const m=keyboardMap[e.key.toLowerCase()];if(m!==undefined)noteOff(m)});window.addEventListener('blur',()=>{for(const m of [...pressed])noteOff(m)});
-/* MIDI replaced below */
-if(false&&navigator.requestMIDIAccess)navigator.requestMIDIAccess().then(access=>{for(const input of access.inputs.values())input.onmidimessage=e=>{const [st,m,v]=e.data;if((st&240)===144&&v)noteOn(m);else if((st&240)===128||((st&240)===144&&!v))noteOff(m)}}).catch(()=>{});
-
-let midiAccess;const midiSustain=new Set();
-function midiMessage(e){const [status,note,value=0]=e.data,command=status&240;
- if(command===144&&value)noteOn(note,value/127);
- else if(command===128||command===144)noteOff(note);
- else if(command===224){midiBend=((value<<7|note)-8192)/8192;syncParameters()}
- else if(command===176){if(note===64){send({type:'sustain',value:value>=64})}else if(note===120||note===123)panic()}
+key.addEventListener('contextmenu',e=>e.preventDefault());
+key.addEventListener('pointerdown',async e=>{const k=e.target.closest('[data-midi]');if(!k)return;e.preventDefault();const m=+k.dataset.midi,source='pointer:'+e.pointerId;const pending={note:m,source};pointerNotes.set(e.pointerId,pending);try{k.setPointerCapture(e.pointerId)}catch{}
+ try{if(!ac||ac.state!=='running')await start();if(pointerNotes.get(e.pointerId)===pending)noteOn(m,1,source)}catch{pointerNotes.delete(e.pointerId)}});
+function pointerUp(e){const pending=pointerNotes.get(e.pointerId);if(pending){pointerNotes.delete(e.pointerId);noteOff(pending.note,pending.source)}}
+key.addEventListener('pointerup',pointerUp);key.addEventListener('pointercancel',pointerUp);key.addEventListener('lostpointercapture',pointerUp);
+const keyboardMap={'a':48,'w':49,'s':50,'e':51,'d':52,'f':53,'t':54,'g':55,'y':56,'h':57,'u':58,'j':59,'k':60};
+window.addEventListener('keydown',e=>{if(e.repeat||e.target.matches('input,select,textarea'))return;const char=e.key.toLowerCase(),m=keyboardMap[char];if(m!==undefined){e.preventDefault();noteOn(m,1,'keyboard:'+char)}});
+window.addEventListener('keyup',e=>{const char=e.key.toLowerCase(),m=keyboardMap[char];if(m!==undefined)noteOff(m,'keyboard:'+char)});
+function releaseLocal(){for(const event of [...localNotes.values()])if(event.source.startsWith('keyboard:')||event.source.startsWith('pointer:'))noteOff(event.note,event.source);pointerNotes.clear()}
+window.addEventListener('blur',releaseLocal);document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseLocal()});
+let midiAccess;
+function midiMessage(e,device='injected'){
+ const [status,note,value=0]=e.data;if(status<128||status>=240)return;const command=status&240,source='midi:'+device+':'+(status&15);
+ if(command===144&&value)noteOn(note,value/127,source);
+ else if(command===128||command===144)noteOff(note,source);
+ else if(command===224)send({type:'controller',source,bend:((value<<7|note)-8192)/8192});
+ else if(command===176){if(note===64)send({type:'sustain',source,value:value>=64});else if(note===1)send({type:'controller',source,wheel:value/127});else if(note===120||note===123){send({type:'sourceOff',source,hard:note===120});for(const [key,event] of localNotes)if(event.source===source)localNotes.delete(key)}}
+ refreshState();
 }
-function connectMidi(){for(const input of midiAccess.inputs.values())input.onmidimessage=midiMessage}
-if(navigator.requestMIDIAccess)navigator.requestMIDIAccess().then(access=>{midiAccess=access;connectMidi();access.onstatechange=e=>{if(e.port.type==='input'&&e.port.state==='disconnected')panic();connectMidi()}}).catch(()=>{});
+function connectMidi(){for(const input of midiAccess.inputs.values())input.onmidimessage=e=>midiMessage(e,input.id)}
+function disconnectMidi(device){for(let channel=0;channel<16;channel++){const source='midi:'+device+':'+channel;send({type:'sourceOff',source,disconnect:true});for(const [key,event] of localNotes)if(event.source===source)localNotes.delete(key)}refreshState()}
+if(navigator.requestMIDIAccess)navigator.requestMIDIAccess().then(access=>{midiAccess=access;connectMidi();access.onstatechange=e=>{if(e.port.type==='input'&&e.port.state==='disconnected')disconnectMidi(e.port.id);connectMidi()}}).catch(()=>{});
 </script></body></html>

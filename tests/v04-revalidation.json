@@ -1,0 +1,83 @@
+{
+  "startingCommit": "a0131ea527fada670ad9bfc13b2aa5336e9480d3",
+  "performedBeforeSynthChanges": true,
+  "audio": [
+    {
+      "name": "startup silence; note-on and complete release",
+      "status": "PASS",
+      "milliseconds": 69
+    },
+    {
+      "name": "eight active voices; bounded click-reduced stealing",
+      "status": "PASS",
+      "milliseconds": 60
+    },
+    {
+      "name": "long overlapping release remains audible then ends",
+      "status": "PASS",
+      "milliseconds": 1521
+    },
+    {
+      "name": "HOLD ADD sustains beyond maximum release time",
+      "status": "PASS",
+      "milliseconds": 796
+    },
+    {
+      "name": "HOLD REPLACE chord grouping and panic",
+      "status": "PASS",
+      "milliseconds": 127
+    },
+    {
+      "name": "four filters: swept cutoff and extreme resonance at 44.1/48/96 kHz",
+      "status": "PASS",
+      "milliseconds": 1947
+    },
+    {
+      "name": "rapid retrigger stress: finite, bounded output and voice count",
+      "status": "PASS",
+      "milliseconds": 1004
+    },
+    {
+      "name": "sync, ring and cross modulation alter rendered audio",
+      "status": "PASS",
+      "milliseconds": 111
+    },
+    {
+      "name": "velocity, sustain pedal and audible unison",
+      "status": "PASS",
+      "milliseconds": 857
+    },
+    {
+      "name": "60-second sustained stress rendering",
+      "status": "PASS",
+      "milliseconds": 13923
+    }
+  ],
+  "browser": [
+    {
+      "route": "http",
+      "backend": "Audio running \u2022 AudioWorklet",
+      "audio": {
+        "rms": 0.06406051743351666,
+        "finite": true
+      },
+      "status": "PASS"
+    },
+    {
+      "route": "file",
+      "status": "BLOCKED",
+      "reason": "Managed Chromium policy blocks file URLs"
+    },
+    {
+      "route": "fallback",
+      "backend": "Audio running \u2022 ScriptProcessor fallback",
+      "audio": {
+        "rms": 0.0646598398112368,
+        "finite": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "baseline": "PASS; original v0.3.3 fixture produced finite, nonzero output",
+  "diagnostics": "PASS; A4 440 positive crossings/sec, RMS 0.06387005100082065, peak 0.08061345666646957"
+}

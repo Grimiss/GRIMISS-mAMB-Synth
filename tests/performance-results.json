@@ -1,0 +1,39 @@
+{
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "neutralPatchMaximumSampleDifference": 0,
+  "results": [
+    {
+      "file": "tests/fixtures/v0.4.html",
+      "renderedSeconds": 2,
+      "voices": 8,
+      "blockFrames": 128,
+      "sampleRate": 48000,
+      "warmupRuns": 1,
+      "measuredRuns": 3,
+      "milliseconds": [
+        531.4545779999999,
+        597.6396120000002,
+        534.2825969999999
+      ],
+      "medianMilliseconds": 534.2825969999999,
+      "renderToRealtimeRatio": 0.26714129849999996
+    },
+    {
+      "file": "GRIMISS_mAMB_Synth_v0_3_3_Filter_Fix.html",
+      "renderedSeconds": 2,
+      "voices": 8,
+      "blockFrames": 128,
+      "sampleRate": 48000,
+      "warmupRuns": 1,
+      "measuredRuns": 3,
+      "milliseconds": [
+        287.46642199999997,
+        298.27113999999983,
+        290.6322739999996
+      ],
+      "medianMilliseconds": 290.6322739999996,
+      "renderToRealtimeRatio": 0.1453161369999998
+    }
+  ]
+}

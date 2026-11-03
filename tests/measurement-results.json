@@ -1,0 +1,391 @@
+{
+  "method": "Independently rendered engine measurements, not hardware comparison",
+  "sampleRate": 48000,
+  "tuning": [
+    {
+      "note": 36,
+      "expectedHz": 65.40639132514966,
+      "measuredHz": 65.40639132471435,
+      "cents": -1.1522148517489915e-8
+    },
+    {
+      "note": 48,
+      "expectedHz": 130.8127826502993,
+      "measuredHz": 130.8127826475175,
+      "cents": -3.6815635369604696e-8
+    },
+    {
+      "note": 69,
+      "expectedHz": 440,
+      "measuredHz": 440.0000003788065,
+      "cents": 0.0000014904605552554631
+    },
+    {
+      "note": 84,
+      "expectedHz": 1046.5022612023945,
+      "measuredHz": 1046.5022605627526,
+      "cents": -0.0000010581628906018365
+    },
+    {
+      "note": 96,
+      "expectedHz": 2093.004522404789,
+      "measuredHz": 2093.0045205825945,
+      "cents": -0.0000015072328007677106
+    }
+  ],
+  "routePitch": [
+    {
+      "source": "velocity",
+      "amount": 1,
+      "expectedSemitones": 12,
+      "measuredHz": 879.9999946809509
+    },
+    {
+      "source": "wheel",
+      "amount": 0.5,
+      "expectedSemitones": 6,
+      "measuredHz": 622.2539666144957
+    },
+    {
+      "source": "keyTrack",
+      "amount": -1,
+      "expectedSemitones": -1.8,
+      "measuredHz": 396.5502037957151
+    }
+  ],
+  "filters": {
+    "lp": [
+      {
+        "note": 36,
+        "hz": 65.40639132514966,
+        "amplitude": 0.001483615936487634,
+        "relativeToCutoffDb": 5.525871433597559
+      },
+      {
+        "note": 48,
+        "hz": 130.8127826502993,
+        "amplitude": 0.0012558351984912977,
+        "relativeToCutoffDb": 4.07809466472658
+      },
+      {
+        "note": 60,
+        "hz": 261.6255653005986,
+        "amplitude": 0.0007852861140595791,
+        "relativeToCutoffDb": 0
+      },
+      {
+        "note": 72,
+        "hz": 523.2511306011972,
+        "amplitude": 0.0003139076450774585,
+        "relativeToCutoffDb": -7.9645205033922215
+      },
+      {
+        "note": 84,
+        "hz": 1046.5022612023945,
+        "amplitude": 0.00009212911689934342,
+        "relativeToCutoffDb": -18.612620195507077
+      },
+      {
+        "note": 96,
+        "hz": 2093.004522404789,
+        "amplitude": 0.000023870230176242104,
+        "relativeToCutoffDb": -30.34342622387165
+      }
+    ],
+    "lp24": [
+      {
+        "note": 36,
+        "hz": 65.40639132514966,
+        "amplitude": 0.0013987228327675815,
+        "relativeToCutoffDb": 11.03728147795858
+      },
+      {
+        "note": 48,
+        "hz": 130.8127826502993,
+        "amplitude": 0.0010012649835977835,
+        "relativeToCutoffDb": 8.133628754896524
+      },
+      {
+        "note": 60,
+        "hz": 261.6255653005986,
+        "amplitude": 0.00039252524240469594,
+        "relativeToCutoffDb": 0
+      },
+      {
+        "note": 72,
+        "hz": 523.2511306011972,
+        "amplitude": 0.00006274688844205037,
+        "relativeToCutoffDb": -15.925507920560623
+      },
+      {
+        "note": 84,
+        "hz": 1046.5022612023945,
+        "amplitude": 0.000005403662177653726,
+        "relativeToCutoffDb": -37.22358800373208
+      },
+      {
+        "note": 96,
+        "hz": 2093.004522404789,
+        "amplitude": 3.627874246818086e-7,
+        "relativeToCutoffDb": -60.684307315811104
+      }
+    ],
+    "hp": [
+      {
+        "note": 36,
+        "hz": 65.40639132514966,
+        "amplitude": 0.00009271378293044329,
+        "relativeToCutoffDb": -18.55767232646589
+      },
+      {
+        "note": 48,
+        "hz": 130.8127826502993,
+        "amplitude": 0.00031392375960824254,
+        "relativeToCutoffDb": -7.964074620597977
+      },
+      {
+        "note": 60,
+        "hz": 261.6255653005986,
+        "amplitude": 0.0007852861138941119,
+        "relativeToCutoffDb": 0
+      },
+      {
+        "note": 72,
+        "hz": 523.2511306011972,
+        "amplitude": 0.0012563232926658457,
+        "relativeToCutoffDb": 4.081469877317866
+      },
+      {
+        "note": 84,
+        "hz": 1046.5022612023945,
+        "amplitude": 0.0014783230761883381,
+        "relativeToCutoffDb": 5.494828764280998
+      },
+      {
+        "note": 96,
+        "hz": 2093.004522404789,
+        "amplitude": 0.001546621771996213,
+        "relativeToCutoffDb": 5.8871240310838315
+      }
+    ],
+    "bp": [
+      {
+        "note": 36,
+        "hz": 65.40639132514966,
+        "amplitude": 0.00036804469828655476,
+        "relativeToCutoffDb": -6.579845219707288
+      },
+      {
+        "note": 48,
+        "hz": 130.8127826502993,
+        "amplitude": 0.0006283347771005083,
+        "relativeToCutoffDb": -1.934034586403551
+      },
+      {
+        "note": 60,
+        "hz": 261.6255653005986,
+        "amplitude": 0.000785041882124039,
+        "relativeToCutoffDb": 0
+      },
+      {
+        "note": 72,
+        "hz": 523.2511306011972,
+        "amplitude": 0.0006280528642453301,
+        "relativeToCutoffDb": -1.9379325298537151
+      },
+      {
+        "note": 84,
+        "hz": 1046.5022612023945,
+        "amplitude": 0.0003689730582191108,
+        "relativeToCutoffDb": -6.557963423476224
+      },
+      {
+        "note": 96,
+        "hz": 2093.004522404789,
+        "amplitude": 0.00019209045031663835,
+        "relativeToCutoffDb": -12.22774104783749
+      }
+    ]
+  },
+  "filterSlopesDbPerOctave": {
+    "lp": -11.730806028364576,
+    "lp24": -23.460719312079025,
+    "hp": 10.593597705867914,
+    "bpHigh": -5.669777624361267
+  },
+  "envelopes": [
+    {
+      "kind": "amp",
+      "attackSeconds": 0.20500000000000015,
+      "expectedAttack": 0.20500000000000004,
+      "releaseSeconds": 0.45500000000000035,
+      "expectedRelease": 0.45499999999999996
+    },
+    {
+      "kind": "filter",
+      "attackSeconds": 0.20500000000000015,
+      "expectedAttack": 0.20500000000000004,
+      "releaseSeconds": 0.45500000000000035,
+      "expectedRelease": 0.45499999999999996
+    }
+  ],
+  "aliasing": {
+    "method": "Exact oscillator primitive, coherent FFT; energy outside legal harmonic bins. Excludes nonlinear mixer, sync and cross modulation.",
+    "fundamentalHz": 5865.234375,
+    "fftSize": 8192,
+    "naiveSawDb": -8.083655444340428,
+    "polyblepSawDb": -26.262894214849393,
+    "polyblepPulseDb": -26.08443712688664,
+    "triangleDb": -26.375324369590103,
+    "sawImprovementDb": 18.179238770508967
+  },
+  "harmonics": [
+    {
+      "wave": "saw",
+      "fundamentalHz": 220,
+      "relativeHarmonicDb": [
+        0,
+        -6.074064499203271,
+        -9.619835901849482,
+        -12.143793714739699,
+        -14.112092557062919,
+        -15.731630513476965,
+        -17.112597943575366,
+        -18.320711086478745,
+        -19.398334351477914,
+        -20.37438211947455
+      ],
+      "powerSpectralCentroidHz": 533.9364959145337
+    },
+    {
+      "wave": "pulse",
+      "fundamentalHz": 220,
+      "relativeHarmonicDb": [
+        0,
+        -300,
+        -9.56804334236454,
+        -300,
+        -14.056242298398839,
+        -300,
+        -17.055608214992283,
+        -300,
+        -19.340848792902598,
+        -299.221324069945
+      ],
+      "powerSpectralCentroidHz": 417.27778007945034
+    },
+    {
+      "wave": "triangle",
+      "fundamentalHz": 220,
+      "relativeHarmonicDb": [
+        0,
+        -300,
+        -19.315579981525158,
+        -300,
+        -28.24661894586623,
+        -300,
+        -34.15888334971341,
+        -298.7509931049418,
+        -38.61033146655053,
+        -300
+      ],
+      "powerSpectralCentroidHz": 227.4985824915814
+    },
+    {
+      "wave": "sine",
+      "fundamentalHz": 220,
+      "relativeHarmonicDb": [
+        0,
+        -300,
+        -51.210741848594886,
+        -300,
+        -99.91437253679051,
+        -300,
+        -148.2473214808014,
+        -300,
+        -176.70918645599306,
+        -300
+      ],
+      "powerSpectralCentroidHz": 220.0033295605443
+    },
+    {
+      "wave": "dwgs1",
+      "fundamentalHz": 220,
+      "relativeHarmonicDb": [
+        0,
+        -18.474873706233208,
+        -6.411465209822538,
+        -22.047030273890197,
+        -12.122352375161524,
+        -28.112767340655644,
+        -17.849539083708034,
+        -79.95199674208925,
+        -67.03668992113124,
+        -72.88273448120582
+      ],
+      "powerSpectralCentroidHz": 359.371699061632
+    },
+    {
+      "wave": "dwgs2",
+      "fundamentalHz": 220,
+      "relativeHarmonicDb": [
+        0,
+        -11.952407723247976,
+        2.6547020469796956,
+        -15.912420408806236,
+        -0.5862466811375946,
+        -18.130078587418247,
+        -6.023902873685467,
+        -65.25877528811507,
+        -77.435086583285,
+        -63.38637317566019
+      ],
+      "powerSpectralCentroidHz": 700.7883157077458
+    },
+    {
+      "wave": "dwgs3",
+      "fundamentalHz": 220,
+      "relativeHarmonicDb": [
+        0,
+        8.478157381289488,
+        -7.339297944806834,
+        5.539762464536442,
+        -13.558534714588792,
+        1.5990577960298227,
+        -5.156451164745443,
+        -57.93315987324765,
+        -71.18371529991865,
+        -49.08679240271024
+      ],
+      "powerSpectralCentroidHz": 662.9266073684562
+    }
+  ],
+  "switching": [
+    {
+      "type": "waveform",
+      "version": "v0.4",
+      "maxExcessAdjacentStepFirst16Frames": 0.0014539062976837158
+    },
+    {
+      "type": "waveform",
+      "version": "v0.5",
+      "maxExcessAdjacentStepFirst16Frames": 0.00001666322350502014
+    },
+    {
+      "type": "filter",
+      "version": "v0.4",
+      "maxExcessAdjacentStepFirst16Frames": 0.0006890034710522741
+    },
+    {
+      "type": "filter",
+      "version": "v0.5",
+      "maxExcessAdjacentStepFirst16Frames": 0.00012647733092308044
+    }
+  ],
+  "extendedStress": {
+    "seconds": 120,
+    "maxPeak": 0.3886414170265198,
+    "minBlockRms": 0.0035570749076639404,
+    "status": "PASS"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "commit": "433c2ab",
   "finite": true,
-  "peak": 0.1203334629535675,
-  "rms": 0.08050469712486534,
+  "peak": 0.1203334704041481,
+  "rms": 0.0804860742579162,
   "filterAudit": "Original v3 subtracts damping k*ic1, in addition to damping already present in TPT coefficients. Corrected using the canonical linear TPT SVF equations.",
   "presetAudit": "Original maps are partial overrides: Deep Drone -> Warm Ambient leaves oct2=-1. Current build restores complete initial defaults before each preset.",
   "midiAudit": "Original handler ignores velocity, sustain and pitch bend and binds only inputs present at initial access."
