@@ -1,0 +1,128 @@
+{
+  "reference_size": [
+    1280,
+    640
+  ],
+  "method": "Per-channel median of unscaled supplied JPEG regions; sample rectangles retained; surfaces and highlights sampled separately.",
+  "regions": {
+    "chassis_dark": {
+      "box": [
+        1150,
+        479,
+        1195,
+        484
+      ],
+      "median_rgb": [
+        3,
+        13,
+        9
+      ],
+      "hex": "#030d09"
+    },
+    "panel_face": {
+      "box": [
+        1104,
+        187,
+        1225,
+        203
+      ],
+      "median_rgb": [
+        7,
+        18,
+        14
+      ],
+      "hex": "#07120e"
+    },
+    "panel_recess": {
+      "box": [
+        792,
+        281,
+        803,
+        287
+      ],
+      "median_rgb": [
+        3,
+        10,
+        8
+      ],
+      "hex": "#030a08"
+    },
+    "screen_glass": {
+      "box": [
+        941,
+        143,
+        1003,
+        150
+      ],
+      "median_rgb": [
+        6,
+        36,
+        15
+      ],
+      "hex": "#06240f"
+    },
+    "cheek_front": {
+      "box": [
+        12,
+        242,
+        22,
+        400
+      ],
+      "median_rgb": [
+        37,
+        37,
+        37
+      ],
+      "hex": "#252525"
+    },
+    "button_face": {
+      "box": [
+        102,
+        139,
+        125,
+        149
+      ],
+      "median_rgb": [
+        50,
+        54,
+        53
+      ],
+      "hex": "#323635"
+    },
+    "knob_top": {
+      "box": [
+        657,
+        256,
+        664,
+        266
+      ],
+      "median_rgb": [
+        23,
+        44,
+        42
+      ],
+      "hex": "#172c2a"
+    },
+    "teal_highlight": {
+      "box": [
+        622,
+        146,
+        632,
+        180
+      ],
+      "median_rgb": [
+        10,
+        54,
+        44
+      ],
+      "hex": "#0a362c",
+      "brightest_15_percent_median_rgb": [
+        78,
+        190,
+        169
+      ],
+      "brightest_15_percent_hex": "#4ebea9"
+    }
+  },
+  "reference_sha256": "4d7cde0acdb4e7438577b862b7188dbf3ef1a5988626d6c065c5397c4d25d3d1"
+}

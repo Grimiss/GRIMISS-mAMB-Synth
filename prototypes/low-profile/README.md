@@ -1,4 +1,4 @@
-# Low-profile hardware prototype A — awaiting user approval
+# Low-profile hardware prototype A — REJECTED
 
 Isolated representative visual section, built against the original GRIMISS mockup's shallow control geometry. This is not the full interface rollout. The current synthesizer, DSP, control definitions and homepage remain unchanged.
 
@@ -10,4 +10,4 @@ Isolated representative visual section, built against the original GRIMISS mocku
 
 Bodies use a shallow5/44sidewall-to-diameter proportion, restrained crown shading and a fine physical pointer. Faders use narrow111px slots and28×14px caps. The cabinet includes bevelled end cheeks, recessed panel wells and electronic displays. Existing GRIMISS colours and embedded font licenses are retained.
 
-**STOP: no full visual rollout until the user explicitly approves this prototype.**
+**REJECTED: do not roll out Prototype A. See ../low-profile-b for the replacement awaiting approval.**

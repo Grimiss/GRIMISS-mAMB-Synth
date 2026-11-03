@@ -1,0 +1,72 @@
+[
+  {
+    "component": "knobs",
+    "reference_native_size": [
+      267,
+      68
+    ],
+    "prototype_native_size": [
+      267,
+      69
+    ],
+    "display_zoom_both": 2,
+    "same_scale": true,
+    "colour_adjustment": false
+  },
+  {
+    "component": "mixer",
+    "reference_native_size": [
+      154,
+      159
+    ],
+    "prototype_native_size": [
+      154,
+      159
+    ],
+    "display_zoom_both": 2,
+    "same_scale": true,
+    "colour_adjustment": false
+  },
+  {
+    "component": "buttons",
+    "reference_native_size": [
+      84,
+      67
+    ],
+    "prototype_native_size": [
+      84,
+      68
+    ],
+    "display_zoom_both": 2,
+    "same_scale": true,
+    "colour_adjustment": false
+  },
+  {
+    "component": "screen",
+    "reference_native_size": [
+      178,
+      65
+    ],
+    "prototype_native_size": [
+      178,
+      65
+    ],
+    "display_zoom_both": 2,
+    "same_scale": true,
+    "colour_adjustment": false
+  },
+  {
+    "component": "cheek",
+    "reference_native_size": [
+      43,
+      174
+    ],
+    "prototype_native_size": [
+      43,
+      174
+    ],
+    "display_zoom_both": 2,
+    "same_scale": true,
+    "colour_adjustment": false
+  }
+]

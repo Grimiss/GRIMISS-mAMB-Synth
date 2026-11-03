@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "browser": "Chromium",
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "screenshots": "actual browser capture at device scale 1",
+  "geometry": {
+    "dial": [
+      {
+        "width": 40,
+        "height": 44
+      },
+      {
+        "width": 40,
+        "height": 44
+      },
+      {
+        "width": 40,
+        "height": 44
+      },
+      {
+        "width": 40,
+        "height": 44
+      },
+      {
+        "width": 40,
+        "height": 44
+      },
+      {
+        "width": 40,
+        "height": 44
+      }
+    ],
+    "cap": [
+      {
+        "width": 23,
+        "height": 12
+      },
+      {
+        "width": 23,
+        "height": 12
+      },
+      {
+        "width": 23,
+        "height": 12
+      }
+    ],
+    "cabinet": "rgb(16, 20, 19)",
+    "panel": "rgb(7, 18, 14)"
+  },
+  "checks": [
+    "active arc follows 0/25/50/100 percent",
+    "dark inactive arc distinct from bright active arc",
+    "teal, magenta and amber parameter colours",
+    "mouse knob drag changes pointer and display",
+    "compact fader cap follows position",
+    "small switch LED follows selected state"
+  ],
+  "synthModified": false,
+  "audioEnginePresent": false,
+  "consoleErrors": []
+}
