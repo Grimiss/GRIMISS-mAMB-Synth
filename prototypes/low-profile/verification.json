@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "browser": "Chromium",
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "checks": [
+    "actual browser full and section screenshots",
+    "knob pointer/drag and display response",
+    "recessed fader cap follows value",
+    "raised switch toggles illumination"
+  ],
+  "audioEnginePresent": false,
+  "fullInstrumentModified": false,
+  "consoleErrors": []
+}
