@@ -1,0 +1,91 @@
+[
+  {
+    "name": "v0.5 dry patch compatibility through stereo unity-bypassed effects",
+    "status": "PASS",
+    "milliseconds": 275.30284300000005
+  },
+  {
+    "name": "shared stereo effects retain tails after every voice releases at all sample rates",
+    "status": "PASS",
+    "milliseconds": 1484.865358,
+    "measurements": [
+      {
+        "sampleRate": 44100,
+        "tailEnergy": 4.397004914108025,
+        "stereoAbsoluteDifference": 1049.4766341006598,
+        "allocatedBytes": 1644292
+      },
+      {
+        "sampleRate": 48000,
+        "tailEnergy": 4.783772912374198,
+        "stereoAbsoluteDifference": 1143.1761316787824,
+        "allocatedBytes": 1789484
+      },
+      {
+        "sampleRate": 96000,
+        "tailEnergy": 9.667582364573567,
+        "stereoAbsoluteDifference": 2290.9691632220947,
+        "allocatedBytes": 3576948
+      }
+    ]
+  },
+  {
+    "name": "30-second eight-voice stress with every effect, high feedback, changing algorithms and long release",
+    "status": "PASS",
+    "milliseconds": 6186.329248,
+    "measurements": {
+      "seconds": 30,
+      "peak": 0.17258937656879425,
+      "minOneSecondEnergy": 46.529598921208866
+    }
+  },
+  {
+    "name": "profile v0.5 versus v0.6 dry and eight-voice all-effects rendering",
+    "status": "PASS",
+    "milliseconds": 6001.040118999999,
+    "measurements": [
+      {
+        "scenario": "v0.5 dry",
+        "renderedSeconds": 2,
+        "sampleRate": 48000,
+        "voices": 8,
+        "blockFrames": 128,
+        "milliseconds": [
+          251.62580399999933,
+          245.65940899999987,
+          245.7695249999997
+        ],
+        "medianMilliseconds": 245.7695249999997,
+        "renderToRealtimeRatio": 0.12288476249999986
+      },
+      {
+        "scenario": "v0.6 bypass",
+        "renderedSeconds": 2,
+        "sampleRate": 48000,
+        "voices": 8,
+        "blockFrames": 128,
+        "milliseconds": [
+          257.10300199999983,
+          257.8612810000013,
+          269.21317999999883
+        ],
+        "medianMilliseconds": 257.8612810000013,
+        "renderToRealtimeRatio": 0.12893064050000067
+      },
+      {
+        "scenario": "v0.6 all effects",
+        "renderedSeconds": 2,
+        "sampleRate": 48000,
+        "voices": 8,
+        "blockFrames": 128,
+        "milliseconds": [
+          547.6621009999999,
+          546.7600920000004,
+          553.9529989999992
+        ],
+        "medianMilliseconds": 547.6621009999999,
+        "renderToRealtimeRatio": 0.27383105049999995
+      }
+    ]
+  }
+]

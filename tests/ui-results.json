@@ -1,0 +1,509 @@
+{
+  "referenceViewport": {
+    "width": 2560,
+    "height": 1344
+  },
+  "layouts": [
+    {
+      "name": "desktop",
+      "width": 2560,
+      "scrollWidth": 2560,
+      "panels": [
+        {
+          "title": "PATCH BROWSER /",
+          "x": 10,
+          "y": 90,
+          "width": 211.25,
+          "height": 1491,
+          "scrollHeight": 1489,
+          "clientHeight": 1489
+        },
+        {
+          "title": "VOICE",
+          "x": 229.25,
+          "y": 90,
+          "width": 399.53125,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "OSCILLATORS",
+          "x": 636.78125,
+          "y": 90,
+          "width": 496.5625,
+          "height": 320,
+          "scrollHeight": 319,
+          "clientHeight": 318
+        },
+        {
+          "title": "MIXER",
+          "x": 1141.34375,
+          "y": 90,
+          "width": 302.5,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "LFO 1",
+          "x": 1451.84375,
+          "y": 90,
+          "width": 399.53125,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "LFO 2",
+          "x": 1859.375,
+          "y": 90,
+          "width": 399.53125,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "XY PAD 1",
+          "x": 2266.90625,
+          "y": 90,
+          "width": 283.09375,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "FILTER ENVELOPE",
+          "x": 229.25,
+          "y": 418,
+          "width": 613,
+          "height": 321,
+          "scrollHeight": 319,
+          "clientHeight": 319
+        },
+        {
+          "title": "AMP ENVELOPE",
+          "x": 229.25,
+          "y": 747,
+          "width": 613,
+          "height": 258,
+          "scrollHeight": 258,
+          "clientHeight": 256
+        },
+        {
+          "title": "FILTER",
+          "x": 850.25,
+          "y": 418,
+          "width": 613,
+          "height": 321,
+          "scrollHeight": 319,
+          "clientHeight": 319
+        },
+        {
+          "title": "EQ",
+          "x": 1471.25,
+          "y": 418,
+          "width": 807.0625,
+          "height": 321,
+          "scrollHeight": 319,
+          "clientHeight": 319
+        },
+        {
+          "title": "AUTOMATION",
+          "x": 2286.3125,
+          "y": 418,
+          "width": 263.6875,
+          "height": 587,
+          "scrollHeight": 585,
+          "clientHeight": 585
+        },
+        {
+          "title": "AMP",
+          "x": 850.25,
+          "y": 747,
+          "width": 283.09375,
+          "height": 258,
+          "scrollHeight": 256,
+          "clientHeight": 256
+        },
+        {
+          "title": "MOD FX",
+          "x": 1141.34375,
+          "y": 747,
+          "width": 321.90625,
+          "height": 258,
+          "scrollHeight": 256,
+          "clientHeight": 256
+        },
+        {
+          "title": "MODULATION VISUALISER / VIRTUAL PATCH",
+          "x": 1471.25,
+          "y": 747,
+          "width": 807.0625,
+          "height": 586,
+          "scrollHeight": 584,
+          "clientHeight": 584
+        },
+        {
+          "title": "DELAY",
+          "x": 229.25,
+          "y": 1013,
+          "width": 399.53125,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "ARPEGGIATOR / STEP SEQUENCER",
+          "x": 636.78125,
+          "y": 1013,
+          "width": 826.46875,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "XY PAD 2",
+          "x": 2286.3125,
+          "y": 1013,
+          "width": 263.6875,
+          "height": 320,
+          "scrollHeight": 318,
+          "clientHeight": 318
+        },
+        {
+          "title": "REVERB — 63_SPRING / MOD_HALL",
+          "x": 229.25,
+          "y": 1341,
+          "width": 1234,
+          "height": 240,
+          "scrollHeight": 238,
+          "clientHeight": 238
+        },
+        {
+          "title": "PLAY — C3 TO C5",
+          "x": 1471.25,
+          "y": 1341,
+          "width": 1078.75,
+          "height": 240,
+          "scrollHeight": 238,
+          "clientHeight": 238
+        }
+      ],
+      "font": "Orbitron, monospace",
+      "missing": [],
+      "referenceComparison": [
+        {
+          "panel": "VOICE",
+          "xDelta": -0.75,
+          "yDelta": 0,
+          "widthDelta": -4.46875,
+          "heightDelta": 0
+        },
+        {
+          "panel": "OSCILLATORS",
+          "xDelta": -5.21875,
+          "yDelta": 0,
+          "widthDelta": -3.4375,
+          "heightDelta": 0
+        },
+        {
+          "panel": "MIXER",
+          "xDelta": -7.65625,
+          "yDelta": 0,
+          "widthDelta": -1.5,
+          "heightDelta": 0
+        },
+        {
+          "panel": "LFO 1",
+          "xDelta": -9.15625,
+          "yDelta": 0,
+          "widthDelta": 1.53125,
+          "heightDelta": 0
+        },
+        {
+          "panel": "LFO 2",
+          "xDelta": -7.625,
+          "yDelta": 0,
+          "widthDelta": 1.53125,
+          "heightDelta": 0
+        },
+        {
+          "panel": "XY PAD 1",
+          "xDelta": -6.09375,
+          "yDelta": 0,
+          "widthDelta": 7.09375,
+          "heightDelta": 0
+        },
+        {
+          "panel": "FILTER ENVELOPE",
+          "xDelta": -0.75,
+          "yDelta": 0,
+          "widthDelta": 1,
+          "heightDelta": -1
+        },
+        {
+          "panel": "AMP ENVELOPE",
+          "xDelta": -0.75,
+          "yDelta": 0,
+          "widthDelta": 1,
+          "heightDelta": -1
+        },
+        {
+          "panel": "FILTER",
+          "xDelta": 1.25,
+          "yDelta": 0,
+          "widthDelta": 9,
+          "heightDelta": -1
+        },
+        {
+          "panel": "EQ",
+          "xDelta": 10.25,
+          "yDelta": 0,
+          "widthDelta": 2.0625,
+          "heightDelta": -1
+        },
+        {
+          "panel": "AMP",
+          "xDelta": 1.25,
+          "yDelta": 0,
+          "widthDelta": -8.90625,
+          "heightDelta": -1
+        },
+        {
+          "panel": "MOD FX",
+          "xDelta": -7.65625,
+          "yDelta": 0,
+          "widthDelta": 17.90625,
+          "heightDelta": -1
+        },
+        {
+          "panel": "DELAY",
+          "xDelta": -0.75,
+          "yDelta": 0,
+          "widthDelta": -4.46875,
+          "heightDelta": 0
+        }
+      ]
+    },
+    {
+      "name": "tablet",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "panels": [
+        {
+          "title": "PATCH BROWSER /",
+          "x": 8,
+          "y": 159.09375,
+          "width": 170,
+          "height": 2992.359375,
+          "scrollHeight": 2990,
+          "clientHeight": 2990
+        },
+        {
+          "title": "VOICE",
+          "x": 186,
+          "y": 159.09375,
+          "width": 272,
+          "height": 328,
+          "scrollHeight": 326,
+          "clientHeight": 326
+        },
+        {
+          "title": "OSCILLATORS",
+          "x": 465,
+          "y": 159.09375,
+          "width": 551,
+          "height": 328,
+          "scrollHeight": 326,
+          "clientHeight": 326
+        },
+        {
+          "title": "MIXER",
+          "x": 186,
+          "y": 494.09375,
+          "width": 272,
+          "height": 305,
+          "scrollHeight": 303,
+          "clientHeight": 303
+        },
+        {
+          "title": "LFO 1",
+          "x": 465,
+          "y": 494.09375,
+          "width": 272,
+          "height": 305,
+          "scrollHeight": 303,
+          "clientHeight": 303
+        },
+        {
+          "title": "LFO 2",
+          "x": 744,
+          "y": 494.09375,
+          "width": 272,
+          "height": 305,
+          "scrollHeight": 303,
+          "clientHeight": 303
+        },
+        {
+          "title": "XY PAD 1",
+          "x": 186,
+          "y": 806.09375,
+          "width": 272,
+          "height": 324,
+          "scrollHeight": 322,
+          "clientHeight": 322
+        },
+        {
+          "title": "FILTER ENVELOPE",
+          "x": 465,
+          "y": 806.09375,
+          "width": 551,
+          "height": 324,
+          "scrollHeight": 322,
+          "clientHeight": 322
+        },
+        {
+          "title": "AMP ENVELOPE",
+          "x": 186,
+          "y": 1484.28125,
+          "width": 551,
+          "height": 251.59375,
+          "scrollHeight": 250,
+          "clientHeight": 250
+        },
+        {
+          "title": "FILTER",
+          "x": 186,
+          "y": 1137.09375,
+          "width": 411.5,
+          "height": 340.1875,
+          "scrollHeight": 338,
+          "clientHeight": 338
+        },
+        {
+          "title": "EQ",
+          "x": 604.5,
+          "y": 1137.09375,
+          "width": 411.5,
+          "height": 340.1875,
+          "scrollHeight": 338,
+          "clientHeight": 338
+        },
+        {
+          "title": "AUTOMATION",
+          "x": 744,
+          "y": 1742.875,
+          "width": 272,
+          "height": 324,
+          "scrollHeight": 322,
+          "clientHeight": 322
+        },
+        {
+          "title": "AMP",
+          "x": 744,
+          "y": 1484.28125,
+          "width": 272,
+          "height": 251.59375,
+          "scrollHeight": 250,
+          "clientHeight": 250
+        },
+        {
+          "title": "MOD FX",
+          "x": 186,
+          "y": 1742.875,
+          "width": 272,
+          "height": 324,
+          "scrollHeight": 322,
+          "clientHeight": 322
+        },
+        {
+          "title": "MODULATION VISUALISER / VIRTUAL PATCH",
+          "x": 465,
+          "y": 2073.875,
+          "width": 551,
+          "height": 620.1875,
+          "scrollHeight": 618,
+          "clientHeight": 618
+        },
+        {
+          "title": "DELAY",
+          "x": 186,
+          "y": 2073.875,
+          "width": 272,
+          "height": 360.1875,
+          "scrollHeight": 358,
+          "clientHeight": 358
+        },
+        {
+          "title": "ARPEGGIATOR / STEP SEQUENCER",
+          "x": 186,
+          "y": 2441.0625,
+          "width": 272,
+          "height": 253,
+          "scrollHeight": 251,
+          "clientHeight": 251
+        },
+        {
+          "title": "XY PAD 2",
+          "x": 465,
+          "y": 1742.875,
+          "width": 272,
+          "height": 324,
+          "scrollHeight": 322,
+          "clientHeight": 322
+        },
+        {
+          "title": "REVERB — 63_SPRING / MOD_HALL",
+          "x": 186,
+          "y": 2701.0625,
+          "width": 830,
+          "height": 220,
+          "scrollHeight": 218,
+          "clientHeight": 218
+        },
+        {
+          "title": "PLAY — C3 TO C5",
+          "x": 186,
+          "y": 2928.0625,
+          "width": 830,
+          "height": 223.390625,
+          "scrollHeight": 221,
+          "clientHeight": 221
+        }
+      ],
+      "font": "Orbitron, monospace",
+      "missing": []
+    }
+  ],
+  "backends": [
+    {
+      "backend": "AudioWorklet",
+      "status": "PASS",
+      "stereo": {
+        "energy": 1.0131233576903504,
+        "difference": 0.9009348618183959,
+        "finite": true
+      },
+      "patchPersistence": "PASS",
+      "legacyPatchCompatibility": "PASS",
+      "effectControls": "PASS",
+      "knobAndXY": "PASS",
+      "consoleErrors": []
+    },
+    {
+      "backend": "fallback",
+      "status": "PASS",
+      "stereo": {
+        "energy": 1.0212998329018157,
+        "difference": 0.917974778121105,
+        "finite": true
+      },
+      "patchPersistence": "PASS",
+      "legacyPatchCompatibility": "PASS",
+      "effectControls": "PASS",
+      "knobAndXY": "PASS",
+      "consoleErrors": []
+    }
+  ]
+}
