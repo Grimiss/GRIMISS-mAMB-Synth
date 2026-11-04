@@ -1,3 +1,7 @@
+## Expressive sound and mechanical controls
+
+Latest request replaces the still-subtle macro response: Age now includes existing-stage saturation/tone wear with level compensation; Thickness now has a shared micro-detuned ensemble that changes mono audio. Velocity default is0; saved explicit USER values remain. Oscillator buttons are equal-size with stronger selected edge/icon glow; wheel ribs roll into fixed shells; black keys have visibly recessed pockets/cutaways. PLAY range heading and VOICE explanatory text are hidden/removed, with PITCH DRIFT label preserved. See EXPRESSIVE_CONTROLS.md. Rollback:rollback/pre-expressive-controls. Full suite passed; no main merge or full cabinet rollout.
+
 Complete slider/sound follow-up suite: `npm run test:all` PASS, including actual input-driven green fills and refreshed button/link states. The LINK visual assertion now waits for the scheduled animation frame instead of assuming synchronous repaint. All four target layouts have no overflow. Additional drift measured approximately0/1.491/4.218/11.931cents at Age0/25/50/100. Human listening remains unverified; rendered A/B examples are provided.
 
 ## Slider/sound-range follow-up

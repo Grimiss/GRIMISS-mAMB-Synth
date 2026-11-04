@@ -26,28 +26,28 @@
       "character": 25,
       "durationSeconds": 30,
       "voices": 8,
-      "maxDriftCents": 1.4913429581979338,
-      "maxDriftStepPer10ms": 0.011166306718512486,
-      "rms": 0.06898516854737513,
-      "peak": 0.23144954442977905
+      "maxDriftCents": 1.6683200970236933,
+      "maxDriftStepPer10ms": 0.02419791100609381,
+      "rms": 0.06489475669302117,
+      "peak": 0.22147923707962036
     },
     {
       "character": 50,
       "durationSeconds": 30,
       "voices": 8,
-      "maxDriftCents": 4.218154875266039,
-      "maxDriftStepPer10ms": 0.0315830848051587,
-      "rms": 0.06868733759179148,
-      "peak": 0.26334691047668457
+      "maxDriftCents": 4.938039301082707,
+      "maxDriftStepPer10ms": 0.0844468857434344,
+      "rms": 0.06367892209702575,
+      "peak": 0.23926697671413422
     },
     {
       "character": 100,
       "durationSeconds": 30,
       "voices": 8,
-      "maxDriftCents": 11.930743665582904,
-      "maxDriftStepPer10ms": 0.08933045374634485,
-      "rms": 0.06819877428755763,
-      "peak": 0.2771182954311371
+      "maxDriftCents": 14.845155258510417,
+      "maxDriftStepPer10ms": 0.3028712938041602,
+      "rms": 0.06311817717191127,
+      "peak": 0.2421504110097885
     }
   ],
   "performance": [
@@ -60,13 +60,13 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        253.73887600000307,
-        269.65697799999907,
-        259.7015629999987,
-        242.05574600000182
+        229.1891510000023,
+        237.20132899999953,
+        240.3036460000003,
+        230.86539900000207
       ],
-      "medianMilliseconds": 256.7202195000009,
-      "renderToRealtimeRatio": 0.12836010975000045,
+      "medianMilliseconds": 234.0333640000008,
+      "renderToRealtimeRatio": 0.1170166820000004,
       "relativeToRollback": 1
     },
     {
@@ -78,14 +78,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        300.0116369999996,
-        279.5882270000002,
-        280.30121599999984,
-        263.7211900000002
+        255.8394870000011,
+        288.7636160000002,
+        291.5412800000013,
+        255.4961970000004
       ],
-      "medianMilliseconds": 279.9447215,
-      "renderToRealtimeRatio": 0.13997236075,
-      "relativeToRollback": 1.0904661971902023
+      "medianMilliseconds": 272.30155150000064,
+      "renderToRealtimeRatio": 0.1361507757500003,
+      "relativeToRollback": 1.1635159485209114
     },
     {
       "case": "new-25",
@@ -96,14 +96,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        296.62609299999895,
-        294.1518250000008,
-        269.9178819999979,
-        275.07493500000055
+        254.5431239999998,
+        277.2075729999997,
+        275.9817210000001,
+        258.0920789999982
       ],
-      "medianMilliseconds": 284.6133800000007,
-      "renderToRealtimeRatio": 0.14230669000000035,
-      "relativeToRollback": 1.1086519813450055
+      "medianMilliseconds": 267.03689999999915,
+      "renderToRealtimeRatio": 0.13351844999999957,
+      "relativeToRollback": 1.141020645244403
     },
     {
       "case": "new-50",
@@ -114,14 +114,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        303.3480879999988,
-        316.9351319999987,
-        275.214007999999,
-        257.63861800000086
+        255.2031130000032,
+        270.7180380000027,
+        264.9319190000024,
+        265.82982099999936
       ],
-      "medianMilliseconds": 289.2810479999989,
-      "renderToRealtimeRatio": 0.14464052399999947,
-      "relativeToRollback": 1.126833907213911
+      "medianMilliseconds": 265.38087000000087,
+      "renderToRealtimeRatio": 0.13269043500000044,
+      "relativeToRollback": 1.1339446028729474
     },
     {
       "case": "new-100",
@@ -132,14 +132,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        303.3638519999986,
-        290.788704999999,
-        273.48023699999976,
-        267.88198099999863
+        274.97753499999817,
+        279.74899300000106,
+        264.87730699999884,
+        264.261688999999
       ],
-      "medianMilliseconds": 282.1344709999994,
-      "renderToRealtimeRatio": 0.1410672354999997,
-      "relativeToRollback": 1.0989959090464179
+      "medianMilliseconds": 269.9274209999985,
+      "renderToRealtimeRatio": 0.13496371049999925,
+      "relativeToRollback": 1.1533715380854739
     }
   ],
   "listeningTests": false,

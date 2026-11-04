@@ -1,0 +1,157 @@
+{
+  "platform": "linux",
+  "runtime": "v24.19.0",
+  "physicalHardware": false,
+  "results": [
+    {
+      "mode": "poly",
+      "thickness": 0,
+      "renderedSeconds": 2,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "previousMilliseconds": [
+        280.215962,
+        265.304744,
+        283.54175299999997,
+        295.43624
+      ],
+      "currentMilliseconds": [
+        270.23465899999997,
+        284.9833440000002,
+        278.41352499999994,
+        280.67783099999997
+      ],
+      "previousMedianMs": 281.8788575,
+      "currentMedianMs": 279.54567799999995,
+      "relative": 0.9917227580646057,
+      "renderToRealtimeRatio": 0.13977283899999998
+    },
+    {
+      "mode": "poly",
+      "thickness": 100,
+      "renderedSeconds": 2,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "previousMilliseconds": [
+        291.82448400000067,
+        254.98899900000015,
+        325.2277490000006,
+        285.80711899999915
+      ],
+      "currentMilliseconds": [
+        280.8394929999995,
+        272.6314389999998,
+        264.6495210000003,
+        272.5254729999997
+      ],
+      "previousMedianMs": 288.8158014999999,
+      "currentMedianMs": 272.57845599999973,
+      "relative": 0.9437795805642574,
+      "renderToRealtimeRatio": 0.13628922799999987
+    },
+    {
+      "mode": "mono",
+      "thickness": 0,
+      "renderedSeconds": 2,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "previousMilliseconds": [
+        40.56169299999965,
+        40.67359000000033,
+        42.285523999998986,
+        42.99509600000056
+      ],
+      "currentMilliseconds": [
+        43.12435000000005,
+        46.70897700000023,
+        42.641536999999516,
+        42.59905299999991
+      ],
+      "previousMedianMs": 41.47955699999966,
+      "currentMedianMs": 42.88294349999978,
+      "relative": 1.0338332084887054,
+      "renderToRealtimeRatio": 0.021441471749999892
+    },
+    {
+      "mode": "mono",
+      "thickness": 100,
+      "renderedSeconds": 2,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "previousMilliseconds": [
+        43.777217999999266,
+        42.12271000000146,
+        44.60790499999894,
+        43.26510699999926
+      ],
+      "currentMilliseconds": [
+        45.66880999999921,
+        47.04736799999955,
+        45.851033999999345,
+        47.05884999999944
+      ],
+      "previousMedianMs": 43.521162499999264,
+      "currentMedianMs": 46.44920099999945,
+      "relative": 1.0672784992818203,
+      "renderToRealtimeRatio": 0.023224600499999724
+    },
+    {
+      "mode": "unison",
+      "thickness": 0,
+      "renderedSeconds": 2,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "previousMilliseconds": [
+        132.1893110000001,
+        137.97948899999938,
+        130.65303400000084,
+        130.82158600000002
+      ],
+      "currentMilliseconds": [
+        136.97877300000073,
+        133.79781600000024,
+        133.00601300000017,
+        142.25072499999987
+      ],
+      "previousMedianMs": 131.50544850000006,
+      "currentMedianMs": 135.38829450000048,
+      "relative": 1.0295261226381842,
+      "renderToRealtimeRatio": 0.06769414725000024
+    },
+    {
+      "mode": "unison",
+      "thickness": 100,
+      "renderedSeconds": 2,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "previousMilliseconds": [
+        155.8612639999992,
+        158.79128499999933,
+        141.09244299999955,
+        138.87025100000028
+      ],
+      "currentMilliseconds": [
+        159.80590200000006,
+        160.3036200000006,
+        161.38906999999926,
+        154.24429699999928
+      ],
+      "previousMedianMs": 148.47685349999938,
+      "currentMedianMs": 160.05476100000033,
+      "relative": 1.0779778613775715,
+      "renderToRealtimeRatio": 0.08002738050000016
+    }
+  ]
+}

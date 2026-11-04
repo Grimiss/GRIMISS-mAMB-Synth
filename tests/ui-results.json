@@ -380,7 +380,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05494424787047699,
+        "rms": 0.05426162315313842,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -879,47 +879,47 @@
             "value": "saw",
             "box": {
               "x": 412.5,
-              "y": 202.5,
+              "y": 200.25,
               "width": 33,
-              "height": 24,
+              "height": 25.5,
               "right": 445.5,
-              "bottom": 226.5
+              "bottom": 225.75
             },
             "hit": true
           },
           {
             "value": "pulse",
             "box": {
-              "x": 448.5,
-              "y": 202.5,
+              "x": 450,
+              "y": 200.25,
               "width": 33,
-              "height": 24,
-              "right": 481.5,
-              "bottom": 226.5
+              "height": 25.5,
+              "right": 483,
+              "bottom": 225.75
             },
             "hit": true
           },
           {
             "value": "triangle",
             "box": {
-              "x": 484.5,
-              "y": 202.5,
+              "x": 487.5,
+              "y": 200.25,
               "width": 33,
-              "height": 24,
-              "right": 517.5,
-              "bottom": 226.5
+              "height": 25.5,
+              "right": 520.5,
+              "bottom": 225.75
             },
             "hit": true
           },
           {
             "value": "sine",
             "box": {
-              "x": 520.5,
-              "y": 202.5,
+              "x": 525,
+              "y": 200.25,
               "width": 33,
-              "height": 24,
-              "right": 553.5,
-              "bottom": 226.5
+              "height": 25.5,
+              "right": 558,
+              "bottom": 225.75
             },
             "hit": true
           },
@@ -927,35 +927,35 @@
             "value": "dwgs1",
             "box": {
               "x": 412.5,
-              "y": 229.5,
+              "y": 230.25,
               "width": 33,
-              "height": 24,
+              "height": 25.5,
               "right": 445.5,
-              "bottom": 253.5
+              "bottom": 255.75
             },
             "hit": true
           },
           {
             "value": "dwgs2",
             "box": {
-              "x": 448.5,
-              "y": 229.5,
+              "x": 450,
+              "y": 230.25,
               "width": 33,
-              "height": 24,
-              "right": 481.5,
-              "bottom": 253.5
+              "height": 25.5,
+              "right": 483,
+              "bottom": 255.75
             },
             "hit": true
           },
           {
             "value": "dwgs3",
             "box": {
-              "x": 484.5,
-              "y": 229.5,
+              "x": 487.5,
+              "y": 230.25,
               "width": 33,
-              "height": 24,
-              "right": 517.5,
-              "bottom": 253.5
+              "height": 25.5,
+              "right": 520.5,
+              "bottom": 255.75
             },
             "hit": true
           }
@@ -1340,7 +1340,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05447247850045557,
+        "rms": 0.05470673737205649,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -1839,47 +1839,47 @@
             "value": "saw",
             "box": {
               "x": 343.75,
-              "y": 168.75,
+              "y": 166.875,
               "width": 27.5,
-              "height": 20,
+              "height": 21.25,
               "right": 371.25,
-              "bottom": 188.75
+              "bottom": 188.125
             },
             "hit": true
           },
           {
             "value": "pulse",
             "box": {
-              "x": 373.75,
-              "y": 168.75,
+              "x": 375,
+              "y": 166.875,
               "width": 27.5,
-              "height": 20,
-              "right": 401.25,
-              "bottom": 188.75
+              "height": 21.25,
+              "right": 402.5,
+              "bottom": 188.125
             },
             "hit": true
           },
           {
             "value": "triangle",
             "box": {
-              "x": 403.75,
-              "y": 168.75,
+              "x": 406.25,
+              "y": 166.875,
               "width": 27.5,
-              "height": 20,
-              "right": 431.25,
-              "bottom": 188.75
+              "height": 21.25,
+              "right": 433.75,
+              "bottom": 188.125
             },
             "hit": true
           },
           {
             "value": "sine",
             "box": {
-              "x": 433.75,
-              "y": 168.75,
+              "x": 437.5,
+              "y": 166.875,
               "width": 27.5,
-              "height": 20,
-              "right": 461.25,
-              "bottom": 188.75
+              "height": 21.25,
+              "right": 465,
+              "bottom": 188.125
             },
             "hit": true
           },
@@ -1887,35 +1887,35 @@
             "value": "dwgs1",
             "box": {
               "x": 343.75,
-              "y": 191.25,
+              "y": 191.875,
               "width": 27.5,
-              "height": 20,
+              "height": 21.25,
               "right": 371.25,
-              "bottom": 211.25
+              "bottom": 213.125
             },
             "hit": true
           },
           {
             "value": "dwgs2",
             "box": {
-              "x": 373.75,
-              "y": 191.25,
+              "x": 375,
+              "y": 191.875,
               "width": 27.5,
-              "height": 20,
-              "right": 401.25,
-              "bottom": 211.25
+              "height": 21.25,
+              "right": 402.5,
+              "bottom": 213.125
             },
             "hit": true
           },
           {
             "value": "dwgs3",
             "box": {
-              "x": 403.75,
-              "y": 191.25,
+              "x": 406.25,
+              "y": 191.875,
               "width": 27.5,
-              "height": 20,
-              "right": 431.25,
-              "bottom": 211.25
+              "height": 21.25,
+              "right": 433.75,
+              "bottom": 213.125
             },
             "hit": true
           }
@@ -2300,8 +2300,8 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05448102573348983,
-        "stereoDifferenceRms": 0.060245431279774796,
+        "rms": 0.053922703056165484,
+        "stereoDifferenceRms": 0,
         "finite": true
       }
     },
@@ -2799,47 +2799,47 @@
             "value": "saw",
             "box": {
               "x": 275,
-              "y": 175,
+              "y": 173.5,
               "width": 22,
-              "height": 16,
+              "height": 17,
               "right": 297,
-              "bottom": 191
+              "bottom": 190.5
             },
             "hit": true
           },
           {
             "value": "pulse",
             "box": {
-              "x": 299,
-              "y": 175,
+              "x": 300,
+              "y": 173.5,
               "width": 22,
-              "height": 16,
-              "right": 321,
-              "bottom": 191
+              "height": 17,
+              "right": 322,
+              "bottom": 190.5
             },
             "hit": true
           },
           {
             "value": "triangle",
             "box": {
-              "x": 323,
-              "y": 175,
+              "x": 325,
+              "y": 173.5,
               "width": 22,
-              "height": 16,
-              "right": 345,
-              "bottom": 191
+              "height": 17,
+              "right": 347,
+              "bottom": 190.5
             },
             "hit": true
           },
           {
             "value": "sine",
             "box": {
-              "x": 347,
-              "y": 175,
+              "x": 350,
+              "y": 173.5,
               "width": 22,
-              "height": 16,
-              "right": 369,
-              "bottom": 191
+              "height": 17,
+              "right": 372,
+              "bottom": 190.5
             },
             "hit": true
           },
@@ -2847,35 +2847,35 @@
             "value": "dwgs1",
             "box": {
               "x": 275,
-              "y": 193,
+              "y": 193.5,
               "width": 22,
-              "height": 16,
+              "height": 17,
               "right": 297,
-              "bottom": 209
+              "bottom": 210.5
             },
             "hit": true
           },
           {
             "value": "dwgs2",
             "box": {
-              "x": 299,
-              "y": 193,
+              "x": 300,
+              "y": 193.5,
               "width": 22,
-              "height": 16,
-              "right": 321,
-              "bottom": 209
+              "height": 17,
+              "right": 322,
+              "bottom": 210.5
             },
             "hit": true
           },
           {
             "value": "dwgs3",
             "box": {
-              "x": 323,
-              "y": 193,
+              "x": 325,
+              "y": 193.5,
               "width": 22,
-              "height": 16,
-              "right": 345,
-              "bottom": 209
+              "height": 17,
+              "right": 347,
+              "bottom": 210.5
             },
             "hit": true
           }
@@ -2901,7 +2901,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.055412275242587725,
+        "rms": 0.05517232718803396,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -2924,7 +2924,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.055007749143973446,
+        "rms": 0.05549360976976607,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -2942,7 +2942,7 @@
       "keyboard visibility touch toggle"
     ],
     "audio": {
-      "rms": 0.05519101549504479,
+      "rms": 0.05535090002250236,
       "stereoDifferenceRms": 0,
       "finite": true
     },
@@ -3058,47 +3058,47 @@
           "value": "saw",
           "box": {
             "x": 275,
-            "y": 175,
+            "y": 173.5,
             "width": 22,
-            "height": 16,
+            "height": 17,
             "right": 297,
-            "bottom": 191
+            "bottom": 190.5
           },
           "hit": true
         },
         {
           "value": "pulse",
           "box": {
-            "x": 299,
-            "y": 175,
+            "x": 300,
+            "y": 173.5,
             "width": 22,
-            "height": 16,
-            "right": 321,
-            "bottom": 191
+            "height": 17,
+            "right": 322,
+            "bottom": 190.5
           },
           "hit": true
         },
         {
           "value": "triangle",
           "box": {
-            "x": 323,
-            "y": 175,
+            "x": 325,
+            "y": 173.5,
             "width": 22,
-            "height": 16,
-            "right": 345,
-            "bottom": 191
+            "height": 17,
+            "right": 347,
+            "bottom": 190.5
           },
           "hit": true
         },
         {
           "value": "sine",
           "box": {
-            "x": 347,
-            "y": 175,
+            "x": 350,
+            "y": 173.5,
             "width": 22,
-            "height": 16,
-            "right": 369,
-            "bottom": 191
+            "height": 17,
+            "right": 372,
+            "bottom": 190.5
           },
           "hit": true
         },
@@ -3106,35 +3106,35 @@
           "value": "dwgs1",
           "box": {
             "x": 275,
-            "y": 193,
+            "y": 193.5,
             "width": 22,
-            "height": 16,
+            "height": 17,
             "right": 297,
-            "bottom": 209
+            "bottom": 210.5
           },
           "hit": true
         },
         {
           "value": "dwgs2",
           "box": {
-            "x": 299,
-            "y": 193,
+            "x": 300,
+            "y": 193.5,
             "width": 22,
-            "height": 16,
-            "right": 321,
-            "bottom": 209
+            "height": 17,
+            "right": 322,
+            "bottom": 210.5
           },
           "hit": true
         },
         {
           "value": "dwgs3",
           "box": {
-            "x": 323,
-            "y": 193,
+            "x": 325,
+            "y": 193.5,
             "width": 22,
-            "height": 16,
-            "right": 345,
-            "bottom": 209
+            "height": 17,
+            "right": 347,
+            "bottom": 210.5
           },
           "hit": true
         }

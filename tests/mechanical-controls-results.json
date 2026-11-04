@@ -1,0 +1,249 @@
+{
+  "status": "PASS",
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": false,
+      "status": "PASS"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": true,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": false,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": true,
+      "status": "PASS"
+    }
+  ],
+  "checks": [
+    "all ten oscillator switches use equal geometry; selected edges and icons glow",
+    "requested descriptive text removed while Pitch Drift label remains",
+    "fifteen inset pockets exceed black bodies; thirty white-notch regions reject white hits and all notes retain targets",
+    "wheel ribs project around a cylinder into a fixed shell; index moves up/down without sliding the body",
+    "actual mouse MOD gesture retains its projected wheel position on release"
+  ],
+  "physicalHardwareTested": false,
+  "keyboard": {
+    "notes": [
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "sockets": [
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      },
+      {
+        "height": 89,
+        "width": 31,
+        "pointer": "none"
+      }
+    ],
+    "whiteHits": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "blackHits": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "wheelStates": [
+    {
+      "rotation": 0,
+      "transform": "none",
+      "ribs": 36,
+      "markerTop": 50,
+      "visibility": "visible"
+    },
+    {
+      "rotation": 45,
+      "transform": "none",
+      "ribs": 36,
+      "markerTop": 15.3518,
+      "visibility": "visible"
+    },
+    {
+      "rotation": 90,
+      "transform": "none",
+      "ribs": 36,
+      "markerTop": 1,
+      "visibility": "visible"
+    },
+    {
+      "rotation": -45,
+      "transform": "none",
+      "ribs": 36,
+      "markerTop": 84.6482,
+      "visibility": "visible"
+    },
+    {
+      "rotation": -90,
+      "transform": "none",
+      "ribs": 36,
+      "markerTop": 99,
+      "visibility": "visible"
+    },
+    {
+      "rotation": 0,
+      "transform": "none",
+      "ribs": 36,
+      "markerTop": 50,
+      "visibility": "visible"
+    }
+  ],
+  "consoleErrors": []
+}

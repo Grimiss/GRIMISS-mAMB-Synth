@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "humanListening": false,
+  "checks": [
+    "Age changes harmonic content and tone, not only pitch drift or loudness",
+    "Thickness creates a substantial mono-audible ensemble difference in every voice mode",
+    "Velocity defaults to0 in both the engine and interface"
+  ],
+  "age": [
+    {
+      "age": 0,
+      "measuredHz": 440.00000579765543,
+      "thirdHarmonicRatio": 0.08263378377805912,
+      "rms": 0.08517318918393256,
+      "processing": {
+        "drive": 1,
+        "tone": 1,
+        "output": 1
+      }
+    },
+    {
+      "age": 50,
+      "measuredHz": 440.75774717924264,
+      "thirdHarmonicRatio": 0.2151467308425491,
+      "rms": 0.07982133021893892,
+      "processing": {
+        "drive": 3,
+        "tone": 0.89,
+        "output": 0.6670459492668608
+      }
+    },
+    {
+      "age": 100,
+      "measuredHz": 442.32754131304546,
+      "thirdHarmonicRatio": 0.27360304977484345,
+      "rms": 0.09047130899102312,
+      "processing": {
+        "drive": 5,
+        "tone": 0.78,
+        "output": 0.6149526131613303
+      }
+    }
+  ],
+  "thickness": [
+    {
+      "mode": "poly",
+      "normalisedMonoDifference": 0.6177598323185339,
+      "levelChangeDb": -1.7004512045960478,
+      "bufferBytes": 8192
+    },
+    {
+      "mode": "mono",
+      "normalisedMonoDifference": 0.6177598323185339,
+      "levelChangeDb": -1.7004512045960478,
+      "bufferBytes": 8192
+    },
+    {
+      "mode": "unison",
+      "normalisedMonoDifference": 0.5632753548513024,
+      "levelChangeDb": -0.272510464478778,
+      "bufferBytes": 8192
+    }
+  ]
+}
