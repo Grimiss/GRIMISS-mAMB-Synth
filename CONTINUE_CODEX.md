@@ -1,3 +1,7 @@
+## Slider/sound-range follow-up
+
+Thickness now sits below Analog Age in VOICE. Horizontal tracks are full-height green-left fills updated by real input events; the old scheduler bypass of the refinement hook is fixed. Reverb buttons: MOD HALL / SPRING. OSC2 octaves:−1,0,+1. Buttons use rounded matte rubber faces. Age/Thickness upper ranges are stronger; see SLIDER_REFINEMENT.md for exact calibrated limits and compatibility. No extra voices/second timbre or cabinet reconstruction. Rollback:rollback/pre-slider-refinement.
+
 Latest complete checkpoint: v0.5.1 at1dac36a (tag checkpoint/v0.5.1), published at the same private URL. Complete regression and additional menu/persistence checks passed. See V0_5_1_REFINEMENT.md, HOSTING.md and reports/v051-release-verification.json. Current live controls/keybed reflect the targeted brief, not a full Prototype C cabinet rollout. Preserve rollback/pre-v0.5.1. No background work continues after delivery.
 
 ## v0.5.1 targeted playable refinement

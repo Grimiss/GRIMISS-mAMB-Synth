@@ -1,3 +1,9 @@
+Complete slider/sound follow-up suite: `npm run test:all` PASS, including actual input-driven green fills and refreshed button/link states. The LINK visual assertion now waits for the scheduled animation frame instead of assuming synchronous repaint. All four target layouts have no overflow. Additional drift measured approximately0/1.491/4.218/11.931cents at Age0/25/50/100. Human listening remains unverified; rendered A/B examples are provided.
+
+## Slider/sound-range follow-up
+
+Thickness now sits below Analog Age in VOICE. Horizontal tracks are full-height green-left fills updated by real input events; the old scheduler bypass of the refinement hook is fixed. Reverb buttons: MOD HALL / SPRING. OSC2 octaves:−1,0,+1. Buttons use rounded matte rubber faces. Age/Thickness upper ranges are stronger; see SLIDER_REFINEMENT.md for exact calibrated limits and compatibility. No extra voices/second timbre or cabinet reconstruction. Rollback:rollback/pre-slider-refinement.
+
 ## v0.5.1 — completed targeted refinement
 
 `npm run test:all` PASS on the assembled build, including new refinement DSP/UI and six wheel browser groups. Additional actual-picker keyboard/contrast and non-default USER save/reload checks passed. Old browser checks now operate the replacement buttons instead of hidden backing selects/checkboxes; no synthesis acceptance criteria were relaxed. The velocity amplitude test checks the exact power-law state and allows the existing master soft-limiter's measured effect on output ratios.

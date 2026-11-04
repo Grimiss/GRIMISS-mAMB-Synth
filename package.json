@@ -20,7 +20,7 @@
     "test:physical": "node tests/physical-controls.cjs",
     "test:geometry": "node tests/reference-layout.cjs",
     "test:analog": "node tests/analog.cjs && node tests/analog-browser.cjs",
-    "test:refinement": "node tests/refinement-ui.cjs && node tests/wheels-v051.cjs && node tests/refinement-dsp.cjs"
+    "test:refinement": "node tests/refinement-ui.cjs && node tests/wheels-v051.cjs && node tests/refinement-dsp.cjs && node tests/slider-refinement.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

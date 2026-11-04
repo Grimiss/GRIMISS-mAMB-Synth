@@ -12,25 +12,25 @@
   "thickness": [
     {
       "mode": "poly",
-      "differenceRms": 0.02516655903018026,
-      "stereoDifferenceRms": 0.023703093363546805,
-      "loudnessChangeDb": -0.5436040416096637,
+      "differenceRms": 0.04663629487101879,
+      "stereoDifferenceRms": 0.03751395057944858,
+      "loudnessChangeDb": -1.0348668886550332,
       "voices": 8,
       "sharedBufferBytes": 712
     },
     {
       "mode": "mono",
-      "differenceRms": 0.02449572280500712,
-      "stereoDifferenceRms": 0.014335282417824008,
-      "loudnessChangeDb": 0.12052363554437684,
+      "differenceRms": 0.047814733054882104,
+      "stereoDifferenceRms": 0.02375690596149165,
+      "loudnessChangeDb": -0.3195390044729756,
       "voices": 1,
       "sharedBufferBytes": 712
     },
     {
       "mode": "unison",
-      "differenceRms": 0.02884204123838557,
-      "stereoDifferenceRms": 0.014746694060620822,
-      "loudnessChangeDb": 0.13237186162976752,
+      "differenceRms": 0.05184374586731556,
+      "stereoDifferenceRms": 0.02554064267904169,
+      "loudnessChangeDb": 0.1545884557266606,
       "voices": 4,
       "sharedBufferBytes": 712
     }
@@ -62,13 +62,13 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        231.8269739999996,
-        284.7425110000004,
-        250.59547200000088,
-        233.80618299999878
+        253.38891599999988,
+        231.67273999999998,
+        276.36043000000063,
+        265.9198500000002
       ],
-      "medianMilliseconds": 242.20082749999983,
-      "renderToRealtimeRatio": 0.12110041374999991,
+      "medianMilliseconds": 259.65438300000005,
+      "renderToRealtimeRatio": 0.12982719150000002,
       "relativeToV05": 1
     },
     {
@@ -80,14 +80,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        255.38241600000038,
-        287.7616340000004,
-        257.88550600000053,
-        241.83504399999947
+        246.15485700000045,
+        268.8508359999996,
+        252.03446500000064,
+        253.53235499999937
       ],
-      "medianMilliseconds": 256.63396100000045,
-      "renderToRealtimeRatio": 0.12831698050000023,
-      "relativeToV05": 1.0595915945002319
+      "medianMilliseconds": 252.78341,
+      "renderToRealtimeRatio": 0.126391705,
+      "relativeToV05": 0.9735380049409755
     },
     {
       "scenario": "v0.5.1 thickness100",
@@ -98,14 +98,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        261.7885640000004,
-        272.68724099999963,
-        257.041776,
-        242.12965299999996
+        253.6736060000003,
+        268.60656500000005,
+        244.0364120000013,
+        255.3029979999992
       ],
-      "medianMilliseconds": 259.4151700000002,
-      "renderToRealtimeRatio": 0.1297075850000001,
-      "relativeToV05": 1.0710746642680253
+      "medianMilliseconds": 254.48830199999975,
+      "renderToRealtimeRatio": 0.12724415099999986,
+      "relativeToV05": 0.9801040100293616
     },
     {
       "scenario": "v0.5 baseline UNISON",
@@ -116,13 +116,13 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        130.7271810000002,
-        140.44930100000056,
-        130.93555399999968,
-        123.58034800000132
+        125.14741800000047,
+        148.45529800000077,
+        142.10699600000044,
+        172.00854900000013
       ],
-      "medianMilliseconds": 130.83136749999994,
-      "renderToRealtimeRatio": 0.06541568374999997,
+      "medianMilliseconds": 145.2811470000006,
+      "renderToRealtimeRatio": 0.0726405735000003,
       "relativeToV05": 1
     },
     {
@@ -134,14 +134,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        141.19843899999978,
-        129.83094999999958,
-        130.16210899999896,
-        125.45601100000022
+        125.07682300000033,
+        148.53439700000126,
+        149.2577629999996,
+        130.6758520000003
       ],
-      "medianMilliseconds": 129.99652949999927,
-      "renderToRealtimeRatio": 0.06499826474999963,
-      "relativeToV05": 0.9936189767335369
+      "medianMilliseconds": 139.60512450000078,
+      "renderToRealtimeRatio": 0.0698025622500004,
+      "relativeToV05": 0.9609307703221823
     }
   ]
 }

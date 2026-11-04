@@ -380,7 +380,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05516637625757545,
+        "rms": 0.05494424787047699,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -1340,7 +1340,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05566405370781846,
+        "rms": 0.05447247850045557,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -2300,8 +2300,8 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.055273735509798555,
-        "stereoDifferenceRms": 0,
+        "rms": 0.05448102573348983,
+        "stereoDifferenceRms": 0.060245431279774796,
         "finite": true
       }
     },
@@ -2901,7 +2901,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.0549195403264238,
+        "rms": 0.055412275242587725,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -2924,7 +2924,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.05519067208578416,
+        "rms": 0.055007749143973446,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -2942,7 +2942,7 @@
       "keyboard visibility touch toggle"
     ],
     "audio": {
-      "rms": 0.05546988670110606,
+      "rms": 0.05519101549504479,
       "stereoDifferenceRms": 0,
       "finite": true
     },

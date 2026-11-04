@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "actual input events animate0/25/80/100 green fill without explicit redraw",
+    "Thickness directly below Age in VOICE",
+    "octave order and reverb labels",
+    "rounded buttons preserve state"
+  ],
+  "consoleErrors": []
+}

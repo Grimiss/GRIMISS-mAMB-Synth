@@ -35,19 +35,19 @@
       "character": 50,
       "durationSeconds": 30,
       "voices": 8,
-      "maxDriftCents": 2.982685916395797,
-      "maxDriftStepPer10ms": 0.022332613436783277,
-      "rms": 0.0689058692819665,
-      "peak": 0.26018276810646057
+      "maxDriftCents": 4.218154875266039,
+      "maxDriftStepPer10ms": 0.0315830848051587,
+      "rms": 0.06868733759179148,
+      "peak": 0.26334691047668457
     },
     {
       "character": 100,
       "durationSeconds": 30,
       "voices": 8,
-      "maxDriftCents": 5.965371832791451,
-      "maxDriftStepPer10ms": 0.04466522687325236,
-      "rms": 0.06802424039064835,
-      "peak": 0.2804110050201416
+      "maxDriftCents": 11.930743665582904,
+      "maxDriftStepPer10ms": 0.08933045374634485,
+      "rms": 0.06819877428755763,
+      "peak": 0.2771182954311371
     }
   ],
   "performance": [
@@ -60,13 +60,13 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        235.42257299999983,
-        236.80893699999797,
-        241.1801720000003,
-        227.07632899999953
+        253.73887600000307,
+        269.65697799999907,
+        259.7015629999987,
+        242.05574600000182
       ],
-      "medianMilliseconds": 236.1157549999989,
-      "renderToRealtimeRatio": 0.11805787749999945,
+      "medianMilliseconds": 256.7202195000009,
+      "renderToRealtimeRatio": 0.12836010975000045,
       "relativeToRollback": 1
     },
     {
@@ -78,14 +78,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        258.6775129999987,
-        258.9932059999992,
-        263.570757999998,
-        269.8817450000024
+        300.0116369999996,
+        279.5882270000002,
+        280.30121599999984,
+        263.7211900000002
       ],
-      "medianMilliseconds": 261.2819819999986,
-      "renderToRealtimeRatio": 0.1306409909999993,
-      "relativeToRollback": 1.1065842768518341
+      "medianMilliseconds": 279.9447215,
+      "renderToRealtimeRatio": 0.13997236075,
+      "relativeToRollback": 1.0904661971902023
     },
     {
       "case": "new-25",
@@ -96,14 +96,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        278.32151800000065,
-        258.553817,
-        259.92874700000175,
-        291.58660099999906
+        296.62609299999895,
+        294.1518250000008,
+        269.9178819999979,
+        275.07493500000055
       ],
-      "medianMilliseconds": 269.1251325000012,
-      "renderToRealtimeRatio": 0.1345625662500006,
-      "relativeToRollback": 1.1398016727007585
+      "medianMilliseconds": 284.6133800000007,
+      "renderToRealtimeRatio": 0.14230669000000035,
+      "relativeToRollback": 1.1086519813450055
     },
     {
       "case": "new-50",
@@ -114,14 +114,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        266.7180900000021,
-        266.89302099999986,
-        247.9405009999973,
-        283.32771800000046
+        303.3480879999988,
+        316.9351319999987,
+        275.214007999999,
+        257.63861800000086
       ],
-      "medianMilliseconds": 266.805555500001,
-      "renderToRealtimeRatio": 0.1334027777500005,
-      "relativeToRollback": 1.1299777750959576
+      "medianMilliseconds": 289.2810479999989,
+      "renderToRealtimeRatio": 0.14464052399999947,
+      "relativeToRollback": 1.126833907213911
     },
     {
       "case": "new-100",
@@ -132,14 +132,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        263.3357259999975,
-        289.5334210000001,
-        315.17491900000095,
-        297.2981179999988
+        303.3638519999986,
+        290.788704999999,
+        273.48023699999976,
+        267.88198099999863
       ],
-      "medianMilliseconds": 293.41576949999944,
-      "renderToRealtimeRatio": 0.1467078847499997,
-      "relativeToRollback": 1.2426776413119947
+      "medianMilliseconds": 282.1344709999994,
+      "renderToRealtimeRatio": 0.1410672354999997,
+      "relativeToRollback": 1.0989959090464179
     }
   ],
   "listeningTests": false,

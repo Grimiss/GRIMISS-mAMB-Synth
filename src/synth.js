@@ -7,7 +7,7 @@ let performanceBend=0,performanceWheel=0;
 let voices=[],clock=0,smoothMix=1,params={...initial},target={...initial},serial=0,hold=false,mode='add',group=-1,tick=0,frames=0,rebuilding=false;
 const TWO=2*Math.PI,dt=1/sr,alpha=1-Math.exp(-dt/.015),controlAlpha=1-Math.exp(-16*dt/.015);
 const owners=new Map(),controllers=new Map(),moving=[];let cacheDirty=true;
-const mod={aa:0,ad:0,ar:0,fa:0,fd:0,fr:0,lfo:0,lfo2:0,ratio2:1,baseCut:1000,drive:1,driveNorm:1,k:2,thickRatio:1,level1:0,level2:0,wheelGate:1};
+const mod={aa:0,ad:0,ar:0,fa:0,fd:0,fr:0,lfo:0,lfo2:0,ratio2:1,baseCut:1000,drive:1,driveNorm:1,k:2,thickRatio:1,analogStrength:0,level1:0,level2:0,wheelGate:1};
 const spectra=[[1,.12,.48,.08,.25,.04,.13],[.55,.14,.75,.09,.52,.07,.28],[.32,.85,.14,.61,.07,.39,.18]];
 const waveNames=['saw','pulse','triangle','sine','dwgs1','dwgs2','dwgs3'],filterNames=['lp','lp24','hp','bp'];
 function mixState(names,value){const weights=new Float64Array(names.length);const index=Math.max(0,names.indexOf(value));weights[index]=1;return {names,weights,steps:new Float64Array(names.length),index,left:0}}
@@ -32,8 +32,8 @@ function control(){
  if(cacheDirty){const p=params;mod.aa=.005+(p.aa/100)**2*5;mod.ad=.005+(p.ad/100)**2*5;mod.ar=.005+(p.ar/100)**2*5;mod.fa=.005+(p.fa/100)**2*5;mod.fd=.005+(p.fd/100)**2*5;mod.fr=.005+(p.fr/100)**2*5;
  mod.rate1=.025+(p.lfo/100)**2*8;mod.rate2=.005+(p.lfo2Rate/100)**2*8;mod.ratio2=2**(p.oct2+p.semi2/12+p.detune/1200);mod.baseCut=50*320**(p.cutoff/100);mod.drive=1+p.drive/10;mod.driveNorm=1/Math.tanh(mod.drive);mod.k=Math.max(.35,2-.018*p.res);
  // Reuse OSC2: a quiet companion and bounded static tuning, not extra oscillators/voices.
- const thick=p.thickness/100,a=p.level1/100,b=p.level2/100,extra=.22*Math.max(0,a-b)*thick,normal=Math.sqrt((a*a+b*b)/Math.max(1e-20,a*a+(b+extra)*(b+extra)));
- mod.level1=a*normal;mod.level2=(b+extra)*normal;mod.thickRatio=2**((p.voiceMode==='unison'?0:Math.max(0,4-Math.abs(p.detune))*thick)/1200);cacheDirty=false;}
+ const thick=p.thickness/100,a=p.level1/100,b=p.level2/100,extra=.45*Math.max(0,a-b)*thick,normal=Math.sqrt((a*a+b*b)/Math.max(1e-20,a*a+(b+extra)*(b+extra)));
+ mod.level1=a*normal;mod.level2=(b+extra)*normal;mod.thickRatio=2**((p.voiceMode==='unison'?0:(a>0?Math.sign(p.detune||1)*Math.max(0,12-Math.abs(p.detune))*thick:0))/1200);mod.analogStrength=4*(p.analogCharacter/100)**1.5;cacheDirty=false;}
  // Sparse preallocated taps preserve old paths while rewiring, including rapid edits.
  let wheelGate=1;for(let i=0;i<activeTaps.length;i++){const tap=activeTaps[i];if(tap.dest===0&&(tap.source===2||tap.source===7)&&tap.target!==0){wheelGate=0;break}}mod.wheelGate+=(wheelGate-mod.wheelGate)*controlAlpha;if(Math.abs(wheelGate-mod.wheelGate)<1e-7)mod.wheelGate=wheelGate;
  const hadTaps=activeTaps.length;for(let i=activeTaps.length-1;i>=0;i--){const tap=activeTaps[i];tap.amount+=(tap.target-tap.amount)*controlAlpha;if(Math.abs(tap.target-tap.amount)<1e-8)tap.amount=tap.target;if(tap.target===0&&tap.amount===0){tap.active=false;activeTaps[i]=activeTaps[activeTaps.length-1];activeTaps.pop()}}
@@ -54,7 +54,7 @@ function driftPoint(seed,index){let x=(seed+Math.imul(index,0x9e3779b9))>>>0;x=M
 function driftValue(d){const segment=Math.floor(frames/d.period),u=(frames%d.period)/d.period;if(segment!==d.segment){d.segment=segment;d.from=driftPoint(d.seed,segment);d.to=driftPoint(d.seed,segment+1)}d.value=d.from+(d.to-d.from)*u*u*(3-2*u);return d.value}
 function park(v,frame=frames){const slot=v.slot;if(!slot||slot.current!==v)return;slot.p1=v.p1;slot.p2=v.p2;slot.inc1=v.inc1;slot.inc2=v.inc2;slot.frame=frame;slot.current=null;v.slot=null}
 function steal(v){park(v);v.stealFade=1}
-function analogControl(v){const c=v.calibration,strength=params.analogCharacter/50;
+function analogControl(v){const c=v.calibration,strength=mod.analogStrength;
  if(v.velocitySetting!==params.velocitySensitivity){v.velocitySetting=params.velocitySensitivity;v.velocityTarget=v.velocitySetting===0?1:v.velocity**(1.5*v.velocitySetting/100)}
  // Drift is sampled on the existing 16-frame control clock, never with per-sample RNG.
  if(strength>0){const s=v.physicalSlot;v.analog1=2**((c.tune1+3*driftValue(s.drift1))*strength/1200);v.analog2=2**((c.tune2+3*driftValue(s.drift2))*strength/1200);v.analogCut=1+c.cutoff*strength;v.analogGain=10**(c.gainDb*strength/20)}else{v.analog1=v.analog2=v.analogCut=v.analogGain=1}

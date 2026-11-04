@@ -37,10 +37,54 @@
       74,
       79
     ],
-    "peak": 0.20378141105175018,
-    "rms": 0.05019251981269034,
+    "peak": 0.2100314497947693,
+    "rms": 0.049719010787857267,
     "effectsBypassed": true,
     "analogAge": 25,
+    "humanListening": false
+  },
+  {
+    "thickness": 0,
+    "path": "reports/analog-age-0.wav",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 8,
+    "notes": [
+      48,
+      55,
+      60,
+      64,
+      67,
+      71,
+      74,
+      79
+    ],
+    "peak": 0.17484363913536072,
+    "rms": 0.04310304078100682,
+    "effectsBypassed": true,
+    "analogAge": 0,
+    "humanListening": false
+  },
+  {
+    "thickness": 0,
+    "path": "reports/analog-age-100.wav",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 8,
+    "notes": [
+      48,
+      55,
+      60,
+      64,
+      67,
+      71,
+      74,
+      79
+    ],
+    "peak": 0.19862812757492065,
+    "rms": 0.05157028529152905,
+    "effectsBypassed": true,
+    "analogAge": 100,
     "humanListening": false
   }
 ]
