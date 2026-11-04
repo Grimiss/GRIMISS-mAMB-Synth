@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "sampleRate": 48000,
+  "tests": [
+    {
+      "name": "sample-exact ordered gates, sample-clock tempo and block boundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "fractional dotted periods never accumulate rounded-step drift",
+      "status": "PASS"
+    },
+    {
+      "name": "down, up/down without duplicate endpoints, played order and octave expansion",
+      "status": "PASS"
+    },
+    {
+      "name": "random is deterministic and bounded; high notes never exceed MIDI127",
+      "status": "PASS"
+    },
+    {
+      "name": "MIDI device/channel duplicate ownership, repeated on/off and source disconnect",
+      "status": "PASS"
+    },
+    {
+      "name": "sustain is source scoped; generated gates never receive a held sustain",
+      "status": "PASS"
+    },
+    {
+      "name": "HOLD ADD / REPLACE latch inputs, not generated output gates; reset and PANIC clear them",
+      "status": "PASS"
+    },
+    {
+      "name": "enable/disable transfers held keys, preserves bend/CC1, and tempo edits preserve phase",
+      "status": "PASS"
+    },
+    {
+      "name": "disabled arp is sample-identical to the working rollback across rates and wet eight-voice chords",
+      "status": "PASS"
+    },
+    {
+      "name": "actual audio is block-partition invariant, nonzero, bounded, and PANIC recovers",
+      "status": "PASS"
+    },
+    {
+      "name": "60-second rapid poly/mono/unison arp remains bounded and controller-safe",
+      "status": "PASS"
+    }
+  ],
+  "physicalHardwareTested": false
+}

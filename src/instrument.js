@@ -17,12 +17,42 @@ function createMambInstrument(initial,sr=48000,seed=12345){
  }}
  let inputGain=0,inputTarget=0;const inputAlpha=1-Math.exp(-1/(sr*.02));
  const synth=createMambEngine(synthValues(initial),sr,seed),effects=createMambEffects(initial,sr);
- function message(event){if(event.type==='audioInputGain'){if(Number.isFinite(event.value))inputTarget=Math.max(0,Math.min(1,event.value));return}if(event.type==='params'){if(typeof event.value?.voiceMode==='string')ensembleMode(event.value.voiceMode);if(Number.isFinite(event.value?.thickness))thicknessTarget=Math.max(0,Math.min(1,event.value.thickness/100));synth.message({type:'params',value:synthValues(event.value||{})});effects.setParameters(event.value||{})}else {synth.message(event);if(event.type==='panic'){inputTarget=0;ensemble.fill(0);ensemblePanicRemaining=Math.ceil(sr*.018)+128;effects.panic()}}}
- function render(left,right,inputL,inputR){synth.render(left);if(ensemblePanicRemaining>0){
+ const arp=createMambArpeggiator(synth,initial,sr);
+ function message(event){if(arp.message(event))return;if(event.type==='audioInputGain'){if(Number.isFinite(event.value))inputTarget=Math.max(0,Math.min(1,event.value));return}if(event.type==='params'){if(typeof event.value?.voiceMode==='string')ensembleMode(event.value.voiceMode);if(Number.isFinite(event.value?.thickness))thicknessTarget=Math.max(0,Math.min(1,event.value.thickness/100));synth.message({type:'params',value:synthValues(event.value||{})});effects.setParameters(event.value||{})}else {synth.message(event);if(event.type==='panic'){inputTarget=0;ensemble.fill(0);ensemblePanicRemaining=Math.ceil(sr*.018)+128;effects.panic()}}}
+ function render(left,right,inputL,inputR){arp.render(left);if(ensemblePanicRemaining>0){
  // Do not write fading voices back into the ensemble after PANIC cleared it.
  // Otherwise its delayed output can repopulate the already-reset reverb.
  right.set(left);ensemblePanicRemaining-=left.length;
  }else spread(left,right);if(inputL&&(inputTarget>0||inputGain>1e-8)){for(let i=0;i<left.length;i++){inputGain+=(inputTarget-inputGain)*inputAlpha;right[i]=right[i]+(inputR||inputL)[i]*inputGain;left[i]=left[i]+inputL[i]*inputGain}effects.process(left,right,left,right)}else effects.process(left,right,left,right)}
- function snapshot(){const state=synth.snapshot();state.effects=effects.snapshot();state.thicknessStereo={amount:thickness,target:thicknessTarget,algorithm:'shared detuned ensemble',detuneCents:targetRateL===(1-2**(-4/1200))/windowSamples?4:9,allocatedBytes:ensemble.byteLength};return state}
+ function snapshot(){const state=synth.snapshot();state.arpeggiator=arp.snapshot();if(state.arpeggiator.arpOn){state.held=state.arpeggiator.held;state.pressed=state.arpeggiator.pressed}state.effects=effects.snapshot();state.thicknessStereo={amount:thickness,target:thicknessTarget,algorithm:'shared detuned ensemble',detuneCents:targetRateL===(1-2**(-4/1200))/windowSamples?4:9,allocatedBytes:ensemble.byteLength};return state}
  return {render,message,snapshot};
+}
+
+// Audio-frame arpeggiator. No DOM clock, extra timbre or per-sample allocation.
+function createMambArpeggiator(synth,initial,sr){
+ const config={arpOn:false,arpPattern:'up',arpDivision:.5,arpGate:55,arpOctaves:1,tempo:100},keys=new Map(),pedals=new Map(),controllers=new Map();
+ let frames=0,order=0,index=0,sequence=[],current=null,next=0,off=Infinity,last=0,hold=false,holdMode='add',stepCount=0,random=23719;
+ const period=()=>sr*60/config.tempo*config.arpDivision;
+ const stop=()=>{if(current){synth.message({type:'off',note:current.note,source:current.source});current=null}off=Infinity};
+ function rebuild(){const byNote=new Map();for(const k of keys.values())if(!byNote.has(k.note)||byNote.get(k.note).order<k.order)byNote.set(k.note,k);const base=[...byNote.values()].sort((a,b)=>config.arpPattern==='played'?a.order-b.order:a.note-b.note);sequence=[];for(let octave=0;octave<config.arpOctaves;octave++)for(const k of base)if(k.note+12*octave<=127)sequence.push({note:k.note+12*octave,source:k.source,velocity:k.velocity,key:k.key});if(current&&!keys.has(current.key))stop();if(!sequence.length){stop();index=0;next=frames}}
+ function prune(){for(const[k,v]of keys)if(!v.down&&!v.latched&&!v.sustained)keys.delete(k);rebuild()}
+ function configure(values){const was=config.arpOn,oldPeriod=period();for(const k of Object.keys(config)){const raw=values[k],v=['arpDivision','arpOctaves'].includes(k)&&typeof raw==='string'?Number(raw):raw;if(k==='arpOn'&&typeof v==='boolean')config[k]=v;else if(k==='arpPattern'&&['up','down','updown','played','random'].includes(v))config[k]=v;else if(typeof v==='number'&&Number.isFinite(v)){if(k==='tempo')config[k]=Math.max(40,Math.min(240,v));if(k==='arpGate')config[k]=Math.max(5,Math.min(95,v));if(k==='arpOctaves')config[k]=Math.max(1,Math.min(3,Math.round(v)));if(k==='arpDivision'&&[.25,.5,1,2/3,.75].includes(v))config[k]=v}}
+  if(was!==config.arpOn){stop();index=0;next=frames;if(config.arpOn){synth.message({type:'hold',value:false});for(const k of keys.values())synth.message({type:'sourceOff',source:k.source,hard:true});for(const source of pedals.keys())synth.message({type:'sustain',source,value:false});for(const[source,value]of controllers)synth.message({type:'controller',source,...value})}else{synth.message({type:'hold',value:hold,mode:holdMode});for(const[source,value]of pedals)synth.message({type:'sustain',source,value});for(const k of keys.values()){synth.message({type:'on',note:k.note,velocity:k.velocity,source:k.source});if(!k.down)synth.message({type:'off',note:k.note,source:k.source})}}}
+  else if(oldPeriod!==period()){const ratio=period()/oldPeriod;last=frames-(frames-last)*ratio;next=frames+Math.max(0,next-frames)*ratio;off=Number.isFinite(off)?frames+Math.max(0,off-frames)*ratio:off}
+  rebuild();if(current)off=Math.min(next,last+period()*config.arpGate/100);
+ }
+ function message(m){const source=m.source||'default';if(m.type==='controller'){const old=controllers.get(source)||{};controllers.set(source,{...old,...(Number.isFinite(m.bend)?{bend:m.bend}:{}),...(Number.isFinite(m.wheel)?{wheel:m.wheel}:{})});return false}if(m.type==='params'){configure(m.value||{});return false}
+  if(m.type==='arpReset'){if(config.arpOn){stop();keys.clear();rebuild();index=0}return true}
+  if(m.type==='panic'){stop();keys.clear();pedals.clear();controllers.clear();rebuild();index=stepCount=0;next=frames;return false}
+  if(m.type==='on'&&Number.isInteger(m.note)&&m.note>=0&&m.note<=127&&Number.isFinite(m.velocity)&&m.velocity>0){if(hold&&holdMode==='replace'&&![...keys.values()].some(k=>k.down)){keys.clear();rebuild();index=0;next=frames}const key=source+'|'+m.note,empty=!sequence.length;keys.set(key,{key,note:m.note,source,velocity:Math.min(1,m.velocity),down:true,latched:hold,sustained:false,order:++order});rebuild();if(empty)next=frames;return config.arpOn}
+  if(m.type==='off'||m.type==='on'&&Number.isFinite(m.velocity)&&m.velocity<=0){const k=keys.get(source+'|'+m.note);if(k){k.down=false;k.sustained=!!pedals.get(source);prune()}return config.arpOn}
+  if(m.type==='hold'){hold=!!m.value;holdMode=m.mode==='replace'?'replace':'add';if(!hold){for(const k of keys.values())k.latched=false;prune()}return config.arpOn}
+  if(m.type==='sustain'){pedals.set(source,!!m.value);if(!m.value){for(const k of keys.values())if(k.source===source)k.sustained=false;prune()}return config.arpOn}
+  if(m.type==='sourceOff'){for(const[k,v]of keys)if(v.source===source)keys.delete(k);pedals.delete(source);controllers.delete(source);rebuild();return false}
+  return false;
+ }
+ function trigger(){stop();if(!sequence.length)return;let slot=index%sequence.length;if(config.arpPattern==='down')slot=sequence.length-1-slot;else if(config.arpPattern==='updown'){const cycle=Math.max(1,sequence.length*2-2),phase=index%cycle;slot=phase<sequence.length?phase:cycle-phase}else if(config.arpPattern==='random'){random^=random<<13;random^=random>>>17;random^=random<<5;slot=(random>>>0)%sequence.length}current=sequence[slot];last=next;synth.message({type:'on',note:current.note,source:current.source,velocity:current.velocity});off=next+period()*config.arpGate/100;next+=period();index++;stepCount++}
+ function render(out){if(!config.arpOn||!sequence.length){synth.render(out);frames+=out.length;return}let at=0;while(at<out.length){if(off<=frames)stop();if(next<=frames)trigger();const count=Math.min(out.length-at,Math.max(1,Math.ceil(Math.min(next,off)-frames)));synth.render(out,at,count);at+=count;frames+=count}}
+ function snapshot(){return{...config,step:stepCount?stepCount-1:0,stepCount,currentNote:current?.note??null,currentSource:current?.source??null,frame:frames,nextStepFrame:next,gateOffFrame:Number.isFinite(off)?off:null,inputNotes:[...new Set([...keys.values()].map(k=>k.note))],held:[...new Set([...keys.values()].filter(k=>k.latched).map(k=>k.note))],pressed:[...new Set([...keys.values()].filter(k=>k.down).map(k=>k.note))],owners:keys.size}}
+ configure(initial);return{message,render,snapshot};
 }

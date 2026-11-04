@@ -162,8 +162,8 @@ function message(m){switch(m.type){
 }}
 control();
 function pruneOwner(o,key){if(!o.down&&!o.latched&&!o.sustained&&!ownerHasVoices(o))owners.delete(key)}
-function render(out){
- for(let i=0;i<out.length;i++){
+function render(out,offset=0,length=out.length-offset){
+ for(let i=offset;i<offset+length;i++){
  if(!(tick++&15))control();
  advanceMix(mix1);advanceMix(mix2);advanceMix(filterMix);
  mod.lfo=lfoValue(lfoStates[0],params.lfo1Wave,mod.rate1)*params.lfo1Depth/100;mod.lfo2=lfoValue(lfoStates[1],params.lfo2Wave,mod.rate2)*params.lfo2Depth/100;
