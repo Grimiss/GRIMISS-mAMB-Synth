@@ -138,3 +138,7 @@ Checkpoint:`1dac36a` / tag checkpoint/v0.5.1. Rollback:rollback/pre-v0.5.1 at034
 ## Age/Thickness and slider follow-up
 
 Same private playable URL updated. Thickness is below Age; input-driven full green fills, stronger upper sound ranges, MOD HALL/SPRING labels,−1/0/+1ordering and rounded matte buttons are live. Full suite passed; current review includes new Age0/100 and Thickness0/100 audio renders. Checkpoint5f54e36; report-level follow-up ee3c785; rollback/pre-slider-refinement preserved. Site source7265d397b9b409807feffe2b95b409f6ad17d167; deployment appgdep_6aeb3d2a65b48191bbf8c4ba76e922dd succeeded; HTML SHA256 e2be6cbc7b5f029e148ee39c7367b00b5388abba6d4d2e41ca48be30d73da2bf. No main merge.
+
+## Expressive controls checkpoint — publication blocked
+
+Completed checkpoint `cf4d955` is pushed on `codex/controller-workflow-v0.7`; full regression and final mechanical UI checks passed. HTML SHA256 `42b983dfd9b183abca13933a5b51d45de711a3a067f39c8fc566a7e76ffed5c4`. The existing hosted build has NOT been confirmed updated. Site source pushes returned HTTP 502; subsequent retry was rejected by automatic approval review, which requires explicit authorization to upload source/build to existing Site project `appgprj_6ae9ad1b7aa08191846efb701d49414c`. Local Site commit `64d943f16ea8e62d43b15a314d1525b80aea3d59` is preserved. Do not claim publication. See reports/expressive-release-verification.json. Main remains unmerged.

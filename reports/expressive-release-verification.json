@@ -1,0 +1,17 @@
+{
+  "checkpoint": "cf4d95544b07ec9668ccc75c3d389865d2555f21",
+  "branch": "codex/controller-workflow-v0.7",
+  "html_sha256": "42b983dfd9b183abca13933a5b51d45de711a3a067f39c8fc566a7e76ffed5c4",
+  "regression": "npm run test:all PASS; final CSS mechanical and refinement UI checks PASS",
+  "hosting": "NOT PUBLISHED: two source pushes returned HTTP 502; retry rejected by automatic approval review requiring explicit authorization for existing Site source destination",
+  "site_source_local_commit": "64d943f16ea8e62d43b15a314d1525b80aea3d59",
+  "site_project_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c",
+  "rollback": "rollback/pre-expressive-controls",
+  "main_merged": false,
+  "unverified": [
+    "physical MIDI hardware",
+    "Windows/tablets",
+    "human listening",
+    "live-domain browser QA"
+  ]
+}
