@@ -22,8 +22,18 @@
     "local_archive": "work/rollback-hosted-v15.tar.gz",
     "development_tag": "rollback/pre-factory-refresh"
   },
-  "publication": "pending",
+  "publication": "succeeded",
   "physical_hardware_tested": false,
   "human_listening_tested": false,
-  "main_merged": false
+  "main_merged": false,
+  "checkpoint_commit": "362afff3676731437ac2479db9876260efbbf47b",
+  "site_source_commit": "0d6d5e2210a1efc6059e60d4a5452222a6fe8970",
+  "site_version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_f3164279e4648191936934f763853606",
+  "deployment_id": "appgdep_6aeb86afd24c8191a2c6a859db4eec5c",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "sound_tour": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/reports/preset-showcase.html",
+  "main_verified": "433c2ab1ab0eb7e26c59bfd431ec4dc1a80b3b1f",
+  "verification_limits": "Local Chromium HTTP Worklet/fallback load and audio passed. Live-origin browser QA remains blocked by configured proxy policy; native deployment success verified.",
+  "asset_validation": "All nine stereo WAV headers/durations and tour assets verified in deployment archive.",
+  "site_version_number": 16
 }
