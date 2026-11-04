@@ -3,7 +3,7 @@
   "branch": "codex/controller-workflow-v0.7",
   "html_sha256": "42b983dfd9b183abca13933a5b51d45de711a3a067f39c8fc566a7e76ffed5c4",
   "regression": "npm run test:all PASS; final CSS mechanical and refinement UI checks PASS",
-  "hosting": "NOT PUBLISHED: two source pushes returned HTTP 502; retry rejected by automatic approval review requiring explicit authorization for existing Site source destination",
+  "hosting": "PUBLISHED: native Sites deployment succeeded",
   "site_source_local_commit": "64d943f16ea8e62d43b15a314d1525b80aea3d59",
   "site_project_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c",
   "rollback": "rollback/pre-expressive-controls",
@@ -13,5 +13,22 @@
     "Windows/tablets",
     "human listening",
     "live-domain browser QA"
-  ]
+  ],
+  "rollback_deployment": {
+    "version_number": 14,
+    "version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_d4cc2cc56f748191ad506f07a54b91c6",
+    "deployment_id": "appgdep_6aeb3d2a65b48191bbf8c4ba76e922dd",
+    "source_commit": "7265d397b9b409807feffe2b95b409f6ad17d167",
+    "local_archive": "work/rollback-hosted-v14.tar.gz",
+    "site_git_tag": "rollback/hosted-pre-expressive",
+    "status_verified": "succeeded"
+  },
+  "site_source_commit": "64d943f16ea8e62d43b15a314d1525b80aea3d59",
+  "version_number": 15,
+  "version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_8fd9b1c1166c8191b001d94e3d9fd814",
+  "deployment_id": "appgdep_6aeb80110e0c8191a4d1adfe52862618",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "postpublication_validation": "Exact HTML SHA verified. Chromium HTTP AudioWorklet and fallback loading/audio/ownership/presets/routes/PANIC PASS. Direct live URL blocked by configured proxy CONNECT 403; not a reported Site failure. File URL route blocked by managed Chromium policy.",
+  "main_verified": "433c2ab1ab0eb7e26c59bfd431ec4dc1a80b3b1f",
+  "explicit_publication_authorization": true
 }
