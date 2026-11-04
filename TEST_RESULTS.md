@@ -1,3 +1,7 @@
+# Factory sound refresh checkpoint
+
+90 intentional factory designs;83 enable varied effects, USER storage/names/numbering and approved geometry preserved. See FACTORY_SOUND_REFRESH.md, tests/preset-contrast-results.json and reports/preset-showcase.html. Includes a reproduced-and-fixed Thickness/PANIC buffer refill regression; no normal-note DSP change. Full-suite final status is recorded in the release verification report. Visual material/lighting improvements are proposals, not a new styling rollout.
+
 ## Expressive sound and mechanical controls
 
 Latest request replaces the still-subtle macro response: Age now includes existing-stage saturation/tone wear with level compensation; Thickness now has a shared micro-detuned ensemble that changes mono audio. Velocity default is0; saved explicit USER values remain. Oscillator buttons are equal-size with stronger selected edge/icon glow; wheel ribs roll into fixed shells; black keys have visibly recessed pockets/cutaways. PLAY range heading and VOICE explanatory text are hidden/removed, with PITCH DRIFT label preserved. See EXPRESSIVE_CONTROLS.md. Rollback:rollback/pre-expressive-controls. Full suite passed; no main merge or full cabinet rollout.
@@ -155,3 +159,5 @@ Screenshots and equal-scale original/implemented boundary overlays: `reports/ref
 The final repeat exposed a test startup race in physical-controls.cjs: the first engine-state message can precede its voices list. The wait predicate now tolerates that initial missing list while retaining all voice, bend, wheel and release assertions. The affected test and remaining browser tests passed on rerun; the complete suite was repeated after that correction.
 
 Three-octave checkpoint: `npm run test:all` completed successfully. Layout capture found no overflow in all four target size/keyboard-mode combinations. New top C6 pointer note-on/off passed.
+
+Factory refresh: every regression group passed across staged runs; see reports/preset-release-verification.json for exact coverage and fixture updates. Both Worklet and fallback browser audio/PANIC pass.90 factory renders are finite, bounded and nonzero;83 wet/dry differences verified. No human listening or physical-device claim.

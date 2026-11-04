@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Warm Ambient",
+    "path": "preset-01.wav",
+    "peak": 0.09301052242517471,
+    "number": 1,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Velvet Dawn",
+    "path": "preset-02.wav",
+    "peak": 0.05738943815231323,
+    "number": 3,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Amber Clouds",
+    "path": "preset-03.wav",
+    "peak": 0.12925976514816284,
+    "number": 4,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Iron Tide",
+    "path": "preset-04.wav",
+    "peak": 0.15454666316509247,
+    "number": 34,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Thin Air",
+    "path": "preset-05.wav",
+    "peak": 0.034976016730070114,
+    "number": 42,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Soft Acid",
+    "path": "preset-06.wav",
+    "peak": 0.09649874269962311,
+    "number": 54,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Spring Pizz",
+    "path": "preset-07.wav",
+    "peak": 0.16168807446956635,
+    "number": 65,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Bell Archive",
+    "path": "preset-08.wav",
+    "peak": 0.1296290010213852,
+    "number": 74,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  },
+  {
+    "name": "Delay Apparition",
+    "path": "preset-09.wav",
+    "peak": 0.06714630126953125,
+    "number": 90,
+    "sampleRate": 24000,
+    "duration": 8,
+    "normalized": false,
+    "humanListening": false
+  }
+]

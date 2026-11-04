@@ -62,13 +62,13 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        238.7001569999993,
-        296.67239399999926,
-        278.2230560000007,
-        277.50355800000034
+        294.76432100000056,
+        248.00567299999966,
+        249.19720099999904,
+        238.81494399999974
       ],
-      "medianMilliseconds": 277.86330700000053,
-      "renderToRealtimeRatio": 0.13893165350000028,
+      "medianMilliseconds": 248.60143699999935,
+      "renderToRealtimeRatio": 0.12430071849999967,
       "relativeToV05": 1
     },
     {
@@ -80,14 +80,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        318.44907800000055,
-        313.2149820000013,
-        289.3456819999992,
-        298.60236799999984
+        253.92313399999966,
+        262.20243500000015,
+        258.21557399999983,
+        241.40199799999937
       ],
-      "medianMilliseconds": 305.9086750000006,
-      "renderToRealtimeRatio": 0.1529543375000003,
-      "relativeToV05": 1.1009322472362282
+      "medianMilliseconds": 256.06935399999975,
+      "renderToRealtimeRatio": 0.12803467699999987,
+      "relativeToV05": 1.0300397177511103
     },
     {
       "scenario": "v0.5.1 thickness100",
@@ -98,14 +98,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        286.0684430000001,
-        303.34254599999986,
-        284.7393280000015,
-        329.2915320000011
+        255.024942,
+        260.5211049999998,
+        251.98617899999954,
+        274.85789400000067
       ],
-      "medianMilliseconds": 294.7054945,
-      "renderToRealtimeRatio": 0.14735274725,
-      "relativeToV05": 1.0606132118768723
+      "medianMilliseconds": 257.7730234999999,
+      "renderToRealtimeRatio": 0.12888651174999996,
+      "relativeToV05": 1.0368927332467535
     },
     {
       "scenario": "v0.5 baseline UNISON",
@@ -116,13 +116,13 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        157.2541769999998,
-        151.3397819999991,
-        147.3015520000008,
-        163.95823299999938
+        134.59123100000033,
+        132.77203299999928,
+        133.89598400000068,
+        133.31663200000003
       ],
-      "medianMilliseconds": 154.29697949999945,
-      "renderToRealtimeRatio": 0.07714848974999973,
+      "medianMilliseconds": 133.60630800000035,
+      "renderToRealtimeRatio": 0.06680315400000017,
       "relativeToV05": 1
     },
     {
@@ -134,14 +134,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        169.61223599999994,
-        154.97370600000067,
-        155.76331899999968,
-        191.34592599999996
+        139.5943010000001,
+        147.42947400000048,
+        135.92316599999867,
+        139.18882099999973
       ],
-      "medianMilliseconds": 162.6877774999998,
-      "renderToRealtimeRatio": 0.0813438887499999,
-      "relativeToV05": 1.054380831220357
+      "medianMilliseconds": 139.3915609999999,
+      "renderToRealtimeRatio": 0.06969578049999996,
+      "relativeToV05": 1.0433007474467413
     }
   ]
 }

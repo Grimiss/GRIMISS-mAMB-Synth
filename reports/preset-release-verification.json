@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Factory sound bank and targeted Thickness/PANIC recovery; no visual layout changes",
+  "branch": "codex/controller-workflow-v0.7",
+  "html_sha256": "51f1408cb62413935108d9e6472b4bce1868d6c0a67e717486b5beb66ba8e9f9",
+  "factory_patches": 90,
+  "effects_enabled": 83,
+  "factory_recall": "Every declared parameter and enabled route matches browser serialization",
+  "regression": "All test:all groups passed across staged runs. Initial aggregate runs stopped on new exact-recall checks and historical visual-only/default-pad assumptions; corrected factory values and fixtures, then reran affected and remaining groups. Final browser/workflow also pass.",
+  "test_logs": [
+    "work/preset-full-regression.log (prefix through factory PASS)",
+    "work/preset-final-contrast.log (exact recall/90 audio contrast PASS)",
+    "work/preset-final-ui-analog.log (hardware/geometry/analog DSP PASS; neutral-fixture correction followed)",
+    "work/preset-final-remaining.log (final analog browser/refinement/browser/workflow PASS)"
+  ],
+  "panic_regression": "Reproduced before fix; zero post-settling output and recovery PASS at44.1/48/96kHz",
+  "neutral_fixtures": "Analog browser uses Init VA, not intentionally aged factory pad. Hardware hash guard permits requested factory data change while retaining all other module/parameter guards.",
+  "rollback": {
+    "site_version": 15,
+    "site_version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_8fd9b1c1166c8191b001d94e3d9fd814",
+    "site_source": "64d943f16ea8e62d43b15a314d1525b80aea3d59",
+    "local_archive": "work/rollback-hosted-v15.tar.gz",
+    "development_tag": "rollback/pre-factory-refresh"
+  },
+  "publication": "pending",
+  "physical_hardware_tested": false,
+  "human_listening_tested": false,
+  "main_merged": false
+}

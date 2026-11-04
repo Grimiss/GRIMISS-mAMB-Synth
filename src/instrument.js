@@ -3,7 +3,7 @@ const MAMB_SYNTH_KEYS=['thickness','velocitySensitivity','analogCharacter','cros
 function createMambInstrument(initial,sr=48000,seed=12345){
  function synthValues(value){const result={};for(const key of MAMB_SYNTH_KEYS)if(key in value)result[key]=value[key];result.master=100;return result}
  // A single shared micro-detuned ensemble, not a duplicate synth/voice engine.
- let size=1;while(size<sr*.032)size*=2;const ensemble=new Float32Array(size),mask=size-1,windowSamples=sr*.022,minDelay=sr*.0015;let write=0,phaseL=0,phaseR=.37,wasActive=false;
+ let size=1;while(size<sr*.032)size*=2;const ensemble=new Float32Array(size),mask=size-1,windowSamples=sr*.022,minDelay=sr*.0015;let write=0,phaseL=0,phaseR=.37,wasActive=false;let ensemblePanicRemaining=0;
  let thickness=0,thicknessTarget=Number.isFinite(initial.thickness)?Math.max(0,Math.min(1,initial.thickness/100)):0;const thickAlpha=1-Math.exp(-1/(sr*.02));
  let rateL=0,rateR=0,targetRateL=0,targetRateR=0;
  function ensembleMode(mode){const cents=mode==='unison'?4:9;targetRateL=(1-2**(-cents/1200))/windowSamples;targetRateR=(2**(cents/1200)-1)/windowSamples;if(!rateL){rateL=targetRateL;rateR=targetRateR}}ensembleMode(initial.voiceMode);
@@ -17,8 +17,12 @@ function createMambInstrument(initial,sr=48000,seed=12345){
  }}
  let inputGain=0,inputTarget=0;const inputAlpha=1-Math.exp(-1/(sr*.02));
  const synth=createMambEngine(synthValues(initial),sr,seed),effects=createMambEffects(initial,sr);
- function message(event){if(event.type==='audioInputGain'){if(Number.isFinite(event.value))inputTarget=Math.max(0,Math.min(1,event.value));return}if(event.type==='params'){if(typeof event.value?.voiceMode==='string')ensembleMode(event.value.voiceMode);if(Number.isFinite(event.value?.thickness))thicknessTarget=Math.max(0,Math.min(1,event.value.thickness/100));synth.message({type:'params',value:synthValues(event.value||{})});effects.setParameters(event.value||{})}else {synth.message(event);if(event.type==='panic'){inputTarget=0;ensemble.fill(0);effects.panic()}}}
- function render(left,right,inputL,inputR){synth.render(left);spread(left,right);if(inputL&&(inputTarget>0||inputGain>1e-8)){for(let i=0;i<left.length;i++){inputGain+=(inputTarget-inputGain)*inputAlpha;right[i]=right[i]+(inputR||inputL)[i]*inputGain;left[i]=left[i]+inputL[i]*inputGain}effects.process(left,right,left,right)}else effects.process(left,right,left,right)}
+ function message(event){if(event.type==='audioInputGain'){if(Number.isFinite(event.value))inputTarget=Math.max(0,Math.min(1,event.value));return}if(event.type==='params'){if(typeof event.value?.voiceMode==='string')ensembleMode(event.value.voiceMode);if(Number.isFinite(event.value?.thickness))thicknessTarget=Math.max(0,Math.min(1,event.value.thickness/100));synth.message({type:'params',value:synthValues(event.value||{})});effects.setParameters(event.value||{})}else {synth.message(event);if(event.type==='panic'){inputTarget=0;ensemble.fill(0);ensemblePanicRemaining=Math.ceil(sr*.018)+128;effects.panic()}}}
+ function render(left,right,inputL,inputR){synth.render(left);if(ensemblePanicRemaining>0){
+ // Do not write fading voices back into the ensemble after PANIC cleared it.
+ // Otherwise its delayed output can repopulate the already-reset reverb.
+ right.set(left);ensemblePanicRemaining-=left.length;
+ }else spread(left,right);if(inputL&&(inputTarget>0||inputGain>1e-8)){for(let i=0;i<left.length;i++){inputGain+=(inputTarget-inputGain)*inputAlpha;right[i]=right[i]+(inputR||inputL)[i]*inputGain;left[i]=left[i]+inputL[i]*inputGain}effects.process(left,right,left,right)}else effects.process(left,right,left,right)}
  function snapshot(){const state=synth.snapshot();state.effects=effects.snapshot();state.thicknessStereo={amount:thickness,target:thicknessTarget,algorithm:'shared detuned ensemble',detuneCents:targetRateL===(1-2**(-4/1200))/windowSamples?4:9,allocatedBytes:ensemble.byteLength};return state}
  return {render,message,snapshot};
 }

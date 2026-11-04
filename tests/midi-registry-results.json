@@ -7,7 +7,7 @@
     {
       "name": "defaults expose documented software volume and native performance without fabricated encoder/fader CCs",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 1
     },
     {
       "name": "MIDI Learn creates an exact device/channel-scoped assignment and applies range endpoints",
@@ -47,7 +47,7 @@
     {
       "name": "numeric, signed, enum and boolean parameter values use actual target domains",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 3
     },
     {
       "name": "three relative encoder encodings use current UI values and clamp at target bounds",
@@ -62,12 +62,12 @@
     {
       "name": "note, pitchbend and program Learn extras do not suppress native performance paths",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 1
     },
     {
       "name": "cancelled Learn leaves assignments intact and invalid target cannot arm",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "versioned MIDI configuration persists independently of patch data",
@@ -112,12 +112,12 @@
     {
       "name": "activity preserves an explicitly hardware-tagged packet without calling the unit test physical validation",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "blocked browser storage leaves a working in-memory registry with an explicit status",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "listener receives activity changes and unsubscribe stops notifications",
@@ -127,7 +127,7 @@
     {
       "name": "device reconnection uses stable MIDI identity while a different device cannot claim it",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     }
   ]
 }
