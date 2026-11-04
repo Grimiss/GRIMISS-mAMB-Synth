@@ -1,3 +1,9 @@
+# Approved Prototype B / screen-printed edition
+
+The user approved Prototype B with more screen glow, visible bezels and heavier fonts, then specified ALL lettering should resemble screen printing. That approval cleared the earlier full-rollout gate. Preserve this approved direction; do not return to the rejected green gradient/rail/barrel-knob treatments. prototypes/low-profile-b contains the reference samples and comparisons. src/hardware.css applies near-black surfaces, flat graphite cheeks, low-profile geometry, visible bezels/glow and700-weight text throughout (including dialogs and SVG labels).
+
+src/hardware-header.js adds the physical header composition, ventilation, catalogue-ordered patch arrows/LCD number and actual-context audio pilot. It reuses existing patch APIs. Original engine, effects and functional modules stay unchanged. tests/hardware-header.cjs covers navigation/wrap, imported USER readout, real audio indicator, component coverage, screen bezels/glow and printed font weights. Keep tests/hardware.cjs preserving the original156control contracts while explicitly allowing the performance and patch navigation widgets.
+
 # Continue GRIMISS mAMB v0.7
 
 Start from the latest verified `codex/controller-workflow-v0.7` commit, based on v0.6 `46d8bdd306df14268d52b94dbcf9f58e63f6bab8`. Never start from main or discard the prior checkpoints. Read DEVELOPMENT_LOG.md, ROADMAP.md, TEST_RESULTS.md, HOSTING.md and modular source/tests.

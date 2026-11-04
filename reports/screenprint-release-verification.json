@@ -1,0 +1,15 @@
+{
+  "fullRegressionCommand": "npm run test:all",
+  "exitCode": 0,
+  "finalHeaderCheck": "PASS",
+  "finalTargetLayouts": 4,
+  "allPrintedTextWeight": 700,
+  "screenBezelLogicalPixels": 4,
+  "approvedComponentDirection": "Prototype B plus requested refinements",
+  "htmlSha256": "356142135a5da0538a6040e5bd8b8a8a0cce441881860f3cd8d19ce210e009a5",
+  "siteSourceCommit": "b1fbb6fa3fa921ab0025c54a7534c6b858d7eb38",
+  "deploymentId": "appgdep_6aea75d6d1908191a91e416e3d2fcf26",
+  "deploymentStatus": "succeeded",
+  "liveBrowserStatus": "BLOCKED_BY_PROXY",
+  "physicalHardwareTested": false
+}

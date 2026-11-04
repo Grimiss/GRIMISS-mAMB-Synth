@@ -6,22 +6,22 @@
     {
       "name": "dry bypass is exact stereo passthrough at 44.1/48/96 kHz",
       "status": "PASS",
-      "milliseconds": 12
+      "milliseconds": 15
     },
     {
       "name": "enabled sections at zero mix preserve the dry signal",
       "status": "PASS",
-      "milliseconds": 19
+      "milliseconds": 21
     },
     {
       "name": "master, pan and EQ are actual post-effects controls",
       "status": "PASS",
-      "milliseconds": 16
+      "milliseconds": 9
     },
     {
       "name": "three MOD FX architectures create stereo wet output and respond to depth/rate/feedback",
       "status": "PASS",
-      "milliseconds": 222,
+      "milliseconds": 225,
       "measurements": [
         {
           "type": "chorus",
@@ -43,7 +43,7 @@
     {
       "name": "half-wet static phaser exhibits frequency-dependent all-pass cancellation",
       "status": "PASS",
-      "milliseconds": 15,
+      "milliseconds": 14,
       "measurements": {
         "maxMagnitude": 0.9971435387859606,
         "minMagnitude": 0.0005067046311943173
@@ -52,7 +52,7 @@
     {
       "name": "delay timing, tempo divisions and stereo/LR relationships at three sample rates",
       "status": "PASS",
-      "milliseconds": 73,
+      "milliseconds": 89,
       "measurements": [
         {
           "sr": 44100,
@@ -110,7 +110,7 @@
     {
       "name": "stereo delay isolates channels and cross delay alternates feedback echoes",
       "status": "PASS",
-      "milliseconds": 11,
+      "milliseconds": 14,
       "measurements": {
         "firstL": 0.20000000298023224,
         "secondR": 0.06490802019834518,
@@ -121,12 +121,12 @@
     {
       "name": "delay Width controls wet stereo separation",
       "status": "PASS",
-      "milliseconds": 7
+      "milliseconds": 9
     },
     {
       "name": "delay bypass preserves stored echoes while time/mode edits remain bounded",
       "status": "PASS",
-      "milliseconds": 31,
+      "milliseconds": 34,
       "measurements": {
         "bypassTailRms": 0.0011299488819775081,
         "maximumAdjacentStep": 0.018470942974090576
@@ -135,7 +135,7 @@
     {
       "name": "spring and hall have distinct dispersed stereo impulse responses",
       "status": "PASS",
-      "milliseconds": 395,
+      "milliseconds": 432,
       "measurements": [
         {
           "type": "spring",
@@ -158,7 +158,7 @@
     {
       "name": "spring Dwell changes waveform shape and compresses excitation, not only volume",
       "status": "PASS",
-      "milliseconds": 108,
+      "milliseconds": 118,
       "measurements": {
         "normalizedWaveformDistance": 0.4183848754791532,
         "lowRms": 0.031359449649298474,
@@ -168,7 +168,7 @@
     {
       "name": "reverb Tone provides measurable frequency-dependent damping",
       "status": "PASS",
-      "milliseconds": 447,
+      "milliseconds": 443,
       "measurements": [
         {
           "type": "spring",
@@ -185,7 +185,7 @@
     {
       "name": "hall Decay and internal Mod alter late tail and predictably extend decay",
       "status": "PASS",
-      "milliseconds": 784,
+      "milliseconds": 689,
       "measurements": {
         "shortLateRms": 8.405075011373192e-8,
         "longLateRms": 0.000028887081893432976,
@@ -197,7 +197,7 @@
     {
       "name": "reverb bypass retains tail and algorithm switching settles to one active network",
       "status": "PASS",
-      "milliseconds": 97,
+      "milliseconds": 100,
       "measurements": {
         "bypassTailRms": 0.0001145211745572191,
         "maximumSwitchStep": 0.0258982814848423,
@@ -282,7 +282,7 @@
     {
       "name": "high-feedback effects stress remains finite and bounded at 44.1/48/96 kHz",
       "status": "PASS",
-      "milliseconds": 4398,
+      "milliseconds": 4645,
       "measurements": [
         {
           "sr": 44100,
@@ -310,7 +310,7 @@
     {
       "name": "PANIC fades to silence and recovers without stale long-delay buffers",
       "status": "PASS",
-      "milliseconds": 96,
+      "milliseconds": 85,
       "measurements": {
         "postPanicRms": 0,
         "recoveredRms": 0.0031275363405619304,

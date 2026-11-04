@@ -4,6 +4,7 @@
   "addedPerformanceScript": true,
   "controlTagsUnchanged": 156,
   "addedPerformanceControls": 4,
+  "addedPatchNavigationControls": 2,
   "baseline": "2531bed10f8a0d943faf59e949a93a938c5f3cf0",
   "dspChanged": false
 }

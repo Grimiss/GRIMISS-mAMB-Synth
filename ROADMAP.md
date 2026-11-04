@@ -7,7 +7,10 @@
 - [x] Reconstructed cabinet/panel geometry and deeper integrated keyboard housing.
 - [x] Real pitch/modulation wheels, spring return, octave controls and ownership tests.
 - [x] Mandatory four target layouts, component close-ups and full regression suite.
-- [ ] User visual acceptance of the reconstructed design.
+- [x] User approved Prototype B component direction.
+- [x] Requested screen glow, visible bezels and heavier screen-printed lettering applied throughout.
+- [x] Approved full rollout with reference-style header, central patch LCD and ventilation grille.
+- [ ] User review of the complete rolled-out interface.
 
 ## Superseded finish-only pass — not accepted
 

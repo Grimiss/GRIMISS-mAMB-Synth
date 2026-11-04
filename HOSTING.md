@@ -1,3 +1,21 @@
+# Current approved hardware / screen print edition
+
+Playable URL: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site
+
+Owner-private audience retained. Native publication status: **succeeded**.
+
+- Site-source commit:b1fbb6fa3fa921ab0025c54a7534c6b858d7eb38.
+- Deployment:appgdep_6aea75d6d1908191a91e416e3d2fcf26.
+- Saved version:appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_35fefab902588191ab109f6183dbdbba.
+- Tested HTML SHA256:356142135a5da0538a6040e5bd8b8a8a0cce441881860f3cd8d19ce210e009a5.
+- Full interface review:/reports/rebuild-comparison.html.
+- Refined prototype/reference review:/prototypes/low-profile-b/index.html.
+- Standalone:/GRIMISS_mAMB_v0_7.html, also available through HTML BUILD.
+
+All lettering is heavier and screen printed in appearance. The approved design includes more screen glow and visible bezels, a reference-style header and original working controls/DSP. Complete local regressions passed. A fresh authorised browser attempt after deployment remains blocked by the environment proxy with ERR_TUNNEL_CONNECTION_FAILED before reaching the page. No credential was stored/printed and no audience/repository visibility was changed. See reports/live-verification.json and the historical network instructions below.
+
+## Earlier publication evidence
+
 # Current corrective reconstruction deployment
 
 Playable URL: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site

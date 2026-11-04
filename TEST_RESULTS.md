@@ -1,3 +1,15 @@
+# Approved hardware / screen-printed edition
+
+Complete `npm run test:all`: **PASS, exit0**. Final current-header tests and target-layout recaptures also pass. Original14functional scripts and156control definitions retain parity; no DSP change.
+
+New tests/hardware-header.cjs proves catalogue-order next/previous/wrap, actual LCD number/name, USER display after a custom import, audio pilot tied to real context activation, preserved patch modal, approved component coverage on all50rotaries, visible4px display bezels, screen glow and700-weight printed lettering across labels/values/menus/buttons/status. The full suite additionally covers Worklet/fallback, note ownership/HOLD, effects/routes, envelopes/XY, patch/MIDI workflows, wheels/octave ownership, touch simulation,90factory renders and mocked devices.
+
+Fresh actual browser captures at1920×1080 and1600×900 in both keyboard modes show no controls outside panels or panel overflow. Labels and all other lettering are heavier; the cabinet remains near-black and illumination is confined to screens/controls. Approved Prototype B was refined and recaptured with the same printed treatment.
+
+Exact published HTML SHA256:356142135a5da0538a6040e5bd8b8a8a0cce441881860f3cd8d19ce210e009a5. Native private deployment succeeded. Fresh actual live-host browser QA remains blocked by the configured proxy before page load; this is not reported as a live audio pass. Physical KeyLab25/Windows/tablet testing remains unverified. ARP/automation remain labelled unimplemented.
+
+## Earlier checkpoint evidence
+
 # Corrective physical reconstruction validation — 2026-11-03
 
 The previous finish-only design was not accepted. This rebuild was validated in stages: browser-rendered component study first, then new components throughout, then cabinet/keybed/layout and interaction regressions.

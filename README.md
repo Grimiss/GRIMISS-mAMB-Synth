@@ -6,7 +6,7 @@
 
 Both keyboard modes fit 1920×1080 and1600×900; scaled tablet browser layouts are tested separately from physical hardware. Factory and user patch serialization remains internal; permanent category/import/export controls were removed from the main surface. KeyLab25 physical CC verification remains pending; unknown controllers are deliberately unassigned. See [controller documentation](KEYLAB25_MIDI_MAP.md) and [standalone map](KEYLAB25_CONTROL_MAP.html).
 
-The corrective hardware reconstruction replaces the rejected finish-only pass: new cylindrical rotary components and physical slider assemblies, larger envelope controls beside recessed live graphs, a deeper keybed, working pitch/mod wheels and octave controls. Original DSP, parameters and mappings are retained. [Prototype and visual review](reports/rebuild-comparison.html) · [Implementation and reference comparison](HARDWARE_VISUAL_PASS.md).
+The approved Prototype B design is now applied throughout: near-black cabinet/panels, flat graphite cheeks, low-profile knobs with real value arcs and compact dark fader caps. Screens have brighter glow and visible bezels. All lettering is heavier, like screen printing. The header includes the ventilation grille, central patch LCD and working catalogue navigation. [Full interface review](reports/rebuild-comparison.html) · [Refined prototype/reference comparison](prototypes/low-profile-b/index.html).
 
 ## Instrument
 
