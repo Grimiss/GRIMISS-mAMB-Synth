@@ -134,3 +134,7 @@ Review/screenshots/A-B audio: https://grimiss-mamb-synth-v05.bubbly-ray-9560.cha
 Standalone: `/GRIMISS_mAMB_v0_5_1.html`; legacy v0_7 alias retained byte-identically. Same owner-private audience.
 
 Checkpoint:`1dac36a` / tag checkpoint/v0.5.1. Rollback:rollback/pre-v0.5.1 at034e942. Site source:`86c518a9a46b9e7af26e1f4cf3b7c320016a3822`; deployment:`appgdep_6aeb3598fb5881919bb3b4c72c86f21e` succeeded. HTML SHA256:`a2cdc9204fdea6ac7857aa1b9438323dd2d90f80d65b89529ebbca450d89f14a`. Full local regression, actual opened-picker keyboard/contrast and USER persistence checks pass. No main merge. See reports/v051-release-verification.json for verification boundaries. Prototype C is preserved; only the explicitly requested live notched keybed and targeted control corrections are integrated.
+
+## Age/Thickness and slider follow-up
+
+Same private playable URL updated. Thickness is below Age; input-driven full green fills, stronger upper sound ranges, MOD HALL/SPRING labels,−1/0/+1ordering and rounded matte buttons are live. Full suite passed; current review includes new Age0/100 and Thickness0/100 audio renders. Checkpoint5f54e36; report-level follow-up ee3c785; rollback/pre-slider-refinement preserved. Site source7265d397b9b409807feffe2b95b409f6ad17d167; deployment appgdep_6aeb3d2a65b48191bbf8c4ba76e922dd succeeded; HTML SHA256 e2be6cbc7b5f029e148ee39c7367b00b5388abba6d4d2e41ca48be30d73da2bf. No main merge.

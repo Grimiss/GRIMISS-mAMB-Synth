@@ -1,0 +1,15 @@
+{
+  "status": "PUBLISHED",
+  "checkpointCommit": "5f54e36a4a1ea45abd44239f7fc5258a72d07653",
+  "siteSourceCommit": "7265d397b9b409807feffe2b95b409f6ad17d167",
+  "deploymentId": "appgdep_6aeb3d2a65b48191bbf8c4ba76e922dd",
+  "deploymentStatus": "succeeded",
+  "htmlSha256": "e2be6cbc7b5f029e148ee39c7367b00b5388abba6d4d2e41ca48be30d73da2bf",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "regression": "npm run test:all PASS",
+  "rollback": "rollback/pre-slider-refinement",
+  "mainMerged": false,
+  "humanListening": false,
+  "physicalHardware": false,
+  "productionBrowserQA": "not verified; local Chromium tests passed"
+}
