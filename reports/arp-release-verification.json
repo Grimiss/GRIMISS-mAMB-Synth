@@ -38,7 +38,7 @@
     "site_source_commit": "0d6d5e2210a1efc6059e60d4a5452222a6fe8970",
     "local_archive": "work/rollback-hosted-v16.tar.gz"
   },
-  "publication": "pending",
+  "publication": "succeeded",
   "main_merged": false,
   "not_implemented": [
     "external MIDI Clock",
@@ -50,5 +50,15 @@
     "hardware MIDI",
     "human listening",
     "live-origin browser QA due configured host policy"
-  ]
+  ],
+  "integration_commit": "4518351638fc4bcfe1c1c5961864370f9ed85fe2",
+  "site_source_commit": "d998d3733e6dd45c0c36c1bac3db373647f20462",
+  "site_version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_8fc06eddb78481919bbe29dbb373b6fa",
+  "deployment_id": "appgdep_6aeb9b1e270481919f8e2c6cce69220f",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "review_url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/reports/arp-hardware-review.html",
+  "primary_playable_publication": "appgdep_6aeb8dc3c584819188f23a6afc5c5e28",
+  "asset_verification": "Final archive contains unchanged tested HTML hash and all seven review screenshots. Initial missing PNG assets were corrected in the final source commit.",
+  "main_verified": "433c2ab1ab0eb7e26c59bfd431ec4dc1a80b3b1f",
+  "site_version_number": 18
 }
