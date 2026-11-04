@@ -384,8 +384,8 @@
   ],
   "extendedStress": {
     "seconds": 120,
-    "maxPeak": 0.3886414170265198,
-    "minBlockRms": 0.0035570749076639404,
+    "maxPeak": 0.3903532028198242,
+    "minBlockRms": 0.003440281646212543,
     "status": "PASS"
   }
 }

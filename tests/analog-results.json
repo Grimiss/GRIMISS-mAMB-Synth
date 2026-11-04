@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "baselineCommit": "2fa85a5bcaadd5fdb880b2d5f350b077a63e9e77",
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "checks": [
+    "0%: sample-identical first single note and eight-note chord versus rollback engine",
+    "idle phases advance independently; physical slot phase/calibration persist after release and silence",
+    "eight stable calibrations survive steals, panic and POLY/MONO/UNISON transitions",
+    "0/25/50/100%: bounded independent smooth drift and measured long-pad audio",
+    "character smoothing, bounds and malicious non-finite input rejection",
+    "44.1/48/96kHz: rapid character changes, sync/ring/cross, long release and bounded stealing",
+    "mod wheel produces audible LFO1 vibrato; pitch bend and controller ownership stay independent"
+  ],
+  "settings": [
+    {
+      "character": 0,
+      "durationSeconds": 30,
+      "voices": 8,
+      "maxDriftCents": 0,
+      "maxDriftStepPer10ms": 0,
+      "rms": 0.06959630619114765,
+      "peak": 0.24837042391300201
+    },
+    {
+      "character": 25,
+      "durationSeconds": 30,
+      "voices": 8,
+      "maxDriftCents": 1.4913429581979338,
+      "maxDriftStepPer10ms": 0.011166306718512486,
+      "rms": 0.06898516854737513,
+      "peak": 0.23144954442977905
+    },
+    {
+      "character": 50,
+      "durationSeconds": 30,
+      "voices": 8,
+      "maxDriftCents": 2.982685916395797,
+      "maxDriftStepPer10ms": 0.022332613436783277,
+      "rms": 0.0689058692819665,
+      "peak": 0.26018276810646057
+    },
+    {
+      "character": 100,
+      "durationSeconds": 30,
+      "voices": 8,
+      "maxDriftCents": 5.965371832791451,
+      "maxDriftStepPer10ms": 0.04466522687325236,
+      "rms": 0.06802424039064835,
+      "peak": 0.2804110050201416
+    }
+  ],
+  "performance": [
+    {
+      "case": "rollback",
+      "voices": 8,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "renderedSeconds": 2,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        214.8884829999988,
+        250.11290799999915,
+        229.56505000000107,
+        225.25232200000028
+      ],
+      "medianMilliseconds": 227.40868600000067,
+      "renderToRealtimeRatio": 0.11370434300000033,
+      "relativeToRollback": 1
+    },
+    {
+      "case": "new-0",
+      "voices": 8,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "renderedSeconds": 2,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        256.3002919999999,
+        274.57736099999966,
+        250.6505419999994,
+        267.5890990000007
+      ],
+      "medianMilliseconds": 261.9446955000003,
+      "renderToRealtimeRatio": 0.13097234775000016,
+      "relativeToRollback": 1.151867591812212
+    },
+    {
+      "case": "new-25",
+      "voices": 8,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "renderedSeconds": 2,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        247.0086760000013,
+        315.34557300000233,
+        266.6492360000011,
+        280.1646329999967
+      ],
+      "medianMilliseconds": 273.4069344999989,
+      "renderToRealtimeRatio": 0.13670346724999946,
+      "relativeToRollback": 1.2022712909919284
+    },
+    {
+      "case": "new-50",
+      "voices": 8,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "renderedSeconds": 2,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        254.0275159999983,
+        270.3222980000028,
+        254.5334580000017,
+        252.443299999999
+      ],
+      "medianMilliseconds": 254.280487,
+      "renderToRealtimeRatio": 0.1271402435,
+      "relativeToRollback": 1.1181652357817118
+    },
+    {
+      "case": "new-100",
+      "voices": 8,
+      "sampleRate": 48000,
+      "framesPerBlock": 128,
+      "renderedSeconds": 2,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        280.3219079999981,
+        262.1371369999979,
+        256.89926000000196,
+        276.37170100000003
+      ],
+      "medianMilliseconds": 269.25441899999896,
+      "renderToRealtimeRatio": 0.13462720949999948,
+      "relativeToRollback": 1.1840111463464424
+    }
+  ],
+  "listeningTests": false,
+  "physicalHardwareTested": false,
+  "wheelVibrato": {
+    "minimumCents": -29.998828615867108,
+    "maximumCents": 29.99832642639479,
+    "audioDifferenceRms": 0.10416787766698243
+  }
+}

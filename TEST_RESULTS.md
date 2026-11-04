@@ -1,3 +1,13 @@
+## Analog Engine v0.5 — Checkpoint A
+
+Complete `npm run test:all` PASS, including analog offline/browser tests. The first attempt exposed the old static pitch-route test's assumption that CC1 had no intrinsic vibrato; LFO1 depth is now zero for that isolated depth test, and separate tests verify the required wheel vibrato. No acceptance threshold was relaxed.
+
+At0% the initial single-note/eight-note outputs match the rollback engine exactly. Thirty-second eight-note pads at0/25/50/100% are finite, bounded and nonzero. Maximum additional oscillator drift measured0/1.4913/2.9827/5.9654cents, with maximum changes per10ms0/.0112/.0223/.0447cents. Measured MOD-wheel vibrato reaches approximately±29.999cents; pitch-bend/source isolation and spring return pass. Worklet patch persistence, legacy-zero default and MIDI Learn pass; all MIDI messages in tests are synthetic.
+
+Both target resolutions, keyboard visible/hidden, have no control/panel overflow. The approved geometry source files remain unchanged. Permanent range readouts and printed key text are removed as requested, preserving bindings and accessible values/note labels. No human listening, physical controller/Windows/tablet or production-domain browser QA claim is made.
+
+See ANALOG_ENGINE_V0_5.md and tests/analog-results.json for method, CPU findings and limitations.
+
 ## Three-octave keyboard update
 
 The user requested that the keyboard fill the blank areas. The on-screen bank now spans C3–C6 (MIDI 48–84): 22 white and 15 black keys, filling the 953-unit housing with uniform spacing. The existing C3–C5 pitches, typing mapping, MIDI messages, source ownership, pitch/mod wheels and octave controls retain their behaviour. The range label follows octave changes through C6. This explicitly supersedes the earlier 25-note/blank-end geometry compromise. No synthesis or effects algorithms changed. Browser regression verifies all 37 note identities, C6 pointer note-on/off, geometry and keyboard collapse at both target screen sizes.

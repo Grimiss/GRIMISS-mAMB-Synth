@@ -1,3 +1,7 @@
+## Active: Analog Engine v0.5 / isolated visual prototype
+
+The user approved parallel checkpoints. Workstream A completes Phase 1 analog DSP plus functional wheels, removal of permanent knob/fader numbers and printed key names. Workstream B is ONLY an isolated prototype in prototypes/reconstruction-c, including actual notched white-key silhouettes and seated black keys. Do not apply its materials/components/keybed to the live synth until the user approves Checkpoint B. Do not pause approved DSP work while awaiting that approval. No nonlinear filter modelling or supply sag. Preserve rollback tag rollback/pre-analog-phase1 at2fa85a5. See ANALOG_ENGINE_V0_5.md for architecture, tests and compatibility limits.
+
 ## Three-octave keyboard update
 
 The user requested that the keyboard fill the blank areas. The on-screen bank now spans C3–C6 (MIDI 48–84): 22 white and 15 black keys, filling the 953-unit housing with uniform spacing. The existing C3–C5 pitches, typing mapping, MIDI messages, source ownership, pitch/mod wheels and octave controls retain their behaviour. The range label follows octave changes through C6. This explicitly supersedes the earlier 25-note/blank-end geometry compromise. No synthesis or effects algorithms changed. Browser regression verifies all 37 note identities, C6 pointer note-on/off, geometry and keyboard collapse at both target screen sizes.

@@ -22,7 +22,7 @@
     {
       "name": "header Learn preserves a previously known exact source physical association",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "relearning a physical control removes its obsolete MIDI message",
@@ -32,22 +32,22 @@
     {
       "name": "clear removes learned assignment and returns the physical control to unassigned",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 2
     },
     {
       "name": "clearing a software volume default disables it until default restoration",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "fixed native performance entries cannot be removed by clear or reset",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 3
     },
     {
       "name": "numeric, signed, enum and boolean parameter values use actual target domains",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 3
     },
     {
       "name": "three relative encoder encodings use current UI values and clamp at target bounds",
@@ -62,7 +62,7 @@
     {
       "name": "note, pitchbend and program Learn extras do not suppress native performance paths",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 5
     },
     {
       "name": "cancelled Learn leaves assignments intact and invalid target cannot arm",
@@ -72,7 +72,7 @@
     {
       "name": "versioned MIDI configuration persists independently of patch data",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "export/import round-trip preserves mapping scope and clear-default configuration",
@@ -92,12 +92,12 @@
     {
       "name": "invalid physical controls, duplicate imports and fabricated hardware status are rejected or normalised",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "malformed MIDI packets cannot change a mapping or create false activity",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "unassigned activity stays physically unidentified and synthetic origin is explicit",
@@ -112,12 +112,12 @@
     {
       "name": "activity preserves an explicitly hardware-tagged packet without calling the unit test physical validation",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "blocked browser storage leaves a working in-memory registry with an explicit status",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "listener receives activity changes and unsubscribe stops notifications",

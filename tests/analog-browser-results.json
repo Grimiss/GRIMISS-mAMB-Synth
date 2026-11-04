@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "autoplayOverride": false,
+  "physicalHardwareTested": false,
+  "listeningTests": false,
+  "checks": [
+    {
+      "name": "minimal Analog Character control remains in Audio Settings and reaches the active Worklet",
+      "status": "PASS"
+    },
+    {
+      "name": "USER save/reload retains Character; legacy partial patches reset to neutral zero",
+      "status": "PASS"
+    },
+    {
+      "name": "Analog Character is a learnable registry target and synthetic CC drives its true control",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic MIDI pitch bend and CC1 stay device/channel-owned and affect measured oscillator frequency",
+      "status": "PASS",
+      "measurements": {
+        "bentModulatedHz": [
+          458.1605571737462,
+          474.3119324473684
+        ],
+        "untouchedChannelHz": 440,
+        "resetHz": 440.0000000027143,
+        "syntheticMidi": true
+      }
+    },
+    {
+      "name": "local pitch wheel returns on pointer release and blur; modulation wheel remains functional",
+      "status": "PASS"
+    },
+    {
+      "name": "permanent knob/fader numbers and printed key names are absent; keyboard remains accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "audio output remains finite and nonzero after changes and keyboard collapse",
+      "status": "PASS",
+      "measurements": {
+        "finite": true,
+        "rms": 0.06383613772553648
+      }
+    }
+  ],
+  "consoleErrors": []
+}

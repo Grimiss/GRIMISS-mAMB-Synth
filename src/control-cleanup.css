@@ -1,0 +1,2 @@
+/* Workstream A: requested readout removal only. Keep existing layout boxes/bindings. */
+.control.knob .val,.control.fader .val{visibility:hidden!important;pointer-events:none!important}
