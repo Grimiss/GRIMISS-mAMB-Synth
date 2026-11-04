@@ -1,7 +1,8 @@
 {
   "status": "PASS",
-  "functionalScriptsUnchanged": 13,
+  "functionalScriptsUnchanged": 12,
   "layoutChangeOnlyApprovedDimensions": true,
+  "adapterChangeOnlyApprovedKeyboardRange": true,
   "addedPerformanceScript": true,
   "controlTagsUnchanged": 156,
   "addedPerformanceControls": 4,

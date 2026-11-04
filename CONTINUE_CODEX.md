@@ -1,3 +1,7 @@
+## Three-octave keyboard update
+
+The user requested that the keyboard fill the blank areas. The on-screen bank now spans C3–C6 (MIDI 48–84): 22 white and 15 black keys, filling the 953-unit housing with uniform spacing. The existing C3–C5 pitches, typing mapping, MIDI messages, source ownership, pitch/mod wheels and octave controls retain their behaviour. The range label follows octave changes through C6. This explicitly supersedes the earlier 25-note/blank-end geometry compromise. No synthesis or effects algorithms changed. Browser regression verifies all 37 note identities, C6 pointer note-on/off, geometry and keyboard collapse at both target screen sizes.
+
 # ACTIVE CHECKPOINT — approved reference geometry implemented
 
 The user approved the geometry study, amending it to give filter ADSR the same420px width as amp ADSR, expand the filter to510px, enlarge cutoff, and extend EQ into adjacent gaps (256×94px). This clears the geometry approval gate. src/reference-layout.json is the native1280×640 coordinate authority; measured ORIGINAL rectangles remain unchanged in prototypes/geometry. src/coordinate-layout.js relocates original functional DOM nodes, and src/geometry.css supplies the coordinate layout. src/layout.js changes only logical dimensions to1280×640. Do not return to independent dashboard grid sizing.

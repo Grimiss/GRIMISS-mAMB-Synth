@@ -116,3 +116,7 @@ The existing owner-private Site was updated without changing its audience.
 - Standalone HTML SHA256: `c9151bf92d830809fca3e27fd7fbb9a66da326a5c461e78fa52569b6ec7c83bb`.
 
 The measured coordinate model and approved filter/ADSR/EQ amendments are now applied to the playable build. No main merge. Deployment success does not assert live-domain browser QA or physical hardware testing.
+
+## Three-octave keyboard publication
+
+The same private playable link now contains C3–C6 (37 notes), filling the key housing. Site source commit: `18ac054077de014c4e4895aab94abce6450e7e8f`. Deployment `appgdep_6aea8c39df2c8191b0b91cd943dd784a` succeeded. HTML SHA256: `53067aed928406af488298954fc81128ad22b1a645a8d62fe5b890a2ce77944f`. Complete regression suite passed. Local browser verification covers both target screen sizes; live-domain browser QA remains limited by the configured host policy.

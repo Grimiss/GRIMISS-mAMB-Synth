@@ -126,7 +126,19 @@
       69,
       70,
       71,
-      72
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
     ],
     "white_notes": [
       48,
@@ -143,7 +155,14 @@
       67,
       69,
       71,
-      72
+      72,
+      74,
+      76,
+      77,
+      79,
+      81,
+      83,
+      84
     ],
     "black_notes": [
       49,
@@ -155,18 +174,23 @@
       63,
       66,
       68,
-      70
+      70,
+      73,
+      75,
+      78,
+      80,
+      82
     ],
-    "white_face_width": 34,
-    "white_pitch": 36,
+    "white_face_width": 41.40909090909091,
+    "white_pitch": 43.40909090909091,
     "white_height": 125,
-    "black_face_width": 18,
-    "black_frame_width": 21,
+    "black_face_width": 22,
+    "black_frame_width": 25,
     "black_height": 79,
     "active_bank": {
-      "x": 482,
+      "x": 274,
       "y": 503,
-      "width": 538,
+      "width": 953,
       "height": 125
     },
     "reference_bank": {
@@ -175,9 +199,9 @@
       "width": 953,
       "height": 127
     },
-    "blank_housing_each_side_px": 207.5,
-    "active_span_percent_of_reference": 56.453,
-    "approval_required": "Approved geometry compromise: centre the unchanged25-note bank within the measured full housing; no fake keys, extra pitches or remapping."
+    "blank_housing_each_side_px": 0,
+    "active_span_percent_of_reference": 100,
+    "approval_required": "User requested three octaves filling the full key housing: C3\u2013C6, 37 notes."
   },
   "hiddenSurface": {
     "top": 54,

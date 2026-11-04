@@ -45,7 +45,7 @@ const presets={
 'Init VA':{wave1:'saw',wave2:'saw',oct2:'0',level1:85,level2:0,cutoff:78,res:5,drive:0,aa:0,ad:20,as:100,ar:20,detune:0,vib:0,drift:0,motion:0,ring:0,pwm:0,cross:0,sync:'off'}};
 function show(){document.querySelectorAll('input[type=range]').forEach(x=>{const value=x.nextElementSibling;if(value?.classList.contains('val'))value.textContent=x.value});if(typeof refreshInstrumentUI==='function')refreshInstrumentUI()}
 document.addEventListener('input',e=>{if(e.target.id.startsWith('route')){const index=Number(e.target.id.charAt(5));syncRoute(index)}else syncParameters()});document.addEventListener('change',e=>{if(e.target.id==='voiceMode')syncParameters()});
-const key=$('keyboard'),whiteNotes=[48,50,52,53,55,57,59,60,62,64,65,67,69,71,72],names=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];function name(m){return names[m%12]+(Math.floor(m/12)-1)}
+const key=$('keyboard'),whiteNotes=[48,50,52,53,55,57,59,60,62,64,65,67,69,71,72,74,76,77,79,81,83,84],names=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];function name(m){return names[m%12]+(Math.floor(m/12)-1)}
 for(let i=0;i<whiteNotes.length;i++){const m=whiteNotes[i],w=document.createElement('div');w.className='white';w.dataset.midi=m;w.textContent=name(m);key.append(w)}
 for(let i=0;i<whiteNotes.length-1;i++){const m=whiteNotes[i];if([0,2,5,7,9].includes(m%12)){const b=document.createElement('div');b.className='black';b.dataset.midi=m+1;b.style.left=((i+1)/whiteNotes.length*100-2)+'%';b.textContent=name(m+1);key.append(b)}}
 key.addEventListener('contextmenu',e=>e.preventDefault());

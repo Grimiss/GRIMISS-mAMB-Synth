@@ -27,13 +27,21 @@
     "visible",
     "hidden"
   ],
-  "siteSourceCommit": "fe50f865c65f9603556924cd17d687167a83ef49",
-  "deploymentId": "appgdep_6aea8a94cec88191928e91e2ceeddeda",
+  "siteSourceCommit": "18ac054077de014c4e4895aab94abce6450e7e8f",
+  "deploymentId": "appgdep_6aea8c39df2c8191b0b91cd943dd784a",
   "deploymentStatus": "succeeded",
   "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
-  "htmlSha256": "c9151bf92d830809fca3e27fd7fbb9a66da326a5c461e78fa52569b6ec7c83bb",
+  "htmlSha256": "53067aed928406af488298954fc81128ad22b1a645a8d62fe5b890a2ce77944f",
   "liveBrowserQA": "BLOCKED: configured proxy ERR_TUNNEL_CONNECTION_FAILED",
   "physicalHardwareVerified": false,
   "dspChanged": false,
-  "mainMerged": false
+  "mainMerged": false,
+  "keyboard": {
+    "notes": 37,
+    "range": "C3\u2013C6",
+    "whiteKeys": 22,
+    "blackKeys": 15,
+    "fillsHousing": true
+  },
+  "regression": "npm run test:all PASS"
 }

@@ -380,7 +380,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05413022355471057,
+        "rms": 0.05455244601191018,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -623,7 +623,7 @@
           "scrollHeight": 156
         },
         {
-          "name": "PLAY — C3 TO C5",
+          "name": "PLAY — C3 TO C6",
           "rect": {
             "x": 34.5,
             "y": 789,
@@ -1340,7 +1340,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.054410983160275476,
+        "rms": 0.05543684406880125,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -1583,7 +1583,7 @@
           "scrollHeight": 156
         },
         {
-          "name": "PLAY — C3 TO C5",
+          "name": "PLAY — C3 TO C6",
           "rect": {
             "x": 28.75,
             "y": 657.5,
@@ -2300,7 +2300,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.054647926492226474,
+        "rms": 0.05372340608145289,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -2543,7 +2543,7 @@
           "scrollHeight": 156
         },
         {
-          "name": "PLAY — C3 TO C5",
+          "name": "PLAY — C3 TO C6",
           "rect": {
             "x": 23,
             "y": 566,
@@ -2901,7 +2901,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.05541533923260023,
+        "rms": 0.05498522441969674,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -2924,7 +2924,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.05518207703223531,
+        "rms": 0.05547224172959243,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -2942,7 +2942,7 @@
       "keyboard visibility touch toggle"
     ],
     "audio": {
-      "rms": 0.05520019214946636,
+      "rms": 0.055829487765874944,
       "stereoDifferenceRms": 0,
       "finite": true
     },

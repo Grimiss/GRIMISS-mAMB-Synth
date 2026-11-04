@@ -1,3 +1,7 @@
+## Three-octave keyboard update
+
+The user requested that the keyboard fill the blank areas. The on-screen bank now spans C3–C6 (MIDI 48–84): 22 white and 15 black keys, filling the 953-unit housing with uniform spacing. The existing C3–C5 pitches, typing mapping, MIDI messages, source ownership, pitch/mod wheels and octave controls retain their behaviour. The range label follows octave changes through C6. This explicitly supersedes the earlier 25-note/blank-end geometry compromise. No synthesis or effects algorithms changed. Browser regression verifies all 37 note identities, C6 pointer note-on/off, geometry and keyboard collapse at both target screen sizes.
+
 # Approved hardware / screen-printed edition
 
 Complete `npm run test:all`: **PASS, exit0**. Final current-header tests and target-layout recaptures also pass. Original14functional scripts and156control definitions retain parity; no DSP change.
@@ -121,3 +125,5 @@ All 25 original keyboard notes and their MIDI identities remain, with measured w
 Screenshots and equal-scale original/implemented boundary overlays: `reports/reference-comparison.html`. Original measured boundaries remain historical; amber marks intentional user-approved envelope/filter/EQ differences. Deployment success verifies publication, while live-domain browser QA remains limited by the execution environment's configured proxy. Physical Windows, tablet and KeyLab testing remains unverified.
 
 The final repeat exposed a test startup race in physical-controls.cjs: the first engine-state message can precede its voices list. The wait predicate now tolerates that initial missing list while retaining all voice, bend, wheel and release assertions. The affected test and remaining browser tests passed on rerun; the complete suite was repeated after that correction.
+
+Three-octave checkpoint: `npm run test:all` completed successfully. Layout capture found no overflow in all four target size/keyboard-mode combinations. New top C6 pointer note-on/off passed.
