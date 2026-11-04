@@ -1,0 +1,42 @@
+{
+  "version": "0.5.1",
+  "status": "LOCAL_REGRESSION_PASS_AND_PUBLISHED",
+  "checkpointCommit": "1dac36a9a2bf897e2ef1b4e32a7b603136d65813",
+  "checkpointTag": "checkpoint/v0.5.1",
+  "rollbackCommit": "034e942c5f1fd89feef8aedef44e2e2ec342fd70",
+  "rollbackTag": "rollback/pre-v0.5.1",
+  "branch": "codex/controller-workflow-v0.7",
+  "siteSourceCommit": "86c518a9a46b9e7af26e1f4cf3b7c320016a3822",
+  "deploymentId": "appgdep_6aeb3598fb5881919bb3b4c72c86f21e",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_c471d4c7a85c8191ad6655686154e8d0",
+  "deploymentStatus": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "reviewUrl": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/reports/v051-review.html",
+  "standalone": "dist/GRIMISS_mAMB_v0_5_1.html",
+  "htmlSha256": "a2cdc9204fdea6ac7857aa1b9438323dd2d90f80d65b89529ebbca450d89f14a",
+  "completeRegression": "npm run test:all PASS",
+  "additionalChecks": "Actual opened-picker contrast/keyboard and non-default USER save/reload PASS",
+  "viewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1600,
+      900
+    ]
+  ],
+  "keyboardModes": [
+    "visible",
+    "hidden"
+  ],
+  "mainMerged": false,
+  "prototypeCPreserved": true,
+  "fullPrototypeCabinetApplied": false,
+  "notchedKeyboardInPlayable": true,
+  "cpuEightVoiceNeutralChangePercent": 5.96,
+  "cpuEightVoiceThickness100ChangePercent": 7.11,
+  "physicalHardwareTesting": false,
+  "humanListeningTesting": false,
+  "productionBrowserQA": "unverified: configured execution host/proxy policy blocks the live hostname; native deployment status succeeded"
+}

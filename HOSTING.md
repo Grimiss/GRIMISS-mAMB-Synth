@@ -126,3 +126,11 @@ The same private playable link now contains C3–C6 (37 notes), filling the key 
 Same owner-private URL and audience retained. Play: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site . Character is in AUDIO SETTINGS; try25–50%. Technical/CPU results: `/reports/analog-checkpoint.html`. Visual approval prototype: `/prototypes/reconstruction-c/` (no audio engine attached). The visual components/keybed have NOT been applied to the working synth.
 
 Analog checkpoint:`71cefff`; visual prototype:`1c5b9ef`. Both commits and rollback/pre-analog-phase1 are pushed on the existing development history. Site source:`4df07bb6028af702f24da718bf16bac29607ab12`; deployment:`appgdep_6aeb2290ef288191af8b8ab428452124` succeeded. HTML SHA256:`6bc8734f9589e36a9f1e4238c34ec077482775b29679e704a0f9d0bc92666537`. Complete local regression and prototype browser checks passed; no physical/listening/live-domain browser QA claim. Main unchanged. See reports/analog-release-verification.json.
+
+## v0.5.1 targeted playable refinement
+
+Play: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site
+Review/screenshots/A-B audio: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/reports/v051-review.html
+Standalone: `/GRIMISS_mAMB_v0_5_1.html`; legacy v0_7 alias retained byte-identically. Same owner-private audience.
+
+Checkpoint:`1dac36a` / tag checkpoint/v0.5.1. Rollback:rollback/pre-v0.5.1 at034e942. Site source:`86c518a9a46b9e7af26e1f4cf3b7c320016a3822`; deployment:`appgdep_6aeb3598fb5881919bb3b4c72c86f21e` succeeded. HTML SHA256:`a2cdc9204fdea6ac7857aa1b9438323dd2d90f80d65b89529ebbca450d89f14a`. Full local regression, actual opened-picker keyboard/contrast and USER persistence checks pass. No main merge. See reports/v051-release-verification.json for verification boundaries. Prototype C is preserved; only the explicitly requested live notched keybed and targeted control corrections are integrated.

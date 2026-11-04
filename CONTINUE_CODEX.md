@@ -1,3 +1,5 @@
+Latest complete checkpoint: v0.5.1 at1dac36a (tag checkpoint/v0.5.1), published at the same private URL. Complete regression and additional menu/persistence checks passed. See V0_5_1_REFINEMENT.md, HOSTING.md and reports/v051-release-verification.json. Current live controls/keybed reflect the targeted brief, not a full Prototype C cabinet rollout. Preserve rollback/pre-v0.5.1. No background work continues after delivery.
+
 ## v0.5.1 targeted playable refinement
 
 The current user brief authorises direct Analog Age, new Velocity/Thickness parameters, button/route/menu/header/EQ cleanup, actual pointer/touch/MIDI wheel repair and bringing the notched keybed into the LIVE synth. It does not authorise another broad cabinet reconstruction. Keep Prototype C unchanged and available. Rollback is rollback/pre-v0.5.1 at034e942. Read V0_5_1_REFINEMENT.md for signal flow, persistence, wheel global/owner semantics and limitations. No main merge. The new dist/GRIMISS_mAMB_v0_5_1.html and legacy v0_7 alias are byte-identical.
