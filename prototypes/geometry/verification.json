@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "referenceSize": [
+    1280,
+    640
+  ],
+  "cabinetCaptureSize": [
+    1920,
+    960
+  ],
+  "uniformScale": 1.5,
+  "targetViewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1600,
+      900
+    ]
+  ],
+  "sectionRectanglesMatchMeasuredModel": 16,
+  "originalNoteIdsPreserved": 25,
+  "whiteCount": 15,
+  "blackCount": 10,
+  "keyboardMappingChanged": false,
+  "synthModified": false,
+  "geometryPrototypeOnly": true,
+  "hiddenStateIsDerivedNotMeasured": true,
+  "consoleErrors": []
+}

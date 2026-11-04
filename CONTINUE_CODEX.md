@@ -1,3 +1,11 @@
+# ACTIVE CHECKPOINT — geometry approval required
+
+The user stopped cosmetic iterations and requires a measured geometry reconstruction proposal before further styling/full implementation. prototypes/geometry contains the native1280×640reference map, pixel/percentage tables, key scan, proposed coordinate model, actual browser captures, overlays and functional-space conflicts. The working synth has NOT been changed in this checkpoint. Do not adopt the layout or continue styling until the user explicitly approves it.
+
+Key decisions: the mockup shows27white fronts, whereas the existing C3–C5keyboard has15whites/10blacks. The proposed538px correctly proportioned bank leaves207.5px at each side inside the953px key-bed opening. No fake keys, extra pitches or remapping. EQ is246×86px; all4controls remain visible with a proposed overview/full-graph detail arrangement requiring approval. Mini XY pads/compact extra-control allocations also require approval. See prototypes/geometry/index.html and REFERENCE_GEOMETRY.md. Main DSP/MIDI/patch/automation code and live homepage must remain unchanged.
+
+## Earlier continuation record — superseded until geometry approval
+
 # Approved Prototype B / screen-printed edition
 
 The user approved Prototype B with more screen glow, visible bezels and heavier fonts, then specified ALL lettering should resemble screen printing. That approval cleared the earlier full-rollout gate. Preserve this approved direction; do not return to the rejected green gradient/rail/barrel-knob treatments. prototypes/low-profile-b contains the reference samples and comparisons. src/hardware.css applies near-black surfaces, flat graphite cheeks, low-profile geometry, visible bezels/glow and700-weight text throughout (including dialogs and SVG labels).

@@ -1,0 +1,113 @@
+{
+  "current_eq_width_percent": 33.739420572916664,
+  "reference_eq_width_percent": 19.2188,
+  "current_eq_area_percent": 5.873158396026234,
+  "reference_eq_area_percent": 2.5825262500000004,
+  "current_eq_area_multiple_of_reference": 2.274191170767861,
+  "current_white_width_length_ratio": 0.7839673913043478,
+  "reference_white_width_length_ratio": 0.272,
+  "current_white_ratio_multiple": 2.882233056265984,
+  "proposed_major_section_deviation_pixels": {
+    "voice": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "oscillators": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "mixer": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "lfo1": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "lfo2": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "xy_automation": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "filter_envelope": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "filter": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "eq": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "amp_envelope": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "amp": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "mod_fx": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "virtual_patch": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "arp_step": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "delay": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    },
+    "reverb": {
+      "dx": 0,
+      "dy": 0,
+      "dwidth": 0,
+      "dheight": 0
+    }
+  },
+  "zero_deviation_note": "These are measured-coordinate model rectangles, not a claim that all real controls have been implemented and fitted. Functional implementation is deliberately deferred.",
+  "keyboard_active_span_deviation_px": -415,
+  "keyboard_active_span_deviation_percent_of_image_width": -32.421875,
+  "keyboard_active_span_percent_of_reference": 56.45330535152151,
+  "reference_geometry_uncertainty_px": 2
+}

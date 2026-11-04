@@ -1,0 +1,62 @@
+[
+  {
+    "area": "Keyboard note count",
+    "conflict": "27 white fronts /18 black faces in the unlabelled image; current keyboard15 whites /10 blacks, MIDI48\u201372.",
+    "proposal": "Preserve all25notes,34px white faces on36px pitch and125px length;21\u00d779px black frames. Centre a538px bank inside the953px measured key-bed opening.",
+    "approval_or_limit": "415px of housing remains outside the active bank. Approve blank end areas, or a separately approved auxiliary-display use. No dummy keys or added pitches."
+  },
+  {
+    "area": "EQ",
+    "conflict": "Artwork has3LOW/MID/HIGH knobs and no response graph. Working EQ has4low/high gain/frequency controls plus a graph.",
+    "proposal": "Keep246\u00d786panel. Four28px knob bodies remain visible;232\u00d717response overview above.",
+    "approval_or_limit": "Approve a full-response DETAILS editor before reducing the main plot. Alternative: place a permanently visible full graph in an unused keybed end area; collapse redocking would need design approval."
+  },
+  {
+    "area": "Oscillators",
+    "conflict": "Artwork has4wave icons per oscillator, different tuning fields, and no waveform preview windows. Working OSC1 has7choices plus PW/PWM; OSC2 has3choices and tuning/sync.",
+    "proposal": "Retain all existing controls, OSC1 4+3 group, selectors and two76\u00d732preview windows inside the323\u00d7158section.",
+    "approval_or_limit": "Internal rows necessarily differ from the artwork. No working waveform option removed; no unsupported reference parameter invented."
+  },
+  {
+    "area": "Filter",
+    "conflict": "Artwork has the4filter controls/type switches, but no response display.",
+    "proposal": "Retain all controls plus a149\u00d754response plot within450\u00d794.",
+    "approval_or_limit": "Extra plot is amber in the study; detailed response expansion may be offered without hiding primary controls."
+  },
+  {
+    "area": "LFO1 /LFO2",
+    "conflict": "Artwork has2knobs and4wave buttons per LFO; current engine has3controls and5waveforms plus selectors.",
+    "proposal": "Three compact knobs and all5wave choices/selectors remain in each measured159/160\u00d7158section.",
+    "approval_or_limit": "More dense internal rows; actual rate/depth/motion/cross controls remain."
+  },
+  {
+    "area": "Delay /Reverb",
+    "conflict": "Artwork shows3knobs per effect. Working delay has5knobs plus type/on/sync/note; reverb has5knobs plus type/on.",
+    "proposal": "Keep all5knobs visible in one row. Move type/on/sync/note controls into compact header bands.",
+    "approval_or_limit": "292\u00d764delay and288\u00d764reverb boundaries stay exact. This compact control arrangement needs approval; no wet/dry/width/tempo/mod controls silently hidden."
+  },
+  {
+    "area": "Virtual patch",
+    "conflict": "Artwork has four routes without a live trace. Current UI also has a modulation visualiser.",
+    "proposal": "Keep4route rows/source/destination/enable/intensity; add241\u00d722trace above within256\u00d7153.",
+    "approval_or_limit": "Route rows are25px apart in the study. A full trace detail view is optional, not a removal."
+  },
+  {
+    "area": "XY pads /automation",
+    "conflict": "Artwork hasXY1/XY2buttons and an automation button, but no exposed grids. Current synth has2assignable interactive pads.",
+    "proposal": "Two62\u00d762pads remain simultaneously visible in the148\u00d7158section, each with ASSIGN/EXPAND access.",
+    "approval_or_limit": "Approve the smaller primary pads and a dual-pad expanded editor for precision. Do not substitute static XY buttons or hide either working pad without approval."
+  },
+  {
+    "area": "Header /performance",
+    "conflict": "Current HOLD,MODE,PANIC,HELD/status controls are additional to the artwork.",
+    "proposal": "Use a second control row below branding inside the measured50px header; retain existing MIDI/audio/patch/HTML access. Wheels/controller bay follow measured boxes.",
+    "approval_or_limit": "Fine text/target comfort still needs actual implementation testing after approval; no functions removed."
+  },
+  {
+    "area": "Voice /ARP /step",
+    "conflict": "Artwork includes labels for12voices,STACK/CHORD and sequencing controls that are not the working architecture.",
+    "proposal": "Preserve8voices,single timbre,POLY/MONO/UNISON and real drift/vibrato/ring controls. Keep ARP/automation/step placeholders honest.",
+    "approval_or_limit": "Do not copy artwork-only functions as fake controls or claim sequencing works."
+  }
+]
