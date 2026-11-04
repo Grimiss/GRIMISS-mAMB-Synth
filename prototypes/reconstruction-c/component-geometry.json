@@ -1,0 +1,50 @@
+{
+  "knob": {
+    "x": 1021.65625,
+    "y": 247,
+    "width": 28,
+    "height": 30.625
+  },
+  "fader": {
+    "x": 615.65625,
+    "y": 88,
+    "width": 34,
+    "height": 124
+  },
+  "switch": {
+    "x": 67.25,
+    "y": 97,
+    "width": 71,
+    "height": 18
+  },
+  "screen": {
+    "x": 771,
+    "y": 109,
+    "width": 138,
+    "height": 41
+  },
+  "keyboard": {
+    "x": 274,
+    "y": 503,
+    "width": 953,
+    "height": 125
+  },
+  "wheel": {
+    "x": 56,
+    "y": 517,
+    "width": 34,
+    "height": 101
+  },
+  "header": {
+    "x": 29,
+    "y": 0,
+    "width": 1221,
+    "height": 49
+  },
+  "mixer": {
+    "x": 599,
+    "y": 56,
+    "width": 154,
+    "height": 158
+  }
+}

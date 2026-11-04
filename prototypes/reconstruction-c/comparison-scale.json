@@ -1,0 +1,226 @@
+{
+  "referenceSha256": "4d7cde0acdb4e7438577b862b7188dbf3ef1a5988626d6c065c5397c4d25d3d1",
+  "referenceDimensions": [
+    1280,
+    640
+  ],
+  "browserDimensions": [
+    1280,
+    640
+  ],
+  "componentComparisons": [
+    {
+      "name": "knob",
+      "referenceCrop": [
+        1030,
+        238,
+        1072,
+        291
+      ],
+      "prototypeCrop": [
+        1014,
+        244,
+        1056,
+        297
+      ],
+      "nativeSize": [
+        42,
+        53
+      ],
+      "displayZoomBoth": 2,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "fader",
+      "referenceCrop": [
+        609,
+        84,
+        651,
+        207
+      ],
+      "prototypeCrop": [
+        611,
+        84,
+        653,
+        207
+      ],
+      "nativeSize": [
+        42,
+        123
+      ],
+      "displayZoomBoth": 2,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "switch",
+      "referenceCrop": [
+        60,
+        95,
+        142,
+        122
+      ],
+      "prototypeCrop": [
+        63,
+        95,
+        145,
+        122
+      ],
+      "nativeSize": [
+        82,
+        27
+      ],
+      "displayZoomBoth": 2,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "screen",
+      "referenceCrop": [
+        769,
+        109,
+        912,
+        155
+      ],
+      "prototypeCrop": [
+        769,
+        109,
+        912,
+        155
+      ],
+      "nativeSize": [
+        143,
+        46
+      ],
+      "displayZoomBoth": 2,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "header",
+      "referenceCrop": [
+        27,
+        1,
+        1250,
+        51
+      ],
+      "prototypeCrop": [
+        27,
+        1,
+        1250,
+        51
+      ],
+      "nativeSize": [
+        1223,
+        50
+      ],
+      "displayZoomBoth": 1,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "cheek",
+      "referenceCrop": [
+        0,
+        0,
+        32,
+        640
+      ],
+      "prototypeCrop": [
+        0,
+        0,
+        32,
+        640
+      ],
+      "nativeSize": [
+        32,
+        640
+      ],
+      "displayZoomBoth": 1,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "keyboard",
+      "referenceCrop": [
+        23,
+        486,
+        1258,
+        635
+      ],
+      "prototypeCrop": [
+        23,
+        486,
+        1258,
+        635
+      ],
+      "nativeSize": [
+        1235,
+        149
+      ],
+      "displayZoomBoth": 1,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "wheel",
+      "referenceCrop": [
+        52,
+        510,
+        96,
+        623
+      ],
+      "prototypeCrop": [
+        52,
+        510,
+        96,
+        623
+      ],
+      "nativeSize": [
+        44,
+        113
+      ],
+      "displayZoomBoth": 2,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    },
+    {
+      "name": "envelope",
+      "referenceCrop": [
+        43,
+        220,
+        522,
+        314
+      ],
+      "prototypeCrop": [
+        43,
+        220,
+        522,
+        314
+      ],
+      "nativeSize": [
+        479,
+        94
+      ],
+      "displayZoomBoth": 1,
+      "sameScale": true,
+      "independentResize": false,
+      "colourCorrection": false
+    }
+  ],
+  "realKeyboardPhoto": {
+    "source": "User-provided Behringer MS-5 photograph in conversation; secondary product reference https://www.thomann.de/de/behringer_ms_5.htm",
+    "localPhotoAvailable": false,
+    "inspection": "Qualitative stepped key/black-key seating comparison from supplied conversation photograph; no new pixel measurements or photo capture claimed.",
+    "networkLimitation": "Secondary image download was blocked; no proxy bypass attempted."
+  }
+}

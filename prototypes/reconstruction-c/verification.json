@@ -1,0 +1,650 @@
+{
+  "status": "PASS",
+  "scope": "isolated visual/local-interaction prototype; no synth audio or MIDI attached",
+  "browser": "Chromium",
+  "nativeCoordinateSystem": [
+    1280,
+    640
+  ],
+  "screenshots": "actual browser captures at deviceScaleFactor1",
+  "layouts": [
+    {
+      "width": 1280,
+      "height": 640,
+      "hidden": false,
+      "cabinet": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 640
+      },
+      "horizontalOverflow": false,
+      "verticalOverflow": false,
+      "panels": [
+        {
+          "id": "voice",
+          "inside": true
+        },
+        {
+          "id": "oscillators",
+          "inside": true
+        },
+        {
+          "id": "mixer",
+          "inside": true
+        },
+        {
+          "id": "lfo1",
+          "inside": true
+        },
+        {
+          "id": "lfo2",
+          "inside": true
+        },
+        {
+          "id": "xy",
+          "inside": true
+        },
+        {
+          "id": "filterEnvelope",
+          "inside": true
+        },
+        {
+          "id": "filter",
+          "inside": true
+        },
+        {
+          "id": "eq",
+          "inside": true
+        },
+        {
+          "id": "ampEnvelope",
+          "inside": true
+        },
+        {
+          "id": "amp",
+          "inside": true
+        },
+        {
+          "id": "fx",
+          "inside": true
+        },
+        {
+          "id": "patch",
+          "inside": true
+        },
+        {
+          "id": "arp",
+          "inside": true
+        },
+        {
+          "id": "delay",
+          "inside": true
+        },
+        {
+          "id": "reverb",
+          "inside": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 640,
+      "hidden": true,
+      "cabinet": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 640
+      },
+      "horizontalOverflow": false,
+      "verticalOverflow": false,
+      "panels": [
+        {
+          "id": "voice",
+          "inside": true
+        },
+        {
+          "id": "oscillators",
+          "inside": true
+        },
+        {
+          "id": "mixer",
+          "inside": true
+        },
+        {
+          "id": "lfo1",
+          "inside": true
+        },
+        {
+          "id": "lfo2",
+          "inside": true
+        },
+        {
+          "id": "xy",
+          "inside": true
+        },
+        {
+          "id": "filterEnvelope",
+          "inside": true
+        },
+        {
+          "id": "filter",
+          "inside": true
+        },
+        {
+          "id": "eq",
+          "inside": true
+        },
+        {
+          "id": "ampEnvelope",
+          "inside": true
+        },
+        {
+          "id": "amp",
+          "inside": true
+        },
+        {
+          "id": "fx",
+          "inside": true
+        },
+        {
+          "id": "patch",
+          "inside": true
+        },
+        {
+          "id": "arp",
+          "inside": true
+        },
+        {
+          "id": "delay",
+          "inside": true
+        },
+        {
+          "id": "reverb",
+          "inside": true
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": false,
+      "cabinet": {
+        "x": 0,
+        "y": 60,
+        "width": 1920,
+        "height": 960
+      },
+      "horizontalOverflow": false,
+      "verticalOverflow": false,
+      "panels": [
+        {
+          "id": "voice",
+          "inside": true
+        },
+        {
+          "id": "oscillators",
+          "inside": true
+        },
+        {
+          "id": "mixer",
+          "inside": true
+        },
+        {
+          "id": "lfo1",
+          "inside": true
+        },
+        {
+          "id": "lfo2",
+          "inside": true
+        },
+        {
+          "id": "xy",
+          "inside": true
+        },
+        {
+          "id": "filterEnvelope",
+          "inside": true
+        },
+        {
+          "id": "filter",
+          "inside": true
+        },
+        {
+          "id": "eq",
+          "inside": true
+        },
+        {
+          "id": "ampEnvelope",
+          "inside": true
+        },
+        {
+          "id": "amp",
+          "inside": true
+        },
+        {
+          "id": "fx",
+          "inside": true
+        },
+        {
+          "id": "patch",
+          "inside": true
+        },
+        {
+          "id": "arp",
+          "inside": true
+        },
+        {
+          "id": "delay",
+          "inside": true
+        },
+        {
+          "id": "reverb",
+          "inside": true
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": true,
+      "cabinet": {
+        "x": 0,
+        "y": 60,
+        "width": 1920,
+        "height": 960
+      },
+      "horizontalOverflow": false,
+      "verticalOverflow": false,
+      "panels": [
+        {
+          "id": "voice",
+          "inside": true
+        },
+        {
+          "id": "oscillators",
+          "inside": true
+        },
+        {
+          "id": "mixer",
+          "inside": true
+        },
+        {
+          "id": "lfo1",
+          "inside": true
+        },
+        {
+          "id": "lfo2",
+          "inside": true
+        },
+        {
+          "id": "xy",
+          "inside": true
+        },
+        {
+          "id": "filterEnvelope",
+          "inside": true
+        },
+        {
+          "id": "filter",
+          "inside": true
+        },
+        {
+          "id": "eq",
+          "inside": true
+        },
+        {
+          "id": "ampEnvelope",
+          "inside": true
+        },
+        {
+          "id": "amp",
+          "inside": true
+        },
+        {
+          "id": "fx",
+          "inside": true
+        },
+        {
+          "id": "patch",
+          "inside": true
+        },
+        {
+          "id": "arp",
+          "inside": true
+        },
+        {
+          "id": "delay",
+          "inside": true
+        },
+        {
+          "id": "reverb",
+          "inside": true
+        }
+      ]
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": false,
+      "cabinet": {
+        "x": 0,
+        "y": 50,
+        "width": 1600,
+        "height": 800
+      },
+      "horizontalOverflow": false,
+      "verticalOverflow": false,
+      "panels": [
+        {
+          "id": "voice",
+          "inside": true
+        },
+        {
+          "id": "oscillators",
+          "inside": true
+        },
+        {
+          "id": "mixer",
+          "inside": true
+        },
+        {
+          "id": "lfo1",
+          "inside": true
+        },
+        {
+          "id": "lfo2",
+          "inside": true
+        },
+        {
+          "id": "xy",
+          "inside": true
+        },
+        {
+          "id": "filterEnvelope",
+          "inside": true
+        },
+        {
+          "id": "filter",
+          "inside": true
+        },
+        {
+          "id": "eq",
+          "inside": true
+        },
+        {
+          "id": "ampEnvelope",
+          "inside": true
+        },
+        {
+          "id": "amp",
+          "inside": true
+        },
+        {
+          "id": "fx",
+          "inside": true
+        },
+        {
+          "id": "patch",
+          "inside": true
+        },
+        {
+          "id": "arp",
+          "inside": true
+        },
+        {
+          "id": "delay",
+          "inside": true
+        },
+        {
+          "id": "reverb",
+          "inside": true
+        }
+      ]
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": true,
+      "cabinet": {
+        "x": 0,
+        "y": 50,
+        "width": 1600,
+        "height": 800
+      },
+      "horizontalOverflow": false,
+      "verticalOverflow": false,
+      "panels": [
+        {
+          "id": "voice",
+          "inside": true
+        },
+        {
+          "id": "oscillators",
+          "inside": true
+        },
+        {
+          "id": "mixer",
+          "inside": true
+        },
+        {
+          "id": "lfo1",
+          "inside": true
+        },
+        {
+          "id": "lfo2",
+          "inside": true
+        },
+        {
+          "id": "xy",
+          "inside": true
+        },
+        {
+          "id": "filterEnvelope",
+          "inside": true
+        },
+        {
+          "id": "filter",
+          "inside": true
+        },
+        {
+          "id": "eq",
+          "inside": true
+        },
+        {
+          "id": "ampEnvelope",
+          "inside": true
+        },
+        {
+          "id": "amp",
+          "inside": true
+        },
+        {
+          "id": "fx",
+          "inside": true
+        },
+        {
+          "id": "patch",
+          "inside": true
+        },
+        {
+          "id": "arp",
+          "inside": true
+        },
+        {
+          "id": "delay",
+          "inside": true
+        },
+        {
+          "id": "reverb",
+          "inside": true
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "37 correctly patterned keys (22white/15black)",
+    "notched white silhouettes and hit regions",
+    "native28pxrotaries, compact23x11fader caps",
+    "rotary pointer/arc drag updates local value",
+    "fader change updates local cap",
+    "illuminated switch state changes",
+    "key pointer pressed state/release",
+    "pitch-wheel local spring return",
+    "visible/hidden layouts fit both requested viewports"
+  ],
+  "notchHitChecks": [
+    {
+      "note": 48,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 50,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 50,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 52,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 53,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 55,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 55,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 57,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 57,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 59,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 60,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 62,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 62,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 64,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 65,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 67,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 67,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 69,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 69,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 71,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 72,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 74,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 74,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 76,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 77,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 79,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 79,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 81,
+      "side": "left",
+      "notWhite": true
+    },
+    {
+      "note": 81,
+      "side": "right",
+      "notWhite": true
+    },
+    {
+      "note": 83,
+      "side": "left",
+      "notWhite": true
+    }
+  ],
+  "consoleErrors": []
+}

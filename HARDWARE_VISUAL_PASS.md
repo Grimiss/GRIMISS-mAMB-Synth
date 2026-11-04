@@ -18,3 +18,13 @@ Geometry approval includes the user's four amendments: equal420px filter/amp env
 Keyboard uses measured white34×125/36pitch and black21×79frame proportions, with unchanged25-note C3–C5mapping. The active bank remains centred in the full-width housing as proposed. Keyboard collapse expands control panels and graphs without resetting audio. EQ's four controls and live overview remain visible; DETAILS presents the original nodes/full graph. Both XY pads and assignment actions remain visible, with an original-node expanded interaction view.
 
 DSP/MIDI/FX/patch modules are unchanged. A narrowly scoped parity guard allows only logical layout constants1280×640 instead of1920×1080. Real Chromium screenshots and boundary overlays are in reports/reference-comparison.html; all four target viewport/keyboard combinations have no control/panel overflow. New reference-layout regression covers pixel coordinates, key geometry, node identity, EQ response changes and XY interaction. Physical tablet/Windows/KeyLab hardware testing remains unverified.
+
+## Checkpoint B — reconstruction C (approval required before rollout)
+
+The user approved parallel analog/visual work and then required true notched-key geometry. `prototypes/reconstruction-c/index.html` is an isolated review of new compact physical components, coherent near-black cabinet, flat side housings, header and divider. The original reference is visually inspected at native1280×640; native equal-scale browser/reference crops are supplied. All additional working synth controls remain in the playable build; sample prototype controls do not replace or remove them.
+
+White keys use stepped CSS silhouettes with clipped pointer regions. Raised black keys occupy those cut-outs, retaining the37-note C3–C6 pattern and natural E–F/B–C gaps. A separate diagnostic browser capture hides black bodies to expose the real notches. Chromium checks pass six layouts and30notch hit probes, with no console errors. No names/numbers are printed on the prototype controls/keys.
+
+The user-approved envelope/filter/EQ amendments remain. Retaining37notes and filling the953-unit opening requires wider individual keys than the original mockup's greater number of visible fronts; this unavoidable geometric conflict is explicit. Comparison with the earlier user-provided real MS-5 photo is qualitative; a fresh secondary photo download was host-policy blocked. No new equal-scale real-photo measurement is claimed.
+
+Do not apply these new cabinet/control/keybed components to the working synth until the user approves Checkpoint B. Checkpoint C integration and functional regression follow that approval. Checkpoint A's DSP and requested readout removal are independent and already verified.
