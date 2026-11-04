@@ -1,0 +1,39 @@
+{
+  "status": "VERIFIED_LOCAL_PUBLISHED",
+  "layoutSource": "src/reference-layout.json",
+  "approvedChanges": {
+    "filterEnvelopeWidth": 420,
+    "ampEnvelopeWidth": 420,
+    "filterWidth": 510,
+    "eq": [
+      983,
+      220,
+      256,
+      94
+    ],
+    "cutoffDiameter": 50
+  },
+  "viewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1600,
+      900
+    ]
+  ],
+  "keyboardModes": [
+    "visible",
+    "hidden"
+  ],
+  "siteSourceCommit": "fe50f865c65f9603556924cd17d687167a83ef49",
+  "deploymentId": "appgdep_6aea8a94cec88191928e91e2ceeddeda",
+  "deploymentStatus": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "htmlSha256": "c9151bf92d830809fca3e27fd7fbb9a66da326a5c461e78fa52569b6ec7c83bb",
+  "liveBrowserQA": "BLOCKED: configured proxy ERR_TUNNEL_CONNECTION_FAILED",
+  "physicalHardwareVerified": false,
+  "dspChanged": false,
+  "mainMerged": false
+}

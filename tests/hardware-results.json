@@ -1,6 +1,7 @@
 {
   "status": "PASS",
-  "functionalScriptsUnchanged": 14,
+  "functionalScriptsUnchanged": 13,
+  "layoutChangeOnlyApprovedDimensions": true,
   "addedPerformanceScript": true,
   "controlTagsUnchanged": 156,
   "addedPerformanceControls": 4,

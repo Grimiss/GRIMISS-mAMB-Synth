@@ -103,3 +103,16 @@ A sandbox network permission request was granted, then both requests were retrie
 ## Future updates
 
 Use the Sites skill, reuse this project ID/access policy, obtain a fresh source-repository credential and update `/workspace/sites/grimiss-mamb-v05` when retained. Copy only the tested release into its dist/ and preserve .openai/hosting.json. Push the exact Site-source commit, package that state, save/deploy privately and inspect terminal status. Re-run actual live QA when the domain is allowed. Do not create duplicate Sites, change audience, or deploy untested development edits.
+
+## Approved reference geometry publication — 2026-11-04
+
+The existing owner-private Site was updated without changing its audience.
+
+- Play: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site
+- Comparison: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/reports/reference-comparison.html
+- Site source commit: `fe50f865c65f9603556924cd17d687167a83ef49`
+- Deployment: `appgdep_6aea8a94cec88191928e91e2ceeddeda` — succeeded.
+- Version: `appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_e232e2e5da508191a4baba1420d3c176`
+- Standalone HTML SHA256: `c9151bf92d830809fca3e27fd7fbb9a66da326a5c461e78fa52569b6ec7c83bb`.
+
+The measured coordinate model and approved filter/ADSR/EQ amendments are now applied to the playable build. No main merge. Deployment success does not assert live-domain browser QA or physical hardware testing.

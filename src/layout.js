@@ -1,6 +1,6 @@
 // Fit the physical instrument only. Modals are body siblings in normal viewport coordinates.
 (function(){
- const logicalWidth=1920,logicalHeight=1080,preferenceKey='grimiss.mamb.layout.v1';
+ const logicalWidth=1280,logicalHeight=640,preferenceKey='grimiss.mamb.layout.v1';
  let scheduled=false,keyboardVisible=true;
  try{const saved=JSON.parse(localStorage.getItem(preferenceKey)||'null');if(saved?.version===1&&typeof saved.keyboardVisible==='boolean')keyboardVisible=saved.keyboardVisible}catch{}
  function fit(){scheduled=false;const viewport=window.visualViewport;const width=Math.min(window.innerWidth,viewport?.width||window.innerWidth),height=Math.min(window.innerHeight,viewport?.height||window.innerHeight),scale=Math.min(width/logicalWidth,height/logicalHeight),left=Math.max(0,(width-logicalWidth*scale)/2),top=Math.max(0,(height-logicalHeight*scale)/2);document.documentElement.style.setProperty('--ui-scale',String(scale));document.documentElement.style.setProperty('--ui-left',left+'px');document.documentElement.style.setProperty('--ui-top',top+'px');window.mambLayout={logicalWidth,logicalHeight,width,height,scale,left,top,keyboardVisible};if(typeof refreshInstrumentUI==='function')refreshInstrumentUI()}

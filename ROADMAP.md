@@ -1,3 +1,7 @@
+## Current geometry checkpoint
+
+Approved coordinate reconstruction is implemented, including equal envelope widths, expanded filter/EQ and enlarged cutoff. No DSP changes. Next priorities are user review of the actual full browser build, physical Windows/tablet/KeyLab validation, and readability at small device sizes. ARP and automation remain explicitly reserved interfaces.
+
 # Roadmap — v0.7
 
 ## Corrective reconstruction
@@ -71,3 +75,12 @@
 8. Consider scalable preset organisation and optional integration adapter only after further standalone validation. Do not modify Sound Factory yet.
 
 Keep one timbre, eight active voices, source-scoped ownership, HOLD, four real routes, stable transitions and recoverable commits. Never merge main without explicit approval.
+
+
+## Approved reference-coordinate reconstruction
+
+Geometry approval includes the user's four amendments: equal420px filter/amp envelope widths; filter widened to510px atx468; cutoff50px versus32px adjacent knobs; EQ enlarged to256×94 atx983,y220. Cabinet uses one1280×640 reference coordinate model with uniform viewport scaling. All16sections are placed from measured reference boundaries, preserving additional working controls. Original measurements are retained separately from approved changes.
+
+Keyboard uses measured white34×125/36pitch and black21×79frame proportions, with unchanged25-note C3–C5mapping. The active bank remains centred in the full-width housing as proposed. Keyboard collapse expands control panels and graphs without resetting audio. EQ's four controls and live overview remain visible; DETAILS presents the original nodes/full graph. Both XY pads and assignment actions remain visible, with an original-node expanded interaction view.
+
+DSP/MIDI/FX/patch modules are unchanged. A narrowly scoped parity guard allows only logical layout constants1280×640 instead of1920×1080. Real Chromium screenshots and boundary overlays are in reports/reference-comparison.html; all four target viewport/keyboard combinations have no control/panel overflow. New reference-layout regression covers pixel coordinates, key geometry, node identity, EQ response changes and XY interaction. Physical tablet/Windows/KeyLab hardware testing remains unverified.

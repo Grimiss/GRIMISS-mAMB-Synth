@@ -12,12 +12,14 @@
   "paints": {
     "brand": "700",
     "section": "700",
-    "bezel": "4px",
+    "bezel": "3px",
     "glow": "drop-shadow(rgb(80, 239, 213) 0px 0px 1.5px) drop-shadow(rgb(80, 239, 213) 0px 0px 4px)",
     "knobCount": 50,
     "knobs": 50,
     "vent": "true",
     "printedWeights": [
+      "700",
+      "700",
       "700",
       "700",
       "700",

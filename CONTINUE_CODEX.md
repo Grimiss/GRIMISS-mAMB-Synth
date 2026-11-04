@@ -1,10 +1,14 @@
-# ACTIVE CHECKPOINT — geometry approval required
+# ACTIVE CHECKPOINT — approved reference geometry implemented
 
-The user stopped cosmetic iterations and requires a measured geometry reconstruction proposal before further styling/full implementation. prototypes/geometry contains the native1280×640reference map, pixel/percentage tables, key scan, proposed coordinate model, actual browser captures, overlays and functional-space conflicts. The working synth has NOT been changed in this checkpoint. Do not adopt the layout or continue styling until the user explicitly approves it.
+The user approved the geometry study, amending it to give filter ADSR the same420px width as amp ADSR, expand the filter to510px, enlarge cutoff, and extend EQ into adjacent gaps (256×94px). This clears the geometry approval gate. src/reference-layout.json is the native1280×640 coordinate authority; measured ORIGINAL rectangles remain unchanged in prototypes/geometry. src/coordinate-layout.js relocates original functional DOM nodes, and src/geometry.css supplies the coordinate layout. src/layout.js changes only logical dimensions to1280×640. Do not return to independent dashboard grid sizing.
 
-Key decisions: the mockup shows27white fronts, whereas the existing C3–C5keyboard has15whites/10blacks. The proposed538px correctly proportioned bank leaves207.5px at each side inside the953px key-bed opening. No fake keys, extra pitches or remapping. EQ is246×86px; all4controls remain visible with a proposed overview/full-graph detail arrangement requiring approval. Mini XY pads/compact extra-control allocations also require approval. See prototypes/geometry/index.html and REFERENCE_GEOMETRY.md. Main DSP/MIDI/patch/automation code and live homepage must remain unchanged.
+Keyboard remains25notes C3–C5 with15white/10black keys, measured34×125 white faces/36pitch and21×79 black frames. The correctly proportioned538px active bank is centred inside the original housing; approved dark blank ends preserve note range. Keyboard hide expands panels through a shared coordinate transform. The main instrument remains2:1 and fits1920×1080 and1600×900.
 
-## Earlier continuation record — superseded until geometry approval
+Every original control remains. EQ has all4knobs and a compact live overview; DETAILS moves the SAME original EQ nodes into a full-response dialog and back. Both XY pads/assign buttons remain visible; EXPAND similarly moves original nodes. Never clone parameter IDs or substitute static graph artwork. tests/reference-layout.cjs checks actual panel coordinates, cutoff size, unchanged key geometry/mapping, original-node identity/interaction and unique IDs. tests/hardware.cjs permits only the approved layout-dimension constant change within the14 legacy functional scripts; the other13 remain exact.
+
+See reports/reference-comparison.html for equal-scale browser/reference comparison and original/implemented boundary overlays. Amber indicates the user's intentional filter/ADSR/EQ deviations. Preserve Prototype B palette, screen glow/bezels and700-weight lettering. Main DSP, MIDI, effects, patch and automation modules remain unchanged.
+
+## Earlier continuation record
 
 # Approved Prototype B / screen-printed edition
 
@@ -24,7 +28,7 @@ The rejected finish-only pass has been superseded by a corrective reconstruction
 
 Visual layer: src/hardware.css is embedded by build.cjs; src/interface.html supplies shared SVG paint gradients. tests/hardware.cjs compares all14 functional script bodies and156 original control tags (allowing only the new performance module/widgets) with tests/fixtures/v0.7.html (2531bed). Do not change DSP to revise appearance. For a later explicitly functional release, deliberately update the parity baseline/guard after validating the authorised behavior change rather than deleting coverage. HARDWARE_VISUAL_PASS.md records the approved mockup comparison and retained functional scope.
 
-UI: 1920×1080 logical hardware panel, fit to viewport, body-sibling dialogs. Keyboard is visible by default; persisted hide state really grows graphs/controls without DSP/context reset. OSC1 buttons are4+3. Ninety continuously numbered factory patches,9×10banks; USER edits via SELECT PATCH. Patch schema v3 contains XY; legacy versions remain supported. MIDI profiles are separate, versioned and source/channel-scoped. Original Arturia KeyLab25 has no pad grid. Never invent unknown factory CCs or call synthetic activity hardware verification. Read KEYLAB25_MIDI_MAP.md.
+UI: 1280×640 logical hardware panel, fit to viewport, body-sibling dialogs. Keyboard is visible by default; persisted hide state really grows graphs/controls without DSP/context reset. OSC1 buttons are4+3. Ninety continuously numbered factory patches,9×10banks; USER edits via SELECT PATCH. Patch schema v3 contains XY; legacy versions remain supported. MIDI profiles are separate, versioned and source/channel-scoped. Original Arturia KeyLab25 has no pad grid. Never invent unknown factory CCs or call synthetic activity hardware verification. Read KEYLAB25_MIDI_MAP.md.
 
 Retained storage: grimiss-mamb-user-patches-v2, grimiss-mamb-midi-map-v1, grimiss.mamb.layout.v1, grimiss.mamb.xy.v1, grimiss.mamb.selected-patch.v1, grimiss.mamb.midi-devices.v1. Do not rename/remove without migration. MIDI map standalone and app use the same registry and storage events.
 

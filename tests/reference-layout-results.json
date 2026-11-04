@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": false,
+      "panelCount": 16,
+      "status": "PASS"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": true,
+      "panelCount": 16,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": false,
+      "panelCount": 16,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": true,
+      "panelCount": 16,
+      "status": "PASS"
+    }
+  ],
+  "checks": [
+    "16 measured panels at both viewports and keyboard modes",
+    "matched envelope widths and enlarged cutoff",
+    "unchanged 25-note mapping and measured key proportions",
+    "original EQ nodes retained; response changes in detail view",
+    "original XY nodes remain interactive across expand/close",
+    "unique DOM identifiers"
+  ],
+  "consoleErrors": []
+}

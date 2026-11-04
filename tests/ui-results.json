@@ -14,256 +14,230 @@
       },
       "main": {
         "x": 0,
-        "y": 0,
+        "y": 60,
         "width": 1920,
-        "height": 1080,
+        "height": 960,
         "right": 1920,
-        "bottom": 1080
+        "bottom": 1020
       },
       "layout": {
-        "logicalWidth": 1920,
-        "logicalHeight": 1080,
+        "logicalWidth": 1280,
+        "logicalHeight": 640,
         "width": 1920,
         "height": 1080,
-        "scale": 1,
+        "scale": 1.5,
         "left": 0,
-        "top": 0,
+        "top": 60,
         "keyboardVisible": false
       },
       "panels": [
         {
           "name": "VOICE",
           "rect": {
-            "x": 29,
-            "y": 71,
-            "width": 320.890625,
-            "height": 260,
-            "right": 349.890625,
-            "bottom": 331
+            "x": 64.5,
+            "y": 145.03125,
+            "width": 330,
+            "height": 320.0859375,
+            "right": 394.5,
+            "bottom": 465.1171875
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "OSCILLATORS",
           "rect": {
-            "x": 355.890625,
-            "y": 71,
-            "width": 398.734375,
-            "height": 260,
-            "right": 754.625,
-            "bottom": 331
+            "x": 403.5,
+            "y": 145.03125,
+            "width": 484.5,
+            "height": 320.0859375,
+            "right": 888,
+            "bottom": 465.1171875
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "MIXER",
           "rect": {
-            "x": 760.625,
-            "y": 71,
-            "width": 243.0625,
-            "height": 260,
-            "right": 1003.6875,
-            "bottom": 331
+            "x": 898.5,
+            "y": 145.03125,
+            "width": 231,
+            "height": 320.0859375,
+            "right": 1129.5,
+            "bottom": 465.1171875
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "LFO 1",
           "rect": {
-            "x": 1009.6875,
-            "y": 71,
-            "width": 320.90625,
-            "height": 260,
-            "right": 1330.59375,
-            "bottom": 331
+            "x": 1140,
+            "y": 145.03125,
+            "width": 238.5,
+            "height": 320.0859375,
+            "right": 1378.5,
+            "bottom": 465.1171875
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "LFO 2",
           "rect": {
-            "x": 1336.59375,
-            "y": 71,
-            "width": 320.890625,
-            "height": 260,
-            "right": 1657.484375,
-            "bottom": 331
+            "x": 1387.5,
+            "y": 145.03125,
+            "width": 240,
+            "height": 320.0859375,
+            "right": 1627.5,
+            "bottom": 465.1171875
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "XY PAD 1 ASSIGN",
-          "rect": {
-            "x": 1663.484375,
-            "y": 71,
-            "width": 227.5,
-            "height": 260,
-            "right": 1890.984375,
-            "bottom": 331
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "FILTER ENVELOPE",
           "rect": {
-            "x": 29,
-            "y": 337,
-            "width": 492.125,
-            "height": 244,
-            "right": 521.125,
-            "bottom": 581
+            "x": 64.5,
+            "y": 477.28125,
+            "width": 630,
+            "height": 190.4296875,
+            "right": 694.5,
+            "bottom": 667.7109375
           },
-          "clientHeight": 242,
-          "scrollHeight": 242
+          "clientHeight": 125,
+          "scrollHeight": 125
         },
         {
           "name": "AMP ENVELOPE",
           "rect": {
-            "x": 29,
-            "y": 587,
-            "width": 492.125,
-            "height": 212,
-            "right": 521.125,
-            "bottom": 799
+            "x": 64.5,
+            "y": 679.875,
+            "width": 630,
+            "height": 170.15625,
+            "right": 694.5,
+            "bottom": 850.03125
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 111,
+          "scrollHeight": 111
         },
         {
           "name": "FILTER",
           "rect": {
-            "x": 527.125,
-            "y": 337,
-            "width": 492.140625,
-            "height": 244,
-            "right": 1019.265625,
-            "bottom": 581
+            "x": 702,
+            "y": 477.28125,
+            "width": 765,
+            "height": 190.4296875,
+            "right": 1467,
+            "bottom": 667.7109375
           },
-          "clientHeight": 242,
-          "scrollHeight": 242
+          "clientHeight": 125,
+          "scrollHeight": 125
         },
         {
-          "name": "EQ",
+          "name": "EQDETAILS",
           "rect": {
-            "x": 1025.265625,
-            "y": 337,
-            "width": 647.796875,
-            "height": 244,
-            "right": 1673.0625,
-            "bottom": 581
+            "x": 1474.5,
+            "y": 477.28125,
+            "width": 384,
+            "height": 190.4296875,
+            "right": 1858.5,
+            "bottom": 667.7109375
           },
-          "clientHeight": 242,
-          "scrollHeight": 242
-        },
-        {
-          "name": "AUTOMATION",
-          "rect": {
-            "x": 1679.0625,
-            "y": 337,
-            "width": 211.921875,
-            "height": 244,
-            "right": 1890.984375,
-            "bottom": 581
-          },
-          "clientHeight": 242,
-          "scrollHeight": 242
+          "clientHeight": 125,
+          "scrollHeight": 125
         },
         {
           "name": "AMP",
           "rect": {
-            "x": 527.125,
-            "y": 587,
-            "width": 227.5,
-            "height": 212,
-            "right": 754.625,
-            "bottom": 799
+            "x": 702,
+            "y": 679.875,
+            "width": 241.5,
+            "height": 170.15625,
+            "right": 943.5,
+            "bottom": 850.03125
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 111,
+          "scrollHeight": 111
         },
         {
           "name": "MOD FX",
           "rect": {
-            "x": 760.625,
-            "y": 587,
-            "width": 258.640625,
-            "height": 212,
-            "right": 1019.265625,
-            "bottom": 799
+            "x": 952.5,
+            "y": 679.875,
+            "width": 283.5,
+            "height": 309.9375,
+            "right": 1236,
+            "bottom": 989.8125
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 205,
+          "scrollHeight": 205
         },
         {
           "name": "MODULATION VISUALISER / VIRTUAL PATCH",
           "rect": {
-            "x": 1025.265625,
-            "y": 587,
-            "width": 647.796875,
-            "height": 470,
-            "right": 1673.0625,
-            "bottom": 1057
+            "x": 1243.5,
+            "y": 679.875,
+            "width": 384,
+            "height": 309.9375,
+            "right": 1627.5,
+            "bottom": 989.8125
           },
-          "clientHeight": 468,
-          "scrollHeight": 468
+          "clientHeight": 205,
+          "scrollHeight": 205
         },
         {
           "name": "DELAY",
           "rect": {
-            "x": 29,
-            "y": 805,
-            "width": 320.890625,
-            "height": 252,
-            "right": 349.890625,
-            "bottom": 1057
+            "x": 64.5,
+            "y": 860.1796875,
+            "width": 438,
+            "height": 129.65625,
+            "right": 502.5,
+            "bottom": 989.8359375
           },
-          "clientHeight": 250,
-          "scrollHeight": 250
+          "clientHeight": 84,
+          "scrollHeight": 84
         },
         {
           "name": "ARP / STEP SEQUENCER",
           "rect": {
-            "x": 1679.0625,
-            "y": 587,
-            "width": 211.921875,
-            "height": 212,
-            "right": 1890.984375,
-            "bottom": 799
+            "x": 1636.5,
+            "y": 679.875,
+            "width": 222,
+            "height": 309.9375,
+            "right": 1858.5,
+            "bottom": 989.8125
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 205,
+          "scrollHeight": 205
         },
         {
-          "name": "XY PAD 2 ASSIGN",
+          "name": "REVERB",
           "rect": {
-            "x": 1679.0625,
-            "y": 805,
-            "width": 211.921875,
-            "height": 252,
-            "right": 1890.984375,
-            "bottom": 1057
+            "x": 511.5,
+            "y": 860.1796875,
+            "width": 432,
+            "height": 129.65625,
+            "right": 943.5,
+            "bottom": 989.8359375
           },
-          "clientHeight": 250,
-          "scrollHeight": 250
+          "clientHeight": 84,
+          "scrollHeight": 84
         },
         {
-          "name": "REVERB — 63_SPRING / MOD_HALL",
+          "name": "XY / AUTOMATIONEXPAND",
           "rect": {
-            "x": 355.890625,
-            "y": 805,
-            "width": 663.375,
-            "height": 252,
-            "right": 1019.265625,
-            "bottom": 1057
+            "x": 1636.5,
+            "y": 145.03125,
+            "width": 222,
+            "height": 320.0859375,
+            "right": 1858.5,
+            "bottom": 465.1171875
           },
-          "clientHeight": 250,
-          "scrollHeight": 250
+          "clientHeight": 211,
+          "scrollHeight": 211
         }
       ],
       "outside": [],
@@ -271,122 +245,122 @@
         {
           "id": "osc-scope-1",
           "rect": {
-            "x": 522.28125,
-            "y": 127,
-            "width": 104.421875,
-            "height": 70,
-            "right": 626.703125,
-            "bottom": 197
+            "x": 595.5,
+            "y": 220.03125,
+            "width": 114,
+            "height": 66,
+            "right": 709.5,
+            "bottom": 286.03125
           }
         },
         {
           "id": "osc-scope-2",
           "rect": {
-            "x": 522.28125,
-            "y": 239,
-            "width": 104.421875,
-            "height": 70,
-            "right": 626.703125,
-            "bottom": 309
+            "x": 595.5,
+            "y": 369.5625,
+            "width": 114,
+            "height": 66,
+            "right": 709.5,
+            "bottom": 435.5625
           }
         },
         {
           "id": "lfo-scope-1",
           "rect": {
-            "x": 1057.6875,
-            "y": 142,
-            "width": 261.90625,
-            "height": 90,
-            "right": 1319.59375,
-            "bottom": 232
+            "x": 1150.5,
+            "y": 234.28125,
+            "width": 217.5,
+            "height": 88.5,
+            "right": 1368,
+            "bottom": 322.78125
           }
         },
         {
           "id": "lfo-scope-2",
           "rect": {
-            "x": 1384.59375,
-            "y": 142,
-            "width": 261.890625,
-            "height": 90,
-            "right": 1646.484375,
-            "bottom": 232
+            "x": 1398,
+            "y": 234.28125,
+            "width": 219,
+            "height": 88.5,
+            "right": 1617,
+            "bottom": 322.78125
           }
         },
         {
           "id": "filter-scope",
           "rect": {
-            "x": 609.125,
-            "y": 374,
-            "width": 148.515625,
-            "height": 204,
-            "right": 757.640625,
-            "bottom": 578
+            "x": 789,
+            "y": 508.78125,
+            "width": 285,
+            "height": 123,
+            "right": 1074,
+            "bottom": 631.78125
           }
         },
         {
           "id": "f-envelope",
           "rect": {
-            "x": 312.671875,
-            "y": 393,
-            "width": 197.4375,
-            "height": 145,
-            "right": 510.109375,
-            "bottom": 538
+            "x": 417,
+            "y": 516.984375,
+            "width": 267,
+            "height": 135,
+            "right": 684,
+            "bottom": 651.984375
           }
         },
         {
           "id": "a-envelope",
           "rect": {
-            "x": 312.671875,
-            "y": 627.5,
-            "width": 197.4375,
-            "height": 145,
-            "right": 510.109375,
-            "bottom": 772.5
+            "x": 417,
+            "y": 711.375,
+            "width": 267,
+            "height": 135,
+            "right": 684,
+            "bottom": 846.375
           }
         },
         {
           "id": "eq-scope",
           "rect": {
-            "x": 1036.265625,
-            "y": 374,
-            "width": 625.796875,
-            "height": 80,
-            "right": 1662.0625,
-            "bottom": 454
+            "x": 1485,
+            "y": 508.78125,
+            "width": 363,
+            "height": 60,
+            "right": 1848,
+            "bottom": 568.78125
           }
         },
         {
           "id": "routing-scope",
           "rect": {
-            "x": 1036.265625,
-            "y": 624,
-            "width": 625.796875,
-            "height": 72,
-            "right": 1662.0625,
-            "bottom": 696
+            "x": 1254,
+            "y": 711.375,
+            "width": 363,
+            "height": 33,
+            "right": 1617,
+            "bottom": 744.375
           }
         },
         {
           "id": "xy1",
           "rect": {
-            "x": 1674.484375,
-            "y": 108,
-            "width": 205.5,
-            "height": 170,
-            "right": 1879.984375,
-            "bottom": 278
+            "x": 1645.5,
+            "y": 193.03125,
+            "width": 93,
+            "height": 120,
+            "right": 1738.5,
+            "bottom": 313.03125
           }
         },
         {
           "id": "xy2",
           "rect": {
-            "x": 1690.0625,
-            "y": 842,
-            "width": 189.921875,
-            "height": 170,
-            "right": 1879.984375,
-            "bottom": 1012
+            "x": 1747.5,
+            "y": 193.03125,
+            "width": 93,
+            "height": 120,
+            "right": 1840.5,
+            "bottom": 313.03125
           }
         }
       ],
@@ -406,7 +380,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.054305934214074446,
+        "rms": 0.05413022355471057,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -423,269 +397,243 @@
       },
       "main": {
         "x": 0,
-        "y": 0,
+        "y": 60,
         "width": 1920,
-        "height": 1080,
+        "height": 960,
         "right": 1920,
-        "bottom": 1080
+        "bottom": 1020
       },
       "layout": {
-        "logicalWidth": 1920,
-        "logicalHeight": 1080,
+        "logicalWidth": 1280,
+        "logicalHeight": 640,
         "width": 1920,
         "height": 1080,
-        "scale": 1,
+        "scale": 1.5,
         "left": 0,
-        "top": 0,
+        "top": 60,
         "keyboardVisible": true
       },
       "panels": [
         {
           "name": "VOICE",
           "rect": {
-            "x": 29,
-            "y": 71,
-            "width": 320.890625,
-            "height": 218,
-            "right": 349.890625,
-            "bottom": 289
+            "x": 64.5,
+            "y": 144,
+            "width": 330,
+            "height": 237,
+            "right": 394.5,
+            "bottom": 381
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "OSCILLATORS",
           "rect": {
-            "x": 355.890625,
-            "y": 71,
-            "width": 398.734375,
-            "height": 218,
-            "right": 754.625,
-            "bottom": 289
+            "x": 403.5,
+            "y": 144,
+            "width": 484.5,
+            "height": 237,
+            "right": 888,
+            "bottom": 381
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "MIXER",
           "rect": {
-            "x": 760.625,
-            "y": 71,
-            "width": 243.0625,
-            "height": 218,
-            "right": 1003.6875,
-            "bottom": 289
+            "x": 898.5,
+            "y": 144,
+            "width": 231,
+            "height": 237,
+            "right": 1129.5,
+            "bottom": 381
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "LFO 1",
           "rect": {
-            "x": 1009.6875,
-            "y": 71,
-            "width": 320.90625,
-            "height": 218,
-            "right": 1330.59375,
-            "bottom": 289
+            "x": 1140,
+            "y": 144,
+            "width": 238.5,
+            "height": 237,
+            "right": 1378.5,
+            "bottom": 381
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "LFO 2",
           "rect": {
-            "x": 1336.59375,
-            "y": 71,
-            "width": 320.890625,
-            "height": 218,
-            "right": 1657.484375,
-            "bottom": 289
+            "x": 1387.5,
+            "y": 144,
+            "width": 240,
+            "height": 237,
+            "right": 1627.5,
+            "bottom": 381
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "XY PAD 1 ASSIGN",
-          "rect": {
-            "x": 1663.484375,
-            "y": 71,
-            "width": 227.5,
-            "height": 218,
-            "right": 1890.984375,
-            "bottom": 289
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "FILTER ENVELOPE",
           "rect": {
-            "x": 29,
-            "y": 295,
-            "width": 492.125,
-            "height": 188,
-            "right": 521.125,
-            "bottom": 483
+            "x": 64.5,
+            "y": 390,
+            "width": 630,
+            "height": 141,
+            "right": 694.5,
+            "bottom": 531
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 92,
+          "scrollHeight": 92
         },
         {
           "name": "AMP ENVELOPE",
           "rect": {
-            "x": 29,
-            "y": 489,
-            "width": 492.125,
-            "height": 168,
-            "right": 521.125,
-            "bottom": 657
+            "x": 64.5,
+            "y": 540,
+            "width": 630,
+            "height": 126,
+            "right": 694.5,
+            "bottom": 666
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 82,
+          "scrollHeight": 82
         },
         {
           "name": "FILTER",
           "rect": {
-            "x": 527.125,
-            "y": 295,
-            "width": 492.140625,
-            "height": 188,
-            "right": 1019.265625,
-            "bottom": 483
+            "x": 702,
+            "y": 390,
+            "width": 765,
+            "height": 141,
+            "right": 1467,
+            "bottom": 531
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 92,
+          "scrollHeight": 92
         },
         {
-          "name": "EQ",
+          "name": "EQDETAILS",
           "rect": {
-            "x": 1025.265625,
-            "y": 295,
-            "width": 647.796875,
-            "height": 188,
-            "right": 1673.0625,
-            "bottom": 483
+            "x": 1474.5,
+            "y": 390,
+            "width": 384,
+            "height": 141,
+            "right": 1858.5,
+            "bottom": 531
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "AUTOMATION",
-          "rect": {
-            "x": 1679.0625,
-            "y": 295,
-            "width": 211.921875,
-            "height": 188,
-            "right": 1890.984375,
-            "bottom": 483
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 92,
+          "scrollHeight": 92
         },
         {
           "name": "AMP",
           "rect": {
-            "x": 527.125,
-            "y": 489,
-            "width": 227.5,
-            "height": 168,
-            "right": 754.625,
-            "bottom": 657
+            "x": 702,
+            "y": 540,
+            "width": 241.5,
+            "height": 126,
+            "right": 943.5,
+            "bottom": 666
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 82,
+          "scrollHeight": 82
         },
         {
           "name": "MOD FX",
           "rect": {
-            "x": 760.625,
-            "y": 489,
-            "width": 258.640625,
-            "height": 168,
-            "right": 1019.265625,
-            "bottom": 657
+            "x": 952.5,
+            "y": 540,
+            "width": 283.5,
+            "height": 229.5,
+            "right": 1236,
+            "bottom": 769.5
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 151,
+          "scrollHeight": 151
         },
         {
           "name": "MODULATION VISUALISER / VIRTUAL PATCH",
           "rect": {
-            "x": 1025.265625,
-            "y": 489,
-            "width": 647.796875,
-            "height": 362,
-            "right": 1673.0625,
-            "bottom": 851
+            "x": 1243.5,
+            "y": 540,
+            "width": 384,
+            "height": 229.5,
+            "right": 1627.5,
+            "bottom": 769.5
           },
-          "clientHeight": 360,
-          "scrollHeight": 360
+          "clientHeight": 151,
+          "scrollHeight": 151
         },
         {
           "name": "DELAY",
           "rect": {
-            "x": 29,
-            "y": 663,
-            "width": 320.890625,
-            "height": 188,
-            "right": 349.890625,
-            "bottom": 851
+            "x": 64.5,
+            "y": 673.5,
+            "width": 438,
+            "height": 96,
+            "right": 502.5,
+            "bottom": 769.5
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 62,
+          "scrollHeight": 62
         },
         {
           "name": "ARP / STEP SEQUENCER",
           "rect": {
-            "x": 1679.0625,
-            "y": 489,
-            "width": 211.921875,
-            "height": 168,
-            "right": 1890.984375,
-            "bottom": 657
+            "x": 1636.5,
+            "y": 540,
+            "width": 222,
+            "height": 229.5,
+            "right": 1858.5,
+            "bottom": 769.5
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 151,
+          "scrollHeight": 151
         },
         {
-          "name": "XY PAD 2 ASSIGN",
+          "name": "REVERB",
           "rect": {
-            "x": 1679.0625,
-            "y": 663,
-            "width": 211.921875,
-            "height": 188,
-            "right": 1890.984375,
-            "bottom": 851
+            "x": 511.5,
+            "y": 673.5,
+            "width": 432,
+            "height": 96,
+            "right": 943.5,
+            "bottom": 769.5
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 62,
+          "scrollHeight": 62
         },
         {
-          "name": "REVERB — 63_SPRING / MOD_HALL",
+          "name": "XY / AUTOMATIONEXPAND",
           "rect": {
-            "x": 355.890625,
-            "y": 663,
-            "width": 663.375,
-            "height": 188,
-            "right": 1019.265625,
-            "bottom": 851
+            "x": 1636.5,
+            "y": 144,
+            "width": 222,
+            "height": 237,
+            "right": 1858.5,
+            "bottom": 381
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "PLAY — C3 TO C5",
           "rect": {
-            "x": 29,
-            "y": 858,
-            "width": 1862,
-            "height": 210,
-            "right": 1891,
-            "bottom": 1068
+            "x": 34.5,
+            "y": 789,
+            "width": 1852.5,
+            "height": 223.5,
+            "right": 1887,
+            "bottom": 1012.5
           },
-          "clientHeight": 206,
-          "scrollHeight": 206
+          "clientHeight": 149,
+          "scrollHeight": 149
         }
       ],
       "outside": [],
@@ -693,122 +641,1082 @@
         {
           "id": "osc-scope-1",
           "rect": {
-            "x": 522.28125,
-            "y": 127,
-            "width": 104.421875,
+            "x": 595.5,
+            "y": 211.5,
+            "width": 114,
             "height": 48,
-            "right": 626.703125,
-            "bottom": 175
+            "right": 709.5,
+            "bottom": 259.5
           }
         },
         {
           "id": "osc-scope-2",
           "rect": {
-            "x": 522.28125,
-            "y": 218,
-            "width": 104.421875,
+            "x": 595.5,
+            "y": 319.5,
+            "width": 114,
             "height": 48,
-            "right": 626.703125,
-            "bottom": 266
+            "right": 709.5,
+            "bottom": 367.5
           }
         },
         {
           "id": "lfo-scope-1",
           "rect": {
-            "x": 1057.6875,
-            "y": 133.5,
-            "width": 261.90625,
-            "height": 72,
-            "right": 1319.59375,
-            "bottom": 205.5
+            "x": 1150.5,
+            "y": 233.25,
+            "width": 217.5,
+            "height": 58.5,
+            "right": 1368,
+            "bottom": 291.75
           }
         },
         {
           "id": "lfo-scope-2",
           "rect": {
-            "x": 1384.59375,
-            "y": 133.5,
-            "width": 261.890625,
-            "height": 72,
-            "right": 1646.484375,
-            "bottom": 205.5
+            "x": 1398,
+            "y": 233.25,
+            "width": 219,
+            "height": 58.5,
+            "right": 1617,
+            "bottom": 291.75
           }
         },
         {
           "id": "filter-scope",
           "rect": {
-            "x": 609.125,
-            "y": 332,
-            "width": 148.515625,
-            "height": 138,
-            "right": 757.640625,
-            "bottom": 470
+            "x": 789,
+            "y": 426,
+            "width": 285,
+            "height": 93,
+            "right": 1074,
+            "bottom": 519
           }
         },
         {
           "id": "f-envelope",
           "rect": {
-            "x": 312.671875,
-            "y": 348.5,
-            "width": 197.4375,
-            "height": 105,
-            "right": 510.109375,
-            "bottom": 453.5
+            "x": 417,
+            "y": 423.75,
+            "width": 267,
+            "height": 97.5,
+            "right": 684,
+            "bottom": 521.25
           }
         },
         {
           "id": "a-envelope",
           "rect": {
-            "x": 312.671875,
-            "y": 532.5,
-            "width": 197.4375,
-            "height": 105,
-            "right": 510.109375,
-            "bottom": 637.5
+            "x": 417,
+            "y": 573,
+            "width": 267,
+            "height": 84,
+            "right": 684,
+            "bottom": 657
           }
         },
         {
           "id": "eq-scope",
           "rect": {
-            "x": 1036.265625,
-            "y": 332,
-            "width": 625.796875,
-            "height": 48,
-            "right": 1662.0625,
+            "x": 1485,
+            "y": 421.5,
+            "width": 363,
+            "height": 34.5,
+            "right": 1848,
+            "bottom": 456
+          }
+        },
+        {
+          "id": "routing-scope",
+          "rect": {
+            "x": 1254,
+            "y": 571.5,
+            "width": 363,
+            "height": 33,
+            "right": 1617,
+            "bottom": 604.5
+          }
+        },
+        {
+          "id": "xy1",
+          "rect": {
+            "x": 1645.5,
+            "y": 192,
+            "width": 93,
+            "height": 93,
+            "right": 1738.5,
+            "bottom": 285
+          }
+        },
+        {
+          "id": "xy2",
+          "rect": {
+            "x": 1747.5,
+            "y": 192,
+            "width": 93,
+            "height": 93,
+            "right": 1840.5,
+            "bottom": 285
+          }
+        }
+      ],
+      "font": "Orbitron, monospace",
+      "palette": {
+        "--teal": "#50efd5",
+        "--amber": "#e8b555",
+        "--pink": "#fa48c0",
+        "--cyan": "#48c9ee"
+      },
+      "oscillatorHitAreas": {
+        "panel": {
+          "x": 403.5,
+          "y": 144,
+          "width": 484.5,
+          "height": 237,
+          "right": 888,
+          "bottom": 381
+        },
+        "scope": {
+          "x": 595.5,
+          "y": 211.5,
+          "width": 114,
+          "height": 48,
+          "right": 709.5,
+          "bottom": 259.5
+        },
+        "rows": [
+          {
+            "row": {
+              "x": 412.5,
+              "y": 174,
+              "width": 466.5,
+              "height": 96,
+              "right": 879,
+              "bottom": 270
+            },
+            "dropdown": {
+              "x": 437.9296875,
+              "y": 184.5,
+              "width": 148.5703125,
+              "height": 21,
+              "right": 586.5,
+              "bottom": 205.5
+            },
+            "preview": {
+              "x": 595.5,
+              "y": 211.5,
+              "width": 114,
+              "height": 48,
+              "right": 709.5,
+              "bottom": 259.5
+            },
+            "knobs": [
+              {
+                "x": 736.125,
+                "y": 186,
+                "width": 43.5,
+                "height": 48,
+                "right": 779.625,
+                "bottom": 234
+              },
+              {
+                "x": 817.875,
+                "y": 186,
+                "width": 43.5,
+                "height": 48,
+                "right": 861.375,
+                "bottom": 234
+              }
+            ]
+          },
+          {
+            "row": {
+              "x": 412.5,
+              "y": 280.5,
+              "width": 466.5,
+              "height": 96,
+              "right": 879,
+              "bottom": 376.5
+            },
+            "dropdown": {
+              "x": 437.9296875,
+              "y": 293.25,
+              "width": 148.5703125,
+              "height": 21,
+              "right": 586.5,
+              "bottom": 314.25
+            },
+            "preview": {
+              "x": 595.5,
+              "y": 319.5,
+              "width": 114,
+              "height": 48,
+              "right": 709.5,
+              "bottom": 367.5
+            },
+            "knobs": [
+              {
+                "x": 736.125,
+                "y": 294,
+                "width": 43.5,
+                "height": 48,
+                "right": 779.625,
+                "bottom": 342
+              },
+              {
+                "x": 817.875,
+                "y": 294,
+                "width": 43.5,
+                "height": 48,
+                "right": 861.375,
+                "bottom": 342
+              }
+            ]
+          }
+        ],
+        "buttons": [
+          {
+            "value": "saw",
+            "box": {
+              "x": 412.5,
+              "y": 208.5,
+              "width": 33,
+              "height": 24,
+              "right": 445.5,
+              "bottom": 232.5
+            },
+            "hit": true
+          },
+          {
+            "value": "pulse",
+            "box": {
+              "x": 448.5,
+              "y": 208.5,
+              "width": 33,
+              "height": 24,
+              "right": 481.5,
+              "bottom": 232.5
+            },
+            "hit": true
+          },
+          {
+            "value": "triangle",
+            "box": {
+              "x": 484.5,
+              "y": 208.5,
+              "width": 33,
+              "height": 24,
+              "right": 517.5,
+              "bottom": 232.5
+            },
+            "hit": true
+          },
+          {
+            "value": "sine",
+            "box": {
+              "x": 520.5,
+              "y": 208.5,
+              "width": 33,
+              "height": 24,
+              "right": 553.5,
+              "bottom": 232.5
+            },
+            "hit": true
+          },
+          {
+            "value": "dwgs1",
+            "box": {
+              "x": 412.5,
+              "y": 235.5,
+              "width": 33,
+              "height": 24,
+              "right": 445.5,
+              "bottom": 259.5
+            },
+            "hit": true
+          },
+          {
+            "value": "dwgs2",
+            "box": {
+              "x": 448.5,
+              "y": 235.5,
+              "width": 33,
+              "height": 24,
+              "right": 481.5,
+              "bottom": 259.5
+            },
+            "hit": true
+          },
+          {
+            "value": "dwgs3",
+            "box": {
+              "x": 484.5,
+              "y": 235.5,
+              "width": 33,
+              "height": 24,
+              "right": 517.5,
+              "bottom": 259.5
+            },
+            "hit": true
+          }
+        ]
+      }
+    },
+    {
+      "mode": "hidden",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "document": {
+        "width": 1600,
+        "height": 900
+      },
+      "main": {
+        "x": 0,
+        "y": 50,
+        "width": 1600,
+        "height": 800,
+        "right": 1600,
+        "bottom": 850
+      },
+      "layout": {
+        "logicalWidth": 1280,
+        "logicalHeight": 640,
+        "width": 1600,
+        "height": 900,
+        "scale": 1.25,
+        "left": 0,
+        "top": 50,
+        "keyboardVisible": false
+      },
+      "panels": [
+        {
+          "name": "VOICE",
+          "rect": {
+            "x": 53.75,
+            "y": 120.859375,
+            "width": 275,
+            "height": 266.73828125,
+            "right": 328.75,
+            "bottom": 387.59765625
+          },
+          "clientHeight": 211,
+          "scrollHeight": 211
+        },
+        {
+          "name": "OSCILLATORS",
+          "rect": {
+            "x": 336.25,
+            "y": 120.859375,
+            "width": 403.75,
+            "height": 266.73828125,
+            "right": 740,
+            "bottom": 387.59765625
+          },
+          "clientHeight": 211,
+          "scrollHeight": 211
+        },
+        {
+          "name": "MIXER",
+          "rect": {
+            "x": 748.75,
+            "y": 120.859375,
+            "width": 192.5,
+            "height": 266.73828125,
+            "right": 941.25,
+            "bottom": 387.59765625
+          },
+          "clientHeight": 211,
+          "scrollHeight": 211
+        },
+        {
+          "name": "LFO 1",
+          "rect": {
+            "x": 950,
+            "y": 120.859375,
+            "width": 198.75,
+            "height": 266.73828125,
+            "right": 1148.75,
+            "bottom": 387.59765625
+          },
+          "clientHeight": 211,
+          "scrollHeight": 211
+        },
+        {
+          "name": "LFO 2",
+          "rect": {
+            "x": 1156.25,
+            "y": 120.859375,
+            "width": 200,
+            "height": 266.73828125,
+            "right": 1356.25,
+            "bottom": 387.59765625
+          },
+          "clientHeight": 211,
+          "scrollHeight": 211
+        },
+        {
+          "name": "FILTER ENVELOPE",
+          "rect": {
+            "x": 53.75,
+            "y": 397.734375,
+            "width": 525,
+            "height": 158.69140625,
+            "right": 578.75,
+            "bottom": 556.42578125
+          },
+          "clientHeight": 125,
+          "scrollHeight": 125
+        },
+        {
+          "name": "AMP ENVELOPE",
+          "rect": {
+            "x": 53.75,
+            "y": 566.5625,
+            "width": 525,
+            "height": 141.796875,
+            "right": 578.75,
+            "bottom": 708.359375
+          },
+          "clientHeight": 111,
+          "scrollHeight": 111
+        },
+        {
+          "name": "FILTER",
+          "rect": {
+            "x": 585,
+            "y": 397.734375,
+            "width": 637.5,
+            "height": 158.69140625,
+            "right": 1222.5,
+            "bottom": 556.42578125
+          },
+          "clientHeight": 125,
+          "scrollHeight": 125
+        },
+        {
+          "name": "EQDETAILS",
+          "rect": {
+            "x": 1228.75,
+            "y": 397.734375,
+            "width": 320,
+            "height": 158.69140625,
+            "right": 1548.75,
+            "bottom": 556.42578125
+          },
+          "clientHeight": 125,
+          "scrollHeight": 125
+        },
+        {
+          "name": "AMP",
+          "rect": {
+            "x": 585,
+            "y": 566.5625,
+            "width": 201.25,
+            "height": 141.796875,
+            "right": 786.25,
+            "bottom": 708.359375
+          },
+          "clientHeight": 111,
+          "scrollHeight": 111
+        },
+        {
+          "name": "MOD FX",
+          "rect": {
+            "x": 793.75,
+            "y": 566.5625,
+            "width": 236.25,
+            "height": 258.28125,
+            "right": 1030,
+            "bottom": 824.84375
+          },
+          "clientHeight": 205,
+          "scrollHeight": 205
+        },
+        {
+          "name": "MODULATION VISUALISER / VIRTUAL PATCH",
+          "rect": {
+            "x": 1036.25,
+            "y": 566.5625,
+            "width": 320,
+            "height": 258.28125,
+            "right": 1356.25,
+            "bottom": 824.84375
+          },
+          "clientHeight": 205,
+          "scrollHeight": 205
+        },
+        {
+          "name": "DELAY",
+          "rect": {
+            "x": 53.75,
+            "y": 716.81640625,
+            "width": 365,
+            "height": 108.046875,
+            "right": 418.75,
+            "bottom": 824.86328125
+          },
+          "clientHeight": 84,
+          "scrollHeight": 84
+        },
+        {
+          "name": "ARP / STEP SEQUENCER",
+          "rect": {
+            "x": 1363.75,
+            "y": 566.5625,
+            "width": 185,
+            "height": 258.28125,
+            "right": 1548.75,
+            "bottom": 824.84375
+          },
+          "clientHeight": 205,
+          "scrollHeight": 205
+        },
+        {
+          "name": "REVERB",
+          "rect": {
+            "x": 426.25,
+            "y": 716.81640625,
+            "width": 360,
+            "height": 108.046875,
+            "right": 786.25,
+            "bottom": 824.86328125
+          },
+          "clientHeight": 84,
+          "scrollHeight": 84
+        },
+        {
+          "name": "XY / AUTOMATIONEXPAND",
+          "rect": {
+            "x": 1363.75,
+            "y": 120.859375,
+            "width": 185,
+            "height": 266.73828125,
+            "right": 1548.75,
+            "bottom": 387.59765625
+          },
+          "clientHeight": 211,
+          "scrollHeight": 211
+        }
+      ],
+      "outside": [],
+      "displays": [
+        {
+          "id": "osc-scope-1",
+          "rect": {
+            "x": 496.25,
+            "y": 183.359375,
+            "width": 95,
+            "height": 55,
+            "right": 591.25,
+            "bottom": 238.359375
+          }
+        },
+        {
+          "id": "osc-scope-2",
+          "rect": {
+            "x": 496.25,
+            "y": 307.96875,
+            "width": 95,
+            "height": 55,
+            "right": 591.25,
+            "bottom": 362.96875
+          }
+        },
+        {
+          "id": "lfo-scope-1",
+          "rect": {
+            "x": 958.75,
+            "y": 195.234375,
+            "width": 181.25,
+            "height": 73.75,
+            "right": 1140,
+            "bottom": 268.984375
+          }
+        },
+        {
+          "id": "lfo-scope-2",
+          "rect": {
+            "x": 1165,
+            "y": 195.234375,
+            "width": 182.5,
+            "height": 73.75,
+            "right": 1347.5,
+            "bottom": 268.984375
+          }
+        },
+        {
+          "id": "filter-scope",
+          "rect": {
+            "x": 657.5,
+            "y": 423.984375,
+            "width": 237.5,
+            "height": 102.5,
+            "right": 895,
+            "bottom": 526.484375
+          }
+        },
+        {
+          "id": "f-envelope",
+          "rect": {
+            "x": 347.5,
+            "y": 430.8203125,
+            "width": 222.5,
+            "height": 112.5,
+            "right": 570,
+            "bottom": 543.3203125
+          }
+        },
+        {
+          "id": "a-envelope",
+          "rect": {
+            "x": 347.5,
+            "y": 592.8125,
+            "width": 222.5,
+            "height": 112.5,
+            "right": 570,
+            "bottom": 705.3125
+          }
+        },
+        {
+          "id": "eq-scope",
+          "rect": {
+            "x": 1237.5,
+            "y": 423.984375,
+            "width": 302.5,
+            "height": 50,
+            "right": 1540,
+            "bottom": 473.984375
+          }
+        },
+        {
+          "id": "routing-scope",
+          "rect": {
+            "x": 1045,
+            "y": 592.8125,
+            "width": 302.5,
+            "height": 27.5,
+            "right": 1347.5,
+            "bottom": 620.3125
+          }
+        },
+        {
+          "id": "xy1",
+          "rect": {
+            "x": 1371.25,
+            "y": 160.859375,
+            "width": 77.5,
+            "height": 100,
+            "right": 1448.75,
+            "bottom": 260.859375
+          }
+        },
+        {
+          "id": "xy2",
+          "rect": {
+            "x": 1456.25,
+            "y": 160.859375,
+            "width": 77.5,
+            "height": 100,
+            "right": 1533.75,
+            "bottom": 260.859375
+          }
+        }
+      ],
+      "font": "Orbitron, monospace",
+      "palette": {
+        "--teal": "#50efd5",
+        "--amber": "#e8b555",
+        "--pink": "#fa48c0",
+        "--cyan": "#48c9ee"
+      },
+      "preserved": {
+        "context": true,
+        "processor": true,
+        "running": true,
+        "active": true,
+        "hold": true,
+        "patch": true
+      },
+      "audio": {
+        "rms": 0.054410983160275476,
+        "stereoDifferenceRms": 0,
+        "finite": true
+      }
+    },
+    {
+      "mode": "visible",
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "document": {
+        "width": 1600,
+        "height": 900
+      },
+      "main": {
+        "x": 0,
+        "y": 50,
+        "width": 1600,
+        "height": 800,
+        "right": 1600,
+        "bottom": 850
+      },
+      "layout": {
+        "logicalWidth": 1280,
+        "logicalHeight": 640,
+        "width": 1600,
+        "height": 900,
+        "scale": 1.25,
+        "left": 0,
+        "top": 50,
+        "keyboardVisible": true
+      },
+      "panels": [
+        {
+          "name": "VOICE",
+          "rect": {
+            "x": 53.75,
+            "y": 120,
+            "width": 275,
+            "height": 197.5,
+            "right": 328.75,
+            "bottom": 317.5
+          },
+          "clientHeight": 156,
+          "scrollHeight": 156
+        },
+        {
+          "name": "OSCILLATORS",
+          "rect": {
+            "x": 336.25,
+            "y": 120,
+            "width": 403.75,
+            "height": 197.5,
+            "right": 740,
+            "bottom": 317.5
+          },
+          "clientHeight": 156,
+          "scrollHeight": 156
+        },
+        {
+          "name": "MIXER",
+          "rect": {
+            "x": 748.75,
+            "y": 120,
+            "width": 192.5,
+            "height": 197.5,
+            "right": 941.25,
+            "bottom": 317.5
+          },
+          "clientHeight": 156,
+          "scrollHeight": 156
+        },
+        {
+          "name": "LFO 1",
+          "rect": {
+            "x": 950,
+            "y": 120,
+            "width": 198.75,
+            "height": 197.5,
+            "right": 1148.75,
+            "bottom": 317.5
+          },
+          "clientHeight": 156,
+          "scrollHeight": 156
+        },
+        {
+          "name": "LFO 2",
+          "rect": {
+            "x": 1156.25,
+            "y": 120,
+            "width": 200,
+            "height": 197.5,
+            "right": 1356.25,
+            "bottom": 317.5
+          },
+          "clientHeight": 156,
+          "scrollHeight": 156
+        },
+        {
+          "name": "FILTER ENVELOPE",
+          "rect": {
+            "x": 53.75,
+            "y": 325,
+            "width": 525,
+            "height": 117.5,
+            "right": 578.75,
+            "bottom": 442.5
+          },
+          "clientHeight": 92,
+          "scrollHeight": 92
+        },
+        {
+          "name": "AMP ENVELOPE",
+          "rect": {
+            "x": 53.75,
+            "y": 450,
+            "width": 525,
+            "height": 105,
+            "right": 578.75,
+            "bottom": 555
+          },
+          "clientHeight": 82,
+          "scrollHeight": 82
+        },
+        {
+          "name": "FILTER",
+          "rect": {
+            "x": 585,
+            "y": 325,
+            "width": 637.5,
+            "height": 117.5,
+            "right": 1222.5,
+            "bottom": 442.5
+          },
+          "clientHeight": 92,
+          "scrollHeight": 92
+        },
+        {
+          "name": "EQDETAILS",
+          "rect": {
+            "x": 1228.75,
+            "y": 325,
+            "width": 320,
+            "height": 117.5,
+            "right": 1548.75,
+            "bottom": 442.5
+          },
+          "clientHeight": 92,
+          "scrollHeight": 92
+        },
+        {
+          "name": "AMP",
+          "rect": {
+            "x": 585,
+            "y": 450,
+            "width": 201.25,
+            "height": 105,
+            "right": 786.25,
+            "bottom": 555
+          },
+          "clientHeight": 82,
+          "scrollHeight": 82
+        },
+        {
+          "name": "MOD FX",
+          "rect": {
+            "x": 793.75,
+            "y": 450,
+            "width": 236.25,
+            "height": 191.25,
+            "right": 1030,
+            "bottom": 641.25
+          },
+          "clientHeight": 151,
+          "scrollHeight": 151
+        },
+        {
+          "name": "MODULATION VISUALISER / VIRTUAL PATCH",
+          "rect": {
+            "x": 1036.25,
+            "y": 450,
+            "width": 320,
+            "height": 191.25,
+            "right": 1356.25,
+            "bottom": 641.25
+          },
+          "clientHeight": 151,
+          "scrollHeight": 151
+        },
+        {
+          "name": "DELAY",
+          "rect": {
+            "x": 53.75,
+            "y": 561.25,
+            "width": 365,
+            "height": 80,
+            "right": 418.75,
+            "bottom": 641.25
+          },
+          "clientHeight": 62,
+          "scrollHeight": 62
+        },
+        {
+          "name": "ARP / STEP SEQUENCER",
+          "rect": {
+            "x": 1363.75,
+            "y": 450,
+            "width": 185,
+            "height": 191.25,
+            "right": 1548.75,
+            "bottom": 641.25
+          },
+          "clientHeight": 151,
+          "scrollHeight": 151
+        },
+        {
+          "name": "REVERB",
+          "rect": {
+            "x": 426.25,
+            "y": 561.25,
+            "width": 360,
+            "height": 80,
+            "right": 786.25,
+            "bottom": 641.25
+          },
+          "clientHeight": 62,
+          "scrollHeight": 62
+        },
+        {
+          "name": "XY / AUTOMATIONEXPAND",
+          "rect": {
+            "x": 1363.75,
+            "y": 120,
+            "width": 185,
+            "height": 197.5,
+            "right": 1548.75,
+            "bottom": 317.5
+          },
+          "clientHeight": 156,
+          "scrollHeight": 156
+        },
+        {
+          "name": "PLAY — C3 TO C5",
+          "rect": {
+            "x": 28.75,
+            "y": 657.5,
+            "width": 1543.75,
+            "height": 186.25,
+            "right": 1572.5,
+            "bottom": 843.75
+          },
+          "clientHeight": 149,
+          "scrollHeight": 149
+        }
+      ],
+      "outside": [],
+      "displays": [
+        {
+          "id": "osc-scope-1",
+          "rect": {
+            "x": 496.25,
+            "y": 176.25,
+            "width": 95,
+            "height": 40,
+            "right": 591.25,
+            "bottom": 216.25
+          }
+        },
+        {
+          "id": "osc-scope-2",
+          "rect": {
+            "x": 496.25,
+            "y": 266.25,
+            "width": 95,
+            "height": 40,
+            "right": 591.25,
+            "bottom": 306.25
+          }
+        },
+        {
+          "id": "lfo-scope-1",
+          "rect": {
+            "x": 958.75,
+            "y": 194.375,
+            "width": 181.25,
+            "height": 48.75,
+            "right": 1140,
+            "bottom": 243.125
+          }
+        },
+        {
+          "id": "lfo-scope-2",
+          "rect": {
+            "x": 1165,
+            "y": 194.375,
+            "width": 182.5,
+            "height": 48.75,
+            "right": 1347.5,
+            "bottom": 243.125
+          }
+        },
+        {
+          "id": "filter-scope",
+          "rect": {
+            "x": 657.5,
+            "y": 355,
+            "width": 237.5,
+            "height": 77.5,
+            "right": 895,
+            "bottom": 432.5
+          }
+        },
+        {
+          "id": "f-envelope",
+          "rect": {
+            "x": 347.5,
+            "y": 353.125,
+            "width": 222.5,
+            "height": 81.25,
+            "right": 570,
+            "bottom": 434.375
+          }
+        },
+        {
+          "id": "a-envelope",
+          "rect": {
+            "x": 347.5,
+            "y": 477.5,
+            "width": 222.5,
+            "height": 70,
+            "right": 570,
+            "bottom": 547.5
+          }
+        },
+        {
+          "id": "eq-scope",
+          "rect": {
+            "x": 1237.5,
+            "y": 351.25,
+            "width": 302.5,
+            "height": 28.75,
+            "right": 1540,
             "bottom": 380
           }
         },
         {
           "id": "routing-scope",
           "rect": {
-            "x": 1036.265625,
-            "y": 526,
-            "width": 625.796875,
-            "height": 42,
-            "right": 1662.0625,
-            "bottom": 568
+            "x": 1045,
+            "y": 476.25,
+            "width": 302.5,
+            "height": 27.5,
+            "right": 1347.5,
+            "bottom": 503.75
           }
         },
         {
           "id": "xy1",
           "rect": {
-            "x": 1674.484375,
-            "y": 108,
-            "width": 205.5,
-            "height": 138,
-            "right": 1879.984375,
-            "bottom": 246
+            "x": 1371.25,
+            "y": 160,
+            "width": 77.5,
+            "height": 77.5,
+            "right": 1448.75,
+            "bottom": 237.5
           }
         },
         {
           "id": "xy2",
           "rect": {
-            "x": 1690.0625,
-            "y": 700,
-            "width": 189.921875,
-            "height": 113,
-            "right": 1879.984375,
-            "bottom": 813
+            "x": 1456.25,
+            "y": 160,
+            "width": 77.5,
+            "height": 77.5,
+            "right": 1533.75,
+            "bottom": 237.5
           }
         }
       ],
@@ -821,1119 +1729,107 @@
       },
       "oscillatorHitAreas": {
         "panel": {
-          "x": 355.890625,
-          "y": 71,
-          "width": 398.734375,
-          "height": 218,
-          "right": 754.625,
-          "bottom": 289
+          "x": 336.25,
+          "y": 120,
+          "width": 403.75,
+          "height": 197.5,
+          "right": 740,
+          "bottom": 317.5
         },
         "scope": {
-          "x": 522.28125,
-          "y": 127,
-          "width": 104.421875,
-          "height": 48,
-          "right": 626.703125,
-          "bottom": 175
-        },
-        "rows": [
-          {
-            "row": {
-              "x": 366.890625,
-              "y": 108,
-              "width": 376.734375,
-              "height": 81,
-              "right": 743.625,
-              "bottom": 189
-            },
-            "dropdown": {
-              "x": 394.21875,
-              "y": 107.5,
-              "width": 121.0625,
-              "height": 23,
-              "right": 515.28125,
-              "bottom": 130.5
-            },
-            "preview": {
-              "x": 522.28125,
-              "y": 127,
-              "width": 104.421875,
-              "height": 48,
-              "right": 626.703125,
-              "bottom": 175
-            },
-            "knobs": [
-              {
-                "x": 641.171875,
-                "y": 110,
-                "width": 38,
-                "height": 46,
-                "right": 679.171875,
-                "bottom": 156
-              },
-              {
-                "x": 698.140625,
-                "y": 110,
-                "width": 38,
-                "height": 46,
-                "right": 736.140625,
-                "bottom": 156
-              }
-            ]
-          },
-          {
-            "row": {
-              "x": 366.890625,
-              "y": 194,
-              "width": 376.734375,
-              "height": 81,
-              "right": 743.625,
-              "bottom": 275
-            },
-            "dropdown": {
-              "x": 394.21875,
-              "y": 198.5,
-              "width": 121.0625,
-              "height": 23,
-              "right": 515.28125,
-              "bottom": 221.5
-            },
-            "preview": {
-              "x": 522.28125,
-              "y": 218,
-              "width": 104.421875,
-              "height": 48,
-              "right": 626.703125,
-              "bottom": 266
-            },
-            "knobs": [
-              {
-                "x": 641.171875,
-                "y": 201,
-                "width": 38,
-                "height": 46,
-                "right": 679.171875,
-                "bottom": 247
-              },
-              {
-                "x": 698.140625,
-                "y": 201,
-                "width": 38,
-                "height": 46,
-                "right": 736.140625,
-                "bottom": 247
-              }
-            ]
-          }
-        ],
-        "buttons": [
-          {
-            "value": "saw",
-            "box": {
-              "x": 366.890625,
-              "y": 133,
-              "width": 34.84375,
-              "height": 24,
-              "right": 401.734375,
-              "bottom": 157
-            },
-            "hit": true
-          },
-          {
-            "value": "pulse",
-            "box": {
-              "x": 404.734375,
-              "y": 133,
-              "width": 34.84375,
-              "height": 24,
-              "right": 439.578125,
-              "bottom": 157
-            },
-            "hit": true
-          },
-          {
-            "value": "triangle",
-            "box": {
-              "x": 442.578125,
-              "y": 133,
-              "width": 34.84375,
-              "height": 24,
-              "right": 477.421875,
-              "bottom": 157
-            },
-            "hit": true
-          },
-          {
-            "value": "sine",
-            "box": {
-              "x": 480.421875,
-              "y": 133,
-              "width": 34.859375,
-              "height": 24,
-              "right": 515.28125,
-              "bottom": 157
-            },
-            "hit": true
-          },
-          {
-            "value": "dwgs1",
-            "box": {
-              "x": 366.890625,
-              "y": 160,
-              "width": 34.84375,
-              "height": 24,
-              "right": 401.734375,
-              "bottom": 184
-            },
-            "hit": true
-          },
-          {
-            "value": "dwgs2",
-            "box": {
-              "x": 404.734375,
-              "y": 160,
-              "width": 34.84375,
-              "height": 24,
-              "right": 439.578125,
-              "bottom": 184
-            },
-            "hit": true
-          },
-          {
-            "value": "dwgs3",
-            "box": {
-              "x": 442.578125,
-              "y": 160,
-              "width": 34.84375,
-              "height": 24,
-              "right": 477.421875,
-              "bottom": 184
-            },
-            "hit": true
-          }
-        ]
-      }
-    },
-    {
-      "mode": "hidden",
-      "viewport": {
-        "width": 1600,
-        "height": 900
-      },
-      "document": {
-        "width": 1600,
-        "height": 900
-      },
-      "main": {
-        "x": 0,
-        "y": 0,
-        "width": 1600,
-        "height": 900,
-        "right": 1600,
-        "bottom": 900
-      },
-      "layout": {
-        "logicalWidth": 1920,
-        "logicalHeight": 1080,
-        "width": 1600,
-        "height": 900,
-        "scale": 0.8333333333333334,
-        "left": 0,
-        "top": 0,
-        "keyboardVisible": false
-      },
-      "panels": [
-        {
-          "name": "VOICE",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 59.166664123535156,
-            "width": 267.4088439941406,
-            "height": 216.66665649414062,
-            "right": 291.5755100250244,
-            "bottom": 275.8333206176758
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "OSCILLATORS",
-          "rect": {
-            "x": 296.57550048828125,
-            "y": 59.166664123535156,
-            "width": 332.27862548828125,
-            "height": 216.66665649414062,
-            "right": 628.8541259765625,
-            "bottom": 275.8333206176758
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "MIXER",
-          "rect": {
-            "x": 633.8541259765625,
-            "y": 59.166664123535156,
-            "width": 202.5521240234375,
-            "height": 216.66665649414062,
-            "right": 836.40625,
-            "bottom": 275.8333206176758
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "LFO 1",
-          "rect": {
-            "x": 841.40625,
-            "y": 59.166664123535156,
-            "width": 267.421875,
-            "height": 216.66665649414062,
-            "right": 1108.828125,
-            "bottom": 275.8333206176758
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "LFO 2",
-          "rect": {
-            "x": 1113.828125,
-            "y": 59.166664123535156,
-            "width": 267.4088134765625,
-            "height": 216.66665649414062,
-            "right": 1381.2369384765625,
-            "bottom": 275.8333206176758
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "XY PAD 1 ASSIGN",
-          "rect": {
-            "x": 1386.2369384765625,
-            "y": 59.166664123535156,
-            "width": 189.5833740234375,
-            "height": 216.66665649414062,
-            "right": 1575.8203125,
-            "bottom": 275.8333206176758
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "FILTER ENVELOPE",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 280.83331298828125,
-            "width": 410.1041564941406,
-            "height": 203.33334350585938,
-            "right": 434.2708225250244,
-            "bottom": 484.1666564941406
-          },
-          "clientHeight": 242,
-          "scrollHeight": 242
-        },
-        {
-          "name": "AMP ENVELOPE",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 489.1666564941406,
-            "width": 410.1041564941406,
-            "height": 176.66665649414062,
-            "right": 434.2708225250244,
-            "bottom": 665.8333129882812
-          },
-          "clientHeight": 210,
-          "scrollHeight": 210
-        },
-        {
-          "name": "FILTER",
-          "rect": {
-            "x": 439.27081298828125,
-            "y": 280.83331298828125,
-            "width": 410.1171875,
-            "height": 203.33334350585938,
-            "right": 849.3880004882812,
-            "bottom": 484.1666564941406
-          },
-          "clientHeight": 242,
-          "scrollHeight": 242
-        },
-        {
-          "name": "EQ",
-          "rect": {
-            "x": 854.3880004882812,
-            "y": 280.83331298828125,
-            "width": 539.8307495117188,
-            "height": 203.33334350585938,
-            "right": 1394.21875,
-            "bottom": 484.1666564941406
-          },
-          "clientHeight": 242,
-          "scrollHeight": 242
-        },
-        {
-          "name": "AUTOMATION",
-          "rect": {
-            "x": 1399.21875,
-            "y": 280.83331298828125,
-            "width": 176.6015625,
-            "height": 203.33334350585938,
-            "right": 1575.8203125,
-            "bottom": 484.1666564941406
-          },
-          "clientHeight": 242,
-          "scrollHeight": 242
-        },
-        {
-          "name": "AMP",
-          "rect": {
-            "x": 439.27081298828125,
-            "y": 489.1666564941406,
-            "width": 189.58331298828125,
-            "height": 176.66665649414062,
-            "right": 628.8541259765625,
-            "bottom": 665.8333129882812
-          },
-          "clientHeight": 210,
-          "scrollHeight": 210
-        },
-        {
-          "name": "MOD FX",
-          "rect": {
-            "x": 633.8541259765625,
-            "y": 489.1666564941406,
-            "width": 215.53387451171875,
-            "height": 176.66665649414062,
-            "right": 849.3880004882812,
-            "bottom": 665.8333129882812
-          },
-          "clientHeight": 210,
-          "scrollHeight": 210
-        },
-        {
-          "name": "MODULATION VISUALISER / VIRTUAL PATCH",
-          "rect": {
-            "x": 854.3880004882812,
-            "y": 489.1666564941406,
-            "width": 539.8307495117188,
-            "height": 391.6666564941406,
-            "right": 1394.21875,
-            "bottom": 880.8333129882812
-          },
-          "clientHeight": 468,
-          "scrollHeight": 468
-        },
-        {
-          "name": "DELAY",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 670.8333129882812,
-            "width": 267.4088439941406,
-            "height": 210,
-            "right": 291.5755100250244,
-            "bottom": 880.8333129882812
-          },
-          "clientHeight": 250,
-          "scrollHeight": 250
-        },
-        {
-          "name": "ARP / STEP SEQUENCER",
-          "rect": {
-            "x": 1399.21875,
-            "y": 489.1666564941406,
-            "width": 176.6015625,
-            "height": 176.66665649414062,
-            "right": 1575.8203125,
-            "bottom": 665.8333129882812
-          },
-          "clientHeight": 210,
-          "scrollHeight": 210
-        },
-        {
-          "name": "XY PAD 2 ASSIGN",
-          "rect": {
-            "x": 1399.21875,
-            "y": 670.8333129882812,
-            "width": 176.6015625,
-            "height": 210,
-            "right": 1575.8203125,
-            "bottom": 880.8333129882812
-          },
-          "clientHeight": 250,
-          "scrollHeight": 250
-        },
-        {
-          "name": "REVERB — 63_SPRING / MOD_HALL",
-          "rect": {
-            "x": 296.57550048828125,
-            "y": 670.8333129882812,
-            "width": 552.8125,
-            "height": 210,
-            "right": 849.3880004882812,
-            "bottom": 880.8333129882812
-          },
-          "clientHeight": 250,
-          "scrollHeight": 250
-        }
-      ],
-      "outside": [],
-      "displays": [
-        {
-          "id": "osc-scope-1",
-          "rect": {
-            "x": 435.234375,
-            "y": 105.83332824707031,
-            "width": 87.0181884765625,
-            "height": 58.33332824707031,
-            "right": 522.2525634765625,
-            "bottom": 164.16665649414062
-          }
-        },
-        {
-          "id": "osc-scope-2",
-          "rect": {
-            "x": 435.234375,
-            "y": 199.16665649414062,
-            "width": 87.0181884765625,
-            "height": 58.333343505859375,
-            "right": 522.2525634765625,
-            "bottom": 257.5
-          }
-        },
-        {
-          "id": "lfo-scope-1",
-          "rect": {
-            "x": 881.40625,
-            "y": 118.33332824707031,
-            "width": 218.255126953125,
-            "height": 75,
-            "right": 1099.661376953125,
-            "bottom": 193.3333282470703
-          }
-        },
-        {
-          "id": "lfo-scope-2",
-          "rect": {
-            "x": 1153.828125,
-            "y": 118.33332824707031,
-            "width": 218.2421875,
-            "height": 75,
-            "right": 1372.0703125,
-            "bottom": 193.3333282470703
-          }
-        },
-        {
-          "id": "filter-scope",
-          "rect": {
-            "x": 507.6041564941406,
-            "y": 311.6666564941406,
-            "width": 123.76303100585938,
-            "height": 170,
-            "right": 631.3671875,
-            "bottom": 481.6666564941406
-          }
-        },
-        {
-          "id": "f-envelope",
-          "rect": {
-            "x": 260.55987548828125,
-            "y": 327.5,
-            "width": 164.53125,
-            "height": 120.83331298828125,
-            "right": 425.09112548828125,
-            "bottom": 448.33331298828125
-          }
-        },
-        {
-          "id": "a-envelope",
-          "rect": {
-            "x": 260.55987548828125,
-            "y": 522.9166259765625,
-            "width": 164.53125,
-            "height": 120.8333740234375,
-            "right": 425.09112548828125,
-            "bottom": 643.75
-          }
-        },
-        {
-          "id": "eq-scope",
-          "rect": {
-            "x": 863.5546875,
-            "y": 311.6666564941406,
-            "width": 521.497314453125,
-            "height": 66.66665649414062,
-            "right": 1385.052001953125,
-            "bottom": 378.33331298828125
-          }
-        },
-        {
-          "id": "routing-scope",
-          "rect": {
-            "x": 863.5546875,
-            "y": 520,
-            "width": 521.497314453125,
-            "height": 60,
-            "right": 1385.052001953125,
-            "bottom": 580
-          }
-        },
-        {
-          "id": "xy1",
-          "rect": {
-            "x": 1395.403564453125,
-            "y": 90,
-            "width": 171.25,
-            "height": 141.66665649414062,
-            "right": 1566.653564453125,
-            "bottom": 231.66665649414062
-          }
-        },
-        {
-          "id": "xy2",
-          "rect": {
-            "x": 1408.3853759765625,
-            "y": 701.6666259765625,
-            "width": 158.2681884765625,
-            "height": 141.66668701171875,
-            "right": 1566.653564453125,
-            "bottom": 843.3333129882812
-          }
-        }
-      ],
-      "font": "Orbitron, monospace",
-      "palette": {
-        "--teal": "#50efd5",
-        "--amber": "#e8b555",
-        "--pink": "#fa48c0",
-        "--cyan": "#48c9ee"
-      },
-      "preserved": {
-        "context": true,
-        "processor": true,
-        "running": true,
-        "active": true,
-        "hold": true,
-        "patch": true
-      },
-      "audio": {
-        "rms": 0.055555086613778996,
-        "stereoDifferenceRms": 0,
-        "finite": true
-      }
-    },
-    {
-      "mode": "visible",
-      "viewport": {
-        "width": 1600,
-        "height": 900
-      },
-      "document": {
-        "width": 1600,
-        "height": 900
-      },
-      "main": {
-        "x": 0,
-        "y": 0,
-        "width": 1600,
-        "height": 900,
-        "right": 1600,
-        "bottom": 900
-      },
-      "layout": {
-        "logicalWidth": 1920,
-        "logicalHeight": 1080,
-        "width": 1600,
-        "height": 900,
-        "scale": 0.8333333333333334,
-        "left": 0,
-        "top": 0,
-        "keyboardVisible": true
-      },
-      "panels": [
-        {
-          "name": "VOICE",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 59.166664123535156,
-            "width": 267.4088439941406,
-            "height": 181.66665649414062,
-            "right": 291.5755100250244,
-            "bottom": 240.83332061767578
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "OSCILLATORS",
-          "rect": {
-            "x": 296.57550048828125,
-            "y": 59.166664123535156,
-            "width": 332.27862548828125,
-            "height": 181.66665649414062,
-            "right": 628.8541259765625,
-            "bottom": 240.83332061767578
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "MIXER",
-          "rect": {
-            "x": 633.8541259765625,
-            "y": 59.166664123535156,
-            "width": 202.5521240234375,
-            "height": 181.66665649414062,
-            "right": 836.40625,
-            "bottom": 240.83332061767578
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "LFO 1",
-          "rect": {
-            "x": 841.40625,
-            "y": 59.166664123535156,
-            "width": 267.421875,
-            "height": 181.66665649414062,
-            "right": 1108.828125,
-            "bottom": 240.83332061767578
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "LFO 2",
-          "rect": {
-            "x": 1113.828125,
-            "y": 59.166664123535156,
-            "width": 267.4088134765625,
-            "height": 181.66665649414062,
-            "right": 1381.2369384765625,
-            "bottom": 240.83332061767578
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "XY PAD 1 ASSIGN",
-          "rect": {
-            "x": 1386.2369384765625,
-            "y": 59.166664123535156,
-            "width": 189.5833740234375,
-            "height": 181.66665649414062,
-            "right": 1575.8203125,
-            "bottom": 240.83332061767578
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "FILTER ENVELOPE",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 245.8333282470703,
-            "width": 410.1041564941406,
-            "height": 156.6666717529297,
-            "right": 434.2708225250244,
-            "bottom": 402.5
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "AMP ENVELOPE",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 407.5,
-            "width": 410.1041564941406,
-            "height": 140,
-            "right": 434.2708225250244,
-            "bottom": 547.5
-          },
-          "clientHeight": 166,
-          "scrollHeight": 166
-        },
-        {
-          "name": "FILTER",
-          "rect": {
-            "x": 439.27081298828125,
-            "y": 245.8333282470703,
-            "width": 410.1171875,
-            "height": 156.6666717529297,
-            "right": 849.3880004882812,
-            "bottom": 402.5
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "EQ",
-          "rect": {
-            "x": 854.3880004882812,
-            "y": 245.8333282470703,
-            "width": 539.8307495117188,
-            "height": 156.6666717529297,
-            "right": 1394.21875,
-            "bottom": 402.5
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "AUTOMATION",
-          "rect": {
-            "x": 1399.21875,
-            "y": 245.8333282470703,
-            "width": 176.6015625,
-            "height": 156.6666717529297,
-            "right": 1575.8203125,
-            "bottom": 402.5
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "AMP",
-          "rect": {
-            "x": 439.27081298828125,
-            "y": 407.5,
-            "width": 189.58331298828125,
-            "height": 140,
-            "right": 628.8541259765625,
-            "bottom": 547.5
-          },
-          "clientHeight": 166,
-          "scrollHeight": 166
-        },
-        {
-          "name": "MOD FX",
-          "rect": {
-            "x": 633.8541259765625,
-            "y": 407.5,
-            "width": 215.53387451171875,
-            "height": 140,
-            "right": 849.3880004882812,
-            "bottom": 547.5
-          },
-          "clientHeight": 166,
-          "scrollHeight": 166
-        },
-        {
-          "name": "MODULATION VISUALISER / VIRTUAL PATCH",
-          "rect": {
-            "x": 854.3880004882812,
-            "y": 407.5,
-            "width": 539.8307495117188,
-            "height": 301.6666259765625,
-            "right": 1394.21875,
-            "bottom": 709.1666259765625
-          },
-          "clientHeight": 360,
-          "scrollHeight": 360
-        },
-        {
-          "name": "DELAY",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 552.5,
-            "width": 267.4088439941406,
-            "height": 156.6666259765625,
-            "right": 291.5755100250244,
-            "bottom": 709.1666259765625
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "ARP / STEP SEQUENCER",
-          "rect": {
-            "x": 1399.21875,
-            "y": 407.5,
-            "width": 176.6015625,
-            "height": 140,
-            "right": 1575.8203125,
-            "bottom": 547.5
-          },
-          "clientHeight": 166,
-          "scrollHeight": 166
-        },
-        {
-          "name": "XY PAD 2 ASSIGN",
-          "rect": {
-            "x": 1399.21875,
-            "y": 552.5,
-            "width": 176.6015625,
-            "height": 156.6666259765625,
-            "right": 1575.8203125,
-            "bottom": 709.1666259765625
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "REVERB — 63_SPRING / MOD_HALL",
-          "rect": {
-            "x": 296.57550048828125,
-            "y": 552.5,
-            "width": 552.8125,
-            "height": 156.6666259765625,
-            "right": 849.3880004882812,
-            "bottom": 709.1666259765625
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "PLAY — C3 TO C5",
-          "rect": {
-            "x": 24.16666603088379,
-            "y": 715,
-            "width": 1551.6666259765625,
-            "height": 175,
-            "right": 1575.8332920074463,
-            "bottom": 890
-          },
-          "clientHeight": 206,
-          "scrollHeight": 206
-        }
-      ],
-      "outside": [],
-      "displays": [
-        {
-          "id": "osc-scope-1",
-          "rect": {
-            "x": 435.234375,
-            "y": 105.83332824707031,
-            "width": 87.0181884765625,
-            "height": 40,
-            "right": 522.2525634765625,
-            "bottom": 145.8333282470703
-          }
-        },
-        {
-          "id": "osc-scope-2",
-          "rect": {
-            "x": 435.234375,
-            "y": 181.66665649414062,
-            "width": 87.0181884765625,
-            "height": 40,
-            "right": 522.2525634765625,
-            "bottom": 221.66665649414062
-          }
-        },
-        {
-          "id": "lfo-scope-1",
-          "rect": {
-            "x": 881.40625,
-            "y": 111.25,
-            "width": 218.255126953125,
-            "height": 60,
-            "right": 1099.661376953125,
-            "bottom": 171.25
-          }
-        },
-        {
-          "id": "lfo-scope-2",
-          "rect": {
-            "x": 1153.828125,
-            "y": 111.25,
-            "width": 218.2421875,
-            "height": 60,
-            "right": 1372.0703125,
-            "bottom": 171.25
-          }
-        },
-        {
-          "id": "filter-scope",
-          "rect": {
-            "x": 507.6041564941406,
-            "y": 276.6666564941406,
-            "width": 123.76303100585938,
-            "height": 115,
-            "right": 631.3671875,
-            "bottom": 391.6666564941406
-          }
-        },
-        {
-          "id": "f-envelope",
-          "rect": {
-            "x": 260.55987548828125,
-            "y": 290.4166564941406,
-            "width": 164.53125,
-            "height": 87.5,
-            "right": 425.09112548828125,
-            "bottom": 377.9166564941406
-          }
-        },
-        {
-          "id": "a-envelope",
-          "rect": {
-            "x": 260.55987548828125,
-            "y": 443.75,
-            "width": 164.53125,
-            "height": 87.5,
-            "right": 425.09112548828125,
-            "bottom": 531.25
-          }
-        },
-        {
-          "id": "eq-scope",
-          "rect": {
-            "x": 863.5546875,
-            "y": 276.6666564941406,
-            "width": 521.497314453125,
-            "height": 40,
-            "right": 1385.052001953125,
-            "bottom": 316.6666564941406
-          }
-        },
-        {
-          "id": "routing-scope",
-          "rect": {
-            "x": 863.5546875,
-            "y": 438.33331298828125,
-            "width": 521.497314453125,
-            "height": 35,
-            "right": 1385.052001953125,
-            "bottom": 473.33331298828125
-          }
-        },
-        {
-          "id": "xy1",
-          "rect": {
-            "x": 1395.403564453125,
-            "y": 90,
-            "width": 171.25,
-            "height": 115,
-            "right": 1566.653564453125,
-            "bottom": 205
-          }
-        },
-        {
-          "id": "xy2",
-          "rect": {
-            "x": 1408.3853759765625,
-            "y": 583.3333129882812,
-            "width": 158.2681884765625,
-            "height": 94.16668701171875,
-            "right": 1566.653564453125,
-            "bottom": 677.5
-          }
-        }
-      ],
-      "font": "Orbitron, monospace",
-      "palette": {
-        "--teal": "#50efd5",
-        "--amber": "#e8b555",
-        "--pink": "#fa48c0",
-        "--cyan": "#48c9ee"
-      },
-      "oscillatorHitAreas": {
-        "panel": {
-          "x": 296.57550048828125,
-          "y": 59.166664123535156,
-          "width": 332.27862548828125,
-          "height": 181.66665649414062,
-          "right": 628.8541259765625,
-          "bottom": 240.83332061767578
-        },
-        "scope": {
-          "x": 435.234375,
-          "y": 105.83332824707031,
-          "width": 87.0181884765625,
+          "x": 496.25,
+          "y": 176.25,
+          "width": 95,
           "height": 40,
-          "right": 522.2525634765625,
-          "bottom": 145.8333282470703
+          "right": 591.25,
+          "bottom": 216.25
         },
         "rows": [
           {
             "row": {
-              "x": 305.7421875,
-              "y": 90,
-              "width": 313.9453125,
-              "height": 67.5,
-              "right": 619.6875,
-              "bottom": 157.5
+              "x": 343.75,
+              "y": 145,
+              "width": 388.75,
+              "height": 80,
+              "right": 732.5,
+              "bottom": 225
             },
             "dropdown": {
-              "x": 328.515625,
-              "y": 89.58332824707031,
-              "width": 100.88540649414062,
-              "height": 19.166671752929688,
-              "right": 429.4010314941406,
-              "bottom": 108.75
+              "x": 364.94140625,
+              "y": 153.75,
+              "width": 123.80859375,
+              "height": 17.5,
+              "right": 488.75,
+              "bottom": 171.25
             },
             "preview": {
-              "x": 435.234375,
-              "y": 105.83332824707031,
-              "width": 87.0181884765625,
+              "x": 496.25,
+              "y": 176.25,
+              "width": 95,
               "height": 40,
-              "right": 522.2525634765625,
-              "bottom": 145.8333282470703
+              "right": 591.25,
+              "bottom": 216.25
             },
             "knobs": [
               {
-                "x": 534.3098754882812,
-                "y": 91.66666412353516,
-                "width": 31.66668701171875,
-                "height": 38.333335876464844,
-                "right": 565.9765625,
-                "bottom": 130
+                "x": 613.4375,
+                "y": 155,
+                "width": 36.25,
+                "height": 40,
+                "right": 649.6875,
+                "bottom": 195
               },
               {
-                "x": 581.7838134765625,
-                "y": 91.66666412353516,
-                "width": 31.66668701171875,
-                "height": 38.333335876464844,
-                "right": 613.4505004882812,
-                "bottom": 130
+                "x": 681.5625,
+                "y": 155,
+                "width": 36.25,
+                "height": 40,
+                "right": 717.8125,
+                "bottom": 195
               }
             ]
           },
           {
             "row": {
-              "x": 305.7421875,
-              "y": 161.66665649414062,
-              "width": 313.9453125,
-              "height": 67.5,
-              "right": 619.6875,
-              "bottom": 229.16665649414062
+              "x": 343.75,
+              "y": 233.75,
+              "width": 388.75,
+              "height": 80,
+              "right": 732.5,
+              "bottom": 313.75
             },
             "dropdown": {
-              "x": 328.515625,
-              "y": 165.41665649414062,
-              "width": 100.88540649414062,
-              "height": 19.166671752929688,
-              "right": 429.4010314941406,
-              "bottom": 184.5833282470703
+              "x": 364.94140625,
+              "y": 244.375,
+              "width": 123.80859375,
+              "height": 17.5,
+              "right": 488.75,
+              "bottom": 261.875
             },
             "preview": {
-              "x": 435.234375,
-              "y": 181.66665649414062,
-              "width": 87.0181884765625,
+              "x": 496.25,
+              "y": 266.25,
+              "width": 95,
               "height": 40,
-              "right": 522.2525634765625,
-              "bottom": 221.66665649414062
+              "right": 591.25,
+              "bottom": 306.25
             },
             "knobs": [
               {
-                "x": 534.3098754882812,
-                "y": 167.5,
-                "width": 31.66668701171875,
-                "height": 38.33332824707031,
-                "right": 565.9765625,
-                "bottom": 205.8333282470703
+                "x": 613.4375,
+                "y": 245,
+                "width": 36.25,
+                "height": 40,
+                "right": 649.6875,
+                "bottom": 285
               },
               {
-                "x": 581.7838134765625,
-                "y": 167.5,
-                "width": 31.66668701171875,
-                "height": 38.33332824707031,
-                "right": 613.4505004882812,
-                "bottom": 205.8333282470703
+                "x": 681.5625,
+                "y": 245,
+                "width": 36.25,
+                "height": 40,
+                "right": 717.8125,
+                "bottom": 285
               }
             ]
           }
@@ -1942,84 +1838,84 @@
           {
             "value": "saw",
             "box": {
-              "x": 305.7421875,
-              "y": 110.83332824707031,
-              "width": 29.03643798828125,
+              "x": 343.75,
+              "y": 173.75,
+              "width": 27.5,
               "height": 20,
-              "right": 334.77862548828125,
-              "bottom": 130.8333282470703
+              "right": 371.25,
+              "bottom": 193.75
             },
             "hit": true
           },
           {
             "value": "pulse",
             "box": {
-              "x": 337.27862548828125,
-              "y": 110.83332824707031,
-              "width": 29.036468505859375,
+              "x": 373.75,
+              "y": 173.75,
+              "width": 27.5,
               "height": 20,
-              "right": 366.3150939941406,
-              "bottom": 130.8333282470703
+              "right": 401.25,
+              "bottom": 193.75
             },
             "hit": true
           },
           {
             "value": "triangle",
             "box": {
-              "x": 368.8150939941406,
-              "y": 110.83332824707031,
-              "width": 29.036468505859375,
+              "x": 403.75,
+              "y": 173.75,
+              "width": 27.5,
               "height": 20,
-              "right": 397.8515625,
-              "bottom": 130.8333282470703
+              "right": 431.25,
+              "bottom": 193.75
             },
             "hit": true
           },
           {
             "value": "sine",
             "box": {
-              "x": 400.3515625,
-              "y": 110.83332824707031,
-              "width": 29.049468994140625,
+              "x": 433.75,
+              "y": 173.75,
+              "width": 27.5,
               "height": 20,
-              "right": 429.4010314941406,
-              "bottom": 130.8333282470703
+              "right": 461.25,
+              "bottom": 193.75
             },
             "hit": true
           },
           {
             "value": "dwgs1",
             "box": {
-              "x": 305.7421875,
-              "y": 133.3333282470703,
-              "width": 29.03643798828125,
+              "x": 343.75,
+              "y": 196.25,
+              "width": 27.5,
               "height": 20,
-              "right": 334.77862548828125,
-              "bottom": 153.3333282470703
+              "right": 371.25,
+              "bottom": 216.25
             },
             "hit": true
           },
           {
             "value": "dwgs2",
             "box": {
-              "x": 337.27862548828125,
-              "y": 133.3333282470703,
-              "width": 29.036468505859375,
+              "x": 373.75,
+              "y": 196.25,
+              "width": 27.5,
               "height": 20,
-              "right": 366.3150939941406,
-              "bottom": 153.3333282470703
+              "right": 401.25,
+              "bottom": 216.25
             },
             "hit": true
           },
           {
             "value": "dwgs3",
             "box": {
-              "x": 368.8150939941406,
-              "y": 133.3333282470703,
-              "width": 29.036468505859375,
+              "x": 403.75,
+              "y": 196.25,
+              "width": 27.5,
               "height": 20,
-              "right": 397.8515625,
-              "bottom": 153.3333282470703
+              "right": 431.25,
+              "bottom": 216.25
             },
             "hit": true
           }
@@ -2038,256 +1934,230 @@
       },
       "main": {
         "x": 0,
-        "y": 40,
+        "y": 80,
         "width": 1280,
-        "height": 720,
+        "height": 640,
         "right": 1280,
-        "bottom": 760
+        "bottom": 720
       },
       "layout": {
-        "logicalWidth": 1920,
-        "logicalHeight": 1080,
+        "logicalWidth": 1280,
+        "logicalHeight": 640,
         "width": 1280,
         "height": 800,
-        "scale": 0.6666666666666666,
+        "scale": 1,
         "left": 0,
-        "top": 40,
+        "top": 80,
         "keyboardVisible": false
       },
       "panels": [
         {
           "name": "VOICE",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 87.33333587646484,
-            "width": 213.92709350585938,
-            "height": 173.33334350585938,
-            "right": 233.2604274749756,
-            "bottom": 260.6666793823242
+            "x": 43,
+            "y": 136.6875,
+            "width": 220,
+            "height": 213.390625,
+            "right": 263,
+            "bottom": 350.078125
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "OSCILLATORS",
           "rect": {
-            "x": 237.2604217529297,
-            "y": 87.33333587646484,
-            "width": 265.82293701171875,
-            "height": 173.33334350585938,
-            "right": 503.08335876464844,
-            "bottom": 260.6666793823242
+            "x": 269,
+            "y": 136.6875,
+            "width": 323,
+            "height": 213.390625,
+            "right": 592,
+            "bottom": 350.078125
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "MIXER",
           "rect": {
-            "x": 507.0833435058594,
-            "y": 87.33333587646484,
-            "width": 162.04165649414062,
-            "height": 173.33334350585938,
-            "right": 669.125,
-            "bottom": 260.6666793823242
+            "x": 599,
+            "y": 136.6875,
+            "width": 154,
+            "height": 213.390625,
+            "right": 753,
+            "bottom": 350.078125
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "LFO 1",
           "rect": {
-            "x": 673.125,
-            "y": 87.33333587646484,
-            "width": 213.9375,
-            "height": 173.33334350585938,
-            "right": 887.0625,
-            "bottom": 260.6666793823242
+            "x": 760,
+            "y": 136.6875,
+            "width": 159,
+            "height": 213.390625,
+            "right": 919,
+            "bottom": 350.078125
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "LFO 2",
           "rect": {
-            "x": 891.0625,
-            "y": 87.33333587646484,
-            "width": 213.9271240234375,
-            "height": 173.33334350585938,
-            "right": 1104.9896240234375,
-            "bottom": 260.6666793823242
+            "x": 925,
+            "y": 136.6875,
+            "width": 160,
+            "height": 213.390625,
+            "right": 1085,
+            "bottom": 350.078125
           },
-          "clientHeight": 258,
-          "scrollHeight": 258
-        },
-        {
-          "name": "XY PAD 1 ASSIGN",
-          "rect": {
-            "x": 1108.9896240234375,
-            "y": 87.33333587646484,
-            "width": 151.6666259765625,
-            "height": 173.33334350585938,
-            "right": 1260.65625,
-            "bottom": 260.6666793823242
-          },
-          "clientHeight": 258,
-          "scrollHeight": 258
+          "clientHeight": 211,
+          "scrollHeight": 211
         },
         {
           "name": "FILTER ENVELOPE",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 264.66668701171875,
-            "width": 328.0833435058594,
-            "height": 162.66665649414062,
-            "right": 347.4166774749756,
-            "bottom": 427.3333435058594
+            "x": 43,
+            "y": 358.1875,
+            "width": 420,
+            "height": 126.953125,
+            "right": 463,
+            "bottom": 485.140625
           },
-          "clientHeight": 242,
-          "scrollHeight": 242
+          "clientHeight": 125,
+          "scrollHeight": 125
         },
         {
           "name": "AMP ENVELOPE",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 431.3333435058594,
-            "width": 328.0833435058594,
-            "height": 141.33334350585938,
-            "right": 347.4166774749756,
-            "bottom": 572.6666870117188
+            "x": 43,
+            "y": 493.25,
+            "width": 420,
+            "height": 113.4375,
+            "right": 463,
+            "bottom": 606.6875
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 111,
+          "scrollHeight": 111
         },
         {
           "name": "FILTER",
           "rect": {
-            "x": 351.41668701171875,
-            "y": 264.66668701171875,
-            "width": 328.09375,
-            "height": 162.66665649414062,
-            "right": 679.5104370117188,
-            "bottom": 427.3333435058594
+            "x": 468,
+            "y": 358.1875,
+            "width": 510,
+            "height": 126.953125,
+            "right": 978,
+            "bottom": 485.140625
           },
-          "clientHeight": 242,
-          "scrollHeight": 242
+          "clientHeight": 125,
+          "scrollHeight": 125
         },
         {
-          "name": "EQ",
+          "name": "EQDETAILS",
           "rect": {
-            "x": 683.5104370117188,
-            "y": 264.66668701171875,
-            "width": 431.86456298828125,
-            "height": 162.66665649414062,
-            "right": 1115.375,
-            "bottom": 427.3333435058594
+            "x": 983,
+            "y": 358.1875,
+            "width": 256,
+            "height": 126.953125,
+            "right": 1239,
+            "bottom": 485.140625
           },
-          "clientHeight": 242,
-          "scrollHeight": 242
-        },
-        {
-          "name": "AUTOMATION",
-          "rect": {
-            "x": 1119.375,
-            "y": 264.66668701171875,
-            "width": 141.28125,
-            "height": 162.66665649414062,
-            "right": 1260.65625,
-            "bottom": 427.3333435058594
-          },
-          "clientHeight": 242,
-          "scrollHeight": 242
+          "clientHeight": 125,
+          "scrollHeight": 125
         },
         {
           "name": "AMP",
           "rect": {
-            "x": 351.41668701171875,
-            "y": 431.3333435058594,
-            "width": 151.66665649414062,
-            "height": 141.33334350585938,
-            "right": 503.0833435058594,
-            "bottom": 572.6666870117188
+            "x": 468,
+            "y": 493.25,
+            "width": 161,
+            "height": 113.4375,
+            "right": 629,
+            "bottom": 606.6875
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 111,
+          "scrollHeight": 111
         },
         {
           "name": "MOD FX",
           "rect": {
-            "x": 507.0833435058594,
-            "y": 431.3333435058594,
-            "width": 172.42709350585938,
-            "height": 141.33334350585938,
-            "right": 679.5104370117188,
-            "bottom": 572.6666870117188
+            "x": 635,
+            "y": 493.25,
+            "width": 189,
+            "height": 206.625,
+            "right": 824,
+            "bottom": 699.875
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 205,
+          "scrollHeight": 205
         },
         {
           "name": "MODULATION VISUALISER / VIRTUAL PATCH",
           "rect": {
-            "x": 683.5104370117188,
-            "y": 431.3333435058594,
-            "width": 431.86456298828125,
-            "height": 313.3333435058594,
-            "right": 1115.375,
-            "bottom": 744.6666870117188
+            "x": 829,
+            "y": 493.25,
+            "width": 256,
+            "height": 206.625,
+            "right": 1085,
+            "bottom": 699.875
           },
-          "clientHeight": 468,
-          "scrollHeight": 468
+          "clientHeight": 205,
+          "scrollHeight": 205
         },
         {
           "name": "DELAY",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 576.6666870117188,
-            "width": 213.92709350585938,
-            "height": 168,
-            "right": 233.2604274749756,
-            "bottom": 744.6666870117188
+            "x": 43,
+            "y": 613.453125,
+            "width": 292,
+            "height": 86.4375,
+            "right": 335,
+            "bottom": 699.890625
           },
-          "clientHeight": 250,
-          "scrollHeight": 250
+          "clientHeight": 84,
+          "scrollHeight": 84
         },
         {
           "name": "ARP / STEP SEQUENCER",
           "rect": {
-            "x": 1119.375,
-            "y": 431.3333435058594,
-            "width": 141.28125,
-            "height": 141.33334350585938,
-            "right": 1260.65625,
-            "bottom": 572.6666870117188
+            "x": 1091,
+            "y": 493.25,
+            "width": 148,
+            "height": 206.625,
+            "right": 1239,
+            "bottom": 699.875
           },
-          "clientHeight": 210,
-          "scrollHeight": 210
+          "clientHeight": 205,
+          "scrollHeight": 205
         },
         {
-          "name": "XY PAD 2 ASSIGN",
+          "name": "REVERB",
           "rect": {
-            "x": 1119.375,
-            "y": 576.6666870117188,
-            "width": 141.28125,
-            "height": 168,
-            "right": 1260.65625,
-            "bottom": 744.6666870117188
+            "x": 341,
+            "y": 613.453125,
+            "width": 288,
+            "height": 86.4375,
+            "right": 629,
+            "bottom": 699.890625
           },
-          "clientHeight": 250,
-          "scrollHeight": 250
+          "clientHeight": 84,
+          "scrollHeight": 84
         },
         {
-          "name": "REVERB — 63_SPRING / MOD_HALL",
+          "name": "XY / AUTOMATIONEXPAND",
           "rect": {
-            "x": 237.2604217529297,
-            "y": 576.6666870117188,
-            "width": 442.25,
-            "height": 168,
-            "right": 679.5104217529297,
-            "bottom": 744.6666870117188
+            "x": 1091,
+            "y": 136.6875,
+            "width": 148,
+            "height": 213.390625,
+            "right": 1239,
+            "bottom": 350.078125
           },
-          "clientHeight": 250,
-          "scrollHeight": 250
+          "clientHeight": 211,
+          "scrollHeight": 211
         }
       ],
       "outside": [],
@@ -2295,122 +2165,122 @@
         {
           "id": "osc-scope-1",
           "rect": {
-            "x": 348.1875,
-            "y": 124.66667175292969,
-            "width": 69.61459350585938,
-            "height": 46.66667175292969,
-            "right": 417.8020935058594,
-            "bottom": 171.33334350585938
+            "x": 397,
+            "y": 186.6875,
+            "width": 76,
+            "height": 44,
+            "right": 473,
+            "bottom": 230.6875
           }
         },
         {
           "id": "osc-scope-2",
           "rect": {
-            "x": 348.1875,
-            "y": 199.33334350585938,
-            "width": 69.61459350585938,
-            "height": 46.666656494140625,
-            "right": 417.8020935058594,
-            "bottom": 246
+            "x": 397,
+            "y": 286.375,
+            "width": 76,
+            "height": 44,
+            "right": 473,
+            "bottom": 330.375
           }
         },
         {
           "id": "lfo-scope-1",
           "rect": {
-            "x": 705.125,
-            "y": 134.6666717529297,
-            "width": 174.60418701171875,
-            "height": 60,
-            "right": 879.7291870117188,
-            "bottom": 194.6666717529297
+            "x": 767,
+            "y": 196.1875,
+            "width": 145,
+            "height": 59,
+            "right": 912,
+            "bottom": 255.1875
           }
         },
         {
           "id": "lfo-scope-2",
           "rect": {
-            "x": 923.0625,
-            "y": 134.6666717529297,
-            "width": 174.59375,
-            "height": 60,
-            "right": 1097.65625,
-            "bottom": 194.6666717529297
+            "x": 932,
+            "y": 196.1875,
+            "width": 146,
+            "height": 59,
+            "right": 1078,
+            "bottom": 255.1875
           }
         },
         {
           "id": "filter-scope",
           "rect": {
-            "x": 406.0833435058594,
-            "y": 289.3333435058594,
-            "width": 99.01040649414062,
-            "height": 136,
-            "right": 505.09375,
-            "bottom": 425.3333435058594
+            "x": 526,
+            "y": 379.1875,
+            "width": 190,
+            "height": 82,
+            "right": 716,
+            "bottom": 461.1875
           }
         },
         {
           "id": "f-envelope",
           "rect": {
-            "x": 208.4479217529297,
-            "y": 302,
-            "width": 131.62501525878906,
-            "height": 96.66668701171875,
-            "right": 340.07293701171875,
-            "bottom": 398.66668701171875
+            "x": 278,
+            "y": 384.65625,
+            "width": 178,
+            "height": 90,
+            "right": 456,
+            "bottom": 474.65625
           }
         },
         {
           "id": "a-envelope",
           "rect": {
-            "x": 208.4479217529297,
-            "y": 458.3333435058594,
-            "width": 131.62501525878906,
-            "height": 96.66665649414062,
-            "right": 340.07293701171875,
-            "bottom": 555
+            "x": 278,
+            "y": 514.25,
+            "width": 178,
+            "height": 90,
+            "right": 456,
+            "bottom": 604.25
           }
         },
         {
           "id": "eq-scope",
           "rect": {
-            "x": 690.84375,
-            "y": 289.3333435058594,
-            "width": 417.197998046875,
-            "height": 53.333343505859375,
-            "right": 1108.041748046875,
-            "bottom": 342.66668701171875
+            "x": 990,
+            "y": 379.1875,
+            "width": 242,
+            "height": 40,
+            "right": 1232,
+            "bottom": 419.1875
           }
         },
         {
           "id": "routing-scope",
           "rect": {
-            "x": 690.84375,
-            "y": 456,
-            "width": 417.197998046875,
-            "height": 48,
-            "right": 1108.041748046875,
-            "bottom": 504
+            "x": 836,
+            "y": 514.25,
+            "width": 242,
+            "height": 22,
+            "right": 1078,
+            "bottom": 536.25
           }
         },
         {
           "id": "xy1",
           "rect": {
-            "x": 1116.322998046875,
-            "y": 112,
-            "width": 137,
-            "height": 113.33334350585938,
-            "right": 1253.322998046875,
-            "bottom": 225.33334350585938
+            "x": 1097,
+            "y": 168.6875,
+            "width": 62,
+            "height": 80,
+            "right": 1159,
+            "bottom": 248.6875
           }
         },
         {
           "id": "xy2",
           "rect": {
-            "x": 1126.7083740234375,
-            "y": 601.3333740234375,
-            "width": 126.6146240234375,
-            "height": 113.33331298828125,
-            "right": 1253.322998046875,
-            "bottom": 714.6666870117188
+            "x": 1165,
+            "y": 168.6875,
+            "width": 62,
+            "height": 80,
+            "right": 1227,
+            "bottom": 248.6875
           }
         }
       ],
@@ -2430,7 +2300,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.053883366412574456,
+        "rms": 0.054647926492226474,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -2447,269 +2317,243 @@
       },
       "main": {
         "x": 0,
-        "y": 40,
+        "y": 80,
         "width": 1280,
-        "height": 720,
+        "height": 640,
         "right": 1280,
-        "bottom": 760
+        "bottom": 720
       },
       "layout": {
-        "logicalWidth": 1920,
-        "logicalHeight": 1080,
+        "logicalWidth": 1280,
+        "logicalHeight": 640,
         "width": 1280,
         "height": 800,
-        "scale": 0.6666666666666666,
+        "scale": 1,
         "left": 0,
-        "top": 40,
+        "top": 80,
         "keyboardVisible": true
       },
       "panels": [
         {
           "name": "VOICE",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 87.33333587646484,
-            "width": 213.92709350585938,
-            "height": 145.33334350585938,
-            "right": 233.2604274749756,
-            "bottom": 232.66667938232422
+            "x": 43,
+            "y": 136,
+            "width": 220,
+            "height": 158,
+            "right": 263,
+            "bottom": 294
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "OSCILLATORS",
           "rect": {
-            "x": 237.2604217529297,
-            "y": 87.33333587646484,
-            "width": 265.82293701171875,
-            "height": 145.33334350585938,
-            "right": 503.08335876464844,
-            "bottom": 232.66667938232422
+            "x": 269,
+            "y": 136,
+            "width": 323,
+            "height": 158,
+            "right": 592,
+            "bottom": 294
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "MIXER",
           "rect": {
-            "x": 507.0833435058594,
-            "y": 87.33333587646484,
-            "width": 162.04165649414062,
-            "height": 145.33334350585938,
-            "right": 669.125,
-            "bottom": 232.66667938232422
+            "x": 599,
+            "y": 136,
+            "width": 154,
+            "height": 158,
+            "right": 753,
+            "bottom": 294
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "LFO 1",
           "rect": {
-            "x": 673.125,
-            "y": 87.33333587646484,
-            "width": 213.9375,
-            "height": 145.33334350585938,
-            "right": 887.0625,
-            "bottom": 232.66667938232422
+            "x": 760,
+            "y": 136,
+            "width": 159,
+            "height": 158,
+            "right": 919,
+            "bottom": 294
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "LFO 2",
           "rect": {
-            "x": 891.0625,
-            "y": 87.33333587646484,
-            "width": 213.9271240234375,
-            "height": 145.33334350585938,
-            "right": 1104.9896240234375,
-            "bottom": 232.66667938232422
+            "x": 925,
+            "y": 136,
+            "width": 160,
+            "height": 158,
+            "right": 1085,
+            "bottom": 294
           },
-          "clientHeight": 216,
-          "scrollHeight": 216
-        },
-        {
-          "name": "XY PAD 1 ASSIGN",
-          "rect": {
-            "x": 1108.9896240234375,
-            "y": 87.33333587646484,
-            "width": 151.6666259765625,
-            "height": 145.33334350585938,
-            "right": 1260.65625,
-            "bottom": 232.66667938232422
-          },
-          "clientHeight": 216,
-          "scrollHeight": 216
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "FILTER ENVELOPE",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 236.6666717529297,
-            "width": 328.0833435058594,
-            "height": 125.33332824707031,
-            "right": 347.4166774749756,
-            "bottom": 362
+            "x": 43,
+            "y": 300,
+            "width": 420,
+            "height": 94,
+            "right": 463,
+            "bottom": 394
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 92,
+          "scrollHeight": 92
         },
         {
           "name": "AMP ENVELOPE",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 366,
-            "width": 328.0833435058594,
-            "height": 112,
-            "right": 347.4166774749756,
-            "bottom": 478
+            "x": 43,
+            "y": 400,
+            "width": 420,
+            "height": 84,
+            "right": 463,
+            "bottom": 484
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 82,
+          "scrollHeight": 82
         },
         {
           "name": "FILTER",
           "rect": {
-            "x": 351.41668701171875,
-            "y": 236.6666717529297,
-            "width": 328.09375,
-            "height": 125.33332824707031,
-            "right": 679.5104370117188,
-            "bottom": 362
+            "x": 468,
+            "y": 300,
+            "width": 510,
+            "height": 94,
+            "right": 978,
+            "bottom": 394
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 92,
+          "scrollHeight": 92
         },
         {
-          "name": "EQ",
+          "name": "EQDETAILS",
           "rect": {
-            "x": 683.5104370117188,
-            "y": 236.6666717529297,
-            "width": 431.86456298828125,
-            "height": 125.33332824707031,
-            "right": 1115.375,
-            "bottom": 362
+            "x": 983,
+            "y": 300,
+            "width": 256,
+            "height": 94,
+            "right": 1239,
+            "bottom": 394
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
-        },
-        {
-          "name": "AUTOMATION",
-          "rect": {
-            "x": 1119.375,
-            "y": 236.6666717529297,
-            "width": 141.28125,
-            "height": 125.33332824707031,
-            "right": 1260.65625,
-            "bottom": 362
-          },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 92,
+          "scrollHeight": 92
         },
         {
           "name": "AMP",
           "rect": {
-            "x": 351.41668701171875,
-            "y": 366,
-            "width": 151.66665649414062,
-            "height": 112,
-            "right": 503.0833435058594,
-            "bottom": 478
+            "x": 468,
+            "y": 400,
+            "width": 161,
+            "height": 84,
+            "right": 629,
+            "bottom": 484
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 82,
+          "scrollHeight": 82
         },
         {
           "name": "MOD FX",
           "rect": {
-            "x": 507.0833435058594,
-            "y": 366,
-            "width": 172.42709350585938,
-            "height": 112,
-            "right": 679.5104370117188,
-            "bottom": 478
+            "x": 635,
+            "y": 400,
+            "width": 189,
+            "height": 153,
+            "right": 824,
+            "bottom": 553
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 151,
+          "scrollHeight": 151
         },
         {
           "name": "MODULATION VISUALISER / VIRTUAL PATCH",
           "rect": {
-            "x": 683.5104370117188,
-            "y": 366,
-            "width": 431.86456298828125,
-            "height": 241.3333740234375,
-            "right": 1115.375,
-            "bottom": 607.3333740234375
+            "x": 829,
+            "y": 400,
+            "width": 256,
+            "height": 153,
+            "right": 1085,
+            "bottom": 553
           },
-          "clientHeight": 360,
-          "scrollHeight": 360
+          "clientHeight": 151,
+          "scrollHeight": 151
         },
         {
           "name": "DELAY",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 482,
-            "width": 213.92709350585938,
-            "height": 125.3333740234375,
-            "right": 233.2604274749756,
-            "bottom": 607.3333740234375
+            "x": 43,
+            "y": 489,
+            "width": 292,
+            "height": 64,
+            "right": 335,
+            "bottom": 553
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 62,
+          "scrollHeight": 62
         },
         {
           "name": "ARP / STEP SEQUENCER",
           "rect": {
-            "x": 1119.375,
-            "y": 366,
-            "width": 141.28125,
-            "height": 112,
-            "right": 1260.65625,
-            "bottom": 478
+            "x": 1091,
+            "y": 400,
+            "width": 148,
+            "height": 153,
+            "right": 1239,
+            "bottom": 553
           },
-          "clientHeight": 166,
-          "scrollHeight": 166
+          "clientHeight": 151,
+          "scrollHeight": 151
         },
         {
-          "name": "XY PAD 2 ASSIGN",
+          "name": "REVERB",
           "rect": {
-            "x": 1119.375,
-            "y": 482,
-            "width": 141.28125,
-            "height": 125.3333740234375,
-            "right": 1260.65625,
-            "bottom": 607.3333740234375
+            "x": 341,
+            "y": 489,
+            "width": 288,
+            "height": 64,
+            "right": 629,
+            "bottom": 553
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 62,
+          "scrollHeight": 62
         },
         {
-          "name": "REVERB — 63_SPRING / MOD_HALL",
+          "name": "XY / AUTOMATIONEXPAND",
           "rect": {
-            "x": 237.2604217529297,
-            "y": 482,
-            "width": 442.25,
-            "height": 125.3333740234375,
-            "right": 679.5104217529297,
-            "bottom": 607.3333740234375
+            "x": 1091,
+            "y": 136,
+            "width": 148,
+            "height": 158,
+            "right": 1239,
+            "bottom": 294
           },
-          "clientHeight": 186,
-          "scrollHeight": 186
+          "clientHeight": 156,
+          "scrollHeight": 156
         },
         {
           "name": "PLAY — C3 TO C5",
           "rect": {
-            "x": 19.33333396911621,
-            "y": 612,
-            "width": 1241.3333740234375,
-            "height": 140,
-            "right": 1260.6667079925537,
-            "bottom": 752
+            "x": 23,
+            "y": 566,
+            "width": 1235,
+            "height": 149,
+            "right": 1258,
+            "bottom": 715
           },
-          "clientHeight": 206,
-          "scrollHeight": 206
+          "clientHeight": 149,
+          "scrollHeight": 149
         }
       ],
       "outside": [],
@@ -2717,122 +2561,122 @@
         {
           "id": "osc-scope-1",
           "rect": {
-            "x": 348.1875,
-            "y": 124.66667175292969,
-            "width": 69.61459350585938,
+            "x": 397,
+            "y": 181,
+            "width": 76,
             "height": 32,
-            "right": 417.8020935058594,
-            "bottom": 156.6666717529297
+            "right": 473,
+            "bottom": 213
           }
         },
         {
           "id": "osc-scope-2",
           "rect": {
-            "x": 348.1875,
-            "y": 185.33334350585938,
-            "width": 69.61459350585938,
+            "x": 397,
+            "y": 253,
+            "width": 76,
             "height": 32,
-            "right": 417.8020935058594,
-            "bottom": 217.33334350585938
+            "right": 473,
+            "bottom": 285
           }
         },
         {
           "id": "lfo-scope-1",
           "rect": {
-            "x": 705.125,
-            "y": 129,
-            "width": 174.60418701171875,
-            "height": 48,
-            "right": 879.7291870117188,
-            "bottom": 177
+            "x": 767,
+            "y": 195.5,
+            "width": 145,
+            "height": 39,
+            "right": 912,
+            "bottom": 234.5
           }
         },
         {
           "id": "lfo-scope-2",
           "rect": {
-            "x": 923.0625,
-            "y": 129,
-            "width": 174.59375,
-            "height": 48,
-            "right": 1097.65625,
-            "bottom": 177
+            "x": 932,
+            "y": 195.5,
+            "width": 146,
+            "height": 39,
+            "right": 1078,
+            "bottom": 234.5
           }
         },
         {
           "id": "filter-scope",
           "rect": {
-            "x": 406.0833435058594,
-            "y": 261.3333435058594,
-            "width": 99.01040649414062,
-            "height": 92,
-            "right": 505.09375,
-            "bottom": 353.3333435058594
+            "x": 526,
+            "y": 324,
+            "width": 190,
+            "height": 62,
+            "right": 716,
+            "bottom": 386
           }
         },
         {
           "id": "f-envelope",
           "rect": {
-            "x": 208.4479217529297,
-            "y": 272.3333435058594,
-            "width": 131.62501525878906,
-            "height": 70,
-            "right": 340.07293701171875,
-            "bottom": 342.3333435058594
+            "x": 278,
+            "y": 322.5,
+            "width": 178,
+            "height": 65,
+            "right": 456,
+            "bottom": 387.5
           }
         },
         {
           "id": "a-envelope",
           "rect": {
-            "x": 208.4479217529297,
-            "y": 395,
-            "width": 131.62501525878906,
-            "height": 70,
-            "right": 340.07293701171875,
-            "bottom": 465
+            "x": 278,
+            "y": 422,
+            "width": 178,
+            "height": 56,
+            "right": 456,
+            "bottom": 478
           }
         },
         {
           "id": "eq-scope",
           "rect": {
-            "x": 690.84375,
-            "y": 261.3333435058594,
-            "width": 417.197998046875,
-            "height": 32,
-            "right": 1108.041748046875,
-            "bottom": 293.3333435058594
+            "x": 990,
+            "y": 321,
+            "width": 242,
+            "height": 23,
+            "right": 1232,
+            "bottom": 344
           }
         },
         {
           "id": "routing-scope",
           "rect": {
-            "x": 690.84375,
-            "y": 390.66668701171875,
-            "width": 417.197998046875,
-            "height": 28,
-            "right": 1108.041748046875,
-            "bottom": 418.66668701171875
+            "x": 836,
+            "y": 421,
+            "width": 242,
+            "height": 22,
+            "right": 1078,
+            "bottom": 443
           }
         },
         {
           "id": "xy1",
           "rect": {
-            "x": 1116.322998046875,
-            "y": 112,
-            "width": 137,
-            "height": 92,
-            "right": 1253.322998046875,
-            "bottom": 204
+            "x": 1097,
+            "y": 168,
+            "width": 62,
+            "height": 62,
+            "right": 1159,
+            "bottom": 230
           }
         },
         {
           "id": "xy2",
           "rect": {
-            "x": 1126.7083740234375,
-            "y": 506.66668701171875,
-            "width": 126.6146240234375,
-            "height": 75.33331298828125,
-            "right": 1253.322998046875,
-            "bottom": 582
+            "x": 1165,
+            "y": 168,
+            "width": 62,
+            "height": 62,
+            "right": 1227,
+            "bottom": 230
           }
         }
       ],
@@ -2845,107 +2689,107 @@
       },
       "oscillatorHitAreas": {
         "panel": {
-          "x": 237.2604217529297,
-          "y": 87.33333587646484,
-          "width": 265.82293701171875,
-          "height": 145.33334350585938,
-          "right": 503.08335876464844,
-          "bottom": 232.66667938232422
+          "x": 269,
+          "y": 136,
+          "width": 323,
+          "height": 158,
+          "right": 592,
+          "bottom": 294
         },
         "scope": {
-          "x": 348.1875,
-          "y": 124.66667175292969,
-          "width": 69.61459350585938,
+          "x": 397,
+          "y": 181,
+          "width": 76,
           "height": 32,
-          "right": 417.8020935058594,
-          "bottom": 156.6666717529297
+          "right": 473,
+          "bottom": 213
         },
         "rows": [
           {
             "row": {
-              "x": 244.59375,
-              "y": 112,
-              "width": 251.15625,
-              "height": 54,
-              "right": 495.75,
-              "bottom": 166
+              "x": 275,
+              "y": 156,
+              "width": 311,
+              "height": 64,
+              "right": 586,
+              "bottom": 220
             },
             "dropdown": {
-              "x": 262.8125,
-              "y": 111.66667175292969,
-              "width": 80.70834350585938,
-              "height": 15.333328247070312,
-              "right": 343.5208435058594,
-              "bottom": 127
+              "x": 291.953125,
+              "y": 163,
+              "width": 99.046875,
+              "height": 14,
+              "right": 391,
+              "bottom": 177
             },
             "preview": {
-              "x": 348.1875,
-              "y": 124.66667175292969,
-              "width": 69.61459350585938,
+              "x": 397,
+              "y": 181,
+              "width": 76,
               "height": 32,
-              "right": 417.8020935058594,
-              "bottom": 156.6666717529297
+              "right": 473,
+              "bottom": 213
             },
             "knobs": [
               {
-                "x": 427.44793701171875,
-                "y": 113.33333587646484,
-                "width": 25.33331298828125,
-                "height": 30.666664123535156,
-                "right": 452.78125,
-                "bottom": 144
+                "x": 490.75,
+                "y": 164,
+                "width": 29,
+                "height": 32,
+                "right": 519.75,
+                "bottom": 196
               },
               {
-                "x": 465.4270935058594,
-                "y": 113.33333587646484,
-                "width": 25.333343505859375,
-                "height": 30.666664123535156,
-                "right": 490.76043701171875,
-                "bottom": 144
+                "x": 545.25,
+                "y": 164,
+                "width": 29,
+                "height": 32,
+                "right": 574.25,
+                "bottom": 196
               }
             ]
           },
           {
             "row": {
-              "x": 244.59375,
-              "y": 169.33334350585938,
-              "width": 251.15625,
-              "height": 54,
-              "right": 495.75,
-              "bottom": 223.33334350585938
+              "x": 275,
+              "y": 227,
+              "width": 311,
+              "height": 64,
+              "right": 586,
+              "bottom": 291
             },
             "dropdown": {
-              "x": 262.8125,
-              "y": 172.33334350585938,
-              "width": 80.70834350585938,
-              "height": 15.333328247070312,
-              "right": 343.5208435058594,
-              "bottom": 187.6666717529297
+              "x": 291.953125,
+              "y": 235.5,
+              "width": 99.046875,
+              "height": 14,
+              "right": 391,
+              "bottom": 249.5
             },
             "preview": {
-              "x": 348.1875,
-              "y": 185.33334350585938,
-              "width": 69.61459350585938,
+              "x": 397,
+              "y": 253,
+              "width": 76,
               "height": 32,
-              "right": 417.8020935058594,
-              "bottom": 217.33334350585938
+              "right": 473,
+              "bottom": 285
             },
             "knobs": [
               {
-                "x": 427.44793701171875,
-                "y": 174,
-                "width": 25.33331298828125,
-                "height": 30.666671752929688,
-                "right": 452.78125,
-                "bottom": 204.6666717529297
+                "x": 490.75,
+                "y": 236,
+                "width": 29,
+                "height": 32,
+                "right": 519.75,
+                "bottom": 268
               },
               {
-                "x": 465.4270935058594,
-                "y": 174,
-                "width": 25.333343505859375,
-                "height": 30.666671752929688,
-                "right": 490.76043701171875,
-                "bottom": 204.6666717529297
+                "x": 545.25,
+                "y": 236,
+                "width": 29,
+                "height": 32,
+                "right": 574.25,
+                "bottom": 268
               }
             ]
           }
@@ -2954,84 +2798,84 @@
           {
             "value": "saw",
             "box": {
-              "x": 244.59375,
-              "y": 128.6666717529297,
-              "width": 23.22918701171875,
+              "x": 275,
+              "y": 179,
+              "width": 22,
               "height": 16,
-              "right": 267.82293701171875,
-              "bottom": 144.6666717529297
+              "right": 297,
+              "bottom": 195
             },
             "hit": true
           },
           {
             "value": "pulse",
             "box": {
-              "x": 269.82293701171875,
-              "y": 128.6666717529297,
-              "width": 23.229156494140625,
+              "x": 299,
+              "y": 179,
+              "width": 22,
               "height": 16,
-              "right": 293.0520935058594,
-              "bottom": 144.6666717529297
+              "right": 321,
+              "bottom": 195
             },
             "hit": true
           },
           {
             "value": "triangle",
             "box": {
-              "x": 295.0520935058594,
-              "y": 128.6666717529297,
-              "width": 23.229156494140625,
+              "x": 323,
+              "y": 179,
+              "width": 22,
               "height": 16,
-              "right": 318.28125,
-              "bottom": 144.6666717529297
+              "right": 345,
+              "bottom": 195
             },
             "hit": true
           },
           {
             "value": "sine",
             "box": {
-              "x": 320.28125,
-              "y": 128.6666717529297,
-              "width": 23.239593505859375,
+              "x": 347,
+              "y": 179,
+              "width": 22,
               "height": 16,
-              "right": 343.5208435058594,
-              "bottom": 144.6666717529297
+              "right": 369,
+              "bottom": 195
             },
             "hit": true
           },
           {
             "value": "dwgs1",
             "box": {
-              "x": 244.59375,
-              "y": 146.6666717529297,
-              "width": 23.22918701171875,
+              "x": 275,
+              "y": 197,
+              "width": 22,
               "height": 16,
-              "right": 267.82293701171875,
-              "bottom": 162.6666717529297
+              "right": 297,
+              "bottom": 213
             },
             "hit": true
           },
           {
             "value": "dwgs2",
             "box": {
-              "x": 269.82293701171875,
-              "y": 146.6666717529297,
-              "width": 23.229156494140625,
+              "x": 299,
+              "y": 197,
+              "width": 22,
               "height": 16,
-              "right": 293.0520935058594,
-              "bottom": 162.6666717529297
+              "right": 321,
+              "bottom": 213
             },
             "hit": true
           },
           {
             "value": "dwgs3",
             "box": {
-              "x": 295.0520935058594,
-              "y": 146.6666717529297,
-              "width": 23.229156494140625,
+              "x": 323,
+              "y": 197,
+              "width": 22,
               "height": 16,
-              "right": 318.28125,
-              "bottom": 162.6666717529297
+              "right": 345,
+              "bottom": 213
             },
             "hit": true
           }
@@ -3057,7 +2901,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.055294237569342146,
+        "rms": 0.05541533923260023,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -3080,7 +2924,7 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.05541566041913908,
+        "rms": 0.05518207703223531,
         "stereoDifferenceRms": 0,
         "finite": true
       },
@@ -3098,113 +2942,113 @@
       "keyboard visibility touch toggle"
     ],
     "audio": {
-      "rms": 0.05562339360529879,
+      "rms": 0.05520019214946636,
       "stereoDifferenceRms": 0,
       "finite": true
     },
     "hitAreas": {
       "panel": {
-        "x": 237.2604217529297,
-        "y": 87.33333587646484,
-        "width": 265.82293701171875,
-        "height": 145.33334350585938,
-        "right": 503.08335876464844,
-        "bottom": 232.66667938232422
+        "x": 269,
+        "y": 136,
+        "width": 323,
+        "height": 158,
+        "right": 592,
+        "bottom": 294
       },
       "scope": {
-        "x": 348.1875,
-        "y": 124.66667175292969,
-        "width": 69.61459350585938,
+        "x": 397,
+        "y": 181,
+        "width": 76,
         "height": 32,
-        "right": 417.8020935058594,
-        "bottom": 156.6666717529297
+        "right": 473,
+        "bottom": 213
       },
       "rows": [
         {
           "row": {
-            "x": 244.59375,
-            "y": 112,
-            "width": 251.15625,
-            "height": 54,
-            "right": 495.75,
-            "bottom": 166
+            "x": 275,
+            "y": 156,
+            "width": 311,
+            "height": 64,
+            "right": 586,
+            "bottom": 220
           },
           "dropdown": {
-            "x": 262.8125,
-            "y": 111.66667175292969,
-            "width": 80.70834350585938,
-            "height": 15.333328247070312,
-            "right": 343.5208435058594,
-            "bottom": 127
+            "x": 291.953125,
+            "y": 163,
+            "width": 99.046875,
+            "height": 14,
+            "right": 391,
+            "bottom": 177
           },
           "preview": {
-            "x": 348.1875,
-            "y": 124.66667175292969,
-            "width": 69.61459350585938,
+            "x": 397,
+            "y": 181,
+            "width": 76,
             "height": 32,
-            "right": 417.8020935058594,
-            "bottom": 156.6666717529297
+            "right": 473,
+            "bottom": 213
           },
           "knobs": [
             {
-              "x": 427.44793701171875,
-              "y": 113.33333587646484,
-              "width": 25.33331298828125,
-              "height": 30.666664123535156,
-              "right": 452.78125,
-              "bottom": 144
+              "x": 490.75,
+              "y": 164,
+              "width": 29,
+              "height": 32,
+              "right": 519.75,
+              "bottom": 196
             },
             {
-              "x": 465.4270935058594,
-              "y": 113.33333587646484,
-              "width": 25.333343505859375,
-              "height": 30.666664123535156,
-              "right": 490.76043701171875,
-              "bottom": 144
+              "x": 545.25,
+              "y": 164,
+              "width": 29,
+              "height": 32,
+              "right": 574.25,
+              "bottom": 196
             }
           ]
         },
         {
           "row": {
-            "x": 244.59375,
-            "y": 169.33334350585938,
-            "width": 251.15625,
-            "height": 54,
-            "right": 495.75,
-            "bottom": 223.33334350585938
+            "x": 275,
+            "y": 227,
+            "width": 311,
+            "height": 64,
+            "right": 586,
+            "bottom": 291
           },
           "dropdown": {
-            "x": 262.8125,
-            "y": 172.33334350585938,
-            "width": 80.70834350585938,
-            "height": 15.333328247070312,
-            "right": 343.5208435058594,
-            "bottom": 187.6666717529297
+            "x": 291.953125,
+            "y": 235.5,
+            "width": 99.046875,
+            "height": 14,
+            "right": 391,
+            "bottom": 249.5
           },
           "preview": {
-            "x": 348.1875,
-            "y": 185.33334350585938,
-            "width": 69.61459350585938,
+            "x": 397,
+            "y": 253,
+            "width": 76,
             "height": 32,
-            "right": 417.8020935058594,
-            "bottom": 217.33334350585938
+            "right": 473,
+            "bottom": 285
           },
           "knobs": [
             {
-              "x": 427.44793701171875,
-              "y": 174,
-              "width": 25.33331298828125,
-              "height": 30.666671752929688,
-              "right": 452.78125,
-              "bottom": 204.6666717529297
+              "x": 490.75,
+              "y": 236,
+              "width": 29,
+              "height": 32,
+              "right": 519.75,
+              "bottom": 268
             },
             {
-              "x": 465.4270935058594,
-              "y": 174,
-              "width": 25.333343505859375,
-              "height": 30.666671752929688,
-              "right": 490.76043701171875,
-              "bottom": 204.6666717529297
+              "x": 545.25,
+              "y": 236,
+              "width": 29,
+              "height": 32,
+              "right": 574.25,
+              "bottom": 268
             }
           ]
         }
@@ -3213,84 +3057,84 @@
         {
           "value": "saw",
           "box": {
-            "x": 244.59375,
-            "y": 128.6666717529297,
-            "width": 23.22918701171875,
+            "x": 275,
+            "y": 179,
+            "width": 22,
             "height": 16,
-            "right": 267.82293701171875,
-            "bottom": 144.6666717529297
+            "right": 297,
+            "bottom": 195
           },
           "hit": true
         },
         {
           "value": "pulse",
           "box": {
-            "x": 269.82293701171875,
-            "y": 128.6666717529297,
-            "width": 23.229156494140625,
+            "x": 299,
+            "y": 179,
+            "width": 22,
             "height": 16,
-            "right": 293.0520935058594,
-            "bottom": 144.6666717529297
+            "right": 321,
+            "bottom": 195
           },
           "hit": true
         },
         {
           "value": "triangle",
           "box": {
-            "x": 295.0520935058594,
-            "y": 128.6666717529297,
-            "width": 23.229156494140625,
+            "x": 323,
+            "y": 179,
+            "width": 22,
             "height": 16,
-            "right": 318.28125,
-            "bottom": 144.6666717529297
+            "right": 345,
+            "bottom": 195
           },
           "hit": true
         },
         {
           "value": "sine",
           "box": {
-            "x": 320.28125,
-            "y": 128.6666717529297,
-            "width": 23.239593505859375,
+            "x": 347,
+            "y": 179,
+            "width": 22,
             "height": 16,
-            "right": 343.5208435058594,
-            "bottom": 144.6666717529297
+            "right": 369,
+            "bottom": 195
           },
           "hit": true
         },
         {
           "value": "dwgs1",
           "box": {
-            "x": 244.59375,
-            "y": 146.6666717529297,
-            "width": 23.22918701171875,
+            "x": 275,
+            "y": 197,
+            "width": 22,
             "height": 16,
-            "right": 267.82293701171875,
-            "bottom": 162.6666717529297
+            "right": 297,
+            "bottom": 213
           },
           "hit": true
         },
         {
           "value": "dwgs2",
           "box": {
-            "x": 269.82293701171875,
-            "y": 146.6666717529297,
-            "width": 23.229156494140625,
+            "x": 299,
+            "y": 197,
+            "width": 22,
             "height": 16,
-            "right": 293.0520935058594,
-            "bottom": 162.6666717529297
+            "right": 321,
+            "bottom": 213
           },
           "hit": true
         },
         {
           "value": "dwgs3",
           "box": {
-            "x": 295.0520935058594,
-            "y": 146.6666717529297,
-            "width": 23.229156494140625,
+            "x": 323,
+            "y": 197,
+            "width": 22,
             "height": 16,
-            "right": 318.28125,
-            "bottom": 162.6666717529297
+            "right": 345,
+            "bottom": 213
           },
           "hit": true
         }

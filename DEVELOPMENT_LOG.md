@@ -103,3 +103,12 @@ The user approved Prototype B, requesting more screen glow, visible screen bezel
 All text is now700weight across labels/values/buttons/menus/dialogs/SVG labels, with crisp legends. Added tests/hardware-header.cjs. Existing14functional scripts and156original control definitions retain parity; DSP unchanged. All regression groups pass; final current header/layout checks also pass, with no out-of-panel controls at1920×1080 and1600×900 in either keyboard mode. Browser captures and full review are in reports/rebuild-comparison.html.
 
 Final publication: appgdep_6aea75d6d1908191a91e416e3d2fcf26 succeeded from Site-sourceb1fbb6fa3fa921ab0025c54a7534c6b858d7eb38. Complete regression and final header/layout checks pass. Fresh live-host navigation still fails at the configured proxy before page load. Main and sharing/visibility are unchanged.
+
+
+## Approved reference-coordinate reconstruction
+
+Geometry approval includes the user's four amendments: equal420px filter/amp envelope widths; filter widened to510px atx468; cutoff50px versus32px adjacent knobs; EQ enlarged to256×94 atx983,y220. Cabinet uses one1280×640 reference coordinate model with uniform viewport scaling. All16sections are placed from measured reference boundaries, preserving additional working controls. Original measurements are retained separately from approved changes.
+
+Keyboard uses measured white34×125/36pitch and black21×79frame proportions, with unchanged25-note C3–C5mapping. The active bank remains centred in the full-width housing as proposed. Keyboard collapse expands control panels and graphs without resetting audio. EQ's four controls and live overview remain visible; DETAILS presents the original nodes/full graph. Both XY pads and assignment actions remain visible, with an original-node expanded interaction view.
+
+DSP/MIDI/FX/patch modules are unchanged. A narrowly scoped parity guard allows only logical layout constants1280×640 instead of1920×1080. Real Chromium screenshots and boundary overlays are in reports/reference-comparison.html; all four target viewport/keyboard combinations have no control/panel overflow. New reference-layout regression covers pixel coordinates, key geometry, node identity, EQ response changes and XY interaction. Physical tablet/Windows/KeyLab hardware testing remains unverified.

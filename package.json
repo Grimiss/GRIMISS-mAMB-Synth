@@ -11,13 +11,14 @@
     "test:ownership": "node tests/ownership-modulation.cjs",
     "test:measurements": "node tests/measurements.cjs",
     "test:performance": "node tests/performance.cjs",
-    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs && node tests/midi-registry.cjs && node tests/workflow.cjs && node tests/factory.cjs && node tests/devices.cjs && node tests/hardware.cjs && node tests/physical-controls.cjs && node tests/hardware-header.cjs",
+    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs && node tests/midi-registry.cjs && node tests/workflow.cjs && node tests/factory.cjs && node tests/devices.cjs && node tests/hardware.cjs && node tests/physical-controls.cjs && node tests/hardware-header.cjs && node tests/reference-layout.cjs",
     "build": "node tools/build.cjs",
     "test:effects": "node tests/effects.cjs",
     "test:instrument": "node tests/instrument.cjs",
     "test:workflow": "node tests/workflow.cjs",
     "test:hardware": "node tests/hardware.cjs",
-    "test:physical": "node tests/physical-controls.cjs"
+    "test:physical": "node tests/physical-controls.cjs",
+    "test:geometry": "node tests/reference-layout.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"
