@@ -1,3 +1,5 @@
+Checkpoint A is complete and published:71cefff (tag checkpoint/analog-engine-v0.5). Checkpoint B is separately committed/published:1c5b9ef, review at prototypes/reconstruction-c/index.html. Checkpoint C remains blocked ONLY on the user's explicit prototype approval. No background work continues after delivery. Full suite and prototype checks passed; see HOSTING.md and reports/analog-release-verification.json.
+
 ## Active: Analog Engine v0.5 / isolated visual prototype
 
 The user approved parallel checkpoints. Workstream A completes Phase 1 analog DSP plus functional wheels, removal of permanent knob/fader numbers and printed key names. Workstream B is ONLY an isolated prototype in prototypes/reconstruction-c, including actual notched white-key silhouettes and seated black keys. Do not apply its materials/components/keybed to the live synth until the user approves Checkpoint B. Do not pause approved DSP work while awaiting that approval. No nonlinear filter modelling or supply sag. Preserve rollback tag rollback/pre-analog-phase1 at2fa85a5. See ANALOG_ENGINE_V0_5.md for architecture, tests and compatibility limits.

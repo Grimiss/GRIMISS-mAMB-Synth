@@ -120,3 +120,9 @@ The measured coordinate model and approved filter/ADSR/EQ amendments are now app
 ## Three-octave keyboard publication
 
 The same private playable link now contains C3–C6 (37 notes), filling the key housing. Site source commit: `18ac054077de014c4e4895aab94abce6450e7e8f`. Deployment `appgdep_6aea8c39df2c8191b0b91cd943dd784a` succeeded. HTML SHA256: `53067aed928406af488298954fc81128ad22b1a645a8d62fe5b890a2ce77944f`. Complete regression suite passed. Local browser verification covers both target screen sizes; live-domain browser QA remains limited by the configured host policy.
+
+## Analog Engine v0.5 and isolated prototype publication
+
+Same owner-private URL and audience retained. Play: https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site . Character is in AUDIO SETTINGS; try25–50%. Technical/CPU results: `/reports/analog-checkpoint.html`. Visual approval prototype: `/prototypes/reconstruction-c/` (no audio engine attached). The visual components/keybed have NOT been applied to the working synth.
+
+Analog checkpoint:`71cefff`; visual prototype:`1c5b9ef`. Both commits and rollback/pre-analog-phase1 are pushed on the existing development history. Site source:`4df07bb6028af702f24da718bf16bac29607ab12`; deployment:`appgdep_6aeb2290ef288191af8b8ab428452124` succeeded. HTML SHA256:`6bc8734f9589e36a9f1e4238c34ec077482775b29679e704a0f9d0bc92666537`. Complete local regression and prototype browser checks passed; no physical/listening/live-domain browser QA claim. Main unchanged. See reports/analog-release-verification.json.

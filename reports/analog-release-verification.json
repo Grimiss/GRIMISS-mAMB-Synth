@@ -1,0 +1,23 @@
+{
+  "status": "VERIFIED_LOCAL_AND_PUBLISHED",
+  "analogCommit": "71cefff9a375f97c4c0a768b9ecd17bf5abb67a2",
+  "visualPrototypeCommit": "1c5b9ef57071ce0d2272f0d65c528a9795dacaa3",
+  "rollbackCommit": "2fa85a5bcaadd5fdb880b2d5f350b077a63e9e77",
+  "rollbackTag": "rollback/pre-analog-phase1",
+  "siteSourceCommit": "4df07bb6028af702f24da718bf16bac29607ab12",
+  "deploymentId": "appgdep_6aeb2290ef288191af8b8ab428452124",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_e611742228548191afe3c890619abc1a",
+  "deploymentStatus": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "prototypeUrl": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/prototypes/reconstruction-c/",
+  "htmlSha256": "6bc8734f9589e36a9f1e4238c34ec077482775b29679e704a0f9d0bc92666537",
+  "completeRegression": "npm run test:all PASS",
+  "visualPrototypeChecks": "six layouts;30notch hit checks;no browser errors",
+  "mainMerged": false,
+  "prototypeAppliedToPlayableSynth": false,
+  "nextGate": "User approval of Checkpoint B before visual rollout/Checkpoint C",
+  "listeningTests": false,
+  "physicalHardwareTests": false,
+  "productionBrowserQA": "Not verified; configured environment proxy/host policy blocks live host",
+  "realKeyboardPhotoComparison": "Qualitative comparison with user-provided MS-5 photograph; secondary fresh image download403, no new pixel measurements"
+}
