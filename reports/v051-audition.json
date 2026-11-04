@@ -1,0 +1,46 @@
+[
+  {
+    "thickness": 0,
+    "path": "reports/v051-thickness-0.wav",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 8,
+    "notes": [
+      48,
+      55,
+      60,
+      64,
+      67,
+      71,
+      74,
+      79
+    ],
+    "peak": 0.19145366549491882,
+    "rms": 0.05232889706202294,
+    "effectsBypassed": true,
+    "analogAge": 25,
+    "humanListening": false
+  },
+  {
+    "thickness": 100,
+    "path": "reports/v051-thickness-100.wav",
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSeconds": 8,
+    "notes": [
+      48,
+      55,
+      60,
+      64,
+      67,
+      71,
+      74,
+      79
+    ],
+    "peak": 0.20378141105175018,
+    "rms": 0.05019251981269034,
+    "effectsBypassed": true,
+    "analogAge": 25,
+    "humanListening": false
+  }
+]

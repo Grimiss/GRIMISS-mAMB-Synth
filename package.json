@@ -1,6 +1,6 @@
 {
   "name": "grimiss-mamb-synth",
-  "version": "0.7.0",
+  "version": "0.5.1",
   "private": true,
   "description": "GRIMISS mAMB standalone hardware-style synthesizer and KeyLab25 workflow",
   "scripts": {
@@ -11,7 +11,7 @@
     "test:ownership": "node tests/ownership-modulation.cjs",
     "test:measurements": "node tests/measurements.cjs",
     "test:performance": "node tests/performance.cjs",
-    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs && node tests/midi-registry.cjs && node tests/workflow.cjs && node tests/factory.cjs && node tests/devices.cjs && node tests/hardware.cjs && node tests/physical-controls.cjs && node tests/hardware-header.cjs && node tests/reference-layout.cjs && npm run test:analog",
+    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs && node tests/midi-registry.cjs && node tests/workflow.cjs && node tests/factory.cjs && node tests/devices.cjs && node tests/hardware.cjs && node tests/physical-controls.cjs && node tests/hardware-header.cjs && node tests/reference-layout.cjs && npm run test:analog && npm run test:refinement",
     "build": "node tools/build.cjs",
     "test:effects": "node tests/effects.cjs",
     "test:instrument": "node tests/instrument.cjs",
@@ -19,7 +19,8 @@
     "test:hardware": "node tests/hardware.cjs",
     "test:physical": "node tests/physical-controls.cjs",
     "test:geometry": "node tests/reference-layout.cjs",
-    "test:analog": "node tests/analog.cjs && node tests/analog-browser.cjs"
+    "test:analog": "node tests/analog.cjs && node tests/analog-browser.cjs",
+    "test:refinement": "node tests/refinement-ui.cjs && node tests/wheels-v051.cjs && node tests/refinement-dsp.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

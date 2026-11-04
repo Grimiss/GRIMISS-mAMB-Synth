@@ -1,3 +1,11 @@
+## v0.5.1 — completed targeted refinement
+
+`npm run test:all` PASS on the assembled build, including new refinement DSP/UI and six wheel browser groups. Additional actual-picker keyboard/contrast and non-default USER save/reload checks passed. Old browser checks now operate the replacement buttons instead of hidden backing selects/checkboxes; no synthesis acceptance criteria were relaxed. The velocity amplitude test checks the exact power-law state and allows the existing master soft-limiter's measured effect on output ratios.
+
+All four target1920×1080/1600×900 visible/hidden captures have no panel/control overflow. Header hit rectangles are disjoint. The actual opened picker is dark green with readable light text and green selection. Thirty clipped white-key notch regions reject white-key hits;37notes remain mapped. EQ sliders change real DSP Hz/response; Thickness does not alter the EQ graph.
+
+See V0_5_1_REFINEMENT.md and tests/refinement-dsp-results.json for exact sound/CPU findings. Eight-voice offline overhead versus immediate v0.5 is approximately6–7%; UNISON is within timing variation. No physical MIDI, tablet/Windows/Edge, human listening or live-domain browser claim is made.
+
 ## Analog Engine v0.5 — Checkpoint A
 
 Complete `npm run test:all` PASS, including analog offline/browser tests. The first attempt exposed the old static pitch-route test's assumption that CC1 had no intrinsic vibrato; LFO1 depth is now zero for that isolated depth test, and separate tests verify the required wheel vibrato. No acceptance threshold was relaxed.

@@ -1,3 +1,7 @@
+## v0.5.1 targeted playable refinement
+
+The current user brief authorises direct Analog Age, new Velocity/Thickness parameters, button/route/menu/header/EQ cleanup, actual pointer/touch/MIDI wheel repair and bringing the notched keybed into the LIVE synth. It does not authorise another broad cabinet reconstruction. Keep Prototype C unchanged and available. Rollback is rollback/pre-v0.5.1 at034e942. Read V0_5_1_REFINEMENT.md for signal flow, persistence, wheel global/owner semantics and limitations. No main merge. The new dist/GRIMISS_mAMB_v0_5_1.html and legacy v0_7 alias are byte-identical.
+
 Checkpoint A is complete and published:71cefff (tag checkpoint/analog-engine-v0.5). Checkpoint B is separately committed/published:1c5b9ef, review at prototypes/reconstruction-c/index.html. Checkpoint C remains blocked ONLY on the user's explicit prototype approval. No background work continues after delivery. Full suite and prototype checks passed; see HOSTING.md and reports/analog-release-verification.json.
 
 ## Active: Analog Engine v0.5 / isolated visual prototype

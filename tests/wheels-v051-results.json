@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "actual mouse pitch gestures bend upward/downward by two semitones and spring in POLY/MONO/UNISON",
+      "status": "PASS",
+      "metrics": [
+        {
+          "mode": "poly",
+          "baseHz": 439.99999999988376,
+          "upHz": 493.8830159995638,
+          "downHz": 391.9988190908376
+        },
+        {
+          "mode": "mono",
+          "baseHz": 440,
+          "upHz": 493.8781533053483,
+          "downHz": 391.9984628857484
+        },
+        {
+          "mode": "unison",
+          "baseHz": 437.3394596493711,
+          "upHz": 490.89644145405975,
+          "downHz": 389.6255172999169
+        }
+      ]
+    },
+    {
+      "name": "actual modulation drag retains its value and changes the LFO1 oscillator-frequency trajectory",
+      "status": "PASS",
+      "metrics": {
+        "retained": 0.8,
+        "minimumHz": 433.97820483582234,
+        "maximumHz": 445.947598548529
+      }
+    },
+    {
+      "name": "real CDP touch dragging controls both wheels and pointer cancellation springs pitch",
+      "status": "PASS",
+      "metrics": {
+        "retainedModulation": 0.7,
+        "pitchCancelReturned": true
+      }
+    },
+    {
+      "name": "accepted MIDI bend/CC1 update wheel visuals without echoing into local or another MIDI channel",
+      "status": "PASS",
+      "metrics": {
+        "midiVisualBend": 0.5,
+        "midiVisualWheel": 0.7559055118110236,
+        "unrelatedChannelsRemainNeutral": true
+      }
+    },
+    {
+      "name": "on-screen performance wheels affect held MIDI notes without overwriting owned controllers or doubling pitch",
+      "status": "PASS",
+      "metrics": {
+        "ownedMidiBend": 0.25,
+        "globalDragBend": 0.5,
+        "combinedBend": 0.75,
+        "afterSpringBend": 0.25,
+        "globalModulation": 0.8,
+        "afterGlobalResetModulation": 0.4015748031496063
+      }
+    },
+    {
+      "name": "captured pointer release outside the wheel and focus loss recover local pitch; rendered audio is finite",
+      "status": "PASS",
+      "metrics": {
+        "finite": true,
+        "rms": 0.0638310519114958
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "physicalMidiHardwareTested": false,
+  "humanListeningTested": false
+}

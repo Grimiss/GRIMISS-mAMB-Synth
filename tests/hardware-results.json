@@ -1,18 +1,12 @@
 {
   "status": "PASS",
-  "baseline": "2fa85a5bcaadd5fdb880b2d5f350b077a63e9e77",
-  "functionalScriptsUnchanged": 11,
-  "authorisedChangedModules": [
-    "mamb-engine",
-    "mamb-instrument",
-    "mamb-adapter",
-    "mamb-workflow",
-    "mamb-midi-targets",
-    "mamb-interface",
-    "mamb-physical-controls"
+  "baseline": "034e942c5f1fd89feef8aedef44e2e2ec342fd70",
+  "unchangedModules": 11,
+  "originalParameterIdentitiesPreserved": 122,
+  "addedParameters": [
+    "thickness",
+    "velocitySensitivity"
   ],
-  "originalControlContractsPreserved": 160,
-  "addedAnalogCharacterControl": true,
-  "visualLayoutChanged": false,
-  "dspChanged": true
+  "analogAgeReusesCharacter": true,
+  "mainGeometryUnchanged": true
 }

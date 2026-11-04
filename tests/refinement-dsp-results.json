@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "baselineCommit": "71cefff9a375f97c4c0a768b9ecd17bf5abb67a2",
+  "method": "offline DSP/throughput, no physical/listening claims",
+  "checks": [
+    "Thickness0: preceding engine/instrument remain neutral for full-velocity notes",
+    "Thickness changes actual oscillator balance/phase interaction and stereo audio in POLY/MONO/UNISON without voice duplication or large level gain",
+    "Velocity0 ignores amplitude velocity, 50/100 yield increasing power-law dynamic response, raw routing source remains intact",
+    "Sensitivity/Thickness smoothing and rapid edits remain finite and bounded through long releases and stealing",
+    "Explicit LFO1/wheel pitch route takes priority over the default wheel vibrato path without altering route depth"
+  ],
+  "thickness": [
+    {
+      "mode": "poly",
+      "differenceRms": 0.02516655903018026,
+      "stereoDifferenceRms": 0.023703093363546805,
+      "loudnessChangeDb": -0.5436040416096637,
+      "voices": 8,
+      "sharedBufferBytes": 712
+    },
+    {
+      "mode": "mono",
+      "differenceRms": 0.02449572280500712,
+      "stereoDifferenceRms": 0.014335282417824008,
+      "loudnessChangeDb": 0.12052363554437684,
+      "voices": 1,
+      "sharedBufferBytes": 712
+    },
+    {
+      "mode": "unison",
+      "differenceRms": 0.02884204123838557,
+      "stereoDifferenceRms": 0.014746694060620822,
+      "loudnessChangeDb": 0.13237186162976752,
+      "voices": 4,
+      "sharedBufferBytes": 712
+    }
+  ],
+  "velocity": [
+    {
+      "sensitivity": 0,
+      "hardToSoftRatio": 1,
+      "rawVelocity": 0.2
+    },
+    {
+      "sensitivity": 50,
+      "hardToSoftRatio": 3.3286532993482574,
+      "rawVelocity": 0.2
+    },
+    {
+      "sensitivity": 100,
+      "hardToSoftRatio": 11.125516057319729,
+      "rawVelocity": 0.2
+    }
+  ],
+  "performance": [
+    {
+      "scenario": "v0.5 baseline",
+      "renderedSeconds": 2,
+      "voices": 8,
+      "sampleRate": 48000,
+      "blockFrames": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        231.8269739999996,
+        284.7425110000004,
+        250.59547200000088,
+        233.80618299999878
+      ],
+      "medianMilliseconds": 242.20082749999983,
+      "renderToRealtimeRatio": 0.12110041374999991,
+      "relativeToV05": 1
+    },
+    {
+      "scenario": "v0.5.1 neutral",
+      "renderedSeconds": 2,
+      "voices": 8,
+      "sampleRate": 48000,
+      "blockFrames": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        255.38241600000038,
+        287.7616340000004,
+        257.88550600000053,
+        241.83504399999947
+      ],
+      "medianMilliseconds": 256.63396100000045,
+      "renderToRealtimeRatio": 0.12831698050000023,
+      "relativeToV05": 1.0595915945002319
+    },
+    {
+      "scenario": "v0.5.1 thickness100",
+      "renderedSeconds": 2,
+      "voices": 8,
+      "sampleRate": 48000,
+      "blockFrames": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        261.7885640000004,
+        272.68724099999963,
+        257.041776,
+        242.12965299999996
+      ],
+      "medianMilliseconds": 259.4151700000002,
+      "renderToRealtimeRatio": 0.1297075850000001,
+      "relativeToV05": 1.0710746642680253
+    },
+    {
+      "scenario": "v0.5 baseline UNISON",
+      "renderedSeconds": 2,
+      "voices": 4,
+      "sampleRate": 48000,
+      "blockFrames": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        130.7271810000002,
+        140.44930100000056,
+        130.93555399999968,
+        123.58034800000132
+      ],
+      "medianMilliseconds": 130.83136749999994,
+      "renderToRealtimeRatio": 0.06541568374999997,
+      "relativeToV05": 1
+    },
+    {
+      "scenario": "v0.5.1 thickness100 UNISON",
+      "renderedSeconds": 2,
+      "voices": 4,
+      "sampleRate": 48000,
+      "blockFrames": 128,
+      "warmupRuns": 1,
+      "measuredRuns": 4,
+      "milliseconds": [
+        141.19843899999978,
+        129.83094999999958,
+        130.16210899999896,
+        125.45601100000022
+      ],
+      "medianMilliseconds": 129.99652949999927,
+      "renderToRealtimeRatio": 0.06499826474999963,
+      "relativeToV05": 0.9936189767335369
+    }
+  ]
+}

@@ -12,12 +12,12 @@
       "warmupRuns": 1,
       "measuredRuns": 3,
       "milliseconds": [
-        559.8549170000001,
-        482.54111200000034,
-        476.10471499999994
+        515.2950779999999,
+        537.4501740000001,
+        608.9342159999997
       ],
-      "medianMilliseconds": 482.54111200000034,
-      "renderToRealtimeRatio": 0.24127055600000016
+      "medianMilliseconds": 537.4501740000001,
+      "renderToRealtimeRatio": 0.26872508700000003
     },
     {
       "file": "GRIMISS_mAMB_Synth_v0_3_3_Filter_Fix.html",
@@ -28,12 +28,12 @@
       "warmupRuns": 1,
       "measuredRuns": 3,
       "milliseconds": [
-        270.62437599999976,
-        254.27567399999953,
-        272.9859550000001
+        333.76813300000003,
+        274.767296,
+        301.3369190000003
       ],
-      "medianMilliseconds": 270.62437599999976,
-      "renderToRealtimeRatio": 0.1353121879999999
+      "medianMilliseconds": 301.3369190000003,
+      "renderToRealtimeRatio": 0.15066845950000016
     }
   ]
 }

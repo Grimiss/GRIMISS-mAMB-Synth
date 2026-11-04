@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Every implemented mode/wave/filter/effect/octave/sync option remains selectable through real buttons",
+    "All four LINK buttons toggle their real independent routes with no decorative curves",
+    "EQ logarithmic frequency view changes true Hz/response while Thickness leaves the EQ curve unchanged",
+    "Main Analog Age, velocity and Thickness retain one authoritative saved parameter each; log proxies are not patches",
+    "Header controls have disjoint hit rectangles at both target sizes and keyboard modes",
+    "All 30 white-key notch regions exclude white hits, with 37 unprinted playable keys and no instruction text",
+    "Opened dark picker has readable green selection and native keyboard selection/close behaviour"
+  ],
+  "consoleErrors": [],
+  "physicalMidiTested": false
+}

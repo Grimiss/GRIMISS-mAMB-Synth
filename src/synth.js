@@ -1,12 +1,13 @@
 // Shared independently implemented DSP, used by Worklet, fallback and offline tests.
 function createMambEngine(initial, sr=48000, seed=12345){
 // New controls default to neutral values for v0.4 patch compatibility.
-initial={analogCharacter:0,lfo1Wave:'sine',lfo1Depth:100,lfo2Wave:'triangle',lfo2Rate:20,lfo2Depth:100,...initial};
-initial.analogCharacter=Number.isFinite(initial.analogCharacter)?Math.max(0,Math.min(100,initial.analogCharacter)):0;
+initial={thickness:0,velocitySensitivity:50,analogCharacter:0,lfo1Wave:'sine',lfo1Depth:100,lfo2Wave:'triangle',lfo2Rate:20,lfo2Depth:100,...initial};
+for(const key of ['analogCharacter','thickness','velocitySensitivity'])initial[key]=Number.isFinite(initial[key])?Math.max(0,Math.min(100,initial[key])):key==='velocitySensitivity'?50:0;
+let performanceBend=0,performanceWheel=0;
 let voices=[],clock=0,smoothMix=1,params={...initial},target={...initial},serial=0,hold=false,mode='add',group=-1,tick=0,frames=0,rebuilding=false;
 const TWO=2*Math.PI,dt=1/sr,alpha=1-Math.exp(-dt/.015),controlAlpha=1-Math.exp(-16*dt/.015);
 const owners=new Map(),controllers=new Map(),moving=[];let cacheDirty=true;
-const mod={aa:0,ad:0,ar:0,fa:0,fd:0,fr:0,lfo:0,lfo2:0,ratio2:1,baseCut:1000,drive:1,driveNorm:1,k:2};
+const mod={aa:0,ad:0,ar:0,fa:0,fd:0,fr:0,lfo:0,lfo2:0,ratio2:1,baseCut:1000,drive:1,driveNorm:1,k:2,thickRatio:1,level1:0,level2:0,wheelGate:1};
 const spectra=[[1,.12,.48,.08,.25,.04,.13],[.55,.14,.75,.09,.52,.07,.28],[.32,.85,.14,.61,.07,.39,.18]];
 const waveNames=['saw','pulse','triangle','sine','dwgs1','dwgs2','dwgs3'],filterNames=['lp','lp24','hp','bp'];
 function mixState(names,value){const weights=new Float64Array(names.length);const index=Math.max(0,names.indexOf(value));weights[index]=1;return {names,weights,steps:new Float64Array(names.length),index,left:0}}
@@ -29,8 +30,12 @@ function routed(v,fe,ae){const values=v.mods;values.fill(0);for(let i=0;i<active
 function control(){
  if(moving.length)cacheDirty=true;for(let i=moving.length-1;i>=0;i--){const key=moving[i];params[key]+=(target[key]-params[key])*controlAlpha;if(Math.abs(target[key]-params[key])<1e-7){params[key]=target[key];moving[i]=moving[moving.length-1];moving.pop()}}
  if(cacheDirty){const p=params;mod.aa=.005+(p.aa/100)**2*5;mod.ad=.005+(p.ad/100)**2*5;mod.ar=.005+(p.ar/100)**2*5;mod.fa=.005+(p.fa/100)**2*5;mod.fd=.005+(p.fd/100)**2*5;mod.fr=.005+(p.fr/100)**2*5;
- mod.rate1=.025+(p.lfo/100)**2*8;mod.rate2=.005+(p.lfo2Rate/100)**2*8;mod.ratio2=2**(p.oct2+p.semi2/12+p.detune/1200);mod.baseCut=50*320**(p.cutoff/100);mod.drive=1+p.drive/10;mod.driveNorm=1/Math.tanh(mod.drive);mod.k=Math.max(.35,2-.018*p.res);cacheDirty=false;}
+ mod.rate1=.025+(p.lfo/100)**2*8;mod.rate2=.005+(p.lfo2Rate/100)**2*8;mod.ratio2=2**(p.oct2+p.semi2/12+p.detune/1200);mod.baseCut=50*320**(p.cutoff/100);mod.drive=1+p.drive/10;mod.driveNorm=1/Math.tanh(mod.drive);mod.k=Math.max(.35,2-.018*p.res);
+ // Reuse OSC2: a quiet companion and bounded static tuning, not extra oscillators/voices.
+ const thick=p.thickness/100,a=p.level1/100,b=p.level2/100,extra=.22*Math.max(0,a-b)*thick,normal=Math.sqrt((a*a+b*b)/Math.max(1e-20,a*a+(b+extra)*(b+extra)));
+ mod.level1=a*normal;mod.level2=(b+extra)*normal;mod.thickRatio=2**((p.voiceMode==='unison'?0:Math.max(0,4-Math.abs(p.detune))*thick)/1200);cacheDirty=false;}
  // Sparse preallocated taps preserve old paths while rewiring, including rapid edits.
+ let wheelGate=1;for(let i=0;i<activeTaps.length;i++){const tap=activeTaps[i];if(tap.dest===0&&(tap.source===2||tap.source===7)&&tap.target!==0){wheelGate=0;break}}mod.wheelGate+=(wheelGate-mod.wheelGate)*controlAlpha;if(Math.abs(wheelGate-mod.wheelGate)<1e-7)mod.wheelGate=wheelGate;
  const hadTaps=activeTaps.length;for(let i=activeTaps.length-1;i>=0;i--){const tap=activeTaps[i];tap.amount+=(tap.target-tap.amount)*controlAlpha;if(Math.abs(tap.target-tap.amount)<1e-8)tap.amount=tap.target;if(tap.target===0&&tap.amount===0){tap.active=false;activeTaps[i]=activeTaps[activeTaps.length-1];activeTaps.pop()}}
  if(hadTaps&&!activeTaps.length)for(const v of voices)v.mods.fill(0);
  for(const v of voices){analogControl(v);if(Math.abs(v.ic1)<1e-24)v.ic1=0;if(Math.abs(v.ic2)<1e-24)v.ic2=0;if(Math.abs(v.ic3)<1e-24)v.ic3=0;if(Math.abs(v.ic4)<1e-24)v.ic4=0}
@@ -50,6 +55,7 @@ function driftValue(d){const segment=Math.floor(frames/d.period),u=(frames%d.per
 function park(v,frame=frames){const slot=v.slot;if(!slot||slot.current!==v)return;slot.p1=v.p1;slot.p2=v.p2;slot.inc1=v.inc1;slot.inc2=v.inc2;slot.frame=frame;slot.current=null;v.slot=null}
 function steal(v){park(v);v.stealFade=1}
 function analogControl(v){const c=v.calibration,strength=params.analogCharacter/50;
+ if(v.velocitySetting!==params.velocitySensitivity){v.velocitySetting=params.velocitySensitivity;v.velocityTarget=v.velocitySetting===0?1:v.velocity**(1.5*v.velocitySetting/100)}
  // Drift is sampled on the existing 16-frame control clock, never with per-sample RNG.
  if(strength>0){const s=v.physicalSlot;v.analog1=2**((c.tune1+3*driftValue(s.drift1))*strength/1200);v.analog2=2**((c.tune2+3*driftValue(s.drift2))*strength/1200);v.analogCut=1+c.cutoff*strength;v.analogGain=10**(c.gainDb*strength/20)}else{v.analog1=v.analog2=v.analogCut=v.analogGain=1}
  v.aa=mod.aa*(1+c.aa*strength);v.ad=mod.ad*(1+c.ad*strength);v.fa=mod.fa*(1+c.fa*strength);v.fd=mod.fd*(1+c.fd*strength);
@@ -69,12 +75,12 @@ function updateEnv(e,dt,a,d,s,r){if(e.stage==='attack'){e.value=Math.min(1,e.val
 function mixedOsc(m,phase,inc,width,hz){if(!m.left){const w=waveNames[m.index];return m.index>=4?digitalWave(w,phase,hz,sr):osc(w,phase,inc,width)}let out=0;for(let i=0;i<m.weights.length;i++)if(Math.abs(m.weights[i])>1e-10)out+=m.weights[i]*(i>=4?digitalWave(waveNames[i],phase,hz,sr):osc(waveNames[i],phase,inc,width));return out}
 function sample(v,sr,p,mod){
 const fe=updateEnv(v.fil,dt,v.fa,v.fd,p.fs/100,mod.fr),ae=updateEnv(v.amp,dt,v.aa,v.ad,p.as/100,mod.ar);
-v.bend+=(v.owner.controller.bend-v.bend)*alpha;v.wheel+=(v.owner.controller.wheel-v.wheel)*alpha;
+const bendTarget=performanceBend===0?v.owner.controller.bend:Math.max(-1,Math.min(1,v.owner.controller.bend+performanceBend)),wheelTarget=Math.max(v.owner.controller.wheel,performanceWheel);v.bend+=(bendTarget-v.bend)*alpha;v.wheel+=(wheelTarget-v.wheel)*alpha;
 if(activeTaps.length)routed(v,fe,ae);const rm=v.mods;
-const lfo=mod.lfo,vib=(p.vib*.00015+v.wheel*.3)*lfo,drift=p.drift*.00006*Math.sin(TWO*(clock*v.driftRate+v.seed)),pitch=2**((vib+drift+p.bend*2+v.bend*2+v.stackDetune/100+rm[0]*12)/12),f1=v.hz*pitch*v.analog1,f2=v.hz*pitch*mod.ratio2*2**rm[1]*v.analog2,inc1=Math.min(.49,f1/sr),inc2=Math.min(.49,f2/sr);
+const lfo=mod.lfo,vib=(p.vib*.00015+v.wheel*.3*mod.wheelGate)*lfo,drift=p.drift*.00006*Math.sin(TWO*(clock*v.driftRate+v.seed)),pitch=2**((vib+drift+p.bend*2+v.bend*2+v.stackDetune/100+rm[0]*12)/12),f1=v.hz*pitch*v.analog1,f2=v.hz*pitch*mod.ratio2*mod.thickRatio*2**rm[1]*v.analog2,inc1=Math.min(.49,f1/sr),inc2=Math.min(.49,f2/sr);
 v.inc1=inc1;v.inc2=inc2;const wrapped=v.p1+inc1>=1;v.p1=(v.p1+inc1)%1;if(p.sync&&wrapped)v.p2=0;v.p2=(v.p2+inc2)%1;const width=Math.max(.08,Math.min(.92,p.pw/100+p.pwm/100*lfo+rm[2]*.4));let x1=mixedOsc(mix1,v.p1,inc1,width,f1);
 const modPhase=(v.p2+(p.cross/100)*.24*x1+1)%1;
-let x2=mixedOsc(mix2,modPhase,Math.min(.49,inc2*(1+p.cross/100)),.5,f2),ring=p.ring/100;let x=(x1*p.level1/100+x2*p.level2/100)*(1-ring)+x1*x2*ring*.9+(random()*2-1)*Math.max(0,Math.min(100,p.noise+rm[5]*50))/250;
+let x2=mixedOsc(mix2,modPhase,Math.min(.49,inc2*(1+p.cross/100)),.5,f2),ring=p.ring/100;let x=(x1*mod.level1+x2*mod.level2)*(1-ring)+x1*x2*ring*.9+(random()*2-1)*Math.max(0,Math.min(100,p.noise+rm[5]*50))/250;
 x=Math.tanh(x*mod.drive)*mod.driveNorm;
 let cut=mod.baseCut*v.analogCut*Math.pow(2,p.envAmt/100*fe*4+p.motion/100*lfo*2+p.keyTrack/100*(v.note-60)/12+rm[3]*4);
 // Clamp cutoff well below Nyquist and slew the filter coefficient per voice.
@@ -93,9 +99,10 @@ if(!Number.isFinite(v.ic1)||!Number.isFinite(v.ic2)) {v.ic1=0;v.ic2=0;}
 const z=v2-v.ic4,b1=a1*v.ic3+a2*z,b2=v.ic4+a2*v.ic3+a3*z;v.ic3=2*b1-v.ic3;v.ic4=2*b2-v.ic4;
 const weights=filterMix.weights;let y=weights[0]*v2+weights[1]*b2+weights[2]*(x-k*v1-v2)+weights[3]*v1;
 if(!Number.isFinite(y)||!Number.isFinite(v.ic3)||!Number.isFinite(v.ic4)){v.ic1=v.ic2=v.ic3=v.ic4=0;y=0}
+if(v.velocityGain!==v.velocityTarget){v.velocityGain+=(v.velocityTarget-v.velocityGain)*alpha;if(Math.abs(v.velocityTarget-v.velocityGain)<1e-8)v.velocityGain=v.velocityTarget}
 let fade=v.stealFade===undefined?1:Math.max(0,v.stealFade);if(v.stealFade!==undefined)v.stealFade-=dt/.018;
 // Preserve dynamics of a single voice; summing is managed at the master.
-return Math.tanh(y*1.15)*ae*.20*fade*v.velocity*v.analogGain*Math.max(0,Math.min(2,1+rm[4]))}
+return Math.tanh(y*1.15)*ae*.20*fade*v.velocityGain*v.analogGain*Math.max(0,Math.min(2,1+rm[4]))}
 
 function releaseOwner(owner){if(owner.down||owner.latched||owner.sustained)return;for(const v of voices)if(v.owner===owner&&v.amp.stage!=='release')for(const key of ['amp','fil']){v[key].releaseLevel=v[key].value;v[key].stage='release'}}
 function ownerHasVoices(owner){for(let i=0;i<voices.length;i++){const v=voices[i];if(v.owner===owner&&v.stealFade===undefined&&v.amp.stage!=='off')return true}return false}
@@ -110,7 +117,7 @@ function newVoices(owner){
  // Keep the legacy noise RNG sequence at note boundaries; phases/calibration belong to the physical slot.
  random();random();random();random();
  const slot=slots.find(s=>!s.current),elapsed=frames-slot.frame;
- const v={id:serial++,owner,note:owner.note,hz:440*2**((owner.note-69)/12),velocity:owner.velocity,stackDetune:count===1?0:(i-1.5)*7,p1:(slot.p1+elapsed*slot.inc1)%1,p2:(slot.p2+elapsed*slot.inc2)%1,seed:slot.seed,driftRate:slot.driftRate,slot,physicalSlot:slot,calibration:slot.calibration,inc1:slot.inc1,inc2:slot.inc2,analog1:1,analog2:1,analogCut:1,analogGain:1,aa:mod.aa,ad:mod.ad,fa:mod.fa,fd:mod.fd,ic1:0,ic2:0,ic3:0,ic4:0,bend:owner.controller.bend,wheel:owner.controller.wheel,mods:new Float64Array(6),smoothCut:NaN,amp:{stage:'attack',value:0},fil:{stage:'attack',value:0}};
+ const v={id:serial++,owner,note:owner.note,hz:440*2**((owner.note-69)/12),velocity:owner.velocity,velocitySetting:params.velocitySensitivity,velocityTarget:params.velocitySensitivity===0?1:owner.velocity**(1.5*params.velocitySensitivity/100),velocityGain:params.velocitySensitivity===0?1:owner.velocity**(1.5*params.velocitySensitivity/100),stackDetune:count===1?0:(i-1.5)*7,p1:(slot.p1+elapsed*slot.inc1)%1,p2:(slot.p2+elapsed*slot.inc2)%1,seed:slot.seed,driftRate:slot.driftRate,slot,physicalSlot:slot,calibration:slot.calibration,inc1:slot.inc1,inc2:slot.inc2,analog1:1,analog2:1,analogCut:1,analogGain:1,aa:mod.aa,ad:mod.ad,fa:mod.fa,fd:mod.fd,ic1:0,ic2:0,ic3:0,ic4:0,bend:Math.max(-1,Math.min(1,owner.controller.bend+performanceBend)),wheel:Math.max(owner.controller.wheel,performanceWheel),mods:new Float64Array(6),smoothCut:NaN,amp:{stage:'attack',value:0},fil:{stage:'attack',value:0}};
  slot.current=v;analogControl(v);voices.push(v);
  }
  if(voices.length>32)voices.splice(0,voices.length-32);
@@ -135,7 +142,7 @@ function sourceOff(source,disconnect=false,hard=false){
  for(const o of owners.values())if(o.source===source){o.down=o.latched=o.sustained=false;if(hard){for(const v of voices)if(v.owner===o)steal(v)}else releaseOwner(o)}
  const c=controllers.get(source);if(c){c.sustain=false;c.bend=0;c.wheel=0}if(disconnect)controllers.delete(source);restorePriority();
 }
-function panic(){for(const v of voices)steal(v);owners.clear();controllers.clear();group=-1}
+function panic(){performanceBend=performanceWheel=0;for(const v of voices)steal(v);owners.clear();controllers.clear();group=-1}
 function setRoute(index,value){if(!Number.isInteger(index)||index<0||index>=4)return;const r=routes[index];if(!value||!sources.includes(value.source)||!destinations.includes(value.destination)||!Number.isFinite(value.amount))return;
  r.source=value.source;r.destination=value.destination;r.enabled=!!value.enabled;r.target=r.enabled?Math.max(-1,Math.min(1,value.amount)):0;
  for(let i=0;i<r.taps.length;i++)r.taps[i].target=0;
@@ -143,10 +150,11 @@ function setRoute(index,value){if(!Number.isInteger(index)||index<0||index>=4)re
 }
 
 function message(m){switch(m.type){
- case 'params':{const previousMode=target.voiceMode;for(const [k,value] of Object.entries(m.value||{})){if(!(k in target))continue;if(typeof target[k]==='number'){if(typeof value==='number'&&Number.isFinite(value)){target[k]=k==='analogCharacter'?Math.max(0,Math.min(100,value)):Math.max(-1000,Math.min(1000,value));if(!moving.includes(k))moving.push(k)}}else if(typeof value===typeof target[k]){target[k]=value;params[k]=value;if(k==='wave1')changeMix(mix1,value);if(k==='wave2')changeMix(mix2,value);if(k==='filter')changeMix(filterMix,value)}}if(previousMode!==target.voiceMode){for(const v of voices)steal(v);if(target.voiceMode==='poly'){rebuilding=true;for(const o of owners.values())if(o.down||o.latched||o.sustained)newVoices(o);rebuilding=false;cleanup()}else restorePriority()}break;}
+ case 'params':{const previousMode=target.voiceMode;for(const [k,value] of Object.entries(m.value||{})){if(!(k in target))continue;if(typeof target[k]==='number'){if(typeof value==='number'&&Number.isFinite(value)){target[k]=['analogCharacter','velocitySensitivity','thickness'].includes(k)?Math.max(0,Math.min(100,value)):Math.max(-1000,Math.min(1000,value));if(!moving.includes(k))moving.push(k)}}else if(typeof value===typeof target[k]){target[k]=value;params[k]=value;if(k==='voiceMode')cacheDirty=true;if(k==='wave1')changeMix(mix1,value);if(k==='wave2')changeMix(mix2,value);if(k==='filter')changeMix(filterMix,value)}}if(previousMode!==target.voiceMode){for(const v of voices)steal(v);if(target.voiceMode==='poly'){rebuilding=true;for(const o of owners.values())if(o.down||o.latched||o.sustained)newVoices(o);rebuilding=false;cleanup()}else restorePriority()}break;}
  case 'on':noteOn(m.note,m.velocity,m.source);break;case 'off':noteOff(m.note,m.source);break;
  case 'panic':panic();break;
  case 'sourceOff':sourceOff(m.source||'default',!!m.disconnect,!!m.hard);break;
+ case 'performance':{if(Number.isFinite(m.bend))performanceBend=Math.max(-1,Math.min(1,m.bend));if(Number.isFinite(m.wheel))performanceWheel=Math.max(0,Math.min(1,m.wheel));break}
  case 'controller':{const c=controller(m.source||'default');if(Number.isFinite(m.bend))c.bend=Math.max(-1,Math.min(1,m.bend));if(Number.isFinite(m.wheel))c.wheel=Math.max(0,Math.min(1,m.wheel));break}
  case 'sustain':{const source=m.source||'default',c=controller(source);c.sustain=!!m.value;if(!c.sustain)for(const o of owners.values())if(o.source===source){o.sustained=false;releaseOwner(o)}restorePriority();break}
  case 'hold':hold=!!m.value;mode=m.mode==='replace'?'replace':'add';group=-1;if(!hold)for(const o of owners.values()){o.latched=false;releaseOwner(o)}restorePriority();break;
@@ -167,6 +175,6 @@ function render(out){
  // Remove completed owners outside the sample loop; retains last-note priority keys.
  owners.forEach(pruneOwner);
 }
-function snapshot(){const activeNotes=new Set(),held=new Set(),pressed=new Set();for(const v of voices)if(v.stealFade===undefined&&v.amp.stage!=='release'&&v.amp.stage!=='off')activeNotes.add(v.note);for(const o of owners.values()){if(o.latched&&ownerHasVoices(o))held.add(o.note);if(o.down)pressed.add(o.note)}return {analogCharacter:params.analogCharacter,analogCharacterTarget:target.analogCharacter,physicalSlots:slots.map(s=>({index:s.index,calibration:{...s.calibration},phase1:s.current?s.current.p1:(s.p1+(frames-s.frame)*s.inc1)%1,phase2:s.current?s.current.p2:(s.p2+(frames-s.frame)*s.inc2)%1,inc1:s.current?s.current.inc1:s.inc1,inc2:s.current?s.current.inc2:s.inc2,drift1:s.drift1.value,drift2:s.drift2.value,active:!!s.current})),voices:voices.map(v=>({slot:v.physicalSlot.index,phase1:v.p1,phase2:v.p2,analog1:v.analog1,analog2:v.analog2,analogCut:v.analogCut,analogGain:v.analogGain,attackSeconds:v.aa,decaySeconds:v.ad,note:v.note,source:v.owner.source,velocity:v.velocity,stage:v.amp.stage,value:v.amp.value,filterEnvelope:v.fil.value,bend:v.bend,wheel:v.wheel,stealing:v.stealFade!==undefined})),activeNotes:[...activeNotes],held:[...held],pressed:[...pressed],owners:owners.size,clock,lfo1:lfoStates[0].value,lfo2:lfoStates[1].value,lfoPhases:lfoStates.map(s=>s.phase),routes:routes.map(r=>({source:r.source,destination:r.destination,enabled:r.enabled,target:r.target,amount:r.taps[sources.indexOf(r.source)*destinations.length+destinations.indexOf(r.destination)].amount}))}}
+function snapshot(){const activeNotes=new Set(),held=new Set(),pressed=new Set();for(const v of voices)if(v.stealFade===undefined&&v.amp.stage!=='release'&&v.amp.stage!=='off')activeNotes.add(v.note);for(const o of owners.values()){if(o.latched&&ownerHasVoices(o))held.add(o.note);if(o.down)pressed.add(o.note)}return {performance:{bend:performanceBend,wheel:performanceWheel},velocitySensitivity:params.velocitySensitivity,thickness:params.thickness,wheelVibratoGate:mod.wheelGate,analogCharacter:params.analogCharacter,analogCharacterTarget:target.analogCharacter,physicalSlots:slots.map(s=>({index:s.index,calibration:{...s.calibration},phase1:s.current?s.current.p1:(s.p1+(frames-s.frame)*s.inc1)%1,phase2:s.current?s.current.p2:(s.p2+(frames-s.frame)*s.inc2)%1,inc1:s.current?s.current.inc1:s.inc1,inc2:s.current?s.current.inc2:s.inc2,drift1:s.drift1.value,drift2:s.drift2.value,active:!!s.current})),voices:voices.map(v=>({velocityGain:v.velocityGain,slot:v.physicalSlot.index,phase1:v.p1,phase2:v.p2,analog1:v.analog1,analog2:v.analog2,analogCut:v.analogCut,analogGain:v.analogGain,attackSeconds:v.aa,decaySeconds:v.ad,note:v.note,source:v.owner.source,velocity:v.velocity,stage:v.amp.stage,value:v.amp.value,filterEnvelope:v.fil.value,bend:v.bend,wheel:v.wheel,stealing:v.stealFade!==undefined})),activeNotes:[...activeNotes],held:[...held],pressed:[...pressed],owners:owners.size,clock,lfo1:lfoStates[0].value,lfo2:lfoStates[1].value,lfoPhases:lfoStates.map(s=>s.phase),routes:routes.map(r=>({source:r.source,destination:r.destination,enabled:r.enabled,target:r.target,amount:r.taps[sources.indexOf(r.source)*destinations.length+destinations.indexOf(r.destination)].amount}))}}
 return {render,message,snapshot};
 }

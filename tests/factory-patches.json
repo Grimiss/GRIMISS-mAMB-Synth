@@ -71,7 +71,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -182,7 +184,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -293,7 +297,9 @@
       "fxReverbDecay": 5,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -404,7 +410,9 @@
       "fxReverbDecay": 5.5,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.21,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -515,7 +523,9 @@
       "fxReverbDecay": 6,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -626,7 +636,9 @@
       "fxReverbDecay": 6.5,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.23,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -737,7 +749,9 @@
       "fxReverbDecay": 7,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.24,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -848,7 +862,9 @@
       "fxReverbDecay": 7.5,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -959,7 +975,9 @@
       "fxReverbDecay": 8,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.26,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1070,7 +1088,9 @@
       "fxReverbDecay": 8.5,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.27,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1181,7 +1201,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1292,7 +1314,9 @@
       "fxReverbDecay": 10,
       "fxReverbMod": 0.6,
       "fxReverbMix": 0.35,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1403,7 +1427,9 @@
       "fxReverbDecay": 7.4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1514,7 +1540,9 @@
       "fxReverbDecay": 8.1,
       "fxReverbMod": 0.4,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1625,7 +1653,9 @@
       "fxReverbDecay": 8.8,
       "fxReverbMod": 0.45,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1736,7 +1766,9 @@
       "fxReverbDecay": 9.5,
       "fxReverbMod": 0.5,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1847,7 +1879,9 @@
       "fxReverbDecay": 10.2,
       "fxReverbMod": 0.55,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -1958,7 +1992,9 @@
       "fxReverbDecay": 10.9,
       "fxReverbMod": 0.6,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2069,7 +2105,9 @@
       "fxReverbDecay": 11.6,
       "fxReverbMod": 0.65,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2180,7 +2218,9 @@
       "fxReverbDecay": 12.3,
       "fxReverbMod": 0.7,
       "fxReverbMix": 0.28,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2291,7 +2331,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2402,7 +2444,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2513,7 +2557,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2624,7 +2670,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2735,7 +2783,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2846,7 +2896,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -2957,7 +3009,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3068,7 +3122,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3179,7 +3235,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3290,7 +3348,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.2,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3401,7 +3461,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3512,7 +3574,9 @@
       "fxReverbDecay": 9,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3623,7 +3687,9 @@
       "fxReverbDecay": 10,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3734,7 +3800,9 @@
       "fxReverbDecay": 11,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3845,7 +3913,9 @@
       "fxReverbDecay": 12,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -3956,7 +4026,9 @@
       "fxReverbDecay": 13,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4067,7 +4139,9 @@
       "fxReverbDecay": 14,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4178,7 +4252,9 @@
       "fxReverbDecay": 15,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4289,7 +4365,9 @@
       "fxReverbDecay": 16,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4400,7 +4478,9 @@
       "fxReverbDecay": 17,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4511,7 +4591,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4622,7 +4704,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4733,7 +4817,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4844,7 +4930,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -4955,7 +5043,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5066,7 +5156,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5177,7 +5269,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5288,7 +5382,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5399,7 +5495,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5510,7 +5608,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5621,7 +5721,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5732,7 +5834,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5843,7 +5947,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -5954,7 +6060,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6065,7 +6173,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6176,7 +6286,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6287,7 +6399,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6398,7 +6512,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6509,7 +6625,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6620,7 +6738,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6731,7 +6851,9 @@
       "fxReverbDecay": 2,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6842,7 +6964,9 @@
       "fxReverbDecay": 2.2,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -6953,7 +7077,9 @@
       "fxReverbDecay": 2.4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7064,7 +7190,9 @@
       "fxReverbDecay": 2.6,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7175,7 +7303,9 @@
       "fxReverbDecay": 2.8,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7286,7 +7416,9 @@
       "fxReverbDecay": 3,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7397,7 +7529,9 @@
       "fxReverbDecay": 3.2,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7508,7 +7642,9 @@
       "fxReverbDecay": 3.4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7619,7 +7755,9 @@
       "fxReverbDecay": 3.6,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7730,7 +7868,9 @@
       "fxReverbDecay": 3.8,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.18,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7841,7 +7981,9 @@
       "fxReverbDecay": 3,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.35,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -7952,7 +8094,9 @@
       "fxReverbDecay": 3.4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8063,7 +8207,9 @@
       "fxReverbDecay": 3.8,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8174,7 +8320,9 @@
       "fxReverbDecay": 4.2,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8285,7 +8433,9 @@
       "fxReverbDecay": 4.6,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8396,7 +8546,9 @@
       "fxReverbDecay": 5,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8507,7 +8659,9 @@
       "fxReverbDecay": 5.4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8618,7 +8772,9 @@
       "fxReverbDecay": 5.8,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8729,7 +8885,9 @@
       "fxReverbDecay": 6.2,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8840,7 +8998,9 @@
       "fxReverbDecay": 6.6,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.22,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -8951,7 +9111,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9062,7 +9224,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9173,7 +9337,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9284,7 +9450,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9395,7 +9563,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9506,7 +9676,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9617,7 +9789,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9728,7 +9902,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9839,7 +10015,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {
@@ -9950,7 +10128,9 @@
       "fxReverbDecay": 4,
       "fxReverbMod": 0.35,
       "fxReverbMix": 0.25,
-      "analogCharacter": 0
+      "analogCharacter": 0,
+      "velocitySensitivity": 50,
+      "thickness": 0
     },
     "xy": {
       "xy1": {

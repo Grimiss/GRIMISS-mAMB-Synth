@@ -1231,7 +1231,27 @@
   },
   {
     "id": "analogCharacter",
-    "label": "Analog Character",
+    "label": "Analog Age",
+    "category": "Filter / Modulation",
+    "type": "range",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "step": 1
+  },
+  {
+    "id": "velocitySensitivity",
+    "label": "Velocity sensitivity",
+    "category": "Filter / Modulation",
+    "type": "range",
+    "min": 0,
+    "max": 100,
+    "default": 50,
+    "step": 1
+  },
+  {
+    "id": "thickness",
+    "label": "Thickness",
     "category": "Filter / Modulation",
     "type": "range",
     "min": 0,
