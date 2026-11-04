@@ -1,4 +1,4 @@
-// Ninety original factory patches in nine continuously numbered banks. No manufacturer patch data.
+// One hundred original factory patches in ten continuously numbered banks. No manufacturer patch data.
 function installMambFactoryPatches(presets){
  const banks=[
  ['Ambient Pads',['Warm Ambient','Chorus Warmth','Velvet Dawn','Amber Clouds','Teal Horizon','Soft Current','Hushed Air','Afterlight','Cedar Bloom','Distant Ember']],
@@ -155,7 +155,7 @@ function installMambFactoryPatches(presets){
     filter:'lp',cutoff:60,res:12,drive:12,envAmt:18,keyTrack:20,fa:0,fd:45,fs:35,fr:55,
     aa:20,ad:45,as:85,ar:55,drift:8,vib:0,lfo:8,motion:0,lfo1Wave:'sine',lfo1Depth:100,
     lfo2Wave:'triangle',lfo2Rate:5,lfo2Depth:100,thickness:0,analogCharacter:15,velocitySensitivity:0,
-    master:62,pan:0,eqLow:0,eqHigh:0,eqLowFreq:200,eqHighFreq:5000,
+    arpOn:false,arpPattern:'up',arpDivision:.5,arpGate:55,arpOctaves:1,master:62,pan:0,eqLow:0,eqHigh:0,eqLowFreq:200,eqHighFreq:5000,
     fxModOn:false,fxModType:'chorus',fxModRate:.25,fxModDepth:.35,fxModFeedback:.15,fxModMix:.25,
     fxDelayOn:false,fxDelayType:'stereo',fxDelayTime:.45,fxDelayFeedback:.35,fxDelayMix:.25,fxDelaySync:false,fxDelayDivision:.5,fxDelayWidth:1,tempo:100,
     fxReverbOn:false,fxReverbType:'hall',fxReverbDwell:.35,fxReverbTone:5000,fxReverbDecay:4,fxReverbMod:.35,fxReverbMix:.25,
@@ -168,5 +168,18 @@ function installMambFactoryPatches(presets){
    presets[name]=p;catalog.push({number:++number,name,category,patch:p});
   });
  }
- if(catalog.length!==90||new Set(catalog.map(p=>p.name)).size!==90)throw Error('Factory catalog must contain90 unique patches');return catalog;
+ const arpBank=[
+  ['Teal Steps','Soft Current',{tempo:108,arpPattern:'up',arpDivision:.5,arpOctaves:2,arpGate:52,aa:0,ad:25,as:15,ar:28,fxDelaySync:true,fxDelayDivision:.75}],
+  ['Midnight Relay','Midnight Pluck',{tempo:118,arpPattern:'down',arpDivision:.25,arpOctaves:1,arpGate:32,fxDelayOn:true,fxDelayType:'cross',fxDelaySync:true,fxDelayDivision:.75,fxDelayMix:.34}],
+  ['Glass Orbit','Glass Droplet',{tempo:88,arpPattern:'updown',arpDivision:.5,arpOctaves:3,arpGate:42,fxReverbOn:true,fxReverbType:'hall',fxReverbDecay:9,fxReverbMix:.35}],
+  ['Spring Circuit','Spring Pizz',{tempo:124,arpPattern:'played',arpDivision:.25,arpOctaves:1,arpGate:25,fxReverbDwell:.8,fxReverbMix:.42}],
+  ['Amber Ladder','Amber Kalimba',{tempo:96,arpPattern:'up',arpDivision:.5,arpOctaves:3,arpGate:65,fxDelayOn:true,fxDelaySync:true,fxDelayDivision:.5,fxDelayMix:.26}],
+  ['Velvet Triplets','Velvet Dawn',{tempo:76,arpPattern:'updown',arpDivision:2/3,arpOctaves:2,arpGate:88,aa:10,ad:45,as:70,ar:48,fxModOn:true}],
+  ['Photon Rain','Pixel Harp',{tempo:132,arpPattern:'random',arpDivision:.25,arpOctaves:3,arpGate:20,fxDelayOn:true,fxDelaySync:true,fxDelayDivision:.75,fxDelayMix:.38}],
+  ['Clockwork Bass','Pulse Anchor',{tempo:112,arpPattern:'played',arpDivision:.25,arpOctaves:1,arpGate:48,fxReverbOn:false,fxDelayOn:true,fxDelayTime:.12,fxDelaySync:false,fxDelayFeedback:.18,fxDelayMix:.18}],
+  ['Drift Mosaic','Vocal Prism',{tempo:64,arpPattern:'random',arpDivision:.75,arpOctaves:2,arpGate:75,aa:8,ar:55,fxReverbDecay:12,fxReverbMix:.42}],
+  ['Endless Horizon','Stereo Horizons',{tempo:72,arpPattern:'updown',arpDivision:1,arpOctaves:2,arpGate:92,aa:18,as:75,ar:68,fxDelaySync:true,fxDelayDivision:.75,fxDelayMix:.4}]
+ ];
+ for(const[name,base,extra]of arpBank){const p={...presets[base],...extra,arpOn:true,routes:presets[base].routes.map(r=>({...r}))};presets[name]=p;catalog.push({number:++number,name,category:'Arpeggios',patch:p})}
+ if(catalog.length!==100||new Set(catalog.map(p=>p.name)).size!==100)throw Error('Factory catalog must contain100 unique patches');return catalog;
 }

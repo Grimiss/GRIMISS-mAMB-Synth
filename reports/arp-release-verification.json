@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "branch": "codex/controller-workflow-v0.7",
+  "engine_commit": "edbf44c",
+  "html_sha256": "e769b339c191bfbb7b90f8691da3dc0c66a5ebeda288070d06773f0f01dab518",
+  "factory_patches": 100,
+  "arp_bank": {
+    "category": "Arpeggios",
+    "numbers": [
+      91,
+      100
+    ],
+    "patches": 10
+  },
+  "regression": "All test:all groups passed across staged runs. Initial aggregate stopped on divider clipping; corrected and reran UI-through-tail. Updated expected final bank/header count and condition-based EQ/XY close waits without removing assertions. Final factory renders normalize numeric select values exactly as the browser adapter does.",
+  "test_logs": [
+    "work/arp-full-regression.log (baseline/audio/effects/instrument/performance/browser PASS)",
+    "work/arp-final-regression.log (UI/MIDI/workflow/100 factory/ownership/physical PASS)",
+    "work/arp-final-tail.log (reference geometry/analog/refinement/arp/UI PASS)",
+    "work/arp-factory-final.log (100 actual presets, numeric-select recall and effects PASS)",
+    "work/arp-engine-final.log (11 clock/ownership/compatibility/stress tests PASS)",
+    "work/arp-browser-final.log (final four layouts, ten arp sounds, Worklet/fallback and shared effect tempo PASS)"
+  ],
+  "arp_off_compatibility": "Sample-identical wet eight-note output versus v16 at44.1/48/96kHz",
+  "timing": "Sample-clock scheduling; integer gates exact; fractional dotted periods remain within one sample without accumulated rounding drift",
+  "stress": "60 seconds with effects, changing POLY/MONO/UNISON/patterns; <=8 non-stealing voices and bounded finite output",
+  "visual_layouts": [
+    "1920x1080 keyboard visible",
+    "1920x1080 keyboard hidden",
+    "1600x900 keyboard visible",
+    "1600x900 keyboard hidden"
+  ],
+  "rollback": {
+    "development_tag": "rollback/pre-arp-hardware",
+    "development_commit": "80117bb",
+    "site_version": 16,
+    "site_version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_f3164279e4648191936934f763853606",
+    "site_source_commit": "0d6d5e2210a1efc6059e60d4a5452222a6fe8970",
+    "local_archive": "work/rollback-hosted-v16.tar.gz"
+  },
+  "publication": "pending",
+  "main_merged": false,
+  "not_implemented": [
+    "external MIDI Clock",
+    "step-sequencer editing",
+    "generated MIDI note output"
+  ],
+  "unverified": [
+    "physical Windows/tablets",
+    "hardware MIDI",
+    "human listening",
+    "live-origin browser QA due configured host policy"
+  ]
+}

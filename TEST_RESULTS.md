@@ -1,3 +1,7 @@
+# Arpeggiator and near-black hardware finish
+
+100 factory presets in10 banks, including Arpeggios91–100. Audio-frame scheduler: Up/Down/Up-Down/As-Played/Random, five divisions, gate and1–3 octaves; shared tempo. HOLD/sustain/source ownership, patch recall, PANIC and Worklet/fallback verified by dedicated tests. Arp-off wet chords are sample-identical to v16 rollback at44.1/48/96kHz. New textured near-black finish, rounded printed rules/labels, screen glass, short shadows and recessed fasteners preserve measured geometry and37-note keyboard. See ARPEGGIATOR_AND_HARDWARE.md and reports/arp-hardware-review.html. Internal clock only; external MIDI Clock and step editing remain future work. Final release/test status is in reports/arp-release-verification.json. No main merge.
+
 # Factory sound refresh checkpoint
 
 90 intentional factory designs;83 enable varied effects, USER storage/names/numbering and approved geometry preserved. See FACTORY_SOUND_REFRESH.md, tests/preset-contrast-results.json and reports/preset-showcase.html. Includes a reproduced-and-fixed Thickness/PANIC buffer refill regression; no normal-note DSP change. Full-suite final status is recorded in the release verification report. Visual material/lighting improvements are proposals, not a new styling rollout.
@@ -161,3 +165,5 @@ The final repeat exposed a test startup race in physical-controls.cjs: the first
 Three-octave checkpoint: `npm run test:all` completed successfully. Layout capture found no overflow in all four target size/keyboard-mode combinations. New top C6 pointer note-on/off passed.
 
 Factory refresh: every regression group passed across staged runs; see reports/preset-release-verification.json for exact coverage and fixture updates. Both Worklet and fallback browser audio/PANIC pass.90 factory renders are finite, bounded and nonzero;83 wet/dry differences verified. No human listening or physical-device claim.
+
+Arp/hardware checkpoint: all regression groups PASS across staged runs; see reports/arp-release-verification.json for final commands, corrected static bank/header expectations and verification limits.100 factory sounds render finite/bounded/nonzero;93 actual wet/dry changes verified. Exact approved geometry at both target sizes and keyboard states; final dedicated browser checks pass.

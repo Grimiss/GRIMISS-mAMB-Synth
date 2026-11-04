@@ -21,11 +21,11 @@
       "status": "PASS",
       "measurements": {
         "bentModulatedHz": [
-          458.1863720757492,
-          474.20069340246187
+          458.18850770595276,
+          474.2046967108311
         ],
         "untouchedChannelHz": 440,
-        "resetHz": 440.0000000153257,
+        "resetHz": 440.00000000475296,
         "syntheticMidi": true
       }
     },
@@ -42,7 +42,7 @@
       "status": "PASS",
       "measurements": {
         "finite": true,
-        "rms": 0.06397076420382644
+        "rms": 0.0640095453681154
       }
     }
   ],

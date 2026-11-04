@@ -43,3 +43,12 @@ function refreshInstrumentUI(){if(!window.mambInterfaceReady)return;window.mambR
  window.addEventListener('resize',schedule);new ResizeObserver(schedule).observe(el('route-rows'));
  el('downloadBuild').href=location.href.split('#')[0];window.mambInterfaceReady=true;refresh();live();setInterval(live,100);
 })();
+
+// Visual arp activity follows engine snapshots; only the audio engine schedules notes.
+(function(){
+ const el=id=>document.getElementById(id),scope=el('arp-scope'),history=new Array(16).fill(null);let seen=-1;
+ for(const [x,y]of [[9,39],[1265,39],[9,478],[1265,478],[9,623],[1265,623]]){const n=document.createElement('i');n.className='cabinet-fastener';n.setAttribute('aria-hidden','true');n.style.left=x+'px';n.style.top=y+'px';document.querySelector('main').append(n)}
+ for(const [id,delta]of [['arpTempoDown',-1],['arpTempoUp',1]])el(id).onclick=e=>{const n=el('tempo');n.value=String(Math.max(40,Math.min(240,Number(n.value)+delta*(e.shiftKey?10:1))));n.dispatchEvent(new Event('input',{bubbles:true}))};
+ function paint(){const a=latestEngineState?.arpeggiator;el('arpTempoReadout').textContent=el('tempo').value+' BPM';el('arpGate').setAttribute('aria-valuetext',el('arpGate').value+'%');el('arpGate').style.setProperty('--arp-gate-fill',((Number(el('arpGate').value)-5)/90*100)+'%');el('arpStatus').textContent=!el('arpOn').checked?'ARP OFF · PLAY DIRECT':a?.inputNotes?.length?a.inputNotes.length+' NOTES · '+el('arpPattern').selectedOptions[0].text:'PLAY A CHORD · HOLD TO LATCH';const count=a?.stepCount??0;if(count!==seen){if(count<seen)history.fill(null);seen=a?.stepCount??0;history.shift();history.push(a?.currentNote??null);scope.innerHTML='<path d="M0 150H600 M0 90H600 M0 30H600" stroke="#284235" stroke-width="1"/>'+history.map((n,i)=>n===null?'':`<rect x="${i*37+6}" y="${150-Math.min(120,Math.max(10,(n-36)*2))}" width="24" height="${Math.min(120,Math.max(10,(n-36)*2))}" rx="3" fill="${i===15?'#50efd5':'#477d67'}"/>`).join('')}}
+ setInterval(paint,70);paint();window.mambArpUIReady=true;
+})();

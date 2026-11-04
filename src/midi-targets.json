@@ -1152,6 +1152,110 @@
     "step": 0.01
   },
   {
+    "id": "arpOn",
+    "label": "Arpeggiator enable",
+    "category": "Arpeggiator",
+    "type": "checkbox",
+    "min": 0,
+    "max": 1,
+    "default": false
+  },
+  {
+    "id": "arpPattern",
+    "label": "Arpeggiator pattern",
+    "category": "Arpeggiator",
+    "type": "select",
+    "min": 0,
+    "max": 4,
+    "default": "up",
+    "options": [
+      {
+        "value": "up",
+        "label": "UP"
+      },
+      {
+        "value": "down",
+        "label": "DOWN"
+      },
+      {
+        "value": "updown",
+        "label": "UP / DOWN"
+      },
+      {
+        "value": "played",
+        "label": "AS PLAYED"
+      },
+      {
+        "value": "random",
+        "label": "RANDOM"
+      }
+    ]
+  },
+  {
+    "id": "arpDivision",
+    "label": "Arpeggiator division",
+    "category": "Arpeggiator",
+    "type": "select",
+    "min": 0,
+    "max": 4,
+    "default": "0.5",
+    "options": [
+      {
+        "value": "1",
+        "label": "1/4"
+      },
+      {
+        "value": "0.5",
+        "label": "1/8"
+      },
+      {
+        "value": "0.25",
+        "label": "1/16"
+      },
+      {
+        "value": "0.6666666666666666",
+        "label": "1/4 TRIPLET"
+      },
+      {
+        "value": "0.75",
+        "label": "1/8 DOTTED"
+      }
+    ]
+  },
+  {
+    "id": "arpOctaves",
+    "label": "Arpeggiator octaves",
+    "category": "Arpeggiator",
+    "type": "select",
+    "min": 0,
+    "max": 2,
+    "default": "1",
+    "options": [
+      {
+        "value": "1",
+        "label": "1"
+      },
+      {
+        "value": "2",
+        "label": "2"
+      },
+      {
+        "value": "3",
+        "label": "3"
+      }
+    ]
+  },
+  {
+    "id": "arpGate",
+    "label": "Arpeggiator gate",
+    "category": "Arpeggiator",
+    "type": "range",
+    "min": 5,
+    "max": 95,
+    "default": 55,
+    "step": 1
+  },
+  {
     "id": "fxReverbOn",
     "label": "fx Reverb On",
     "category": "Effects",

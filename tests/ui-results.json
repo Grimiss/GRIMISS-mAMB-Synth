@@ -380,8 +380,8 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05317135165108367,
-        "stereoDifferenceRms": 0.0000037230112764849636,
+        "rms": 0.052955188910286076,
+        "stereoDifferenceRms": 0.0000012465251507992971,
         "finite": true
       }
     },
@@ -632,7 +632,7 @@
             "right": 1887,
             "bottom": 1012.5
           },
-          "clientHeight": 149,
+          "clientHeight": 148,
           "scrollHeight": 149
         }
       ],
@@ -1340,8 +1340,8 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05236251599857821,
-        "stereoDifferenceRms": 9.919580374616028e-9,
+        "rms": 0.05269962980800646,
+        "stereoDifferenceRms": 0,
         "finite": true
       }
     },
@@ -1592,7 +1592,7 @@
             "right": 1572.5,
             "bottom": 843.75
           },
-          "clientHeight": 149,
+          "clientHeight": 148,
           "scrollHeight": 149
         }
       ],
@@ -2300,7 +2300,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05254418765339714,
+        "rms": 0.0527077235406075,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -2552,7 +2552,7 @@
             "right": 1258,
             "bottom": 715
           },
-          "clientHeight": 149,
+          "clientHeight": 148,
           "scrollHeight": 149
         }
       ],
@@ -2901,8 +2901,8 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.05238290148417828,
-        "stereoDifferenceRms": 0.00007025200758263483,
+        "rms": 0.0518507885360594,
+        "stereoDifferenceRms": 0.00004906206783636633,
         "finite": true
       },
       "consoleErrors": []
@@ -2924,8 +2924,8 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.05236887705304417,
-        "stereoDifferenceRms": 0.00008058042607639155,
+        "rms": 0.05217529112230337,
+        "stereoDifferenceRms": 0.00007189647778787749,
         "finite": true
       },
       "consoleErrors": []
@@ -2942,8 +2942,8 @@
       "keyboard visibility touch toggle"
     ],
     "audio": {
-      "rms": 0.052414381665189004,
-      "stereoDifferenceRms": 0.000006858718348564212,
+      "rms": 0.052397730478188506,
+      "stereoDifferenceRms": 0,
       "finite": true
     },
     "hitAreas": {

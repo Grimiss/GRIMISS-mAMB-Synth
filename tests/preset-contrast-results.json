@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "patches": 90,
-  "wetPatches": 83,
+  "patches": 100,
+  "wetPatches": 93,
   "ambientBrightnessRange": 27.965673207607075,
   "ambientAttackRange": 4993.834587771844,
   "sampleRate": 24000,
@@ -990,6 +990,116 @@
       "stereoRatio": 0.4182144766660937,
       "tailRms": 0.00040436229731899924,
       "effectDifference": 0.8308697969669679
+    },
+    {
+      "name": "Teal Steps",
+      "category": "Arpeggios",
+      "peak": 0.0778571367263794,
+      "rms": 0.02154077135981419,
+      "attackRatio": 0.5223050334539896,
+      "brightness": 0.16619502687253815,
+      "stereoRatio": 0.05141102932341626,
+      "tailRms": 0.0012328845851024449,
+      "effectDifference": 0.4673915281881542
+    },
+    {
+      "name": "Midnight Relay",
+      "category": "Arpeggios",
+      "peak": 0.08847886323928833,
+      "rms": 0.017262496155386046,
+      "attackRatio": 0.7766102195951134,
+      "brightness": 0.11183021795238435,
+      "stereoRatio": 0.0566264924777111,
+      "tailRms": 0.000023590900672019435,
+      "effectDifference": 0.4899476538546825
+    },
+    {
+      "name": "Glass Orbit",
+      "category": "Arpeggios",
+      "peak": 0.06532914936542511,
+      "rms": 0.0115765705553636,
+      "attackRatio": 1.1825094743844726,
+      "brightness": 0.262148484593886,
+      "stereoRatio": 0.20291229162390087,
+      "tailRms": 0.0011302215243464795,
+      "effectDifference": 0.6678906952883555
+    },
+    {
+      "name": "Spring Circuit",
+      "category": "Arpeggios",
+      "peak": 0.08832725882530212,
+      "rms": 0.02221908424198435,
+      "attackRatio": 0.7887175494161605,
+      "brightness": 0.1627093661083879,
+      "stereoRatio": 0.029185849590803125,
+      "tailRms": 0.00013566458576670074,
+      "effectDifference": 0.507467892886783
+    },
+    {
+      "name": "Amber Ladder",
+      "category": "Arpeggios",
+      "peak": 0.11331425607204437,
+      "rms": 0.031047119575569698,
+      "attackRatio": 0.331486923890641,
+      "brightness": 0.11016477871068497,
+      "stereoRatio": 0.01609213604889607,
+      "tailRms": 0.0002612263134406947,
+      "effectDifference": 0.34395606483958663
+    },
+    {
+      "name": "Velvet Triplets",
+      "category": "Arpeggios",
+      "peak": 0.039538800716400146,
+      "rms": 0.006788111757335361,
+      "attackRatio": 0.49191558481982367,
+      "brightness": 0.09699239800762133,
+      "stereoRatio": 0.47672400414581717,
+      "tailRms": 0.0003638416902599412,
+      "effectDifference": 0.8893992567636544
+    },
+    {
+      "name": "Photon Rain",
+      "category": "Arpeggios",
+      "peak": 0.11174063384532928,
+      "rms": 0.01679660777322253,
+      "attackRatio": 0.5970262543154973,
+      "brightness": 0.47673607903181686,
+      "stereoRatio": 0.11254859916487461,
+      "tailRms": 0.0005021380418485457,
+      "effectDifference": 0.5622498410581291
+    },
+    {
+      "name": "Clockwork Bass",
+      "category": "Arpeggios",
+      "peak": 0.0771738663315773,
+      "rms": 0.026133681199266536,
+      "attackRatio": 1.0208708617076265,
+      "brightness": 0.10872070170098994,
+      "stereoRatio": 0.020242970443669458,
+      "tailRms": 2.0434536040655236e-9,
+      "effectDifference": 0.22784892223484568
+    },
+    {
+      "name": "Drift Mosaic",
+      "category": "Arpeggios",
+      "peak": 0.06594184041023254,
+      "rms": 0.013735222239455249,
+      "attackRatio": 0.09901490473664062,
+      "brightness": 0.21724101366802745,
+      "stereoRatio": 0.28521016930039633,
+      "tailRms": 0.004832769413738444,
+      "effectDifference": 0.8517534447697352
+    },
+    {
+      "name": "Endless Horizon",
+      "category": "Arpeggios",
+      "peak": 0.05688616260886192,
+      "rms": 0.011969506451388423,
+      "attackRatio": 0.36104426451241267,
+      "brightness": 0.16887008640515586,
+      "stereoRatio": 0.5517159824117768,
+      "tailRms": 0.008675751467343128,
+      "effectDifference": 0.8261834949605683
     }
   ]
 }

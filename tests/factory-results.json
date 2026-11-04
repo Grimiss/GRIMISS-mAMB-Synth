@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "patches": 90,
+  "patches": 100,
   "secondsPerPatch": 1.5013,
   "physicalListeningTest": false,
   "results": [
@@ -543,6 +543,66 @@
       "number": 90,
       "peak": 0.027454832568764687,
       "energy": 3.691815458849033
+    },
+    {
+      "name": "Teal Steps",
+      "number": 91,
+      "peak": 0.07812176644802094,
+      "energy": 159.3510926589947
+    },
+    {
+      "name": "Midnight Relay",
+      "number": 92,
+      "peak": 0.08431398123502731,
+      "energy": 114.27192377757567
+    },
+    {
+      "name": "Glass Orbit",
+      "number": 93,
+      "peak": 0.06634826213121414,
+      "energy": 53.10546577940189
+    },
+    {
+      "name": "Spring Circuit",
+      "number": 94,
+      "peak": 0.08718570321798325,
+      "energy": 186.28909156495686
+    },
+    {
+      "name": "Amber Ladder",
+      "number": 95,
+      "peak": 0.10921034216880798,
+      "energy": 314.5298672551578
+    },
+    {
+      "name": "Velvet Triplets",
+      "number": 96,
+      "peak": 0.039746880531311035,
+      "energy": 20.061348095236006
+    },
+    {
+      "name": "Photon Rain",
+      "number": 97,
+      "peak": 0.11602913588285446,
+      "energy": 112.35870818061207
+    },
+    {
+      "name": "Clockwork Bass",
+      "number": 98,
+      "peak": 0.07717139273881912,
+      "energy": 259.3285056891776
+    },
+    {
+      "name": "Drift Mosaic",
+      "number": 99,
+      "peak": 0.06343547999858856,
+      "energy": 55.40431751363863
+    },
+    {
+      "name": "Endless Horizon",
+      "number": 100,
+      "peak": 0.05755908042192459,
+      "energy": 33.69807675510041
     }
   ]
 }

@@ -7,7 +7,7 @@
     {
       "name": "defaults expose documented software volume and native performance without fabricated encoder/fader CCs",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 2
     },
     {
       "name": "MIDI Learn creates an exact device/channel-scoped assignment and applies range endpoints",
@@ -27,7 +27,7 @@
     {
       "name": "relearning a physical control removes its obsolete MIDI message",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "clear removes learned assignment and returns the physical control to unassigned",
@@ -52,7 +52,7 @@
     {
       "name": "three relative encoder encodings use current UI values and clamp at target bounds",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 1
     },
     {
       "name": "Learn without a selected physical identity never guesses an arbitrary encoder",
@@ -72,7 +72,7 @@
     {
       "name": "versioned MIDI configuration persists independently of patch data",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "export/import round-trip preserves mapping scope and clear-default configuration",
@@ -107,7 +107,7 @@
     {
       "name": "known assignment activity highlights its selected physical control without synthetic hardware claims",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "activity preserves an explicitly hardware-tagged packet without calling the unit test physical validation",
@@ -122,12 +122,12 @@
     {
       "name": "listener receives activity changes and unsubscribe stops notifications",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "device reconnection uses stable MIDI identity while a different device cannot claim it",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     }
   ]
 }
