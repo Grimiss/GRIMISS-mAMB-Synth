@@ -66,3 +66,14 @@ html.fit-screen.reference-geometry.photo-reconstruction main .coordinate-panel>h
 .section-cutout-plate{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:0;overflow:visible}
 html.fit-screen.reference-geometry.photo-reconstruction main .coordinate-panel>h2.has-text-cutout button{z-index:1;color:var(--teal)!important}
 .heading-mask-definitions{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+/* Dark printed outlines and title plates; scope traces retain their brightness. */
+html.fit-screen.reference-geometry.photo-reconstruction{--hardware-outline:#24594f;--hardware-header:#28685b}
+html.fit-screen.reference-geometry.photo-reconstruction main{outline-color:var(--hardware-outline)!important}
+html.fit-screen.reference-geometry.photo-reconstruction main .coordinate-panel{border-color:var(--hardware-outline)!important;box-shadow:inset 0 0 0 1px var(--hardware-outline),0 1px 1px #020703!important}
+html.fit-screen.reference-geometry.photo-reconstruction main>.header{border-color:var(--hardware-outline)!important}
+html.fit-screen.reference-geometry.photo-reconstruction main .header .brand,
+html.fit-screen.reference-geometry.photo-reconstruction main .brand span:not(.cabinet-vents):not(.photo-brand-subtitle){color:var(--hardware-header)!important;border-color:var(--hardware-outline)!important;text-shadow:none!important}
+html.fit-screen.reference-geometry.photo-reconstruction main .coordinate-panel>h2:not(.has-text-cutout){background:var(--hardware-header)!important}
+html.fit-screen.reference-geometry.photo-reconstruction main .section-cutout-plate>rect{fill:var(--hardware-header)!important}
+html.fit-screen.reference-geometry.photo-reconstruction main :is(button,select,input,.scope,.xy-pad,.patch-readout,.small-tag,.wheel-slot,.inner,.route,.route-row){border-color:var(--hardware-outline)!important}
+html.fit-screen.reference-geometry.photo-reconstruction main :is(.scope,.xy-pad){outline-color:var(--hardware-outline)!important}
