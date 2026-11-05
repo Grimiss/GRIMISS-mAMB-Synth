@@ -19,3 +19,20 @@ html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle
 html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle.pitch{width:20px!important;border:1px solid #fa48c0!important;background:linear-gradient(#fa48c0,#f5b4dd 45%,#973167)!important;box-shadow:0 0 4px #fa48c088!important}
 html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle.drift{width:20px!important;border:1px solid #50efd5!important;background:linear-gradient(#50efd5,#d0fff3 45%,#205c46)!important;box-shadow:0 0 4px #50efd588!important}
 .seq-mode :is(input,select){display:block}
+/* PROGRAM EDIT is a state of the existing keyboard face, not a third face. */
+.seq-program-strip,.seq-program-tools{display:none}
+.seq-program-open .seq-program-strip{position:absolute;left:251px;top:0;width:953px;height:16px;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:3px}
+.seq-program-open .seq-program-tools{position:absolute;left:4px;top:0;width:244px;height:11px;display:flex;align-items:center;gap:2px;font:700 5px OpenSans;white-space:nowrap}
+.seq-program-slot{display:flex;align-items:center;gap:2px;min-width:0;border:1px solid #344a3e;border-radius:2px;background:#0b1710;padding:0 2px}
+.seq-program-slot.editing{border-top-color:#50efd5;box-shadow:inset 0 1px #50efd5}
+.seq-program-slot.playing{border-bottom-color:#fa48c0;box-shadow:inset 0 -2px #fa48c0}
+.seq-program-slot.editing.playing{box-shadow:inset 0 1px #50efd5,inset 0 -2px #fa48c0}
+.seq-program-slot.empty{opacity:.65}
+html.fit-screen.reference-geometry.control-refinement main .seq-program-slot button{height:12px!important;min-height:12px!important;padding:0 2px!important;font:700 7px Orbitron!important;border:0!important;background:transparent!important;box-shadow:none!important;white-space:nowrap}
+.seq-program-select{flex:1;min-width:0}.seq-program-select span{color:#7ba28b;margin-right:3px}.seq-program-select strong{color:#cde4d6}
+html.fit-screen.reference-geometry.control-refinement main .seq-program-duration{width:34px;height:12px;min-height:12px;font:700 7px OpenSans;padding:0 1px;border:1px solid #315141;background:#07130d;color:#50efd5;min-width:0}
+html.fit-screen.reference-geometry.control-refinement main .seq-program-tools button{height:10px!important;min-height:10px!important;padding:0 2px!important;font:700 6px OpenSans!important;line-height:8px!important}
+.seq-program-tools label{display:flex;align-items:center;gap:1px}.seq-program-tools input{width:7px;height:7px;margin:0;accent-color:#50efd5}
+html.fit-screen.reference-geometry.control-refinement main .seq-program-tools button[aria-pressed=true]{color:#50efd5;border-color:#50efd5}
+
+html.fit-screen.reference-geometry.control-refinement main>.performance-panel.seq-program-visible:not(.seq-show) #seqViewToggle{left:145px!important;right:auto!important;top:14px!important}

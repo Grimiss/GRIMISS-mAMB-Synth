@@ -45,7 +45,7 @@ Local Node/Chromium verification is not physical Windows, controller or tablet t
 
 ## How to play
 
-1. Open the existing mAMB link, then press KEYBOARD / SEQ-16 in the lower housing.
+1. Open the existing mikroSEQ link, then press KEYBOARD / SEQ-16 in the lower housing.
 2. Choose any patch, edit pink/green grips and press RUN. Both layers run independently; green defaults to a slow 12-minute full cycle.
 3. For combined modes, enable ARPEGGIATION ON above, play/hold a MIDI or typing-key chord, enable ARP + SEQ below and choose one of the six modes. ROOT sets the independent SEQ notes in ordinary/echo operation; transpose/poly use relative offsets.
 4. Select a step number for REST, ACCENT, probability and gate edits. Save a USER patch or export normally to retain the sequence. STOP leaves manual/ordinary arp operation available; PANIC is global recovery.

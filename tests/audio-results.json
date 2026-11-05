@@ -2,51 +2,51 @@
   {
     "name": "startup silence; note-on and complete release",
     "status": "PASS",
-    "milliseconds": 67
+    "milliseconds": 75
   },
   {
     "name": "eight active voices; bounded click-reduced stealing",
     "status": "PASS",
-    "milliseconds": 58
+    "milliseconds": 166
   },
   {
     "name": "long overlapping release remains audible then ends",
     "status": "PASS",
-    "milliseconds": 1191
+    "milliseconds": 1388
   },
   {
     "name": "HOLD ADD sustains beyond maximum release time",
     "status": "PASS",
-    "milliseconds": 205
+    "milliseconds": 250
   },
   {
     "name": "HOLD REPLACE chord grouping and panic",
     "status": "PASS",
-    "milliseconds": 48
+    "milliseconds": 39
   },
   {
     "name": "four filters: swept cutoff and extreme resonance at 44.1/48/96 kHz",
     "status": "PASS",
-    "milliseconds": 438
+    "milliseconds": 661
   },
   {
     "name": "rapid retrigger stress: finite, bounded output and voice count",
     "status": "PASS",
-    "milliseconds": 417
+    "milliseconds": 546
   },
   {
     "name": "sync, ring and cross modulation alter rendered audio",
     "status": "PASS",
-    "milliseconds": 42
+    "milliseconds": 46
   },
   {
     "name": "velocity, sustain pedal and audible unison",
     "status": "PASS",
-    "milliseconds": 118
+    "milliseconds": 156
   },
   {
     "name": "60-second sustained stress rendering",
     "status": "PASS",
-    "milliseconds": 11414
+    "milliseconds": 12675
   }
 ]

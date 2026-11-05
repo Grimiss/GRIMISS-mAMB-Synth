@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "legacy defaults FIXED, eight empty slots, bounded independent durations and notes",
+      "status": "PASS"
+    },
+    {
+      "name": "each slot consumes exactly its pitch-step count, skips empties and loops",
+      "status": "PASS"
+    },
+    {
+      "name": "55-step program does not restart at melody boundaries; combined alignment repeats at 880",
+      "status": "PASS"
+    },
+    {
+      "name": "STOP freezes only the program and retains root; RUN resumes; LOOP off ends safely",
+      "status": "PASS"
+    },
+    {
+      "name": "manual override is source-owned, last-key priority, boundary-applied and clock continues below it",
+      "status": "PASS"
+    },
+    {
+      "name": "empty program, clear active slot, duration edits, source disconnect and PANIC stay valid",
+      "status": "PASS"
+    }
+  ]
+}

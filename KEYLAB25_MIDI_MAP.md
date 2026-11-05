@@ -1,4 +1,4 @@
-# GRIMISS mAMB — Original Arturia KeyLab 25 MIDI Map
+# GRIMISS mikroSEQ — Original Arturia KeyLab 25 MIDI Map
 
 Generated from the same versioned registry used by the instrument and interactive diagram. This file represents the default software configuration, not a claim about messages received from a physical keyboard.
 
@@ -6,11 +6,11 @@ Generated from the same versioned registry used by the instrument and interactiv
 
 **Native performance paths:** notes/velocity, pitch bend ±2 semitones, CC1 modulation source and CC64 source-scoped sustain remain active independently of learned extra assignments. Clearing a learned extra does not disable these paths. CC7 → Master is a configurable software default, based on the documented Volume factory message; hardware presets may override that message. Clearing Volume disables that configurable default until RESTORE DEFAULT MAP.
 
-**Unknown messages stay unknown:** no encoder/fader/snapshot CCs are guessed. Factory transport uses MMC/SysEx, which mAMB does not parse; reconfigure a transport to CC/note/program in Arturia MIDI Control Center before learning. Bank and octave operations may be hardware-local. Optional pedals/breath controller are not supplied physical controls.
+**Unknown messages stay unknown:** no encoder/fader/snapshot CCs are guessed. Factory transport uses MMC/SysEx, which mikroSEQ does not parse; reconfigure a transport to CC/note/program in Arturia MIDI Control Center before learning. Bank and octave operations may be hardware-local. Optional pedals/breath controller are not supplied physical controls.
 
 **Verification:** Software Tested describes implemented software logic and synthetic regression coverage, not physical hardware validation. Provisional rows are unassigned or not received. WEB MIDI RECEIVED is only a trusted incoming MIDI event; it still does not prove the selected physical-control association. No row is labelled Hardware Verified without a physical validation procedure.
 
-| Physical control | ID | Message | CC / note | Channel | mAMB assignment | Min | Max | Default | Mapping | Verification |
+| Physical control | ID | Message | CC / note | Channel | mikroSEQ assignment | Min | Max | Default | Mapping | Verification |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 25-key keyboard | keyboard | note | — | Any (software) | Notes + velocity | 0 | 127 | — | Default | Software Tested |
 | Pitch-bend wheel | pitch-wheel | pitchbend | — | Any (software) | Pitch bend ±2 semitones | -2 | 2 | 0 | Default | Software Tested |
@@ -78,7 +78,7 @@ Channel numbers in this table are user-facing 1–16; registry packets store 0�
 
 ## Learn, persistence and encoder modes
 
-Select a physical control, select a mAMB target, arm LEARN, then move the real control. Without a selected physical association an unknown incoming CC remains an “Observed control — physical position unknown” entry. The latest assignment wins for the same device/channel/message; assigning the same physical control replaces its older learned binding. Save/restore/clear updates the diagram and table without reloading.
+Select a physical control, select a mikroSEQ target, arm LEARN, then move the real control. Without a selected physical association an unknown incoming CC remains an “Observed control — physical position unknown” entry. The latest assignment wins for the same device/channel/message; assigning the same physical control replaces its older learned binding. Save/restore/clear updates the diagram and table without reloading.
 
 Maps use schema `grimiss-mamb-midi-map`, version 1, storage key `grimiss-mamb-midi-map-v1`, separately from patches. Absolute mode is the default. Optional software relative modes are explicit conventions, not unverified claims about Arturia firmware mode numbers: relative1 = two’s complement (1→+1,127→−1,0/64→0); relative2 = binary offset (65→+1,63→−1,64→0); relative3 = sign magnitude (1→+1,65→−1,0/64→0). Match the actual controller setting; do not assume a relative encoding automatically.
 

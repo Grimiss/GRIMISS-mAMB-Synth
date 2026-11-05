@@ -190,6 +190,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -198,6 +216,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -444,6 +498,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -452,6 +524,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -698,6 +806,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -706,6 +832,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -952,6 +1114,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -960,6 +1140,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -1206,6 +1422,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -1214,6 +1448,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -1460,6 +1730,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -1468,6 +1756,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -1714,6 +2038,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -1722,6 +2064,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -1968,6 +2346,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -1976,6 +2372,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -2222,6 +2654,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -2230,6 +2680,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -2476,6 +2962,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -2484,6 +2988,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -2730,6 +3270,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -2738,6 +3296,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -2984,6 +3578,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -2992,6 +3604,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -3238,6 +3886,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -3246,6 +3912,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -3492,6 +4194,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -3500,6 +4220,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -3746,6 +4502,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -3754,6 +4528,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -4000,6 +4810,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -4008,6 +4836,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -4254,6 +5118,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -4262,6 +5144,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -4508,6 +5426,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -4516,6 +5452,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -4762,6 +5734,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -4770,6 +5760,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -5016,6 +6042,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -5024,6 +6068,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -5270,6 +6350,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -5278,6 +6376,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -5524,6 +6658,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -5532,6 +6684,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -5778,6 +6966,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -5786,6 +6992,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -6032,6 +7274,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -6040,6 +7300,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -6286,6 +7582,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -6294,6 +7608,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -6540,6 +7890,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -6548,6 +7916,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -6794,6 +8198,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -6802,6 +8224,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -7048,6 +8506,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -7056,6 +8532,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -7302,6 +8814,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -7310,6 +8840,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -7556,6 +9122,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -7564,6 +9148,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -7810,6 +9430,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -7818,6 +9456,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -8064,6 +9738,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -8072,6 +9764,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -8318,6 +10046,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -8326,6 +10072,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -8572,6 +10354,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -8580,6 +10380,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -8826,6 +10662,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -8834,6 +10688,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -9080,6 +10970,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -9088,6 +10996,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -9334,6 +11278,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -9342,6 +11304,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -9588,6 +11586,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -9596,6 +11612,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -9842,6 +11894,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -9850,6 +11920,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -10096,6 +12202,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -10104,6 +12228,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -10350,6 +12510,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -10358,6 +12536,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -10604,6 +12818,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -10612,6 +12844,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -10858,6 +13126,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -10866,6 +13152,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -11112,6 +13434,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -11120,6 +13460,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -11366,6 +13742,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -11374,6 +13768,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -11620,6 +14050,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -11628,6 +14076,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -11874,6 +14358,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -11882,6 +14384,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -12128,6 +14666,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -12136,6 +14692,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -12382,6 +14974,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -12390,6 +15000,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -12636,6 +15282,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -12644,6 +15308,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -12890,6 +15590,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -12898,6 +15616,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -13144,6 +15898,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -13152,6 +15924,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -13398,6 +16206,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -13406,6 +16232,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -13652,6 +16514,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -13660,6 +16540,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -13906,6 +16822,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -13914,6 +16848,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -14160,6 +17130,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -14168,6 +17156,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -14414,6 +17438,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -14422,6 +17464,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -14668,6 +17746,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -14676,6 +17772,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -14922,6 +18054,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -14930,6 +18080,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -15176,6 +18362,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -15184,6 +18388,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -15430,6 +18670,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -15438,6 +18696,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -15684,6 +18978,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -15692,6 +19004,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -15938,6 +19286,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -15946,6 +19312,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -16192,6 +19594,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -16200,6 +19620,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -16446,6 +19902,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -16454,6 +19928,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -16700,6 +20210,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -16708,6 +20236,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -16954,6 +20518,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -16962,6 +20544,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -17208,6 +20826,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -17216,6 +20852,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -17462,6 +21134,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -17470,6 +21160,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -17716,6 +21442,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -17724,6 +21468,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -17970,6 +21750,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -17978,6 +21776,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -18224,6 +22058,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -18232,6 +22084,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -18478,6 +22366,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -18486,6 +22392,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -18732,6 +22674,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -18740,6 +22700,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -18986,6 +22982,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -18994,6 +23008,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -19240,6 +23290,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -19248,6 +23316,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -19494,6 +23598,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -19502,6 +23624,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -19748,6 +23906,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -19756,6 +23932,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -20002,6 +24214,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -20010,6 +24240,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -20256,6 +24522,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -20264,6 +24548,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -20510,6 +24830,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -20518,6 +24856,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -20764,6 +25138,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -20772,6 +25164,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -21018,6 +25446,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -21026,6 +25472,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -21272,6 +25754,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -21280,6 +25780,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -21526,6 +26062,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -21534,6 +26088,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -21780,6 +26370,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -21788,6 +26396,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -22034,6 +26678,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -22042,6 +26704,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -22288,6 +26986,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -22296,6 +27012,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -22542,6 +27294,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -22550,6 +27320,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -22796,6 +27602,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -22804,6 +27628,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -23050,6 +27910,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -23058,6 +27936,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -23304,6 +28218,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -23312,6 +28244,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -23558,6 +28526,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -23566,6 +28552,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -23812,6 +28834,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -23820,6 +28860,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -24066,6 +29142,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -24074,6 +29168,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -24320,6 +29450,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -24328,6 +29476,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -24574,6 +29758,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -24582,6 +29784,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -24828,6 +30066,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -24836,6 +30092,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -25082,6 +30374,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -25090,6 +30400,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,
@@ -25336,6 +30682,24 @@
         1,
         1
       ],
+      "stepGates": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "pitchOn": true,
       "driftOn": true,
       "combined": false,
@@ -25344,6 +30708,42 @@
       "pitchRate": 0.5,
       "pitchDirection": "forward",
       "root": 48,
+      "rootSource": "fixed",
+      "programLoop": true,
+      "program": [
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        },
+        {
+          "note": null,
+          "duration": 16
+        }
+      ],
       "gate": 65,
       "slide": 0,
       "velocity": 0.65,

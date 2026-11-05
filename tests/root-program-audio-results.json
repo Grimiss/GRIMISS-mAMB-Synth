@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "fixedCompatibility": [
+    {
+      "sampleRate": 44100,
+      "mode": "transpose",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "mode": "drift",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "mode": "gate",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "mode": "poly",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "mode": "echo",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "mode": "arpdrift",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "mode": "transpose",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "mode": "drift",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "mode": "gate",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "mode": "poly",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "mode": "echo",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "mode": "arpdrift",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 96000,
+      "mode": "transpose",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 96000,
+      "mode": "drift",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 96000,
+      "mode": "gate",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 96000,
+      "mode": "poly",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 96000,
+      "mode": "echo",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 96000,
+      "mode": "arpdrift",
+      "maximumDifference": 0
+    }
+  ],
+  "programFrequenciesHz": [
+    130.81278369926568,
+    261.6255462218938
+  ],
+  "physicalListeningTest": false
+}

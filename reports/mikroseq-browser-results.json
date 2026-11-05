@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "phase": 2,
+  "checks": [
+    "External MIDI messages choose/latch root without manual voices or sequence reset",
+    "Onscreen octave note and horizontal flip keep sequencing alive",
+    "FIXED retains ordinary MIDI playing and note-off ownership",
+    "Eight-slot keyboard/MIDI entry, durations and real programmed note playback",
+    "Program STOP retains root while the melody continues",
+    "Temporary override returns to the current program at a boundary while program counting continues",
+    "All eight slots can be filled and the eighth is directly selectable without toggle overlap",
+    "Replace, clear individual/all, empty-safe playback and additive patch persistence",
+    "Program strip uses existing keyboard-side space at both target sizes with no third rotating face",
+    "Cold-start Program RUN captures immediate MIDI override without extra manual voices"
+  ],
+  "errors": [],
+  "physicalHardwareTested": false
+}

@@ -32,12 +32,12 @@
     {
       "name": "clear removes learned assignment and returns the physical control to unassigned",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "clearing a software volume default disables it until default restoration",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "fixed native performance entries cannot be removed by clear or reset",
@@ -62,7 +62,7 @@
     {
       "name": "note, pitchbend and program Learn extras do not suppress native performance paths",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 2
     },
     {
       "name": "cancelled Learn leaves assignments intact and invalid target cannot arm",
@@ -87,12 +87,12 @@
     {
       "name": "unsupported import version is rejected without losing current assignments",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "invalid physical controls, duplicate imports and fabricated hardware status are rejected or normalised",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 2
     },
     {
       "name": "malformed MIDI packets cannot change a mapping or create false activity",
@@ -112,7 +112,7 @@
     {
       "name": "activity preserves an explicitly hardware-tagged packet without calling the unit test physical validation",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "blocked browser storage leaves a working in-memory registry with an explicit status",
@@ -127,7 +127,7 @@
     {
       "name": "device reconnection uses stable MIDI identity while a different device cannot claim it",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     }
   ]
 }
