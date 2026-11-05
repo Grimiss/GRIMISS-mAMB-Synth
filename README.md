@@ -46,3 +46,7 @@ Node18+ runs `npm run test:all`: original baseline, diagnostics, legacy DSP/owne
 For developer/offline testing only, serve `dist/` through localhost or HTTPS for AudioWorklet. Fallback shares the same DSP. `file://` is blocked by managed Chromium policy and remains unverified. Actual Windows/tablet performance and physical MIDI/touch are not established by Linux viewport tests.
 
 The original CONNECT screenshot remains the visual reference. v0.4/v0.5 fixtures preserve prior implementations. GitHub main and Sound Factory are untouched.
+
+## Keyboard roots and automatic root program
+
+In SEQ-16, ROOT SOURCE defaults to FIXED for compatibility. KEYBOARD latches the actual pressed note at the next pitch-step boundary without restarting the melody. PROGRAM opens an eight-slot keyboard-side editor: enter notes, set durations from1–64 pitch steps, then RUN. Program STOP freezes only root progression; LOOP repeats populated slots. With EDIT off, held keys temporarily override a running program. The melody and root program can have different cycle lengths. All six existing arp modes retain their old pitch rules; root selection affects independent SEQ notes, including ECHO. See [the root/program guide](MIKROSEQ_ROOT_PROGRAM.md).

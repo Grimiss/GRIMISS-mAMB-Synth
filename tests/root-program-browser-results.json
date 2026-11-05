@@ -11,7 +11,8 @@
     "All eight slots can be filled and the eighth is directly selectable without toggle overlap",
     "Replace, clear individual/all, empty-safe playback and additive patch persistence",
     "Program strip uses existing keyboard-side space at both target sizes with no third rotating face",
-    "Cold-start Program RUN captures immediate MIDI override without extra manual voices"
+    "Worklet cold-start Program RUN captures immediate MIDI override without extra manual voices",
+    "Fallback cold-start Program RUN captures immediate MIDI override without extra manual voices"
   ],
   "errors": [],
   "physicalHardwareTested": false
