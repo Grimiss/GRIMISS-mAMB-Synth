@@ -105,3 +105,5 @@ Pitch-only build published successfully as Site version 28. Source b63c8ff5001b4
 Direction/cyan fix: selector repaint now reflects recalled state even while focused; direction changes flush immediately and status reports actual engine directions. Cyan pitch fader caps, amber playhead retained. `npm run test:direction` covers the reproduced mismatch and real FWD/REV/PEND/RANDOM traces. Previous source on checkpoint/pre-direction-cyan.
 
 Direction sync / cyan caps published successfully as Site version 29. Source d7f2ec959bd2321c3acc49d8b80050da8f4a77a3, development code 9b7166ac94312c9d8091bda6ca25e5531019e9f3. Version 28 and remote rollback/live-v28-before-direction-cyan retained. See reports/mikroseq-direction-cyan-release-verification.json. Same URL and audience; no development main merge.
+
+Latest UI: SEQ16_BUTTON_LAYOUT.md supersedes the small-dropdown arrangement. Wider button controls, green pitch caps, a selected-step strip and MORE dialog; bank and selected step stay aligned. Existing timing/DSP untouched. `npm run test:seq-layout` and `npm run test:direction` cover the visible controls. Rollback checkpoint/pre-sequencer-buttons.

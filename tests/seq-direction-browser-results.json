@@ -8,7 +8,7 @@
     "random real audio-clock playhead order and live direction status",
     "forward real audio-clock playhead order and live direction status",
     "DUAL 8 bank directions remain independent and both exit RANDOM",
-    "Sixteen cyan fader caps with cyan glow; both target screenshot sizes",
+    "Sixteen green fader caps with green glow; both target screenshot sizes",
     "Selected directions survive reload without restarting playback"
   ],
   "errors": [],

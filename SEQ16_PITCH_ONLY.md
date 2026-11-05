@@ -1,3 +1,5 @@
+> Current control placement and green caps: see SEQ16_BUTTON_LAYOUT.md. Pitch-only architecture and compatibility details below remain applicable.
+
 # SEQ-16 pitch-only simplification
 
 ## Scope and assessment

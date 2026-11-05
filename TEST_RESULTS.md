@@ -207,3 +207,7 @@ KNOWN PRE-EXISTING FAILURE: expressive-sound.cjs age/thickness processing assert
 ## 2026-11-05 — direction sync / cyan caps
 
 PASS tests/seq-direction-browser.cjs: reproduced focused FWD vs recalled RANDOM mismatch before fix; verifies corrected display, real audio-clock traces for all four directions and RANDOM→FWD, independent DUAL 8 directions, live direction status, persisted directions and sixteen computed cyan cap gradients/borders/glows. Screenshots at 1920×1080 and 1600×900. Existing sequencer browser, core pitch/gate/migration tests, root-program tests and 30-case pitch audio compatibility checks also pass. No DSP changes or physical-device claims.
+
+## 2026-11-05 — sequencer button layout
+
+PASS new seq-buttons-browser controls/bank alignment/MORE/contextual arp/root tests, dialog/PROGRAM audio continuity and worst-case geometry at both target resolutions. Existing sequencer-browser (actual two-touch, wheel, arrow, flip, migration, MIDI and fallback), root-program-browser, direction-browser (all real clock directions), dual-eight, root-program, scale and 30-case pre-simplification audio compatibility tests pass. No DSP changes. Green caps do not reintroduce green sequencing. Physical tablets/controllers remain unverified; earlier unrelated hidden-velocity test limitation still applies.

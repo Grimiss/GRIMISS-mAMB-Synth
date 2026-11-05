@@ -168,3 +168,7 @@ Removed secondary green modulation and LINK, its scheduler/state/UI and SEQ-only
 ## 2026-11-05 — direction selector sync and cyan pitch caps
 
 Reproduced a focused direction selector displaying FWD while patch recall loaded RANDOM into sequencer state. Select controls now repaint from authoritative configuration even while focused (numeric editing remains protected). Direction changes flush immediately; running status displays the audio engine direction and both A/B directions in DUAL 8. Actual audio-clock traces validate FWD, REV, PEND, RANDOM and exit from RANDOM in both banks. Pitch cap faces, borders and glow changed to cyan; amber playhead retained. No DSP/pitch calculation changes. Rollback checkpoint/pre-direction-cyan and Site version 28.
+
+## 2026-11-05 — sequencer performance buttons and green caps
+
+Reorganised only the SEQ face: narrower columns, widened PATTERN/PERFORMANCE groups, illuminated layout/bank/direction/rate/root-source/arp mode buttons, contextual ratio, selected-step strip and a MORE detail dialog. Pitch caps are green; amber playheads remain. Bank/step selection is now consistent in both directions. Native hidden backing parameter IDs preserve state mappings. Timing/DSP untouched. See SEQ16_BUTTON_LAYOUT.md and test:seq-layout.
