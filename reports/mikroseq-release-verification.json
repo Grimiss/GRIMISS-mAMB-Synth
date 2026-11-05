@@ -1,0 +1,23 @@
+{
+  "status": "publication_blocked_by_file_upload_network",
+  "codeCommit": "5d2ddfa",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "siteSourceCommit": "8b12f1e75c9ed10fcef1ea8e40180d29b15b4126",
+  "siteProject": "appgprj_6ae9ad1b7aa08191846efb701d49414c",
+  "currentHostedVersion": 26,
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "htmlSha256": "10ecb6e1084b1da0e76a86cace5d46255277a4c5124c997ba90ddbffbc6b3b0c",
+  "archiveBytes": 2117192,
+  "lastError": "OpenAI file blob upload to sdmntprnortheu.oaiusercontent.com failed after 98232 ms: error sending request",
+  "previousError": "OpenAI file blob upload to sdmntprcentralus.oaiusercontent.com failed after 199506 ms: error sending request",
+  "approvalRejected": false,
+  "publishOnPushAccepted": false,
+  "siteDisplayTitle": "GRIMISS mikroSEQ",
+  "newVersionSaved": false,
+  "mainUnchanged": true,
+  "rollback": "rollback/pre-keyboard-root / hosted version26",
+  "limits": [
+    "Physical MIDI controller and tablet ergonomics not tested",
+    "User prompt cuts off mid-section18; missing requirements not invented"
+  ]
+}

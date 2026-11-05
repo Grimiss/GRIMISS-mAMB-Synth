@@ -1,5 +1,7 @@
 # GRIMISS mikroSEQ
 
+**Deployment status:** keyboard-root/program features are complete in this branch's standalone HTML, but the hosted link still runs version26. OpenAI file-upload network failures blocked publication; no additional approval is required. See [deployment details](MIKROSEQ_ROOT_PROGRAM.md).
+
 [Open the playable instrument](https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site), sign in if prompted and play a key. Audio activates on the first real key, touch or click; there is no Start Audio button. Browser autoplay policy can still require a gesture before MIDI-only performance. The owner-private Site and repository visibility are preserved. **HTML BUILD** downloads the standalone instrument.
 
 **SELECT PATCH** opens 100 original factory patches in ten banks plus the USER save/select/rename/delete section. MIDI SETTINGS contains input/output/channel selection and the interactive original KeyLab25 map; Learn profiles persist independently of patches. AUDIO SETTINGS exposes supported output selection and explicitly enabled input monitoring (initial gain zero). Each XY pad has an independent assignment editor; assignments save with USER patches. HIDE KEYBOARD expands the instrument controls and graphs while retaining audio and active notes.
