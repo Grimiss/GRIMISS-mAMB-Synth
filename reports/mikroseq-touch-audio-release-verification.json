@@ -1,0 +1,18 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 31,
+  "siteSourceCommit": "3041523a1125a2ae2f65bdddad9ad69c963ea14b",
+  "developmentCommit": "a1bb6cc4894b9890b9c5967aec10ce26049ecba4",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "htmlSha256": "c628d94ecffe9641d6280130e785e77750e193794d97dfc115366747f4ca16cd",
+  "deploymentId": "appgdep_6aeceaeed8f48191993020045229acdd",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_85757b0bccd48191b52dd9d76d893690",
+  "rollback": {
+    "version": 30,
+    "sourceCommit": "2d6376ee6ece75b2c30a8f34eca5d7e345cb97bb",
+    "remoteBranch": "rollback/live-v30-before-touch-audio"
+  },
+  "verification": "Native publication succeeded; archive/index match local tested build. Trusted Chromium touch with mocked activation/interruption/session API verifies both backends and measurable audio; all 11 desktop workflow groups pass. No physical tablet/Safari/Android confirmation; tablet model/browser/status question remains unanswered.",
+  "updatedAt": "2026-11-05T20:45:56.035630+00:00"
+}
