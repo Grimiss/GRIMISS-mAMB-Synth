@@ -26,7 +26,8 @@
     "test:photo": "node tests/photo-reconstruction.cjs",
     "test:restored": "node tests/audio.cjs && node tests/ownership-modulation.cjs && node tests/instrument.cjs && node tests/arpeggiator.cjs && node tests/factory.cjs && node tests/preset-contrast.cjs && node tests/preset-panic.cjs && node tests/restored-arp-browser.cjs && node tests/hardware-header.cjs",
     "test:seq16": "node tests/sequencer.cjs && node tests/sequencer-stability.cjs && node tests/sequencer-browser.cjs",
-    "test:root-program": "node tests/root-transpose.cjs && node tests/root-program.cjs && node tests/root-program-audio.cjs && node tests/root-program-browser.cjs"
+    "test:root-program": "node tests/root-transpose.cjs && node tests/root-program.cjs && node tests/root-program-audio.cjs && node tests/root-program-browser.cjs",
+    "test:scales": "node tests/seq-scales.cjs && node tests/seq-dual8.cjs && node tests/seq-dual8-browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

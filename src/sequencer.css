@@ -36,3 +36,19 @@ html.fit-screen.reference-geometry.control-refinement main .seq-program-tools bu
 html.fit-screen.reference-geometry.control-refinement main .seq-program-tools button[aria-pressed=true]{color:#50efd5;border-color:#50efd5}
 
 html.fit-screen.reference-geometry.control-refinement main>.performance-panel.seq-program-visible:not(.seq-show) #seqViewToggle{left:145px!important;right:auto!important;top:14px!important}
+/* Note names and an unmistakable amber pitch playhead; LED handle colours stay pink/green. */
+.seq-step-note{display:block;height:10px;line-height:10px;font:800 7px Orbitron,monospace;color:#dbeadd;white-space:nowrap;text-align:center}
+.seq-step.pitch-active{border-color:#ffc15a!important;background:#322510;box-shadow:0 0 7px 2px #ffb52eaa,inset 0 0 7px #ffb52e88!important;z-index:1}
+.seq-step.pitch-active .seq-step-note,.seq-step.pitch-active .seq-step-number{color:#ffe3a3!important;text-shadow:0 0 4px #ffb52e}
+/* Compact key/scale editing stays on the keyboard face. */
+.seq-program-open .seq-program-strip{height:29px;top:0}
+.seq-program-slot{display:grid;grid-template-columns:1fr 1fr 34px;grid-template-rows:12px 12px;gap:1px;padding:1px 2px}
+.seq-program-slot .seq-program-select{grid-column:1;grid-row:1}
+.seq-program-slot .seq-program-key{grid-column:2;grid-row:1}
+.seq-program-slot .seq-program-clear{grid-column:3;grid-row:1;justify-self:end}
+.seq-program-slot .seq-program-scale{grid-column:1;grid-row:2}
+.seq-program-slot .seq-program-unit{grid-column:2;grid-row:2}
+.seq-program-slot .seq-program-duration{grid-column:3;grid-row:2}
+html.fit-screen.reference-geometry.control-refinement main .seq-program-slot select{width:100%;min-width:0;height:12px!important;min-height:12px!important;padding:0!important;font:700 6px OpenSans!important;color:#bfe6d4;background:#08130d;border:1px solid #315141}
+.seq-left{gap:2px}.seq-left h3{font-size:16px;line-height:18px}.seq-left>label:has(select){display:flex;align-items:center;gap:3px;font-size:6px}.seq-left select{min-width:0;width:95px;height:12px!important;min-height:12px!important;font:700 6px OpenSans!important;background:#09150e;color:#c8e3d1;border:1px solid #315141;padding:0!important}
+.seq-step[data-step="8"]{border-left-width:3px}

@@ -185,3 +185,11 @@ Restored-design integration: version 14 visual components and styling, current D
 SEQ-16 complete: lower-panel rotateX keyboard/dual-layer swap, 16 independent pink/green tracks, all six arp interaction modes, per-step rhythm editing, independent audio clocks and additive patch/session persistence. Upper layout retained. New engine, browser and 60-second stress checks plus existing functional/audio/MIDI/100-patch regressions pass. See SEQ16_IMPLEMENTATION.md and npm run test:seq16. Physical tablet/controller verification remains pending.
 
 GRIMISS mikroSEQ official rename plus keyboard root and eight-slot transposition program: Phase1 validated at165fc22 before Phase2. FIXED remains legacy default; all six arp pitch rules are unchanged. Program uses the existing pitch-step clock and two-face keyboard housing. See MIKROSEQ_ROOT_PROGRAM.md and npm run test:root-program. Legacy internal names/storage/paths preserved. No main merge or standalone app.
+
+## 2026-11-05 — key/scale and DUAL 8 checkpoint
+
+PASS: new exhaustive nearest-scale tests across MIDI 0–127 and all 12 root pitch classes; ten scale choices; per-slot scales, STEPS/ROUNDS, 4/2/5-round loop and JSON recall. All six arp modes render audible finite scale-correct audio and recover with PANIC.
+
+PASS: DUAL 8 independent A/B pitch clocks, lengths, ownership, shared 16-step drift, stop, finite audible render, eight-voice bound and pitch render-block invariance. Existing sequencer, root-transpose, root-program, root-program-audio (legacy sample-identical all six modes at 44.1/48/96 kHz), audio, ownership/modulation, instrument and 60-second sequencer stability checks passed during this change.
+
+PASS: Chromium new bank/key/scale/round controls and dual pitch playheads at 1920×1080 and 1600×900. Existing root-program browser and sequencer browser checks cover real handles, overlap, linked edits, multitouch, flip/audio continuity, synthetic MIDI, persistence and Worklet/fallback startup. Screenshots: reports/seq-dual8-1920.png and reports/seq-dual8-1600.png. Earlier direct browser checks verified 16 note labels and computed amber border/glow. No physical MIDI/controller/tablet testing or production deployment claimed. This is targeted regression coverage, not a rerun of every historical visual suite.
