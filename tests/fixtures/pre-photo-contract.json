@@ -1,0 +1,21 @@
+{
+  "mamb-midi-targets": "6af5893bb07d59839c523d24d10d94debd8144b53e353b0ae9eb0e9d308489d9",
+  "mamb-reference-layout": "e3f7f5afc54bf8ec464fc86ebd446d1140e6ab4d96f64a9d0efa9626bd737493",
+  "mamb-engine": "43e23eeb56193a9a3f3031c799f7543cfe28d749a59a7257cdf560f49c367003",
+  "mamb-effects": "cb63cc02888371bb5305be59a1ec1921da77ca244a25955b102ecff6bd5da542",
+  "mamb-instrument": "08c38608f45ac9068324150aa44f7e5fe804cc2ad6b73c1fa7519f0c91b9201d",
+  "mamb-keylab25": "3039ea88abe498e41563a68ee841794471724e0dda5724a031337094a7cc0e25",
+  "mamb-midi-registry": "832450f73114d267148c8487dcb231a7762f2600d07da797cc57ad998524566f",
+  "mamb-controller-map": "e3dec19b66396402c707f09ecef079effdba08cf5b61b17c96802aa4a5ad9cf7",
+  "mamb-preferences": "7bfe28dd3004239803b96a21d1e9a7496fb3dd35d1fd646578471a8698b0b6a7",
+  "mamb-adapter": "453323607af1be84ba57126113d70e833f77b0cc7750cf25baf180aaf33266c0",
+  "mamb-factory-patches": "2ad2401a2288c364ae3f141e9ac542af1dc7f10359cb119370b04a44ab342a89",
+  "mamb-patches": "20b6b258df1451b6ba7df5cdb03f3861bbce6d1bc50e702a9a10aeee4197fb0c",
+  "mamb-interface": "2df0ce4bf582d1c802768715bedb11516668b59230acbeb94f86f359368fa350",
+  "mamb-layout": "8950b12f781aa4b5542fbf77f424b073a721490d205be986f3d6df1301d02811",
+  "mamb-workflow": "1b9b376560b78e6a4373943cd534f517a7bbb99a75d386a48abb1594f68469bd",
+  "mamb-physical-controls": "b46a2f4bac5ce45a5d638dcdd4a2cd74b49a36de459353ef16d0bfb0372b9cb0",
+  "mamb-hardware-header": "dac16807dce1595f4785a500b8bb89c92ae904a64ac75f859d3b993734c7209b",
+  "mamb-coordinate-layout": "962bc04d716ce98948158fb92c4ec5d09b73a79ad600018bab65d23323d0cd86",
+  "mamb-refinements": "01632987b7faa83da4d7b3ad302fd0d715f8bf297ecd124be858ad6b17fb46a0"
+}

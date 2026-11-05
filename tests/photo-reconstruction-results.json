@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "protectedScripts": 18,
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "keyboardHidden": false,
+      "status": "PASS"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "keyboardHidden": true,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "keyboardHidden": false,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "keyboardHidden": true,
+      "status": "PASS"
+    }
+  ],
+  "physicalHardwareTested": false,
+  "paint": {
+    "knobs": 48,
+    "controls": 48,
+    "cutoffLarge": true,
+    "keyMaterials": 6,
+    "leads": 4,
+    "leadStroke": "#030504",
+    "decorative": "true",
+    "brandFont": "OpenSans, Orbitron, sans-serif",
+    "controlsTotal": 164
+  },
+  "consoleErrors": []
+}

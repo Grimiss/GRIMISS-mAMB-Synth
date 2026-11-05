@@ -1,3 +1,7 @@
+# Photographic hardware reconstruction checkpoint
+
+Latest supplied photo drives custom compact rotary art, narrow raised fader caps, six ivory key materials, boxed sage print, neutral charcoal exposure and black decorative leads. No desk/foam backdrop. All100 presets, arp and existing controls preserved.18 protected scripts are byte-identical to rollback; approved coordinates and37-note range retained. See PHOTO_RECONSTRUCTION.md, reports/photo-reference-map.json and reports/photo-reconstruction-review.html. Final verification/publication status is in reports/photo-release-verification.json. No main merge.
+
 # Arpeggiator and near-black hardware finish
 
 100 factory presets in10 banks, including Arpeggios91–100. Audio-frame scheduler: Up/Down/Up-Down/As-Played/Random, five divisions, gate and1–3 octaves; shared tempo. HOLD/sustain/source ownership, patch recall, PANIC and Worklet/fallback verified by dedicated tests. Arp-off wet chords are sample-identical to v16 rollback at44.1/48/96kHz. New textured near-black finish, rounded printed rules/labels, screen glass, short shadows and recessed fasteners preserve measured geometry and37-note keyboard. See ARPEGGIATOR_AND_HARDWARE.md and reports/arp-hardware-review.html. Internal clock only; external MIDI Clock and step editing remain future work. Final release/test status is in reports/arp-release-verification.json. No main merge.

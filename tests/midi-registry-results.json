@@ -7,7 +7,7 @@
     {
       "name": "defaults expose documented software volume and native performance without fabricated encoder/fader CCs",
       "status": "PASS",
-      "milliseconds": 2
+      "milliseconds": 1
     },
     {
       "name": "MIDI Learn creates an exact device/channel-scoped assignment and applies range endpoints",
@@ -27,12 +27,12 @@
     {
       "name": "relearning a physical control removes its obsolete MIDI message",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "clear removes learned assignment and returns the physical control to unassigned",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "clearing a software volume default disables it until default restoration",
@@ -47,17 +47,17 @@
     {
       "name": "numeric, signed, enum and boolean parameter values use actual target domains",
       "status": "PASS",
-      "milliseconds": 3
+      "milliseconds": 2
     },
     {
       "name": "three relative encoder encodings use current UI values and clamp at target bounds",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 2
     },
     {
       "name": "Learn without a selected physical identity never guesses an arbitrary encoder",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "note, pitchbend and program Learn extras do not suppress native performance paths",
@@ -67,12 +67,12 @@
     {
       "name": "cancelled Learn leaves assignments intact and invalid target cannot arm",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "versioned MIDI configuration persists independently of patch data",
       "status": "PASS",
-      "milliseconds": 0
+      "milliseconds": 1
     },
     {
       "name": "export/import round-trip preserves mapping scope and clear-default configuration",
@@ -82,7 +82,7 @@
     {
       "name": "reset-all clears learned controls persistently while restore-default remains available",
       "status": "PASS",
-      "milliseconds": 1
+      "milliseconds": 0
     },
     {
       "name": "unsupported import version is rejected without losing current assignments",

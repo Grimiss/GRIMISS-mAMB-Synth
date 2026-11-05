@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "branch": "codex/controller-workflow-v0.7",
+  "html_sha256": "596d4681b71b0502fefb2e8039bd624dc8eb0f52f7b6e279a2c2d296d01e43f3",
+  "full_regression": "npm run test:all PASS (exit0)",
+  "test_log": "work/photo-full-regression.log",
+  "photo_test": "tests/photo-reconstruction-results.json",
+  "protected_embedded_scripts": 18,
+  "unchanged": "DSP, shared effects, arp, MIDI, patches, factory bank, existing parameter/input logic and approved coordinate data are byte-identical to the rollback. Only decorative header construction changes among embedded scripts.",
+  "screenshots": [
+    "photo-1920-visible.png",
+    "photo-1920-hidden.png",
+    "photo-1600-visible.png",
+    "photo-1600-hidden.png",
+    "photo-control-study.png",
+    "photo-keybed.png",
+    "photo-header.png",
+    "photo-knob.png",
+    "photo-faders.png"
+  ],
+  "reference_map": "reports/photo-reference-map.json",
+  "leads": "Four decorative black leads with dark plugs; no wood/foam backdrop in the UI.",
+  "rollback": {
+    "development_tag": "rollback/pre-photo-reconstruction",
+    "development_commit": "a53b7e4",
+    "site_version": 18,
+    "site_version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_8fc06eddb78481919bbe29dbb373b6fa",
+    "site_source_commit": "d998d3733e6dd45c0c36c1bac3db373647f20462",
+    "local_archive": "work/rollback-hosted-v18.tar.gz"
+  },
+  "publication": "pending",
+  "main_merged": false,
+  "unverified": [
+    "physical Windows/tablet performance",
+    "hardware MIDI",
+    "human listening",
+    "live-origin browser QA due configured host policy"
+  ]
+}

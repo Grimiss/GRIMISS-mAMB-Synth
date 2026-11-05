@@ -11,7 +11,7 @@
     "test:ownership": "node tests/ownership-modulation.cjs",
     "test:measurements": "node tests/measurements.cjs",
     "test:performance": "node tests/performance.cjs",
-    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs && node tests/midi-registry.cjs && node tests/workflow.cjs && node tests/factory.cjs && node tests/preset-contrast.cjs && node tests/preset-panic.cjs && node tests/devices.cjs && node tests/hardware.cjs && node tests/physical-controls.cjs && node tests/hardware-header.cjs && node tests/reference-layout.cjs && npm run test:analog && npm run test:refinement && npm run test:arp",
+    "test:all": "node tests/baseline.cjs && node tests/diagnostics.cjs && npm test && node tests/effects.cjs && node tests/instrument.cjs && node tests/performance.cjs && node tests/browser.cjs && node tests/ui.cjs && node tests/midi-registry.cjs && node tests/workflow.cjs && node tests/factory.cjs && node tests/preset-contrast.cjs && node tests/preset-panic.cjs && node tests/devices.cjs && node tests/hardware.cjs && node tests/physical-controls.cjs && node tests/hardware-header.cjs && node tests/reference-layout.cjs && npm run test:analog && npm run test:refinement && npm run test:arp && npm run test:photo",
     "build": "node tools/build.cjs",
     "test:effects": "node tests/effects.cjs",
     "test:instrument": "node tests/instrument.cjs",
@@ -22,7 +22,8 @@
     "test:analog": "node tests/analog.cjs && node tests/analog-browser.cjs",
     "test:refinement": "node tests/refinement-ui.cjs && node tests/wheels-v051.cjs && node tests/refinement-dsp.cjs && node tests/slider-refinement.cjs && node tests/expressive-sound.cjs && node tests/mechanical-controls.cjs",
     "test:presets": "node tests/workflow.cjs && node tests/factory.cjs && node tests/preset-contrast.cjs && node tests/preset-panic.cjs",
-    "test:arp": "node tests/arpeggiator.cjs && node tests/arp-hardware-browser.cjs"
+    "test:arp": "node tests/arpeggiator.cjs && node tests/arp-hardware-browser.cjs",
+    "test:photo": "node tests/photo-reconstruction.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

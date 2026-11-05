@@ -1,0 +1,152 @@
+{
+  "reference_sha256": "3e91bf5f54ae8e42356d69f726bc56dc29484c3f3504ecf8c117bb759b0df4bb",
+  "image_size": [
+    1280,
+    769
+  ],
+  "measurement": "Visible image feature bounds, approximate to a few pixels; frontal comparison normalized to1280x640. Existing approved interactive coordinates and37 notes retained.",
+  "pixel_bounds_xywh": {
+    "cabinet": [
+      18,
+      80,
+      1250,
+      645
+    ],
+    "header": [
+      29,
+      82,
+      1228,
+      54
+    ],
+    "control_surface": [
+      44,
+      140,
+      1197,
+      418
+    ],
+    "keyboard_housing": [
+      23,
+      573,
+      1237,
+      145
+    ],
+    "keybed": [
+      273,
+      586,
+      956,
+      132
+    ],
+    "oscillator_knob": [
+      493,
+      174,
+      26,
+      26
+    ],
+    "cutoff_knob": [
+      735,
+      328,
+      44,
+      45
+    ],
+    "mixer_cap": [
+      617,
+      191,
+      25,
+      10
+    ],
+    "lfo_display": [
+      771,
+      198,
+      139,
+      42
+    ]
+  },
+  "percent_of_cabinet_xywh": {
+    "cabinet": [
+      0.0,
+      0.0,
+      100.0,
+      100.0
+    ],
+    "header": [
+      0.88,
+      0.31,
+      98.24,
+      8.37
+    ],
+    "control_surface": [
+      2.08,
+      9.3,
+      95.76,
+      64.81
+    ],
+    "keyboard_housing": [
+      0.4,
+      76.43,
+      98.96,
+      22.48
+    ],
+    "keybed": [
+      20.4,
+      78.45,
+      76.48,
+      20.47
+    ],
+    "oscillator_knob": [
+      38.0,
+      14.57,
+      2.08,
+      4.03
+    ],
+    "cutoff_knob": [
+      57.36,
+      38.45,
+      3.52,
+      6.98
+    ],
+    "mixer_cap": [
+      47.92,
+      17.21,
+      2.0,
+      1.55
+    ],
+    "lfo_display": [
+      60.24,
+      18.29,
+      11.12,
+      6.51
+    ]
+  },
+  "sampled_rgb_medians": {
+    "header_cabinet": [
+      62,
+      62,
+      62
+    ],
+    "voice_face": [
+      46,
+      46,
+      44
+    ],
+    "oscillator_face": [
+      62,
+      62,
+      62
+    ],
+    "filter_face": [
+      25,
+      25,
+      23
+    ],
+    "mod_face": [
+      22,
+      28,
+      22
+    ],
+    "ivory_key": [
+      154,
+      155,
+      151
+    ]
+  }
+}

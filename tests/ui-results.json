@@ -364,7 +364,7 @@
           }
         }
       ],
-      "font": "Orbitron, monospace",
+      "font": "OpenSans, Orbitron, sans-serif",
       "palette": {
         "--teal": "#50efd5",
         "--amber": "#e8b555",
@@ -380,8 +380,8 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.052955188910286076,
-        "stereoDifferenceRms": 0.0000012465251507992971,
+        "rms": 0.05197268796677791,
+        "stereoDifferenceRms": 0.0000018550339611300105,
         "finite": true
       }
     },
@@ -760,7 +760,7 @@
           }
         }
       ],
-      "font": "Orbitron, monospace",
+      "font": "OpenSans, Orbitron, sans-serif",
       "palette": {
         "--teal": "#50efd5",
         "--amber": "#e8b555",
@@ -1324,7 +1324,7 @@
           }
         }
       ],
-      "font": "Orbitron, monospace",
+      "font": "OpenSans, Orbitron, sans-serif",
       "palette": {
         "--teal": "#50efd5",
         "--amber": "#e8b555",
@@ -1340,7 +1340,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.05269962980800646,
+        "rms": 0.05136733665869251,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -1720,7 +1720,7 @@
           }
         }
       ],
-      "font": "Orbitron, monospace",
+      "font": "OpenSans, Orbitron, sans-serif",
       "palette": {
         "--teal": "#50efd5",
         "--amber": "#e8b555",
@@ -2284,7 +2284,7 @@
           }
         }
       ],
-      "font": "Orbitron, monospace",
+      "font": "OpenSans, Orbitron, sans-serif",
       "palette": {
         "--teal": "#50efd5",
         "--amber": "#e8b555",
@@ -2300,7 +2300,7 @@
         "patch": true
       },
       "audio": {
-        "rms": 0.0527077235406075,
+        "rms": 0.051300254558571706,
         "stereoDifferenceRms": 0,
         "finite": true
       }
@@ -2680,7 +2680,7 @@
           }
         }
       ],
-      "font": "Orbitron, monospace",
+      "font": "OpenSans, Orbitron, sans-serif",
       "palette": {
         "--teal": "#50efd5",
         "--amber": "#e8b555",
@@ -2901,8 +2901,8 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.0518507885360594,
-        "stereoDifferenceRms": 0.00004906206783636633,
+        "rms": 0.052364666031765164,
+        "stereoDifferenceRms": 0.00005578457661357412,
         "finite": true
       },
       "consoleErrors": []
@@ -2924,8 +2924,8 @@
         "HTML download integrity"
       ],
       "audio": {
-        "rms": 0.05217529112230337,
-        "stereoDifferenceRms": 0.00007189647778787749,
+        "rms": 0.05238477034070503,
+        "stereoDifferenceRms": 0.00006467603425333755,
         "finite": true
       },
       "consoleErrors": []
@@ -2942,8 +2942,8 @@
       "keyboard visibility touch toggle"
     ],
     "audio": {
-      "rms": 0.052397730478188506,
-      "stereoDifferenceRms": 0,
+      "rms": 0.052547206274296716,
+      "stereoDifferenceRms": 2.889124093295678e-7,
       "finite": true
     },
     "hitAreas": {
