@@ -211,3 +211,7 @@ PASS tests/seq-direction-browser.cjs: reproduced focused FWD vs recalled RANDOM 
 ## 2026-11-05 — sequencer button layout
 
 PASS new seq-buttons-browser controls/bank alignment/MORE/contextual arp/root tests, dialog/PROGRAM audio continuity and worst-case geometry at both target resolutions. Existing sequencer-browser (actual two-touch, wheel, arrow, flip, migration, MIDI and fallback), root-program-browser, direction-browser (all real clock directions), dual-eight, root-program, scale and 30-case pre-simplification audio compatibility tests pass. No DSP changes. Green caps do not reintroduce green sequencing. Physical tablets/controllers remain unverified; earlier unrelated hidden-velocity test limitation still applies.
+
+## 2026-11-05 — tablet audio compatibility
+
+PASS tablet-audio-browser.cjs: six checks across Worklet and ScriptProcessor fallback with actual trusted Chromium touch events and mocked mobile activation/interruption/session behaviour. Both render measurable output after completed-tap activation, resume without sequence reset, preserve a microphone session, and avoid activation before interaction. All 11 workflow browser groups pass; sequencer core regressions pass. This is not physical tablet, Safari or Android OS validation. Tablet/browser details were requested and remain pending.

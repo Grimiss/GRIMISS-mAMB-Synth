@@ -109,3 +109,5 @@ Direction sync / cyan caps published successfully as Site version 29. Source d7f
 Latest UI: SEQ16_BUTTON_LAYOUT.md supersedes the small-dropdown arrangement. Wider button controls, green pitch caps, a selected-step strip and MORE dialog; bank and selected step stay aligned. Existing timing/DSP untouched. `npm run test:seq-layout` and `npm run test:direction` cover the visible controls. Rollback checkpoint/pre-sequencer-buttons.
 
 Button layout / green caps published successfully as Site version 30. Source 2d6376ee6ece75b2c30a8f34eca5d7e345cb97bb, development code 0c41b8bad63df3df2c4cb20884d3593290dc051f. Version 29 and remote rollback/live-v29-before-button-layout retained. See reports/mikroseq-button-layout-release-verification.json. Same URL and access; no development main merge.
+
+Touch audio compatibility: TABLET_AUDIO_STARTUP.md documents completed-tap resume and feature-detected playback sessions. `npm run test:tablet-audio` verifies simulated mobile restrictions in Chromium and both audio backends. Physical-tablet silence is not conclusively diagnosed; user tablet/browser/status details were requested. Rollback checkpoint/pre-tablet-audio.

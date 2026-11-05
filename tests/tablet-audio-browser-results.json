@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Worklet resumes after a completed trusted touch when touch-down resume is rejected, and produces measurable audio",
+    "Worklet interrupted context resumes on tap without resetting sequence position",
+    "Worklet preserves an explicitly active microphone session",
+    "Fallback resumes after a completed trusted touch when touch-down resume is rejected, and produces measurable audio",
+    "Fallback interrupted context resumes on tap without resetting sequence position",
+    "Fallback preserves an explicitly active microphone session"
+  ],
+  "errors": [],
+  "simulation": "Chromium trusted touch with mocked activation restriction/interruption/session API",
+  "physicalTabletTested": false
+}

@@ -172,3 +172,7 @@ Reproduced a focused direction selector displaying FWD while patch recall loaded
 ## 2026-11-05 — sequencer performance buttons and green caps
 
 Reorganised only the SEQ face: narrower columns, widened PATTERN/PERFORMANCE groups, illuminated layout/bank/direction/rate/root-source/arp mode buttons, contextual ratio, selected-step strip and a MORE detail dialog. Pitch caps are green; amber playheads remain. Bank/step selection is now consistent in both directions. Native hidden backing parameter IDs preserve state mappings. Timing/DSP untouched. See SEQ16_BUTTON_LAYOUT.md and test:seq-layout.
+
+## 2026-11-05 — touch audio activation compatibility
+
+Added standard trusted completed-tap activation/resume, feature-detected playback audio session (preserving play-and-record), and clear suspended/interrupted tap-to-resume status. Existing DSP/sequence/patch state untouched. Chromium simulations validate touch-down rejection with completed-tap success, audible Worklet/fallback output and sequence continuity on interruption. Tablet model/browser and physical-device outcome remain unverified; see TABLET_AUDIO_STARTUP.md.

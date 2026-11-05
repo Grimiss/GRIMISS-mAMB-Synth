@@ -2292,9 +2292,11 @@ function syncParameters(){const value=parameters(),serialized=JSON.stringify(val
 function syncRoute(index){send({type:'route',index,value:{source:$('route'+index+'Source').value,destination:$('route'+index+'Destination').value,amount:n('route'+index+'Amount')/100,enabled:$('route'+index+'Enabled').checked}})}
 function resetRoutes(){for(let i=0;i<4;i++){$('route'+i+'Enabled').checked=false;syncRoute(i)}}
 function refreshState(){if(workletNode)workletNode.port.postMessage({type:'snapshot'});else if(engine)updateKeyboard(engine.snapshot())}
-function audioState(){if(!ac){$('status').textContent='READY · play a key or touch the instrument';return}const state=ac.state;$('status').textContent=state==='running'?'Audio running • '+(ac.mambBackend||'preparing engine'):state==='suspended'?'READY · tap or play a key to enable sound (browser permission)':'Audio '+state;window.dispatchEvent(new Event('mamb-audio-state'))}
+function audioState(){if(!ac){$('status').textContent='READY · play a key or touch the instrument';return}const state=ac.state;$('status').textContent=state==='running'?'Audio running • '+(ac.mambBackend||'preparing engine'):(state==='suspended'||state==='interrupted')?'READY · tap the instrument to resume sound':'Audio '+state;window.dispatchEvent(new Event('mamb-audio-state'))}
 function start(){
  try{
+ // Feature-detected music playback session; unsupported browsers keep their normal policy.
+ try{if(navigator.audioSession&&navigator.audioSession.type!=='play-and-record')navigator.audioSession.type='playback'}catch{}
  if(!ac||ac.state==='closed'){ac=new (window.AudioContext||window.webkitAudioContext)({latencyHint:'interactive'});processor=undefined;engine=undefined;workletNode=undefined;ac.onstatechange=audioState}
  // Resume synchronously in the originating gesture, before awaiting Worklet loading.
  if(ac.state!=='running')ac.resume().then(audioState).catch(error=>{$('status').textContent='Audio permission: '+error.message});
@@ -2312,7 +2314,7 @@ function start(){
  }catch(error){$('status').textContent='Audio error: '+error.message;return Promise.reject(error)}
 }
 // Standard browser activation; no hidden autoplay workarounds or mandatory start button.
-for(const type of ['pointerdown','keydown'])window.addEventListener(type,event=>{if(!event.isTrusted||event.type==='keydown'&&(event.repeat||event.metaKey||event.ctrlKey||event.altKey))return;if(!ac||ac.state!=='running')start().catch(()=>{})},{capture:true});
+for(const type of ['pointerdown','pointerup','touchend','click','keydown'])window.addEventListener(type,event=>{if(!event.isTrusted||event.type==='keydown'&&(event.repeat||event.metaKey||event.ctrlKey||event.altKey))return;if(!ac||ac.state!=='running')start().catch(()=>{})},{capture:true,passive:true});
 function noteOn(m,velocity=1,source='default'){if(!ac)start().catch(()=>{});if(window.mambSeq16?.captureNoteOn(m,source)){const old=localNotes.get(source+'|'+m);if(old){send({type:'off',note:m,source});localNotes.delete(source+'|'+m);}return;}if(!ac)start().catch(()=>{});syncParameters();localNotes.set(source+'|'+m,{note:m,source});send({type:'on',note:m,velocity,source});refreshState()}
 function noteOff(m,source='default'){if(window.mambSeq16?.captureNoteOff(m,source))return;localNotes.delete(source+'|'+m);send({type:'off',note:m,source});refreshState()}
 function panic(){send({type:'panic'});localNotes.clear();pointerNotes.clear();updateKeyboard({activeNotes:[]});window.dispatchEvent(new Event('mamb-panic'))}
