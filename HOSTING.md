@@ -162,3 +162,7 @@ Same owner-private URL retained. Custom compact black rotary artwork, narrow rai
 ## Orbitron Black / sage refinement — published
 
 Same private playable URL. Headings use embedded Orbitron900; rounded sage reverse-print section names, thicker inset rules and identical oscillator colour/texture on all16 control sections. CSS-only;19 embedded scripts unchanged. Core checkpoint aae5c9d; source3aa945382bf9b37cd74be163138633e1d8a460f4; saved version appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_f8be90361118819199e176487762dbce; deployment appgdep_6aebd2c3aa48819184da649fb9687cdd succeeded. HTML SHA25670e0a24c2c26a90050ed163be636ce5ac210e1c5879d3c955e2fbbb8dfe96b7f. Review: `/reports/orbitron-sage-review.html`. Version19 retained for rollback; no main merge. Local Chromium geometry/header/control/patch/arp/audio checks passed. Live-origin browser QA remains policy-restricted.
+
+## User-requested screenshot rollback
+
+Production restored to saved Site version 14, source 7265d397b9b409807feffe2b95b409f6ad17d167, matching the supplied screenshot (locally compared with checkpoint 5f54e36 in Chromium). Deployment appgdep_6aec0cb5258c8191b8357164ce639eee succeeded. Previous Site version 24 remains saved; development source d07c543 remains intact on codex/controller-workflow-v0.7. This is a full hosted rollback: working arp and later sound/visual changes are not in production. Do not silently republish the newer development build. Main unchanged.
