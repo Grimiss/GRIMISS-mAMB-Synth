@@ -1,12 +1,14 @@
-# GRIMISS mAMB Synth — v0.7
+# GRIMISS mikroSEQ
 
 [Open the playable instrument](https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site), sign in if prompted and play a key. Audio activates on the first real key, touch or click; there is no Start Audio button. Browser autoplay policy can still require a gesture before MIDI-only performance. The owner-private Site and repository visibility are preserved. **HTML BUILD** downloads the standalone instrument.
 
-**SELECT PATCH** opens 90 original factory patches in nine banks plus the USER save/select/rename/delete section. MIDI SETTINGS contains input/output/channel selection and the interactive original KeyLab25 map; Learn profiles persist independently of patches. AUDIO SETTINGS exposes supported output selection and explicitly enabled input monitoring (initial gain zero). Each XY pad has an independent assignment editor; assignments save with USER patches. HIDE KEYBOARD expands the instrument controls and graphs while retaining audio and active notes.
+**SELECT PATCH** opens 100 original factory patches in ten banks plus the USER save/select/rename/delete section. MIDI SETTINGS contains input/output/channel selection and the interactive original KeyLab25 map; Learn profiles persist independently of patches. AUDIO SETTINGS exposes supported output selection and explicitly enabled input monitoring (initial gain zero). Each XY pad has an independent assignment editor; assignments save with USER patches. HIDE KEYBOARD expands the instrument controls and graphs while retaining audio and active notes.
 
 Both keyboard modes fit 1920×1080 and1600×900; scaled tablet browser layouts are tested separately from physical hardware. Factory and user patch serialization remains internal; permanent category/import/export controls were removed from the main surface. KeyLab25 physical CC verification remains pending; unknown controllers are deliberately unassigned. See [controller documentation](KEYLAB25_MIDI_MAP.md) and [standalone map](KEYLAB25_CONTROL_MAP.html).
 
 The approved Prototype B design is now applied throughout: near-black cabinet/panels, flat graphite cheeks, low-profile knobs with real value arcs and compact dark fader caps. Screens have brighter glow and visible bezels. All lettering is heavier, like screen printing. The header includes the ventilation grille, central patch LCD and working catalogue navigation. [Full interface review](reports/rebuild-comparison.html) · [Refined prototype/reference comparison](prototypes/low-profile-b/index.html).
+
+Formerly GRIMISS mAMB. Internal identifiers, repository names, storage keys and patch formats remain compatible.
 
 ## Instrument
 

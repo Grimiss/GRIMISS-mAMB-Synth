@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "name": "FIXED retains root+offset and ignores root keyboard messages",
+      "status": "PASS"
+    },
+    {
+      "name": "KEYBOARD queues actual octave until next boundary, retains key release and never resets phase",
+      "status": "PASS"
+    },
+    {
+      "name": "all six arp modes retain arp pitch; only ECHO independent notes use keyboard roots",
+      "status": "PASS"
+    }
+  ]
+}

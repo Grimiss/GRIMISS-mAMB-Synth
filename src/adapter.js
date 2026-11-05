@@ -5,7 +5,7 @@ const localNotes=new Map();let engine,workletNode,starting,engineTimer,lastParam
 function parameters(){const ids=['thickness','velocitySensitivity','analogCharacter','cross','lfo','vib','drift','pw','pwm','level1','level2','ring','noise','drive','cutoff','res','envAmt','motion','master','aa','ad','as','ar','fa','fd','fs','fr','detune','semi2','keyTrack','lfo1Depth','lfo2Rate','lfo2Depth'];const p={};for(const id of ids)p[id]=n(id);p.sync=$('sync').value==='on';p.wave1=$('wave1').value;p.wave2=$('wave2').value;p.oct2=Number($('oct2').value);p.filter=$('filter').value;p.bend=0;p.arpOn=$('arpOn').checked;p.arpPattern=$('arpPattern').value;p.arpDivision=n('arpDivision');p.arpOctaves=n('arpOctaves');p.arpGate=n('arpGate');p.lfo1Wave=$('lfo1Wave').value;p.lfo2Wave=$('lfo2Wave').value;p.voiceMode=$('voiceMode').value;for(const [key,value]of Object.entries(MAMB_EFFECT_DEFAULTS)){const element=$(key);if(element)p[key]=element.type==='checkbox'?element.checked:typeof value==='number'?Number(element.value):element.value}p.seq16=window.mambSeq16?.serialize();return p}
 
 function updateKeyboard(state){latestEngineState=state;const active=new Set(state.activeNotes);document.querySelectorAll('[data-midi]').forEach(key=>key.classList.toggle('on',active.has(+key.dataset.midi)))}
-function send(m){if(workletNode)workletNode.port.postMessage(m);else if(engine){engine.message(m);if(m.type!=='params')updateKeyboard(engine.snapshot())}else if(starting){if(pendingEngineMessages.length<1024)pendingEngineMessages.push(m);else pendingEngineMessages=[{type:'panic'}]}}
+function send(m){if(m.type==='sourceOff')window.mambSeq16?.releaseSource(m.source);if(workletNode)workletNode.port.postMessage(m);else if(engine){engine.message(m);if(m.type!=='params')updateKeyboard(engine.snapshot())}else if(starting){if(pendingEngineMessages.length<1024)pendingEngineMessages.push(m);else pendingEngineMessages=[{type:'panic'}]}}
 function syncParameters(){const value=parameters(),serialized=JSON.stringify(value);if(serialized!==lastParams){lastParams=serialized;send({type:'params',value})}}
 function syncRoute(index){send({type:'route',index,value:{source:$('route'+index+'Source').value,destination:$('route'+index+'Destination').value,amount:n('route'+index+'Amount')/100,enabled:$('route'+index+'Enabled').checked}})}
 function resetRoutes(){for(let i=0;i<4;i++){$('route'+i+'Enabled').checked=false;syncRoute(i)}}
@@ -31,8 +31,8 @@ function start(){
 }
 // Standard browser activation; no hidden autoplay workarounds or mandatory start button.
 for(const type of ['pointerdown','keydown'])window.addEventListener(type,event=>{if(!event.isTrusted||event.type==='keydown'&&(event.repeat||event.metaKey||event.ctrlKey||event.altKey))return;if(!ac||ac.state!=='running')start().catch(()=>{})},{capture:true});
-function noteOn(m,velocity=1,source='default'){if(!ac)start().catch(()=>{});syncParameters();localNotes.set(source+'|'+m,{note:m,source});send({type:'on',note:m,velocity,source});refreshState()}
-function noteOff(m,source='default'){localNotes.delete(source+'|'+m);send({type:'off',note:m,source});refreshState()}
+function noteOn(m,velocity=1,source='default'){if(!ac)start().catch(()=>{});if(window.mambSeq16?.captureNoteOn(m,source)){const old=localNotes.get(source+'|'+m);if(old){send({type:'off',note:m,source});localNotes.delete(source+'|'+m);}return;}if(!ac)start().catch(()=>{});syncParameters();localNotes.set(source+'|'+m,{note:m,source});send({type:'on',note:m,velocity,source});refreshState()}
+function noteOff(m,source='default'){if(window.mambSeq16?.captureNoteOff(m,source))return;localNotes.delete(source+'|'+m);send({type:'off',note:m,source});refreshState()}
 function panic(){send({type:'panic'});localNotes.clear();pointerNotes.clear();updateKeyboard({activeNotes:[]});window.dispatchEvent(new Event('mamb-panic'))}
 $('panic').onclick=panic;audioState();
 $('hold').onclick=()=>{holdEnabled=!holdEnabled;send({type:'hold',value:holdEnabled,mode:$('holdMode').value});$('hold').textContent=holdEnabled?'HOLD ON':'HOLD OFF';$('hold').setAttribute('aria-pressed',String(holdEnabled));$('hold').style.background=holdEnabled?'#377a62':'';refreshState()};
@@ -56,7 +56,7 @@ key.addEventListener('pointerup',pointerUp);key.addEventListener('pointercancel'
 const keyboardMap={'a':48,'w':49,'s':50,'e':51,'d':52,'f':53,'t':54,'g':55,'y':56,'h':57,'u':58,'j':59,'k':60};
 window.addEventListener('keydown',e=>{if(e.repeat||e.target.matches('input,select,textarea'))return;const char=e.key.toLowerCase(),m=keyboardMap[char];if(m!==undefined){e.preventDefault();noteOn(m,1,'keyboard:'+char)}});
 window.addEventListener('keyup',e=>{const char=e.key.toLowerCase(),m=keyboardMap[char];if(m!==undefined)noteOff(m,'keyboard:'+char)});
-function releaseLocal(){for(const event of [...localNotes.values()])if(event.source.startsWith('keyboard:')||event.source.startsWith('pointer:'))noteOff(event.note,event.source);pointerNotes.clear()}
+function releaseLocal(){window.mambSeq16?.releaseLocalRoots();for(const event of [...localNotes.values()])if(event.source.startsWith('keyboard:')||event.source.startsWith('pointer:'))noteOff(event.note,event.source);pointerNotes.clear()}
 window.addEventListener('blur',releaseLocal);document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseLocal()});
 let midiAccess;
 function midiMessage(e,device='injected'){

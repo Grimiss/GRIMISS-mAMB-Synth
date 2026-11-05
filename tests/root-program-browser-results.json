@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "phase": 1,
+  "checks": [
+    "External MIDI messages choose/latch root without manual voices or sequence reset",
+    "Onscreen octave note and horizontal flip keep sequencing alive",
+    "FIXED retains ordinary MIDI playing and note-off ownership"
+  ],
+  "errors": [],
+  "physicalHardwareTested": false
+}

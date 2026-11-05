@@ -2,7 +2,7 @@
   "name": "grimiss-mamb-synth",
   "version": "0.5.1",
   "private": true,
-  "description": "GRIMISS mAMB standalone hardware-style synthesizer and KeyLab25 workflow",
+  "description": "GRIMISS mikroSEQ standalone hardware-style synthesizer and KeyLab25 workflow",
   "scripts": {
     "test": "node tests/audio.cjs && node tests/ownership-modulation.cjs && node tests/measurements.cjs",
     "test:baseline": "node tests/baseline.cjs",
