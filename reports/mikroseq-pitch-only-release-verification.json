@@ -1,0 +1,19 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 28,
+  "siteSourceCommit": "b63c8ff5001b4c8f59e1daf41d2b0930cc5ba018",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "developmentCommit": "5236b85320ad32d08ba5b75c381df9d0c605bfbc",
+  "htmlSha256": "32f28420304a79cb1a89ea58043bb970fe863114fee1f7d364244d718247c927",
+  "deploymentId": "appgdep_6aeccc95267481919526d8aca204faab",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_dc86c627ea0881919afe074ea27f4800",
+  "rollback": {
+    "version": 27,
+    "sourceCommit": "0caefc65a1e68e9cb1ed8ab454e53be346c908a6",
+    "remoteBranch": "rollback/live-v27-before-pitch-only"
+  },
+  "verification": "Native publication succeeded and saved source matches the remotely verified commit. Index bytes match the local browser/audio-tested standalone build. No separate live-origin browser visit or physical hardware testing.",
+  "knownPreExistingFailure": "expressive-sound.cjs final hidden HTML velocity default assertion expects 0; rollback and current interface both contain 50. Age/thickness DSP assertions passed; this unrelated value was preserved.",
+  "updatedAt": "2026-11-05T18:36:22.663459+00:00"
+}

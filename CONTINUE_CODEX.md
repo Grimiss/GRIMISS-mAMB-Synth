@@ -99,3 +99,5 @@ Latest addition: SEQ16_KEYS_AND_DUAL8.md documents per-slot key/scale, rounds, n
 ## Latest — pitch-only SEQ-16
 
 SEQ16_PITCH_ONLY.md supersedes dual-layer/shared-drift operation described above. Green sequencing/LINK and ARP + DRIFT / ARP DRIFT are removed by user approval; legacy mode migration disables combined operation and explains why. Pink/root/program timing, optional scales and DUAL 8 pitch remain. Use `npm run test:pitch-only`; rollback checkpoint/pre-pitch-only-seq16. See TEST_RESULTS.md for known pre-existing expressive-sound hidden velocity-default assertion.
+
+Pitch-only build published successfully as Site version 28. Source b63c8ff5001b4c8f59e1daf41d2b0930cc5ba018, development code 5236b85320ad32d08ba5b75c381df9d0c605bfbc. Same mikroSEQ URL; version 27 and remote rollback/live-v27-before-pitch-only retained. Verified native deployment and source/archive provenance. See reports/mikroseq-pitch-only-release-verification.json. No development main merge.
