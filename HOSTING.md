@@ -166,3 +166,7 @@ Same private playable URL. Headings use embedded Orbitron900; rounded sage rever
 ## User-requested screenshot rollback
 
 Production restored to saved Site version 14, source 7265d397b9b409807feffe2b95b409f6ad17d167, matching the supplied screenshot (locally compared with checkpoint 5f54e36 in Chromium). Deployment appgdep_6aec0cb5258c8191b8357164ce639eee succeeded. Previous Site version 24 remains saved; development source d07c543 remains intact on codex/controller-workflow-v0.7. This is a full hosted rollback: working arp and later sound/visual changes are not in production. Do not silently republish the newer development build. Main unchanged.
+
+## Restored visual design plus current features
+
+User requested the working arpeggiator and newer patches on top of version 14 appearance. Active build now uses historical header, rotary/fader artwork, wheel visuals, keyboard and CSS, with only arp controls added to the reserved panel. Current audio engine and 100 patches retained. See RESTORED_ARPEGGIATOR.md. Supersedes the preceding instruction to leave production on unmodified version 14; do not restore later photo/filled-title appearance.

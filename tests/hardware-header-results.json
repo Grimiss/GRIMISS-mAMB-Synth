@@ -10,10 +10,10 @@
     "heavier brand/section headings"
   ],
   "paints": {
-    "brand": "900",
-    "section": "900",
+    "brand": "700",
+    "section": "700",
     "bezel": "3px",
-    "glow": "drop-shadow(rgb(211, 225, 228) 0px 0px 0.8px)",
+    "glow": "drop-shadow(rgb(80, 239, 213) 0px 0px 1.5px) drop-shadow(rgb(80, 239, 213) 0px 0px 4px)",
     "knobCount": 48,
     "knobs": 48,
     "vent": "true",

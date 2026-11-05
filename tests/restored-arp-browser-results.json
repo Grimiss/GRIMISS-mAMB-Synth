@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": false,
+      "status": "PASS"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "hidden": true,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": false,
+      "status": "PASS"
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "hidden": true,
+      "status": "PASS"
+    }
+  ],
+  "checks": [
+    "restored version 14 appearance without photo artwork or filled title bars, all controls inside unchanged geometry at four target layouts",
+    "all ten presets enable real Worklet arp; audio output, shared tempo, pattern editing, HOLD, PANIC and patch/legacy recall",
+    "ScriptProcessor fallback runs the same audio-clock arpeggiator"
+  ],
+  "physicalHardwareTested": false,
+  "audio": {
+    "rms": 0.026151641090685948,
+    "finite": true
+  },
+  "consoleErrors": []
+}

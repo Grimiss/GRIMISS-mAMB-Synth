@@ -179,3 +179,5 @@ Arp/hardware checkpoint: all regression groups PASS across staged runs; see repo
 Photo reconstruction final verification: npm run test:all PASS, exit0. Dedicated photo checks PASS at both target sizes/keyboard modes;18 protected scripts unchanged. See reports/photo-release-verification.json. Historical screenshots were retained; current captures use photo-* filenames.
 
 Transparent lettering checkpoint: all 16 sage section titles now have true background-revealing SVG cut-outs using Orbitron Black weight 900. Chromium pixel proof passed (138 backdrop-following pixels); four layout checks and existing functional/header/arp regressions passed. Audio and parameter scripts unchanged. See TRUE_KNOCKOUT_LETTERING.md.
+
+Restored-design integration: version 14 visual components and styling, current DSP, 100 newer factory patches and working audio-clock arpeggiator. See RESTORED_ARPEGGIATOR.md and npm run test:restored. Do not reload later photo/filled-title styling.

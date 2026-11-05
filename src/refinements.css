@@ -119,35 +119,3 @@ html.control-refinement button,html.control-refinement main .hardware-choice but
 html.control-refinement button:not(.active):not(.enabled):not([aria-pressed=true]){background:linear-gradient(#303933,#1a211d)!important;border-top-color:#526057!important;border-bottom-color:#080d0a!important}
 html.control-refinement button:active{box-shadow:inset 0 2px 3px #000a!important}
 html.control-refinement .download-build{border-radius:4px!important;background:linear-gradient(#303933,#1a211d)!important;box-shadow:0 2px 2px #0008,inset 0 1px 0 #a5b4aa22,inset 0 -2px 1px #0005!important}
-/* Equal oscillator switches: fixed physical geometry, not content-sized glyph buttons. */
-html.control-refinement main .osc-row .wave-buttons{display:grid!important;grid-template-columns:repeat(4,22px)!important;grid-auto-rows:17px!important;gap:3px!important;width:97px!important}
-html.control-refinement main .osc-row .wave-buttons button{box-sizing:border-box!important;width:22px!important;min-width:22px!important;max-width:22px!important;height:17px!important;min-height:17px!important;max-height:17px!important;flex:none!important;padding:0!important;border:1px solid #46544c!important}
-html.control-refinement main .osc-row .wave-buttons svg{width:18px!important;height:13px!important}
-html.control-refinement main .osc-row .wave-buttons button.active{border:2px solid currentColor!important;box-shadow:0 0 3px 1px currentColor,inset 0 0 4px color-mix(in srgb,currentColor 45%,transparent)!important}
-html.control-refinement main .osc-row .wave-buttons button.active svg{filter:drop-shadow(0 0 1px currentColor) drop-shadow(0 0 2px currentColor)!important}
-html.control-refinement main .osc-row .wave-buttons button.active svg path,html.control-refinement main .osc-row .wave-buttons button.active svg polyline{stroke-width:2.2!important}
-html.control-refinement main>.performance-panel>.performance-range-hidden{display:none!important}
-/* The black body sits IN a wider dark pocket. White shoulders begin after the pocket. */
-html.control-refinement main #keyboard .key-socket{position:absolute;top:0;height:89px;background:linear-gradient(90deg,#101810,#010402 3px,#010402 calc(100% - 3px),#202b20);border:1px solid #010302;border-bottom:2px solid #253025;box-shadow:inset 0 2px 4px #000;z-index:2;pointer-events:none}
-html.control-refinement main>.performance-panel .black{z-index:4!important;border:1px solid #030705!important;border-top:1px solid #465449!important;border-bottom:4px solid #0a100c!important;border-radius:0!important;background:linear-gradient(90deg,#020503,#26342a 8%,#101b14 18%,#0c160f 82%,#34473a 94%,#030704)!important;box-shadow:inset 1px 0 0 #43564755,inset -1px 0 0 #000,inset 0 -1px 0 #52645744!important}
-html.control-refinement main>.performance-panel .black:before{left:3px;right:3px;bottom:4px;background:linear-gradient(90deg,#0c150f,#1c2920 45%,#0b140e)!important;border-left:1px solid #344338!important;border-right:1px solid #020503!important;box-shadow:inset 0 2px 1px #657a6733!important}
-html.control-refinement main>.performance-panel .black:after{bottom:0;height:4px;background:linear-gradient(#26372b,#111b14)!important;border-top:1px solid #3f5343!important}
-/* Fixed shell/shading around a projected ribbed cylinder; the body never slides. */
-html.control-refinement main .wheel-slot{overflow:hidden!important;background:#010402!important;box-shadow:inset 2px 0 4px #000,inset -2px 0 4px #000!important}
-html.control-refinement main .wheel-drum{transform:none!important;inset:3px 3px!important;border-radius:9px!important;overflow:hidden!important;background:linear-gradient(90deg,#020603,#203127 18%,#34483a 48%,#19271e 84%,#020603)!important;border-left:1px solid #425547!important;border-right:1px solid #152219!important;box-shadow:inset 3px 0 4px #000,inset -3px 0 4px #000!important}
-html.control-refinement main .wheel-drum:after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(#000 0%,#000b 12%,#0002 34%,#adc9a317 48%,#0002 65%,#000b 88%,#000 100%)}
-html.control-refinement main .wheel-rib{position:absolute;left:1px;right:1px;display:block;background:linear-gradient(#7c927c,#263c2b);box-shadow:0 1px 0 #020603;transform:translateY(-50%);pointer-events:none;will-change:top,opacity}
-html.control-refinement main .wheel-index-rib{background:#bed0b7!important;box-shadow:0 1px 0 #09180d,0 -1px 0 #758b6c!important}
-html.control-refinement main .osc-row .wave-buttons button[data-select=wave1]{--osc-glow:var(--pink)}
-html.control-refinement main .osc-row .wave-buttons button[data-select=wave2]{--osc-glow:var(--amber)}
-html.control-refinement main .osc-row .wave-buttons button.active{color:var(--osc-glow)!important;border-color:var(--osc-glow)!important;box-shadow:0 0 3px 1px var(--osc-glow),inset 0 0 4px color-mix(in srgb,var(--osc-glow) 45%,transparent)!important}
-html.control-refinement main .osc-row .wave-buttons button.active svg{color:var(--osc-glow)!important;filter:drop-shadow(0 0 1px var(--osc-glow)) drop-shadow(0 0 2px var(--osc-glow))!important}
-html.control-refinement main .osc-row .wave-buttons button.active svg path,html.control-refinement main .osc-row .wave-buttons button.active svg polyline{stroke:var(--osc-glow)!important}
-html.control-refinement main #keyboard .white-key-rim{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
-html.control-refinement main #keyboard .white-key-rim path{fill:none;stroke:#9da793;stroke-width:1;vector-effect:non-scaling-stroke}
-html.control-refinement main #keyboard .key-socket{background:linear-gradient(90deg,#77806d 0 1px,#263125 1px 2px,#020503 3px calc(100% - 3px),#263125 calc(100% - 2px),#77806d calc(100% - 1px));border-bottom:2px solid #7a8671;box-shadow:inset 0 -4px 3px #182218,inset 0 2px 4px #000}
-/* Black plastic key bodies seated in dark wells, not illuminated control frames. */
-html.control-refinement main #keyboard .key-socket{background:linear-gradient(90deg,#22281f 0,#020402 4px,#020402 calc(100% - 4px),#252c23);border:0;border-bottom:1px solid #30382c;box-shadow:inset 0 -6px 4px #11180f,inset 0 2px 3px #000}
-html.control-refinement main>.performance-panel .black{background:linear-gradient(90deg,#020202,#252725 10%,#0d0e0d 20%,#0c0d0c 82%,#343734 95%,#020202)!important;border-top-color:#484d46!important;border-bottom-color:#080a08!important;box-shadow:inset 1px 0 0 #565d5133,inset -1px 0 0 #000!important}
-html.control-refinement main>.performance-panel .black:before{background:linear-gradient(90deg,#0b0c0b,#1b1d1b 45%,#080908)!important;border-left-color:#292e29!important;box-shadow:inset 0 2px 1px #6e756833!important}
-html.control-refinement main>.performance-panel .black:after{background:linear-gradient(#2a2e28,#111410)!important;border-top-color:#3a4036!important}

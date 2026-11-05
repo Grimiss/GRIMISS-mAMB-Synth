@@ -23,7 +23,8 @@
     "test:refinement": "node tests/refinement-ui.cjs && node tests/wheels-v051.cjs && node tests/refinement-dsp.cjs && node tests/slider-refinement.cjs && node tests/expressive-sound.cjs && node tests/mechanical-controls.cjs",
     "test:presets": "node tests/workflow.cjs && node tests/factory.cjs && node tests/preset-contrast.cjs && node tests/preset-panic.cjs",
     "test:arp": "node tests/arpeggiator.cjs && node tests/arp-hardware-browser.cjs",
-    "test:photo": "node tests/photo-reconstruction.cjs"
+    "test:photo": "node tests/photo-reconstruction.cjs",
+    "test:restored": "node tests/audio.cjs && node tests/ownership-modulation.cjs && node tests/instrument.cjs && node tests/arpeggiator.cjs && node tests/factory.cjs && node tests/preset-contrast.cjs && node tests/preset-panic.cjs && node tests/restored-arp-browser.cjs && node tests/hardware-header.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"
