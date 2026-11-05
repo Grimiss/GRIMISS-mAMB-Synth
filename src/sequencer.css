@@ -18,3 +18,4 @@ html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle
 html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle{height:7px!important;min-height:7px!important;border-radius:1px!important;min-width:0!important;padding:0!important}
 html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle.pitch{width:20px!important;border:1px solid #fa48c0!important;background:linear-gradient(#fa48c0,#f5b4dd 45%,#973167)!important;box-shadow:0 0 4px #fa48c088!important}
 html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle.drift{width:20px!important;border:1px solid #50efd5!important;background:linear-gradient(#50efd5,#d0fff3 45%,#205c46)!important;box-shadow:0 0 4px #50efd588!important}
+.seq-mode :is(input,select){display:block}

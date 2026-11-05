@@ -33,7 +33,7 @@
   ],
   "physicalHardwareTested": false,
   "audio": {
-    "rms": 0.026151641090685948,
+    "rms": 0.023315909855069154,
     "finite": true
   },
   "consoleErrors": []

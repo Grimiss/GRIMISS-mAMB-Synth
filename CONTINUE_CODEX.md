@@ -79,3 +79,5 @@ For deployment reuse the existing owner-private Site project appgprj_6ae9ad1b7aa
 Transparent lettering checkpoint: all 16 sage section titles now have true background-revealing SVG cut-outs using Orbitron Black weight 900. Chromium pixel proof passed (138 backdrop-following pixels); four layout checks and existing functional/header/arp regressions passed. Audio and parameter scripts unchanged. See TRUE_KNOCKOUT_LETTERING.md.
 
 Restored-design integration: version 14 visual components and styling, current DSP, 100 newer factory patches and working audio-clock arpeggiator. See RESTORED_ARPEGGIATOR.md and npm run test:restored. Do not reload later photo/filled-title styling.
+
+SEQ-16 complete: lower-panel rotateX keyboard/dual-layer swap, 16 independent pink/green tracks, all six arp interaction modes, per-step rhythm editing, independent audio clocks and additive patch/session persistence. Upper layout retained. New engine, browser and 60-second stress checks plus existing functional/audio/MIDI/100-patch regressions pass. See SEQ16_IMPLEMENTATION.md and npm run test:seq16. Physical tablet/controller verification remains pending.
