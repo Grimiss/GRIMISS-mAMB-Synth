@@ -1,0 +1,18 @@
+{
+  "status": "succeeded",
+  "siteVersion": 26,
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "codeCommit": "dc3d327e59ffdbbe8f999ca9499038c9b01fb53a",
+  "siteSourceCommit": "63425ab328c71b666999b98a5c03d8e445c46275",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_359b771af64c81918fd85e1f3eec2bf2",
+  "deploymentId": "appgdep_6aec1eb3d1148191bd3867e5bfb69dfc",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "htmlSha256": "e92a0b68a3b7093adcb8b8ef24c9d98b6ffc70a815fa6bd50f5fe8c6061ad357",
+  "rollbackSiteVersion": 25,
+  "rollbackTag": "rollback/pre-seq16",
+  "mainUnchanged": true,
+  "physicalTabletTested": false,
+  "physicalMidiHardwareTested": false,
+  "liveOriginBrowserTested": false,
+  "verification": "Local Chromium Worklet/fallback and exact artifact archive verified; native private deployment succeeded."
+}

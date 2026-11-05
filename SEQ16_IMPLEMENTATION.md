@@ -51,3 +51,9 @@ Local Node/Chromium verification is not physical Windows, controller or tablet t
 4. Select a step number for REST, ACCENT, probability and gate edits. Save a USER patch or export normally to retain the sequence. STOP leaves manual/ordinary arp operation available; PANIC is global recovery.
 
 Final local CPU sample (48 kHz, 128-frame blocks, median of three measured two-second renders after warm-up): [{"case": "SEQ stopped, ARP+FX", "renderedSeconds": 2, "medianMilliseconds": 447.69814699999915, "renderToRealtimeRatio": 0.22384907349999958}, {"case": "SEQ pitch+drift+ARP+FX", "renderedSeconds": 2, "medianMilliseconds": 974.0712070000009, "renderToRealtimeRatio": 0.4870356035000004}]. These are offline shared-host CPU ratios; the active case includes additional SEQ notes, drift and effects rather than an identical voice workload.
+
+## Delivery files and checkpoint
+
+New modules: src/sequencer.js, src/sequencer-ui.js, src/sequencer.css. Integration: instrument.js, synth.js, adapter.js, patches.js, the upper status text in interface.html and tools/build.cjs. Automated coverage: tests/sequencer.cjs, tests/sequencer-browser.cjs and tests/sequencer-stability.cjs. Existing tests/results, continuation, roadmap and development logs updated. Both standalone HTML aliases are byte-identical.
+
+Code checkpoint dc3d327 on codex/controller-workflow-v0.7; published Site version 26, source 63425ab328c71b666999b98a5c03d8e445c46275. Main unchanged. The saved version 25 is recoverable. Play on the same URL; review screenshots and test artifacts at /reports/seq16-review.html.

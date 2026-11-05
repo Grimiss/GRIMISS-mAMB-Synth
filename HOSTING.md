@@ -170,3 +170,5 @@ Production restored to saved Site version 14, source 7265d397b9b409807feffe2b95b
 ## Restored visual design plus current features
 
 User requested the working arpeggiator and newer patches on top of version 14 appearance. Active build now uses historical header, rotary/fader artwork, wheel visuals, keyboard and CSS, with only arp controls added to the reserved panel. Current audio engine and 100 patches retained. See RESTORED_ARPEGGIATOR.md. Supersedes the preceding instruction to leave production on unmodified version 14; do not restore later photo/filled-title appearance.
+
+SEQ-16 published as Site version 26. Code checkpoint dc3d327e59ffdbbe8f999ca9499038c9b01fb53a; Site source 63425ab328c71b666999b98a5c03d8e445c46275; deployment appgdep_6aec1eb3d1148191bd3867e5bfb69dfc succeeded. Same private URL. Version 25 and rollback/pre-seq16 retained. Review: /reports/seq16-review.html. Native deployment and exact local browser-tested bytes verified; physical tablets/controllers and live-origin browser access remain unverified. See reports/seq16-release-verification.json. No main merge.
