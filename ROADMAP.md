@@ -1,3 +1,7 @@
+# Orbitron Black / sage section refinement
+
+Headings restored to embedded Orbitron900. Rounded filled sage title bars with dark cut-out names, thicker inset borders, and identical oscillator colour/texture on all sections. CSS-only; all embedded program scripts unchanged. Existing browser geometry/header/control/arp-audio checks passed. See ORBITRON_SAGE_REFINEMENT.md and reports/orbitron-sage-release-verification.json. No main merge.
+
 # Photographic hardware reconstruction checkpoint
 
 Latest supplied photo drives custom compact rotary art, narrow raised fader caps, six ivory key materials, boxed sage print, neutral charcoal exposure and black decorative leads. No desk/foam backdrop. All100 presets, arp and existing controls preserved.18 protected scripts are byte-identical to rollback; approved coordinates and37-note range retained. See PHOTO_RECONSTRUCTION.md, reports/photo-reference-map.json and reports/photo-reconstruction-review.html. Final verification/publication status is in reports/photo-release-verification.json. No main merge.

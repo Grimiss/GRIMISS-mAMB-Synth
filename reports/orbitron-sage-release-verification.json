@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "CSS-only heading/border/background refinement",
+  "branch": "codex/controller-workflow-v0.7",
+  "html_sha256": "70e0a24c2c26a90050ed163be636ce5ac210e1c5879d3c955e2fbbb8dfe96b7f",
+  "checks": [
+    "photo-reconstruction browser/core guard",
+    "reference geometry",
+    "hardware header",
+    "refinement UI",
+    "arp Worklet/fallback/control checks",
+    "final typography/material inspection"
+  ],
+  "logs": [
+    "work/orbitron-sage-browser.log",
+    "work/orbitron-sage-final.log"
+  ],
+  "program_scripts": "All embedded program scripts unchanged from rollback/pre-orbitron-sage",
+  "font": "Embedded Orbitron variable font supports400\u2013900; headings request weight/variation900 (Black)",
+  "borders": "1px border plus1px inset sage stroke; no coordinate/content-box reduction",
+  "section_finish": "All16 control panels use oscillator #383a36 and identical material layers; keyboard housing matches too.",
+  "rollback": {
+    "tag": "rollback/pre-orbitron-sage",
+    "source_commit": "51d1d67",
+    "site_version": 19,
+    "site_source": "1c8318f5e338d57277a04ec673160c52baab6eda",
+    "archive": "work/rollback-hosted-v19.tar.gz"
+  },
+  "publication": "pending",
+  "main_merged": false,
+  "verification_limits": "Local Chromium; live-origin browser access remains restricted by environment policy."
+}

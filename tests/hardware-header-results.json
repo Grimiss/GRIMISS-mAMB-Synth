@@ -11,7 +11,7 @@
   ],
   "paints": {
     "brand": "900",
-    "section": "700",
+    "section": "900",
     "bezel": "3px",
     "glow": "drop-shadow(rgb(211, 225, 228) 0px 0px 0.8px)",
     "knobCount": 48,

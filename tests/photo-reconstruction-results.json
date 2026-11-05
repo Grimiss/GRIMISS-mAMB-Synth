@@ -36,7 +36,7 @@
     "leads": 4,
     "leadStroke": "#030504",
     "decorative": "true",
-    "brandFont": "OpenSans, Orbitron, sans-serif",
+    "brandFont": "Orbitron, sans-serif",
     "controlsTotal": 164
   },
   "consoleErrors": []

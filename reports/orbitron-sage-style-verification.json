@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "unchangedScripts": 19,
+  "brand": {
+    "font": "Orbitron, sans-serif",
+    "weight": "900"
+  },
+  "panels": [
+    {
+      "name": "VOICE",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "OSCILLATORS",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "MIXER",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "LFO 1",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "LFO 2",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "FILTER ENVELOPE",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "AMP ENVELOPE",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "FILTER",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "EQDETAILS",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "AMP",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "MOD FX",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "MODULATION VISUALISER / VIRTUAL PATCH",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "DELAY",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "ARP / STEP SEQUENCER",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "REVERB",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    },
+    {
+      "name": "XY / AUTOMATIONEXPAND",
+      "font": "Orbitron, sans-serif",
+      "weight": "900",
+      "variation": "\"wght\" 900",
+      "titleBackground": "rgb(169, 191, 160)",
+      "titleText": "rgb(56, 58, 54)",
+      "titleRadius": "4px",
+      "face": "rgb(56, 58, 54)",
+      "image": "url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%22192%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22grain%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%20.75%22%20numOctaves%3D%223%22%20seed%3D%228%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%220.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Crect%20width%3D%22192%22%20height%3D%22192%22%20fill%3D%22%23b8b7ae%22%20filter%3D%22url(%23grain)%22%2F%3E%3Cpath%20d%3D%22M0%2013H192M0%2076H192M0%20145H192%22%20stroke%3D%22%23b4b6af%22%20stroke-opacity%3D%22.035%22%20stroke-width%3D%22.5%22%2F%3E%3C%2Fsvg%3E\"), linear-gradient(130deg, rgba(146, 152, 138, 0.035), rgba(0, 0, 0, 0) 65%)",
+      "insetBorder": "rgb(169, 191, 160) 0px 0px 0px 1px inset, rgb(2, 7, 3) 0px 1px 1px 0px"
+    }
+  ]
+}
