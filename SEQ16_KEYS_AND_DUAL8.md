@@ -1,3 +1,5 @@
+> Current pitch-only operation is documented in SEQ16_PITCH_ONLY.md. Green drift described below was subsequently retired by approval.
+
 # SEQ-16 keys, scales and DUAL 8
 
 Existing 16-step mode remains the default; eight root-program slots remain available. No new timbre or voice engine is introduced.

@@ -2,12 +2,12 @@
   {
     "name": "v0.5 dry patch compatibility through stereo unity-bypassed effects",
     "status": "PASS",
-    "milliseconds": 248.865162
+    "milliseconds": 282.804159
   },
   {
     "name": "shared stereo effects retain tails after every voice releases at all sample rates",
     "status": "PASS",
-    "milliseconds": 1514.038311,
+    "milliseconds": 1651.631417,
     "measurements": [
       {
         "sampleRate": 44100,
@@ -32,7 +32,7 @@
   {
     "name": "30-second eight-voice stress with every effect, high feedback, changing algorithms and long release",
     "status": "PASS",
-    "milliseconds": 6151.844922,
+    "milliseconds": 6246.039403999999,
     "measurements": {
       "seconds": 30,
       "peak": 0.19488149881362915,
@@ -42,7 +42,7 @@
   {
     "name": "profile v0.5 versus v0.6 dry and eight-voice all-effects rendering",
     "status": "PASS",
-    "milliseconds": 6112.289498,
+    "milliseconds": 7051.639619,
     "measurements": [
       {
         "scenario": "v0.5 dry",
@@ -51,12 +51,12 @@
         "voices": 8,
         "blockFrames": 128,
         "milliseconds": [
-          246.01287499999853,
-          229.23206500000015,
-          235.05503700000008
+          239.27431400000023,
+          268.66050899999937,
+          378.59592599999996
         ],
-        "medianMilliseconds": 235.05503700000008,
-        "renderToRealtimeRatio": 0.11752751850000004
+        "medianMilliseconds": 268.66050899999937,
+        "renderToRealtimeRatio": 0.1343302544999997
       },
       {
         "scenario": "v0.6 bypass",
@@ -65,12 +65,12 @@
         "voices": 8,
         "blockFrames": 128,
         "milliseconds": [
-          245.86955000000125,
-          247.03102000000035,
-          272.07719499999985
+          283.8190169999998,
+          253.43977099999938,
+          286.3750479999999
         ],
-        "medianMilliseconds": 247.03102000000035,
-        "renderToRealtimeRatio": 0.12351551000000018
+        "medianMilliseconds": 283.8190169999998,
+        "renderToRealtimeRatio": 0.1419095084999999
       },
       {
         "scenario": "v0.6 all effects",
@@ -79,18 +79,18 @@
         "voices": 8,
         "blockFrames": 128,
         "milliseconds": [
-          639.4975610000001,
-          575.0999670000001,
-          591.8926310000006
+          663.1758869999994,
+          729.8472739999997,
+          745.2406420000007
         ],
-        "medianMilliseconds": 591.8926310000006,
-        "renderToRealtimeRatio": 0.29594631550000033
+        "medianMilliseconds": 729.8472739999997,
+        "renderToRealtimeRatio": 0.36492363699999986
       }
     ]
   },
   {
     "name": "optional stereo audio input is silent by default, gain ramps and PANIC stops monitoring",
     "status": "PASS",
-    "milliseconds": 4.548455000000104
+    "milliseconds": 6.543245999999272
   }
 ]

@@ -1,14 +1,14 @@
 {
   "status": "PASS",
   "checks": [
-    "16 shared slots / 32 controls, six modes and unchanged upper geometry",
-    "overlapping handles select independently; real drag, arrow and wheel edits preserve the other value",
-    "LINK toggle itself preserves values; intentional editing aligns the handles and unlink restores independence",
-    "two simultaneous browser touch contacts edit independent handles",
+    "16 pitch slots / 16 controls, four modes and unchanged upper geometry",
+    "pitch drag, arrow and wheel edits remain semitone quantised; green controls absent",
+    "two simultaneous browser touch contacts edit independent pitch handles",
     "rapid rotateX switching never resets the sample clock or interrupts real audible Worklet playback",
-    "all six visible mode choices and selected per-step gate reach the live audio engine",
+    "all four visible mode choices and selected per-step gate reach the live audio engine",
     "synthetic MIDI messages retain ownership and audio in both faces (physical device not tested)",
     "legacy defaults, complete additive patch recall and session/view persistence without automatic playback",
+    "old removed-mode patches show a migration notice, preserve ARP enable/root/program and ignore green data",
     "both faces fit the exact housing at both resolutions, including hide/show without upper-layout changes",
     "reduced motion and global PANIC stop generated voices and transport safely",
     "the identical sequencer engine works in ScriptProcessor fallback"

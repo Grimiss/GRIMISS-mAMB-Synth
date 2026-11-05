@@ -10,7 +10,7 @@
       "status": "PASS"
     },
     {
-      "name": "all six arp modes retain arp pitch; only ECHO independent notes use keyboard roots",
+      "name": "all four arp modes retain arp pitch; only ECHO independent notes use keyboard roots",
       "status": "PASS"
     }
   ]

@@ -60,13 +60,13 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        231.99718199999916,
-        226.23301400000128,
-        238.03537000000142,
-        233.71510599999965
+        252.18405899999925,
+        283.14910200000304,
+        224.593710000001,
+        251.62692699999752
       ],
-      "medianMilliseconds": 232.8561439999994,
-      "renderToRealtimeRatio": 0.1164280719999997,
+      "medianMilliseconds": 251.9054929999984,
+      "renderToRealtimeRatio": 0.12595274649999919,
       "relativeToRollback": 1
     },
     {
@@ -78,14 +78,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        251.34705700000268,
-        250.60301199999958,
-        269.2567940000008,
-        255.2470710000016
+        297.0808900000011,
+        284.60116800000105,
+        277.928817,
+        301.9858299999978
       ],
-      "medianMilliseconds": 253.29706400000214,
-      "renderToRealtimeRatio": 0.12664853200000106,
-      "relativeToRollback": 1.0877834685779335
+      "medianMilliseconds": 290.8410290000011,
+      "renderToRealtimeRatio": 0.14542051450000054,
+      "relativeToRollback": 1.1545640610544485
     },
     {
       "case": "new-25",
@@ -96,14 +96,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        254.78455699999904,
-        259.00660400000197,
-        291.69435599999997,
-        302.4524369999999
+        303.21808899999814,
+        313.709515999999,
+        296.2309690000002,
+        317.3137829999978
       ],
-      "medianMilliseconds": 275.35048000000097,
-      "renderToRealtimeRatio": 0.13767524000000048,
-      "relativeToRollback": 1.1824917963083752
+      "medianMilliseconds": 308.46380249999856,
+      "renderToRealtimeRatio": 0.15423190124999928,
+      "relativeToRollback": 1.2245219380746117
     },
     {
       "case": "new-50",
@@ -114,14 +114,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        258.80286900000283,
-        292.91553600000043,
-        279.2357379999994,
-        258.8135239999974
+        300.47026299999925,
+        291.32595200000287,
+        278.37325399999827,
+        271.3148840000067
       ],
-      "medianMilliseconds": 269.0246309999984,
-      "renderToRealtimeRatio": 0.1345123154999992,
-      "relativeToRollback": 1.1553254570770488
+      "medianMilliseconds": 284.84960300000057,
+      "renderToRealtimeRatio": 0.14242480150000028,
+      "relativeToRollback": 1.1307796412363362
     },
     {
       "case": "new-100",
@@ -132,14 +132,14 @@
       "warmupRuns": 1,
       "measuredRuns": 4,
       "milliseconds": [
-        252.7070330000024,
-        282.3594170000033,
-        274.263296000001,
-        271.55257300000085
+        301.00684799999726,
+        251.2472369999996,
+        294.782819,
+        284.63382999999885
       ],
-      "medianMilliseconds": 272.9079345000009,
-      "renderToRealtimeRatio": 0.13645396725000045,
-      "relativeToRollback": 1.1720022921104527
+      "medianMilliseconds": 289.70832449999943,
+      "renderToRealtimeRatio": 0.14485416224999972,
+      "relativeToRollback": 1.1500675155980076
     }
   ],
   "listeningTests": false,

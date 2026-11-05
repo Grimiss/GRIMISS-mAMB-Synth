@@ -130,3 +130,5 @@ SEQ-16 complete: lower-panel rotateX keyboard/dual-layer swap, 16 independent pi
 GRIMISS mikroSEQ official rename plus keyboard root and eight-slot transposition program: Phase1 validated at165fc22 before Phase2. FIXED remains legacy default; all six arp pitch rules are unchanged. Program uses the existing pitch-step clock and two-face keyboard housing. See MIKROSEQ_ROOT_PROGRAM.md and npm run test:root-program. Legacy internal names/storage/paths preserved. No main merge or standalone app.
 
 - Implemented: per-slot key/scale, rounds durations, note names, amber pitch indicators, optional dual-eight pitch/drift banks. See SEQ16_KEYS_AND_DUAL8.md for shared root/arp semantics and remaining physical-hardware/hosting verification.
+
+- Completed: pitch-only SEQ-16 simplification; secondary green modulation retired by approval. Four arp relationships, root/program, scales and optional DUAL 8 pitch remain. See SEQ16_PITCH_ONLY.md. Standalone host adapter work remains future work.

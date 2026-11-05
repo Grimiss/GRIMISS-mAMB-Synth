@@ -160,3 +160,7 @@ GRIMISS mikroSEQ official rename plus keyboard root and eight-slot transposition
 ## 2026-11-05 — per-slot scales and optional DUAL 8
 
 Added non-destructive scale quantisation (ten options including Chromatic/Off), per-program-slot key/scale and STEPS/ROUNDS duration, note labels and amber pitch playheads. Added optional two-bank eight-step pitch mode with shared sixteen-step drift controls and distinct note ownership, sharing the original synth. Existing six arp relationships remain on A; B supplies independent notes. The original single-drift instrument adapter is unchanged. See SEQ16_KEYS_AND_DUAL8.md. Rollback branch checkpoint/pre-slot-scales retains the prior source. No main merge.
+
+## 2026-11-05 — approved pitch-only SEQ-16 simplification
+
+Removed secondary green modulation and LINK, its scheduler/state/UI and SEQ-only synth parameter adapter. Retained the existing pink scheduler, root/program helper and independent note ports. User-approved mode set: TRANSPOSE, ARP GATE, POLYMETRIC, ARP ECHO. Legacy removed modes disable combined operation and show a migration notice. Reorganised lower controls into PITCH / SEQUENCE / PERFORMANCE with larger pink caps/travel; keyboard flip and upper geometry retained. See SEQ16_PITCH_ONLY.md for compatibility, verification and the pre-existing hidden-velocity test mismatch. No synth/effects DSP changes, no other instruments touched.

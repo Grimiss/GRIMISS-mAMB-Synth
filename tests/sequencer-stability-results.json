@@ -1,30 +1,29 @@
 {
   "status": "PASS",
   "checks": [
-    "All 17 exposed synthesis/effects destinations render bounded audio; effects targets return to the unchanged base values after drift is disabled.",
-    "Cutoff drift changes the actual rendered waveform.",
+    "Obsolete green-lane data cannot modulate synth or effects; manual audio is unchanged.",
     "Generated velocity and accents affect audio independently of the physical keyboard velocity slider.",
-    "60-second wet POLY/MONO/UNISON stress with all six live mode switches, parameter edits, STOP and PANIC."
+    "60-second wet POLY/MONO/UNISON stress with all four live mode switches, parameter edits, STOP and PANIC."
   ],
   "physicalHardwareTested": false,
   "accentEnergyRatio": 1.9572369060565606,
   "stress": {
     "seconds": 60,
     "sampleRate": 24000,
-    "maximumActiveVoices": 1
+    "maximumActiveVoices": 4
   },
   "cpu": [
     {
       "case": "SEQ stopped, ARP+FX",
       "renderedSeconds": 2,
-      "medianMilliseconds": 559.5575630000003,
-      "renderToRealtimeRatio": 0.27977878150000013
+      "medianMilliseconds": 626.3003539999991,
+      "renderToRealtimeRatio": 0.31315017699999953
     },
     {
-      "case": "SEQ pitch+drift+ARP+FX",
+      "case": "SEQ pitch+ARP+FX",
       "renderedSeconds": 2,
-      "medianMilliseconds": 827.6686779999982,
-      "renderToRealtimeRatio": 0.4138343389999991
+      "medianMilliseconds": 876.9925579999999,
+      "renderToRealtimeRatio": 0.43849627899999993
     }
   ]
 }
