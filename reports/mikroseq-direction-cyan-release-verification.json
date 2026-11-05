@@ -1,0 +1,18 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 29,
+  "siteSourceCommit": "d7f2ec959bd2321c3acc49d8b80050da8f4a77a3",
+  "developmentCommit": "9b7166ac94312c9d8091bda6ca25e5531019e9f3",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "htmlSha256": "094c3aedd0abe7a6cf0e751923472039b52fd48b5b85a9e6be5dc076684d5612",
+  "deploymentId": "appgdep_6aecd7aa8ad08191a1f624821509eadf",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_ff0e96e2ef3c81919687b34a6d58fdaa",
+  "rollback": {
+    "version": 28,
+    "sourceCommit": "b63c8ff5001b4c8f59e1daf41d2b0930cc5ba018",
+    "remoteBranch": "rollback/live-v28-before-direction-cyan"
+  },
+  "verification": "Native publication succeeded; saved source matches remotely verified commit. Build bytes match local Chromium direction/cyan tests and existing pitch/browser regressions. No separate live-origin browser or physical hardware test.",
+  "updatedAt": "2026-11-05T19:23:39.898587+00:00"
+}
