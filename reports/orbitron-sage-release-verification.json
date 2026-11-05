@@ -26,7 +26,17 @@
     "site_source": "1c8318f5e338d57277a04ec673160c52baab6eda",
     "archive": "work/rollback-hosted-v19.tar.gz"
   },
-  "publication": "pending",
+  "publication": "succeeded",
   "main_merged": false,
-  "verification_limits": "Local Chromium; live-origin browser access remains restricted by environment policy."
+  "verification_limits": "Local Chromium; live-origin browser access remains restricted by environment policy.",
+  "checkpoint_commit": "aae5c9d6ca6d0d9c49bf64682d482e7735b292a1",
+  "site_source_commit": "3aa945382bf9b37cd74be163138633e1d8a460f4",
+  "site_version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_f8be90361118819199e176487762dbce",
+  "deployment_id": "appgdep_6aebd2c3aa48819184da649fb9687cdd",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "review_url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/reports/orbitron-sage-review.html",
+  "unchanged_program_scripts": 19,
+  "archive_check": "Tested HTML hash and all review images verified before publication.",
+  "main_verified": "433c2ab1ab0eb7e26c59bfd431ec4dc1a80b3b1f",
+  "site_version_number": 20
 }
