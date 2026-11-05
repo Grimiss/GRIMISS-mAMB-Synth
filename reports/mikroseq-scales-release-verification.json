@@ -1,0 +1,18 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 27,
+  "siteSourceCommit": "0caefc65a1e68e9cb1ed8ab454e53be346c908a6",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "developmentCommit": "724ca009f244157f16ac9ebc10784af903baeda5",
+  "htmlSha256": "acb0cedeba2e61e14fd90c1a5d909b0c0b0804af5dd65b20e00f5ea7de5b6d32",
+  "deploymentId": "appgdep_6aeca93929f88191a68d0beffc2b828b",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_dfb466e746b08191b8a3276ced7160fd",
+  "rollback": {
+    "version": 26,
+    "sourceCommit": "63425ab328c71b666999b98a5c03d8e445c46275",
+    "remoteBranch": "rollback/live-v26-before-scales"
+  },
+  "verification": "Native Sites publication succeeded; saved version source matches remotely verified commit. Deployed index is byte-identical to the locally browser/audio-tested standalone build. No separate live-origin browser visit or physical hardware test.",
+  "updatedAt": "2026-11-05T16:05:33.648495+00:00"
+}
