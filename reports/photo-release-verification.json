@@ -28,12 +28,21 @@
     "site_source_commit": "d998d3733e6dd45c0c36c1bac3db373647f20462",
     "local_archive": "work/rollback-hosted-v18.tar.gz"
   },
-  "publication": "pending",
+  "publication": "succeeded",
   "main_merged": false,
   "unverified": [
     "physical Windows/tablet performance",
     "hardware MIDI",
     "human listening",
     "live-origin browser QA due configured host policy"
-  ]
+  ],
+  "checkpoint_commit": "d8725d9",
+  "site_source_commit": "1c8318f5e338d57277a04ec673160c52baab6eda",
+  "site_version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_976621171cc0819182c00d4cbf75c2af",
+  "deployment_id": "appgdep_6aebcb4c4f3481919c0564aaeaed0af0",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "review_url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site/reports/photo-reconstruction-review.html",
+  "archive_verification": "Exact tested HTML hash and every comparison image/document present before publication.",
+  "main_verified": "433c2ab1ab0eb7e26c59bfd431ec4dc1a80b3b1f",
+  "site_version_number": 19
 }
