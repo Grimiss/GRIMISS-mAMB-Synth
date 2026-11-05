@@ -1,0 +1,18 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 30,
+  "siteSourceCommit": "2d6376ee6ece75b2c30a8f34eca5d7e345cb97bb",
+  "developmentCommit": "0c41b8bad63df3df2c4cb20884d3593290dc051f",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "htmlSha256": "d80d3dbee6468fff10c979b288c42213fe9346bb748aab0d6e22982cf97e5ee0",
+  "deploymentId": "appgdep_6aece844eb148191bb2a83fe75bde5dc",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_8ee4d87214bc8191b980409257a82e03",
+  "rollback": {
+    "version": 29,
+    "sourceCommit": "d7f2ec959bd2321c3acc49d8b80050da8f4a77a3",
+    "remoteBranch": "rollback/live-v29-before-button-layout"
+  },
+  "verification": "Native publication succeeded. Saved source matches remotely verified commit; deployed index bytes match the local Chromium-tested standalone build. Button/bank/MORE/contextual controls, green caps, target geometries and existing pitch/PROGRAM/direction regressions passed. Sequencer engine and DSP source unchanged. No separate live-origin browser or physical-device test.",
+  "updatedAt": "2026-11-05T20:34:29.662134+00:00"
+}

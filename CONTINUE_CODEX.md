@@ -107,3 +107,5 @@ Direction/cyan fix: selector repaint now reflects recalled state even while focu
 Direction sync / cyan caps published successfully as Site version 29. Source d7f2ec959bd2321c3acc49d8b80050da8f4a77a3, development code 9b7166ac94312c9d8091bda6ca25e5531019e9f3. Version 28 and remote rollback/live-v28-before-direction-cyan retained. See reports/mikroseq-direction-cyan-release-verification.json. Same URL and audience; no development main merge.
 
 Latest UI: SEQ16_BUTTON_LAYOUT.md supersedes the small-dropdown arrangement. Wider button controls, green pitch caps, a selected-step strip and MORE dialog; bank and selected step stay aligned. Existing timing/DSP untouched. `npm run test:seq-layout` and `npm run test:direction` cover the visible controls. Rollback checkpoint/pre-sequencer-buttons.
+
+Button layout / green caps published successfully as Site version 30. Source 2d6376ee6ece75b2c30a8f34eca5d7e345cb97bb, development code 0c41b8bad63df3df2c4cb20884d3593290dc051f. Version 29 and remote rollback/live-v29-before-button-layout retained. See reports/mikroseq-button-layout-release-verification.json. Same URL and access; no development main merge.
