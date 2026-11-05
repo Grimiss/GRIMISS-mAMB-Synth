@@ -1,0 +1,10 @@
+{
+  "headings": 16,
+  "masks": 16,
+  "font": "Orbitron",
+  "weight": "900",
+  "transparentText": "rgba(0, 0, 0, 0)",
+  "status": "PASS",
+  "backdrop_following_letter_pixels": 138,
+  "unchanged_sage_plate_pixels": 5648
+}

@@ -61,3 +61,8 @@ html.fit-screen.reference-geometry.photo-reconstruction main>.performance-panel>
 html.fit-screen.reference-geometry.photo-reconstruction main .delay-panel .on-switch,
 html.fit-screen.reference-geometry.photo-reconstruction main .delay-panel .delay-sync label,
 html.fit-screen.reference-geometry.photo-reconstruction main .reverb-types>.on-switch{color:#383a36!important;text-shadow:none!important}
+/* Alpha knockout: no dark glyph paint. The textured panel is visible through the mask. */
+html.fit-screen.reference-geometry.photo-reconstruction main .coordinate-panel>h2.has-text-cutout{background:transparent!important;color:transparent!important}
+.section-cutout-plate{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:0;overflow:visible}
+html.fit-screen.reference-geometry.photo-reconstruction main .coordinate-panel>h2.has-text-cutout button{z-index:1;color:#d0dfc4!important}
+.heading-mask-definitions{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}

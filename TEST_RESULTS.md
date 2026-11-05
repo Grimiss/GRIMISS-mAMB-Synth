@@ -177,3 +177,5 @@ Factory refresh: every regression group passed across staged runs; see reports/p
 Arp/hardware checkpoint: all regression groups PASS across staged runs; see reports/arp-release-verification.json for final commands, corrected static bank/header expectations and verification limits.100 factory sounds render finite/bounded/nonzero;93 actual wet/dry changes verified. Exact approved geometry at both target sizes and keyboard states; final dedicated browser checks pass.
 
 Photo reconstruction final verification: npm run test:all PASS, exit0. Dedicated photo checks PASS at both target sizes/keyboard modes;18 protected scripts unchanged. See reports/photo-release-verification.json. Historical screenshots were retained; current captures use photo-* filenames.
+
+Transparent lettering checkpoint: all 16 sage section titles now have true background-revealing SVG cut-outs using Orbitron Black weight 900. Chromium pixel proof passed (138 backdrop-following pixels); four layout checks and existing functional/header/arp regressions passed. Audio and parameter scripts unchanged. See TRUE_KNOCKOUT_LETTERING.md.
