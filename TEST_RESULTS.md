@@ -203,3 +203,7 @@ PASS: audio.cjs, ownership-modulation.cjs, instrument.cjs, analog.cjs and update
 PASS: Chromium sequencer/root-program/DUAL 8 browser coverage and all 11 workflow groups, including actual audio through face switches, two simultaneous pitch touches, wheel/arrow/drag, migrated patch notice, reduced motion, fallback, XY assignment and real parameter changes, ADSR editors, MIDI-map and patch persistence. Both faces fit at 1920×1080 and 1600×900.
 
 KNOWN PRE-EXISTING FAILURE: expressive-sound.cjs age/thickness processing assertions pass, but its final hidden HTML velocity-default assertion expects 0 while both the rollback and current interface source contain 50. No velocity/UI synthesis default was changed in this task. Physical hardware and human listening are unverified. Historical green-lane tests were replaced with pitch/migration coverage; they are not advertised as passing active features.
+
+## 2026-11-05 — direction sync / cyan caps
+
+PASS tests/seq-direction-browser.cjs: reproduced focused FWD vs recalled RANDOM mismatch before fix; verifies corrected display, real audio-clock traces for all four directions and RANDOM→FWD, independent DUAL 8 directions, live direction status, persisted directions and sixteen computed cyan cap gradients/borders/glows. Screenshots at 1920×1080 and 1600×900. Existing sequencer browser, core pitch/gate/migration tests, root-program tests and 30-case pitch audio compatibility checks also pass. No DSP changes or physical-device claims.

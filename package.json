@@ -28,7 +28,8 @@
     "test:seq16": "node tests/sequencer.cjs && node tests/sequencer-stability.cjs && node tests/sequencer-browser.cjs",
     "test:root-program": "node tests/root-transpose.cjs && node tests/root-program.cjs && node tests/root-program-audio.cjs && node tests/root-program-browser.cjs",
     "test:scales": "node tests/seq-scales.cjs && node tests/seq-dual8.cjs && node tests/seq-dual8-browser.cjs",
-    "test:pitch-only": "node tests/pitch-only-compatibility.cjs && node tests/sequencer.cjs && node tests/sequencer-stability.cjs && node tests/root-transpose.cjs && node tests/root-program.cjs && node tests/root-program-audio.cjs && node tests/sequencer-browser.cjs && node tests/root-program-browser.cjs"
+    "test:pitch-only": "node tests/pitch-only-compatibility.cjs && node tests/sequencer.cjs && node tests/sequencer-stability.cjs && node tests/root-transpose.cjs && node tests/root-program.cjs && node tests/root-program-audio.cjs && node tests/sequencer-browser.cjs && node tests/root-program-browser.cjs",
+    "test:direction": "node tests/seq-direction-browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

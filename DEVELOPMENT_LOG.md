@@ -164,3 +164,7 @@ Added non-destructive scale quantisation (ten options including Chromatic/Off), 
 ## 2026-11-05 — approved pitch-only SEQ-16 simplification
 
 Removed secondary green modulation and LINK, its scheduler/state/UI and SEQ-only synth parameter adapter. Retained the existing pink scheduler, root/program helper and independent note ports. User-approved mode set: TRANSPOSE, ARP GATE, POLYMETRIC, ARP ECHO. Legacy removed modes disable combined operation and show a migration notice. Reorganised lower controls into PITCH / SEQUENCE / PERFORMANCE with larger pink caps/travel; keyboard flip and upper geometry retained. See SEQ16_PITCH_ONLY.md for compatibility, verification and the pre-existing hidden-velocity test mismatch. No synth/effects DSP changes, no other instruments touched.
+
+## 2026-11-05 — direction selector sync and cyan pitch caps
+
+Reproduced a focused direction selector displaying FWD while patch recall loaded RANDOM into sequencer state. Select controls now repaint from authoritative configuration even while focused (numeric editing remains protected). Direction changes flush immediately; running status displays the audio engine direction and both A/B directions in DUAL 8. Actual audio-clock traces validate FWD, REV, PEND, RANDOM and exit from RANDOM in both banks. Pitch cap faces, borders and glow changed to cyan; amber playhead retained. No DSP/pitch calculation changes. Rollback checkpoint/pre-direction-cyan and Site version 28.

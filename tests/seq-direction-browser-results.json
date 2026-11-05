@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Focused direction selector reflects the recalled patch, including RANDOM",
+    "forward real audio-clock playhead order and live direction status",
+    "reverse real audio-clock playhead order and live direction status",
+    "pendulum real audio-clock playhead order and live direction status",
+    "random real audio-clock playhead order and live direction status",
+    "forward real audio-clock playhead order and live direction status",
+    "DUAL 8 bank directions remain independent and both exit RANDOM",
+    "Sixteen cyan fader caps with cyan glow; both target screenshot sizes",
+    "Selected directions survive reload without restarting playback"
+  ],
+  "errors": [],
+  "physicalHardwareTested": false
+}

@@ -8,7 +8,7 @@ The user approved removing ARP + DRIFT and ARP DRIFT. Four combined relationship
 
 ## Playing
 
-The sixteen pink handles retain −12 to +12 semitone offsets and the default [0,7,12,7,3,10,-5,0] repeated twice. Drag, wheel or use arrow keys to edit. Note readouts, step numbers, rest indicators and amber active-step outlines remain. Pitch travel and handles are larger. The existing 1235×149 lower housing, upper panels and horizontal-axis keyboard flip are unchanged.
+The sixteen cyan pitch handles (formerly pink) retain −12 to +12 semitone offsets and the default [0,7,12,7,3,10,-5,0] repeated twice. Drag, wheel or use arrow keys to edit. Note readouts, step numbers, rest indicators and amber active-step outlines remain. Pitch travel and handles are larger. Direction selectors stay in sync with patch recall even while focused; the running status reports actual engine direction, including both banks in DUAL 8. The existing 1235×149 lower housing, upper panels and horizontal-axis keyboard flip are unchanged.
 
 Controls are grouped as PITCH (root, glide and previously implemented optional scale), SEQUENCE (length/rate/direction/gate/velocity/random seed and selected-step rest/accent/probability/gate), PERFORMANCE (root source, four arp relationships, applicable ratio and PROGRAM). Chromatic remains the default; no new scale behaviour is introduced.
 

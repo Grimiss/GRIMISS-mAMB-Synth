@@ -4,47 +4,47 @@
     {
       "name": "legacy green settings are discarded and removed modes migrate with notice",
       "status": "PASS",
-      "ms": 1.3970840000000067
+      "ms": 1.0616609999999973
     },
     {
       "name": "pitch directions and reset preserve semitone offsets",
       "status": "PASS",
-      "ms": 2.4367710000000002
+      "ms": 1.7363719999999994
     },
     {
       "name": "absolute notes, precise gates, rests, probability and accents",
       "status": "PASS",
-      "ms": 0.440179999999998
+      "ms": 0.24909399999999948
     },
     {
       "name": "per-step gate lengths scale the real audio-frame note-offs",
       "status": "PASS",
-      "ms": 0.3115269999999981
+      "ms": 0.23435200000000123
     },
     {
       "name": "transpose uses independent pink offsets without retuning current gates",
       "status": "PASS",
-      "ms": 1.1161520000000067
+      "ms": 0.893098000000002
     },
     {
       "name": "ARP GATE samples deterministic rests, accents and gate duration",
       "status": "PASS",
-      "ms": 0.4327480000000037
+      "ms": 0.5469399999999993
     },
     {
       "name": "POLYMETRIC advances seven pitch steps every three arp events",
       "status": "PASS",
-      "ms": 0.5715670000000017
+      "ms": 0.42642899999999884
     },
     {
       "name": "ARP ECHO owns overlapping equal pitches separately and STOP preserves held arp input",
       "status": "PASS",
-      "ms": 0.5259789999999924
+      "ms": 0.44650900000000604
     },
     {
       "name": "sequence audio is invariant across render block partitions; slide changes actual audio",
       "status": "PASS",
-      "ms": 234.675362,
+      "ms": 111.447547,
       "detail": {
         "maximumPartitionDifference": 0,
         "peak": 0.05011453852057457,
@@ -54,7 +54,7 @@
     {
       "name": "all four combined modes render finite audible output and PANIC recovers with HOLD/sustain",
       "status": "PASS",
-      "ms": 1321.860326,
+      "ms": 643.356855,
       "detail": [
         {
           "mode": "transpose",
