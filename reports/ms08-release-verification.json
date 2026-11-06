@@ -1,0 +1,11 @@
+{
+  "status": "succeeded",
+  "developmentCommit": "fa8e6245c092be00c51f1b1d1486ba5a4fd72888",
+  "siteCommit": "7a0dcc9783792ecf51398fafec55fbf59c5fdecc",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "rollbackVersion": 35,
+  "browser": "PASS 1920x1080 and 1600x900; Worklet/fallback regressions",
+  "audio": "PASS seven reshaped waveforms, neutral exact compatibility, song, alternating banks and stability",
+  "songEditorTileRedesign": "proposal only; working editor retained",
+  "physicalTabletVerified": false
+}

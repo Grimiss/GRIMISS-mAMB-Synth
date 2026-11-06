@@ -131,3 +131,5 @@ Latest: approved control mockup now implemented; see SEQ16_CONTROL_MOCKUP.md. Du
 Approved mockup + A/B alternate release successfully published: development 2841a68, Site7275016. Prior hosted34 preserved for rollback. See reports/seq-mockup-release-verification.json. No development merge to main.
 
 MS-08 refinement: see MS08_REFINEMENT.md. New module/CSS appended after sequencer UI. OSC1 non-pulse reshaping changes nonneutral `pw` behavior intentionally; neutral50% with no shape modulation is sample-identical. PWM and OSC2 retained. Song table redesign remains a documented recommendation, not an implemented feature. Rollback checkpoint/pre-ms08-refinement and hosted35. Keep development branch.
+
+MS-08 update successfully published: development fa8e624, Site7a0dcc9; previous hosted35 rollback preserved. See reports/ms08-release-verification.json. No development merge to main.
