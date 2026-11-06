@@ -1,5 +1,5 @@
 // Versioned musical documents. No DOM, storage, audio or host-track dependencies.
-const MICROSEQ_PATCH_VERSION=5, MICROSEQ_SEQUENCE_VERSION=1;
+const MICROSEQ_PATCH_VERSION=6, MICROSEQ_SEQUENCE_VERSION=1;
 const MICROSEQ_MUSICAL_KEYS=['tempo','arpOn','arpPattern','arpDivision','arpGate','arpOctaves'];
 function microseqObject(x){return !!x&&typeof x==='object'&&!Array.isArray(x);}
 function microseqClone(x){return JSON.parse(JSON.stringify(x));}
@@ -39,8 +39,8 @@ function microseqValidatePatch(x,schema,defaults){
  const parameters={...defaults};let count=0;for(const[k,s]of Object.entries(schema))if(Object.hasOwn(src,k)){let v=src[k];if(v===null||v===undefined)throw Error('Invalid '+k);count++;if(s.type==='boolean'){if(![true,false,'true','false',0,1].includes(v))throw Error('Invalid '+k);v=v===true||v==='true'||v===1;}else if(s.type==='number'){v=Number(v);if(v===null||!Number.isFinite(v)||v<s.min||v>s.max)throw Error('Invalid '+k);}else{if(k==='sync'&&typeof v==='boolean')v=v?'on':'off';v=String(v);if(!s.values.includes(v)){const equivalent=s.values.find(a=>Number.isFinite(Number(a))&&Number(a)===Number(v));if(equivalent===undefined)throw Error('Invalid '+k);v=equivalent;}}parameters[k]=v;}
  if(!count)throw Error('Patch contains no recognised sound parameters');
  const routes=x.routes||src.routes||[];if(!Array.isArray(routes)||routes.length>4)throw Error('Invalid modulation routes');
- const result={format:'grimiss-mamb',version:5,id:typeof x.id==='string'?x.id:null,name:typeof x.name==='string'?x.name.slice(0,80):'Untitled',category:typeof x.category==='string'?x.category:'User',parameters,midi:typeof microseqMidiValidate==='function'?microseqMidiValidate(x.midi):undefined,seq16:microseqValidateSeq(Object.hasOwn(x,'seq16')?x.seq16:mambSeqDefaults()),routes:microseqClone(routes),xy:x.xy?microseqClone(x.xy):null};
+ const result={format:'grimiss-mamb',version:6,id:typeof x.id==='string'?x.id:null,name:typeof x.name==='string'?x.name.slice(0,80):'Untitled',category:typeof x.category==='string'?x.category:'User',parameters,gestures:typeof microseqGestureValidate==='function'?microseqGestureValidate(x.gestures):undefined,midi:typeof microseqMidiValidate==='function'?microseqMidiValidate(x.midi):undefined,seq16:microseqValidateSeq(Object.hasOwn(x,'seq16')?x.seq16:mambSeqDefaults()),routes:microseqClone(routes),xy:x.xy?microseqClone(x.xy):null};
  for(const r of result.routes)if(!microseqObject(r)||typeof r.source!=='string'||typeof r.destination!=='string'||!Number.isFinite(r.amount)||r.amount< -1||r.amount>1||typeof r.enabled!=='boolean')throw Error('Invalid modulation route');
  if(result.xy&&!microseqObject(result.xy))throw Error('Invalid XY assignments');return result;
 }
-function microseqFingerprint(p){return JSON.stringify({parameters:p.parameters,midi:p.midi,seq16:p.seq16,xy:p.xy,routes:p.routes});}
+function microseqFingerprint(p){return JSON.stringify({parameters:p.parameters,gestures:p.gestures,midi:p.midi,seq16:p.seq16,xy:p.xy,routes:p.routes});}

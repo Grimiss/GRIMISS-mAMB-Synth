@@ -73,11 +73,12 @@ function digitalWave(type,phase,hz,sr,bias=0){
  let sum=0;for(let k=0;k<coeff.length;k++){const harmonic=k+1;if(hz*harmonic>=sr*.45)break;sum+=coeff[k]*(Math.sin(TWO*phase*harmonic)-(harmonic%2?bias*2/(Math.PI*harmonic):0))}
  return sum*.52
 }
+const gestureEnvelope={},gestureEnvelopeKeys=['aa','ad','fa','fd'];
 function updateEnv(e,dt,a,d,s,r){if(e.stage==='attack'){e.value=Math.min(1,e.value+dt/a);if(e.value>=1)e.stage='decay'}else if(e.stage==='decay'){e.value=Math.max(s,e.value-(1-s)*dt/d);if(e.value<=s)e.stage='sustain'}else if(e.stage==='sustain')e.value=s;else if(e.stage==='release'){e.value=Math.max(0,e.value-e.releaseLevel*dt/r);if(e.value<=0)e.stage='off'}return e.value}
 function reshapedWave(i,phase,warped,inc,width,hz,slope){if(i>=4)return digitalWave(waveNames[i],warped,hz*slope,sr,2*width-1);const value=osc(waveNames[i],i===1?phase:warped,i===1?inc:Math.min(.49,inc*slope),width);return i===3?value-(2*width-1)*2/Math.PI:i===0?value+(width-.5):value;}
 function mixedOsc(m,phase,inc,width,hz,reshape=false){const warped=reshape?mambReshapePhase(phase,width):phase,slope=reshape?Math.max(.5/width,.5/(1-width)):1;if(!m.left)return reshapedWave(m.index,phase,warped,inc,width,hz,slope);let out=0;for(let i=0;i<m.weights.length;i++)if(Math.abs(m.weights[i])>1e-10)out+=m.weights[i]*reshapedWave(i,phase,warped,inc,width,hz,slope);return out}
 function sample(v,sr,p,mod){
-const fe=updateEnv(v.fil,dt,v.fa,v.fd,p.fs/100,mod.fr),ae=updateEnv(v.amp,dt,v.aa,v.ad,p.as/100,mod.ar);
+const fe=updateEnv(v.fil,dt,gestureEnvelope.fa?mod.fa:v.fa,gestureEnvelope.fd?mod.fd:v.fd,p.fs/100,mod.fr),ae=updateEnv(v.amp,dt,gestureEnvelope.aa?mod.aa:v.aa,gestureEnvelope.ad?mod.ad:v.ad,p.as/100,mod.ar);
 if(v.glideTarget)v.hz+=(v.glideTarget-v.hz)*v.glideAlpha;
 const bendTarget=performanceBend===0?v.owner.controller.bend:Math.max(-1,Math.min(1,v.owner.controller.bend+performanceBend)),wheelTarget=Math.max(v.owner.controller.wheel,performanceWheel);v.bend+=(bendTarget-v.bend)*alpha;v.wheel+=(wheelTarget-v.wheel)*alpha;
 if(activeTaps.length)routed(v,fe,ae);const rm=v.mods;
@@ -180,5 +181,6 @@ function render(out,offset=0,length=out.length-offset){
  owners.forEach(pruneOwner);
 }
 function snapshot(){const activeNotes=new Set(),held=new Set(),pressed=new Set();for(const v of voices)if(v.stealFade===undefined&&v.amp.stage!=='release'&&v.amp.stage!=='off')activeNotes.add(v.note);for(const o of owners.values()){if(o.latched&&ownerHasVoices(o))held.add(o.note);if(o.down)pressed.add(o.note)}return {ageProcessing:{drive:mod.drive,tone:mod.ageTone,output:mod.ageOutput},performance:{bend:performanceBend,wheel:performanceWheel},velocitySensitivity:params.velocitySensitivity,thickness:params.thickness,wheelVibratoGate:mod.wheelGate,analogCharacter:params.analogCharacter,analogCharacterTarget:target.analogCharacter,physicalSlots:slots.map(s=>({index:s.index,calibration:{...s.calibration},phase1:s.current?s.current.p1:(s.p1+(frames-s.frame)*s.inc1)%1,phase2:s.current?s.current.p2:(s.p2+(frames-s.frame)*s.inc2)%1,inc1:s.current?s.current.inc1:s.inc1,inc2:s.current?s.current.inc2:s.inc2,drift1:s.drift1.value,drift2:s.drift2.value,active:!!s.current})),voices:voices.map(v=>({velocityGain:v.velocityGain,slot:v.physicalSlot.index,phase1:v.p1,phase2:v.p2,analog1:v.analog1,analog2:v.analog2,analogCut:v.analogCut,analogGain:v.analogGain,attackSeconds:v.aa,decaySeconds:v.ad,note:v.note,source:v.owner.source,velocity:v.velocity,stage:v.amp.stage,value:v.amp.value,filterEnvelope:v.fil.value,bend:v.bend,wheel:v.wheel,stealing:v.stealFade!==undefined})),activeNotes:[...activeNotes],held:[...held],pressed:[...pressed],owners:owners.size,clock,lfo1:lfoStates[0].value,lfo2:lfoStates[1].value,lfoPhases:lfoStates.map(s=>s.phase),routes:routes.map(r=>({source:r.source,destination:r.destination,enabled:r.enabled,target:r.target,amount:r.taps[sources.indexOf(r.source)*destinations.length+destinations.indexOf(r.destination)].amount}))}}
-return {render,message,snapshot};
+function setGestureParameters(values,mask){for(const k in values)if(k in target&&typeof target[k]==='number'&&Number.isFinite(values[k])&&target[k]!==values[k]){target[k]=values[k];if(!moving.includes(k))moving.push(k);}for(const k of gestureEnvelopeKeys)gestureEnvelope[k]=!!mask[k];}
+return {render,message,snapshot,setGestureParameters};
 }

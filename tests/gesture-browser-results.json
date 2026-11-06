@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "surfaces": 16,
+  "checks": [
+    "all 16 actual surfaces record timed mouse gestures and run simultaneously through the Worklet",
+    "upper synthesizer geometry unchanged",
+    "section-local/same-axis assignment, live speed/direction/transition, independent pause and unchanged saved knobs",
+    "no-movement recording preserves the existing path",
+    "actual browser touch recording",
+    "closing editor and keyboard/SEQ flip preserve gestures, MIDI, live input, SEQ and arpeggiator",
+    "full patch round trip, legacy empty gestures, sequence-library separation and unsaved draft recovery",
+    "all 16 gesture loops and live synthesis also run in ScriptProcessor fallback"
+  ],
+  "errors": [],
+  "physicalTabletVerified": false
+}

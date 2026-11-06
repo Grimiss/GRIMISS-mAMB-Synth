@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "surfaces": 16,
+  "simultaneous": 16,
+  "ultraSlowSpeed": 0.01,
+  "simulatedSeconds": 640,
+  "checks": [
+    "all local schemas and validation",
+    "FWD BACK PENDULUM",
+    "JUMP SMOOTH",
+    "independent transition seconds",
+    "live speed and pause/hold",
+    "recorded timing and stationary holds",
+    "non-destructive base and release",
+    "all-surface independence",
+    "legacy/current persistence",
+    "dirty state and corruption"
+  ],
+  "audioClockControlQuantum": 64
+}

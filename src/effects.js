@@ -65,7 +65,7 @@ function createMambEffects(initial={}, sr=48000) {
   let hallL=0,hallR=0;
   const eqCoefficients=[new Float64Array(5),new Float64Array(5)],eqState=new Float64Array(8);
   allocatedBytes+=modWeights.byteLength+delayWeights.byteLength+revWeights.byteLength+springDispersionSamples.byteLength+springLengths.byteLength+springDamped.byteLength+springAllpass.byteLength+springRead.byteLength+springGain.byteLength+hallLengths.byteLength+hallDamped.byteLength+hallRead.byteLength+hallGain.byteLength+hallPhase.byteLength+hallRates.byteLength+hallDrift.byteLength+hallDriftTarget.byteLength+hallDriftClock.byteLength+hallSeeds.byteLength+eqState.byteLength+eqCoefficients[0].byteLength+eqCoefficients[1].byteLength;
-  let delayReadTime=0;let toneCoefficient=0,delayDamping=1-Math.exp(-TWO*8000/sr),springBias=0,springDrive=1,springNorm=1,hallModSamples=0,delayTime=p.fxDelayTime;
+  let gestureDelayTime=false;let delayReadTime=0;let toneCoefficient=0,delayDamping=1-Math.exp(-TWO*8000/sr),springBias=0,springDrive=1,springNorm=1,hallModSamples=0,delayTime=p.fxDelayTime;
   let panL=1,panR=1,master=p.master/100,tick=0,dirty=true,panicRemaining=0,panicGain=1,peak=0;
   function shelf(coeff,frequency,gain,high){
     if(Math.abs(gain)<1e-8){coeff[0]=1;coeff[1]=coeff[2]=coeff[3]=coeff[4]=0;return}
@@ -78,7 +78,7 @@ function createMambEffects(initial={}, sr=48000) {
   function biquad(x,coeff,index){const y=coeff[0]*x+eqState[index];eqState[index]=coeff[1]*x-coeff[3]*y+eqState[index+1];eqState[index+1]=coeff[2]*x-coeff[4]*y;return y}
   function updateControl(){
     if(dirty){
-      delayTime=p.fxDelaySync?Math.max(.025,Math.min(4,60/p.tempo*p.fxDelayDivision)):p.fxDelayTime;
+      delayTime=p.fxDelaySync&&!gestureDelayTime?Math.max(.025,Math.min(4,60/p.tempo*p.fxDelayDivision)):p.fxDelayTime;
       toneCoefficient=1-Math.exp(-TWO*Math.min(sr*.4,p.fxReverbTone)/sr);
       springDrive=1+7*p.fxReverbDwell;springBias=Math.tanh(springDrive*.12);springNorm=1/Math.max(.25,springDrive*(1-springBias*springBias));
       const springRT=Math.min(8,p.fxReverbDecay);
@@ -96,7 +96,7 @@ function createMambEffects(initial={}, sr=48000) {
   function resetHall(){for(let i=0;i<8;i++)hallLines[i].reset();for(let i=0;i<4;i++)hallEarly[i].reset();hallDamped.fill(0);hallRead.fill(0);hallL=hallR=0}
   function resetAll(){resetMod();resetDelay();resetSpring();resetHall();eqState.fill(0);modRun=target.fxModOn;delayRun=target.fxDelayOn;revRun=target.fxReverbOn;revQuiet=0;revTail=0}
   function setParameters(values){
-    for(const key of Object.keys(values||{})){
+    for(const key in values){
       if(!accept(key,values[key]))continue;
       if(bounds[key]){if(target[key]!==p[key]&&!moving.includes(key))moving.push(key)}
       else {p[key]=target[key];dirty=true}
@@ -202,5 +202,6 @@ function createMambEffects(initial={}, sr=48000) {
   }
   function panic(){panicRemaining=Math.max(1,Math.round(sr*.018))}
   function snapshot(){return {sampleRate:sr,allocatedBytes,delayTimeSeconds:delayReadTime,activeMod:modRun?target.fxModType:null,activeDelay:delayRun?target.fxDelayType:null,activeReverbs:revRun?revNames.filter((_,i)=>revWeights[i]>1e-7):[],tailEnergy:{mod:modTail,delay:delayTail,reverb:revTail},peak,current:{...p},target:{...target}}}
-  return {setParameters,process,panic,snapshot};
+  function setGestureParameters(values,mask){if(gestureDelayTime!==!!mask.fxDelayTime){gestureDelayTime=!!mask.fxDelayTime;dirty=true;}for(const k in values)if(bounds[k]&&Number.isFinite(values[k])&&target[k]!==values[k]){accept(k,values[k]);if(!moving.includes(k))moving.push(k);}}
+  return {setParameters,process,panic,snapshot,setGestureParameters};
 }

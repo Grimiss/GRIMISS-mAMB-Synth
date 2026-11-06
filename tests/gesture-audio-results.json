@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "baselineModes": 4,
+  "displays": [
+    {
+      "display": "xy1",
+      "difference": 398.43242439289094,
+      "energy": 25.37976588471923,
+      "peak": 0.05644579231739044
+    },
+    {
+      "display": "xy2",
+      "difference": 577.4003525268955,
+      "energy": 33.58213369818716,
+      "peak": 0.0758235827088356
+    },
+    {
+      "display": "automation",
+      "difference": 398.43242439289094,
+      "energy": 25.37976588471923,
+      "peak": 0.05644579231739044
+    },
+    {
+      "display": "osc1",
+      "difference": 174.2142276142294,
+      "energy": 27.88488371043921,
+      "peak": 0.058486852794885635
+    },
+    {
+      "display": "osc2",
+      "difference": 272.9357508304522,
+      "energy": 28.10037994416968,
+      "peak": 0.05677930638194084
+    },
+    {
+      "display": "filter",
+      "difference": 398.43242439289094,
+      "energy": 25.37976588471923,
+      "peak": 0.05644579231739044
+    },
+    {
+      "display": "filterEnvelope",
+      "difference": 86.5235618793135,
+      "energy": 29.777843372499245,
+      "peak": 0.05824968218803406
+    },
+    {
+      "display": "ampEnvelope",
+      "difference": 112.20483744691451,
+      "energy": 25.25802307119017,
+      "peak": 0.05632876977324486
+    },
+    {
+      "display": "lfo1",
+      "difference": 170.82518655789949,
+      "energy": 28.785148410892326,
+      "peak": 0.05672411620616913
+    },
+    {
+      "display": "lfo2",
+      "difference": 1579.9387352627455,
+      "energy": 39.39191279360886,
+      "peak": 0.06420525163412094
+    },
+    {
+      "display": "eq",
+      "difference": 576.9034273492528,
+      "energy": 52.358650558798665,
+      "peak": 0.10898026823997498
+    },
+    {
+      "display": "modfx",
+      "difference": 426.38173251814993,
+      "energy": 32.404110515707735,
+      "peak": 0.05962321534752846
+    },
+    {
+      "display": "delay",
+      "difference": 374.2799076067034,
+      "energy": 31.478843053498792,
+      "peak": 0.06584236770868301
+    },
+    {
+      "display": "reverb",
+      "difference": 28.301976769119776,
+      "energy": 30.29444972711279,
+      "peak": 0.05837913975119591
+    },
+    {
+      "display": "routing",
+      "difference": 1470.8230377549642,
+      "energy": 33.77297906999765,
+      "peak": 0.06537746638059616
+    },
+    {
+      "display": "arp",
+      "difference": 81.384140668834,
+      "energy": 27.63152162444198,
+      "peak": 0.07085036486387253
+    }
+  ],
+  "simultaneous": 16,
+  "audioSeconds": 60,
+  "runtimeMs": 15919.660981,
+  "maxSampleDelta": 0.04215826839208603,
+  "physicalListeningTest": false
+}
