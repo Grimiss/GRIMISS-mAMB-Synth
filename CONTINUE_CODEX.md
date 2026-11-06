@@ -121,3 +121,5 @@ Published simplified SEQ16 as Site version 32 (native deployment succeeded). Dev
 Current update: 32-pattern song popup, independent bank roots, right-hand bank/layout/reset toolbar and quieter illumination. See SEQ16_SONG_PROGRAM.md. Rollback branch checkpoint/pre-song32 preserves Site32 development state. Keep development on codex/controller-workflow-v0.7; never merge dev main.
 
 Song popup release deployed successfully: Site source 4c08778, development 849dc5a. Rollback hosted version32 preserved. Sequencer browser tests including ScriptProcessor fallback PASS. See reports/song32-release-verification.json.
+
+SEQ hierarchy update: see SEQ16_HARDWARE_HIERARCHY.md. Explicit RESET differs from transport-position reset and factory defaults. Live song display/length editing uses active arrangement data without overwriting saved base settings. Keep existing development branch; rollback checkpoint/pre-seq-hierarchy and hosted33.

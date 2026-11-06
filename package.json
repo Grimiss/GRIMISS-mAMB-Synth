@@ -33,7 +33,8 @@
     "test:seq-layout": "node tests/seq-buttons-browser.cjs && node tests/sequencer-browser.cjs && node tests/root-program-browser.cjs",
     "test:tablet-audio": "node tests/tablet-audio-browser.cjs",
     "test:simple": "node tests/seq-pause.cjs && node tests/seq-simple-browser.cjs",
-    "test:song": "node tests/song-program.cjs && node tests/song-program-audio.cjs && node tests/song-program-browser.cjs"
+    "test:song": "node tests/song-program.cjs && node tests/song-program-audio.cjs && node tests/song-program-browser.cjs",
+    "test:hierarchy": "node tests/seq-hierarchy-browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

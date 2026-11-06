@@ -184,3 +184,7 @@ Implemented Simple main view with always-visible four directions; per-step ON/RE
 ## 2026-11-06 — bank toolbar and 32-pattern song popup
 
 Moved A/B, RESET and layout buttons to the right toolbar; reduced cap/button/length-bar illumination; root display now edits independent bank roots. Pitch enable retained in Advanced for old-patch bank mute compatibility. Added normalized, persisted 32-pattern song state, shared A-step-clock progression, independent per-pattern A/B roots/directions/rates/lengths, repeats, loop/stop and selective randomisation. Replaced keyboard-strip editor with a popup; retained legacy program engine/data compatibility. See SEQ16_SONG_PROGRAM.md for semantics, tests and rollback.
+
+## 2026-11-06 — SEQ physical hierarchy and live arrangement feedback
+
+Rebuilt only the lower control deck into inset Transport/Pattern/Performance/Song groups. Separate vector Play/Pause/Stop buttons, simultaneous A/B roots, explicit song arm switch, quieter alternating song table, requested Middle-C/ON/FWD/16-step/eighth/Major reset. Main bars, note readouts and parameter indicators track live song patterns. Factory defaults and synthesis/FX untouched. See SEQ16_HARDWARE_HIERARCHY.md.

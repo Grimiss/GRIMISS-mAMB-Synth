@@ -182,3 +182,35 @@ html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-gate{b
 .seq-song-dialog{width:1100px}.seq-song-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px}.seq-song-toolbar input[type=number]{width:60px}.seq-song-random-fields{display:flex;gap:4px;padding:7px;border:1px solid #355041;border-radius:4px}.song-led{display:inline-block;width:8px;height:8px;background:#34443b;border-radius:50%;margin-right:5px}.seq-song-random-fields [aria-pressed=true] .song-led{background:#56ed9c;box-shadow:0 0 4px #56ed9c88}
 .seq-song-grid{display:grid;gap:8px}.seq-song-pattern{display:grid;grid-template-columns:26px repeat(9,minmax(0,1fr));align-items:end;gap:8px;padding:10px;border:1px solid #355041;border-radius:4px;background:#08110d}.seq-song-pattern label{display:flex;flex-direction:column;gap:5px;font-size:10px}.seq-song-pattern :is(input,select){width:100%;min-width:0;height:32px;background:#020b07;color:#dcf5e6;border:1px solid #355041;border-radius:3px;font:700 12px Arial}.seq-song-pattern.playing{border-color:#e9af51;box-shadow:inset 3px 0 #e9af51}.seq-song-pattern:has([data-song-bank=B][hidden]){grid-template-columns:26px repeat(5,minmax(0,1fr))}.seq-song-dialog [hidden]{display:none!important}
 @media(max-width:800px){.seq-song-pattern{grid-template-columns:26px repeat(4,minmax(0,1fr))}.seq-song-pattern:has([data-song-bank=B][hidden]){grid-template-columns:26px repeat(3,minmax(0,1fr))}.seq-song-random-fields{flex-wrap:wrap}}
+/* A compact physical control deck: transport above pattern/performance, song below. */
+.seq-settings{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-rows:27px minmax(0,1fr) 25px;gap:4px 7px;align-content:stretch}
+.seq-settings>.seq-group{border:1px solid #355044;border-radius:4px;padding:3px 5px;background:linear-gradient(120deg,#14201955,#070d0955);box-shadow:inset 0 1px #71937a15,0 1px 2px #0008}
+.seq-settings>.seq-group legend{font:900 7px Orbitron;padding:0 4px;letter-spacing:.4px;color:#a6b9ad}
+.seq-transport-group{grid-column:1/-1;justify-self:start;display:flex;gap:8px;align-items:center;max-width:100%}
+.seq-transport-controls{display:flex;gap:5px;align-items:center}
+html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-transport-icon{width:22px!important;height:22px!important;min-height:22px!important;padding:4px!important;border-radius:4px;background:linear-gradient(#35463a,#142019);box-shadow:inset 0 1px #a9bbae22,0 2px 2px #0009}
+.seq-transport-icon svg{display:block;width:100%;height:100%;fill:currentColor;pointer-events:none}
+html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-transport-group :is(#seq-reset,#seq-more){height:20px!important;min-height:20px!important;width:64px;flex-shrink:0}
+.seq-pattern-group{grid-column:1;grid-row:2;display:flex;flex-direction:column;gap:3px}
+.seq-performance-group{grid-column:2;grid-row:2}
+.seq-pattern-group .seq-pattern-top{display:none}.seq-bank-toolbar{gap:3px}.seq-bank-toolbar .seq-choice-buttons{gap:3px}
+.seq-pattern-group>.seq-choice{margin:0;gap:3px}.seq-pattern-group .seq-choice-label{flex-basis:26px;font-size:5px}.seq-pattern-group .seq-choice-buttons{gap:2px}
+html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-pattern-group button{font-size:5px!important;height:13px!important;min-height:13px!important;line-height:11px;padding:0 2px}
+.seq-performance-group .seq-root-row{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:0}
+.seq-root-row>label:has(#seq-root),.seq-root-row>label:has(#seq-bRoot){width:auto;min-width:0}.seq-root-row>label:has(#seq-scale){grid-column:1/-1;display:flex;gap:4px}
+.seq-root-display{display:flex!important;flex-direction:column;align-items:stretch!important;gap:1px!important;padding:2px 4px;font-size:5px!important;min-width:0}
+.seq-root-display #seq-root,.seq-root-display #seq-bRoot{font:900 10px Orbitron,monospace!important;color:var(--seq-accent)!important;background:#020b07!important;border:0!important;height:16px!important;min-height:16px!important;padding:0!important;cursor:pointer}
+.seq-performance-group #seq-root-live{grid-column:1/-1;font-size:5px;min-width:0;white-space:nowrap;line-height:6px}
+.seq-song-group{grid-column:1/-1;display:flex;align-items:center;gap:7px;justify-self:start;min-width:215px}
+.seq-song-group .seq-toggle{width:76px}.seq-song-group #seq-program{width:110px}
+.seq-left{gap:5px;padding-top:7px}
+.seq-settings [hidden]{display:none!important}
+/* One continuous, understated programming table with alternating row tones. */
+.seq-song-grid{display:block;border:0;border-radius:2px;overflow:hidden;background:#101c16}
+.seq-song-pattern{margin:0;border:0;border-radius:0;box-shadow:none;padding:8px 10px;background:#101c16;gap:8px}
+.seq-song-pattern:nth-child(even){background:#17251e}
+.seq-song-pattern.playing{border:0;box-shadow:inset 3px 0 #d1a35b;background:#293022}
+.seq-song-pattern label{font-size:9px;color:#9db0a3;gap:3px}
+.seq-song-pattern :is(input,select){border:0;border-radius:2px;box-shadow:inset 0 -1px #3c5445;background:#08130d;height:28px}
+.seq-song-random-fields{border:0;background:#0d1912;padding:6px}
+.seq-song-dialog{background:#0c1710}
