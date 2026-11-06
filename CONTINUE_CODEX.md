@@ -127,3 +127,5 @@ SEQ hierarchy update: see SEQ16_HARDWARE_HIERARCHY.md. Explicit RESET differs fr
 SEQ hardware hierarchy release successfully deployed. Development6429e5e; Site783de8f; prior hosted33 rollback preserved. See reports/seq-hierarchy-release-verification.json. No development merge to main.
 
 Latest: approved control mockup now implemented; see SEQ16_CONTROL_MOCKUP.md. Dual 8 A+B/A→B flag defaults false for old patches; audio-frame alternation preserves independent bank settings. Rollback branch checkpoint/pre-control-mockup and hosted34. Development remains codex/controller-workflow-v0.7.
+
+Approved mockup + A/B alternate release successfully published: development 2841a68, Site7275016. Prior hosted34 preserved for rollback. See reports/seq-mockup-release-verification.json. No development merge to main.
