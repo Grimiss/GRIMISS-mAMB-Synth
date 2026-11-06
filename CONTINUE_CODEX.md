@@ -117,3 +117,5 @@ Touch audio startup compatibility published successfully as Site version 31. Sou
 Latest Simple view: SEQ16_SIMPLE_VIEW.md supersedes earlier control placement. Always-visible four directions; ON/REST/ACC caps/buttons; green A/filter-blue B; snapped LENGTH bars; root note dropdown; Advanced expression matrix. Space and PLAY/PAUSE preserve remaining timing and PROGRAM counters. `npm run test:simple`; rollback checkpoint/pre-simple-steps. Audio DSP unchanged. Tablet report was keyboard working, sequencer not running; no confirmed physical-device resolution.
 
 Published simplified SEQ16 as Site version 32 (native deployment succeeded). Development 9e4f6ec; Site source e447c39. Rollback version31 preserved. No development merge to main. See reports/mikroseq-simple-view-release-verification.json.
+
+Current update: 32-pattern song popup, independent bank roots, right-hand bank/layout/reset toolbar and quieter illumination. See SEQ16_SONG_PROGRAM.md. Rollback branch checkpoint/pre-song32 preserves Site32 development state. Keep development on codex/controller-workflow-v0.7; never merge dev main.

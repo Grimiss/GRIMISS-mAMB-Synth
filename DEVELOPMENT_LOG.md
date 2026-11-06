@@ -180,3 +180,7 @@ Added standard trusted completed-tap activation/resume, feature-detected playbac
 ## 2026-11-06 — Simple/Advanced, three-state steps and pause
 
 Implemented Simple main view with always-visible four directions; per-step ON/REST/ACC cycling and green/grey/pink caps; green A/filter-blue B bank colours; bank-coloured controls; snapped per-bank LENGTH drag bars; root-note dropdown; Advanced probability/gate matrix and retained advanced arp/root/dual settings. Removed separate rest/accent controls. Added real pause with position/fraction preservation, safe space-bar toggle and paused tempo/config editing. Synth/effects DSP unchanged. See SEQ16_SIMPLE_VIEW.md. Existing pitch/program storage retained.
+
+## 2026-11-06 — bank toolbar and 32-pattern song popup
+
+Moved A/B, RESET and layout buttons to the right toolbar; reduced cap/button/length-bar illumination; root display now edits independent bank roots. Pitch enable retained in Advanced for old-patch bank mute compatibility. Added normalized, persisted 32-pattern song state, shared A-step-clock progression, independent per-pattern A/B roots/directions/rates/lengths, repeats, loop/stop and selective randomisation. Replaced keyboard-strip editor with a popup; retained legacy program engine/data compatibility. See SEQ16_SONG_PROGRAM.md for semantics, tests and rollback.
