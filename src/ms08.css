@@ -1,0 +1,54 @@
+/* Header branding, badges and physically joined patch display. */
+html.reference-geometry main .header .brand{height:37px!important;top:4px!important}
+html.reference-geometry main .brand #ms08-logo{position:absolute;left:0;top:0;width:144px;height:36px;margin:0!important}
+#ms08-logo svg{display:block;width:100%;height:100%}
+html.reference-geometry main .brand #ms08-product{position:absolute;left:151px;top:5px;margin:0!important;font-size:19px!important;letter-spacing:.5px}
+html.reference-geometry main .brand #ms08-model{position:absolute;left:306px;top:10px;margin:0!important;font:900 9px Orbitron;color:#d0d9d3}
+html.reference-geometry main .brand small{position:absolute;left:354px;top:12px;font-size:5px!important}
+html.reference-geometry main .brand .cabinet-vents{left:448px!important}
+html.reference-geometry main #ms08-specs{position:absolute;left:164px;top:31px;display:flex;gap:4px}
+html.reference-geometry main #ms08-specs .small-tag{font-size:4.2px!important;letter-spacing:0!important;padding:2px 3px!important;white-space:nowrap}
+.ms08-hidden-status{display:none!important}
+html.reference-geometry main .patch-lcd-housing{grid-template-columns:29px 251px 29px!important}
+html.reference-geometry main .patch-readout{grid-column:2!important;padding:2px 4px!important;gap:4px!important;cursor:pointer}
+html.reference-geometry main #hardwarePatchNext{grid-column:3!important}
+html.reference-geometry main #currentPatchName{font-size:9.5px!important;max-width:160px!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html.reference-geometry main #currentPatchCategory{display:none!important}
+html.reference-geometry main .header .toolbar{left:878px!important;gap:7px!important;width:332px!important}
+/* Mixer channels retain their actual live --fill variable. */
+html.fit-screen main .mixer .fader:nth-child(1) .fader-illumination{background:#56ed9c;box-shadow:0 0 2px #56ed9c44}
+html.fit-screen main .mixer .fader:nth-child(2) .fader-illumination{background:#e8b555;box-shadow:0 0 2px #e8b55544}
+html.fit-screen main .mixer .fader:nth-child(3) .fader-illumination{background:#fa48c0;box-shadow:0 0 2px #fa48c044}
+/* Calm the control deck: fewer enclosures, explicit editing/playback roles. */
+.seq-mockup-deck{grid-template-rows:37px minmax(0,1fr);gap:5px}
+.seq-mockup-deck>.seq-group{padding:3px 5px;overflow:visible}
+.seq-mockup-deck .seq-transport-controls{height:22px;grid-template-columns:22px 22px 22px minmax(0,1fr);gap:5px}
+html.fit-screen.reference-geometry.control-refinement main .seq-mockup-deck .seq-transport-icon{height:22px!important;min-height:22px!important;width:22px!important;padding:5px!important}
+.seq-mockup-deck .seq-bank-toolbar>.seq-choice,.seq-mockup-deck .seq-pattern-group>.seq-choice{border:0;border-radius:0;padding:0;box-shadow:none}
+.seq-mockup-deck .seq-bank-toolbar{gap:9px;padding-bottom:2px}
+.seq-mockup-deck>.seq-pattern-group{gap:4px}
+.seq-mockup-deck .seq-root-display,.seq-mockup-deck .seq-root-row label:has(#seq-scale){border:0;padding:1px 3px;background:none;box-shadow:none}
+.ms08-playback{display:flex;align-items:center;gap:6px;min-height:11px;color:#a9b8af;font:900 5px Orbitron}
+.ms08-playback>.seq-alternate-switch{flex:0 0 54px;position:static}.ms08-playback .seq-toggle{width:54px}
+html.fit-screen.reference-geometry.control-refinement main #seq-control-deck .ms08-playback button{height:11px!important;min-height:11px!important;font:900 5px/9px Orbitron!important;padding:0 4px}
+#seq-control-deck[data-bank=B] button[aria-pressed=true]:not(.seq-transport-icon){background:linear-gradient(#48c9ee,#2486a1)!important;border-color:#48c9ee!important;color:#03131a!important}
+#seq-control-deck [data-seq-choice=editBank][data-value=A][aria-pressed=true]{background:linear-gradient(#4ce995,#27ae68)!important;border-color:#56ed9c!important}
+#seq-control-deck .ms08-playback button[aria-pressed=true],#seq-control-deck .seq-song-group button[aria-pressed=true]{background:linear-gradient(#e8b555,#97702d)!important;border-color:#f0c979!important;color:#1a1103!important}
+html.fit-screen.reference-geometry.control-refinement main #seq-control-deck .seq-song-group button{color:#e8b555!important;border-color:#9a7c43!important;height:22px!important;min-height:22px!important}
+html.fit-screen.reference-geometry.control-refinement main #seq-control-deck .seq-song-group button[aria-pressed=true]{color:#1a1103!important}
+html.fit-screen.reference-geometry.control-refinement main #seqViewToggle{color:#e8b555!important;border-color:#9a7c43!important}
+/* The caps are black plastic with one illuminated horizontal position mark. */
+html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-handle.pitch{background:linear-gradient(#27302b,#080d0a 35%,#050805)!important;border:1px solid #3b4940!important;box-shadow:0 1px 2px #000!important}
+.seq-handle.pitch:after{content:'';position:absolute;left:3px;right:3px;top:45%;height:2px;background:var(--step-accent);box-shadow:0 0 2px rgba(var(--step-rgb),.4);pointer-events:none}
+html.fit-screen.reference-geometry.control-refinement main .seq-face .seq-gate{width:78%;height:13px!important;min-height:13px!important;line-height:11px;font-size:5px!important;background:#080e0a!important;border-color:var(--step-accent)!important;color:var(--step-accent)!important;box-shadow:inset 0 0 1px rgba(var(--step-rgb),.2)!important;margin-bottom:2px}
+.seq-length-fill{background:color-mix(in srgb,var(--length-colour) 18%,#09120d);border:1px solid var(--length-colour);box-shadow:none}
+.seq-length-fill>span{color:var(--length-colour);top:1px}
+.seq-length-handle:after{background:#14221a;border-color:var(--length-colour);color:var(--length-colour)}
+html.reference-geometry main .brand #ms08-model{font-size:9px!important;line-height:10px!important;top:9px}
+html.reference-geometry main #ms08-specs .small-tag{font-size:5px!important}
+html.fit-screen.reference-geometry.control-refinement main .performance-panel #seqViewToggle{color:#e8b555!important;border-color:#9a7c43!important;background:linear-gradient(#302a1c,#141109)!important}
+#seq-control-deck[data-bank=B] .seq-transport-icon[aria-pressed=true]{color:#48c9ee!important;border-color:#48c9ee!important}
+#seq-song-dialog button{color:#e8b555!important;border-color:#9a7c43!important}
+#seq-song-dialog button[aria-pressed=true]{background:#3b2f18!important;color:#f0ce8b!important}
+#seq-control-deck[data-bank] .ms08-playback [data-seq-toggle=alternate][aria-pressed=true],#seq-control-deck[data-bank] .seq-song-group button[aria-pressed=true]{background:linear-gradient(#e8b555,#97702d)!important;border-color:#f0c979!important;color:#1a1103!important}
+html.fit-screen.reference-geometry.control-refinement main .performance-panel #seqViewToggle[aria-pressed=true],#seq-control-deck .seq-song-group #seq-program[aria-expanded=true]{background:linear-gradient(#e8b555,#97702d)!important;color:#1a1103!important;border-color:#f0c979!important}

@@ -129,3 +129,5 @@ SEQ hardware hierarchy release successfully deployed. Development6429e5e; Site78
 Latest: approved control mockup now implemented; see SEQ16_CONTROL_MOCKUP.md. Dual 8 A+B/A→B flag defaults false for old patches; audio-frame alternation preserves independent bank settings. Rollback branch checkpoint/pre-control-mockup and hosted34. Development remains codex/controller-workflow-v0.7.
 
 Approved mockup + A/B alternate release successfully published: development 2841a68, Site7275016. Prior hosted34 preserved for rollback. See reports/seq-mockup-release-verification.json. No development merge to main.
+
+MS-08 refinement: see MS08_REFINEMENT.md. New module/CSS appended after sequencer UI. OSC1 non-pulse reshaping changes nonneutral `pw` behavior intentionally; neutral50% with no shape modulation is sample-identical. PWM and OSC2 retained. Song table redesign remains a documented recommendation, not an implemented feature. Rollback checkpoint/pre-ms08-refinement and hosted35. Keep development branch.

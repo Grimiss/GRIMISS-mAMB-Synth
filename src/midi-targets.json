@@ -93,7 +93,7 @@
   },
   {
     "id": "pw",
-    "label": "OSC1 pulse width",
+    "label": "OSC1 Reshape",
     "category": "Oscillators",
     "type": "range",
     "min": 10,

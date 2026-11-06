@@ -1,3 +1,5 @@
+// Neutral at 50%; shared by audio and the live OSC1 display.
+function mambReshapePhase(phase,width){if(width===.5)return phase;return phase<width?phase*.5/width:.5+(phase-width)*.5/(1-width);}
 // Shared independently implemented DSP, used by Worklet, fallback and offline tests.
 function createMambEngine(initial, sr=48000, seed=12345){
 // New controls default to neutral values for v0.4 patch compatibility.
@@ -66,20 +68,21 @@ function polyblep(t,dt){if(t<dt){t/=dt;return t+t-t*t-1}if(t>1-dt){t=(t-1)/dt;re
 function osc(w,p,inc,pw){if(w==='sine')return Math.sin(TWO*p);if(w==='triangle')return 1-4*Math.abs(p-.5);if(w==='pulse'){let x=(p<pw?1:-1);x+=polyblep(p,inc);x-=polyblep((p-pw+1)%1,inc);return x}return 2*p-1-polyblep(p,inc)}
 // Capture UI parameters once per audio block, never query the DOM per sample.
 // Original digital harmonic spectra, deliberately not Korg ROM/DWGS samples.
-function digitalWave(type,phase,hz,sr){
+function digitalWave(type,phase,hz,sr,bias=0){
  const coeff=spectra[type==='dwgs1'?0:type==='dwgs2'?1:2];
- let sum=0;for(let k=0;k<coeff.length;k++){const harmonic=k+1;if(hz*harmonic>=sr*.45)break;sum+=coeff[k]*Math.sin(TWO*phase*harmonic)}
+ let sum=0;for(let k=0;k<coeff.length;k++){const harmonic=k+1;if(hz*harmonic>=sr*.45)break;sum+=coeff[k]*(Math.sin(TWO*phase*harmonic)-(harmonic%2?bias*2/(Math.PI*harmonic):0))}
  return sum*.52
 }
 function updateEnv(e,dt,a,d,s,r){if(e.stage==='attack'){e.value=Math.min(1,e.value+dt/a);if(e.value>=1)e.stage='decay'}else if(e.stage==='decay'){e.value=Math.max(s,e.value-(1-s)*dt/d);if(e.value<=s)e.stage='sustain'}else if(e.stage==='sustain')e.value=s;else if(e.stage==='release'){e.value=Math.max(0,e.value-e.releaseLevel*dt/r);if(e.value<=0)e.stage='off'}return e.value}
-function mixedOsc(m,phase,inc,width,hz){if(!m.left){const w=waveNames[m.index];return m.index>=4?digitalWave(w,phase,hz,sr):osc(w,phase,inc,width)}let out=0;for(let i=0;i<m.weights.length;i++)if(Math.abs(m.weights[i])>1e-10)out+=m.weights[i]*(i>=4?digitalWave(waveNames[i],phase,hz,sr):osc(waveNames[i],phase,inc,width));return out}
+function reshapedWave(i,phase,warped,inc,width,hz,slope){if(i>=4)return digitalWave(waveNames[i],warped,hz*slope,sr,2*width-1);const value=osc(waveNames[i],i===1?phase:warped,i===1?inc:Math.min(.49,inc*slope),width);return i===3?value-(2*width-1)*2/Math.PI:i===0?value+(width-.5):value;}
+function mixedOsc(m,phase,inc,width,hz,reshape=false){const warped=reshape?mambReshapePhase(phase,width):phase,slope=reshape?Math.max(.5/width,.5/(1-width)):1;if(!m.left)return reshapedWave(m.index,phase,warped,inc,width,hz,slope);let out=0;for(let i=0;i<m.weights.length;i++)if(Math.abs(m.weights[i])>1e-10)out+=m.weights[i]*reshapedWave(i,phase,warped,inc,width,hz,slope);return out}
 function sample(v,sr,p,mod){
 const fe=updateEnv(v.fil,dt,v.fa,v.fd,p.fs/100,mod.fr),ae=updateEnv(v.amp,dt,v.aa,v.ad,p.as/100,mod.ar);
 if(v.glideTarget)v.hz+=(v.glideTarget-v.hz)*v.glideAlpha;
 const bendTarget=performanceBend===0?v.owner.controller.bend:Math.max(-1,Math.min(1,v.owner.controller.bend+performanceBend)),wheelTarget=Math.max(v.owner.controller.wheel,performanceWheel);v.bend+=(bendTarget-v.bend)*alpha;v.wheel+=(wheelTarget-v.wheel)*alpha;
 if(activeTaps.length)routed(v,fe,ae);const rm=v.mods;
 const lfo=mod.lfo,vib=(p.vib*.00015+v.wheel*.3*mod.wheelGate)*lfo,drift=p.drift*.00006*Math.sin(TWO*(clock*v.driftRate+v.seed)),pitch=2**((vib+drift+p.bend*2+v.bend*2+v.stackDetune/100+rm[0]*12)/12),f1=v.hz*pitch*v.analog1,f2=v.hz*pitch*mod.ratio2*mod.thickRatio*2**rm[1]*v.analog2,inc1=Math.min(.49,f1/sr),inc2=Math.min(.49,f2/sr);
-v.inc1=inc1;v.inc2=inc2;const wrapped=v.p1+inc1>=1;v.p1=(v.p1+inc1)%1;if(p.sync&&wrapped)v.p2=0;v.p2=(v.p2+inc2)%1;const width=Math.max(.08,Math.min(.92,p.pw/100+p.pwm/100*lfo+rm[2]*.4));let x1=mixedOsc(mix1,v.p1,inc1,width,f1);
+v.inc1=inc1;v.inc2=inc2;const wrapped=v.p1+inc1>=1;v.p1=(v.p1+inc1)%1;if(p.sync&&wrapped)v.p2=0;v.p2=(v.p2+inc2)%1;const width=Math.max(.08,Math.min(.92,p.pw/100+p.pwm/100*lfo+rm[2]*.4));let x1=mixedOsc(mix1,v.p1,inc1,width,f1,true);
 const modPhase=(v.p2+(p.cross/100)*.24*x1+1)%1;
 let x2=mixedOsc(mix2,modPhase,Math.min(.49,inc2*(1+p.cross/100)),.5,f2),ring=p.ring/100;let x=(x1*mod.level1+x2*mod.level2)*(1-ring)+x1*x2*ring*.9+(random()*2-1)*Math.max(0,Math.min(100,p.noise+rm[5]*50))/250;
 x=Math.tanh(x*mod.drive)*mod.driveNorm;

@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "sr": 44100,
+      "wave": "saw",
+      "relativeDifference": 0.27435547065473065
+    },
+    {
+      "sr": 44100,
+      "wave": "pulse",
+      "relativeDifference": 1.0909305620658274
+    },
+    {
+      "sr": 44100,
+      "wave": "triangle",
+      "relativeDifference": 0.9403113487717384
+    },
+    {
+      "sr": 44100,
+      "wave": "sine",
+      "relativeDifference": 0.8610174238487468
+    },
+    {
+      "sr": 44100,
+      "wave": "dwgs1",
+      "relativeDifference": 0.8061746936180739
+    },
+    {
+      "sr": 44100,
+      "wave": "dwgs2",
+      "relativeDifference": 0.9387167529868452
+    },
+    {
+      "sr": 44100,
+      "wave": "dwgs3",
+      "relativeDifference": 0.9409644647588212
+    },
+    {
+      "sr": 48000,
+      "wave": "saw",
+      "relativeDifference": 0.27394437883061196
+    },
+    {
+      "sr": 48000,
+      "wave": "pulse",
+      "relativeDifference": 1.0948884190651131
+    },
+    {
+      "sr": 48000,
+      "wave": "triangle",
+      "relativeDifference": 0.9451653050408542
+    },
+    {
+      "sr": 48000,
+      "wave": "sine",
+      "relativeDifference": 0.8599937133449735
+    },
+    {
+      "sr": 48000,
+      "wave": "dwgs1",
+      "relativeDifference": 0.8083647806991803
+    },
+    {
+      "sr": 48000,
+      "wave": "dwgs2",
+      "relativeDifference": 0.9432788336406136
+    },
+    {
+      "sr": 48000,
+      "wave": "dwgs3",
+      "relativeDifference": 0.9463698058007399
+    }
+  ],
+  "checks": [
+    "all seven OSC1 waveforms change",
+    "50% sample-identical to previous engine",
+    "finite bounded extreme high-note renders"
+  ],
+  "listeningTest": false
+}

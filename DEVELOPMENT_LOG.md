@@ -192,3 +192,7 @@ Rebuilt only the lower control deck into inset Transport/Pattern/Performance/Son
 ## 2026-11-06 — approved control mockup and alternating banks
 
 Reconstructed two-row right control deck from the approved mockup, with actual transport/song status screens, physical button hierarchy and secondary reset placement. Added persisted A+B/A→B Dual 8 playback through the existing sample-clock scheduler. No oscillator/effects DSP changes. See SEQ16_CONTROL_MOCKUP.md for semantics, tests and rollback.
+
+## 2026-11-06 — MS-08 control/header polish and OSC1 Reshape
+
+Added ms08-interface.js/ms08.css for the requested header, logo vector, patch-screen access, bank/amber states, quieter step controls, mixer fill palette and clarified playback/rate/status. Implemented phase reshaping on non-pulse OSC1 waves while retaining PWM, original parameter IDs and neutral sample compatibility. Added audio/UI regressions and rollback. Song editor tile/master-detail approach documented as a proposal; working editor retained. See MS08_REFINEMENT.md.

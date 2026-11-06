@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "graphs": [
+    "saw",
+    "pulse",
+    "triangle",
+    "sine",
+    "dwgs1",
+    "dwgs2",
+    "dwgs3"
+  ],
+  "errors": [],
+  "physicalTabletVerified": false
+}
