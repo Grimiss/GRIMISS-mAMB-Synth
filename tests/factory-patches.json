@@ -2,7 +2,7 @@
   {
     "number": 1,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:001",
     "name": "Warm Ambient",
     "category": "Ambient Pads",
@@ -80,6 +80,20 @@
       "analogCharacter": 30,
       "velocitySensitivity": 0,
       "thickness": 42
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -670,7 +684,7 @@
   {
     "number": 2,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:002",
     "name": "Chorus Warmth",
     "category": "Ambient Pads",
@@ -748,6 +762,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 20
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -1338,7 +1366,7 @@
   {
     "number": 3,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:003",
     "name": "Velvet Dawn",
     "category": "Ambient Pads",
@@ -1416,6 +1444,20 @@
       "analogCharacter": 48,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -2006,7 +2048,7 @@
   {
     "number": 4,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:004",
     "name": "Amber Clouds",
     "category": "Ambient Pads",
@@ -2084,6 +2126,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 65
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -2674,7 +2730,7 @@
   {
     "number": 5,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:005",
     "name": "Teal Horizon",
     "category": "Ambient Pads",
@@ -2752,6 +2808,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -3342,7 +3412,7 @@
   {
     "number": 6,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:006",
     "name": "Soft Current",
     "category": "Ambient Pads",
@@ -3420,6 +3490,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -4010,7 +4094,7 @@
   {
     "number": 7,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:007",
     "name": "Hushed Air",
     "category": "Ambient Pads",
@@ -4088,6 +4172,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -4678,7 +4776,7 @@
   {
     "number": 8,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:008",
     "name": "Afterlight",
     "category": "Ambient Pads",
@@ -4756,6 +4854,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -5346,7 +5458,7 @@
   {
     "number": 9,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:009",
     "name": "Cedar Bloom",
     "category": "Ambient Pads",
@@ -5424,6 +5536,20 @@
       "analogCharacter": 58,
       "velocitySensitivity": 0,
       "thickness": 38
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -6014,7 +6140,7 @@
   {
     "number": 10,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:010",
     "name": "Distant Ember",
     "category": "Ambient Pads",
@@ -6092,6 +6218,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -6682,7 +6822,7 @@
   {
     "number": 11,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:011",
     "name": "Slow Drift",
     "category": "Evolving Textures",
@@ -6760,6 +6900,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 40
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -7350,7 +7504,7 @@
   {
     "number": 12,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:012",
     "name": "Modulated Atmosphere",
     "category": "Evolving Textures",
@@ -7428,6 +7582,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -8018,7 +8186,7 @@
   {
     "number": 13,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:013",
     "name": "Moss Circuit",
     "category": "Evolving Textures",
@@ -8096,6 +8264,20 @@
       "analogCharacter": 50,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -8686,7 +8868,7 @@
   {
     "number": 14,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:014",
     "name": "Northern Mist",
     "category": "Evolving Textures",
@@ -8764,6 +8946,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -9354,7 +9550,7 @@
   {
     "number": 15,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:015",
     "name": "Tidal Memory",
     "category": "Evolving Textures",
@@ -9432,6 +9628,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -10022,7 +10232,7 @@
   {
     "number": 16,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:016",
     "name": "Glassweather",
     "category": "Evolving Textures",
@@ -10100,6 +10310,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -10690,7 +10914,7 @@
   {
     "number": 17,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:017",
     "name": "Chromatic Fog",
     "category": "Evolving Textures",
@@ -10768,6 +10992,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 60
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -11358,7 +11596,7 @@
   {
     "number": 18,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:018",
     "name": "Sleeping Satellites",
     "category": "Evolving Textures",
@@ -11436,6 +11674,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -12026,7 +12278,7 @@
   {
     "number": 19,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:019",
     "name": "Liminal Bloom",
     "category": "Evolving Textures",
@@ -12104,6 +12356,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -12694,7 +12960,7 @@
   {
     "number": 20,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:020",
     "name": "Silver Current",
     "category": "Evolving Textures",
@@ -12772,6 +13038,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -13362,7 +13642,7 @@
   {
     "number": 21,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:021",
     "name": "Ensemble Strings",
     "category": "Strings",
@@ -13440,6 +13720,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 62
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -14030,7 +14324,7 @@
   {
     "number": 22,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:022",
     "name": "Tape Strings",
     "category": "Strings",
@@ -14108,6 +14402,20 @@
       "analogCharacter": 72,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -14698,7 +15006,7 @@
   {
     "number": 23,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:023",
     "name": "Soft Ensemble",
     "category": "Strings",
@@ -14776,6 +15084,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 35
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -15366,7 +15688,7 @@
   {
     "number": 24,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:024",
     "name": "Amber Orchestra",
     "category": "Strings",
@@ -15444,6 +15766,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -16034,7 +16370,7 @@
   {
     "number": 25,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:025",
     "name": "Chamber Halo",
     "category": "Strings",
@@ -16112,6 +16448,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 28
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -16702,7 +17052,7 @@
   {
     "number": 26,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:026",
     "name": "Faded Silk",
     "category": "Strings",
@@ -16780,6 +17130,20 @@
       "analogCharacter": 55,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -17370,7 +17734,7 @@
   {
     "number": 27,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:027",
     "name": "Violet Cellos",
     "category": "Strings",
@@ -17448,6 +17812,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -18038,7 +18416,7 @@
   {
     "number": 28,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:028",
     "name": "Airborne Strings",
     "category": "Strings",
@@ -18116,6 +18494,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 72
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -18706,7 +19098,7 @@
   {
     "number": 29,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:029",
     "name": "Analog Choir",
     "category": "Strings",
@@ -18784,6 +19176,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -19374,7 +19780,7 @@
   {
     "number": 30,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:030",
     "name": "Quiet Solstice",
     "category": "Strings",
@@ -19452,6 +19858,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -20042,7 +20462,7 @@
   {
     "number": 31,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:031",
     "name": "Deep Drone",
     "category": "Drones",
@@ -20120,6 +20540,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -20710,7 +21144,7 @@
   {
     "number": 32,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:032",
     "name": "Basalt",
     "category": "Drones",
@@ -20788,6 +21222,20 @@
       "analogCharacter": 65,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -21378,7 +21826,7 @@
   {
     "number": 33,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:033",
     "name": "Low Orbit",
     "category": "Drones",
@@ -21456,6 +21904,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 48
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -22046,7 +22508,7 @@
   {
     "number": 34,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:034",
     "name": "Iron Tide",
     "category": "Drones",
@@ -22124,6 +22586,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -22714,7 +23190,7 @@
   {
     "number": 35,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:035",
     "name": "Understory",
     "category": "Drones",
@@ -22792,6 +23268,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -23382,7 +23872,7 @@
   {
     "number": 36,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:036",
     "name": "Night Engine",
     "category": "Drones",
@@ -23460,6 +23950,20 @@
       "analogCharacter": 78,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -24050,7 +24554,7 @@
   {
     "number": 37,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:037",
     "name": "Murmur Field",
     "category": "Drones",
@@ -24128,6 +24632,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -24718,7 +25236,7 @@
   {
     "number": 38,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:038",
     "name": "Gravitation",
     "category": "Drones",
@@ -24796,6 +25314,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 65
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -25386,7 +25918,7 @@
   {
     "number": 39,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:039",
     "name": "Cavern Wire",
     "category": "Drones",
@@ -25464,6 +25996,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -26054,7 +26600,7 @@
   {
     "number": 40,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:040",
     "name": "Subterrane",
     "category": "Drones",
@@ -26132,6 +26678,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -26722,7 +27282,7 @@
   {
     "number": 41,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:041",
     "name": "Soft Beacon",
     "category": "Leads",
@@ -26800,6 +27360,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -27390,7 +27964,7 @@
   {
     "number": 42,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:042",
     "name": "Thin Air",
     "category": "Leads",
@@ -27468,6 +28042,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -28058,7 +28646,7 @@
   {
     "number": 43,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:043",
     "name": "Rounded Signal",
     "category": "Leads",
@@ -28136,6 +28724,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -28726,7 +29328,7 @@
   {
     "number": 44,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:044",
     "name": "Vintage Port",
     "category": "Leads",
@@ -28804,6 +29406,20 @@
       "analogCharacter": 65,
       "velocitySensitivity": 0,
       "thickness": 18
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -29394,7 +30010,7 @@
   {
     "number": 45,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:045",
     "name": "Evening Reed",
     "category": "Leads",
@@ -29472,6 +30088,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -30062,7 +30692,7 @@
   {
     "number": 46,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:046",
     "name": "Liquid Lead",
     "category": "Leads",
@@ -30140,6 +30770,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -30730,7 +31374,7 @@
   {
     "number": 47,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:047",
     "name": "Resonant Thread",
     "category": "Leads",
@@ -30808,6 +31452,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -31398,7 +32056,7 @@
   {
     "number": 48,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:048",
     "name": "Mono Lantern",
     "category": "Leads",
@@ -31476,6 +32134,20 @@
       "analogCharacter": 40,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -32066,7 +32738,7 @@
   {
     "number": 49,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:049",
     "name": "Blue Spark",
     "category": "Leads",
@@ -32144,6 +32816,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -32734,7 +33420,7 @@
   {
     "number": 50,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:050",
     "name": "Silk Pulse",
     "category": "Leads",
@@ -32812,6 +33498,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 45
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -33402,7 +34102,7 @@
   {
     "number": 51,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:051",
     "name": "Round Foundation",
     "category": "Bass",
@@ -33480,6 +34180,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -34070,7 +34784,7 @@
   {
     "number": 52,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:052",
     "name": "Pulse Anchor",
     "category": "Bass",
@@ -34148,6 +34862,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -34738,7 +35466,7 @@
   {
     "number": 53,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:053",
     "name": "Deep Rubber",
     "category": "Bass",
@@ -34816,6 +35544,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -35406,7 +36148,7 @@
   {
     "number": 54,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:054",
     "name": "Soft Acid",
     "category": "Bass",
@@ -35484,6 +36226,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -36074,7 +36830,7 @@
   {
     "number": 55,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:055",
     "name": "Octave Weight",
     "category": "Bass",
@@ -36152,6 +36908,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -36742,7 +37512,7 @@
   {
     "number": 56,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:056",
     "name": "Dark Step",
     "category": "Bass",
@@ -36820,6 +37590,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -37410,7 +38194,7 @@
   {
     "number": 57,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:057",
     "name": "Triangle Root",
     "category": "Bass",
@@ -37488,6 +38272,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -38078,7 +38876,7 @@
   {
     "number": 58,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:058",
     "name": "Warm Sub",
     "category": "Bass",
@@ -38156,6 +38954,20 @@
       "analogCharacter": 48,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -38746,7 +39558,7 @@
   {
     "number": 59,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:059",
     "name": "Midnight Pluck",
     "category": "Bass",
@@ -38824,6 +39636,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -39414,7 +40240,7 @@
   {
     "number": 60,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:060",
     "name": "Sine Floor",
     "category": "Bass",
@@ -39492,6 +40318,20 @@
       "analogCharacter": 0,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -40082,7 +40922,7 @@
   {
     "number": 61,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:061",
     "name": "Glass Droplet",
     "category": "Plucks",
@@ -40160,6 +41000,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -40750,7 +41604,7 @@
   {
     "number": 62,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:062",
     "name": "Copper Pin",
     "category": "Plucks",
@@ -40828,6 +41682,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -41418,7 +42286,7 @@
   {
     "number": 63,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:063",
     "name": "Mallet Arc",
     "category": "Plucks",
@@ -41496,6 +42364,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -42086,7 +42968,7 @@
   {
     "number": 64,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:064",
     "name": "Dust Bell",
     "category": "Plucks",
@@ -42164,6 +43046,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -42754,7 +43650,7 @@
   {
     "number": 65,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:065",
     "name": "Spring Pizz",
     "category": "Plucks",
@@ -42832,6 +43728,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -43422,7 +44332,7 @@
   {
     "number": 66,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:066",
     "name": "Short Circuit",
     "category": "Plucks",
@@ -43500,6 +44410,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -44090,7 +45014,7 @@
   {
     "number": 67,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:067",
     "name": "Muted Tine",
     "category": "Plucks",
@@ -44168,6 +45092,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -44758,7 +45696,7 @@
   {
     "number": 68,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:068",
     "name": "Amber Kalimba",
     "category": "Plucks",
@@ -44836,6 +45774,20 @@
       "analogCharacter": 50,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -45426,7 +46378,7 @@
   {
     "number": 69,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:069",
     "name": "Plucked Wire",
     "category": "Plucks",
@@ -45504,6 +46456,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -46094,7 +47060,7 @@
   {
     "number": 70,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:070",
     "name": "Pixel Harp",
     "category": "Plucks",
@@ -46172,6 +47138,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -46762,7 +47742,7 @@
   {
     "number": 71,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:071",
     "name": "63 Spring Glass",
     "category": "Digital",
@@ -46840,6 +47820,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -47430,7 +48424,7 @@
   {
     "number": 72,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:072",
     "name": "Vector Snow",
     "category": "Digital",
@@ -47508,6 +48502,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -48098,7 +49106,7 @@
   {
     "number": 73,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:073",
     "name": "Vocal Prism",
     "category": "Digital",
@@ -48176,6 +49184,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -48766,7 +49788,7 @@
   {
     "number": 74,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:074",
     "name": "Bell Archive",
     "category": "Digital",
@@ -48844,6 +49866,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -49434,7 +50470,7 @@
   {
     "number": 75,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:075",
     "name": "Crystalline Loop",
     "category": "Digital",
@@ -49512,6 +50548,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -50102,7 +51152,7 @@
   {
     "number": 76,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:076",
     "name": "Digital Dusk",
     "category": "Digital",
@@ -50180,6 +51230,20 @@
       "analogCharacter": 52,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -50770,7 +51834,7 @@
   {
     "number": 77,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:077",
     "name": "Chime Engine",
     "category": "Digital",
@@ -50848,6 +51912,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -51438,7 +52516,7 @@
   {
     "number": 78,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:078",
     "name": "Spectrum Veil",
     "category": "Digital",
@@ -51516,6 +52594,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 62
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -52106,7 +53198,7 @@
   {
     "number": 79,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:079",
     "name": "Hollow Glass",
     "category": "Digital",
@@ -52184,6 +53276,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -52774,7 +53880,7 @@
   {
     "number": 80,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:080",
     "name": "Binary Tide",
     "category": "Digital",
@@ -52852,6 +53958,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -53442,7 +54562,7 @@
   {
     "number": 81,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:081",
     "name": "Init VA",
     "category": "Vintage / FX",
@@ -53520,6 +54640,20 @@
       "analogCharacter": 0,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -54110,7 +55244,7 @@
   {
     "number": 82,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:082",
     "name": "Vintage Pulse",
     "category": "Vintage / FX",
@@ -54188,6 +55322,20 @@
       "analogCharacter": 48,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -54778,7 +55926,7 @@
   {
     "number": 83,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:083",
     "name": "Stereo Horizons",
     "category": "Vintage / FX",
@@ -54856,6 +56004,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 45
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -55446,7 +56608,7 @@
   {
     "number": 84,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:084",
     "name": "Classic Saw",
     "category": "Vintage / FX",
@@ -55524,6 +56686,20 @@
       "analogCharacter": 35,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -56114,7 +57290,7 @@
   {
     "number": 85,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:085",
     "name": "PWM Memory",
     "category": "Vintage / FX",
@@ -56192,6 +57368,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -56782,7 +57972,7 @@
   {
     "number": 86,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:086",
     "name": "Ring Garden",
     "category": "Vintage / FX",
@@ -56860,6 +58050,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -57450,7 +58654,7 @@
   {
     "number": 87,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:087",
     "name": "Cross Current",
     "category": "Vintage / FX",
@@ -57528,6 +58732,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -58118,7 +59336,7 @@
   {
     "number": 88,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:088",
     "name": "Synced Brass",
     "category": "Vintage / FX",
@@ -58196,6 +59414,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -58786,7 +60018,7 @@
   {
     "number": 89,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:089",
     "name": "Phaser Loom",
     "category": "Vintage / FX",
@@ -58864,6 +60096,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 30
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -59454,7 +60700,7 @@
   {
     "number": 90,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:090",
     "name": "Delay Apparition",
     "category": "Vintage / FX",
@@ -59532,6 +60778,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -60122,7 +61382,7 @@
   {
     "number": 91,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:091",
     "name": "Teal Steps",
     "category": "Arpeggios",
@@ -60200,6 +61460,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -60790,7 +62064,7 @@
   {
     "number": 92,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:092",
     "name": "Midnight Relay",
     "category": "Arpeggios",
@@ -60868,6 +62142,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -61458,7 +62746,7 @@
   {
     "number": 93,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:093",
     "name": "Glass Orbit",
     "category": "Arpeggios",
@@ -61536,6 +62824,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -62126,7 +63428,7 @@
   {
     "number": 94,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:094",
     "name": "Spring Circuit",
     "category": "Arpeggios",
@@ -62204,6 +63506,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -62794,7 +64110,7 @@
   {
     "number": 95,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:095",
     "name": "Amber Ladder",
     "category": "Arpeggios",
@@ -62872,6 +64188,20 @@
       "analogCharacter": 50,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -63462,7 +64792,7 @@
   {
     "number": 96,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:096",
     "name": "Velvet Triplets",
     "category": "Arpeggios",
@@ -63540,6 +64870,20 @@
       "analogCharacter": 48,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -64130,7 +65474,7 @@
   {
     "number": 97,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:097",
     "name": "Photon Rain",
     "category": "Arpeggios",
@@ -64208,6 +65552,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -64798,7 +66156,7 @@
   {
     "number": 98,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:098",
     "name": "Clockwork Bass",
     "category": "Arpeggios",
@@ -64876,6 +66234,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -65466,7 +66838,7 @@
   {
     "number": 99,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:099",
     "name": "Drift Mosaic",
     "category": "Arpeggios",
@@ -65544,6 +66916,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 0
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,
@@ -66134,7 +67520,7 @@
   {
     "number": 100,
     "format": "grimiss-mamb",
-    "version": 4,
+    "version": 5,
     "id": "factory:100",
     "name": "Endless Horizon",
     "category": "Arpeggios",
@@ -66212,6 +67598,20 @@
       "analogCharacter": 15,
       "velocitySensitivity": 0,
       "thickness": 45
+    },
+    "midi": {
+      "version": 1,
+      "notes": [],
+      "loopStart": 0,
+      "loopEnd": 15360,
+      "timing": "sync",
+      "tempo": 100,
+      "source": "seq",
+      "quantize": 0,
+      "playQuantize": 0,
+      "key": 0,
+      "scale": "major",
+      "scaleLock": false
     },
     "seq16": {
       "version": 2,

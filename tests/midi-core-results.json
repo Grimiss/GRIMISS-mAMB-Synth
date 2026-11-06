@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    "validated versioned MIDI documents",
+    "default OFF quantization and scale lock",
+    "independent unique note ownership",
+    "loop tails and long clips",
+    "FREE and SYNC",
+    "pause/stop/panic",
+    "undo redo",
+    "finite audible BOTH audio",
+    "sample-identical baseline all four current arp modes",
+    "render block invariance",
+    "legacy patch migration",
+    "corruption rejection",
+    "live same-pitch HOLD preservation",
+    "tempo phase and note-duration preservation"
+  ],
+  "audio": {
+    "energy": 64.78706049367543,
+    "peak": 0.1576085239648819,
+    "physicalListeningTest": false
+  }
+}

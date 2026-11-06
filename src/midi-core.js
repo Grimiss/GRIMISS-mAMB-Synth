@@ -1,0 +1,34 @@
+// Instrument-independent note documents. Ticks are quarter-note fractions (PPQ 960).
+const MICROSEQ_MIDI_PPQ=960;
+function microseqMidiDefaults(){return{version:1,notes:[],loopStart:0,loopEnd:15360,timing:'sync',tempo:100,source:'seq',quantize:0,playQuantize:0,key:0,scale:'major',scaleLock:false};}
+function microseqMidiValidate(input){
+ const d=microseqMidiDefaults();if(input==null)return d;if(typeof input!=='object'||Array.isArray(input)||input.version!==1)throw Error('Unsupported MIDI document');
+ const v={...d,...input};const num=(x,min,max)=>typeof x==='number'&&Number.isFinite(x)&&x>=min&&x<=max;
+ if(!num(v.loopStart,0,3932159)||!num(v.loopEnd,v.loopStart+1,3932160)||!num(v.tempo,20,300)||!['sync','free'].includes(v.timing)||!['seq','midi','both'].includes(v.source)||![0,960,480,240,120].includes(v.quantize)||![-1,0,960,480,240,120].includes(v.playQuantize)||!Number.isInteger(v.key)||v.key<0||v.key>11||!Object.hasOwn(SEQ16_SCALES,v.scale)||typeof v.scaleLock!=='boolean')throw Error('Invalid MIDI settings');
+ if(!Array.isArray(v.notes)||v.notes.length>10000)throw Error('MIDI clips support at most 10000 notes');const ids=new Set();
+ v.notes=v.notes.map(n=>{if(!n||typeof n.id!=='string'||n.id.length>128||ids.has(n.id)||!Number.isInteger(n.pitch)||!num(n.pitch,0,127)||!num(n.start,0,3932160)||!num(n.duration,1,3932160)||!num(n.velocity,0.001,1)||![0,960,480,240,120].includes(n.snap||0))throw Error('Invalid MIDI note');ids.add(n.id);return{id:n.id,pitch:n.pitch,start:n.start,duration:n.duration,velocity:n.velocity,snap:n.snap||0};});
+ return Object.fromEntries(Object.keys(d).map(k=>[k,v[k]]));
+}
+function microseqMidiNoteStart(n,clip){const q=clip.playQuantize===-1?0:clip.playQuantize||n.snap;const at=q?Math.round(n.start/q)*q:n.start;return n.start>=clip.loopStart&&n.start<clip.loopEnd?Math.max(clip.loopStart,Math.min(clip.loopEnd-1,at)):at;}
+function microseqMidiScalePitch(p,key,scale){const notes=SEQ16_SCALES[scale]?.notes;if(!notes?.length)return p;for(let delta=0;delta<12;delta++)for(const n of delta?[p-delta,p+delta]:[p])if(n>=0&&n<=127&&notes.includes(((n-key)%12+12)%12))return n;return p;}
+function createMicroseqMidiHistory(initial){let value=microseqMidiValidate(initial),past=[],future=[];const clone=x=>JSON.parse(JSON.stringify(x));return{get value(){return clone(value)},commit(next){next=microseqMidiValidate(next);if(JSON.stringify(next)===JSON.stringify(value))return;past.push(clone(value));if(past.length>100)past.shift();future=[];value=next;},undo(){if(past.length){future.push(value);value=past.pop();}return clone(value);},redo(){if(future.length){past.push(value);value=future.pop();}return clone(value);},load(next){value=microseqMidiValidate(next);past=[];future=[];}};}
+// Audio-frame scheduler. Note ownership is unique for every occurrence, including loop tails.
+function createMicroseqMidiPlayer(synth,sr=48000,initial,masterTempo=100){
+ let clip=microseqMidiValidate(initial),tick=clip.loopStart,elapsed=0,frame=0,running=false,syncRunning=false,serial=0;const active=new Map();let ordered=[],cursor=0;
+ function rate(){return (clip.timing==='free'?clip.tempo:masterTempo)*960/(60*sr);}
+ function release(){for(const source of active.keys())synth.message({type:'sourceOff',source,disconnect:true});active.clear();}
+ function compile(){ordered=clip.notes.filter(n=>n.start>=clip.loopStart&&n.start<clip.loopEnd).map(n=>({...n,at:microseqMidiNoteStart(n,clip)})).filter(n=>n.at>=clip.loopStart&&n.at<clip.loopEnd).sort((a,b)=>a.at-b.at);cursor=ordered.findIndex(n=>n.at>=tick-1e-6);if(cursor<0)cursor=ordered.length;}
+ function configure(v){const next=microseqMidiValidate(v);for(const[source,a]of active){const oldNote=clip.notes.find(n=>n.id===a.id),newNote=next.notes.find(n=>n.id===a.id);if(next.source==='seq'||next.timing!==clip.timing||next.loopStart!==clip.loopStart||next.loopEnd!==clip.loopEnd||!newNote||oldNote?.pitch!==newNote.pitch){synth.message({type:'sourceOff',source,disconnect:true});active.delete(source);}}const oldRate=rate(),old=clip;clip=next;const newRate=rate();if(oldRate!==newRate)for(const a of active.values())a.off=frame+(a.off-frame)*oldRate/newRate;if(tick<clip.loopStart||tick>=clip.loopEnd)tick=clip.loopStart;if(old.timing!==clip.timing)running=clip.timing==='sync'?syncRunning:running;compile();if(running)while(cursor<ordered.length&&ordered[cursor].at<tick+1e-6)cursor++;}
+ function transport(action){if(action==='toggle')action=running?'pause':'run';if(action==='run')running=true;else if(action==='pause'){running=false;release();}else if(action==='stop'||action==='reset'){running=false;release();tick=clip.loopStart;elapsed=0;compile();}}
+ function message(e){if(e.type==='midiConfig'){configure(e.value);return true;}if(e.type==='midiTransport'){transport(e.action);return true;}if(e.type==='params'&&Number.isFinite(e.value?.tempo))masterTempo=e.value.tempo;if(e.type==='panic'){transport('stop');syncRunning=false;}return false;}
+ function follow(state){syncRunning=!!state?.running;if(clip.timing==='sync'&&running!==syncRunning){running=syncRunning;if(!running)release();}}
+ function render(out,offset=0,length=out.length-offset){let at=offset,end=offset+length;while(at<end){
+ const speed=rate(),enabled=running&&clip.source!=='seq';for(const[source,a]of active)if(a.off<=frame){synth.message({type:'sourceOff',source,disconnect:true});active.delete(source);}
+ if(running&&tick>=clip.loopEnd-1e-6){tick=clip.loopStart+(tick-clip.loopEnd);compile();}
+ if(running)while(cursor<ordered.length&&ordered[cursor].at<=tick+1e-6){const n=ordered[cursor++];if(enabled&&active.size<512){const source='piano:'+ ++serial;synth.message({type:'on',note:n.pitch,velocity:n.velocity,gain:1,source,generated:true});active.set(source,{id:n.id,off:frame+Math.max(1,Math.round(n.duration/speed)),remaining:n.duration});}}
+ let count=end-at;if(running){const next=cursor<ordered.length?ordered[cursor].at:clip.loopEnd;count=Math.min(count,Math.max(1,Math.ceil((Math.min(next,clip.loopEnd)-tick)/speed-1e-7)));}for(const a of active.values())count=Math.min(count,Math.max(1,a.off-frame));
+ synth.render(out,at,count);frame+=count;at+=count;if(running){tick+=count*speed;elapsed+=count*speed;}
+ }}
+ function tempoMessage(e){const before=rate();message(e);const after=rate();if(before!==after)for(const a of active.values())a.off=frame+(a.off-frame)*before/after;}
+ compile();return{message:tempoMessage,render,follow,release,get source(){return clip.source;},snapshot(){return{tick,absoluteTick:clip.loopStart+elapsed,frame,running,active:active.size,timing:clip.timing,tempo:clip.timing==='free'?clip.tempo:masterTempo,source:clip.source};}};
+}

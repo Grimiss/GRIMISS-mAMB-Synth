@@ -17,15 +17,18 @@ function createMambInstrument(initial,sr=48000,seed=12345){
  }}
  let inputGain=0,inputTarget=0;const inputAlpha=1-Math.exp(-1/(sr*.02));
  const synth=createMambEngine(synthValues(initial),sr,seed),effects=createMambEffects(initial,sr);
- const arp=createMambArpeggiator(synth,initial,sr);
- const seq=typeof createMambSequencer==='function'?createMambSequencer(synth,arp,sr,initial):null;
- function message(event){if(seq?.message(event))return;if(arp.message(event))return;if(event.type==='audioInputGain'){if(Number.isFinite(event.value))inputTarget=Math.max(0,Math.min(1,event.value));return}if(event.type==='params'){if(typeof event.value?.voiceMode==='string')ensembleMode(event.value.voiceMode);if(Number.isFinite(event.value?.thickness))thicknessTarget=Math.max(0,Math.min(1,event.value.thickness/100));synth.message({type:'params',value:synthValues(event.value||{})});effects.setParameters(event.value||{})}else {synth.message(event);if(event.type==='panic'){inputTarget=0;ensemble.fill(0);ensemblePanicRemaining=Math.ceil(sr*.018)+128;effects.panic()}}}
- function render(left,right,inputL,inputR){if(seq)seq.render(left);else arp.render(left);if(ensemblePanicRemaining>0){
+ const midi=typeof createMicroseqMidiPlayer==='function'?createMicroseqMidiPlayer(synth,sr,initial.midi,initial.tempo):null;
+ const sink={message(e){if(midi?.source==='midi'&&e.type==='on'&&e.source?.startsWith('seq16:'))return;synth.message(e);},render(out,offset,length){if(midi)midi.render(out,offset,length);else synth.render(out,offset,length);}};
+ const arp=createMambArpeggiator(sink,initial,sr);
+ const seq=typeof createMambSequencer==='function'?createMambSequencer(sink,arp,sr,initial):null;
+ if(midi)seq?.setOutputEnabled(midi.source!=='midi');
+ function message(event){if(midi&&['midiConfig','midiTransport'].includes(event.type)){midi.message(event);seq?.setOutputEnabled(midi.source!=='midi');if(midi.source==='midi'){synth.message({type:'sourceOff',source:'seq16:pitch'});synth.message({type:'sourceOff',source:'seq16:pitch:B'});}return;}midi?.message(event);if(seq?.message(event)){if(event.type==='seqTransport'&&['stop','reset'].includes(event.action)&&midi?.snapshot().timing==='sync')midi.message({type:'midiTransport',action:event.action});midi?.follow(seq);return;}if(arp.message(event))return;if(event.type==='audioInputGain'){if(Number.isFinite(event.value))inputTarget=Math.max(0,Math.min(1,event.value));return}if(event.type==='params'){if(typeof event.value?.voiceMode==='string')ensembleMode(event.value.voiceMode);if(Number.isFinite(event.value?.thickness))thicknessTarget=Math.max(0,Math.min(1,event.value.thickness/100));synth.message({type:'params',value:synthValues(event.value||{})});effects.setParameters(event.value||{})}else {synth.message(event);if(event.type==='panic'){inputTarget=0;ensemble.fill(0);ensemblePanicRemaining=Math.ceil(sr*.018)+128;effects.panic()}}}
+ function render(left,right,inputL,inputR){midi?.follow(seq);if(seq)seq.render(left);else arp.render(left);if(ensemblePanicRemaining>0){
  // Do not write fading voices back into the ensemble after PANIC cleared it.
  // Otherwise its delayed output can repopulate the already-reset reverb.
  right.set(left);ensemblePanicRemaining-=left.length;
  }else spread(left,right);if(inputL&&(inputTarget>0||inputGain>1e-8)){for(let i=0;i<left.length;i++){inputGain+=(inputTarget-inputGain)*inputAlpha;right[i]=right[i]+(inputR||inputL)[i]*inputGain;left[i]=left[i]+inputL[i]*inputGain}effects.process(left,right,left,right)}else effects.process(left,right,left,right)}
- function snapshot(){const state=synth.snapshot();state.arpeggiator=arp.snapshot();if(seq)state.sequencer=seq.snapshot();if(state.arpeggiator.arpOn){state.held=state.arpeggiator.held;state.pressed=state.arpeggiator.pressed}state.effects=effects.snapshot();state.thicknessStereo={amount:thickness,target:thicknessTarget,algorithm:'shared detuned ensemble',detuneCents:targetRateL===(1-2**(-4/1200))/windowSamples?4:9,allocatedBytes:ensemble.byteLength};return state}
+ function snapshot(){const state=synth.snapshot();if(midi)state.midi=midi.snapshot();state.arpeggiator=arp.snapshot();if(seq)state.sequencer=seq.snapshot();if(state.arpeggiator.arpOn){state.held=state.arpeggiator.held;state.pressed=state.arpeggiator.pressed}state.effects=effects.snapshot();state.thicknessStereo={amount:thickness,target:thicknessTarget,algorithm:'shared detuned ensemble',detuneCents:targetRateL===(1-2**(-4/1200))/windowSamples?4:9,allocatedBytes:ensemble.byteLength};return state}
  return {render,message,snapshot};
 }
 

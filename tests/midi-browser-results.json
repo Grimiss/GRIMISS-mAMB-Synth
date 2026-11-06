@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    "draw/paint/undo/redo",
+    "nondestructive scale",
+    "FREE independent transport",
+    "popup close continues",
+    "live recording overdub velocity duration",
+    "stop release",
+    "extended loop",
+    "patch and draft restore",
+    "move/resize",
+    "individual velocity",
+    "Ctrl erase",
+    "popup drag",
+    "browser touch",
+    "MIDI user patch round trip",
+    "KEEP MIDI",
+    "legacy empty MIDI",
+    "SEQ library excludes MIDI",
+    "consumed root excluded"
+  ]
+}
