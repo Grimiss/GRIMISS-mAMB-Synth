@@ -119,3 +119,5 @@ Latest Simple view: SEQ16_SIMPLE_VIEW.md supersedes earlier control placement. A
 Published simplified SEQ16 as Site version 32 (native deployment succeeded). Development 9e4f6ec; Site source e447c39. Rollback version31 preserved. No development merge to main. See reports/mikroseq-simple-view-release-verification.json.
 
 Current update: 32-pattern song popup, independent bank roots, right-hand bank/layout/reset toolbar and quieter illumination. See SEQ16_SONG_PROGRAM.md. Rollback branch checkpoint/pre-song32 preserves Site32 development state. Keep development on codex/controller-workflow-v0.7; never merge dev main.
+
+Song popup release deployed successfully: Site source 4c08778, development 849dc5a. Rollback hosted version32 preserved. Sequencer browser tests including ScriptProcessor fallback PASS. See reports/song32-release-verification.json.
