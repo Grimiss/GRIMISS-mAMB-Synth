@@ -5,7 +5,7 @@
     "pitch drag, arrow and wheel edits remain semitone quantised; green controls absent",
     "two simultaneous browser touch contacts edit independent pitch handles",
     "rapid rotateX switching never resets the sample clock or interrupts real audible Worklet playback",
-    "all four visible mode choices and selected per-step gate reach the live audio engine",
+    "all four Advanced mode choices and matrix per-step gate reach the live audio engine",
     "synthetic MIDI messages retain ownership and audio in both faces (physical device not tested)",
     "legacy defaults, complete additive patch recall and session/view persistence without automatic playback",
     "old removed-mode patches show a migration notice, preserve ARP enable/root/program and ignore green data",

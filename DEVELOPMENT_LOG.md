@@ -176,3 +176,7 @@ Reorganised only the SEQ face: narrower columns, widened PATTERN/PERFORMANCE gro
 ## 2026-11-05 — touch audio activation compatibility
 
 Added standard trusted completed-tap activation/resume, feature-detected playback audio session (preserving play-and-record), and clear suspended/interrupted tap-to-resume status. Existing DSP/sequence/patch state untouched. Chromium simulations validate touch-down rejection with completed-tap success, audible Worklet/fallback output and sequence continuity on interruption. Tablet model/browser and physical-device outcome remain unverified; see TABLET_AUDIO_STARTUP.md.
+
+## 2026-11-06 — Simple/Advanced, three-state steps and pause
+
+Implemented Simple main view with always-visible four directions; per-step ON/REST/ACC cycling and green/grey/pink caps; green A/filter-blue B bank colours; bank-coloured controls; snapped per-bank LENGTH drag bars; root-note dropdown; Advanced probability/gate matrix and retained advanced arp/root/dual settings. Removed separate rest/accent controls. Added real pause with position/fraction preservation, safe space-bar toggle and paused tempo/config editing. Synth/effects DSP unchanged. See SEQ16_SIMPLE_VIEW.md. Existing pitch/program storage retained.

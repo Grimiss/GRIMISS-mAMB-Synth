@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": [
+    "ON/REST/ACC cycle updates actual rests/accents and green/grey/pink cap colours",
+    "Advanced expression matrix, root dropdown and green/blue bank controls bind correctly",
+    "Draggable/keyboard length handles snap to exact bank step endings independently",
+    "Space and Play/Pause freeze/resume sequence position without restarting; text/matrix editing is protected",
+    "Step states, root and Advanced matrix round-trip through patch storage",
+    "Simplified layout fits both target screen sizes"
+  ],
+  "errors": [],
+  "physicalHardwareTested": false
+}

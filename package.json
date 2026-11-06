@@ -31,7 +31,8 @@
     "test:pitch-only": "node tests/pitch-only-compatibility.cjs && node tests/sequencer.cjs && node tests/sequencer-stability.cjs && node tests/root-transpose.cjs && node tests/root-program.cjs && node tests/root-program-audio.cjs && node tests/sequencer-browser.cjs && node tests/root-program-browser.cjs",
     "test:direction": "node tests/seq-direction-browser.cjs",
     "test:seq-layout": "node tests/seq-buttons-browser.cjs && node tests/sequencer-browser.cjs && node tests/root-program-browser.cjs",
-    "test:tablet-audio": "node tests/tablet-audio-browser.cjs"
+    "test:tablet-audio": "node tests/tablet-audio-browser.cjs",
+    "test:simple": "node tests/seq-pause.cjs && node tests/seq-simple-browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

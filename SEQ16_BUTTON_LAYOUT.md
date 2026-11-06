@@ -1,3 +1,5 @@
+> Superseded control placement: see SEQ16_SIMPLE_VIEW.md for the current Simple/Advanced view, step states, length bars and Play/Pause.
+
 # SEQ-16 performance layout
 
 The lower housing and keyboard/SEQ flip remain unchanged. Only the sequencer face and a modal detail panel are reorganised. Sequencer timing, pitch/scale calculations, voice allocation and synthesis DSP are unchanged.
