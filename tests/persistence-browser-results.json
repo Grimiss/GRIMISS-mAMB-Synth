@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "all 100 factory patches restore explicit complete SEQ state without a session fallback",
+    "user patch saves complete sound, Dual 8, Song Program and effective keyboard root with a stable ID",
+    "rename preserves stable identity and unsaved sound/sequence edits without recalling the saved patch",
+    "KEEP SEQ retains musical/arp/tempo state while sound changes; OFF restores full incoming data",
+    "SAVE/LOAD SEQ uses musical-only documents, reuses a different sound and never overwrites saved patches",
+    "portable import makes a protected copy; rename/delete use stable IDs and leave working notes intact",
+    "invalid and wrong-type imports are rejected before any working-state mutation",
+    "restart recovers complete unsaved sound plus SEQ together without automatic playback",
+    "keyboard root recalls correctly; KEEP preserves live sequence advancement, flip continuity and PANIC ownership",
+    "concurrent library changes are detected instead of silently overwriting another window",
+    "legacy migration preserves raw libraries, quarantines corruption and recovers global SEQ once without overriding factory recall",
+    "unavailable storage is reported visibly and cannot claim a successful library save"
+  ],
+  "errors": [],
+  "physicalTabletVerified": false
+}
