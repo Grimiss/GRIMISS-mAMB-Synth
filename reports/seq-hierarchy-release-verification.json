@@ -1,0 +1,10 @@
+{
+  "status": "succeeded",
+  "developmentCommit": "6429e5e0a61517e7b22c3fc04a24dc5371e3aff6",
+  "siteCommit": "783de8faa398d1969b9ab5e4b06e4f9e729329eb",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "rollbackVersion": 33,
+  "browser": "PASS single/dual at 1920x1080 and 1600x900; Worklet and fallback",
+  "audioRegression": "PASS",
+  "physicalTabletVerified": false
+}

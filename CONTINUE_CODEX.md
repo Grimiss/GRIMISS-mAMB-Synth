@@ -123,3 +123,5 @@ Current update: 32-pattern song popup, independent bank roots, right-hand bank/l
 Song popup release deployed successfully: Site source 4c08778, development 849dc5a. Rollback hosted version32 preserved. Sequencer browser tests including ScriptProcessor fallback PASS. See reports/song32-release-verification.json.
 
 SEQ hierarchy update: see SEQ16_HARDWARE_HIERARCHY.md. Explicit RESET differs from transport-position reset and factory defaults. Live song display/length editing uses active arrangement data without overwriting saved base settings. Keep existing development branch; rollback checkpoint/pre-seq-hierarchy and hosted33.
+
+SEQ hardware hierarchy release successfully deployed. Development6429e5e; Site783de8f; prior hosted33 rollback preserved. See reports/seq-hierarchy-release-verification.json. No development merge to main.
