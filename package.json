@@ -34,7 +34,8 @@
     "test:tablet-audio": "node tests/tablet-audio-browser.cjs",
     "test:simple": "node tests/seq-pause.cjs && node tests/seq-simple-browser.cjs",
     "test:song": "node tests/song-program.cjs && node tests/song-program-audio.cjs && node tests/song-program-browser.cjs",
-    "test:hierarchy": "node tests/seq-hierarchy-browser.cjs"
+    "test:hierarchy": "node tests/seq-hierarchy-browser.cjs",
+    "test:alternate": "node tests/seq-alternate.cjs && node tests/seq-alternate-audio.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

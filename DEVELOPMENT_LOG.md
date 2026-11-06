@@ -188,3 +188,7 @@ Moved A/B, RESET and layout buttons to the right toolbar; reduced cap/button/len
 ## 2026-11-06 — SEQ physical hierarchy and live arrangement feedback
 
 Rebuilt only the lower control deck into inset Transport/Pattern/Performance/Song groups. Separate vector Play/Pause/Stop buttons, simultaneous A/B roots, explicit song arm switch, quieter alternating song table, requested Middle-C/ON/FWD/16-step/eighth/Major reset. Main bars, note readouts and parameter indicators track live song patterns. Factory defaults and synthesis/FX untouched. See SEQ16_HARDWARE_HIERARCHY.md.
+
+## 2026-11-06 — approved control mockup and alternating banks
+
+Reconstructed two-row right control deck from the approved mockup, with actual transport/song status screens, physical button hierarchy and secondary reset placement. Added persisted A+B/A→B Dual 8 playback through the existing sample-clock scheduler. No oscillator/effects DSP changes. See SEQ16_CONTROL_MOCKUP.md for semantics, tests and rollback.
