@@ -135,3 +135,5 @@ MS-08 refinement: see MS08_REFINEMENT.md. New module/CSS appended after sequence
 MS-08 update successfully published: development fa8e624, Site7a0dcc9; previous hosted35 rollback preserved. See reports/ms08-release-verification.json. No development merge to main.
 
 Approved persistence scope implemented. See PATCH_SEQUENCE_LIBRARY.md for usage/migration/limitations and MICROSEQ_STATE_ARCHITECTURE.md for standalone boundaries. Factory sounds unchanged; explicit factory SEQ; KEEP SEQ in patch browser; SAVE/LOAD SEQ in Advanced. IndexedDB libraries with raw legacy backup, quarantine, full recovery journal and per-window drafts. Patch version4 / sequence version1. No MIDI-editor/host work. Rollback checkpoint/pre-persistence-library and hosted36. Current development branch remains codex/controller-workflow-v0.7.
+
+Persistence/SEQ library successfully deployed: development75456ae, Site2197a38; previous hosted36 preserved. All100 factory audio renders PASS. See reports/persistence-release-verification.json. New storage is separate; rolling back does not delete it, but old builds do not display new sequence libraries. No development merge to main.

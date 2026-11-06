@@ -1,0 +1,19 @@
+{
+  "status": "succeeded",
+  "developmentCommit": "75456aecce72e50d34c41cf5a424f8dff8922e98",
+  "siteCommit": "2197a38678fccb8d98ea81d174a0dcd4164e54a8",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "rollbackVersion": 36,
+  "architecture": "standalone single instrument",
+  "tests": {
+    "factorySoundParameters": "all100 unchanged",
+    "factoryAudio": "all100 finite bounded nonzero",
+    "patchLibraryRecovery": "PASS",
+    "faultInjectionMigration": "PASS",
+    "workflow": "11 groups PASS",
+    "sequencerBrowser": "Worklet/fallback, touch, simulated MIDI, flip PASS",
+    "audio": "root/program/alternating/neutral-shape and60s stress PASS"
+  },
+  "physicalTabletVerified": false,
+  "migration": "legacy originals retained; raw backups and quarantine exportable; old global SEQ recovered separately"
+}
