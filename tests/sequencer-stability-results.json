@@ -16,14 +16,14 @@
     {
       "case": "SEQ stopped, ARP+FX",
       "renderedSeconds": 2,
-      "medianMilliseconds": 482.49669599999925,
-      "renderToRealtimeRatio": 0.2412483479999996
+      "medianMilliseconds": 458.84191699999974,
+      "renderToRealtimeRatio": 0.22942095849999988
     },
     {
       "case": "SEQ pitch+ARP+FX",
       "renderedSeconds": 2,
-      "medianMilliseconds": 1068.2046769999997,
-      "renderToRealtimeRatio": 0.5341023384999999
+      "medianMilliseconds": 739.6522910000003,
+      "renderToRealtimeRatio": 0.36982614550000015
     }
   ]
 }

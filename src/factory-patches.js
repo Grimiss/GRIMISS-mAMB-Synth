@@ -182,6 +182,6 @@ function installMambFactoryPatches(presets){
  ];
  for(const[name,base,extra]of arpBank){const p={...presets[base],...extra,arpOn:true,routes:presets[base].routes.map(r=>({...r}))};presets[name]=p;catalog.push({number:++number,name,category:'Arpeggios',patch:p})}
  const freeze=x=>{for(const v of Object.values(x))if(v&&typeof v==='object')freeze(v);return Object.freeze(x);};
- for(const item of catalog){item.patch.id='factory:'+String(item.number).padStart(3,'0');item.patch.category=item.category;item.patch.seq16=mambNormalizeSeq(mambSeqDefaults());freeze(item.patch);}
+ for(const item of catalog){item.patch.id='factory:'+String(item.number).padStart(3,'0');item.patch.name=item.name;item.patch.category=item.category;item.patch.seq16=mambNormalizeSeq(mambSeqDefaults());freeze(item.patch);}
  if(catalog.length!==100||new Set(catalog.map(p=>p.name)).size!==100)throw Error('Factory catalog must contain100 unique patches');return catalog;
 }

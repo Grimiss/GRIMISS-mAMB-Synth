@@ -196,3 +196,7 @@ Reconstructed two-row right control deck from the approved mockup, with actual t
 ## 2026-11-06 — MS-08 control/header polish and OSC1 Reshape
 
 Added ms08-interface.js/ms08.css for the requested header, logo vector, patch-screen access, bank/amber states, quieter step controls, mixer fill palette and clarified playback/rate/status. Implemented phase reshaping on non-pulse OSC1 waves while retaining PWM, original parameter IDs and neutral sample compatibility. Added audio/UI regressions and rollback. Song editor tile/master-detail approach documented as a proposal; working editor retained. See MS08_REFINEMENT.md.
+
+## 2026-11-06 — patch persistence and independent SEQ library
+
+Approved standalone-only scope. Added versioned pure document validators, transactional IndexedDB storage, preserved legacy backups/quarantine, complete working journals/drafts and conflict checks. Unified patch paths and nondestructive rename/delete; all100 factory sound parameters verified unchanged with explicit independent SEQ/Song data. KEEP SEQ preserves musical/arp/tempo state and live sequence continuity. SAVE/LOAD SEQ added to Advanced with named library and portable import/export. Corrected latched keyboard root and recalled Song arming. No MIDI editor, extra timbres, host tracks or DS-9/GMC-9000/DM-848 changes. See PATCH_SEQUENCE_LIBRARY.md and MICROSEQ_STATE_ARCHITECTURE.md.

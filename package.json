@@ -36,7 +36,8 @@
     "test:song": "node tests/song-program.cjs && node tests/song-program-audio.cjs && node tests/song-program-browser.cjs",
     "test:hierarchy": "node tests/seq-hierarchy-browser.cjs",
     "test:alternate": "node tests/seq-alternate.cjs && node tests/seq-alternate-audio.cjs",
-    "test:ms08": "node tests/reshape.cjs && node tests/ms08-browser.cjs"
+    "test:ms08": "node tests/reshape.cjs && node tests/ms08-browser.cjs",
+    "test:persistence": "node tests/persistence-core.cjs && node tests/persistence-browser.cjs && node tests/persistence-faults-browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

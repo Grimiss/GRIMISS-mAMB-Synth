@@ -85,8 +85,8 @@
     {
       "name": "Northern Mist",
       "number": 14,
-      "peak": 0.005938100628554821,
-      "energy": 0.18079760535548833
+      "peak": 0.007336664479225874,
+      "energy": 0.18311177917373414
     },
     {
       "name": "Tidal Memory",
@@ -97,8 +97,8 @@
     {
       "name": "Glassweather",
       "number": 16,
-      "peak": 0.049075979739427567,
-      "energy": 46.35397649130404
+      "peak": 0.05274038016796112,
+      "energy": 48.71757506107149
     },
     {
       "name": "Chromatic Fog",
@@ -109,8 +109,8 @@
     {
       "name": "Sleeping Satellites",
       "number": 18,
-      "peak": 0.05778598040342331,
-      "energy": 138.3517834413482
+      "peak": 0.057920292019844055,
+      "energy": 136.78497596033597
     },
     {
       "name": "Liminal Bloom",
@@ -121,8 +121,8 @@
     {
       "name": "Silver Current",
       "number": 20,
-      "peak": 0.06574568897485733,
-      "energy": 97.53531118464315
+      "peak": 0.0629250630736351,
+      "energy": 92.11949845244666
     },
     {
       "name": "Ensemble Strings",
@@ -181,8 +181,8 @@
     {
       "name": "Quiet Solstice",
       "number": 30,
-      "peak": 0.026670902967453003,
-      "energy": 10.74498953214865
+      "peak": 0.029382841661572456,
+      "energy": 10.692872101014505
     },
     {
       "name": "Deep Drone",
@@ -241,8 +241,8 @@
     {
       "name": "Subterrane",
       "number": 40,
-      "peak": 0.0071911015547811985,
-      "energy": 0.6566934040170915
+      "peak": 0.007898133248090744,
+      "energy": 0.6746334691601424
     },
     {
       "name": "Soft Beacon",
@@ -421,8 +421,8 @@
     {
       "name": "Pixel Harp",
       "number": 70,
-      "peak": 0.03779890015721321,
-      "energy": 5.7849369014984715
+      "peak": 0.03773477301001549,
+      "energy": 6.251468002190966
     },
     {
       "name": "63 Spring Glass",
@@ -439,8 +439,8 @@
     {
       "name": "Vocal Prism",
       "number": 73,
-      "peak": 0.04438222944736481,
-      "energy": 34.2713534214902
+      "peak": 0.044544536620378494,
+      "energy": 29.734972956552436
     },
     {
       "name": "Bell Archive",
@@ -451,8 +451,8 @@
     {
       "name": "Crystalline Loop",
       "number": 75,
-      "peak": 0.03755796328186989,
-      "energy": 6.683096751362738
+      "peak": 0.03774672746658325,
+      "energy": 8.674861066609754
     },
     {
       "name": "Digital Dusk",
@@ -481,8 +481,8 @@
     {
       "name": "Binary Tide",
       "number": 80,
-      "peak": 0.05179816111922264,
-      "energy": 42.7941907517954
+      "peak": 0.046754200011491776,
+      "energy": 34.84605362157792
     },
     {
       "name": "Init VA",
@@ -535,8 +535,8 @@
     {
       "name": "Phaser Loom",
       "number": 89,
-      "peak": 0.07320193946361542,
-      "energy": 72.55906625618721
+      "peak": 0.07829036563634872,
+      "energy": 72.68038646515103
     },
     {
       "name": "Delay Apparition",
@@ -583,8 +583,8 @@
     {
       "name": "Photon Rain",
       "number": 97,
-      "peak": 0.11602913588285446,
-      "energy": 112.35870818061207
+      "peak": 0.10449862480163574,
+      "energy": 84.52825432699915
     },
     {
       "name": "Clockwork Bass",
@@ -595,8 +595,8 @@
     {
       "name": "Drift Mosaic",
       "number": 99,
-      "peak": 0.06343547999858856,
-      "energy": 55.40431751363863
+      "peak": 0.05589819326996803,
+      "energy": 45.62118790340391
     },
     {
       "name": "Endless Horizon",

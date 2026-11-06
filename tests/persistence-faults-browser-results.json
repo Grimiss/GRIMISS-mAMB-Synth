@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "saved Song Mode is armed on recall, starts its arrangement only on Play and never auto-starts audio",
+    "failed write transactions do not claim success or mutate the saved sequence library",
+    "malformed legacy JSON and recovery journals remain exportable after startup repair",
+    "selected legacy USER patches migrate to stable IDs and take precedence over the global legacy sequence",
+    "corrupted stored entries and invalid drafts are quarantined before application while valid library entries survive",
+    "a hung database open times out visibly without permanently locking the standalone instrument"
+  ],
+  "errors": []
+}
