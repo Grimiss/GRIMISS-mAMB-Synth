@@ -1,0 +1,24 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 51,
+  "siteCommit": "6e2626a8f9292f3367a108f4f83d68e235759f5f",
+  "developmentCommit": "24d3fc30b0cfed5a7b40a452319573ebefdea09d",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_d610e3cf23888191841c09ff6dc7c451",
+  "deploymentId": "appgdep_6aef901c175c81919a7e209a772df4ec",
+  "rollbackSiteVersion": 50,
+  "rollbackSiteCommit": "acdf1e10254598b64246e3585ad5aad6bac6d971",
+  "rollbackBranch": "rollback/pre-voice-section-refinement",
+  "htmlSha256": "3330ccc784c052bad046a9350ff5c6f7f4bd4ac3a2bc2f08aae1d7d9339dbe16",
+  "engineAndOtherRuntimeScriptsUnchanged": true,
+  "presentationScriptChanged": "mamb-refinements (existing mode-node move)",
+  "tests": [
+    "1920 and 1280 VOICE layout/order/green rings and outside geometry PASS",
+    "equal spacing and unclipped keyboard-hidden expansion PASS",
+    "actual poly/mono/unison voice allocation and selected-text glow PASS",
+    "native slider drag, Home/End, mouse wheel and full patch recall PASS"
+  ],
+  "physicalWindowsTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded. Packaged Chromium layout and actual audio/control checks passed. Direct live inspection remains unavailable due to the previously verified environment proxy restriction; not retried."
+}
