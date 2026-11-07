@@ -98,3 +98,10 @@ html.fit-screen.reference-geometry.control-refinement main .voice .physical-knob
   stroke: #284334 !important;
 }
 /* The expanded keyboard-hidden view distributes spare height between groups. */
+/* Equal shorter slots with aligned labels at the left. Group heights stay fixed. */
+html.fit-screen.reference-geometry.control-refinement main .voice :is(#analogCharacterControl, #thicknessControl) {
+  display: grid !important;
+  grid-template-columns: 58px minmax(0, 1fr) !important;
+  gap: 0 6px !important;
+  align-items: center !important;
+}
