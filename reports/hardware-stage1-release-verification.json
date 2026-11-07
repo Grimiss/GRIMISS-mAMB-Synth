@@ -1,0 +1,45 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 47,
+  "siteCommit": "7fff054a2e030ae32c4188c8ca0a38b26df1d1d3",
+  "developmentCommit": "93e94c4dc5ee912001f59087777dfbcb8829aa36",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_df6c81f44dc08191848e1ecec7317aa1",
+  "deploymentId": "appgdep_6aef61fd51c48191b9382360e9986974",
+  "rollbackSiteVersion": 46,
+  "rollbackSiteCommit": "2998213e6361aa9b10dc809f7ca7a3b9a74513de",
+  "rollbackBranch": "rollback/pre-hardware-visual-stage1",
+  "htmlSha256": "03c509d9a876b85ae4b7a407f8bdc1de5fb9410b647ab62a1303997866d274ac",
+  "visualOnly": true,
+  "runtimeScriptsUnchanged": true,
+  "geometry": {
+    "viewports": [
+      [
+        1920,
+        1080
+      ],
+      [
+        1600,
+        900
+      ],
+      [
+        1280,
+        768
+      ]
+    ],
+    "elementsComparedPerViewport": 2500,
+    "maximumDifference": 0,
+    "keyboardPixelIdentical": true,
+    "seq16PixelIdentical": true
+  },
+  "tests": {
+    "audioOwnershipMeasurements": "PASS",
+    "hardwareStage1Browser": "PASS",
+    "gestureBrowser": "PASS",
+    "sequencerSimpleBrowser": "PASS",
+    "workflow11Groups": "PASS"
+  },
+  "physicalWindowsTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded; packaged Chromium geometry, screenshot and audio interaction checks passed. Direct live inspection remains unavailable because of the previously verified environment proxy restriction; not retried."
+}
