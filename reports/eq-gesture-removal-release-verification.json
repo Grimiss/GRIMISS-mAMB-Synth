@@ -1,0 +1,21 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 45,
+  "siteCommit": "4dfa63986b8c3f737b52871019f9ab339a0c775b",
+  "developmentCommit": "adc07396d3812b3f58c9b85ff6f1ed3a9554c778",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_a8bb67f28a7081919eba3e8ff657c52e",
+  "deploymentId": "appgdep_6aef45678de881918edf793b6347294c",
+  "rollbackSiteVersion": 44,
+  "rollbackSiteCommit": "b43eec0a11677990a30430ca14239ed4e196da6f",
+  "rollbackBranch": "rollback/pre-eq-gesture-removal",
+  "gestureScreens": 9,
+  "tests": [
+    "core compatibility and inactive legacy EQ audio PASS",
+    "remaining gestures and persistence Worklet/fallback browser PASS",
+    "EQ manual gain/response curve and Details/frequency controls PASS"
+  ],
+  "physicalWindowsTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded. Local packaged Chromium tests passed; direct live inspection unavailable because of the previously verified environment proxy restriction."
+}
