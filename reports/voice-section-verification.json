@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "checkpoint": "checkpoint/pre-voice-section-refinement-2026-11-07",
+  "engineAndOtherRuntimeScriptsUnchanged": true,
+  "results": [
+    {
+      "viewportWidth": 1920,
+      "unrelatedGeometryUnchanged": true,
+      "layout": {
+        "panel": {
+          "x": 64.5,
+          "y": 144,
+          "width": 330,
+          "height": 237,
+          "top": 144,
+          "right": 394.5,
+          "bottom": 381,
+          "left": 64.5
+        },
+        "groups": [
+          {
+            "x": 75,
+            "y": 175.5,
+            "width": 309,
+            "height": 36,
+            "top": 175.5,
+            "right": 384,
+            "bottom": 211.5,
+            "left": 75
+          },
+          {
+            "x": 78,
+            "y": 216,
+            "width": 303,
+            "height": 39,
+            "top": 216,
+            "right": 381,
+            "bottom": 255,
+            "left": 78
+          },
+          {
+            "x": 78,
+            "y": 259.5,
+            "width": 303,
+            "height": 39,
+            "top": 259.5,
+            "right": 381,
+            "bottom": 298.5,
+            "left": 78
+          },
+          {
+            "x": 75,
+            "y": 303,
+            "width": 309,
+            "height": 72,
+            "top": 303,
+            "right": 384,
+            "bottom": 375,
+            "left": 75
+          }
+        ],
+        "modeFont": "7.5px",
+        "visibleOrder": [
+          "mode-pills",
+          "analogCharacterControl",
+          "thicknessControl",
+          "knob-row"
+        ],
+        "arcs": [
+          "rgb(86, 237, 156)",
+          "rgb(86, 237, 156)",
+          "rgb(86, 237, 156)"
+        ]
+      },
+      "gaps": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "expandedKeyboardHidden": {
+        "fits": true,
+        "gaps": [
+          31.6875,
+          31.6875,
+          31.6875
+        ]
+      }
+    },
+    {
+      "viewportWidth": 1280,
+      "unrelatedGeometryUnchanged": true,
+      "layout": {
+        "panel": {
+          "x": 43,
+          "y": 276,
+          "width": 220,
+          "height": 158,
+          "top": 276,
+          "right": 263,
+          "bottom": 434,
+          "left": 43
+        },
+        "groups": [
+          {
+            "x": 50,
+            "y": 297,
+            "width": 206,
+            "height": 24,
+            "top": 297,
+            "right": 256,
+            "bottom": 321,
+            "left": 50
+          },
+          {
+            "x": 52,
+            "y": 324,
+            "width": 202,
+            "height": 26,
+            "top": 324,
+            "right": 254,
+            "bottom": 350,
+            "left": 52
+          },
+          {
+            "x": 52,
+            "y": 353,
+            "width": 202,
+            "height": 26,
+            "top": 353,
+            "right": 254,
+            "bottom": 379,
+            "left": 52
+          },
+          {
+            "x": 50,
+            "y": 382,
+            "width": 206,
+            "height": 48,
+            "top": 382,
+            "right": 256,
+            "bottom": 430,
+            "left": 50
+          }
+        ],
+        "modeFont": "7.5px",
+        "visibleOrder": [
+          "mode-pills",
+          "analogCharacterControl",
+          "thicknessControl",
+          "knob-row"
+        ],
+        "arcs": [
+          "rgb(86, 237, 156)",
+          "rgb(86, 237, 156)",
+          "rgb(86, 237, 156)"
+        ]
+      },
+      "gaps": [
+        3,
+        3,
+        3
+      ],
+      "expandedKeyboardHidden": {
+        "fits": true,
+        "gaps": [
+          21.125,
+          21.125,
+          21.125
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

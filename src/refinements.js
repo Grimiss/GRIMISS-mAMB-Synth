@@ -4,7 +4,7 @@
  function slider(node,label){node.hidden=false;node.className='control hardware-horizontal';node.querySelector('label').textContent=label;node.querySelectorAll('output,p').forEach(n=>n.hidden=true);const input=node.querySelector('input');input.setAttribute('aria-label',label);return node}
  const age=slider(el('analogCharacterControl'),'ANALOG AGE');document.querySelector('.voice-badge').replaceWith(age);
  const velocity=slider(el('velocitySensitivityControl'),'VELOCITY');document.querySelector('.performance-wheels').append(velocity);
- const thick=slider(el('thicknessControl'),'THICKNESS');age.after(thick);
+ const thick=slider(el('thicknessControl'),'THICKNESS');age.after(thick);age.before(document.querySelector('.voice .mode-pills'));
  for(const id of ['voiceMode','wave1','wave2','lfo1Wave','lfo2Wave','filter']){const select=el(id);backing(select);select.closest('.select-control')?.classList.add('redundant-select');}
  for(let i=1;i<=2;i++){const select=el('wave'+i),unit=document.createElement('span');unit.className='osc-unit-label';unit.textContent='OSC '+i;select.closest('.osc-select-cell').prepend(unit);const buttons=document.querySelector('.osc-'+i+' .wave-buttons')||select.closest('.osc-row').querySelector('.wave-buttons');for(const option of select.options)if(!buttons.querySelector('[data-value="'+option.value+'"]')){const button=document.createElement('button');button.type='button';button.dataset.select=select.id;button.dataset.value=option.value;button.textContent=option.textContent;button.title=option.textContent;buttons.append(button)}}
  for(let i=1;i<=2;i++){const main=el('lfo'+i+'Wave').closest('.lfo-main');const title=document.createElement('div');title.id='lfo-title-'+i;title.className='lfo-wave-title';main.prepend(title)}
