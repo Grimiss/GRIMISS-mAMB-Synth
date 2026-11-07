@@ -1,0 +1,38 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 44,
+  "siteCommit": "b43eec0a11677990a30430ca14239ed4e196da6f",
+  "developmentCommit": "5e57c6a1ea19174473827a326396633cbd9c5641",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_c46e56963e408191a9e925b5a4d9aa97",
+  "deploymentId": "appgdep_6aef44808914819192bc0874e4ddf7d1",
+  "rollbackSiteVersion": 43,
+  "rollbackSiteCommit": "d6f3ce655ec55458c2752c090c34af463f59f5f3",
+  "rollbackBranch": "rollback/pre-screen-only-gestures-v1",
+  "htmlSha256": "8f5b8e32431b6a71afab73131df0d4c63eff27443de11862ffd27e100ecc22a2",
+  "gestureScreens": 10,
+  "retiredSurfacesPreservedInactive": [
+    "xy1",
+    "xy2",
+    "automation",
+    "modfx",
+    "delay",
+    "reverb"
+  ],
+  "tests": {
+    "gestureCore": "PASS",
+    "gestureBrowser": "PASS",
+    "gestureAudio60Seconds": "PASS",
+    "screenOnlyMigration": "PASS",
+    "screenOnlyLayout": "PASS",
+    "factorySound100Comparisons": "PASS",
+    "persistenceBrowser": "PASS",
+    "midiBrowser": "PASS",
+    "engineEfficiency": "PASS",
+    "engineEfficiencyBrowser": "PASS",
+    "workflow11Groups": "PASS"
+  },
+  "physicalWindowsTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded; packaged Chromium UI/audio checks passed. Live HTTP inspection remains unavailable due to the previously verified environment proxy restriction; not retried."
+}
