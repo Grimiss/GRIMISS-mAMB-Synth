@@ -1,0 +1,23 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 42,
+  "siteCommit": "b131a51d453b7e0abae29ef45ac94c8a92796238",
+  "developmentCommit": "77ce85aa29d6dc1f1542433623505c86a0e32f87",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "htmlSha256": "bd871fc505638a7496b4320e4924180fd4f38634e348d1d67b291e41a3b0a182",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_5df4c5447c488191ac117ccb4d61901d",
+  "deploymentId": "appgdep_6aeefa62081081918d2bfb9107c33fed",
+  "rollbackSiteVersion": 41,
+  "rollbackSiteCommit": "acbd08dd52fbfc8bbc19ccd8e6f7e8098a5be2f4",
+  "rollbackBranch": "rollback/pre-tablet-audio-recovery-v1",
+  "packagedBuildBrowserQA": {
+    "AudioWorklet": "PASS",
+    "ScriptProcessor": "PASS",
+    "actualBrowserAudioEnergy": "PASS",
+    "recoveryChecks": 10
+  },
+  "physicalTabletVerified": false,
+  "synthDspChanged": false,
+  "postPublishVerification": "Native hosting deployment succeeded. Live HTTP inspection remains unavailable due to the previously verified environment proxy restriction; not retried."
+}
