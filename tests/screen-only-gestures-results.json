@@ -8,7 +8,6 @@
     "ampEnvelope",
     "lfo1",
     "lfo2",
-    "eq",
     "routing",
     "arp"
   ],
@@ -16,14 +15,15 @@
     "xy1",
     "xy2",
     "automation",
+    "eq",
     "modfx",
     "delay",
     "reverb"
   ],
   "checks": [
-    "six removed surfaces retained losslessly in legacy schema",
+    "seven removed surfaces retained losslessly in legacy schema",
     "removed surfaces cannot run or preview in audio engine",
-    "all ten remaining screens retain audio-clock playback",
+    "all nine remaining screens retain audio-clock playback",
     "old enabled XY/effect paths are sample-identical to no gestures at 44.1/48 kHz"
   ],
   "maximumRetiredAudioDifference": 0

@@ -5,12 +5,12 @@
     "arm waiting excluded",
     "finish disarms recorder",
     "old path retained without meaningful replacement",
-    "SOFTEN 0/25/50/75/100 in logarithmic domain",
+    "SOFTEN 0/25/50/75/100 in normalized domain",
     "live SOFTEN smoothing while paused or playing",
     "independent clock progression at 100 percent",
     "legacy defaults to zero soften",
-    "all 10 eligible surfaces: zero soften sample-identical to checkpoint",
-    "all 10 eligible surfaces: full soften sample-identical to unmodulated audio"
+    "all 9 eligible surfaces: zero soften sample-identical to checkpoint",
+    "all 9 eligible surfaces: full soften sample-identical to unmodulated audio"
   ],
   "audioSampleRates": [
     44100,

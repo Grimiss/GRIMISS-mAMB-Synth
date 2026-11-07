@@ -22,7 +22,7 @@ const MICROSEQ_GESTURE_DISPLAYS={
  ampEnvelope:{name:'AMP ENVELOPE',selector:'#a-envelope',keys:['aa','ad','as','ar'],x:'as',y:'ar'},
  lfo1:{name:'LFO 1',selector:'#lfo-scope-1',keys:['lfo','lfo1Depth','motion'],x:'lfo',y:'lfo1Depth'},
  lfo2:{name:'LFO 2',selector:'#lfo-scope-2',keys:['lfo2Rate','lfo2Depth','cross'],x:'lfo2Rate',y:'lfo2Depth'},
- eq:{name:'EQ',selector:'#eq-scope',keys:['eqLowFreq','eqLow','eqHighFreq','eqHigh'],x:'eqLowFreq',y:'eqLow'},
+ eq:{retired:true,name:'EQ',selector:'#eq-scope',keys:['eqLowFreq','eqLow','eqHighFreq','eqHigh'],x:'eqLowFreq',y:'eqLow'},
  modfx:{retired:true,name:'MOD FX',selector:'.mod-panel > h2',proxy:true,keys:['fxModRate','fxModDepth','fxModFeedback','fxModMix'],x:'fxModRate',y:'fxModDepth'},
  delay:{retired:true,name:'DELAY',selector:'.delay-panel > h2',proxy:true,keys:['fxDelayTime','fxDelayFeedback','fxDelayMix','fxDelayWidth'],x:'fxDelayTime',y:'fxDelayFeedback'},
  reverb:{retired:true,name:'REVERB',selector:'.reverb-panel > h2',proxy:true,keys:['fxReverbDecay','fxReverbTone','fxReverbMix','fxReverbMod','fxReverbDwell'],x:'fxReverbDecay',y:'fxReverbTone'},
