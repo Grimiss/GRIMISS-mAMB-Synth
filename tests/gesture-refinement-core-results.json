@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": [
+    "explicit arbitrary recording start",
+    "arm waiting excluded",
+    "finish disarms recorder",
+    "old path retained without meaningful replacement",
+    "SOFTEN 0/25/50/75/100 in logarithmic domain",
+    "live SOFTEN smoothing while paused or playing",
+    "independent clock progression at 100 percent",
+    "legacy defaults to zero soften",
+    "all 16 surfaces: zero soften sample-identical to checkpoint",
+    "all 16 surfaces: full soften sample-identical to unmodulated audio"
+  ],
+  "audioSampleRates": [
+    44100,
+    48000
+  ],
+  "audioFramesPerComparison": 38400,
+  "maximumAudioDifference": 0,
+  "physicalWindowsAppTested": false
+}

@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "checks": [
+    "only GESTURE opens editor; arbitrary press starts recording, release auto-finishes, waiting is excluded, Clear is above the surface",
+    "SOFTEN and speed synchronize, 100% retains amber playback state, main Pause holds exact position and resumes",
+    "recording on the original display uses pointer capture and automatically finishes when released outside",
+    "all 16 loops run, closed-popup knobs/plots animate from audible values, base controls stay unchanged and actual output is non-silent",
+    "Clear removes only selected path/timing/playback and retains its direction/transition and other loops",
+    "larger oscillator/LFO scopes fit unchanged outer synth; all 16 GESTURE controls remain visible and hittable at both desktop sizes",
+    "new controls and paths round-trip through working-draft recovery without console errors"
+  ],
+  "geometry": {
+    "main": {
+      "x": 0,
+      "y": 60,
+      "width": 1920,
+      "height": 960,
+      "top": 60,
+      "right": 1920,
+      "bottom": 1020,
+      "left": 0
+    },
+    "osc": [
+      {
+        "x": 541.5,
+        "y": 190.5,
+        "width": 159,
+        "height": 69,
+        "top": 190.5,
+        "right": 700.5,
+        "bottom": 259.5,
+        "left": 541.5
+      },
+      {
+        "x": 541.5,
+        "y": 298.5,
+        "width": 159,
+        "height": 69,
+        "top": 298.5,
+        "right": 700.5,
+        "bottom": 367.5,
+        "left": 541.5
+      }
+    ],
+    "lfo": [
+      {
+        "x": 1150.5,
+        "y": 205.5,
+        "width": 217.5,
+        "height": 97.5,
+        "top": 205.5,
+        "right": 1368,
+        "bottom": 303,
+        "left": 1150.5
+      },
+      {
+        "x": 1398,
+        "y": 205.5,
+        "width": 219,
+        "height": 97.5,
+        "top": 205.5,
+        "right": 1617,
+        "bottom": 303,
+        "left": 1398
+      }
+    ]
+  },
+  "errors": [],
+  "physicalWindowsAppTested": false
+}

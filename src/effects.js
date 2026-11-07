@@ -210,5 +210,5 @@ function createMambEffects(initial={}, sr=48000) {
   function snapshot(){return {sampleRate:sr,allocatedBytes,delayTimeSeconds:delayReadTime,activeMod:modRun?target.fxModType:null,activeDelay:delayRun?target.fxDelayType:null,activeReverbs:revRun?revNames.filter((_,i)=>revWeights[i]>1e-7):[],tailEnergy:{mod:modTail,delay:delayTail,reverb:revTail},peak,current:{...p},target:{...target}}}
   function setGestureTarget(k,values){if(bounds[k]&&Number.isFinite(values[k])&&target[k]!==values[k]){accept(k,values[k]);queueMoving(k);}}
   function setGestureParameters(values,mask,changedKeys){if(gestureDelayTime!==!!mask.fxDelayTime){gestureDelayTime=!!mask.fxDelayTime;dirty|=1;}if(changedKeys){for(const k of changedKeys)setGestureTarget(k,values);}else for(const k in values)setGestureTarget(k,values);}
-  return {setParameters,process,panic,snapshot,setGestureParameters};
+  return {setParameters,process,panic,snapshot,setGestureParameters,parameterValue:key=>p[key]};
 }
