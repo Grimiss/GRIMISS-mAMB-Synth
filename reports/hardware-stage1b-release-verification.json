@@ -1,0 +1,50 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 48,
+  "siteCommit": "f35f3165143247878515b0eeac5de20e98a5f5ad",
+  "developmentCommit": "1a8f79b3a84ef8e73f8619900c2cb71788f9674e",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_0133c6d78e6c81919b9d042dbb2a9e36",
+  "deploymentId": "appgdep_6aef6714561c8191b9e018c2a953f4b4",
+  "rollbackSiteVersion": 47,
+  "rollbackSiteCommit": "7fff054a2e030ae32c4188c8ca0a38b26df1d1d3",
+  "rollbackBranch": "rollback/pre-hardware-visual-stage1b",
+  "htmlSha256": "21e9b72b7b44c7a9d158d25aa9c7dcda93d4563d6a8e0484bf8f411e8356f317",
+  "visualOnly": true,
+  "runtimeScriptsUnchanged": true,
+  "geometry": {
+    "viewports": [
+      [
+        1920,
+        1080
+      ],
+      [
+        1600,
+        900
+      ],
+      [
+        1280,
+        768
+      ]
+    ],
+    "elementsComparedPerViewport": 2500,
+    "maximumRectangleOrFontDifference": 0,
+    "outerCornerRadius": 6,
+    "headerUpperCornerRadius": 5,
+    "borderWidth": 1,
+    "keyboardPixelIdentical": true,
+    "seq16StylesAndInteriorPixelsIdentical": true,
+    "seq16OuterEdgeMaxRGBDifference": 1,
+    "controlHitAreasUnchanged": 127
+  },
+  "tests": {
+    "hardwareStage1bBrowser": "PASS",
+    "hardwareStage1bHitRegression": "PASS",
+    "gestureBrowser": "PASS",
+    "sequencerSimpleBrowser": "PASS",
+    "workflow11Groups": "PASS"
+  },
+  "physicalWindowsTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded. Packaged Chromium geometry, screenshot, hit-area, popup and audio interaction checks passed. Direct live inspection remains unavailable due to the previously verified environment proxy restriction; not retried."
+}
