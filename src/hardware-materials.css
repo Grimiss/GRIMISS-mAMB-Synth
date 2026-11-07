@@ -1,4 +1,4 @@
-/* GRIMISS hardware materials, Stage 1. Paint only: no layout/font/travel changes.
+/* GRIMISS hardware materials, Stage 1B. Paint only: no layout/font/travel changes.
    Tokens/classes are reusable opt-ins. SEQ, keyboard and all popup editors are
    deliberately outside the selectors below; original accent tokens stay intact. */
 :root {
@@ -10,8 +10,20 @@
   --print-teal-border: #426d66;
   --print-knockout: #101211;
   --brand-white: #e5e7e3;
+  --hardware-section-radius: 6px;
+  --hardware-border-width: 1px;
+  --hardware-header-radius: calc(var(--hardware-section-radius) - var(--hardware-border-width));
+  --hardware-ink-texture-strength: .12;
+  --hardware-edge-imperfection-strength: .06;
+  --hardware-chassis-texture-intensity: .14;
+  --hardware-knob-grain-strength: .065;
+  --hardware-control-highlight: #c2cfb926;
+  --hardware-control-shadow: #00000088;
+  --hardware-panel-shadow: #03070355;
+  --hardware-print-edge: color-mix(in srgb, var(--print-teal-border) calc((1 - var(--hardware-edge-imperfection-strength)) * 100%), var(--hardware-chassis));
+  --hardware-powder-grain: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%3E%3Cfilter%20id%3D%22p%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.72%20.86%22%20numOctaves%3D%222%22%20seed%3D%2239%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3C%2Ffilter%3E%3Cpath%20filter%3D%22url%28%23p%29%22%20d%3D%22M0%200h160v160H0z%22%2F%3E%3C%2Fsvg%3E");
   --hardware-grain: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cfilter%20id%3D%22g%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.84%22%20numOctaves%3D%222%22%20seed%3D%2227%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%22.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Cpath%20fill%3D%22%23fff%22%20filter%3D%22url%28%23g%29%22%20d%3D%22M0%200h160v160H0z%22%2F%3E%3C%2Fsvg%3E");
-  --hardware-ink-grain: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%2232%22%20viewBox%3D%220%200%20192%2032%22%3E%3Cfilter%20id%3D%22i%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.48%20.73%22%20numOctaves%3D%221%22%20seed%3D%2241%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%22.11%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Cpath%20fill%3D%22%23fff%22%20filter%3D%22url%28%23i%29%22%20d%3D%22M0%200h192v32H0z%22%2F%3E%3C%2Fsvg%3E");
+  --hardware-ink-grain: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%2248%22%3E%3Cfilter%20id%3D%22w%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.47%20.79%22%20numOctaves%3D%222%22%20seed%3D%2241%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20.14%200%200%200%20.005%22%2F%3E%3C%2Ffilter%3E%3Cpath%20filter%3D%22url%28%23w%29%22%20d%3D%22M0%200h192v48H0z%22%2F%3E%3Cg%20stroke%3D%22%23050906%22%20fill%3D%22none%22%20stroke-width%3D%22.35%22%20opacity%3D%22.12%22%3E%3Cpath%20d%3D%22M11%20.3h2.2M63%20.2h1.5M127%20.4h2.6M172%20.3h1.2M38%2047.6h1.7M91%2047.8h2.4M149%2047.7h1.5%22%2F%3E%3Cpath%20d%3D%22M.3%209v1.3M191.6%2024v1.9M.2%2037v1.4%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 /* Shared finishes. These optional classes are not attached to SEQ16. */
 .hardware-metal {
@@ -43,17 +55,19 @@ html.fit-screen.reference-geometry main > .header {
 .hardware-printed-boundary,
 html.fit-screen.reference-geometry main .editor > .coordinate-panel {
   background-color: var(--hardware-chassis);
-  background-image: var(--hardware-grain), radial-gradient(ellipse at 18% 0%, #1a1c19, var(--hardware-chassis) 78%), var(--hardware-ink-grain), linear-gradient(var(--print-teal-border), var(--print-teal-border));
+  background-image: var(--hardware-grain), radial-gradient(ellipse at 18% 0%, #1a1c19, var(--hardware-chassis) 78%), var(--hardware-ink-grain), linear-gradient(var(--hardware-print-edge), var(--hardware-print-edge));
   background-clip: padding-box, padding-box, border-box, border-box;
   background-origin: padding-box, padding-box, border-box, border-box;
   border-color: transparent;
-  box-shadow: none;
+  border-radius: var(--hardware-section-radius);
+  box-shadow: inset 0 1px 2px var(--hardware-panel-shadow), inset 0 -1px 1px #00000033;
 }
 html.fit-screen.reference-geometry main .coordinate-panel > h2 {
   color: var(--print-knockout);
   background-color: var(--print-teal);
   background-image: var(--hardware-ink-grain);
   border-bottom-color: var(--print-teal-border);
+  border-radius: var(--hardware-header-radius) var(--hardware-header-radius) 0 0;
   box-shadow: none;
   text-shadow: none;
 }
@@ -100,4 +114,56 @@ html.fit-screen.reference-geometry main .coordinate-panel .fader-well {
 html.fit-screen.reference-geometry main .coordinate-panel .scope {
   border-color: #354038 #151d17 #28352c #1d281f;
   box-shadow: inset 0 1px 3px #000a, 0 1px 0 #53615318;
+}
+
+/* Stage 1B: shared decorative grain, behind the existing positioned heading and
+   controls. No overflow changes: native menus and body-level editors keep their
+   original containment. Background and paint radii are the only shape change. */
+html.fit-screen.reference-geometry main .editor > .coordinate-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: var(--hardware-powder-grain), radial-gradient(ellipse at 31% 19%, #ffffff0a, #00000014 76%);
+  opacity: var(--hardware-chassis-texture-intensity);
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+html.fit-screen.reference-geometry main .coordinate-panel > h2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: var(--hardware-ink-grain);
+  opacity: var(--hardware-ink-texture-strength);
+  pointer-events: none;
+}
+/* Mounting recess and a very light plastic grain follow the existing SVG face.
+   The coloured outer arc lies outside this decorative face layer. */
+html.fit-screen.reference-geometry main .coordinate-panel .knob .dial {
+  background: radial-gradient(ellipse closest-side at 50% 47%, transparent 62%, #00000099 79%, transparent 99%);
+}
+html.fit-screen.reference-geometry main .coordinate-panel .knob .dial::after {
+  content: "";
+  position: absolute;
+  left: 18.28%;
+  top: 15.74%;
+  width: 63.44%;
+  height: 59.71%;
+  border-radius: 50%;
+  background-image: var(--hardware-powder-grain), radial-gradient(circle at 34% 23%, #ffffff18, transparent 58%, #0000001c);
+  opacity: var(--hardware-knob-grain-strength);
+  mix-blend-mode: soft-light;
+  box-shadow: 0 1px 1px var(--hardware-control-shadow);
+  pointer-events: none;
+}
+html.fit-screen.reference-geometry main :is(.coordinate-panel, .header) button:not(.active):not([aria-pressed="true"]):not(.gesture-main-play) {
+  background: linear-gradient(#30362e, #1b211a 53%, #151b14);
+  box-shadow: inset 0 1px 0 var(--hardware-control-highlight), inset 0 -1px 1px #00000055, 0 1px 1px var(--hardware-control-shadow);
+}
+html.fit-screen.reference-geometry main .coordinate-panel .physical-slider {
+  box-shadow: inset 0 1px 0 var(--hardware-control-highlight), 0 1px 2px var(--hardware-control-shadow);
+}
+html.fit-screen.reference-geometry main .coordinate-panel .fader-well {
+  box-shadow: inset 1px 1px 2px #000000ee, 0 1px 0 #73816b20;
 }
