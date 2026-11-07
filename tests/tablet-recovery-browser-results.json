@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Worklet: first startup completes and a closed context reopens with audible output",
+    "Worklet: restart retains unsaved sound, SEQ, MIDI and gestures, safely stops voices/transport and exposes actual readiness",
+    "failed Worklet no longer shows a green running lamp and a trusted retry rebuilds its processor",
+    "Worklet: explicitly authorized microphone reattaches after restart without another capture request",
+    "fallback: first startup completes and a closed context reopens with audible output",
+    "fallback: restart retains unsaved sound, SEQ, MIDI and gestures, safely stops voices/transport and exposes actual readiness",
+    "fallback: explicitly authorized microphone reattaches after restart without another capture request",
+    "a synchronous first initialization failure cannot latch a failed readiness promise",
+    "late initialization from a replaced context cannot overwrite or disconnect the new processor",
+    "a stalled Worklet module falls back after eight seconds and produces actual audible output"
+  ],
+  "errors": [],
+  "physicalTabletTested": false
+}
