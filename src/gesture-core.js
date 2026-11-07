@@ -26,8 +26,8 @@ const MICROSEQ_GESTURE_DISPLAYS={
  modfx:{retired:true,name:'MOD FX',selector:'.mod-panel > h2',proxy:true,keys:['fxModRate','fxModDepth','fxModFeedback','fxModMix'],x:'fxModRate',y:'fxModDepth'},
  delay:{retired:true,name:'DELAY',selector:'.delay-panel > h2',proxy:true,keys:['fxDelayTime','fxDelayFeedback','fxDelayMix','fxDelayWidth'],x:'fxDelayTime',y:'fxDelayFeedback'},
  reverb:{retired:true,name:'REVERB',selector:'.reverb-panel > h2',proxy:true,keys:['fxReverbDecay','fxReverbTone','fxReverbMix','fxReverbMod','fxReverbDwell'],x:'fxReverbDecay',y:'fxReverbTone'},
- routing:{name:'MODULATION VISUALIZER',selector:'#routing-scope',keys:['route0Amount','route1Amount','route2Amount','route3Amount'],x:'route0Amount',y:'route1Amount'},
- arp:{name:'ARPEGGIATOR',selector:'#arp-scope',keys:['arpGate'],x:'arpGate',y:null}
+ routing:{retired:true,name:'MODULATION VISUALIZER',selector:'#routing-scope',keys:['route0Amount','route1Amount','route2Amount','route3Amount'],x:'route0Amount',y:'route1Amount'},
+ arp:{retired:true,name:'ARPEGGIATOR',selector:'#arp-scope',keys:['arpGate'],x:'arpGate',y:null}
 };
 function microseqGestureDefaults(id){const d=MICROSEQ_GESTURE_DISPLAYS[id];return{points:[],duration:0,x:d.x,y:d.y,speed:1,soften:0,direction:'forward',transition:'jump',transitionTime:1,enabled:false,playing:false};}
 function microseqGestureDocument(){return{version:1,displays:Object.fromEntries(Object.keys(MICROSEQ_GESTURE_DISPLAYS).map(id=>[id,microseqGestureDefaults(id)]))};}

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "surfaces": 16,
-  "simultaneous": 9,
+  "simultaneous": 7,
   "ultraSlowSpeed": 0.01,
   "simulatedSeconds": 640,
   "checks": [

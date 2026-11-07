@@ -1,13 +1,15 @@
 # Screen-only gestures and side-by-side oscillators
 
 Gesture controls and playback now belong only to existing visualization screens:
-OSC 1, OSC 2, filter, filter envelope, amplifier envelope, LFO 1, LFO 2,
-modulation visualizer and arpeggiator. All nine can play independently together.
+OSC 1, OSC 2, filter, filter envelope, amplifier envelope, LFO 1 and LFO 2. All seven can play independently together.
 Mod FX, Delay and Reverb have no screens: their gesture buttons, popup choices
 and gesture playback are removed. Their original audio effects and manual controls remain. EQ gesture controls and
 playback are also removed; its response display, Details view, gain and frequency
 controls remain fully operational. Existing EQ gesture paths are retained inactive
-with the other retired records.
+with the other retired records. Modulation/virtual patch and arpeggiator gestures
+are also removed. Their normal link controls, modulation display, arpeggiator
+controls and activity display remain; older gesture records cannot alter link
+intensity or arpeggiator gate.
 
 The complete XY/Automation section, its two pads, expansion and assignment dialogs
 are removed. Its width is reassigned to the oscillator panel. OSC 1 and OSC 2 now
@@ -22,7 +24,7 @@ top row, retaining their sizes; the lower synth and keyboard/SEQ dimensions rema
 
 ## Compatibility
 
-The version-1 gesture schema still validates and round-trips the seven retired
+The version-1 gesture schema still validates and round-trips the nine retired
 surface records and old XY assignment metadata. This avoids deleting stored
 performances or rejecting older patches. Retired records are excluded from the
 audio engine's active list and cannot preview or modulate anything, even if an old
@@ -40,7 +42,7 @@ FWD/BACK/PENDULUM, JUMP/SMOOTH, amber indicators and effective UI motion remain.
   sample-identical audio to no gestures at 44.1 and 48 kHz.
 - Remaining gestures retain sample-identical audio compared with the checkpoint.
 - All 100 factory sounds remain sample-identical to the earlier DSP reference.
-- Nine simultaneous screen gestures produce finite, non-silent audio alongside
+- Seven simultaneous screen gestures produce finite, non-silent audio alongside
   live input, MIDI, SEQ and ARP for a 60-second render; Panic releases ownership.
 - Browser checks cover screen-only buttons/editor choices, actual mouse and touch
   recording, soften/speed/pause, closed-popup animation, clear independence,
@@ -56,7 +58,7 @@ physical MIDI devices and tablet performance are not claimed as tested.
 Changed implementation: src/gesture-core.js, src/gesture-ui.js, src/gesture.css,
 src/interface.html, src/interface.js, src/coordinate-layout.js,
 src/reference-layout.json and src/workflow.js, plus standalone HTML builds.
-Tests are updated for nine eligible surfaces and removed XY UI, while preserving
+Tests are updated for seven eligible surfaces and removed XY UI, while preserving
 validation of all sixteen historical schema entries. New tests/screen-only-gestures.cjs
 covers inactive legacy data and actual audio. New screenshots and JSON results
 are retained in reports/ and tests/.

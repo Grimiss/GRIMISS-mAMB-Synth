@@ -9,8 +9,8 @@
     "live SOFTEN smoothing while paused or playing",
     "independent clock progression at 100 percent",
     "legacy defaults to zero soften",
-    "all 9 eligible surfaces: zero soften sample-identical to checkpoint",
-    "all 9 eligible surfaces: full soften sample-identical to unmodulated audio"
+    "all 7 eligible surfaces: zero soften sample-identical to checkpoint",
+    "all 7 eligible surfaces: full soften sample-identical to unmodulated audio"
   ],
   "audioSampleRates": [
     44100,

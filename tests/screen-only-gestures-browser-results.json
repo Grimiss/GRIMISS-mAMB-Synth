@@ -4,9 +4,9 @@
     "only GESTURE opens editor; arbitrary press starts recording, release auto-finishes, waiting is excluded, Clear is above the surface",
     "SOFTEN and speed synchronize, 100% retains amber playback state, main Pause holds exact position and resumes",
     "recording on the original display uses pointer capture and automatically finishes when released outside",
-    "all 9 loops run, closed-popup knobs/plots animate from audible values, base controls stay unchanged and actual output is non-silent",
+    "all 7 loops run, closed-popup knobs/plots animate from audible values, base controls stay unchanged and actual output is non-silent",
     "Clear removes only selected path/timing/playback and retains its direction/transition and other loops",
-    "larger oscillator/LFO scopes fit unchanged outer synth; all 9 GESTURE controls remain visible and hittable at both desktop sizes",
+    "larger oscillator/LFO scopes fit unchanged outer synth; all 7 GESTURE controls remain visible and hittable at both desktop sizes",
     "new controls and paths round-trip through working-draft recovery without console errors"
   ],
   "geometry": {
