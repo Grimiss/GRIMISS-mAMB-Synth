@@ -3,24 +3,6 @@
   "baselineModes": 4,
   "displays": [
     {
-      "display": "xy1",
-      "difference": 398.43242439289094,
-      "energy": 25.37976588471923,
-      "peak": 0.05644579231739044
-    },
-    {
-      "display": "xy2",
-      "difference": 577.4003525268955,
-      "energy": 33.58213369818716,
-      "peak": 0.0758235827088356
-    },
-    {
-      "display": "automation",
-      "difference": 398.43242439289094,
-      "energy": 25.37976588471923,
-      "peak": 0.05644579231739044
-    },
-    {
       "display": "osc1",
       "difference": 174.2142276142294,
       "energy": 27.88488371043921,
@@ -69,24 +51,6 @@
       "peak": 0.10898026823997498
     },
     {
-      "display": "modfx",
-      "difference": 426.38173251814993,
-      "energy": 32.404110515707735,
-      "peak": 0.05962321534752846
-    },
-    {
-      "display": "delay",
-      "difference": 374.2799076067034,
-      "energy": 31.478843053498792,
-      "peak": 0.06584236770868301
-    },
-    {
-      "display": "reverb",
-      "difference": 28.301976769119776,
-      "energy": 30.29444972711279,
-      "peak": 0.05837913975119591
-    },
-    {
       "display": "routing",
       "difference": 1470.8230377549642,
       "energy": 33.77297906999765,
@@ -99,9 +63,9 @@
       "peak": 0.07085036486387253
     }
   ],
-  "simultaneous": 16,
+  "simultaneous": 10,
   "audioSeconds": 60,
-  "runtimeMs": 33316.544408,
-  "maxSampleDelta": 0.04215826839208603,
+  "runtimeMs": 12220.967729,
+  "maxSampleDelta": 0.04078209353610873,
   "physicalListeningTest": false
 }

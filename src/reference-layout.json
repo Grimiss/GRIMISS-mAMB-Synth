@@ -12,31 +12,25 @@
     "oscillators": {
       "x": 269,
       "y": 56,
-      "width": 323,
+      "width": 477,
       "height": 158
     },
     "mixer": {
-      "x": 599,
+      "x": 753,
       "y": 56,
       "width": 154,
       "height": 158
     },
     "lfo1": {
-      "x": 760,
+      "x": 914,
       "y": 56,
       "width": 159,
       "height": 158
     },
     "lfo2": {
-      "x": 925,
+      "x": 1079,
       "y": 56,
       "width": 160,
-      "height": 158
-    },
-    "xy_automation": {
-      "x": 1091,
-      "y": 56,
-      "width": 148,
       "height": 158
     },
     "filter_envelope": {
@@ -212,6 +206,7 @@
     "filter ADSR width equals amp envelope:420",
     "filter expands left to468 and width510",
     "cutoff control enlarged",
-    "EQ fills left/bottom gaps at983,220,256,94"
+    "EQ fills left/bottom gaps at983,220,256,94",
+    "Screen-only gestures: remove XY panel, expand oscillators to477 with side-by-side OSC1/2; move mixer/LFOs right154, retain all outer dimensions."
   ]
 }

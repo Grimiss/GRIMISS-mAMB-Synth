@@ -9,10 +9,12 @@ const MICROSEQ_GESTURE_PARAMETERS={
  route0Amount:[-100,100,'LINK 1 INTENSITY'],route1Amount:[-100,100,'LINK 2 INTENSITY'],route2Amount:[-100,100,'LINK 3 INTENSITY'],route3Amount:[-100,100,'LINK 4 INTENSITY'],arpGate:[5,95,'ARP GATE']
 };
 const MICROSEQ_GESTURE_ALIASES={xy1X:['xy1','x'],xy1Y:['xy1','y'],xy2X:['xy2','x'],xy2Y:['xy2','y']};
+// Retired surfaces remain in the version-1 schema for lossless legacy-patch recall.
+// They are never scheduled, previewed or exposed by the current interface.
 const MICROSEQ_GESTURE_DISPLAYS={
- xy1:{name:'XY 1',selector:'#xy1 > svg',keys:['xy1X','xy1Y'],x:'xy1X',y:'xy1Y'},
- xy2:{name:'XY 2',selector:'#xy2 > svg',keys:['xy2X','xy2Y'],x:'xy2X',y:'xy2Y'},
- automation:{name:'XY AUTOMATION DISPLAY',selector:'#automation-scope',keys:['xy1X','xy1Y','xy2X','xy2Y'],x:'xy1X',y:'xy1Y'},
+ xy1:{retired:true,name:'XY 1',selector:'#xy1 > svg',keys:['xy1X','xy1Y'],x:'xy1X',y:'xy1Y'},
+ xy2:{retired:true,name:'XY 2',selector:'#xy2 > svg',keys:['xy2X','xy2Y'],x:'xy2X',y:'xy2Y'},
+ automation:{retired:true,name:'XY AUTOMATION DISPLAY',selector:'#automation-scope',keys:['xy1X','xy1Y','xy2X','xy2Y'],x:'xy1X',y:'xy1Y'},
  osc1:{name:'OSCILLATOR 1',selector:'#osc-scope-1',keys:['pw','pwm','level1'],x:'pw',y:'pwm'},
  osc2:{name:'OSCILLATOR 2',selector:'#osc-scope-2',keys:['detune','semi2','level2'],x:'detune',y:'level2'},
  filter:{name:'FILTER',selector:'#filter-scope',keys:['cutoff','res','envAmt','keyTrack'],x:'cutoff',y:'res'},
@@ -21,9 +23,9 @@ const MICROSEQ_GESTURE_DISPLAYS={
  lfo1:{name:'LFO 1',selector:'#lfo-scope-1',keys:['lfo','lfo1Depth','motion'],x:'lfo',y:'lfo1Depth'},
  lfo2:{name:'LFO 2',selector:'#lfo-scope-2',keys:['lfo2Rate','lfo2Depth','cross'],x:'lfo2Rate',y:'lfo2Depth'},
  eq:{name:'EQ',selector:'#eq-scope',keys:['eqLowFreq','eqLow','eqHighFreq','eqHigh'],x:'eqLowFreq',y:'eqLow'},
- modfx:{name:'MOD FX',selector:'.mod-panel > h2',proxy:true,keys:['fxModRate','fxModDepth','fxModFeedback','fxModMix'],x:'fxModRate',y:'fxModDepth'},
- delay:{name:'DELAY',selector:'.delay-panel > h2',proxy:true,keys:['fxDelayTime','fxDelayFeedback','fxDelayMix','fxDelayWidth'],x:'fxDelayTime',y:'fxDelayFeedback'},
- reverb:{name:'REVERB',selector:'.reverb-panel > h2',proxy:true,keys:['fxReverbDecay','fxReverbTone','fxReverbMix','fxReverbMod','fxReverbDwell'],x:'fxReverbDecay',y:'fxReverbTone'},
+ modfx:{retired:true,name:'MOD FX',selector:'.mod-panel > h2',proxy:true,keys:['fxModRate','fxModDepth','fxModFeedback','fxModMix'],x:'fxModRate',y:'fxModDepth'},
+ delay:{retired:true,name:'DELAY',selector:'.delay-panel > h2',proxy:true,keys:['fxDelayTime','fxDelayFeedback','fxDelayMix','fxDelayWidth'],x:'fxDelayTime',y:'fxDelayFeedback'},
+ reverb:{retired:true,name:'REVERB',selector:'.reverb-panel > h2',proxy:true,keys:['fxReverbDecay','fxReverbTone','fxReverbMix','fxReverbMod','fxReverbDwell'],x:'fxReverbDecay',y:'fxReverbTone'},
  routing:{name:'MODULATION VISUALIZER',selector:'#routing-scope',keys:['route0Amount','route1Amount','route2Amount','route3Amount'],x:'route0Amount',y:'route1Amount'},
  arp:{name:'ARPEGGIATOR',selector:'#arp-scope',keys:['arpGate'],x:'arpGate',y:null}
 };
@@ -39,7 +41,7 @@ function createMicroseqGestureEngine(initial,sr=48000,baseValues={},xyBindings={
  function norm(k,value){const r=MICROSEQ_GESTURE_PARAMETERS[k];return r[3]==='log'?Math.log(Math.max(r[0],Math.min(r[1],value))/r[0])/Math.log(r[1]/r[0]):(value-r[0])/(r[1]-r[0]);}
  function denorm(k,value){const r=MICROSEQ_GESTURE_PARAMETERS[k];value=Math.max(0,Math.min(1,value));return r[3]==='log'?r[0]*(r[1]/r[0])**value:r[0]+value*(r[1]-r[0]);}
  for(const k of keys){const r=MICROSEQ_GESTURE_PARAMETERS[k];base[k]=Number.isFinite(baseValues[k])?baseValues[k]:(r[0]+r[1])/2;offset[k]=0;values[k]=base[k];mask[k]=false;baseNorm[k]=norm(k,base[k]);lastNormalized[k]=NaN;keyUsed[k]=false;}
- function rebuild(){activeStates.length=0;workKeys.length=0;runningCount=0;for(const k of keys)keyUsed[k]=false;for(const id of ids){const s=states[id],c=s.c;if(!(s.preview||c.enabled&&c.points.length))continue;s.xKey=resolve(c.x);s.yKey=resolve(c.y);activeStates.push(s);if(c.playing&&!s.preview)runningCount++;if(s.xKey)keyUsed[s.xKey]=true;if(s.yKey)keyUsed[s.yKey]=true;}for(const k of keys)if(keyUsed[k]||offset[k]!==0||mask[k])workKeys.push(k);needsWork=true;}
+ function rebuild(){activeStates.length=0;workKeys.length=0;runningCount=0;for(const k of keys)keyUsed[k]=false;for(const id of ids){const s=states[id],c=s.c;if(MICROSEQ_GESTURE_DISPLAYS[id].retired||!(s.preview||c.enabled&&c.points.length))continue;s.xKey=resolve(c.x);s.yKey=resolve(c.y);activeStates.push(s);if(c.playing&&!s.preview)runningCount++;if(s.xKey)keyUsed[s.xKey]=true;if(s.yKey)keyUsed[s.yKey]=true;}for(const k of keys)if(keyUsed[k]||offset[k]!==0||mask[k])workKeys.push(k);needsWork=true;}
  function sample(s,position){const p=s.c.points;if(!p.length){s.x=s.y=.5;return;}let lo=0,hi=p.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(p[m][0]<=position)lo=m;else hi=m;}const a=p[lo],b=p[hi],f=Math.max(0,Math.min(1,(position-a[0])/(b[0]-a[0])));s.x=a[1]+(b[1]-a[1])*f;s.y=a[2]+(b[2]-a[2])*f;}
  function reset(id,c){const s={c,position:c.direction==='reverse'?c.duration:0,travel:c.direction==='reverse'?-1:1,x:.5,y:.5,bridge:-1,fromX:.5,fromY:.5,toX:.5,toY:.5,bridgeDuration:1,influence:1-c.soften/100,preview:false,previewX:.5,previewY:.5};sample(s,s.position);states[id]=s;}
  for(const id of ids)reset(id,document.displays[id]);rebuild();
@@ -57,5 +59,5 @@ function createMicroseqGestureEngine(initial,sr=48000,baseValues={},xyBindings={
  for(let i=0;i<workKeys.length;i++){const k=workKeys[i],oldMask=mask[k];let next=target[k];if(!keyUsed[k]){next=offset[k]*releaseAlpha;if(Math.abs(next)<1e-7)next=0;}offset[k]=next;const normalized=Math.max(0,Math.min(1,baseNorm[k]+next));let differs=false;if(lastNormalized[k]!==normalized){lastNormalized[k]=normalized;const value=denorm(k,normalized);differs=Math.abs(value-values[k])>1e-9;if(differs)values[k]=value;}if(differs||forceApply){changedKeys.push(k);changed=true;}mask[k]=influenced[k]||next!==0;if(oldMask!==mask[k])changed=true;if(!keyUsed[k]&&next!==0)decaying=true;if(keyUsed[k]||next!==0)workKeys[write++]=k;}
  workKeys.length=write;needsWork=decaying||influenceMoving;forceApply=false;return changed;
  }
- return{load,configure,settings,advance,values,mask,changedKeys,get changed(){return changed;},setBindings(value){bindings=value;rebuild();},setBase(input){for(const k in input)if(Object.hasOwn(base,k)&&Number.isFinite(input[k])){if(keyUsed[k]||mask[k]||offset[k]){needsWork=true;forceApply=true;}if(base[k]!==input[k]){base[k]=input[k];baseNorm[k]=norm(k,base[k]);if(keyUsed[k]||offset[k]!==0||mask[k])needsWork=true;}if(!mask[k]&&offset[k]===0){if(values[k]!==base[k])lastNormalized[k]=NaN;values[k]=base[k];}}},preview(id,x,y,on=true){const s=states[id];if(!s||!Number.isFinite(x)||!Number.isFinite(y))return;const previous=s.preview;s.preview=!!on;s.previewX=Math.max(0,Math.min(1,x));s.previewY=Math.max(0,Math.min(1,y));if(previous!==s.preview)rebuild();else needsWork=true;},get active(){return needsWork||runningCount>0;},snapshot(){return{frame:frames,displays:Object.fromEntries(ids.map(id=>{const s=states[id];return[id,{position:s.position,x:s.preview?s.previewX:s.x,y:s.preview?s.previewY:s.y,enabled:s.c.enabled,playing:s.c.playing,transitioning:s.bridge>=0,preview:s.preview}];})),mask:{...mask},effective:{...values},base:{...base}};}};
+ return{load,configure,settings,advance,values,mask,changedKeys,get changed(){return changed;},setBindings(value){bindings=value;rebuild();},setBase(input){for(const k in input)if(Object.hasOwn(base,k)&&Number.isFinite(input[k])){if(keyUsed[k]||mask[k]||offset[k]){needsWork=true;forceApply=true;}if(base[k]!==input[k]){base[k]=input[k];baseNorm[k]=norm(k,base[k]);if(keyUsed[k]||offset[k]!==0||mask[k])needsWork=true;}if(!mask[k]&&offset[k]===0){if(values[k]!==base[k])lastNormalized[k]=NaN;values[k]=base[k];}}},preview(id,x,y,on=true){const s=states[id];if(!s||MICROSEQ_GESTURE_DISPLAYS[id].retired||!Number.isFinite(x)||!Number.isFinite(y))return;const previous=s.preview;s.preview=!!on;s.previewX=Math.max(0,Math.min(1,x));s.previewY=Math.max(0,Math.min(1,y));if(previous!==s.preview)rebuild();else needsWork=true;},get active(){return needsWork||runningCount>0;},snapshot(){return{frame:frames,displays:Object.fromEntries(ids.map(id=>{const s=states[id];return[id,{position:s.position,x:s.preview?s.previewX:s.x,y:s.preview?s.previewY:s.y,enabled:!MICROSEQ_GESTURE_DISPLAYS[id].retired&&s.c.enabled,playing:!MICROSEQ_GESTURE_DISPLAYS[id].retired&&s.c.playing,transitioning:s.bridge>=0,preview:s.preview}];})),mask:{...mask},effective:{...values},base:{...base}};}};
 }
