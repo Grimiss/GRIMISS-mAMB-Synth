@@ -1,0 +1,91 @@
+/* OSC 1/2 only. Existing controls are reparented, retaining their IDs and events. */
+html.fit-screen.reference-geometry.control-refinement main .osc-row {
+  grid-template-rows: 10px 38px minmax(0, 1fr) !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-row > .osc-controls {
+  grid-row: 2 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 66px !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  gap: 2px !important;
+  align-items: center !important;
+  min-height: 0;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls > .wave-buttons {
+  grid-row: 1 !important;
+  grid-column: 1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(7, 18px) !important;
+  grid-auto-rows: 14px !important;
+  width: max-content !important;
+  gap: 1px !important;
+  margin: 0 !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls > .wave-buttons button {
+  width: 18px !important;
+  height: 14px !important;
+  min-height: 14px !important;
+  padding: 0 !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls > .wave-buttons svg {
+  width: 15px !important;
+  height: 12px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls > .small-selects {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
+  margin: 0 0 0 64px !important;
+  width: 68px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls .small-selects .button-select {
+  width: 68px !important;
+  gap: 2px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls .small-selects .button-select > label {
+  width: 13px !important;
+  flex: 0 0 13px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls .small-selects .hardware-choice {
+  flex: 1 !important;
+  gap: 2px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls .small-selects .hardware-choice button {
+  min-width: 0 !important;
+  padding: 0 1px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-controls > .osc-knob-cell {
+  grid-row: 1;
+  grid-column: 2;
+  gap: 6px !important;
+  margin: 0 !important;
+  width: 66px;
+  justify-content: space-between !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-row > .osc-preview-cell {
+  grid-row: 3 !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-row .scope {
+  border-width: 5px !important;
+  border-radius: 6px !important;
+  border-color: #475047 #1b241c #303c30 #242f25;
+  box-shadow: inset 0 1px 3px #000b, 0 1px 0 #63715b22;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-preview-cell .gesture-chrome :is(.gesture-open, .gesture-main-play) {
+  top: 6px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-preview-cell .gesture-open {
+  left: 11px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-preview-cell .gesture-main-play {
+  right: 11px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-preview-cell .gesture-rail {
+  top: 24px !important;
+  bottom: 7px !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-preview-cell .gesture-soften { left: 6px !important; }
+html.fit-screen.reference-geometry.control-refinement main .osc-preview-cell .gesture-speed { right: 6px !important; }
+html.fit-screen.reference-geometry.control-refinement main .osc-row + .osc-row .osc-controls > .wave-buttons {
+  grid-template-columns: repeat(3, 18px) !important;
+}

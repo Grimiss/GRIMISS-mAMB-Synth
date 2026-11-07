@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "viewports": [
+    1920,
+    1280
+  ],
+  "matchingScreens": true,
+  "bezel": 5,
+  "radius": 6,
+  "equalOctSyncGroups": true,
+  "waveOctSyncClicks": true,
+  "oscGestureRecording": true,
+  "audibleOutput": true,
+  "errors": []
+}
