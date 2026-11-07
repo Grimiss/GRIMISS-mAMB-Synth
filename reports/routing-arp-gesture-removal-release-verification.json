@@ -1,0 +1,21 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 46,
+  "siteCommit": "2998213e6361aa9b10dc809f7ca7a3b9a74513de",
+  "developmentCommit": "d03e1a7d2cc95e6568da462272ba7264e3441f71",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_13b1922f8cac8191a2c86c985ffb2cf4",
+  "deploymentId": "appgdep_6aef52464b5881919607bb9fafe64d0a",
+  "rollbackSiteVersion": 45,
+  "rollbackSiteCommit": "4dfa63986b8c3f737b52871019f9ab339a0c775b",
+  "rollbackBranch": "rollback/pre-routing-arp-gesture-removal",
+  "gestureScreens": 7,
+  "tests": [
+    "legacy routing/arp gestures inactive with sample-identical audio at 44.1/48 kHz PASS",
+    "remaining seven gestures, playback and patch recovery Worklet/fallback PASS",
+    "manual routing, live trace, arp notes/activity and actual audio PASS"
+  ],
+  "physicalWindowsTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded; local Chromium checks passed. Direct live inspection remains unavailable due to the previously verified environment proxy restriction."
+}
