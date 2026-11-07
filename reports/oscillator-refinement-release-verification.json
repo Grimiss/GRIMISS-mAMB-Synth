@@ -1,0 +1,21 @@
+{
+  "id": "appgdep_6aef963b2e588191b8a5f05d22506596",
+  "project_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c",
+  "title": "GRIMISS mikroSEQ",
+  "version_id": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_d97423a5f21081918a509e32d1963dda",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ae9ad1b7aa08191846efb701d49414c",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-11-07T21:21:16.137624+00:00",
+  "siteVersion": 53,
+  "siteCommit": "f22c42f7951c2013f05aa585e4074076127451d2",
+  "developmentCommit": "8d65dc5",
+  "rollbackSiteVersion": 52,
+  "tests": "Focused Chromium checks passed at 1920/1280. Existing broad gesture test failed duration <0.6s assertion.",
+  "liveBrowserInspection": false
+}
