@@ -1,0 +1,620 @@
+{
+  "status": "PASS",
+  "checkpoint": "checkpoint/pre-hardware-visual-stage1-2026-11-07",
+  "runtimeScriptsUnchanged": false,
+  "results": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "elementCount": 2500,
+      "panels": [
+        {
+          "id": "voice",
+          "rect": {
+            "x": 64.5,
+            "y": 144,
+            "width": 330,
+            "height": 237,
+            "top": 144,
+            "right": 394.5,
+            "bottom": 381,
+            "left": 64.5
+          }
+        },
+        {
+          "id": "oscillators",
+          "rect": {
+            "x": 403.5,
+            "y": 144,
+            "width": 715.5,
+            "height": 237,
+            "top": 144,
+            "right": 1119,
+            "bottom": 381,
+            "left": 403.5
+          }
+        },
+        {
+          "id": "mixer",
+          "rect": {
+            "x": 1129.5,
+            "y": 144,
+            "width": 231,
+            "height": 237,
+            "top": 144,
+            "right": 1360.5,
+            "bottom": 381,
+            "left": 1129.5
+          }
+        },
+        {
+          "id": "lfo1",
+          "rect": {
+            "x": 1371,
+            "y": 144,
+            "width": 238.5,
+            "height": 237,
+            "top": 144,
+            "right": 1609.5,
+            "bottom": 381,
+            "left": 1371
+          }
+        },
+        {
+          "id": "lfo2",
+          "rect": {
+            "x": 1618.5,
+            "y": 144,
+            "width": 240,
+            "height": 237,
+            "top": 144,
+            "right": 1858.5,
+            "bottom": 381,
+            "left": 1618.5
+          }
+        },
+        {
+          "id": "filter_envelope",
+          "rect": {
+            "x": 64.5,
+            "y": 390,
+            "width": 630,
+            "height": 141,
+            "top": 390,
+            "right": 694.5,
+            "bottom": 531,
+            "left": 64.5
+          }
+        },
+        {
+          "id": "amp_envelope",
+          "rect": {
+            "x": 64.5,
+            "y": 540,
+            "width": 630,
+            "height": 126,
+            "top": 540,
+            "right": 694.5,
+            "bottom": 666,
+            "left": 64.5
+          }
+        },
+        {
+          "id": "filter",
+          "rect": {
+            "x": 702,
+            "y": 390,
+            "width": 765,
+            "height": 141,
+            "top": 390,
+            "right": 1467,
+            "bottom": 531,
+            "left": 702
+          }
+        },
+        {
+          "id": "eq",
+          "rect": {
+            "x": 1474.5,
+            "y": 390,
+            "width": 384,
+            "height": 141,
+            "top": 390,
+            "right": 1858.5,
+            "bottom": 531,
+            "left": 1474.5
+          }
+        },
+        {
+          "id": "amp",
+          "rect": {
+            "x": 702,
+            "y": 540,
+            "width": 241.5,
+            "height": 126,
+            "top": 540,
+            "right": 943.5,
+            "bottom": 666,
+            "left": 702
+          }
+        },
+        {
+          "id": "mod_fx",
+          "rect": {
+            "x": 952.5,
+            "y": 540,
+            "width": 283.5,
+            "height": 229.5,
+            "top": 540,
+            "right": 1236,
+            "bottom": 769.5,
+            "left": 952.5
+          }
+        },
+        {
+          "id": "virtual_patch",
+          "rect": {
+            "x": 1243.5,
+            "y": 540,
+            "width": 384,
+            "height": 229.5,
+            "top": 540,
+            "right": 1627.5,
+            "bottom": 769.5,
+            "left": 1243.5
+          }
+        },
+        {
+          "id": "delay",
+          "rect": {
+            "x": 64.5,
+            "y": 673.5,
+            "width": 438,
+            "height": 96,
+            "top": 673.5,
+            "right": 502.5,
+            "bottom": 769.5,
+            "left": 64.5
+          }
+        },
+        {
+          "id": "arp_step",
+          "rect": {
+            "x": 1636.5,
+            "y": 540,
+            "width": 222,
+            "height": 229.5,
+            "top": 540,
+            "right": 1858.5,
+            "bottom": 769.5,
+            "left": 1636.5
+          }
+        },
+        {
+          "id": "reverb",
+          "rect": {
+            "x": 511.5,
+            "y": 673.5,
+            "width": 432,
+            "height": 96,
+            "top": 673.5,
+            "right": 943.5,
+            "bottom": 769.5,
+            "left": 511.5
+          }
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "elementCount": 2500,
+      "panels": [
+        {
+          "id": "voice",
+          "rect": {
+            "x": 53.75,
+            "y": 120,
+            "width": 275,
+            "height": 197.5,
+            "top": 120,
+            "right": 328.75,
+            "bottom": 317.5,
+            "left": 53.75
+          }
+        },
+        {
+          "id": "oscillators",
+          "rect": {
+            "x": 336.25,
+            "y": 120,
+            "width": 596.25,
+            "height": 197.5,
+            "top": 120,
+            "right": 932.5,
+            "bottom": 317.5,
+            "left": 336.25
+          }
+        },
+        {
+          "id": "mixer",
+          "rect": {
+            "x": 941.25,
+            "y": 120,
+            "width": 192.5,
+            "height": 197.5,
+            "top": 120,
+            "right": 1133.75,
+            "bottom": 317.5,
+            "left": 941.25
+          }
+        },
+        {
+          "id": "lfo1",
+          "rect": {
+            "x": 1142.5,
+            "y": 120,
+            "width": 198.75,
+            "height": 197.5,
+            "top": 120,
+            "right": 1341.25,
+            "bottom": 317.5,
+            "left": 1142.5
+          }
+        },
+        {
+          "id": "lfo2",
+          "rect": {
+            "x": 1348.75,
+            "y": 120,
+            "width": 200,
+            "height": 197.5,
+            "top": 120,
+            "right": 1548.75,
+            "bottom": 317.5,
+            "left": 1348.75
+          }
+        },
+        {
+          "id": "filter_envelope",
+          "rect": {
+            "x": 53.75,
+            "y": 325,
+            "width": 525,
+            "height": 117.5,
+            "top": 325,
+            "right": 578.75,
+            "bottom": 442.5,
+            "left": 53.75
+          }
+        },
+        {
+          "id": "amp_envelope",
+          "rect": {
+            "x": 53.75,
+            "y": 450,
+            "width": 525,
+            "height": 105,
+            "top": 450,
+            "right": 578.75,
+            "bottom": 555,
+            "left": 53.75
+          }
+        },
+        {
+          "id": "filter",
+          "rect": {
+            "x": 585,
+            "y": 325,
+            "width": 637.5,
+            "height": 117.5,
+            "top": 325,
+            "right": 1222.5,
+            "bottom": 442.5,
+            "left": 585
+          }
+        },
+        {
+          "id": "eq",
+          "rect": {
+            "x": 1228.75,
+            "y": 325,
+            "width": 320,
+            "height": 117.5,
+            "top": 325,
+            "right": 1548.75,
+            "bottom": 442.5,
+            "left": 1228.75
+          }
+        },
+        {
+          "id": "amp",
+          "rect": {
+            "x": 585,
+            "y": 450,
+            "width": 201.25,
+            "height": 105,
+            "top": 450,
+            "right": 786.25,
+            "bottom": 555,
+            "left": 585
+          }
+        },
+        {
+          "id": "mod_fx",
+          "rect": {
+            "x": 793.75,
+            "y": 450,
+            "width": 236.25,
+            "height": 191.25,
+            "top": 450,
+            "right": 1030,
+            "bottom": 641.25,
+            "left": 793.75
+          }
+        },
+        {
+          "id": "virtual_patch",
+          "rect": {
+            "x": 1036.25,
+            "y": 450,
+            "width": 320,
+            "height": 191.25,
+            "top": 450,
+            "right": 1356.25,
+            "bottom": 641.25,
+            "left": 1036.25
+          }
+        },
+        {
+          "id": "delay",
+          "rect": {
+            "x": 53.75,
+            "y": 561.25,
+            "width": 365,
+            "height": 80,
+            "top": 561.25,
+            "right": 418.75,
+            "bottom": 641.25,
+            "left": 53.75
+          }
+        },
+        {
+          "id": "arp_step",
+          "rect": {
+            "x": 1363.75,
+            "y": 450,
+            "width": 185,
+            "height": 191.25,
+            "top": 450,
+            "right": 1548.75,
+            "bottom": 641.25,
+            "left": 1363.75
+          }
+        },
+        {
+          "id": "reverb",
+          "rect": {
+            "x": 426.25,
+            "y": 561.25,
+            "width": 360,
+            "height": 80,
+            "top": 561.25,
+            "right": 786.25,
+            "bottom": 641.25,
+            "left": 426.25
+          }
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 768
+      },
+      "elementCount": 2500,
+      "panels": [
+        {
+          "id": "voice",
+          "rect": {
+            "x": 43,
+            "y": 120,
+            "width": 220,
+            "height": 158,
+            "top": 120,
+            "right": 263,
+            "bottom": 278,
+            "left": 43
+          }
+        },
+        {
+          "id": "oscillators",
+          "rect": {
+            "x": 269,
+            "y": 120,
+            "width": 477,
+            "height": 158,
+            "top": 120,
+            "right": 746,
+            "bottom": 278,
+            "left": 269
+          }
+        },
+        {
+          "id": "mixer",
+          "rect": {
+            "x": 753,
+            "y": 120,
+            "width": 154,
+            "height": 158,
+            "top": 120,
+            "right": 907,
+            "bottom": 278,
+            "left": 753
+          }
+        },
+        {
+          "id": "lfo1",
+          "rect": {
+            "x": 914,
+            "y": 120,
+            "width": 159,
+            "height": 158,
+            "top": 120,
+            "right": 1073,
+            "bottom": 278,
+            "left": 914
+          }
+        },
+        {
+          "id": "lfo2",
+          "rect": {
+            "x": 1079,
+            "y": 120,
+            "width": 160,
+            "height": 158,
+            "top": 120,
+            "right": 1239,
+            "bottom": 278,
+            "left": 1079
+          }
+        },
+        {
+          "id": "filter_envelope",
+          "rect": {
+            "x": 43,
+            "y": 284,
+            "width": 420,
+            "height": 94,
+            "top": 284,
+            "right": 463,
+            "bottom": 378,
+            "left": 43
+          }
+        },
+        {
+          "id": "amp_envelope",
+          "rect": {
+            "x": 43,
+            "y": 384,
+            "width": 420,
+            "height": 84,
+            "top": 384,
+            "right": 463,
+            "bottom": 468,
+            "left": 43
+          }
+        },
+        {
+          "id": "filter",
+          "rect": {
+            "x": 468,
+            "y": 284,
+            "width": 510,
+            "height": 94,
+            "top": 284,
+            "right": 978,
+            "bottom": 378,
+            "left": 468
+          }
+        },
+        {
+          "id": "eq",
+          "rect": {
+            "x": 983,
+            "y": 284,
+            "width": 256,
+            "height": 94,
+            "top": 284,
+            "right": 1239,
+            "bottom": 378,
+            "left": 983
+          }
+        },
+        {
+          "id": "amp",
+          "rect": {
+            "x": 468,
+            "y": 384,
+            "width": 161,
+            "height": 84,
+            "top": 384,
+            "right": 629,
+            "bottom": 468,
+            "left": 468
+          }
+        },
+        {
+          "id": "mod_fx",
+          "rect": {
+            "x": 635,
+            "y": 384,
+            "width": 189,
+            "height": 153,
+            "top": 384,
+            "right": 824,
+            "bottom": 537,
+            "left": 635
+          }
+        },
+        {
+          "id": "virtual_patch",
+          "rect": {
+            "x": 829,
+            "y": 384,
+            "width": 256,
+            "height": 153,
+            "top": 384,
+            "right": 1085,
+            "bottom": 537,
+            "left": 829
+          }
+        },
+        {
+          "id": "delay",
+          "rect": {
+            "x": 43,
+            "y": 473,
+            "width": 292,
+            "height": 64,
+            "top": 473,
+            "right": 335,
+            "bottom": 537,
+            "left": 43
+          }
+        },
+        {
+          "id": "arp_step",
+          "rect": {
+            "x": 1091,
+            "y": 384,
+            "width": 148,
+            "height": 153,
+            "top": 384,
+            "right": 1239,
+            "bottom": 537,
+            "left": 1091
+          }
+        },
+        {
+          "id": "reverb",
+          "rect": {
+            "x": 341,
+            "y": 473,
+            "width": 288,
+            "height": 64,
+            "top": 473,
+            "right": 629,
+            "bottom": 537,
+            "left": 341
+          }
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

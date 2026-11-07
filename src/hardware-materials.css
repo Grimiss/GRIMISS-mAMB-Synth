@@ -1,0 +1,103 @@
+/* GRIMISS hardware materials, Stage 1. Paint only: no layout/font/travel changes.
+   Tokens/classes are reusable opt-ins. SEQ, keyboard and all popup editors are
+   deliberately outside the selectors below; original accent tokens stay intact. */
+:root {
+  --hardware-chassis: #101211;
+  --hardware-recess: #090b0a;
+  --hardware-raised: #171a18;
+  --hardware-edge: #292d2a;
+  --print-teal: #426d66;
+  --print-teal-border: #426d66;
+  --print-knockout: #101211;
+  --brand-white: #e5e7e3;
+  --hardware-grain: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22160%22%20height%3D%22160%22%20viewBox%3D%220%200%20160%20160%22%3E%3Cfilter%20id%3D%22g%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.84%22%20numOctaves%3D%222%22%20seed%3D%2227%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%22.055%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Cpath%20fill%3D%22%23fff%22%20filter%3D%22url%28%23g%29%22%20d%3D%22M0%200h160v160H0z%22%2F%3E%3C%2Fsvg%3E");
+  --hardware-ink-grain: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%2232%22%20viewBox%3D%220%200%20192%2032%22%3E%3Cfilter%20id%3D%22i%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.48%20.73%22%20numOctaves%3D%221%22%20seed%3D%2241%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%22.11%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Cpath%20fill%3D%22%23fff%22%20filter%3D%22url%28%23i%29%22%20d%3D%22M0%200h192v32H0z%22%2F%3E%3C%2Fsvg%3E");
+}
+/* Shared finishes. These optional classes are not attached to SEQ16. */
+.hardware-metal {
+  background-color: var(--hardware-chassis);
+  background-image: var(--hardware-grain), radial-gradient(ellipse at 22% 0%, #ffffff02, transparent 67%);
+}
+.hardware-print {
+  color: var(--print-knockout);
+  background-color: var(--print-teal);
+  background-image: var(--hardware-ink-grain);
+  text-shadow: none;
+  box-shadow: none;
+}
+/* Preserve the original lower chassis behind the keyboard/SEQ housing. */
+html.fit-screen.reference-geometry main {
+  background-color: var(--hardware-chassis);
+  background-image: linear-gradient(transparent 0 479px, #101413 479px), var(--hardware-grain), radial-gradient(ellipse at 34% 7%, #191c19, transparent 72%);
+  box-shadow: inset 0 2px 0 #404640, inset 0 -9px 0 #030504, 0 14px 18px #0009;
+}
+html.fit-screen.reference-geometry main > .header {
+  background-color: var(--hardware-chassis);
+  background-image: var(--hardware-grain), linear-gradient(#ffffff02, transparent 50%, #00000010);
+  box-shadow: inset 0 1px 0 #30363066, 0 1px 2px #0008;
+  border-color: var(--hardware-edge);
+}
+/* Native border-box paint keeps the original one-pixel line and corner geometry.
+   Grain is clipped independently to the body and printed edge, so only the ink
+   coverage varies. No displaced edges, extra overlay boxes or pointer targets. */
+.hardware-printed-boundary,
+html.fit-screen.reference-geometry main .editor > .coordinate-panel {
+  background-color: var(--hardware-chassis);
+  background-image: var(--hardware-grain), radial-gradient(ellipse at 18% 0%, #1a1c19, var(--hardware-chassis) 78%), var(--hardware-ink-grain), linear-gradient(var(--print-teal-border), var(--print-teal-border));
+  background-clip: padding-box, padding-box, border-box, border-box;
+  background-origin: padding-box, padding-box, border-box, border-box;
+  border-color: transparent;
+  box-shadow: none;
+}
+html.fit-screen.reference-geometry main .coordinate-panel > h2 {
+  color: var(--print-knockout);
+  background-color: var(--print-teal);
+  background-image: var(--hardware-ink-grain);
+  border-bottom-color: var(--print-teal-border);
+  box-shadow: none;
+  text-shadow: none;
+}
+html.fit-screen.reference-geometry main .coordinate-panel > .inner {
+  background: transparent;
+}
+/* Existing type, text, placement and dimensions stay authoritative. */
+html.fit-screen.reference-geometry main #ms08-product {
+  color: var(--brand-white);
+  text-shadow: none;
+}
+html.fit-screen.reference-geometry main #ms08-specs .small-tag {
+  color: var(--print-teal);
+  border-color: var(--print-teal-border);
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+/* Neutral dark plastic. Active LEDs and existing selected-control colours remain. */
+html.fit-screen.reference-geometry main :is(.coordinate-panel, .header) button:not(.active):not([aria-pressed="true"]):not(.gesture-main-play) {
+  background: linear-gradient(#292d29, var(--hardware-raised) 58%, #101310);
+  border-color: #3d453f #272e29 #101510;
+  box-shadow: inset 0 1px 0 #a3afa315, 0 1px 1px #0008;
+}
+html.fit-screen.reference-geometry main .coordinate-panel select:not(.parameter-backing) {
+  background: var(--hardware-recess) !important;
+  border-color: #35433b;
+}
+html.fit-screen.reference-geometry main .coordinate-panel .physical-knob defs linearGradient[id$="-face"] stop:first-child { stop-color: #2d302d; }
+html.fit-screen.reference-geometry main .coordinate-panel .physical-knob defs linearGradient[id$="-face"] stop[offset=".22"] { stop-color: #202420; }
+html.fit-screen.reference-geometry main .coordinate-panel .physical-knob defs linearGradient[id$="-face"] stop:last-child { stop-color: #101310; }
+html.fit-screen.reference-geometry main .coordinate-panel .physical-knob defs linearGradient[id$="-edge"] stop:first-child { stop-color: #626b63; }
+html.fit-screen.reference-geometry main .coordinate-panel .physical-knob defs linearGradient[id$="-edge"] stop:last-child { stop-color: #363d36; }
+html.fit-screen.reference-geometry main .coordinate-panel .physical-slider {
+  background: linear-gradient(#444b44, #2a302a 48%, #1b211b);
+  border-color: #4c564d #242b25 #0b100b;
+  box-shadow: inset 0 1px 0 #bcc7b32a, 0 1px 2px #0009;
+}
+html.fit-screen.reference-geometry main .coordinate-panel .fader-well {
+  background: var(--hardware-recess);
+  border-color: #030503 #273128 #0b100b #030503;
+}
+/* Recessed glass only; no waveform, animation or gesture-state overrides. */
+html.fit-screen.reference-geometry main .coordinate-panel .scope {
+  border-color: #354038 #151d17 #28352c #1d281f;
+  box-shadow: inset 0 1px 3px #000a, 0 1px 0 #53615318;
+}

@@ -42,7 +42,8 @@
     "benchmark:engine-efficiency": "node tests/engine-efficiency-benchmark.cjs",
     "test:tablet-recovery": "node tests/tablet-recovery-browser.cjs && node tests/tablet-audio-browser.cjs",
     "test:gesture-refinement": "node tests/gesture-refinement-core.cjs && node tests/gesture-refinement-browser.cjs",
-    "test:screen-gestures": "node tests/screen-only-gestures.cjs && node tests/gesture-refinement-core.cjs && node tests/gesture-refinement-browser.cjs"
+    "test:screen-gestures": "node tests/screen-only-gestures.cjs && node tests/gesture-refinement-core.cjs && node tests/gesture-refinement-browser.cjs",
+    "test:hardware-stage1": "node tests/hardware-stage1-browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"
