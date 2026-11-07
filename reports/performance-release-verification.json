@@ -1,0 +1,19 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 40,
+  "siteCommit": "f51a48272b8ac9d90ecd144e3b40a38d13b3e035",
+  "developmentCommit": "424520403ede7365535a688855f0830fa131c83b",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "htmlSha256": "86a59762a154d326b761453eede87a43ef0577a15ff0d0f61cc24f98ce701384",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_75f96be29f908191989503d627894f25",
+  "deploymentId": "appgdep_6aeec2414c4c81918ded9216cb40edec",
+  "rollbackSiteVersion": 39,
+  "rollbackSiteCommit": "92551543417244d42aea357a954218eb515e34d9",
+  "rollbackBranch": "rollback/pre-tablet-performance-v1",
+  "physicalTabletVerified": false,
+  "sampleRateReduced": false,
+  "polyphonyReduced": false,
+  "factoryPatchesCompared": 100,
+  "audioMaximumDifference": 0
+}
