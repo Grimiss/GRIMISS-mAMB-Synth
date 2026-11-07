@@ -95,7 +95,7 @@ function createMambEffects(initial={}, sr=48000) {
     }
   }
 
-  function smoothWeights(weights,index){for(let j=0;j<weights.length;j++){weights[j]+=((j===index?1:0)-weights[j])*sampleAlpha;if(Math.abs(weights[j])<1e-7)weights[j]=0;if(Math.abs(1-weights[j])<1e-7)weights[j]=1}}
+  function smoothWeights(weights,index){if(weights.settledIndex===index)return;weights.settledIndex=-1;let settled=true;for(let j=0;j<weights.length;j++){weights[j]+=((j===index?1:0)-weights[j])*sampleAlpha;if(Math.abs(weights[j])<1e-7)weights[j]=0;if(Math.abs(1-weights[j])<1e-7)weights[j]=1;if(weights[j]!== (j===index?1:0))settled=false;}if(settled)weights.settledIndex=index;}
   function resetMod(){for(let i=0;i<2;i++)modLines[i].reset();phaserState.fill(0);phaserFeedback.fill(0);phaserTick=0;modQuiet=0;modTail=0}
   function resetDelay(){for(let i=0;i<2;i++)delayLines[i].reset();delayQuiet=0;delayTail=0}
   function resetSpring(){for(let i=0;i<6;i++)springDispersion[i].reset();for(let i=0;i<3;i++)springLines[i].reset();springDamped.fill(0);springAllpass.fill(0);springRead.fill(0);springDC=0;springL=springR=0}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": [
+    "MIDI loop-start notes repeat within one sample at fractional periods, nonzero loop starts and all block sizes",
+    "MIDI repeats and key/scale-only updates reuse the compiled schedule",
+    "FREE tempo edits rescale a sounding MIDI note once, preserving remaining duration",
+    "incremental overdub adds scheduled notes, rejects duplicate IDs and retains panic ownership",
+    "live SEQ tempo edits preserve remaining A/B gate and step phase",
+    "sparse SEQ updates preserve untouched roots, program and Song data without rebuilding 32 patterns",
+    "2000 unison retriggers reuse all voice modulation arrays and preserve tail-cap/Panic cleanup",
+    "voice pooling, thickness caching and ARP changes are sample-identical under stealing, live controls, all gestures, SEQ, MIDI and Panic"
+  ],
+  "comparisons": [
+    {
+      "sampleRate": 44100,
+      "gestures": false,
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "gestures": true,
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "gestures": false,
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "gestures": true,
+      "maximumDifference": 0
+    }
+  ],
+  "physicalTabletVerified": false
+}

@@ -8,6 +8,9 @@ for(const key of ['analogCharacter','thickness','velocitySensitivity'])initial[k
 let performanceBend=0,performanceWheel=0;
 let voices=[],clock=0,smoothMix=1,params={...initial},target={...initial},serial=0,hold=false,mode='add',group=-1,tick=0,frames=0,rebuilding=false;
 const TWO=2*Math.PI,dt=1/sr,alpha=1-Math.exp(-dt/.015),controlAlpha=1-Math.exp(-16*dt/.015);
+// Preserve 32 sounding/fading voices plus four temporary unison allocations.
+const voicePool=Array.from({length:36},()=>({mods:new Float64Array(6),amp:{stage:'off',value:0,releaseLevel:0},fil:{stage:'off',value:0,releaseLevel:0}}));
+function recycleVoice(v){v.owner=null;v.slot=null;voicePool.push(v);}
 const owners=new Map(),controllers=new Map(),moving=[];let cacheDirty=8191,movingMask=0;
 const mod={aa:0,ad:0,ar:0,fa:0,fd:0,fr:0,lfo:0,lfo2:0,ratio2:1,baseCut:1000,drive:1,driveNorm:1,k:2,thickRatio:1,analogStrength:0,ageTone:1,ageOutput:1,ageFlutter:0,level1:0,level2:0,wheelGate:1};
 const spectra=[[1,.12,.48,.08,.25,.04,.13],[.55,.14,.75,.09,.52,.07,.28],[.32,.85,.14,.61,.07,.39,.18]];
@@ -132,10 +135,10 @@ function newVoices(owner){
  // Keep the legacy noise RNG sequence at note boundaries; phases/calibration belong to the physical slot.
  random();random();random();random();
  const slot=slots.find(s=>!s.current),elapsed=frames-slot.frame;
- const v={id:serial++,owner,note:owner.note,hz:440*2**(((Number.isFinite(owner.glideFrom)&&owner.glideSeconds>0?owner.glideFrom:owner.note)-69)/12),glideTarget:owner.glideSeconds>0?440*2**((owner.note-69)/12):0,glideAlpha:owner.glideSeconds>0?1-Math.exp(-1/(sr*owner.glideSeconds)):1,velocity:owner.velocity,velocitySetting:params.velocitySensitivity,velocityTarget:(params.velocitySensitivity===0?1:owner.velocity**(1.5*params.velocitySensitivity/100))*owner.gain,velocityGain:(params.velocitySensitivity===0?1:owner.velocity**(1.5*params.velocitySensitivity/100))*owner.gain,stackDetune:count===1?0:(i-1.5)*7,p1:(slot.p1+elapsed*slot.inc1)%1,p2:(slot.p2+elapsed*slot.inc2)%1,seed:slot.seed,driftRate:slot.driftRate,slot,physicalSlot:slot,calibration:slot.calibration,inc1:slot.inc1,inc2:slot.inc2,analog1:1,analog2:1,analogCut:1,analogGain:1,aa:mod.aa,ad:mod.ad,fa:mod.fa,fd:mod.fd,ic1:0,ic2:0,ic3:0,ic4:0,bend:Math.max(-1,Math.min(1,owner.controller.bend+performanceBend)),wheel:Math.max(owner.controller.wheel,performanceWheel),mods:new Float64Array(6),smoothCut:NaN,amp:{stage:'attack',value:0},fil:{stage:'attack',value:0}};
+ const v=voicePool.pop();v.stealFade=undefined;v.id=serial++;v.owner=owner;v.note=owner.note;v.hz=440*2**(((Number.isFinite(owner.glideFrom)&&owner.glideSeconds>0?owner.glideFrom:owner.note)-69)/12);v.glideTarget=owner.glideSeconds>0?440*2**((owner.note-69)/12):0;v.glideAlpha=owner.glideSeconds>0?1-Math.exp(-1/(sr*owner.glideSeconds)):1;v.velocity=owner.velocity;v.velocitySetting=params.velocitySensitivity;v.velocityTarget=(params.velocitySensitivity===0?1:owner.velocity**(1.5*params.velocitySensitivity/100))*owner.gain;v.velocityGain=(params.velocitySensitivity===0?1:owner.velocity**(1.5*params.velocitySensitivity/100))*owner.gain;v.stackDetune=count===1?0:(i-1.5)*7;v.p1=(slot.p1+elapsed*slot.inc1)%1;v.p2=(slot.p2+elapsed*slot.inc2)%1;v.seed=slot.seed;v.driftRate=slot.driftRate;v.slot=slot;v.physicalSlot=slot;v.calibration=slot.calibration;v.inc1=slot.inc1;v.inc2=slot.inc2;v.analog1=1;v.analog2=1;v.analogCut=1;v.analogGain=1;v.aa=mod.aa;v.ad=mod.ad;v.fa=mod.fa;v.fd=mod.fd;v.ic1=0;v.ic2=0;v.ic3=0;v.ic4=0;v.bend=Math.max(-1,Math.min(1,owner.controller.bend+performanceBend));v.wheel=Math.max(owner.controller.wheel,performanceWheel);v.smoothCut=NaN;v.mods.fill(0);v.amp.stage=v.fil.stage='attack';v.amp.value=v.fil.value=v.amp.releaseLevel=v.fil.releaseLevel=0;
  slot.current=v;analogControl(v);voices.push(v);
  }
- if(voices.length>32)voices.splice(0,voices.length-32);
+ while(voices.length>32){const v=voices[0];park(v);for(let j=0;j<voices.length-1;j++)voices[j]=voices[j+1];voices.length--;recycleVoice(v);}
  // Preserve physically pressed MONO/UNISON keys for last-note priority.
  if(target.voiceMode==='poly'&&!rebuilding)cleanup();
 }
@@ -183,7 +186,7 @@ function render(out,offset=0,length=out.length-offset){
  advanceMix(mix1);advanceMix(mix2);advanceMix(filterMix);
  mod.lfo=lfoValue(lfoStates[0],params.lfo1Wave,mod.rate1)*params.lfo1Depth/100;mod.lfo2=lfoValue(lfoStates[1],params.lfo2Wave,mod.rate2)*params.lfo2Depth/100;
  let sum=0,energy=0;
- for(let j=voices.length-1;j>=0;j--){const v=voices[j];sum+=sample(v,sr,params,mod);energy+=v.amp.value*v.amp.value;if(v.amp.stage==='off'||v.stealFade<=0){park(v,frames+1);for(let k=j;k<voices.length-1;k++)voices[k]=voices[k+1];voices.length--}}
+ for(let j=voices.length-1;j>=0;j--){const v=voices[j];sum+=sample(v,sr,params,mod);energy+=v.amp.value*v.amp.value;if(v.amp.stage==='off'||v.stealFade<=0){park(v,frames+1);for(let k=j;k<voices.length-1;k++)voices[k]=voices[k+1];voices.length--;recycleVoice(v);}}
  const gain=1/Math.sqrt(Math.max(1,energy));smoothMix+=(gain-smoothMix)*Math.min(1,dt*35);
  out[i]=Number.isFinite(sum)?Math.tanh(sum*smoothMix*.8)*params.master/100:0;clock+=dt;frames++;
  }

@@ -52,3 +52,6 @@ The original CONNECT screenshot remains the visual reference. v0.4/v0.5 fixtures
 ## Keyboard roots and automatic root program
 
 In SEQ-16, ROOT SOURCE defaults to FIXED for compatibility. KEYBOARD latches the actual pressed note at the next pitch-step boundary without restarting the melody. PROGRAM opens an eight-slot keyboard-side editor: enter notes, set durations from1–64 pitch steps, then RUN. Program STOP freezes only root progression; LOOP repeats populated slots. With EDIT off, held keys temporarily override a running program. The melody and root program can have different cycle lengths. All six existing arp modes retain their old pitch rules; root selection affects independent SEQ notes, including ECHO. See [the root/program guide](MIKROSEQ_ROOT_PROGRAM.md).
+
+The second synth/SEQ efficiency pass, its timing fixes, rollback, validation and
+hardware-testing limits are documented in [Engine efficiency V2](ENGINE_EFFICIENCY_V2.md).

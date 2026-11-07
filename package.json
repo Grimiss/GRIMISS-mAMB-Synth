@@ -37,7 +37,9 @@
     "test:hierarchy": "node tests/seq-hierarchy-browser.cjs",
     "test:alternate": "node tests/seq-alternate.cjs && node tests/seq-alternate-audio.cjs",
     "test:ms08": "node tests/reshape.cjs && node tests/ms08-browser.cjs",
-    "test:persistence": "node tests/persistence-core.cjs && node tests/persistence-browser.cjs && node tests/persistence-faults-browser.cjs"
+    "test:persistence": "node tests/persistence-core.cjs && node tests/persistence-browser.cjs && node tests/persistence-faults-browser.cjs",
+    "test:engine-efficiency": "node tests/engine-efficiency.cjs && node tests/engine-efficiency-browser.cjs",
+    "benchmark:engine-efficiency": "node tests/engine-efficiency-benchmark.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

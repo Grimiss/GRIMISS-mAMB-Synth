@@ -1,0 +1,289 @@
+{
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "method": "Separate Node processes, alternating order, three runs per variant; wall-time medians. Not tablet or browser realtime deadline measurements.",
+  "rows": [
+    {
+      "kind": "steady",
+      "beforeMs": 2458.011684,
+      "afterMs": 2252.803428,
+      "reductionPercent": 8.348546808616385,
+      "runs": {
+        "before": [
+          {
+            "kind": "steady",
+            "before": true,
+            "ms": 2600.41802,
+            "blockP95ms": 0.5586459999999533,
+            "blockP99ms": 0.7015099999998711,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "steady",
+            "before": true,
+            "ms": 2370.262465,
+            "blockP95ms": 0.533629000000019,
+            "blockP99ms": 0.6967640000002575,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "steady",
+            "before": true,
+            "ms": 2458.011684,
+            "blockP95ms": 0.5437849999998434,
+            "blockP99ms": 0.6811509999999998,
+            "renderedSeconds": 16
+          }
+        ],
+        "after": [
+          {
+            "kind": "steady",
+            "before": false,
+            "ms": 2544.935438,
+            "blockP95ms": 0.5721469999999726,
+            "blockP99ms": 0.7353760000000875,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "steady",
+            "before": false,
+            "ms": 2252.803428,
+            "blockP95ms": 0.47356200000012905,
+            "blockP99ms": 0.5631560000001627,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "steady",
+            "before": false,
+            "ms": 2249.585939,
+            "blockP95ms": 0.4685719999997673,
+            "blockP99ms": 0.6152720000000045,
+            "renderedSeconds": 16
+          }
+        ]
+      }
+    },
+    {
+      "kind": "gestures",
+      "beforeMs": 3282.360798,
+      "afterMs": 3051.5661450000002,
+      "reductionPercent": 7.031361486544293,
+      "runs": {
+        "before": [
+          {
+            "kind": "gestures",
+            "before": true,
+            "ms": 3362.245336,
+            "blockP95ms": 0.7556119999999282,
+            "blockP99ms": 1.011555000000044,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "gestures",
+            "before": true,
+            "ms": 3282.360798,
+            "blockP95ms": 0.7074609999999666,
+            "blockP99ms": 0.8901350000001003,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "gestures",
+            "before": true,
+            "ms": 3193.59923,
+            "blockP95ms": 0.6971949999997378,
+            "blockP99ms": 0.885577000000012,
+            "renderedSeconds": 16
+          }
+        ],
+        "after": [
+          {
+            "kind": "gestures",
+            "before": false,
+            "ms": 2992.565072,
+            "blockP95ms": 0.6241950000003271,
+            "blockP99ms": 0.7343299999999999,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "gestures",
+            "before": false,
+            "ms": 3051.5661450000002,
+            "blockP95ms": 0.6326179999996384,
+            "blockP99ms": 0.7829930000000331,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "gestures",
+            "before": false,
+            "ms": 3072.0665070000005,
+            "blockP95ms": 0.6580659999999625,
+            "blockP99ms": 0.8511359999999968,
+            "renderedSeconds": 16
+          }
+        ]
+      }
+    },
+    {
+      "kind": "retrigger",
+      "beforeMs": 2336.597373,
+      "afterMs": 2309.8260419999997,
+      "reductionPercent": 1.1457400110669547,
+      "runs": {
+        "before": [
+          {
+            "kind": "retrigger",
+            "before": true,
+            "ms": 2374.810428,
+            "blockP95ms": 0.535378000000037,
+            "blockP99ms": 0.6144709999999804,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "retrigger",
+            "before": true,
+            "ms": 2336.597373,
+            "blockP95ms": 0.5347150000000056,
+            "blockP99ms": 0.684954999999718,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "retrigger",
+            "before": true,
+            "ms": 2288.849913,
+            "blockP95ms": 0.5026629999999841,
+            "blockP99ms": 0.6119370000001254,
+            "renderedSeconds": 16
+          }
+        ],
+        "after": [
+          {
+            "kind": "retrigger",
+            "before": false,
+            "ms": 2386.71125,
+            "blockP95ms": 0.5535869999999932,
+            "blockP99ms": 0.6808190000000423,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "retrigger",
+            "before": false,
+            "ms": 2309.475954,
+            "blockP95ms": 0.5211910000000444,
+            "blockP99ms": 0.6758629999999357,
+            "renderedSeconds": 16
+          },
+          {
+            "kind": "retrigger",
+            "before": false,
+            "ms": 2309.8260419999997,
+            "blockP95ms": 0.5152619999998933,
+            "blockP99ms": 0.6196850000001177,
+            "renderedSeconds": 16
+          }
+        ]
+      }
+    },
+    {
+      "kind": "seq-edit",
+      "beforeMs": 47.824314999999984,
+      "afterMs": 11.311607000000002,
+      "reductionPercent": 76.34758176881361,
+      "runs": {
+        "before": [
+          {
+            "kind": "seq-edit",
+            "before": true,
+            "ms": 46.17716200000001,
+            "iterations": 2000
+          },
+          {
+            "kind": "seq-edit",
+            "before": true,
+            "ms": 47.824314999999984,
+            "iterations": 2000
+          },
+          {
+            "kind": "seq-edit",
+            "before": true,
+            "ms": 49.23830899999999,
+            "iterations": 2000
+          }
+        ],
+        "after": [
+          {
+            "kind": "seq-edit",
+            "before": false,
+            "ms": 11.311607000000002,
+            "iterations": 2000
+          },
+          {
+            "kind": "seq-edit",
+            "before": false,
+            "ms": 11.916119000000002,
+            "iterations": 2000
+          },
+          {
+            "kind": "seq-edit",
+            "before": false,
+            "ms": 7.850906000000002,
+            "iterations": 2000
+          }
+        ]
+      }
+    },
+    {
+      "kind": "midi-loop",
+      "beforeMs": 27.464546999999982,
+      "afterMs": 2.2336700000000036,
+      "reductionPercent": 91.86707867419038,
+      "runs": {
+        "before": [
+          {
+            "kind": "midi-loop",
+            "before": true,
+            "ms": 27.464546999999982,
+            "notes": 10000,
+            "loopTraversals": 20
+          },
+          {
+            "kind": "midi-loop",
+            "before": true,
+            "ms": 27.539660999999995,
+            "notes": 10000,
+            "loopTraversals": 20
+          },
+          {
+            "kind": "midi-loop",
+            "before": true,
+            "ms": 27.036983000000006,
+            "notes": 10000,
+            "loopTraversals": 20
+          }
+        ],
+        "after": [
+          {
+            "kind": "midi-loop",
+            "before": false,
+            "ms": 2.2336700000000036,
+            "notes": 10000,
+            "loopTraversals": 20
+          },
+          {
+            "kind": "midi-loop",
+            "before": false,
+            "ms": 2.8063140000000004,
+            "notes": 10000,
+            "loopTraversals": 20
+          },
+          {
+            "kind": "midi-loop",
+            "before": false,
+            "ms": 2.188822000000002,
+            "notes": 10000,
+            "loopTraversals": 20
+          }
+        ]
+      }
+    }
+  ]
+}
