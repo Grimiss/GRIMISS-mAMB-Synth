@@ -1,0 +1,24 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 50,
+  "siteCommit": "acdf1e10254598b64246e3585ad5aad6bac6d971",
+  "developmentCommit": "85e2013af26a870aaab9101c2f5af496db91073c",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_2e5d4d04a0c08191bd83a47c28528908",
+  "deploymentId": "appgdep_6aef7e394a548191aa3cc07562202bd5",
+  "rollbackSiteVersion": 49,
+  "rollbackSiteCommit": "69a5086a5aaecda970d9b59024c44982fc9db82d",
+  "rollbackBranch": "rollback/pre-ageing-pass",
+  "htmlSha256": "f0bfb053f66c32c027f62838f294c90869d1c16f7c11503a9d03f47f7818c64f",
+  "runtimeScriptsUnchanged": true,
+  "headingWeight": 900,
+  "staticAgeingApplied": true,
+  "tests": [
+    "1920 and 1280 layout/heading checks PASS",
+    "unchanged control geometry and SEQ styles PASS",
+    "actual delay controls, EQ Details and keyboard audio PASS"
+  ],
+  "physicalWindowsTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded. Packaged Chromium geometry, typography and audio/control checks passed. Direct live inspection remains unavailable due to the previously verified environment proxy restriction; not retried."
+}
