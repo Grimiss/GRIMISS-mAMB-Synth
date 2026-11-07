@@ -1,0 +1,28 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 41,
+  "siteCommit": "acbd08dd52fbfc8bbc19ccd8e6f7e8098a5be2f4",
+  "developmentCommit": "b0a385a6893db890650c8f095112630d6b3852fa",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "htmlSha256": "7190c51a48362ac8e861a43be9949b86da309a12e9aef40884a957f6885b9727",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_e163a8bfd6088191a6a19f20dce4a807",
+  "deploymentId": "appgdep_6aeee060aef481918b198644bb0e24a5",
+  "rollbackSiteVersion": 40,
+  "rollbackSiteCommit": "f51a48272b8ac9d90ecd144e3b40a38d13b3e035",
+  "rollbackBranch": "rollback/pre-engine-efficiency-v2",
+  "physicalTabletVerified": false,
+  "sampleRateReduced": false,
+  "polyphonyReduced": false,
+  "factoryPatchesCompared": 100,
+  "audioMaximumDifference": 0,
+  "packagedBuildBrowserQA": {
+    "AudioWorklet": "PASS",
+    "ScriptProcessor": "PASS"
+  },
+  "postPublishHttpVerification": {
+    "status": "blocked",
+    "reason": "Environment outbound proxy rejected CONNECT with HTTP 403; no second attempt or audience change.",
+    "nativeDeploymentStatus": "succeeded"
+  }
+}
