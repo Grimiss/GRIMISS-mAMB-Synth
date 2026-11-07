@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "environment": "Separate Node/V8 processes, median of 3 runs per variant; development server, not tablet hardware",
+  "voices": 8,
+  "sampleRate": 48000,
+  "results": [
+    {
+      "scenario": "none",
+      "audioSeconds": 8,
+      "beforeMs": 1256,
+      "afterMs": 1231,
+      "reductionPercent": 2
+    },
+    {
+      "scenario": "one slow",
+      "audioSeconds": 8,
+      "beforeMs": 1415,
+      "afterMs": 1235,
+      "reductionPercent": 12.7
+    },
+    {
+      "scenario": "all slow",
+      "audioSeconds": 8,
+      "beforeMs": 1698,
+      "afterMs": 1515,
+      "reductionPercent": 10.8
+    },
+    {
+      "scenario": "all normal",
+      "audioSeconds": 8,
+      "beforeMs": 1698,
+      "afterMs": 1620,
+      "reductionPercent": 4.6
+    },
+    {
+      "scenario": "all paused",
+      "audioSeconds": 8,
+      "beforeMs": 1247,
+      "afterMs": 1162,
+      "reductionPercent": 6.9
+    }
+  ],
+  "coefficients": {
+    "before": {
+      "eq": 6000,
+      "reverb": 3000
+    },
+    "after": {
+      "eq": 0,
+      "reverb": 0
+    }
+  },
+  "snapshotBytes": {
+    "full": 16000,
+    "compact": 7247
+  }
+}

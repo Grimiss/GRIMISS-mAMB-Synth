@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "factoryPatchesCompared": 100,
+  "results": [
+    {
+      "sampleRate": 44100,
+      "kind": "none",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "kind": "filter",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "kind": "modfx",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "kind": "all",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 44100,
+      "kind": "paused",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "kind": "none",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "kind": "filter",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "kind": "modfx",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "kind": "all",
+      "maximumDifference": 0
+    },
+    {
+      "sampleRate": 48000,
+      "kind": "paused",
+      "maximumDifference": 0
+    }
+  ]
+}
