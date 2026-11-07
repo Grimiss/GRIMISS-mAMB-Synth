@@ -12,6 +12,7 @@
   --brand-white: #e5e7e3;
   --hardware-section-radius: 6px;
   --hardware-border-width: 1px;
+  --hardware-boundary-weight: 1.5px;
   --hardware-header-radius: calc(var(--hardware-section-radius) - var(--hardware-border-width));
   --hardware-ink-texture-strength: .12;
   --hardware-edge-imperfection-strength: .06;
@@ -60,7 +61,7 @@ html.fit-screen.reference-geometry main .editor > .coordinate-panel {
   background-origin: padding-box, padding-box, border-box, border-box;
   border-color: transparent;
   border-radius: var(--hardware-section-radius);
-  box-shadow: inset 0 1px 2px var(--hardware-panel-shadow), inset 0 -1px 1px #00000033;
+  box-shadow: inset 0 0 0 calc(var(--hardware-boundary-weight) - var(--hardware-border-width)) var(--hardware-print-edge), inset 0 1px 2px var(--hardware-panel-shadow), inset 0 -1px 1px #00000033;
 }
 html.fit-screen.reference-geometry main .coordinate-panel > h2 {
   color: var(--print-knockout);
@@ -166,4 +167,33 @@ html.fit-screen.reference-geometry main .coordinate-panel .physical-slider {
 }
 html.fit-screen.reference-geometry main .coordinate-panel .fader-well {
   box-shadow: inset 1px 1px 2px #000000ee, 0 1px 0 #73816b20;
+}
+
+/* Clear Orbitron Bold section legends, retaining the existing font size/boxes.
+   A small knockout edge reinforces the printed lettering at native 8px size. */
+html.fit-screen.reference-geometry main .coordinate-panel > h2 {
+  font-family: Orbitron, monospace !important;
+  font-weight: 700 !important;
+  font-variation-settings: "wght" 700;
+  -webkit-text-stroke: .16px var(--print-knockout);
+}
+html.fit-screen.reference-geometry main .coordinate-panel > h2 > button {
+  -webkit-text-stroke: 0;
+  font-variation-settings: normal;
+}
+/* Existing DELAY header controls: title left, master LED right. Preserve all
+   switch widths, knob positions, effect choices, sync and division controls. */
+html.fit-screen.reference-geometry main .delay-panel > h2 {
+  padding-left: 6px !important;
+}
+html.fit-screen.reference-geometry main .delay-panel > .inner > .on-switch {
+  left: auto !important;
+  right: 1px !important;
+  font-size: 0 !important;
+}
+html.fit-screen.reference-geometry main .delay-panel > .inner > .button-select {
+  left: 50px !important;
+}
+html.fit-screen.reference-geometry main .delay-panel .delay-sync {
+  left: 160px !important;
 }

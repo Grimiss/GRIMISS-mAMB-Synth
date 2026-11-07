@@ -1,0 +1,373 @@
+{
+  "status": "PASS",
+  "checkpoint": "checkpoint/pre-section-heading-refinement-2026-11-07",
+  "runtimeScriptsUnchanged": true,
+  "ageingUnchanged": true,
+  "results": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "geometryPreserved": true,
+      "seqStylesUnchanged": true,
+      "headings": [
+        {
+          "text": "VOICE",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "OSCILLATORS",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "MIXER",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "LFO 1",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "LFO 2",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "FILTER ENVELOPE",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "AMP ENVELOPE",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "FILTER",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "EQ",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "AMP",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "MOD FX",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "VIRTUAL PATCH BAY",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "DELAY",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "ARPEGGIATOR",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "REVERB",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        }
+      ],
+      "delay": {
+        "panel": {
+          "x": 64.5,
+          "y": 673.5,
+          "width": 438,
+          "height": 96,
+          "top": 673.5,
+          "right": 502.5,
+          "bottom": 769.5,
+          "left": 64.5
+        },
+        "title": {
+          "x": 75,
+          "y": 678.75,
+          "width": 50.296875,
+          "height": 15,
+          "top": 678.75,
+          "right": 125.296875,
+          "bottom": 693.75,
+          "left": 75
+        },
+        "modes": {
+          "x": 145.5,
+          "y": 675,
+          "width": 156,
+          "height": 18,
+          "top": 675,
+          "right": 301.5,
+          "bottom": 693,
+          "left": 145.5
+        },
+        "sync": {
+          "x": 310.5,
+          "y": 678,
+          "width": 147,
+          "height": 18,
+          "top": 678,
+          "right": 457.5,
+          "bottom": 696,
+          "left": 310.5
+        },
+        "led": {
+          "x": 472.5,
+          "y": 679.5,
+          "width": 12,
+          "height": 12,
+          "top": 679.5,
+          "right": 484.5,
+          "bottom": 691.5,
+          "left": 472.5
+        },
+        "header": {
+          "x": 66,
+          "y": 675,
+          "width": 435,
+          "height": 24,
+          "top": 675,
+          "right": 501,
+          "bottom": 699,
+          "left": 66
+        }
+      },
+      "boundary": {
+        "border": "1px",
+        "shadow": "color(srgb 0.247059 0.406039 0.38) 0px 0px 0px 0.5px inset, rgba(3, 7, 3, 0.333) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.2) 0px -1px 1px 0px inset",
+        "weight": "1.5px"
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 768
+      },
+      "geometryPreserved": true,
+      "seqStylesUnchanged": true,
+      "headings": [
+        {
+          "text": "VOICE",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "OSCILLATORS",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "MIXER",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "LFO 1",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "LFO 2",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "FILTER ENVELOPE",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "AMP ENVELOPE",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "FILTER",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "EQ",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "AMP",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "MOD FX",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "VIRTUAL PATCH BAY",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "DELAY",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "ARPEGGIATOR",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        },
+        {
+          "text": "REVERB",
+          "font": "Orbitron, monospace",
+          "weight": "700",
+          "axis": "\"wght\" 700",
+          "stroke": "0.16px"
+        }
+      ],
+      "delay": {
+        "panel": {
+          "x": 43,
+          "y": 473,
+          "width": 292,
+          "height": 64,
+          "top": 473,
+          "right": 335,
+          "bottom": 537,
+          "left": 43
+        },
+        "title": {
+          "x": 50,
+          "y": 476.5,
+          "width": 33.53125,
+          "height": 10,
+          "top": 476.5,
+          "right": 83.53125,
+          "bottom": 486.5,
+          "left": 50
+        },
+        "modes": {
+          "x": 97,
+          "y": 474,
+          "width": 104,
+          "height": 12,
+          "top": 474,
+          "right": 201,
+          "bottom": 486,
+          "left": 97
+        },
+        "sync": {
+          "x": 207,
+          "y": 476,
+          "width": 98,
+          "height": 12,
+          "top": 476,
+          "right": 305,
+          "bottom": 488,
+          "left": 207
+        },
+        "led": {
+          "x": 315,
+          "y": 477,
+          "width": 8,
+          "height": 8,
+          "top": 477,
+          "right": 323,
+          "bottom": 485,
+          "left": 315
+        },
+        "header": {
+          "x": 44,
+          "y": 474,
+          "width": 290,
+          "height": 16,
+          "top": 474,
+          "right": 334,
+          "bottom": 490,
+          "left": 44
+        }
+      },
+      "boundary": {
+        "border": "1px",
+        "shadow": "color(srgb 0.247059 0.406039 0.38) 0px 0px 0px 0.5px inset, rgba(3, 7, 3, 0.333) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.2) 0px -1px 1px 0px inset",
+        "weight": "1.5px"
+      }
+    }
+  ],
+  "errors": []
+}
