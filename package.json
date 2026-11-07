@@ -45,7 +45,8 @@
     "test:screen-gestures": "node tests/screen-only-gestures.cjs && node tests/gesture-refinement-core.cjs && node tests/gesture-refinement-browser.cjs",
     "test:hardware-stage1": "node tests/hardware-stage1-browser.cjs",
     "test:hardware-stage1b": "node tests/hardware-stage1b-browser.cjs && node tests/hardware-stage1b-hit-regression.cjs",
-    "test:section-headings": "node tests/section-heading-browser.cjs"
+    "test:section-headings": "node tests/section-heading-browser.cjs",
+    "test:ageing-pass": "node tests/ageing-pass-browser.cjs"
   },
   "devDependencies": {
     "playwright": "^1.56.0"

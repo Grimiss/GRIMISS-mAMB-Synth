@@ -1,4 +1,4 @@
-/* GRIMISS hardware materials, Stage 1B. Paint only: no layout/font/travel changes.
+/* GRIMISS hardware materials. Paint only: no layout/control-size/travel changes.
    Tokens/classes are reusable opt-ins. SEQ, keyboard and all popup editors are
    deliberately outside the selectors below; original accent tokens stay intact. */
 :root {
@@ -14,10 +14,13 @@
   --hardware-border-width: 1px;
   --hardware-boundary-weight: 1.5px;
   --hardware-header-radius: calc(var(--hardware-section-radius) - var(--hardware-border-width));
-  --hardware-ink-texture-strength: .12;
-  --hardware-edge-imperfection-strength: .06;
-  --hardware-chassis-texture-intensity: .14;
+  --hardware-ink-texture-strength: .22;
+  --hardware-edge-imperfection-strength: .10;
+  --hardware-chassis-texture-intensity: .23;
   --hardware-knob-grain-strength: .065;
+  --hardware-letter-wear-strength: .62;
+  --hardware-letter-ink-flecks: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22192%22%20height%3D%2216%22%3E%3Cg%20fill%3D%22%23426d66%22%20opacity%3D%22.64%22%3E%3Ccircle%20cx%3D%227%22%20cy%3D%225%22%20r%3D%220.22%22%2F%3E%3Ccircle%20cx%3D%2219%22%20cy%3D%2211%22%20r%3D%220.2%22%2F%3E%3Ccircle%20cx%3D%2231%22%20cy%3D%227%22%20r%3D%220.24%22%2F%3E%3Ccircle%20cx%3D%2246%22%20cy%3D%2213%22%20r%3D%220.18%22%2F%3E%3Ccircle%20cx%3D%2259%22%20cy%3D%225%22%20r%3D%220.22%22%2F%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2210%22%20r%3D%220.24%22%2F%3E%3Ccircle%20cx%3D%2286%22%20cy%3D%224%22%20r%3D%220.18%22%2F%3E%3Ccircle%20cx%3D%2298%22%20cy%3D%2212%22%20r%3D%220.25%22%2F%3E%3Ccircle%20cx%3D%22111%22%20cy%3D%227%22%20r%3D%220.2%22%2F%3E%3Ccircle%20cx%3D%22126%22%20cy%3D%2211%22%20r%3D%220.22%22%2F%3E%3Ccircle%20cx%3D%22141%22%20cy%3D%225%22%20r%3D%220.18%22%2F%3E%3Ccircle%20cx%3D%22153%22%20cy%3D%2213%22%20r%3D%220.24%22%2F%3E%3Ccircle%20cx%3D%22167%22%20cy%3D%228%22%20r%3D%220.2%22%2F%3E%3Ccircle%20cx%3D%22181%22%20cy%3D%224%22%20r%3D%220.22%22%2F%3E%3Ccircle%20cx%3D%22188%22%20cy%3D%2212%22%20r%3D%220.18%22%2F%3E%3C%2Fg%3E%3Cg%20stroke%3D%22%23426d66%22%20stroke-width%3D%22.23%22%20opacity%3D%22.42%22%3E%3Cpath%20d%3D%22M26%205.4h1.1M65%209.2h.8M117%206.3h1.2M161%2010.5h.9%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  --hardware-surface-age: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22256%22%20height%3D%22192%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23c4c9bc%22%20stroke-width%3D%22.35%22%20opacity%3D%22.06%22%3E%3Cpath%20d%3D%22M18%2043l4%20.3M73%20119l6-.4M149%2064l3%20.5M215%20158l5-.2M102%20177l3%20.1%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23000%22%20opacity%3D%22.10%22%3E%3Cellipse%20cx%3D%2241%22%20cy%3D%2283%22%20rx%3D%22.65%22%20ry%3D%22.3%22%2F%3E%3Cellipse%20cx%3D%22177%22%20cy%3D%22137%22%20rx%3D%22.5%22%20ry%3D%22.3%22%2F%3E%3Cellipse%20cx%3D%22229%22%20cy%3D%2231%22%20rx%3D%22.55%22%20ry%3D%22.25%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   --hardware-control-highlight: #c2cfb926;
   --hardware-control-shadow: #00000088;
   --hardware-panel-shadow: #03070355;
@@ -41,12 +44,12 @@
 /* Preserve the original lower chassis behind the keyboard/SEQ housing. */
 html.fit-screen.reference-geometry main {
   background-color: var(--hardware-chassis);
-  background-image: linear-gradient(transparent 0 479px, #101413 479px), var(--hardware-grain), radial-gradient(ellipse at 34% 7%, #191c19, transparent 72%);
+  background-image: linear-gradient(transparent 0 479px, #101413 479px), var(--hardware-surface-age), var(--hardware-grain), radial-gradient(ellipse at 34% 7%, #191c19, transparent 72%);
   box-shadow: inset 0 2px 0 #404640, inset 0 -9px 0 #030504, 0 14px 18px #0009;
 }
 html.fit-screen.reference-geometry main > .header {
   background-color: var(--hardware-chassis);
-  background-image: var(--hardware-grain), linear-gradient(#ffffff02, transparent 50%, #00000010);
+  background-image: var(--hardware-surface-age), var(--hardware-grain), linear-gradient(#ffffff02, transparent 50%, #00000010);
   box-shadow: inset 0 1px 0 #30363066, 0 1px 2px #0008;
   border-color: var(--hardware-edge);
 }
@@ -125,7 +128,7 @@ html.fit-screen.reference-geometry main .editor > .coordinate-panel::before {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background-image: var(--hardware-powder-grain), radial-gradient(ellipse at 31% 19%, #ffffff0a, #00000014 76%);
+  background-image: var(--hardware-surface-age), var(--hardware-powder-grain), radial-gradient(ellipse at 31% 19%, #ffffff0a, #00000014 76%);
   opacity: var(--hardware-chassis-texture-intensity);
   mix-blend-mode: soft-light;
   pointer-events: none;
@@ -169,13 +172,13 @@ html.fit-screen.reference-geometry main .coordinate-panel .fader-well {
   box-shadow: inset 1px 1px 2px #000000ee, 0 1px 0 #73816b20;
 }
 
-/* Clear Orbitron Bold section legends, retaining the existing font size/boxes.
+/* Orbitron Black section legends retain the existing font size/boxes.
    A small knockout edge reinforces the printed lettering at native 8px size. */
 html.fit-screen.reference-geometry main .coordinate-panel > h2 {
   font-family: Orbitron, monospace !important;
-  font-weight: 700 !important;
-  font-variation-settings: "wght" 700;
-  -webkit-text-stroke: .16px var(--print-knockout);
+  font-weight: 900 !important;
+  font-variation-settings: "wght" 900;
+  -webkit-text-stroke: .20px var(--print-knockout);
 }
 html.fit-screen.reference-geometry main .coordinate-panel > h2 > button {
   -webkit-text-stroke: 0;
@@ -196,4 +199,21 @@ html.fit-screen.reference-geometry main .delay-panel > .inner > .button-select {
 }
 html.fit-screen.reference-geometry main .delay-panel .delay-sync {
   left: 160px !important;
+}
+
+/* Static overprint pinpricks interrupt the knockout letter edges very slightly.
+   This is a decorative paint layer only: no text masks, displacement or hit area
+   changes. Keep native header buttons above the grain. */
+html.fit-screen.reference-geometry main .coordinate-panel > h2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: var(--hardware-letter-ink-flecks);
+  opacity: var(--hardware-letter-wear-strength);
+  pointer-events: none;
+  z-index: 1;
+}
+html.fit-screen.reference-geometry main .coordinate-panel > h2 > button {
+  z-index: 2;
 }
