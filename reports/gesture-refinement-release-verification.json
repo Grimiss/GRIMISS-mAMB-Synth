@@ -1,0 +1,19 @@
+{
+  "status": "succeeded",
+  "url": "https://grimiss-mamb-synth-v05.bubbly-ray-9560.chatgpt.site",
+  "siteVersion": 43,
+  "siteCommit": "d6f3ce655ec55458c2752c090c34af463f59f5f3",
+  "developmentCommit": "3ac630c00a8fa0696571e6fd193d5f1d1c5c38d2",
+  "developmentBranch": "codex/controller-workflow-v0.7",
+  "versionId": "appgprj_6ae9ad1b7aa08191846efb701d49414c~appgver_b29b2cebf99c8191b2a4ecfa93be4be3",
+  "deploymentId": "appgdep_6aef13174d148191afd25759c7c7bcf9",
+  "rollbackSiteVersion": 42,
+  "rollbackSiteCommit": "b131a51d453b7e0abae29ef45ac94c8a92796238",
+  "rollbackBranch": "rollback/pre-gesture-refinement-v2",
+  "htmlSha256": "f332173c4fc0d00980978b140afd255a05e09a31f246024b861f2b38b15e7c6c",
+  "coreChecks": "PASS",
+  "browserChecks": "PASS",
+  "simultaneousGestureSurfaces": 16,
+  "physicalWindowsAppTested": false,
+  "postPublishVerification": "Native hosting deployment succeeded. Packaged browser and actual-audio checks passed before publishing. Live HTTP inspection remains unavailable because of the previously verified environment proxy restriction; not retried."
+}
