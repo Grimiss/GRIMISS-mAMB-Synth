@@ -1,0 +1,38 @@
+/* Section-local accents; no layout or synthesis changes. */
+html.fit-screen.reference-geometry.control-refinement main {
+  --section-blue: #48c9ee;
+  --section-amber: #e8b555;
+  --section-green: #56ed9c;
+}
+html.fit-screen.reference-geometry.control-refinement main svg:is([data-gesture-state=playing], [data-gesture-state=paused]) {
+  outline: none !important;
+}
+html.fit-screen.reference-geometry.control-refinement main :is(.osc-row + .osc-row, .filter-envelope, .filter-panel) .knob {
+  --accent: var(--section-blue) !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .lfo-two .knob {
+  --accent: var(--section-amber) !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-row + .osc-row {
+  --accent: var(--section-blue) !important;
+  --osc-glow: var(--section-blue) !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .lfo-two { --accent: var(--section-amber) !important; }
+html.fit-screen.reference-geometry.control-refinement main :is(#osc-scope-2, #f-envelope) :is(.trace, .scopepoint) { --trace: var(--section-blue) !important; }
+html.fit-screen.reference-geometry.control-refinement main #lfo-scope-2 .trace { --trace: var(--section-amber) !important; }
+html.fit-screen.reference-geometry.control-refinement main :is(.osc-row + .osc-row, .filter-panel) button.active {
+  color: var(--section-blue) !important;
+  border-color: var(--section-blue) !important;
+  box-shadow: inset 0 0 3px #48c9ee25, 0 0 1px #48c9ee55 !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .lfo-two button.active {
+  color: var(--section-amber) !important;
+  border-color: var(--section-amber) !important;
+  box-shadow: inset 0 0 3px #e8b55525, 0 0 1px #e8b55555 !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .osc-row + .osc-row .wave-buttons .active :is(path, polyline) { stroke: var(--section-blue) !important; }
+html.fit-screen.reference-geometry.control-refinement main .lfo-two .wave-buttons .active :is(path, polyline) { stroke: var(--section-amber) !important; }
+html.fit-screen.reference-geometry.control-refinement main .mixer .fader:nth-child(1) { --accent: #fa48c0 !important; --mixer-fill: #fa48c0; }
+html.fit-screen.reference-geometry.control-refinement main .mixer .fader:nth-child(2) { --accent: var(--section-blue) !important; --mixer-fill: var(--section-blue); }
+html.fit-screen.reference-geometry.control-refinement main .mixer .fader:nth-child(3) { --accent: var(--section-green) !important; --mixer-fill: var(--section-green); }
+html.fit-screen.reference-geometry.control-refinement main .mixer .fader .fader-illumination { background: var(--mixer-fill) !important; box-shadow: 0 0 2px color-mix(in srgb, var(--mixer-fill) 30%, transparent) !important; }

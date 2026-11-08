@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "audibleOutput": true,
+  "gesturePlayback": true,
+  "colours": {
+    "osc2": "rgb(72, 201, 238)",
+    "lfo2": "rgb(232, 181, 85)",
+    "env": "rgb(72, 201, 238)",
+    "oscRing": "rgb(72, 201, 238)",
+    "lfoRing": "rgb(232, 181, 85)",
+    "filterRing": "rgb(72, 201, 238)",
+    "envRing": "rgb(72, 201, 238)",
+    "fills": [
+      "rgb(250, 72, 192)",
+      "rgb(72, 201, 238)",
+      "rgb(86, 237, 156)"
+    ],
+    "outline": "none"
+  }
+}
