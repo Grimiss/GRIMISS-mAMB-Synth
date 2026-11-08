@@ -1,0 +1,61 @@
+/* One luminous accent, matched to the existing patch-name lettering. */
+:root { --instrument-accent:#73e9d0; --instrument-rgb:115,233,208; --teal:var(--instrument-accent);--pink:var(--instrument-accent);--cyan:var(--instrument-accent);--amber:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main {
+ --section-blue:var(--instrument-accent);--section-pink:var(--instrument-accent);--section-green:var(--instrument-accent);--section-amber:var(--instrument-accent);
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel { --section-accent:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .voice { --voice-green:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .knob { --accent:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .scope :is(.trace,.scopepoint) { --trace:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .scope .grid-line { stroke:var(--instrument-accent);opacity:.16; }
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel button:is(.active,.enabled,[aria-pressed=true]),
+html.fit-screen.reference-geometry.control-refinement main .voice .mode-pills button[aria-pressed=true] {
+ color:var(--instrument-accent)!important;border-color:var(--instrument-accent)!important;
+ box-shadow:inset 0 0 3px #73e9d025,0 0 2px #73e9d044!important;text-shadow:0 0 3px #73e9d066!important;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .wave-buttons .active :is(path,polyline) { stroke:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .mixer .fader .fader-illumination { background:var(--instrument-accent)!important;box-shadow:0 0 2px #73e9d055!important; }
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel input[type=checkbox]:checked { background:radial-gradient(#effffb,var(--instrument-accent) 40%,#286556)!important;border-color:var(--instrument-accent)!important;box-shadow:0 0 4px #73e9d066!important; }
+html.fit-screen.reference-geometry.control-refinement main :is(.voice,.eq-panel) .hardware-horizontal>input::-webkit-slider-runnable-track { background:linear-gradient(to right,#39766a 0 var(--horizontal-fill),#030604 var(--horizontal-fill) 100%); }
+html.fit-screen.reference-geometry.control-refinement main :is(.voice,.eq-panel) .hardware-horizontal>input::-moz-range-progress { background:#39766a; }
+html.fit-screen.reference-geometry.control-refinement main #arpGate { background:linear-gradient(to right,var(--instrument-accent) 0 var(--arp-gate-fill,55%),#020403 var(--arp-gate-fill,55%) 100%)!important; }
+html.fit-screen.reference-geometry.control-refinement main #arpTempoReadout { color:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main #arp-scope rect { fill:var(--instrument-accent);filter:drop-shadow(0 0 3px #73e9d0) drop-shadow(0 0 7px #73e9d099); }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay :is(.bay-link,.bay-cable-number,path),.bay-limit button { --link-colour:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-socket.connected { --socket-colour:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-link.selected.connected input { --cap:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-link .bay-select[aria-pressed=true] { color:var(--instrument-accent)!important;border-color:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-status { color:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main .gesture-chrome :is(.gesture-open,.gesture-main-play),
+.gesture-editor :is(button,header strong),.midi-access button,.midi-editor button[aria-pressed=true] { color:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .gesture-chrome[data-active=true] button,.gesture-editor button[aria-pressed=true],.midi-access button[aria-pressed=true] { border-color:var(--instrument-accent)!important; }
+.gesture-rail i { background:var(--instrument-accent);box-shadow:0 0 2px #73e9d088; }
+:is(.gesture-editor,main .scope) .gesture-path { stroke:var(--instrument-accent); }
+:is(.gesture-editor,main .scope) .gesture-playhead { fill:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main :is(.patch-arrow,#seqViewToggle,.midi-access button),
+html.fit-screen.reference-geometry.control-refinement main .performance-panel #seqViewToggle { color:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .performance-panel #seqViewToggle { border-color:var(--instrument-accent)!important; }
+/* A/B, ACC and REST remain identified by their labels; rest controls stay neutral. */
+.seq-face,.seq-more-dialog,.performance-panel,.seq-face [data-seq-choice=editBank],.seq-length-lane {
+ --seq-accent:var(--instrument-accent)!important;--seq-rgb:var(--instrument-rgb)!important;--seq-top:var(--instrument-accent)!important;--seq-dark:#163c33!important;--length-colour:var(--instrument-accent)!important;
+}
+.seq-face .seq-step:not([data-mode=rest]) { --step-accent:var(--instrument-accent)!important;--step-rgb:var(--instrument-rgb)!important;--step-top:var(--instrument-accent)!important;--step-dark:#285f50!important; }
+html.fit-screen.reference-geometry.control-refinement main .seq-mockup-deck [data-seq-choice=editBank][data-value=B] { color:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main #seq-control-deck button[aria-pressed=true]:not(.seq-transport-icon) { background:linear-gradient(#73e9d0,#327f6e)!important;border-color:var(--instrument-accent)!important;color:#041410!important;box-shadow:inset 0 1px #d8fff477,0 0 3px #73e9d033!important; }
+.seq-electronic-display,.seq-mockup-deck .seq-root-display { color:var(--instrument-accent)!important; }
+.seq-song-pattern.playing { box-shadow:inset 3px 0 var(--instrument-accent);background:#17372d; }
+.seq-song-random-fields [aria-pressed=true] .song-led { background:var(--instrument-accent);box-shadow:0 0 4px #73e9d088; }
+html.fit-screen.reference-geometry.control-refinement main .seq-face button[aria-pressed=true]:not(.seq-gate) { border-color:var(--instrument-accent)!important; }
+button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible { outline-color:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main .seq-step.pitch-active { border-color:var(--instrument-accent)!important;background:#15362e;box-shadow:0 0 7px 2px #73e9d077,inset 0 0 7px #73e9d044!important; }
+html.fit-screen.reference-geometry.control-refinement main .seq-step.pitch-active :is(.seq-step-note,.seq-step-number) { color:var(--instrument-accent)!important;text-shadow:0 0 4px #73e9d0; }
+html.fit-screen.reference-geometry.control-refinement main .seq-mockup-deck .seq-root-display,
+html.fit-screen.reference-geometry.control-refinement main :is(.seq-left small,.seq-electronic-display) { color:var(--instrument-accent)!important; }
+html.fit-screen.reference-geometry.control-refinement main .audio-pilot.running { background:var(--instrument-accent)!important;box-shadow:0 0 6px #73e9d099!important; }
+:is(main,.gesture-editor,.midi-editor,.seq-more-dialog,.bay-limit) input { accent-color:var(--instrument-accent); }
+:is(.gesture-editor,.midi-editor) input[type=range] { accent-color:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main .seq-mockup-deck #seq-reset,
+html.fit-screen.reference-geometry.control-refinement main .seq-mockup-deck .seq-song-group button { color:var(--instrument-accent)!important;border-color:#73e9d088!important; }
+html.fit-screen.reference-geometry.control-refinement main>.performance-panel #seqViewToggle[aria-pressed=true] { background:linear-gradient(#73e9d0,#327f6e)!important;color:#041410!important;border-color:var(--instrument-accent)!important;box-shadow:0 0 3px #73e9d055!important; }
+html.fit-screen.reference-geometry.control-refinement main .seq-mockup-deck .seq-song-group button[aria-pressed=true] { background:linear-gradient(#73e9d0,#327f6e)!important;color:#041410!important; }
+.seq-song-dialog :is(button,#seq-program-run,#seq-program-stop) { color:var(--instrument-accent)!important; }
