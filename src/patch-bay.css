@@ -1,7 +1,7 @@
 html.fit-screen.reference-geometry.control-refinement main .routing .patch-bay-backing { display:none !important; }
 html.fit-screen.reference-geometry.control-refinement main .routing .cable-bay { position:absolute; inset:18px 5px 4px; display:grid; grid-template-rows:8px minmax(0,1fr) 24px 8px; gap:2px; color:#bfcac2; }
 .cable-bay .bay-labels { display:flex; justify-content:space-between; font-size:5px; letter-spacing:.5px; color:#8fa99c; }
-.cable-bay .bay-field { position:relative; display:flex; justify-content:space-between; min-height:0; background:#080e0b; border:1px solid #253d31; border-radius:4px; }
+.cable-bay .bay-field { position:relative; display:flex; justify-content:space-between; min-height:0; background:transparent; border:1px solid #253d31; border-radius:4px; }
 .cable-bay :is(.bay-sources,.bay-destinations) { z-index:2; display:flex; flex-direction:column; justify-content:space-around; width:76px; }
 html.fit-screen.reference-geometry.control-refinement main .cable-bay button.bay-socket { position:relative; height:11px!important; min-height:0!important; padding:0 11px 0 2px!important; font-size:5.5px!important; line-height:10px!important; text-align:left; border:0!important; background:none!important; box-shadow:none!important; color:#bfcac2!important; touch-action:none; }
 html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-destinations button.bay-socket { text-align:right; padding:0 2px 0 11px!important; }
@@ -9,8 +9,8 @@ html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-desti
 .bay-destinations .bay-socket::after { left:1px;right:auto; }
 .bay-socket.pending::after { border-color:#c3ccc5;box-shadow:0 0 2px #a0aaa2; }
 .cable-bay .bay-cables { position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none; }
-.bay-cables path { fill:none;stroke:#a6578e;stroke-width:2.5;pointer-events:stroke;cursor:pointer;filter:drop-shadow(0 1px 1px #000); }
-.bay-cables path.selected { stroke:#fa48c0;stroke-width:3; }
+.bay-cables path { fill:none;stroke:#a6578e;stroke-width:var(--cable-weight,.8px);pointer-events:stroke;cursor:pointer;filter:none; }
+.bay-cables path.selected { stroke:#fa48c0;stroke-width:var(--cable-weight,.8px); }
 .cable-bay .bay-links { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px; }
 .cable-bay .bay-link { display:grid;grid-template-columns:12px 1fr 10px;grid-template-rows:12px 10px;gap:1px;border-top:1px solid #35463b;padding-top:1px;min-width:0; }
 .cable-bay .bay-link.selected { border-color:#fa48c0; }
@@ -32,11 +32,13 @@ html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-link 
 .bay-cables path { stroke:var(--link-colour);opacity:.75; }
 .bay-cables path.selected { stroke:var(--link-colour);opacity:1; }
 .bay-cable-number { pointer-events:all;cursor:pointer; }
-.bay-cable-number circle { fill:#101712;stroke:var(--link-colour);stroke-width:1.5; }
-.bay-cable-number text { fill:var(--link-colour);font:bold 9px Arial,sans-serif;pointer-events:none; }
+.bay-cable-number circle { fill:#101712;stroke:var(--link-colour);stroke-width:.8; }
+.bay-cable-number text { fill:var(--link-colour);font:bold 6.5px Arial,sans-serif;pointer-events:none; }
 .bay-limit { max-width:360px;padding:18px;background:#101712;color:#d2dfd5;border:1px solid #426d66;border-radius:6px;font:12px OpenSans,Arial,sans-serif; }
 .bay-limit::backdrop { background:#0009; }
 .bay-limit div { display:flex;gap:10px;margin:15px 0; }
 .bay-limit div button { min-width:40px;color:var(--link-colour);border-color:var(--link-colour); }
 
 .bay-socket.connected::after { background:var(--socket-colour);border-color:var(--socket-colour);box-shadow:inset 0 0 0 1px #0005,0 1px 1px #000; }
+
+.bay-cable-number .bay-number-hit { fill:transparent;stroke:none; }

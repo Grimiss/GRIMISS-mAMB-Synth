@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "matchingLfoWeightAt1280And1920": true,
+  "transparentSectionBackground": true,
+  "smallerBadges": true,
+  "socketFills": {
+    "cutoff": "rgb(115, 233, 208)",
+    "pitch": "rgb(85, 94, 88)",
+    "osc2": "rgb(115, 233, 208)",
+    "pw": "rgb(115, 233, 208)",
+    "amp": "rgb(85, 94, 88)",
+    "noise": "rgb(115, 233, 208)"
+  },
+  "automaticAllocation": true,
+  "numberedBadges": true,
+  "colours": [
+    "rgb(115, 233, 208)",
+    "rgb(115, 233, 208)",
+    "rgb(115, 233, 208)",
+    "rgb(115, 233, 208)"
+  ],
+  "limitCancelAndReplacement": true,
+  "dragAwayDeletion": true,
+  "reuseFreeSlot": true,
+  "selectedCapColour": true,
+  "negativeAmount": true,
+  "patchRecall": true,
+  "audibleOutput": true,
+  "errors": []
+}

@@ -15,3 +15,5 @@ Rollback: Site v58 and checkpoint/pre-auto-cable-links-2026-11-08.
 Sockets are grey when unconnected and filled with the shared mint cable colour when connected. Shared sockets show the selected matching link, otherwise the highest-numbered matching link. Disconnecting the last cable returns a socket to grey. Rendered pseudo-element colours verified for all four links and empty sockets.
 
 Unified accent: #73E9D0, matched to the rendered patch-name text. Cable numbers, selection brightness, neutral grey sockets and grey unselected caps retain their existing distinctions.
+
+Cable visuals now match the screen-space LFO trace weight at responsive sizes. Selected cables change opacity rather than thickness. The routing field is transparent over the section metal surface. Cable number discs use radius 4.5px and 6.5px lettering, with an invisible 9px hit target. Browser checks at 1280px and 1920px confirmed matching stroke weight; cable editing, recall and audible output passed.
