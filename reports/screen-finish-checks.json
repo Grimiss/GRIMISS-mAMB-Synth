@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scopeAndPanelGeometryUnchanged": true,
+  "fullExtentUntransformedGrids": [
+    "osc-scope-1",
+    "osc-scope-2",
+    "lfo-scope-1",
+    "lfo-scope-2",
+    "f-envelope",
+    "a-envelope",
+    "filter-scope",
+    "eq-scope"
+  ],
+  "subtleWaveGlow": true,
+  "gestureRecording": true,
+  "audibleOutput": true,
+  "errors": []
+}

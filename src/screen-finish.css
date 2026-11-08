@@ -1,0 +1,18 @@
+/* Full glass-area grids remain independent of the gesture-safe plotting inset. */
+html.fit-screen.reference-geometry.control-refinement main .scope .grid-line {
+  stroke: #245239;
+  stroke-width: .55px;
+  vector-effect: non-scaling-stroke;
+  opacity: .65;
+  pointer-events: none;
+}
+html.fit-screen.reference-geometry.control-refinement main .scope .screen-grid { pointer-events: none; }
+html.fit-screen.reference-geometry.control-refinement main .scope .trace {
+  filter: drop-shadow(0 0 2.5px var(--trace,var(--section-accent,#50efd5))) !important;
+}
+html.fit-screen.reference-geometry.control-refinement main .scope {
+  background-image: radial-gradient(ellipse at 45% 35%,#173c241a,transparent 80%),linear-gradient(#ffffff02,transparent 24%,#00000012);
+}
+html.fit-screen.reference-geometry.control-refinement main #arp-scope rect {
+  filter: drop-shadow(0 0 2px #56ed9c66);
+}
