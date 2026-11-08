@@ -8,11 +8,13 @@ html.fit-screen.reference-geometry.control-refinement main .scope .grid-line {
 }
 html.fit-screen.reference-geometry.control-refinement main .scope .screen-grid { pointer-events: none; }
 html.fit-screen.reference-geometry.control-refinement main .scope .trace {
-  filter: drop-shadow(0 0 2.5px var(--trace,var(--section-accent,#50efd5))) !important;
+  /* Tight luminous core plus a wider phosphor halo; the trace itself stays sharp. */
+  stroke-width: 2.6;
+  filter: drop-shadow(0 0 3px var(--trace,var(--section-accent,#50efd5))) drop-shadow(0 0 9px color-mix(in srgb,var(--trace,var(--section-accent,#50efd5)) 80%,transparent)) !important;
 }
 html.fit-screen.reference-geometry.control-refinement main .scope {
   background-image: radial-gradient(ellipse at 45% 35%,#173c241a,transparent 80%),linear-gradient(#ffffff02,transparent 24%,#00000012);
 }
 html.fit-screen.reference-geometry.control-refinement main #arp-scope rect {
-  filter: drop-shadow(0 0 2px #56ed9c66);
+  filter: drop-shadow(0 0 3px #56ed9c) drop-shadow(0 0 7px #56ed9c99);
 }

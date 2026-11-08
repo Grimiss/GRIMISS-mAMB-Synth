@@ -2,6 +2,6 @@
   "version": "0.5.1",
   "source": "GRIMISS_mAMB_Synth_v0_3_3_Filter_Fix.html",
   "build": "dist/GRIMISS_mAMB_v0_7.html",
-  "sha256": "83cf232c4d4dd1a5076a43ed3aebe50418202b2aa8a0c5637e87eb8714d386ed",
+  "sha256": "0e4eaad5c02f678f6bf7bcf9aeea7657830709aa0444520cbb7a86c232e1eaa3",
   "standalone": true
 }
