@@ -1,0 +1,21 @@
+html.fit-screen.reference-geometry.control-refinement main .routing .patch-bay-backing { display:none !important; }
+html.fit-screen.reference-geometry.control-refinement main .routing .cable-bay { position:absolute; inset:18px 5px 4px; display:grid; grid-template-rows:8px minmax(0,1fr) 24px 8px; gap:2px; color:#bfcac2; }
+.cable-bay .bay-labels { display:flex; justify-content:space-between; font-size:5px; letter-spacing:.5px; color:#8fa99c; }
+.cable-bay .bay-field { position:relative; display:flex; justify-content:space-between; min-height:0; background:#080e0b; border:1px solid #253d31; border-radius:4px; }
+.cable-bay :is(.bay-sources,.bay-destinations) { z-index:2; display:flex; flex-direction:column; justify-content:space-around; width:76px; }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay button.bay-socket { position:relative; height:11px!important; min-height:0!important; padding:0 11px 0 2px!important; font-size:5.5px!important; line-height:10px!important; text-align:left; border:0!important; background:none!important; box-shadow:none!important; color:#bfcac2!important; touch-action:none; }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-destinations button.bay-socket { text-align:right; padding:0 2px 0 11px!important; }
+.bay-socket::after { content:''; position:absolute; right:1px; top:50%; transform:translateY(-50%); width:6px;height:6px;border-radius:50%;background:#030504;border:1px solid #a94a87;box-shadow:inset 0 0 0 1px #000,0 1px 1px #000; }
+.bay-destinations .bay-socket::after { left:1px;right:auto; }
+.bay-socket.pending::after { border-color:#fa48c0;box-shadow:0 0 3px #fa48c0; }
+.cable-bay .bay-cables { position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none; }
+.bay-cables path { fill:none;stroke:#a6578e;stroke-width:2.5;pointer-events:stroke;cursor:pointer;filter:drop-shadow(0 1px 1px #000); }
+.bay-cables path.selected { stroke:#fa48c0;stroke-width:3; }
+.cable-bay .bay-links { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px; }
+.cable-bay .bay-link { display:grid;grid-template-columns:12px 1fr 10px;grid-template-rows:12px 10px;gap:1px;border-top:1px solid #35463b;padding-top:1px;min-width:0; }
+.cable-bay .bay-link.selected { border-color:#fa48c0; }
+html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-link button { min-height:0!important;height:11px!important;padding:0!important;font-size:5px!important;line-height:9px; }
+.cable-bay .bay-link input { grid-column:1/-1;width:100%;height:9px;min-height:0;margin:0;accent-color:#fa48c0;cursor:ew-resize; }
+.cable-bay .bay-link .bay-clear { grid-column:3;grid-row:1; }
+.cable-bay .bay-link .bay-enable[aria-pressed=true],.cable-bay .bay-link .bay-select[aria-pressed=true] { color:#fa48c0!important;border-color:#a94a87!important; }
+.cable-bay .bay-status { font-size:4.7px;line-height:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#b88ca8; }

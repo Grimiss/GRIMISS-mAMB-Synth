@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "sources": 8,
+  "destinations": 6,
+  "links": 4,
+  "clickConnect": true,
+  "dragConnect": true,
+  "negativeAmount": true,
+  "disconnect": true,
+  "patchRoundTrip": true,
+  "audibleOutput": true,
+  "errors": []
+}
