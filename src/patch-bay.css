@@ -19,3 +19,22 @@ html.fit-screen.reference-geometry.control-refinement main .cable-bay .bay-link 
 .cable-bay .bay-link .bay-clear { grid-column:3;grid-row:1; }
 .cable-bay .bay-link .bay-enable[aria-pressed=true],.cable-bay .bay-link .bay-select[aria-pressed=true] { color:#fa48c0!important;border-color:#a94a87!important; }
 .cable-bay .bay-status { font-size:4.7px;line-height:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#b88ca8; }
+/* Four automatic numbered links, matching the VOICE physical sliders. */
+.cable-bay .bay-link { grid-template-columns:12px minmax(0,1fr);grid-template-rows:18px;align-items:center; }
+.cable-bay .bay-link.selected { border-color:var(--link-colour); }
+.cable-bay .bay-link input { grid-column:2;appearance:none;width:100%;height:17px;min-height:17px;border:0;background:none;box-shadow:none;--cap:#777f78; }
+.cable-bay .bay-link.selected.connected input { --cap:var(--link-colour); }
+.cable-bay .bay-link input::-webkit-slider-runnable-track { height:3px;border:0;border-radius:1px;background:#030604;box-shadow:inset 0 1px 2px #000,0 1px 0 #58644f33; }
+.cable-bay .bay-link input::-webkit-slider-thumb { appearance:none;width:15px;height:12px;margin-top:-4.5px;border:1px solid #929990;border-bottom:2px solid #101511;border-radius:1px;background:linear-gradient(90deg,#303632,var(--cap) 42%,#c3cac4 47%,#303632 54%,var(--cap));box-shadow:0 1px 2px #000b; }
+.cable-bay .bay-link input::-moz-range-track { height:3px;border:0;background:#030604; }
+.cable-bay .bay-link input::-moz-range-thumb { width:15px;height:12px;border:1px solid #929990;border-bottom:2px solid #101511;border-radius:1px;background:linear-gradient(90deg,#303632,var(--cap) 42%,#c3cac4 47%,#303632 54%,var(--cap)); }
+.cable-bay .bay-link .bay-select[aria-pressed=true] { color:var(--link-colour)!important;border-color:var(--link-colour)!important; }
+.bay-cables path { stroke:var(--link-colour);opacity:.75; }
+.bay-cables path.selected { stroke:var(--link-colour);opacity:1; }
+.bay-cable-number { pointer-events:all;cursor:pointer; }
+.bay-cable-number circle { fill:#101712;stroke:var(--link-colour);stroke-width:1.5; }
+.bay-cable-number text { fill:var(--link-colour);font:bold 9px Arial,sans-serif;pointer-events:none; }
+.bay-limit { max-width:360px;padding:18px;background:#101712;color:#d2dfd5;border:1px solid #426d66;border-radius:6px;font:12px OpenSans,Arial,sans-serif; }
+.bay-limit::backdrop { background:#0009; }
+.bay-limit div { display:flex;gap:10px;margin:15px 0; }
+.bay-limit div button { min-width:40px;color:var(--link-colour);border-color:var(--link-colour); }

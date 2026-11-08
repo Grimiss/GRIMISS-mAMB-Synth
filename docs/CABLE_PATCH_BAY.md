@@ -1,9 +1,13 @@
 # Cable patch bay
 
-The existing four-route engine is unchanged. Eight source sockets and six destination sockets replace the routing rows inside the same section bounds. The original route controls and IDs remain as hidden state bindings for patch recall, MIDI control and the synth adapter.
+The existing four-route engine is unchanged. Eight source sockets and six destination sockets occupy the original section bounds. Original route IDs remain hidden state bindings for patches, MIDI and the synth adapter.
 
-Select link 1–4, then drag between opposite socket columns or click the two sockets in either order. Selecting a cable selects its link. ON/OFF mutes a link; × disconnects it by disabling the existing route. Each amount slider supports −100% to +100%; zero is neutral. Source fan-out and several links into the same destination retain the existing engine's combination policy.
+Drag a source to a destination (or click opposite sockets) to allocate the lowest available link: 1 green, 2 pink, 3 blue, 4 amber. Every lead carries its number. No ON/OFF controls are displayed. At capacity a modal offers Cancel or a numbered link to delete and replace with the attempted connection. Cancel leaves all four links unchanged.
 
-No additional synthesis destinations or voices were introduced. Cable redraws occur on route changes and resize, not an independent polling timer. Keyboard users can activate sockets and cables, select links, toggle, disconnect and adjust native sliders.
+Drag a connected destination away from its socket to disconnect. If several cables share that destination, the selected matching cable is removed; otherwise the most recently numbered matching cable is removed. Select a cable or numbered slider to identify it first. Keyboard users may select a cable and press Delete or Backspace.
 
-Chromium validation passed: 8/6 socket inventory, four simultaneous links, click and drag connection, negative amount, disconnect, patch round-trip, audible keyboard output and no page errors. Screenshot reviewed. Physical touchscreen/Windows testing was not performed. Rollback: Site v57 and checkpoint/pre-cable-patch-bay-2026-11-08.
+The four amount sliders use the Voice-style 3px recessed track and 15×12px physical cap. Caps are grey unless their connected link is selected, then take that link's colour. Amount range remains −100% to +100%, zero neutral. Disconnected sliders are disabled. Reusing a disconnected slot preserves its existing amount.
+
+No DSP, voice, clock or patch format changes. Cable updates run on route changes and resize, without a polling timer. Browser tests passed automatic allocation, all four colours and numbers, full-bay Cancel and replacement, drag-away removal, free-slot reuse, selected/grey caps, negative amount, patch recall and audible output with no page errors. Screenshots reviewed. Physical Windows/touchscreen testing not performed.
+
+Rollback: Site v58 and checkpoint/pre-auto-cable-links-2026-11-08.
