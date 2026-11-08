@@ -1,3 +1,7 @@
+html.fit-screen.reference-geometry.control-refinement main :is(.delay-panel, .arp-panel) { --section-accent: #56ed9c; }
+html.fit-screen.reference-geometry.control-refinement main .reverb-panel { --section-accent: #48c9ee; }
+html.fit-screen.reference-geometry.control-refinement main .mod-panel { --section-accent: #e8b555; }
+html.fit-screen.reference-geometry.control-refinement main .routing { --section-accent: #fa48c0; }
 /* Section-local colour system. Geometry and synthesis are unchanged. */
 html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .lfo-one, .lfo-two) :is(.wave-title, .lfo-wave-title) { color: var(--section-accent) !important; }
 
@@ -7,13 +11,13 @@ html.fit-screen.reference-geometry.control-refinement main :is(.lfo-one, .lfo-tw
 html.fit-screen.reference-geometry.control-refinement main :is(.filter-panel, .filter-envelope) { --section-accent: var(--section-blue); }
 html.fit-screen.reference-geometry.control-refinement main :is(.eq-panel) { --section-accent: var(--section-green); }
 html.fit-screen.reference-geometry.control-refinement main :is(.amp-panel, .amp-envelope) { --section-accent: var(--section-pink); }
-html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope) :is(.knob, .fader, .wave-buttons, .osc-row) { --accent: var(--section-accent) !important; --osc-glow: var(--section-accent) !important; }
-html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope) :is(.trace, .scopepoint) { --trace: var(--section-accent) !important; }
-html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope) button.active { color: var(--section-accent) !important; border-color: var(--section-accent) !important; box-shadow: inset 0 0 3px color-mix(in srgb, var(--section-accent) 15%, transparent), 0 0 1px color-mix(in srgb, var(--section-accent) 35%, transparent) !important; }
-html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope) .wave-buttons .active :is(path, polyline) { stroke: var(--section-accent) !important; }
+html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope, .delay-panel, .reverb-panel, .mod-panel, .routing, .arp-panel) :is(.knob, .fader, .wave-buttons, .osc-row) { --accent: var(--section-accent) !important; --osc-glow: var(--section-accent) !important; }
+html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope, .delay-panel, .reverb-panel, .mod-panel, .routing, .arp-panel) :is(.trace, .scopepoint) { --trace: var(--section-accent) !important; }
+html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope, .delay-panel, .reverb-panel, .mod-panel, .routing, .arp-panel) button.active { color: var(--section-accent) !important; border-color: var(--section-accent) !important; box-shadow: inset 0 0 3px color-mix(in srgb, var(--section-accent) 15%, transparent), 0 0 1px color-mix(in srgb, var(--section-accent) 35%, transparent) !important; }
+html.fit-screen.reference-geometry.control-refinement main :is(.oscillators, .mixer, .lfo-one, .lfo-two, .filter-panel, .filter-envelope, .eq-panel, .amp-panel, .amp-envelope, .delay-panel, .reverb-panel, .mod-panel, .routing, .arp-panel) .wave-buttons .active :is(path, polyline) { stroke: var(--section-accent) !important; }
 html.fit-screen.reference-geometry.control-refinement main .mixer .fader .fader-illumination { background: var(--section-accent) !important; box-shadow: 0 0 2px color-mix(in srgb, var(--section-accent) 30%, transparent) !important; }
 html.fit-screen.reference-geometry.control-refinement main svg:is([data-gesture-state=playing], [data-gesture-state=paused]) { outline: none !important; }
-html.fit-screen.reference-geometry.control-refinement main :is(#f-envelope, #filter-scope, #a-envelope, #lfo-scope-1, #lfo-scope-2, #eq-scope) {
+html.fit-screen.reference-geometry.control-refinement main :is(#f-envelope, #filter-scope, #a-envelope, #lfo-scope-1, #lfo-scope-2, #eq-scope, #arp-scope) {
   border-width: 5px !important;
   border-radius: 6px !important;
   border-color: #475047 #1b241c #303c30 #242f25;
@@ -76,3 +80,16 @@ html.fit-screen.reference-geometry.control-refinement main .eq-panel .hardware-h
   background: linear-gradient(90deg, #2c352b, #46533f 42%, #bbc6ac 47%, #222d21 54%, #44503b);
   box-shadow: 0 1px 2px #000b;
 }
+html.fit-screen.reference-geometry.control-refinement main .routing .route-toggle { --route-color: var(--section-accent) !important; }
+html.fit-screen.reference-geometry.control-refinement main .routing .route-toggle.enabled { color: var(--section-accent) !important; border-color: var(--section-accent) !important; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel .parameter-backing { display: none !important; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel .hardware-choice { display: flex; gap: 2px; width: 100%; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel .hardware-choice button { flex: 1; min-width: 0 !important; height: 15px !important; min-height: 15px !important; padding: 0 1px !important; font-size: 5px !important; white-space: nowrap; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel .choice-arpPattern { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2px; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel .arp-pair { grid-template-columns: 1fr 1fr; }
+html.fit-screen.reference-geometry.control-refinement main #arpTempoReadout { color: #56ed9c !important; }
+html.fit-screen.reference-geometry.control-refinement main #arp-scope rect { fill: #56ed9c; opacity: .6; }
+html.fit-screen.reference-geometry.control-refinement main #arp-scope rect:last-child { opacity: 1; }
+html.fit-screen.reference-geometry.control-refinement main :is(.delay-panel,.reverb-panel,.mod-panel,.arp-panel) input[type=checkbox] { accent-color: var(--section-accent); }
+html.fit-screen.reference-geometry.control-refinement main .routing .trace { --trace: #fa48c0 !important; }
+html.fit-screen.reference-geometry.control-refinement main :is(.delay-panel,.reverb-panel,.mod-panel,.arp-panel) input[type=checkbox]:checked { background: radial-gradient(#f2fff7, var(--section-accent) 40%, color-mix(in srgb,var(--section-accent) 50%,#07100a)); border-color: var(--section-accent); box-shadow: 0 0 4px color-mix(in srgb,var(--section-accent) 40%,transparent); }
