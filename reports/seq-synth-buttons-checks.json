@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "activeStyleMatchesSynth": {
+    "bg": "linear-gradient(rgb(37, 53, 42), rgb(20, 32, 25))",
+    "color": "rgb(115, 233, 208)",
+    "border": "rgb(115, 233, 208)",
+    "radius": "4px",
+    "shadow": "rgba(115, 233, 208, 0.145) 0px 0px 3px 0px inset, rgba(115, 233, 208, 0.267) 0px 0px 2px 0px",
+    "textshadow": "rgba(115, 233, 208, 0.4) 0px 0px 3px"
+  },
+  "inactiveStyleMatchesSynth": {
+    "bg": "linear-gradient(rgb(48, 57, 51), rgb(26, 33, 29))",
+    "color": "rgb(201, 216, 206)",
+    "border": "rgb(82, 96, 87) rgb(39, 46, 41) rgb(8, 13, 10)",
+    "radius": "4px",
+    "shadow": "rgba(0, 0, 0, 0.533) 0px 2px 2px 0px, rgba(165, 180, 170, 0.133) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.333) 0px -2px 1px 0px inset",
+    "textshadow": "none"
+  },
+  "songStylesUnchanged": true,
+  "buttonGeometryUnchanged": true,
+  "stepToggle": true,
+  "keyboardSeqFlip": true,
+  "audibleOutput": true,
+  "errors": []
+}

@@ -1,0 +1,23 @@
+/* SEQ button caps match the synth mode switches; Song controls are unchanged.
+   Slider grips and length handles retain their own physical materials/travel. */
+html.fit-screen.reference-geometry.control-refinement main .seq-face :is(#seq-control-deck,.seq-centre,.seq-left) button:not(.seq-song-group button):not(.seq-handle):not(.seq-length-handle),
+html.fit-screen.reference-geometry.control-refinement main .performance-panel #seqViewToggle {
+ background:linear-gradient(#303933,#1a211d)!important;
+ color:#c9d8ce!important;
+ border-color:#526057 #272e29 #080d0a!important;
+ border-radius:4px!important;
+ border-style:solid!important;
+ border-width:1px!important;
+ box-shadow:0 2px 2px #0008,inset 0 1px 0 #a5b4aa22,inset 0 -2px 1px #0005!important;
+ text-shadow:none!important;
+}
+html.fit-screen.reference-geometry.control-refinement main .seq-face :is(#seq-control-deck,.seq-centre,.seq-left) button[aria-pressed=true]:not(.seq-song-group button):not(.seq-handle):not(.seq-length-handle),
+html.fit-screen.reference-geometry.control-refinement main .seq-face :is(#seq-control-deck,.seq-centre) .seq-step.seq-step:not([data-mode=rest]) button.seq-gate,
+html.fit-screen.reference-geometry.control-refinement main .seq-face :is(#seq-control-deck,.seq-centre) .seq-step.seq-step.selected button.seq-step-number,
+html.fit-screen.reference-geometry.control-refinement main .performance-panel #seqViewToggle[aria-pressed=true] {
+ background:linear-gradient(#25352a,#142019)!important;
+ color:var(--instrument-accent)!important;
+ border-color:var(--instrument-accent)!important;
+ box-shadow:inset 0 0 3px #73e9d025,0 0 2px #73e9d044!important;
+ text-shadow:0 0 3px #73e9d066!important;
+}
