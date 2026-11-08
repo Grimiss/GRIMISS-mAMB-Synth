@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "red": "#ff5b62",
+  "synthAccentsUnchanged": true,
+  "geometryUnchanged": true,
+  "buttonAndGateColours": true,
+  "lengthColour": true,
+  "songPopupColour": true,
+  "stepEditing": true,
+  "audibleSequence": true,
+  "errors": []
+}
