@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "audibleOutput": true,
+  "gesturePlayback": true,
+  "colours": {
+    "osc2": "rgb(72, 201, 238)",
+    "lfo2": "rgb(232, 181, 85)",
+    "env": "rgb(86, 237, 156)",
+    "oscRing": "rgb(72, 201, 238)",
+    "lfoRing": "rgb(232, 181, 85)",
+    "filterRing": "rgb(86, 237, 156)",
+    "envRing": "rgb(86, 237, 156)",
+    "fills": [
+      "rgb(250, 72, 192)",
+      "rgb(72, 201, 238)",
+      "rgb(86, 237, 156)"
+    ],
+    "outline": "none"
+  },
+  "geometry": [
+    {
+      "id": "f-envelope",
+      "height": 97.5,
+      "border": "5px",
+      "radius": "6px"
+    },
+    {
+      "id": "filter-scope",
+      "height": 93,
+      "border": "5px",
+      "radius": "6px"
+    },
+    {
+      "id": "a-envelope",
+      "height": 84,
+      "border": "5px",
+      "radius": "6px"
+    },
+    {
+      "id": "lfo-scope-1",
+      "height": 97.5,
+      "border": "5px",
+      "radius": "6px"
+    },
+    {
+      "id": "lfo-scope-2",
+      "height": 97.5,
+      "border": "5px",
+      "radius": "6px"
+    },
+    {
+      "id": "eq-scope",
+      "height": 57,
+      "border": "5px",
+      "radius": "6px"
+    }
+  ]
+}
