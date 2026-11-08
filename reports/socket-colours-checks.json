@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "socketFills": {
+    "cutoff": "rgb(86, 237, 156)",
+    "pitch": "rgb(85, 94, 88)",
+    "osc2": "rgb(72, 201, 238)",
+    "pw": "rgb(232, 181, 85)",
+    "amp": "rgb(85, 94, 88)",
+    "noise": "rgb(250, 72, 192)"
+  },
+  "automaticAllocation": true,
+  "numberedBadges": true,
+  "colours": [
+    "rgb(86, 237, 156)",
+    "rgb(250, 72, 192)",
+    "rgb(72, 201, 238)",
+    "rgb(232, 181, 85)"
+  ],
+  "limitCancelAndReplacement": true,
+  "dragAwayDeletion": true,
+  "reuseFreeSlot": true,
+  "selectedCapColour": true,
+  "negativeAmount": true,
+  "patchRecall": true,
+  "audibleOutput": true,
+  "errors": []
+}

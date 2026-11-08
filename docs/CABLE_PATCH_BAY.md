@@ -11,3 +11,5 @@ The four amount sliders use the Voice-style 3px recessed track and 15×12px phys
 No DSP, voice, clock or patch format changes. Cable updates run on route changes and resize, without a polling timer. Browser tests passed automatic allocation, all four colours and numbers, full-bay Cancel and replacement, drag-away removal, free-slot reuse, selected/grey caps, negative amount, patch recall and audible output with no page errors. Screenshots reviewed. Physical Windows/touchscreen testing not performed.
 
 Rollback: Site v58 and checkpoint/pre-auto-cable-links-2026-11-08.
+
+Sockets are grey when unconnected and filled with the cable colour when connected. Shared sockets show the selected matching link, otherwise the highest-numbered matching link. Disconnecting the last cable returns a socket to grey. Rendered pseudo-element colours verified for all four links and empty sockets.
