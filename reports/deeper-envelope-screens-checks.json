@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "viewports": [
+    1920,
+    1280
+  ],
+  "sectionAndKnobGeometryUnchanged": true,
+  "scopeWidthsUnchanged": true,
+  "shortRoundedHeaders": true,
+  "deeperScreens": true,
+  "expandedView": true,
+  "envelopeCurveDrag": true,
+  "automationRecording": true,
+  "audibleOutput": true,
+  "errors": []
+}
