@@ -2,7 +2,7 @@
    for taller screens. The section's own rounded printed boundary stays whole. */
 html.fit-screen.reference-geometry.control-refinement main :is(.filter-envelope,.amp-envelope)>h2 {
  width:230px!important;
- border-radius:var(--hardware-header-radius) var(--hardware-header-radius) var(--hardware-header-radius) 0!important;
+ border-radius:var(--hardware-header-radius) 0 0 0!important;
 }
 html.fit-screen.reference-geometry.control-refinement main :is(.filter-envelope,.amp-envelope)>.inner>.envelope-scope {
  position:absolute!important;grid-area:auto!important;

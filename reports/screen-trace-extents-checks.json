@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "geometryUnchanged": true,
+  "viewports": [
+    1920,
+    1280
+  ],
+  "straightHeaderEnds": true,
+  "symmetricAdsrGaps": true,
+  "adsrRanges": [
+    0,
+    25,
+    50,
+    75,
+    100
+  ],
+  "sixTracesBeyondEdges": true,
+  "envelopeDragNoJump": true,
+  "automation": true,
+  "audibleOutput": true,
+  "errors": []
+}
