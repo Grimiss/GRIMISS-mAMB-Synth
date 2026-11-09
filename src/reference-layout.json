@@ -42,13 +42,13 @@
     "filter": {
       "x": 468,
       "y": 220,
-      "width": 510,
+      "width": 441,
       "height": 94
     },
     "eq": {
-      "x": 983,
+      "x": 914,
       "y": 220,
-      "width": 256,
+      "width": 325,
       "height": 94
     },
     "amp_envelope": {

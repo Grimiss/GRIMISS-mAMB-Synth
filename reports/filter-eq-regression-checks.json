@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "suites": [
+    "tests/audio.cjs",
+    "tests/ownership-modulation.cjs",
+    "tests/arpeggiator.cjs",
+    "tests/effects.cjs",
+    "tests/bite-mid-dsp.cjs"
+  ],
+  "synthesisChecks": 10,
+  "effectsChecks": 16,
+  "sampleRates": [
+    44100,
+    48000,
+    96000
+  ],
+  "factoryPatchLoads": 100,
+  "physicalHardwareTested": false
+}

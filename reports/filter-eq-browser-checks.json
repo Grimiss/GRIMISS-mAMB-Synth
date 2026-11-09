@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "factoryPatchesLoad": 100,
+  "viewports": [
+    1920,
+    1280
+  ],
+  "layout": true,
+  "mixerCapMaterialAndFill": true,
+  "arpGateKeyboardAndAudioControl": true,
+  "freqSliderKeyboard": true,
+  "filterAutomation": true,
+  "biteButton": true,
+  "midEqAudioControl": true,
+  "patchRoundTrip": true,
+  "legacyDefaultMidZero": true,
+  "audibleOutput": true,
+  "errors": []
+}

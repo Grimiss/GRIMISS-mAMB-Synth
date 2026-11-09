@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "legacy filter output bit-identical at three rates",
+    "Bite audible, distinct, finite across resonance and live mode/cutoff sweeps",
+    "note release removes voices",
+    "flat MID preserves existing effects/EQ output bit-for-bit",
+    "MID boosts and cuts 1 kHz by measured expected ratios at three rates"
+  ],
+  "sampleRates": [
+    44100,
+    48000,
+    96000
+  ],
+  "liveMidMaxSampleStep": 0.005734386981202988,
+  "passed": true
+}

@@ -9,7 +9,7 @@ const MAMB_EFFECT_DEFAULTS = Object.freeze({
   fxDelayMix:.25, fxDelaySync:false, fxDelayDivision:.5, fxDelayWidth:1, tempo:100,
   fxReverbOn:false, fxReverbType:'hall', fxReverbDwell:.35, fxReverbTone:5000,
   fxReverbDecay:4, fxReverbMod:.35, fxReverbMix:.25,
-  master:100, pan:0, eqLow:0, eqHigh:0, eqLowFreq:200, eqHighFreq:5000
+  master:100, pan:0, eqLow:0, eqMid:0, eqHigh:0, eqLowFreq:200, eqHighFreq:5000
 });
 
 function createMambEffects(initial={}, sr=48000) {
@@ -17,7 +17,7 @@ function createMambEffects(initial={}, sr=48000) {
   const bounds={fxModRate:[.05,8],fxModDepth:[0,1],fxModFeedback:[0,.85],fxModMix:[0,1],
     fxDelayTime:[.025,4],fxDelayFeedback:[0,.92],fxDelayMix:[0,1],fxDelayDivision:[1/12,8],fxDelayWidth:[0,1],tempo:[40,240],
     fxReverbDwell:[0,1],fxReverbTone:[1000,8000],fxReverbDecay:[.3,20],fxReverbMod:[0,1],fxReverbMix:[0,1],
-    master:[0,100],pan:[-1,1],eqLow:[-12,12],eqHigh:[-12,12],eqLowFreq:[80,1000],eqHighFreq:[1000,12000]};
+    master:[0,100],pan:[-1,1],eqLow:[-12,12],eqMid:[-12,12],eqHigh:[-12,12],eqLowFreq:[80,1000],eqHighFreq:[1000,12000]};
   const choices={fxModType:['chorus','ensemble','phaser'],fxDelayType:['stereo','cross','lr'],fxReverbType:['spring','hall']};
   const p={...MAMB_EFFECT_DEFAULTS},target={...p},moving=[];
   function accept(key,value){
@@ -63,10 +63,10 @@ function createMambEffects(initial={}, sr=48000) {
   const hallDamped=new Float64Array(8),hallRead=new Float64Array(8),hallGain=new Float64Array(8),hallPhase=new Float64Array([.1,1.2,2.7,4.1,5.2,.7,3.5,5.9]);
   const hallRates=new Float64Array([.53,.67,.79,.91,1.07,1.21,1.37,1.49]),hallDrift=new Float64Array(8),hallDriftTarget=new Float64Array(8),hallDriftClock=new Float64Array(8),hallSeeds=new Uint32Array([19221,66797,234991,81173,63443,93911,22447,135017]);
   let hallL=0,hallR=0;
-  const eqCoefficients=[new Float64Array(5),new Float64Array(5)],eqState=new Float64Array(8);
-  allocatedBytes+=modWeights.byteLength+delayWeights.byteLength+revWeights.byteLength+springDispersionSamples.byteLength+springLengths.byteLength+springDamped.byteLength+springAllpass.byteLength+springRead.byteLength+springGain.byteLength+hallLengths.byteLength+hallDamped.byteLength+hallRead.byteLength+hallGain.byteLength+hallPhase.byteLength+hallRates.byteLength+hallDrift.byteLength+hallDriftTarget.byteLength+hallDriftClock.byteLength+hallSeeds.byteLength+eqState.byteLength+eqCoefficients[0].byteLength+eqCoefficients[1].byteLength;
-  let gestureDelayTime=false;let delayReadTime=0;let toneCoefficient=0,delayDamping=1-Math.exp(-TWO*8000/sr),springBias=0,springDrive=1,springNorm=1,hallModSamples=0,delayTime=p.fxDelayTime;
-  let panL=1,panR=1,master=p.master/100,tick=0,dirty=511,panicRemaining=0,panicGain=1,peak=0;
+  const eqCoefficients=[new Float64Array(5),new Float64Array(5),new Float64Array(5)],eqState=new Float64Array(12);
+  allocatedBytes+=modWeights.byteLength+delayWeights.byteLength+revWeights.byteLength+springDispersionSamples.byteLength+springLengths.byteLength+springDamped.byteLength+springAllpass.byteLength+springRead.byteLength+springGain.byteLength+hallLengths.byteLength+hallDamped.byteLength+hallRead.byteLength+hallGain.byteLength+hallPhase.byteLength+hallRates.byteLength+hallDrift.byteLength+hallDriftTarget.byteLength+hallDriftClock.byteLength+hallSeeds.byteLength+eqState.byteLength+eqCoefficients[0].byteLength+eqCoefficients[1].byteLength+eqCoefficients[2].byteLength;
+  let midWasActive=false;let gestureDelayTime=false;let delayReadTime=0;let toneCoefficient=0,delayDamping=1-Math.exp(-TWO*8000/sr),springBias=0,springDrive=1,springNorm=1,hallModSamples=0,delayTime=p.fxDelayTime;
+  let panL=1,panR=1,master=p.master/100,tick=0,dirty=1023,panicRemaining=0,panicGain=1,peak=0;
   function shelf(coeff,frequency,gain,high){
     if(Math.abs(gain)<1e-8){coeff[0]=1;coeff[1]=coeff[2]=coeff[3]=coeff[4]=0;return}
     const A=10**(gain/40),w=TWO*Math.min(sr*.4,frequency)/sr,c=Math.cos(w),s=Math.sin(w),alpha=s/Math.sqrt(2),beta=2*Math.sqrt(A)*alpha;
@@ -75,9 +75,14 @@ function createMambEffects(initial={}, sr=48000) {
     else {b0=A*((A+1)-(A-1)*c+beta);b1=2*A*((A-1)-(A+1)*c);b2=A*((A+1)-(A-1)*c-beta);a0=(A+1)+(A-1)*c+beta;a1=-2*((A-1)+(A+1)*c);a2=(A+1)+(A-1)*c-beta}
     coeff[0]=b0/a0;coeff[1]=b1/a0;coeff[2]=b2/a0;coeff[3]=a1/a0;coeff[4]=a2/a0;
   }
+  function midPeak(coeff,gain){
+    if(Math.abs(gain)<1e-8){coeff[0]=1;coeff[1]=coeff[2]=coeff[3]=coeff[4]=0;return;}
+    const A=10**(gain/40),w=TWO*Math.min(sr*.4,1000)/sr,c=Math.cos(w),alpha=Math.sin(w)/(2*.8),a0=1+alpha/A;
+    coeff[0]=(1+alpha*A)/a0;coeff[1]=-2*c/a0;coeff[2]=(1-alpha*A)/a0;coeff[3]=-2*c/a0;coeff[4]=(1-alpha/A)/a0;
+  }
   function biquad(x,coeff,index){const y=coeff[0]*x+eqState[index];eqState[index]=coeff[1]*x-coeff[3]*y+eqState[index+1];eqState[index+1]=coeff[2]*x-coeff[4]*y;return y}
   // Dependency bits are aggregated when the smoothing list changes, not per sample.
-  const controlGroups={fxDelaySync:1,fxDelayTime:1,fxDelayDivision:1,tempo:1,fxReverbTone:2,fxReverbDwell:4,fxReverbDecay:8,fxReverbMod:16,pan:32,master:64,eqLowFreq:128,eqLow:128,eqHighFreq:256,eqHigh:256};let movingMask=0;
+  const controlGroups={fxDelaySync:1,fxDelayTime:1,fxDelayDivision:1,tempo:1,fxReverbTone:2,fxReverbDwell:4,fxReverbDecay:8,fxReverbMod:16,pan:32,master:64,eqLowFreq:128,eqLow:128,eqHighFreq:256,eqHigh:256,eqMid:512};let movingMask=0;
   function queueMoving(key){if(!moving.includes(key)){moving.push(key);movingMask|=controlGroups[key]||0;}}
   function rebuildMovingMask(){movingMask=0;for(const key of moving)movingMask|=controlGroups[key]||0;}
 
@@ -92,6 +97,7 @@ function createMambEffects(initial={}, sr=48000) {
       if(flags&64)master=p.master/100;
       if(flags&128)shelf(eqCoefficients[0],p.eqLowFreq,p.eqLow,false);
       if(flags&256)shelf(eqCoefficients[1],p.eqHighFreq,p.eqHigh,true);
+      if(flags&512)midPeak(eqCoefficients[2],p.eqMid);
     }
   }
 
@@ -100,7 +106,7 @@ function createMambEffects(initial={}, sr=48000) {
   function resetDelay(){for(let i=0;i<2;i++)delayLines[i].reset();delayQuiet=0;delayTail=0}
   function resetSpring(){for(let i=0;i<6;i++)springDispersion[i].reset();for(let i=0;i<3;i++)springLines[i].reset();springDamped.fill(0);springAllpass.fill(0);springRead.fill(0);springDC=0;springL=springR=0}
   function resetHall(){for(let i=0;i<8;i++)hallLines[i].reset();for(let i=0;i<4;i++)hallEarly[i].reset();hallDamped.fill(0);hallRead.fill(0);hallL=hallR=0}
-  function resetAll(){resetMod();resetDelay();resetSpring();resetHall();eqState.fill(0);modRun=target.fxModOn;delayRun=target.fxDelayOn;revRun=target.fxReverbOn;revQuiet=0;revTail=0}
+  function resetAll(){resetMod();resetDelay();resetSpring();resetHall();eqState.fill(0);midWasActive=false;modRun=target.fxModOn;delayRun=target.fxDelayOn;revRun=target.fxReverbOn;revQuiet=0;revTail=0}
   function setParameters(values){
     for(const key in values){
       if(!accept(key,values[key]))continue;
@@ -198,6 +204,7 @@ function createMambEffects(initial={}, sr=48000) {
       if(revRun){reverbSample(left*revOn,right*revOn);revTail=Math.max(Math.abs(wetRevL),Math.abs(wetRevR));left=left*(1-p.fxReverbMix*revOn)+wetRevL*p.fxReverbMix;right=right*(1-p.fxReverbMix*revOn)+wetRevR*p.fxReverbMix;
         if(!target.fxReverbOn&&revOn<1e-7&&revTail<1e-7){if(++revQuiet>sr*.3){revRun=false;resetSpring();resetHall()}}else revQuiet=0}
       if(Math.abs(p.eqLow)>1e-8){left=biquad(left,eqCoefficients[0],0);right=biquad(right,eqCoefficients[0],2)}
+      if(Math.abs(p.eqMid)>1e-8){midWasActive=true;left=biquad(left,eqCoefficients[2],8);right=biquad(right,eqCoefficients[2],10)}else if(midWasActive){eqState[8]=eqState[9]=eqState[10]=eqState[11]=0;midWasActive=false;}
       if(Math.abs(p.eqHigh)>1e-8){left=biquad(left,eqCoefficients[1],4);right=biquad(right,eqCoefficients[1],6)}
       if(panicRemaining>0){panicGain=Math.max(0,panicGain-1/(sr*.018));if(!--panicRemaining){resetAll();delayFeedbackL=delayFeedbackR=0;panicGain=0}}else if(panicGain<1)panicGain=Math.min(1,panicGain+1/(sr*.018));
       left*=master*panL*panicGain;right*=master*panR*panicGain;

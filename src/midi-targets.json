@@ -434,7 +434,7 @@
     "category": "Filter / Modulation",
     "type": "select",
     "min": 0,
-    "max": 3,
+    "max": 4,
     "default": "lp",
     "options": [
       {
@@ -444,6 +444,10 @@
       {
         "value": "lp24",
         "label": "LPF24"
+      },
+      {
+        "value": "bite",
+        "label": "BITE"
       },
       {
         "value": "bp",
@@ -498,6 +502,16 @@
   {
     "id": "eqLow",
     "label": "LOW GAIN",
+    "category": "Effects",
+    "type": "range",
+    "min": -12,
+    "max": 12,
+    "default": 0,
+    "step": 0.1
+  },
+  {
+    "id": "eqMid",
+    "label": "MID",
     "category": "Effects",
     "type": "range",
     "min": -12,

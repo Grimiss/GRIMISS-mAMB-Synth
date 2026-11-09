@@ -1,0 +1,37 @@
+/* Filter and EQ share the former horizontal footprint; other panels stay fixed. */
+html.fit-screen.reference-geometry.control-refinement main .filter-panel>h2 { width:252px!important;border-radius:var(--hardware-header-radius) 0 0 0!important; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .filter-layout { grid-template-columns:34px 62px 44px 36px 36px minmax(0,1fr)!important;gap:8px!important; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .filter-types { grid-column:1;grid-row:1;min-width:0; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .filter-types button { width:34px!important;height:11px!important;min-height:11px!important; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .filter-knobs { display:contents!important; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .knob { grid-row:1; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .knob:has(#cutoff) { grid-column:2; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .knob:has(#res) { grid-column:3; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .knob:has(#envAmt) { grid-column:4; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .knob:has(#keyTrack) { grid-column:5; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .knob:has(#res) .dial { width:36px!important;height:39px!important; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel .knob:is(:has(#envAmt),:has(#keyTrack)) .dial { width:28px!important;height:31px!important; }
+html.fit-screen.reference-geometry.control-refinement main .filter-panel #filter-scope { position:absolute!important;grid-area:auto!important;left:252px!important;right:2px!important;top:-15px!important;bottom:0!important;width:calc(100% - 254px)!important;height:calc(100% + 15px)!important; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-control-row { grid-template-columns:65px minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) 65px!important;gap:8px!important; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-frequency { width:65px!important; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-frequency label { text-align:center; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-control-row .knob .dial { width:25px!important;height:26px!important; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-control-row .knob>label { font-size:5.5px!important; }
+/* Recessed Voice-style gate slider. Original range, events and timing survive. */
+html.fit-screen.reference-geometry.control-refinement main .arp-panel #arpGate { height:17px!important;min-height:17px!important;border:0!important;background:none!important;box-shadow:none!important; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel #arpGate::-webkit-slider-runnable-track { height:3px;border:0;border-radius:1px;background:linear-gradient(to right,var(--print-teal) 0 var(--arp-gate-fill),#030604 var(--arp-gate-fill) 100%);box-shadow:inset 0 1px 2px #000,0 1px 0 #58644f33; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel #arpGate::-webkit-slider-thumb { appearance:none;width:15px;height:12px;margin-top:-4.5px;border:1px solid #65725f;border-top-color:#899680;border-bottom:2px solid #0a100b;border-radius:1px;background:linear-gradient(90deg,#2c352b,#46533f 42%,#bbc6ac 47%,#222d21 54%,#44503b);box-shadow:0 1px 2px #000b; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel #arpGate::-moz-range-track { height:3px;border:0;background:#030604; }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel #arpGate::-moz-range-progress { height:3px;background:var(--print-teal); }
+html.fit-screen.reference-geometry.control-refinement main .arp-panel #arpGate::-moz-range-thumb { width:15px;height:12px;border:1px solid #65725f;border-bottom:2px solid #0a100b;border-radius:1px;background:linear-gradient(90deg,#2c352b,#46533f 42%,#bbc6ac 47%,#222d21 54%,#44503b); }
+/* Horizontal centre stripe: the Voice cap material rotated through 90 degrees. */
+html.fit-screen.reference-geometry.control-refinement main .mixer .physical-slider { width:26px!important;height:16px!important;left:-10px!important;border:1px solid #65725f!important;border-top-color:#899680!important;border-bottom:2px solid #0a100b!important;border-radius:1px!important;background:linear-gradient(#2c352b,#46533f 42%,#bbc6ac 47%,#222d21 54%,#44503b)!important;box-shadow:0 1px 2px #000b!important; }
+html.fit-screen.reference-geometry.control-refinement main .mixer .fader .fader-illumination { background:var(--print-teal)!important;box-shadow:none!important; }
+html.fit-screen.reference-geometry.control-refinement main .voice .hardware-horizontal>input::-webkit-slider-runnable-track { background:linear-gradient(to right,var(--print-teal) 0 var(--horizontal-fill),#030604 var(--horizontal-fill) 100%); }
+html.fit-screen.reference-geometry.control-refinement main .voice .hardware-horizontal>input::-moz-range-progress { background:var(--print-teal); }
+/* A slightly deeper EQ glass area, with the controls lowered and labels clear
+   of the outer boundary. Keep the three gain knobs compact and evenly spaced. */
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-control-row { height:24px!important;flex:0 0 24px!important; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-control-row .knob { align-self:center!important; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-control-row .knob .dial { width:22px!important;height:23px!important; }
+html.fit-screen.reference-geometry.control-refinement main .eq-panel .eq-control-row { grid-template-rows:minmax(0,1fr)!important; }
