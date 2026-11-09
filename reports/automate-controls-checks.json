@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "surfaces": 7,
+  "viewports": [
+    1920,
+    1280
+  ],
+  "geometryUnchanged": true,
+  "horizontalPointerAndKeyboard": true,
+  "labelsAlwaysVisible": true,
+  "popupSync": true,
+  "pauseHolds": true,
+  "independentPlayback": true,
+  "recording": true,
+  "directDrawing": true,
+  "overwriteOnPress": true,
+  "stationaryHold": true,
+  "clickAwayClose": true,
+  "clearGesture": true,
+  "axisLabels": true,
+  "patchRecall": true,
+  "audibleOutput": true,
+  "errors": []
+}

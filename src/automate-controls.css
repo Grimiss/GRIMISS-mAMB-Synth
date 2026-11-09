@@ -1,0 +1,58 @@
+/* Screen-printed phosphor controls, scoped to the seven automation displays. */
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome button:is(.gesture-open,.gesture-main-play) {
+ top:7px!important;left:auto!important;bottom:auto!important;right:9px!important;
+ width:43px!important;height:10px!important;min-height:10px!important;
+ padding:0 2px!important;line-height:8px!important;font:700 5.1px/8px Orbitron,Arial!important;
+ background:#07160ed9!important;color:var(--instrument-accent)!important;
+ border:1px solid var(--instrument-accent)!important;border-radius:1px!important;
+ box-shadow:0 0 2px #73e9d055!important;text-shadow:0 0 3px #73e9d099!important;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome button.gesture-main-play {
+ right:57px!important;width:28px!important;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome button:is(.gesture-open,.gesture-main-play)[aria-pressed=true] {
+ background:var(--instrument-accent)!important;color:#07160e!important;
+ box-shadow:0 0 4px #73e9d077!important;text-shadow:none!important;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome button.gesture-rail {
+ top:auto!important;bottom:8px!important;left:9px!important;right:auto!important;
+ width:calc(50% - 13px)!important;height:11px!important;min-height:11px!important;
+ background:none!important;border:0!important;border-radius:0!important;
+ box-shadow:none!important;padding:0!important;margin:0!important;
+ color:var(--instrument-accent)!important;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome button.gesture-speed { left:auto!important;right:9px!important; }
+.gesture-chrome .gesture-rail::before { content:'';position:absolute;left:0;right:0;top:5px;height:1px;background:var(--instrument-accent);opacity:.5;box-shadow:0 0 2px #73e9d077;pointer-events:none; }
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome .gesture-rail span {
+ display:block!important;z-index:2;top:3px;left:50%;transform:translateX(-50%);
+ color:var(--instrument-accent);background:#07160e;padding:0 2px;
+ font:700 4px/5px Orbitron,Arial;white-space:nowrap;text-shadow:0 0 2px #73e9d099;pointer-events:none;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome .gesture-rail i {
+ z-index:1;top:1px;bottom:auto;left:calc(var(--gesture-position,0) * (100% - 1px));
+ width:1px;height:9px;background:var(--instrument-accent);box-shadow:0 0 2px #73e9d0;pointer-events:none;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome .gesture-speed b {
+ top:2px;bottom:auto;left:86.92%;width:1px;height:7px;background:#73e9d066;pointer-events:none;
+}
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome .gesture-speed b:after { top:-5px;left:-3px;right:auto;font:3px/4px OpenSans,Arial;color:var(--instrument-accent); }
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome [hidden] { display:none!important; }
+html.fit-screen.reference-geometry.control-refinement main .coordinate-panel .gesture-chrome button.gesture-rail::before {
+ content:''!important;opacity:.65;
+}
+/* Direct-draw popup: ordinary controls remain outside the writable surface. */
+.gesture-editor .gesture-group-title { flex:0 0 100%;font:700 10px Orbitron,Arial;color:#9cb5a5;letter-spacing:.3px; }
+.gesture-editor .gesture-clear-row { display:flex;align-items:center;justify-content:space-between;gap:12px; }
+.gesture-editor .gesture-draw-hint { flex:1;font:11px/1.5 OpenSans,Arial;color:#b9cec1; }
+.gesture-editor .gesture-clear-row button { flex-shrink:0; }
+.gesture-editor .gesture-preview { display:grid;grid-template-columns:22px minmax(0,1fr);grid-template-rows:minmax(0,1fr) 20px;gap:4px;height:205px;padding:4px 8px 6px; }
+.gesture-editor #gesturePreview { grid-column:2;grid-row:1;min-width:0;min-height:0; }
+.gesture-editor .gesture-axis-y { grid-column:1;grid-row:1;justify-self:center;align-self:center;writing-mode:vertical-rl;transform:rotate(180deg);color:#e8b555;font:700 10px OpenSans,Arial;text-align:center; }
+.gesture-editor .gesture-axis-x { grid-column:2;grid-row:2;align-self:center;text-align:center;color:#f1d66a;font:700 10px OpenSans,Arial; }
+.gesture-editor .gesture-intensity { gap:12px; }
+.gesture-editor .gesture-intensity label { display:flex;align-items:center;gap:6px; }
+.gesture-editor :is(#gestureSoften,#gestureSpeed) { appearance:none;height:17px;min-height:17px;padding:0;border:0;background:none;box-shadow:none;cursor:ew-resize; }
+.gesture-editor :is(#gestureSoften,#gestureSpeed)::-webkit-slider-runnable-track { height:3px;background:#020604;border:0;border-radius:1px;box-shadow:inset 0 1px 2px #000,0 1px 0 #58644f33; }
+.gesture-editor :is(#gestureSoften,#gestureSpeed)::-webkit-slider-thumb { appearance:none;width:15px;height:12px;margin-top:-4.5px;border:1px solid #65725f;border-top-color:#899680;border-bottom:2px solid #0a100b;border-radius:1px;background:linear-gradient(90deg,#2c352b,#46533f 42%,#bbc6ac 47%,#222d21 54%,#44503b);box-shadow:0 1px 2px #000b; }
+.gesture-editor :is(#gestureSoften,#gestureSpeed)::-moz-range-track { height:3px;background:#020604;border:0;border-radius:1px; }
+.gesture-editor :is(#gestureSoften,#gestureSpeed)::-moz-range-thumb { width:15px;height:12px;border:1px solid #65725f;border-bottom:2px solid #0a100b;border-radius:1px;background:linear-gradient(90deg,#2c352b,#46533f 42%,#bbc6ac 47%,#222d21 54%,#44503b); }

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "emulatedTouchDrawing": true,
+  "exactStartAndEnd": true,
+  "touchClickAway": true,
+  "playbackContinues": true,
+  "mouseReleaseOutside": true,
+  "horizontalTouchSlider": true,
+  "physicalTabletTested": false
+}
